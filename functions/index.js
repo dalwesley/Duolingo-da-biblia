@@ -602,8 +602,10 @@ async function attributeReferral(db, input) {
 }
 
 function referralRc() {
-  const key = revenueCatSecretKey.value() || '';
-  return key ? referral.revenueCatClient(key) : null;
+  // Até a chave real entrar, o segredo pode guardar um marcador
+  // ("pendente"): sem `sk_`, a indicação fica desligada (só a atribuição corre).
+  const key = (revenueCatSecretKey.value() || '').trim();
+  return key.startsWith('sk_') ? referral.revenueCatClient(key) : null;
 }
 
 /**
