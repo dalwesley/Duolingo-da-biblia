@@ -1,6 +1,6 @@
 # Marketing
 
-Material de divulgação do STWAY, gerado a partir do conteúdo do app.
+Material de divulgação do Stway, gerado a partir do conteúdo do app.
 
 | Pasta | O quê |
 |---|---|

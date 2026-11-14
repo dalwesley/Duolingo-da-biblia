@@ -124,7 +124,7 @@
           </label>
           <label class="check">
             <input type="checkbox" name="consent" value="sim" required />
-            <span>Concordo que a STWAY use esses dados para avisar sobre o lançamento no iOS. <a href="/privacidade">Privacidade</a></span>
+            <span>Concordo que o Stway use esses dados para avisar sobre o lançamento no iOS. <a href="/privacidade">Privacidade</a></span>
           </label>
           <button class="btn btn-gold" type="submit">Entrar na lista de espera</button>
           <p class="form-note" role="status"></p>

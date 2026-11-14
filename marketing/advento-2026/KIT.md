@@ -18,13 +18,13 @@ O que tem neste kit:
 
 ## 0. Plano para os nossos canais
 
-Situação em 11/11: Instagram do STWAY com 31 seguidores, perfil pessoal com 486, cerca de 10 pastores e líderes ao alcance direto e R$ 100 para anúncio.
+Situação em 11/11: Instagram do Stway com 31 seguidores, perfil pessoal com 486, cerca de 10 pastores e líderes ao alcance direto e R$ 100 para anúncio.
 
 O que isso significa: o alcance vem de **pessoas, não de perfis**. A ordem de força é:
 
 1. **Os 10 líderes.** Cada "sim" coloca o Advento num grupo de 10 a 50 pessoas, todos os dias, por 26 dias.
 2. **O perfil pessoal (486).** As pessoas confiam em quem conhecem. Um post contando por que você criou o app converte mais do que qualquer arte.
-3. **O Instagram do STWAY (31).** Funciona como vitrine: quem ouvir falar e for procurar encontra as artes. Não é canal de alcance agora.
+3. **O Instagram do Stway (31).** Funciona como vitrine: quem ouvir falar e for procurar encontra as artes. Não é canal de alcance agora.
 4. **R$ 100.** Serve para testar uma mensagem, não para crescer. Gastar no fim (ver abaixo).
 
 ### Meta realista
@@ -42,7 +42,7 @@ O que isso significa: o alcance vem de **pessoas, não de perfis**. A ordem de f
 
 - **Não mande só texto.** Ligue ou mande um **áudio de 40 segundos** no WhatsApp. Texto frio de desconhecido é ignorado; a voz de alguém que o pastor conhece, não. Roteiro do áudio:
 
-  > "Pastor [nome], tudo bem? Aqui é o [seu nome]. Eu criei um app de estudo bíblico, o STWAY, e neste Advento ele está de graça: uma cena de 5 minutos por dia até o Natal, da Criação até Jesus. Queria te oferecer para a igreja. Eu mesmo te mando todo dia a imagem e o texto prontos, você só encaminha no grupo. Te mando o link para dar uma olhada?"
+  > "Pastor [nome], tudo bem? Aqui é o [seu nome]. Eu criei um app de estudo bíblico, o Stway, e neste Advento ele está de graça: uma cena de 5 minutos por dia até o Natal, da Criação até Jesus. Queria te oferecer para a igreja. Eu mesmo te mando todo dia a imagem e o texto prontos, você só encaminha no grupo. Te mando o link para dar uma olhada?"
 
 - Depois do áudio, mande a **mensagem 3c** com o link.
 - O pedido concreto é **"você encaminha a mensagem do dia no grupo"**. Isso é fácil de aceitar e faz o Advento aparecer 26 vezes no grupo.
@@ -56,7 +56,7 @@ Post no **feed pessoal** em 22/11 com o `anuncio-feed.png` e este texto, que voc
 ```text
 Nos últimos meses eu construí um app.
 
-Ele nasceu de uma frustração minha: eu lia a Bíblia, mas não sabia ler a Bíblia. Passava os olhos e fechava. Então criei o STWAY, onde cada dia é uma cena curta de 5 minutos e você responde no próprio versículo, como quem estuda de verdade.
+Ele nasceu de uma frustração minha: eu lia a Bíblia, mas não sabia ler a Bíblia. Passava os olhos e fechava. Então criei o Stway, onde cada dia é uma cena curta de 5 minutos e você responde no próprio versículo, como quem estuda de verdade.
 
 Neste Advento ele está de graça: 26 cenas, de 29/11 até a véspera do Natal, da Criação até Jesus.
 
@@ -65,11 +65,11 @@ Se você quiser caminhar comigo até o Natal, o link está aqui: stway.com.br/ad
 E se puder compartilhar com alguém, ajuda demais um projeto que está só começando. 🙏
 ```
 
-Depois, todo dia, **reposte nos seus stories** o story do dia que o STWAY publicar.
+Depois, todo dia, **reposte nos seus stories** o story do dia que o Stway publicar.
 
 ### Os R$ 100
 
-- **Não gaste antes de 27/11.** Primeiro veja qual post orgânico teve mais reações: o pessoal ou o anúncio do STWAY.
+- **Não gaste antes de 27/11.** Primeiro veja qual post orgânico teve mais reações: o pessoal ou o anúncio do Stway.
 - De **27/11 a 3/12**, impulsione **esse post** a cerca de R$ 15 por dia durante 6 a 7 dias.
 - **Público:** Brasil, 18–45 anos, interesses Bíblia, Cristianismo e igreja evangélica. Pelo Gerenciador de Anúncios (não pelo botão "Turbinar"), limite os dispositivos a **Android**, porque no iPhone ainda não há app.
 - **Destino:** stway.com.br/advento. Objetivo: tráfego.
@@ -80,12 +80,12 @@ Depois, todo dia, **reposte nos seus stories** o story do dia que o STWAY public
 | Quando | O quê | Onde |
 |---|---|---|
 | 19–21/11 | Áudio + mensagem 3c para os 10 líderes | WhatsApp |
-| 22/11 | Post pessoal (texto acima) + `anuncio-feed` no STWAY + mensagem 3a nos seus grupos | Instagram, WhatsApp |
+| 22/11 | Post pessoal (texto acima) + `anuncio-feed` no Stway + mensagem 3a nos seus grupos | Instagram, WhatsApp |
 | 24/11 | Acompanhamento com quem não respondeu | WhatsApp |
 | 27/11 | Começa o anúncio de R$ 100 | Instagram |
 | 28/11 | `anuncio-story`: "começa amanhã" | stories, status |
-| 29/11 a 24/12, 6h | Story do dia no STWAY + repost pessoal + lista de transmissão para os líderes | Instagram, WhatsApp |
-| seg, qua e sex | Feed do dia + legenda (`legendas.md`) | Instagram do STWAY |
+| 29/11 a 24/12, 6h | Story do dia no Stway + repost pessoal + lista de transmissão para os líderes | Instagram, WhatsApp |
+| seg, qua e sex | Feed do dia + legenda (`legendas.md`) | Instagram do Stway |
 | domingos | Reels de resumo (opcional) | Reels |
 
 Feed **3 vezes por semana**, não todo dia: com 31 seguidores, o esforço diário de feed não se paga. O story diário e o WhatsApp, sim.
@@ -110,7 +110,7 @@ A saída fica em `marketing/out/advento-2026/`, fora do git:
 | `feed/dia-NN.png` (1080×1350) | feed do Instagram/Facebook |
 | `legendas.md` | legenda pronta de cada dia |
 
-Os textos de cada dia (título, versículo, reflexão e pergunta) ficam em `marketing/advento-2026/dias.json`. O versículo sai da Almeida do app (JFAAL), então a citação é igual à do STWAY. Se o roteiro do app mudar (`season_walk_catalog.dart`), atualize o JSON e gere de novo.
+Os textos de cada dia (título, versículo, reflexão e pergunta) ficam em `marketing/advento-2026/dias.json`. O versículo sai da Almeida do app (JFAAL), então a citação é igual à do Stway. Se o roteiro do app mudar (`season_walk_catalog.dart`), atualize o JSON e gere de novo.
 
 ## 2. Calendário de publicação
 
@@ -134,7 +134,7 @@ Legenda de convite (22/11):
 
 De 29 de novembro a 24 de dezembro, uma cena bíblica de 5 minutos por dia: da Criação à promessa cumprida em Jesus. Você lê o texto, responde no próprio versículo e guarda o postal de cada dia.
 
-Grátis no STWAY. Link na bio (stway.com.br/advento).
+Grátis no Stway. Link na bio (stway.com.br/advento).
 
 Marque quem vai caminhar com você 👇
 
@@ -150,7 +150,7 @@ Gente, vamos fazer o Advento juntos este ano? 🎄
 
 São 26 cenas curtas da Bíblia, uma por dia, de 29/11 até a véspera do Natal. Leva uns 5 minutos: você lê o texto e responde no próprio versículo.
 
-É de graça, no app STWAY: stway.com.br/advento
+É de graça, no app Stway: stway.com.br/advento
 
 Quem topar responde aqui com um 🙋 e a gente comenta a cena do dia no grupo.
 ```
@@ -166,7 +166,7 @@ stway.com.br/advento
 **3c. Pastor ou líder de célula (contato frio, curto)**
 
 ```text
-Olá, pastor(a) [nome]! Sou o [seu nome], criei o STWAY, um app brasileiro de estudo bíblico em cenas de 5 minutos.
+Olá, pastor(a) [nome]! Sou o [seu nome], criei o Stway, um app brasileiro de estudo bíblico em cenas de 5 minutos.
 
 Neste Advento estamos oferecendo grátis 26 cenas, de 29/11 a 24/12, da Criação até Jesus. Pensei que pode servir para a [igreja/célula] caminhar junta no fim do ano.
 
