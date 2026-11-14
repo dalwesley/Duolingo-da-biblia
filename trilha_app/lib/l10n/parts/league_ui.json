@@ -66,9 +66,9 @@
     }
   },
   "leagueActiveToday": {
-    "pt": "Ativo hoje",
-    "en": "Active today",
-    "es": "Activo hoy"
+    "pt": "Caminhou · por aqui",
+    "en": "Walked · here",
+    "es": "Caminó · por aquí"
   },
   "leagueSeenTodayWalked": {
     "pt": "Visto hoje · caminhou {date}",
@@ -104,9 +104,9 @@
     }
   },
   "leagueStudying": {
-    "pt": "{count, plural, =0{0 estudando} =1{1 estudando} other{{count} estudando}}",
-    "en": "{count, plural, =0{0 studying} =1{1 studying} other{{count} studying}}",
-    "es": "{count, plural, =0{0 estudiando} =1{1 estudiando} other{{count} estudiando}}",
+    "pt": "{count, plural, =0{0 por aqui} =1{1 por aqui} other{{count} por aqui}}",
+    "en": "{count, plural, =0{0 here} =1{1 here} other{{count} here}}",
+    "es": "{count, plural, =0{0 por aquí} =1{1 por aquí} other{{count} por aquí}}",
     "placeholders": {
       "count": "int"
     }

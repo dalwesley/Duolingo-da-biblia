@@ -380,7 +380,6 @@ class _FilterCell extends StatelessWidget {
                     style: AppTypography.label(
                       size: 11,
                       letterSpacing: 0.3,
-                      weight: FontWeight.w800,
                       color: ink,
                     ),
                   ),

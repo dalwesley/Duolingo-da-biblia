@@ -174,12 +174,7 @@ class _SeasonWalkersSheetState extends State<_SeasonWalkersSheet> {
                   if (i >= rows.length) {
                     return const Padding(
                       padding: EdgeInsets.all(AppSpace.md),
-                      child: Center(
-                        child: SizedBox.square(
-                          dimension: 22,
-                          child: CircularProgressIndicator(strokeWidth: 2),
-                        ),
-                      ),
+                      child: AppSpinner(inline: true),
                     );
                   }
                   final w = rows[i];

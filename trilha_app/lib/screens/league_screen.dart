@@ -2585,11 +2585,11 @@ class _CaravanLevel extends StatelessWidget {
   /// Cada nível tem sua cor — semente verde, videira uva, oliveira areia,
   /// cedro teal, estrela ouro.
   static Color _tierTone(LeagueTier tier) => switch (tier) {
-    LeagueTier.semente => AppColors.sprout,
-    LeagueTier.videira => AppColors.orchid,
-    LeagueTier.oliveira => AppColors.sand,
-    LeagueTier.cedro => AppColors.cedar,
-    LeagueTier.estrela => AppColors.medalGold,
+    LeagueTier.semente => AppRoles.observation,
+    LeagueTier.videira => AppRoles.interpretation,
+    LeagueTier.oliveira => AppRoles.areaOldTestament,
+    LeagueTier.cedro => AppRoles.areaChristianLife,
+    LeagueTier.estrela => AppRoles.reward,
   };
 
   const _CaravanLevel({
@@ -3868,7 +3868,6 @@ class _StandingRow extends StatelessWidget {
                 style: AppTypography.label(
                   size: 10,
                   letterSpacing: 0.2,
-                  weight: FontWeight.w800,
                   color: entry.walkedToday ? AppRoles.presence : muted,
                 ),
               ),
@@ -5007,7 +5006,6 @@ class _CompanionMilestonesBlock extends StatelessWidget {
                 '$shared/$next',
                 style: AppTypography.label(
                   size: 11,
-                  weight: FontWeight.w800,
                   color: shared > 0 ? AppRoles.presence : a.textFaint,
                 ),
               ),

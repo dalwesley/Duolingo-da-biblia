@@ -704,7 +704,6 @@ class CompanionNudgeShareCard extends StatelessWidget {
                     style:
                         AppTypography.display(
                           size: compact ? 24 : 28,
-                          weight: FontWeight.w800,
                           color: Colors.white,
                         ).copyWith(
                           height: 1.15,

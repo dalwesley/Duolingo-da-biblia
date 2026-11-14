@@ -31,7 +31,7 @@
   },
   "authInvalidCredential": "Credencial Google inválida. Cadastre o SHA-1 do app no Firebase e baixe o google-services.json de novo.",
   "authLoginInProgress": "Login em andamento.",
-  "authMissingIdToken": "Não deu para entrar com o Google. Tente de novo.",
+  "authMissingIdToken": "Não foi possível entrar com o Google. Tente de novo.",
   "authNetworkReset": "Falha de rede ao falar com o Firebase Auth (conexão resetada). Tente de novo em Wi‑Fi estável ou dados móveis.",
   "authNoInternet": "Sem conexão com a internet. Verifique o Wi‑Fi/dados do aparelho.",
   "authTooManyRequests": "Muitas tentativas. Aguarde um pouco e tente de novo.",
@@ -2283,7 +2283,7 @@
     }
   },
   "juntosCloseConfirm": "Encerrar",
-  "juntosCloseRoomBody": "O grupo some para todos e o código deixa de funcionar. Não é possível desfazer.",
+  "juntosCloseRoomBody": "O grupo some para todos e o código deixa de funcionar. Não dá para desfazer.",
   "juntosCloseRoomTitle": "Encerrar o grupo?",
   "juntosCompanionEmptyBody": "Chame alguém para caminhar com você. No dia em que os dois estudam, o fio acende e a sequência cresce.",
   "juntosCompanionEmptyTitle": "Nenhuma companhia ainda",
@@ -2407,7 +2407,7 @@
       }
     }
   },
-  "juntosOnlineSemantics": "{countLabel}. Ver quem está estudando",
+  "juntosOnlineSemantics": "{countLabel}. Ver quem está por aqui",
   "@juntosOnlineSemantics": {
     "placeholders": {
       "countLabel": {
@@ -2498,7 +2498,7 @@
   "juntosShowQrShare": "Compartilhar",
   "juntosSomeone": "Alguém",
   "juntosStudyToday": "Estudar hoje",
-  "juntosStudyingNow": "Estudando agora",
+  "juntosStudyingNow": "Por aqui hoje",
   "juntosSwitchRoomBody": "Você sai do grupo em que está agora.",
   "juntosSwitchRoomTitle": "Entrar em {name}?",
   "@juntosSwitchRoomTitle": {
@@ -2581,7 +2581,7 @@
   "languageShortEs": "ES",
   "languageShortPt": "PT",
   "languageTitle": "Idioma",
-  "leagueActiveToday": "Ativo hoje",
+  "leagueActiveToday": "Caminhou · por aqui",
   "leagueBonusEncourage": "+{count} passos de encorajamento",
   "@leagueBonusEncourage": {
     "placeholders": {
@@ -2651,7 +2651,7 @@
       }
     }
   },
-  "leagueStudying": "{count, plural, =0{0 estudando} =1{1 estudando} other{{count} estudando}}",
+  "leagueStudying": "{count, plural, =0{0 por aqui} =1{1 por aqui} other{{count} por aqui}}",
   "@leagueStudying": {
     "placeholders": {
       "count": {
@@ -3784,7 +3784,7 @@
   "notifChannelName": "Lembretes Stway",
   "notifContinueTitle": "Continue de onde parou",
   "notifDailyTitle": "Do dia",
-  "notifFavoritesBody": "{count, plural, =1{Você guardou um versículo. Que tal revisitá-lo agora?} other{Você tem {count} favoritos. Releia um e treine a memória.}}",
+  "notifFavoritesBody": "{count, plural, =1{Você guardou um versículo. Que tal revisá-lo agora?} other{Você tem {count} favoritos. Releia um e treine a memória.}}",
   "@notifFavoritesBody": {
     "placeholders": {
       "count": {
@@ -4223,7 +4223,7 @@
   "paywallOffersFailed": "Não conseguimos carregar os planos. Confira sua conexão e tente de novo.",
   "paywallPerkBadgeBody": "Um selo exclusivo no seu perfil e na Caravana.",
   "paywallPerkBadgeTitle": "Selo de Peregrino",
-  "paywallPerkGiftBody": "Compartilhe 1 trilha do Peregrino+ por mês com um amigo. Ela fica aberta inteira para quem recebe, sem pagar.",
+  "paywallPerkGiftBody": "Compartilhe 1 trilha do Peregrino+ por mês com alguém. Ela fica aberta inteira para quem recebe, sem pagar.",
   "paywallPerkGiftTitle": "Uma trilha por mês de presente",
   "paywallPerkManyTrailsBody": "No grátis é uma trilha por vez. No Peregrino+, você anda em quantas quiser, cada uma no seu ritmo.",
   "paywallPerkManyTrailsTitle": "Várias trilhas ao mesmo tempo",
@@ -4533,7 +4533,7 @@
   "planAnswerDeleteBody": "Ela some para todo o grupo.",
   "planAnswerDeleteTitle": "Apagar esta resposta?",
   "planAnswerEmpty": "Ninguém mais respondeu ainda.",
-  "planAnswerError": "Não deu para enviar. Tente de novo.",
+  "planAnswerError": "Não foi possível enviar. Tente de novo.",
   "planAnswerHint": "Toque e segure uma resposta para denunciar ou apagar.",
   "planAnswerSaved": "Resposta enviada.",
   "planAnswerSend": "Enviar",
@@ -4772,7 +4772,7 @@
   "planEditorRestHint": "Toque num dia para deixá-lo de descanso: nele não abre nada.",
   "planEditorRestShort": "Dias da semana com propósito",
   "planEditorSave": "Salvar",
-  "planEditorSaveError": "Não deu para salvar o propósito.",
+  "planEditorSaveError": "Não foi possível salvar o propósito.",
   "planEditorSaveNew": "Começar o propósito",
   "planEditorSaved": "Propósito salvo. O grupo já vê.",
   "planEditorShowDays": "Ver a pergunta de cada dia ({count})",
@@ -5408,7 +5408,7 @@
   "@postcardShareVideo": {
     "description": "Card de compartilhar do postal (docs/postais.md)"
   },
-  "postcardShareVideoFailed": "Não deu para gerar o vídeo. Enviei a imagem.",
+  "postcardShareVideoFailed": "Não foi possível gerar o vídeo. Enviei a imagem.",
   "@postcardShareVideoFailed": {
     "description": "Card de compartilhar do postal (docs/postais.md)"
   },
@@ -6113,7 +6113,7 @@
   "roomCloseWeekBusy": "Fechando…",
   "roomCloseWeekConfirmBody": "Quem fez tudo até agora ganha o selo. Você pode fechar de novo antes de domingo se mais gente terminar.",
   "roomCloseWeekConfirmTitle": "Fechar a semana agora?",
-  "roomCloseWeekFailed": "Não deu para fechar a semana. Tente de novo.",
+  "roomCloseWeekFailed": "Não foi possível fechar a semana. Tente de novo.",
   "roomCloseWeekHint": "Faça na reunião: o grupo vê junto quem foi fiel na semana.",
   "roomClosingBannerBody": "Veja como o grupo foi e quem ganhou o selo.",
   "roomClosingBannerTitle": "A semana do grupo foi fechada",
@@ -6141,7 +6141,7 @@
   "roomErrorSignInCreate": "Entre com Google para criar um grupo.",
   "roomErrorSignInJoin": "Entre com Google para entrar num grupo.",
   "roomFallbackName": "Grupo",
-  "roomKindAmigos": "Amigos",
+  "roomKindAmigos": "Círculo",
   "roomKindCelula": "Célula",
   "roomKindDiscipulado": "Discipulado",
   "roomKindEbd": "EBD",
@@ -6161,7 +6161,7 @@
   },
   "roomLeaderWeekScene": "cena",
   "roomLeaderWeekTitle": "Acompanhamento da semana",
-  "roomNameHintAmigos": "Ex.: Amigos da facul",
+  "roomNameHintAmigos": "Ex.: Círculo da facul",
   "roomNameHintCelula": "Ex.: Célula Norte",
   "roomNameHintDiscipulado": "Ex.: Discipulado de quinta",
   "roomNameHintEbd": "Ex.: EBD Jovens",
@@ -7471,7 +7471,7 @@
   "webRedeemFailed": "Não foi possível ativar a assinatura do site. Tente de novo em instantes.",
   "webRedeemInvalid": "Este link de ativação não vale mais. Se você já ativou, o Peregrino+ está na sua conta.",
   "webRedeemNeedsAccount": "Entre na sua conta e toque no link de novo para ativar o Peregrino+ do site.",
-  "webRedeemOtherAccount": "Esta assinatura do site já está ligada a outra conta do STWAY.",
+  "webRedeemOtherAccount": "Esta assinatura do site já está ligada a outra conta do Stway.",
   "weeklyReviewDoneBody": "Revisão feita. Na próxima semana tem outra.",
   "weeklyReviewEmptyBody": "{count, plural, =1{Faça pelo menos 1 cena nova na semana para ter a revisão.} other{Faça pelo menos {count} cenas novas na semana para ter a revisão.}}",
   "@weeklyReviewEmptyBody": {

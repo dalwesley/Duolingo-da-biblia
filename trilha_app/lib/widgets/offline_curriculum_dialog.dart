@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/network_reachability.dart';
+import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
@@ -51,14 +51,14 @@ class _OfflineCurriculumDialogState extends State<_OfflineCurriculumDialog> {
       _busy = true;
       _hint = null;
     });
-    HapticFeedback.lightImpact();
+    ActHaptics.light();
 
     // Sempre tenta o download — DNS/VPN dão falso negativo com frequência.
     final ok = await widget.onRetry();
     if (!mounted) return;
 
     if (ok) {
-      HapticFeedback.mediumImpact();
+      ActHaptics.confirm();
       Navigator.of(context).pop(true);
       return;
     }
@@ -72,7 +72,7 @@ class _OfflineCurriculumDialogState extends State<_OfflineCurriculumDialog> {
           ? context.l10n.offlineDownloadFailed
           : context.l10n.offlineNoInternet;
     });
-    HapticFeedback.heavyImpact();
+    ActHaptics.error();
   }
 
   @override

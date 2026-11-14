@@ -1,10 +1,10 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'act_feel.dart';
 import 'stage_plate.dart';
 import 'stway_brand.dart';
 
@@ -49,7 +49,7 @@ class _BrandFlipCardState extends State<BrandFlipCard>
     final onBack = _flip.value >= 0.5;
     if (onBack == _onBack) return;
     _onBack = onBack;
-    HapticFeedback.selectionClick();
+    ActHaptics.tick();
   }
 
   @override
@@ -61,7 +61,7 @@ class _BrandFlipCardState extends State<BrandFlipCard>
 
   void _toggle() {
     if (_flip.isAnimating) return;
-    HapticFeedback.lightImpact();
+    ActHaptics.light();
     if (_flip.value == 0) {
       _flip.forward();
     } else {

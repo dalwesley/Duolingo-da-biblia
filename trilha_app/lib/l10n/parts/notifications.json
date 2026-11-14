@@ -130,9 +130,9 @@
     "es": "Tus favoritos"
   },
   "notifFavoritesBody": {
-    "pt": "{count, plural, =1{Você guardou um versículo. Que tal revisitá-lo agora?} other{Você tem {count} favoritos. Releia um e treine a memória.}}",
-    "en": "{count, plural, =1{You saved a verse. Want to revisit it now?} other{You have {count} favorites. Reread one and train your memory.}}",
-    "es": "{count, plural, =1{Guardaste un versículo. ¿Qué tal revisitarlo ahora?} other{Tienes {count} favoritos. Relee uno y entrena la memoria.}}",
+    "pt": "{count, plural, =1{Você guardou um versículo. Que tal revisá-lo agora?} other{Você tem {count} favoritos. Releia um e treine a memória.}}",
+    "en": "{count, plural, =1{You saved a verse. Want to review it now?} other{You have {count} favorites. Reread one and train your memory.}}",
+    "es": "{count, plural, =1{Guardaste un versículo. ¿Qué tal revisarlo ahora?} other{Tienes {count} favoritos. Relee uno y entrena la memoria.}}",
     "placeholders": {
       "count": "int"
     }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:trilha_app/l10n/app_language.dart';
 import 'package:trilha_app/widgets/reset_progress_sheet.dart';
+import 'package:trilha_app/widgets/ui_primitives.dart';
 
 void main() {
   Future<void> openSheet(
@@ -28,6 +29,10 @@ void main() {
     );
   }
 
+  GhostCta confirmCta(WidgetTester tester) => tester
+      .widgetList<GhostCta>(find.byType(GhostCta))
+      .firstWhere((c) => c.danger);
+
   testWidgets('confirm stays off until the wait ends and the box is checked', (
     tester,
   ) async {
@@ -44,20 +49,17 @@ void main() {
     await tester.tap(find.text('abrir'));
     await tester.pumpAndSettle();
 
-    FilledButton confirm() =>
-        tester.widget<FilledButton>(find.byType(FilledButton));
-
     expect(find.text('Confirmar · 10s'), findsOneWidget);
-    expect(confirm().onPressed, isNull);
+    expect(confirmCta(tester).onTap, isNull);
 
     await tester.tap(find.text('Estou ciente de que vou perder o progresso'));
     await tester.pumpAndSettle();
-    expect(confirm().onPressed, isNull);
+    expect(confirmCta(tester).onTap, isNull);
 
     await tester.pump(const Duration(seconds: 10));
 
     expect(find.text('Confirmar'), findsOneWidget);
-    expect(confirm().onPressed, isNotNull);
+    expect(confirmCta(tester).onTap, isNotNull);
 
     await tester.tap(find.text('Confirmar'));
     await tester.pumpAndSettle();
@@ -81,8 +83,7 @@ void main() {
     await tester.tap(find.text('Estou ciente de que vou perder o progresso'));
     await tester.pump(const Duration(seconds: 9));
 
-    final confirm = tester.widget<FilledButton>(find.byType(FilledButton));
-    expect(confirm.onPressed, isNull);
+    expect(confirmCta(tester).onTap, isNull);
     expect(find.textContaining('Confirmar ·'), findsOneWidget);
   });
 }

@@ -256,7 +256,6 @@ class _ProfileIdentityCard extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                       style: AppTypography.display(
                         size: 24,
-                        weight: FontWeight.w800,
                         height: 1.05,
                         color: a.text,
                       ),

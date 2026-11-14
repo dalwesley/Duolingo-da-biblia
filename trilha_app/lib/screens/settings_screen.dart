@@ -379,7 +379,7 @@ class _SettingsScreenState extends State<SettingsScreen>
               context.l10n.settingsIntentLabel,
               intent?.title ?? context.l10n.settingsIntentNone,
               glyph: intent?.glyph ?? CinematicGlyph.path,
-              accent: intent?.accent ?? AppColors.clay,
+              accent: intent?.accent ?? AppRoles.areaNewTestament,
               onTap: () => showIntentSheet(context, tint: intent?.accent),
             ),
           ],
@@ -475,7 +475,7 @@ class _SettingsScreenState extends State<SettingsScreen>
             SoundService.instance.setEnabled(v);
           },
           glyph: CinematicGlyph.echo,
-          tone: AppColors.cedar,
+          tone: AppRoles.areaChristianLife,
         ),
       ],
     );
@@ -1119,7 +1119,7 @@ class _SettingsScreenState extends State<SettingsScreen>
               ? context.l10n.settingsManualBackupSubtitle
               : context.l10n.settingsLastShort(_shortDate(last)),
           glyph: CinematicGlyph.share,
-          accent: AppColors.cedar,
+          accent: AppRoles.areaChristianLife,
           onTap: () => _openBackupSheet(sync),
         ),
         if (backend.isSignedIn) ...[
@@ -1131,7 +1131,7 @@ class _SettingsScreenState extends State<SettingsScreen>
               context.watch<ModerationService>().blocked.length,
             ),
             glyph: CinematicGlyph.lock,
-            accent: AppColors.clay,
+            accent: AppRoles.areaNewTestament,
             onTap: _openBlockedSheet,
           ),
           const _SettingsDivider(compact: true),
@@ -1140,7 +1140,7 @@ class _SettingsScreenState extends State<SettingsScreen>
             context.l10n.settingsSignOut,
             context.l10n.settingsSignOutSubtitle,
             glyph: CinematicGlyph.door,
-            accent: AppColors.sand,
+            accent: AppRoles.areaOldTestament,
             onTap: backend.isGoogleBusy ? null : () => _signOutGoogle(backend),
           ),
         ],
@@ -1355,7 +1355,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           context.l10n.settingsAboutPage,
           context.l10n.settingsAboutPageSubtitle,
           glyph: CinematicGlyph.path,
-          accent: AppColors.cedar,
+          accent: AppRoles.areaChristianLife,
           onTap: openAboutPage,
         ),
         const _SettingsDivider(compact: true),
@@ -1364,7 +1364,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           context.l10n.settingsReplayIntro,
           context.l10n.settingsReplayIntroSubtitle,
           glyph: CinematicGlyph.scroll,
-          accent: AppColors.sprout,
+          accent: AppRoles.observation,
           onTap: () async {
             if (!mounted) return;
             await Navigator.of(context).pushAndRemoveUntil(
@@ -1733,7 +1733,6 @@ class _ProfileHeader extends StatelessWidget {
                     cursorColor: a.text,
                     style: AppTypography.display(
                       size: 20,
-                      weight: FontWeight.w800,
                       color: a.text,
                       height: 1.1,
                     ),
@@ -1755,7 +1754,6 @@ class _ProfileHeader extends StatelessWidget {
                       hintText: context.l10n.settingsYourName,
                       hintStyle: AppTypography.display(
                         size: 20,
-                        weight: FontWeight.w800,
                         color: a.textFaint,
                         height: 1.1,
                       ),

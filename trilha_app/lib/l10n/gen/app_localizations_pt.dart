@@ -80,7 +80,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get authMissingIdToken =>
-      'Não deu para entrar com o Google. Tente de novo.';
+      'Não foi possível entrar com o Google. Tente de novo.';
 
   @override
   String get authNetworkReset =>
@@ -3562,7 +3562,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get juntosCloseRoomBody =>
-      'O grupo some para todos e o código deixa de funcionar. Não é possível desfazer.';
+      'O grupo some para todos e o código deixa de funcionar. Não dá para desfazer.';
 
   @override
   String get juntosCloseRoomTitle => 'Encerrar o grupo?';
@@ -3740,7 +3740,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String juntosOnlineSemantics(String countLabel) {
-    return '$countLabel. Ver quem está estudando';
+    return '$countLabel. Ver quem está por aqui';
   }
 
   @override
@@ -3869,7 +3869,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get juntosStudyToday => 'Estudar hoje';
 
   @override
-  String get juntosStudyingNow => 'Estudando agora';
+  String get juntosStudyingNow => 'Por aqui hoje';
 
   @override
   String get juntosSwitchRoomBody => 'Você sai do grupo em que está agora.';
@@ -3988,7 +3988,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get languageTitle => 'Idioma';
 
   @override
-  String get leagueActiveToday => 'Ativo hoje';
+  String get leagueActiveToday => 'Caminhou · por aqui';
 
   @override
   String leagueBonusEncourage(int count) {
@@ -4056,9 +4056,9 @@ class AppLocalizationsPt extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count estudando',
-      one: '1 estudando',
-      zero: '0 estudando',
+      other: '$count por aqui',
+      one: '1 por aqui',
+      zero: '0 por aqui',
     );
     return '$_temp0';
   }
@@ -5758,7 +5758,7 @@ class AppLocalizationsPt extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Você tem $count favoritos. Releia um e treine a memória.',
-      one: 'Você guardou um versículo. Que tal revisitá-lo agora?',
+      one: 'Você guardou um versículo. Que tal revisá-lo agora?',
     );
     return '$_temp0';
   }
@@ -6356,7 +6356,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get paywallPerkGiftBody =>
-      'Compartilhe 1 trilha do Peregrino+ por mês com um amigo. Ela fica aberta inteira para quem recebe, sem pagar.';
+      'Compartilhe 1 trilha do Peregrino+ por mês com alguém. Ela fica aberta inteira para quem recebe, sem pagar.';
 
   @override
   String get paywallPerkGiftTitle => 'Uma trilha por mês de presente';
@@ -6770,7 +6770,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get planAnswerEmpty => 'Ninguém mais respondeu ainda.';
 
   @override
-  String get planAnswerError => 'Não deu para enviar. Tente de novo.';
+  String get planAnswerError => 'Não foi possível enviar. Tente de novo.';
 
   @override
   String get planAnswerHint =>
@@ -7048,7 +7048,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get planEditorSave => 'Salvar';
 
   @override
-  String get planEditorSaveError => 'Não deu para salvar o propósito.';
+  String get planEditorSaveError => 'Não foi possível salvar o propósito.';
 
   @override
   String get planEditorSaveNew => 'Começar o propósito';
@@ -7808,7 +7808,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get postcardShareVideoFailed =>
-      'Não deu para gerar o vídeo. Enviei a imagem.';
+      'Não foi possível gerar o vídeo. Enviei a imagem.';
 
   @override
   String get postcardShareVideoPlus => 'Peregrino+';
@@ -8910,7 +8910,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get roomCloseWeekFailed =>
-      'Não deu para fechar a semana. Tente de novo.';
+      'Não foi possível fechar a semana. Tente de novo.';
 
   @override
   String get roomCloseWeekHint =>
@@ -8960,7 +8960,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get roomFallbackName => 'Grupo';
 
   @override
-  String get roomKindAmigos => 'Amigos';
+  String get roomKindAmigos => 'Círculo';
 
   @override
   String get roomKindCelula => 'Célula';
@@ -9007,7 +9007,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get roomLeaderWeekTitle => 'Acompanhamento da semana';
 
   @override
-  String get roomNameHintAmigos => 'Ex.: Amigos da facul';
+  String get roomNameHintAmigos => 'Ex.: Círculo da facul';
 
   @override
   String get roomNameHintCelula => 'Ex.: Célula Norte';
@@ -10904,7 +10904,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get webRedeemOtherAccount =>
-      'Esta assinatura do site já está ligada a outra conta do STWAY.';
+      'Esta assinatura do site já está ligada a outra conta do Stway.';
 
   @override
   String get weeklyReviewDoneBody =>

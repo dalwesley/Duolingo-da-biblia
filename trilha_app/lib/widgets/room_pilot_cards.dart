@@ -329,7 +329,7 @@ class _ReadingPickerState extends State<_ReadingPicker> {
             const SizedBox(height: AppSpace.sm),
           ],
           if (_books.isEmpty)
-            const Center(child: CircularProgressIndicator())
+            const Center(child: AppSpinner())
           else ...[
             DropdownButtonFormField<int>(
               initialValue: _book,

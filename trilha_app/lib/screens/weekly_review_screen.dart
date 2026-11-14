@@ -119,7 +119,7 @@ class _WeeklyReviewScreenState extends State<WeeklyReviewScreen> {
               Expanded(
                 child: ContentFrame(
                   child: scenes == null
-                      ? const Center(child: CircularProgressIndicator())
+                      ? const AppSpinner()
                       : ListView(
                           padding: const EdgeInsets.fromLTRB(
                             AppSpace.screen,

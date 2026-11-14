@@ -271,7 +271,6 @@ class _SenderCard extends StatelessWidget {
                   style: AppTypography.label(
                     size: 10,
                     letterSpacing: 0.2,
-                    weight: FontWeight.w800,
                     color: today ? AppRoles.presence : a.textFaint,
                   ),
                 ),

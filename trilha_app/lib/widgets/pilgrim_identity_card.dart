@@ -181,7 +181,6 @@ class PilgrimIdentityCard extends StatelessWidget {
                             overflow: TextOverflow.ellipsis,
                             style: AppTypography.display(
                               size: 24,
-                              weight: FontWeight.w800,
                               color: a.text,
                               height: 1.05,
                             ),

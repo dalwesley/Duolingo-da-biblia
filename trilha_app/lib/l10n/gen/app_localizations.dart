@@ -223,7 +223,7 @@ abstract class AppLocalizations {
   /// No description provided for @authMissingIdToken.
   ///
   /// In pt, this message translates to:
-  /// **'Não deu para entrar com o Google. Tente de novo.'**
+  /// **'Não foi possível entrar com o Google. Tente de novo.'**
   String get authMissingIdToken;
 
   /// No description provided for @authNetworkReset.
@@ -5695,7 +5695,7 @@ abstract class AppLocalizations {
   /// No description provided for @juntosCloseRoomBody.
   ///
   /// In pt, this message translates to:
-  /// **'O grupo some para todos e o código deixa de funcionar. Não é possível desfazer.'**
+  /// **'O grupo some para todos e o código deixa de funcionar. Não dá para desfazer.'**
   String get juntosCloseRoomBody;
 
   /// No description provided for @juntosCloseRoomTitle.
@@ -5977,7 +5977,7 @@ abstract class AppLocalizations {
   /// No description provided for @juntosOnlineSemantics.
   ///
   /// In pt, this message translates to:
-  /// **'{countLabel}. Ver quem está estudando'**
+  /// **'{countLabel}. Ver quem está por aqui'**
   String juntosOnlineSemantics(String countLabel);
 
   /// No description provided for @juntosOpenInvite.
@@ -6198,7 +6198,7 @@ abstract class AppLocalizations {
   /// No description provided for @juntosStudyingNow.
   ///
   /// In pt, this message translates to:
-  /// **'Estudando agora'**
+  /// **'Por aqui hoje'**
   String get juntosStudyingNow;
 
   /// No description provided for @juntosSwitchRoomBody.
@@ -6402,7 +6402,7 @@ abstract class AppLocalizations {
   /// No description provided for @leagueActiveToday.
   ///
   /// In pt, this message translates to:
-  /// **'Ativo hoje'**
+  /// **'Caminhou · por aqui'**
   String get leagueActiveToday;
 
   /// No description provided for @leagueBonusEncourage.
@@ -6486,7 +6486,7 @@ abstract class AppLocalizations {
   /// No description provided for @leagueStudying.
   ///
   /// In pt, this message translates to:
-  /// **'{count, plural, =0{0 estudando} =1{1 estudando} other{{count} estudando}}'**
+  /// **'{count, plural, =0{0 por aqui} =1{1 por aqui} other{{count} por aqui}}'**
   String leagueStudying(int count);
 
   /// No description provided for @leagueTierCedro.
@@ -9204,7 +9204,7 @@ abstract class AppLocalizations {
   /// No description provided for @notifFavoritesBody.
   ///
   /// In pt, this message translates to:
-  /// **'{count, plural, =1{Você guardou um versículo. Que tal revisitá-lo agora?} other{Você tem {count} favoritos. Releia um e treine a memória.}}'**
+  /// **'{count, plural, =1{Você guardou um versículo. Que tal revisá-lo agora?} other{Você tem {count} favoritos. Releia um e treine a memória.}}'**
   String notifFavoritesBody(int count);
 
   /// No description provided for @notifFavoritesTitle.
@@ -10068,7 +10068,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkGiftBody.
   ///
   /// In pt, this message translates to:
-  /// **'Compartilhe 1 trilha do Peregrino+ por mês com um amigo. Ela fica aberta inteira para quem recebe, sem pagar.'**
+  /// **'Compartilhe 1 trilha do Peregrino+ por mês com alguém. Ela fica aberta inteira para quem recebe, sem pagar.'**
   String get paywallPerkGiftBody;
 
   /// No description provided for @paywallPerkGiftTitle.
@@ -10698,7 +10698,7 @@ abstract class AppLocalizations {
   /// No description provided for @planAnswerError.
   ///
   /// In pt, this message translates to:
-  /// **'Não deu para enviar. Tente de novo.'**
+  /// **'Não foi possível enviar. Tente de novo.'**
   String get planAnswerError;
 
   /// No description provided for @planAnswerHint.
@@ -11028,7 +11028,7 @@ abstract class AppLocalizations {
   /// No description provided for @planEditorSaveError.
   ///
   /// In pt, this message translates to:
-  /// **'Não deu para salvar o propósito.'**
+  /// **'Não foi possível salvar o propósito.'**
   String get planEditorSaveError;
 
   /// No description provided for @planEditorSaveNew.
@@ -12168,7 +12168,7 @@ abstract class AppLocalizations {
   /// Card de compartilhar do postal (docs/postais.md)
   ///
   /// In pt, this message translates to:
-  /// **'Não deu para gerar o vídeo. Enviei a imagem.'**
+  /// **'Não foi possível gerar o vídeo. Enviei a imagem.'**
   String get postcardShareVideoFailed;
 
   /// Card de compartilhar do postal (docs/postais.md)
@@ -13884,7 +13884,7 @@ abstract class AppLocalizations {
   /// No description provided for @roomCloseWeekFailed.
   ///
   /// In pt, this message translates to:
-  /// **'Não deu para fechar a semana. Tente de novo.'**
+  /// **'Não foi possível fechar a semana. Tente de novo.'**
   String get roomCloseWeekFailed;
 
   /// No description provided for @roomCloseWeekHint.
@@ -13968,7 +13968,7 @@ abstract class AppLocalizations {
   /// No description provided for @roomKindAmigos.
   ///
   /// In pt, this message translates to:
-  /// **'Amigos'**
+  /// **'Círculo'**
   String get roomKindAmigos;
 
   /// No description provided for @roomKindCelula.
@@ -14046,7 +14046,7 @@ abstract class AppLocalizations {
   /// No description provided for @roomNameHintAmigos.
   ///
   /// In pt, this message translates to:
-  /// **'Ex.: Amigos da facul'**
+  /// **'Ex.: Círculo da facul'**
   String get roomNameHintAmigos;
 
   /// No description provided for @roomNameHintCelula.
@@ -16950,7 +16950,7 @@ abstract class AppLocalizations {
   /// No description provided for @webRedeemOtherAccount.
   ///
   /// In pt, this message translates to:
-  /// **'Esta assinatura do site já está ligada a outra conta do STWAY.'**
+  /// **'Esta assinatura do site já está ligada a outra conta do Stway.'**
   String get webRedeemOtherAccount;
 
   /// No description provided for @weeklyReviewDoneBody.

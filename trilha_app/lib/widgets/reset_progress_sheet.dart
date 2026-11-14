@@ -162,35 +162,14 @@ class _ResetProgressSheetState extends State<_ResetProgressSheet> {
             },
           ),
           const SizedBox(height: AppSpace.lg),
-          // Fica FilledButton: test/reset_progress_sheet_test.dart procura
-          // o tipo para checar o bloqueio. Estilo só com tokens.
-          FilledButton(
-            onPressed: _ready
-                ? () {
-                    ActHaptics.error();
-                    Navigator.pop(context, true);
-                  }
-                : null,
-            style: FilledButton.styleFrom(
-              backgroundColor: accent,
-              disabledBackgroundColor: accent.withValues(alpha: 0.28),
-              foregroundColor: AppColors.textOnDark,
-              disabledForegroundColor: a.textSecondary,
-              minimumSize: const Size.fromHeight(CopperCta.height),
-              padding: const EdgeInsets.symmetric(vertical: AppSpace.md),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(AppRadii.md),
-              ),
-            ),
-            child: Text(
-              _remaining > 0
-                  ? l10n.resetConfirmCountdown(_remaining)
-                  : l10n.resetConfirm,
-              style: CopperCta.labelStyle(
-                size: 16,
-                color: AppColors.textOnDark,
-              ),
-            ),
+          GhostCta(
+            label: _remaining > 0
+                ? l10n.resetConfirmCountdown(_remaining)
+                : l10n.resetConfirm,
+            danger: true,
+            expanded: true,
+            matchCopper: true,
+            onTap: _ready ? () => Navigator.pop(context, true) : null,
           ),
           const SizedBox(height: AppSpace.sm),
           GhostCta(

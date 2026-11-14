@@ -3737,7 +3737,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String juntosOnlineSemantics(String countLabel) {
-    return '$countLabel. See who\'s studying';
+    return '$countLabel. See who\'s here';
   }
 
   @override
@@ -3867,7 +3867,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get juntosStudyToday => 'Study today';
 
   @override
-  String get juntosStudyingNow => 'Studying now';
+  String get juntosStudyingNow => 'Here today';
 
   @override
   String get juntosSwitchRoomBody => 'You\'ll leave the group you\'re in now.';
@@ -3986,7 +3986,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get languageTitle => 'Language';
 
   @override
-  String get leagueActiveToday => 'Active today';
+  String get leagueActiveToday => 'Walked · here';
 
   @override
   String leagueBonusEncourage(int count) {
@@ -4054,9 +4054,9 @@ class AppLocalizationsEn extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count studying',
-      one: '1 studying',
-      zero: '0 studying',
+      other: '$count here',
+      one: '1 here',
+      zero: '0 here',
     );
     return '$_temp0';
   }
@@ -5734,7 +5734,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'You have $count favorites. Reread one and train your memory.',
-      one: 'You saved a verse. Want to revisit it now?',
+      one: 'You saved a verse. Want to review it now?',
     );
     return '$_temp0';
   }
@@ -6335,7 +6335,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallPerkGiftBody =>
-      'Share 1 Peregrino+ trail a month with a friend. It stays open, whole, for them, free.';
+      'Share 1 Peregrino+ trail a month with someone. It stays open, whole, for them, free.';
 
   @override
   String get paywallPerkGiftTitle => 'A trail to give every month';
@@ -8931,7 +8931,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get roomFallbackName => 'Group';
 
   @override
-  String get roomKindAmigos => 'Friends';
+  String get roomKindAmigos => 'Circle';
 
   @override
   String get roomKindCelula => 'Cell group';
@@ -8978,7 +8978,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get roomLeaderWeekTitle => 'Weekly check-in';
 
   @override
-  String get roomNameHintAmigos => 'E.g. College friends';
+  String get roomNameHintAmigos => 'E.g. College circle';
 
   @override
   String get roomNameHintCelula => 'E.g. North cell';
@@ -10877,7 +10877,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get webRedeemOtherAccount =>
-      'This website subscription is already linked to another STWAY account.';
+      'This website subscription is already linked to another Stway account.';
 
   @override
   String get weeklyReviewDoneBody =>

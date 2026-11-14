@@ -582,7 +582,6 @@ class _Caption extends StatelessWidget {
                     style: AppTypography.label(
                       size: 11,
                       letterSpacing: 2.4,
-                      weight: FontWeight.w800,
                       color: a.sectionLabel,
                     ).copyWith(decoration: TextDecoration.none),
                   ),

@@ -3749,7 +3749,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String juntosOnlineSemantics(String countLabel) {
-    return '$countLabel. Ver quién está estudiando';
+    return '$countLabel. Ver quién está por aquí';
   }
 
   @override
@@ -3880,7 +3880,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get juntosStudyToday => 'Estudiar hoy';
 
   @override
-  String get juntosStudyingNow => 'Estudiando ahora';
+  String get juntosStudyingNow => 'Por aquí hoy';
 
   @override
   String get juntosSwitchRoomBody => 'Saldrás del grupo en el que estás ahora.';
@@ -3999,7 +3999,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get languageTitle => 'Idioma';
 
   @override
-  String get leagueActiveToday => 'Activo hoy';
+  String get leagueActiveToday => 'Caminó · por aquí';
 
   @override
   String leagueBonusEncourage(int count) {
@@ -4067,9 +4067,9 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count estudiando',
-      one: '1 estudiando',
-      zero: '0 estudiando',
+      other: '$count por aquí',
+      one: '1 por aquí',
+      zero: '0 por aquí',
     );
     return '$_temp0';
   }
@@ -5771,7 +5771,7 @@ class AppLocalizationsEs extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Tienes $count favoritos. Relee uno y entrena la memoria.',
-      one: 'Guardaste un versículo. ¿Qué tal revisitarlo ahora?',
+      one: 'Guardaste un versículo. ¿Qué tal revisarlo ahora?',
     );
     return '$_temp0';
   }
@@ -6369,7 +6369,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paywallPerkGiftBody =>
-      'Comparte 1 ruta de Peregrino+ al mes con un amigo. Queda abierta completa para quien la recibe, sin pagar.';
+      'Comparte 1 ruta de Peregrino+ al mes con alguien. Queda abierta completa para quien la recibe, sin pagar.';
 
   @override
   String get paywallPerkGiftTitle => 'Una ruta de regalo cada mes';
@@ -8979,7 +8979,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get roomFallbackName => 'Grupo';
 
   @override
-  String get roomKindAmigos => 'Amigos';
+  String get roomKindAmigos => 'Círculo';
 
   @override
   String get roomKindCelula => 'Célula';
@@ -9026,7 +9026,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get roomLeaderWeekTitle => 'Seguimiento de la semana';
 
   @override
-  String get roomNameHintAmigos => 'Ej.: Amigos de la uni';
+  String get roomNameHintAmigos => 'Ej.: Círculo de la uni';
 
   @override
   String get roomNameHintCelula => 'Ej.: Célula Norte';
@@ -10930,7 +10930,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get webRedeemOtherAccount =>
-      'Esta suscripción del sitio ya está vinculada a otra cuenta de STWAY.';
+      'Esta suscripción del sitio ya está vinculada a otra cuenta de Stway.';
 
   @override
   String get weeklyReviewDoneBody =>

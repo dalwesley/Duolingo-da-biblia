@@ -59,10 +59,11 @@ class _CompanionInvitePromptSheetState
     setState(() => _busy = true);
     final progress = context.read<ProgressService>();
     final companions = context.read<CompanionService>();
+    final withTrailGift = context.read<SubscriptionService>().canShareTrailGift;
     await progress.markCompanionInviteOffered();
     final created = await companions.createInvite(
       progress,
-      withTrailGift: context.read<SubscriptionService>().canShareTrailGift,
+      withTrailGift: withTrailGift,
     );
     if (!mounted) return;
     if (created == null) {
