@@ -24,8 +24,11 @@ class WhatsNew {
 
   static List<(CinematicGlyph, String)> _items(AppLocalizations l) => [
     (CinematicGlyph.gift, l.whatsNew148Advent),
+    (CinematicGlyph.path, l.whatsNew149Explore),
+    (CinematicGlyph.mail, l.whatsNew149Invite),
     (CinematicGlyph.people, l.whatsNew148Plan),
     (CinematicGlyph.book, l.whatsNew148Study),
+    (CinematicGlyph.rise, l.whatsNew149Free),
     (CinematicGlyph.share, l.whatsNew148Share),
   ];
 

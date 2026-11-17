@@ -17865,6 +17865,24 @@ abstract class AppLocalizations {
   /// **'Estudar o versículo: modo interlinear, ouvir a palavra no original e ver como a TB traduz.'**
   String get whatsNew148Study;
 
+  /// No description provided for @whatsNew149Explore.
+  ///
+  /// In pt, this message translates to:
+  /// **'A aba Trilhas agora é Explorar: AT, NT e Temas em coleções, e os 66 livros da Bíblia capítulo a capítulo.'**
+  String get whatsNew149Explore;
+
+  /// No description provided for @whatsNew149Free.
+  ///
+  /// In pt, this message translates to:
+  /// **'Agora grátis: revisão da semana, erros explicados e a sua linha de crescimento no Perfil.'**
+  String get whatsNew149Free;
+
+  /// No description provided for @whatsNew149Invite.
+  ///
+  /// In pt, this message translates to:
+  /// **'Convite que vira presente: quem entra pelo seu convite e assina o Peregrino+ te dá 1 mês de Peregrino+ grátis.'**
+  String get whatsNew149Invite;
+
   /// No description provided for @whatsNewEyebrow.
   ///
   /// In pt, this message translates to:

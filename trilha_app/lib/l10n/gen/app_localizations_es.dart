@@ -11594,6 +11594,18 @@ class AppLocalizationsEs extends AppLocalizations {
       'Estudiar el versículo: modo interlineal, escuchar la palabra en el original y ver cómo la traduce la versión.';
 
   @override
+  String get whatsNew149Explore =>
+      'La pestaña Rutas ahora es Explorar: AT, NT y Temas en colecciones, y los 66 libros de la Biblia capítulo a capítulo.';
+
+  @override
+  String get whatsNew149Free =>
+      'Ahora gratis: el repaso de la semana, los errores explicados y tu línea de crecimiento en el Perfil.';
+
+  @override
+  String get whatsNew149Invite =>
+      'Invitación que se vuelve regalo: si alguien entra por tu invitación y se suscribe a Peregrino+, ganas 1 mes de Peregrino+ gratis.';
+
+  @override
   String get whatsNewEyebrow => 'Novedades';
 
   @override

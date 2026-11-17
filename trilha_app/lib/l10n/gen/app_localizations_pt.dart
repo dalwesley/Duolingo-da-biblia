@@ -11564,6 +11564,18 @@ class AppLocalizationsPt extends AppLocalizations {
       'Estudar o versículo: modo interlinear, ouvir a palavra no original e ver como a TB traduz.';
 
   @override
+  String get whatsNew149Explore =>
+      'A aba Trilhas agora é Explorar: AT, NT e Temas em coleções, e os 66 livros da Bíblia capítulo a capítulo.';
+
+  @override
+  String get whatsNew149Free =>
+      'Agora grátis: revisão da semana, erros explicados e a sua linha de crescimento no Perfil.';
+
+  @override
+  String get whatsNew149Invite =>
+      'Convite que vira presente: quem entra pelo seu convite e assina o Peregrino+ te dá 1 mês de Peregrino+ grátis.';
+
+  @override
   String get whatsNewEyebrow => 'Novidades';
 
   @override

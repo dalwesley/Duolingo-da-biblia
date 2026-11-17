@@ -11536,6 +11536,18 @@ class AppLocalizationsEn extends AppLocalizations {
       'Study the verse: interlinear mode, hear the word in the original and see how the translation renders it.';
 
   @override
+  String get whatsNew149Explore =>
+      'The Trails tab is now Explore: OT, NT and Themes as collections, and all 66 books of the Bible chapter by chapter.';
+
+  @override
+  String get whatsNew149Free =>
+      'Now free: the weekly review, explained mistakes and your growth line on your Profile.';
+
+  @override
+  String get whatsNew149Invite =>
+      'An invite that becomes a gift: when someone joins through your invite and subscribes to Peregrino+, you get 1 free month of Peregrino+.';
+
+  @override
   String get whatsNewEyebrow => 'What\'s new';
 
   @override
