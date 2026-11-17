@@ -3,7 +3,7 @@
  * acesso.
  *
  *   Abrir  → modal de leitura (perfil, Plus, relatos, console)
- *   Ficha  → modal de moderação (person-modal)
+ *   Ficha  → modal de moderação (person-modal); as duas folhas trocam pelas abas do topo
  *
  * O e-mail não fica mais em `users/{uid}` (qualquer peregrino lê esse doc).
  * A coluna vem do login, via `moderateUser` action `emails`. O que sobrou no
@@ -17,7 +17,7 @@ import { app } from './firebase.js';
 import { COL, formatDate, getAppRelease, getDocById, listDocs, listWhere } from './db.js';
 import { getRole } from './roles.js';
 import { bindModalDismiss, escapeHtml, showModalElement, showToast } from './ui.js';
-import { openPersonModal } from './person-modal.js';
+import { openPersonModal, accountTabsHtml } from './person-modal.js';
 
 const moderateUser = httpsCallable(getFunctions(app, 'us-central1'), 'moderateUser');
 
@@ -385,6 +385,7 @@ async function openSupportModal({ uid, user: known, onOpenFicha } = {}) {
               <h2>${escapeHtml(name)}</h2>
               <p class="pm-sub"><code>${escapeHtml(uid)}</code> ${copyBtn(uid, 'Copiar uid')}</p>
             </div>
+            ${onOpenFicha ? accountTabsHtml('support') : ''}
             <button type="button" class="modal-close" aria-label="Fechar">×</button>
           </header>
           <ul class="db-list">
@@ -397,7 +398,6 @@ async function openSupportModal({ uid, user: known, onOpenFicha } = {}) {
             ${copyBtn(`node scripts/set_plus_active.mjs --uids ${uid} --on --apply`, 'Comando: ligar Plus')}
             ${copyBtn(`node scripts/set_plus_active.mjs --uids ${uid} --off --apply`, 'Comando: desligar Plus')}
             <a class="btn btn-ghost btn-sm" target="_blank" rel="noopener" href="https://console.firebase.google.com/project/${escapeHtml(import.meta.env.VITE_FIREBASE_PROJECT_ID || 'trilha-biblia')}/firestore/data/~2Fusers~2F${encodeURIComponent(uid)}">Abrir no Console ↗</a>
-            <button type="button" class="btn btn-secondary btn-sm" data-open-ficha>Ficha e moderação</button>
           </div>
           <h4 class="us-sub">Linha do tempo</h4>
           <div id="us-timeline"><p class="ez-hint">Carregando…</p></div>
@@ -422,7 +422,7 @@ async function openSupportModal({ uid, user: known, onOpenFicha } = {}) {
         }
       });
     });
-    modal.querySelector('[data-open-ficha]')?.addEventListener('click', () => {
+    modal.querySelector('[data-account-tab="ficha"]')?.addEventListener('click', () => {
       close();
       onOpenFicha?.(uid, name);
     });
@@ -523,8 +523,7 @@ function usersTable(users, sort, latestBuild, filter) {
                 <td>${escapeHtml(dayLabel(u.firstOpenDate))}</td>
                 <td>${escapeHtml(dayLabel(u.lastSeenDate))}</td>
                 <td class="td-actions">
-                  <button type="button" class="btn btn-ghost btn-sm" data-abrir="${escapeHtml(u.id)}" data-abrir-name="${escapeHtml(name)}">Abrir</button>
-                  <button type="button" class="btn btn-secondary btn-sm" data-ficha="${escapeHtml(u.id)}" data-ficha-name="${escapeHtml(name)}">Ficha</button>
+                  <button type="button" class="btn btn-secondary btn-sm" data-abrir="${escapeHtml(u.id)}" data-abrir-name="${escapeHtml(name)}">Abrir</button>
                 </td>
               </tr>`;
           }).join('')}
@@ -549,7 +548,7 @@ export async function renderUsersPage(root) {
       <header class="ez-hero">
         <div>
           <h1>Suporte</h1>
-          <p class="ez-lead">Abrir = perfil e Plus. Ficha = moderação. Busque por e-mail, uid ou código de passe.</p>
+          <p class="ez-lead">Abrir mostra conta e Plus; a aba Moderação fica na mesma folha. Busque por e-mail, uid ou código de passe.</p>
         </div>
       </header>
       <form class="ez-toolbar" id="us-form">
@@ -583,7 +582,7 @@ export async function renderUsersPage(root) {
 
   function openFicha(uid, name = '') {
     clearResults();
-    openPersonModal({ uid, name, onChanged: loadList });
+    openPersonModal({ uid, name, onChanged: loadList, onOpenSupport: openAbrir });
   }
 
   function openAbrir(uid, name = '') {
@@ -718,8 +717,7 @@ export async function renderUsersPage(root) {
             <li>
               <span>${escapeHtml(displayName(u))} <code>${escapeHtml(u.id)}</code></span>
               <strong>
-                <button type="button" class="btn btn-ghost btn-sm" data-abrir="${escapeHtml(u.id)}" data-abrir-name="${escapeHtml(displayName(u))}">Abrir</button>
-                <button type="button" class="btn btn-secondary btn-sm" data-ficha="${escapeHtml(u.id)}" data-ficha-name="${escapeHtml(displayName(u))}">Ficha</button>
+                <button type="button" class="btn btn-secondary btn-sm" data-abrir="${escapeHtml(u.id)}" data-abrir-name="${escapeHtml(displayName(u))}">Abrir</button>
               </strong>
             </li>`).join('')}</ul>`;
         wireRowActions(out);

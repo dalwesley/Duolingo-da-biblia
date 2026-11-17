@@ -100,9 +100,18 @@ function isoDate(v) {
 }
 
 /**
- * @param {{ uid: string, name?: string, reportId?: string, onChanged?: () => void }} opts
+ * Abas no topo da folha da conta: Conta e Plus (suporte) | Moderação (ficha).
+ * Quem abre passa o callback da outra aba; sem callback, não há abas.
  */
-export async function openPersonModal({ uid, name = '', reportId = '', onChanged } = {}) {
+export function accountTabsHtml(active) {
+  const tab = (key, label) => `<button type="button" class="ez-chip${active === key ? ' active' : ''}" data-account-tab="${key}"${active === key ? ' aria-current="page"' : ''}>${label}</button>`;
+  return `<nav class="pm-tabs" aria-label="Seções da conta">${tab('support', 'Conta e Plus')}${tab('ficha', 'Moderação')}</nav>`;
+}
+
+/**
+ * @param {{ uid: string, name?: string, reportId?: string, onChanged?: () => void, onOpenSupport?: (uid: string, name: string) => void }} opts
+ */
+export async function openPersonModal({ uid, name = '', reportId = '', onChanged, onOpenSupport } = {}) {
   const modal = document.getElementById('modal');
   if (!modal || !uid) return;
   const isAdmin = getRole() === 'admin';
@@ -202,6 +211,7 @@ export async function openPersonModal({ uid, name = '', reportId = '', onChanged
             </p>
           </div>
         </div>
+        ${onOpenSupport ? accountTabsHtml('ficha') : ''}
         <button type="button" class="modal-close" aria-label="Fechar">×</button>
       </header>`;
   }
@@ -421,6 +431,10 @@ export async function openPersonModal({ uid, name = '', reportId = '', onChanged
     modal.querySelector('.modal-close')?.addEventListener('click', close);
     modal.querySelector('.modal-backdrop')?.addEventListener('click', (e) => {
       if (e.target.classList.contains('modal-backdrop')) close();
+    });
+    modal.querySelector('[data-account-tab="support"]')?.addEventListener('click', () => {
+      close();
+      onOpenSupport?.(uid, displayName());
     });
     modal.querySelectorAll('[data-copy]').forEach((btn) => {
       btn.addEventListener('click', async () => {

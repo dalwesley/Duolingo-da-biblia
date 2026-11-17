@@ -5612,6 +5612,8 @@ html.theme-dark .builder-step-item { background: var(--surface-2); }
 .qs-head h2 { margin: 0.1rem 0 0.2rem; }
 .qs-head .ez-lead { margin: 0; max-width: 36rem; }
 .qs-head .modal-close { flex-shrink: 0; }
+.pm-tabs { display: flex; gap: var(--space-2); margin-left: auto; align-self: center; flex-wrap: wrap; }
+.pm-tabs .ez-chip { padding: 0.35rem 0.8rem; }
 .qs-layout {
   flex: 1;
   min-height: 0;
