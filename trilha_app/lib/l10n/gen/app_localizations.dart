@@ -100,6 +100,144 @@ abstract class AppLocalizations {
     Locale('pt'),
   ];
 
+  /// No description provided for @adventPrizeClosed.
+  ///
+  /// In pt, this message translates to:
+  /// **'O prazo do presente terminou. A caminhada segue aberta.'**
+  String get adventPrizeClosed;
+
+  /// No description provided for @adventPrizeConfirmed.
+  ///
+  /// In pt, this message translates to:
+  /// **'{done} de {total} cenas confirmadas'**
+  String adventPrizeConfirmed(int done, int total);
+
+  /// No description provided for @adventPrizeEarnedGroup.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu grupo chegou junto ao Natal.'**
+  String get adventPrizeEarnedGroup;
+
+  /// No description provided for @adventPrizeEarnedPair.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você e sua dupla chegaram juntos ao Natal.'**
+  String get adventPrizeEarnedPair;
+
+  /// No description provided for @adventPrizeEarnedSolo.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você caminhou o Advento inteiro, um passo por dia.'**
+  String get adventPrizeEarnedSolo;
+
+  /// No description provided for @adventPrizeEarnedTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você ganhou {months, plural, =1{1 mês} other{{months} meses}} de Peregrino+'**
+  String adventPrizeEarnedTitle(int months);
+
+  /// No description provided for @adventPrizeKept.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seus meses ficam guardados e entram quando sua assinatura terminar.'**
+  String get adventPrizeKept;
+
+  /// No description provided for @adventPrizeKicker.
+  ///
+  /// In pt, this message translates to:
+  /// **'Presente do Advento'**
+  String get adventPrizeKicker;
+
+  /// No description provided for @adventPrizeMonths.
+  ///
+  /// In pt, this message translates to:
+  /// **'{months, plural, =1{1 mês} other{{months} meses}}'**
+  String adventPrizeMonths(int months);
+
+  /// No description provided for @adventPrizeNeedsLogin.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entre com sua conta para o presente valer.'**
+  String get adventPrizeNeedsLogin;
+
+  /// No description provided for @adventPrizePlusUntil.
+  ///
+  /// In pt, this message translates to:
+  /// **'Peregrino+ até {date}'**
+  String adventPrizePlusUntil(String date);
+
+  /// No description provided for @adventPrizePromise.
+  ///
+  /// In pt, this message translates to:
+  /// **'Caminhe os {days} dias do Advento e ganhe até {months, plural, =1{1 mês} other{{months} meses}} de Peregrino+.'**
+  String adventPrizePromise(int days, int months);
+
+  /// No description provided for @adventPrizeRosterBefore.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dupla e grupo valem se estiverem formados até o fim do 1º dia ({date}).'**
+  String adventPrizeRosterBefore(String date);
+
+  /// No description provided for @adventPrizeRosterGroup.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você caminha em grupo. Com {count} do grupo concluindo, cada um que concluir ganha 3 meses.'**
+  String adventPrizeRosterGroup(int count);
+
+  /// No description provided for @adventPrizeRosterPair.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você caminha em dupla. Se os dois concluírem, cada um ganha 2 meses.'**
+  String get adventPrizeRosterPair;
+
+  /// No description provided for @adventPrizeRosterSolo.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nesta estação você caminha sozinho. Ao concluir, ganha 1 mês.'**
+  String get adventPrizeRosterSolo;
+
+  /// No description provided for @adventPrizeShareLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quem caminha os {days} dias ganha até {months, plural, =1{1 mês} other{{months} meses}} de Peregrino+. Em dupla ou em grupo, ganha mais.'**
+  String adventPrizeShareLine(int days, int months);
+
+  /// No description provided for @adventPrizeStepADay.
+  ///
+  /// In pt, this message translates to:
+  /// **'Um passo por dia; cada cena vale a partir do dia dela. Perdeu um dia? Dá para fazer depois, até {max} cenas por dia, até {date}.'**
+  String adventPrizeStepADay(String date, int max);
+
+  /// No description provided for @adventPrizeTierGroup.
+  ///
+  /// In pt, this message translates to:
+  /// **'Concluir com {count}+ do seu grupo'**
+  String adventPrizeTierGroup(int count);
+
+  /// No description provided for @adventPrizeTierPair.
+  ///
+  /// In pt, this message translates to:
+  /// **'Concluir com sua dupla da Companhia'**
+  String get adventPrizeTierPair;
+
+  /// No description provided for @adventPrizeTierSolo.
+  ///
+  /// In pt, this message translates to:
+  /// **'Concluir sozinho'**
+  String get adventPrizeTierSolo;
+
+  /// No description provided for @adventPrizeUnconfirmed.
+  ///
+  /// In pt, this message translates to:
+  /// **'Alguns dias não foram confirmados (sem internet, rápido demais ou além das cenas do dia). Refaça a cena com conexão para ela valer no presente.'**
+  String get adventPrizeUnconfirmed;
+
+  /// No description provided for @adventPrizeWaitingOthers.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quando sua dupla ou seu grupo concluir, seu presente sobe.'**
+  String get adventPrizeWaitingOthers;
+
   /// No description provided for @appReportCategoryAccount.
   ///
   /// In pt, this message translates to:
@@ -1329,12 +1467,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Te vejo amanhã às {hour}h'**
   String celebrationSeeYouTomorrow(int hour);
-
-  /// No description provided for @celebrationShareInsight.
-  ///
-  /// In pt, this message translates to:
-  /// **'Compartilhar o Hoje:'**
-  String get celebrationShareInsight;
 
   /// No description provided for @celebrationStatAccuracy.
   ///
@@ -4207,7 +4339,7 @@ abstract class AppLocalizations {
   /// No description provided for @groupDaysAway.
   ///
   /// In pt, this message translates to:
-  /// **'{count, plural, =1{1 dia sem caminhar} other{{count} dias sem caminhar}}'**
+  /// **'{count, plural, =1{caminhou ontem} other{caminhou há {count} dias}}'**
   String groupDaysAway(int count);
 
   /// No description provided for @groupEmptyLeaderBody.
@@ -6639,6 +6771,30 @@ abstract class AppLocalizations {
   /// **'{count, plural, =0{As lâmpadas acabaram — cada erro apaga uma.} =1{Resta 1 lâmpada — cada erro apaga uma.} other{Restam {count} lâmpadas — cada erro apaga uma.}}'**
   String lessonLampsLeft(int count);
 
+  /// Check-in da prática IRL
+  ///
+  /// In pt, this message translates to:
+  /// **'Marquei'**
+  String get lessonLifeDone;
+
+  /// Fase IRL após o insight (dailyChallenge)
+  ///
+  /// In pt, this message translates to:
+  /// **'Prática de hoje'**
+  String get lessonLifeEyebrow;
+
+  /// No description provided for @lessonLifeLater.
+  ///
+  /// In pt, this message translates to:
+  /// **'Depois'**
+  String get lessonLifeLater;
+
+  /// No description provided for @lessonLifeSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Viva o texto fora do app'**
+  String get lessonLifeSubtitle;
+
   /// No description provided for @lessonListen.
   ///
   /// In pt, this message translates to:
@@ -8384,6 +8540,282 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'dual'**
   String get morphDual;
+
+  /// No description provided for @morphExplainAbsolute.
+  ///
+  /// In pt, this message translates to:
+  /// **'Absoluto = forma livre do nome, sem “de…” colado.'**
+  String get morphExplainAbsolute;
+
+  /// No description provided for @morphExplainAdjective.
+  ///
+  /// In pt, this message translates to:
+  /// **'Adjetivo = qualifica o nome (“bom”, “grande”, “santo”).'**
+  String get morphExplainAdjective;
+
+  /// No description provided for @morphExplainAdverb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Advérbio = modifica a ação (“ainda”, “muito”, “ali”).'**
+  String get morphExplainAdverb;
+
+  /// No description provided for @morphExplainAorist.
+  ///
+  /// In pt, this message translates to:
+  /// **'Aoristo = ação vista como um ponto (sem duração).'**
+  String get morphExplainAorist;
+
+  /// No description provided for @morphExplainArticle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Artigo = marca o determinado (“o”, “a”) no hebraico.'**
+  String get morphExplainArticle;
+
+  /// No description provided for @morphExplainCohortative.
+  ///
+  /// In pt, this message translates to:
+  /// **'Coortativo = “vamos…” / desejo na 1ª pessoa (“façamos”).'**
+  String get morphExplainCohortative;
+
+  /// No description provided for @morphExplainConjunction.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conjunção = une frases ou palavras (“e”, “mas”, “que”).'**
+  String get morphExplainConjunction;
+
+  /// No description provided for @morphExplainConstruct.
+  ///
+  /// In pt, this message translates to:
+  /// **'Construto = “de…” — liga dois nomes (casa de Davi).'**
+  String get morphExplainConstruct;
+
+  /// No description provided for @morphExplainDetermined.
+  ///
+  /// In pt, this message translates to:
+  /// **'Determinado = forma marcada como “o/a” (definida).'**
+  String get morphExplainDetermined;
+
+  /// No description provided for @morphExplainDivineName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nome divino = referência a Deus no original.'**
+  String get morphExplainDivineName;
+
+  /// No description provided for @morphExplainDual.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dual = exatamente dois (olhos, mãos, ou um par).'**
+  String get morphExplainDual;
+
+  /// No description provided for @morphExplainFem.
+  ///
+  /// In pt, this message translates to:
+  /// **'Feminino = gênero gramatical no original (não é “fêmea” em português).'**
+  String get morphExplainFem;
+
+  /// No description provided for @morphExplainFuture.
+  ///
+  /// In pt, this message translates to:
+  /// **'Futuro = ação ainda por vir.'**
+  String get morphExplainFuture;
+
+  /// No description provided for @morphExplainHifil.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hifil = causativo (“fazer alguém fazer”, “fazer acontecer”).'**
+  String get morphExplainHifil;
+
+  /// No description provided for @morphExplainHitpael.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hitpael = reflexivo ou recíproco (“fazer a si mesmo”, “uns aos outros”).'**
+  String get morphExplainHitpael;
+
+  /// No description provided for @morphExplainHofal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hofal = passiva do hifil (“foi feito causar”).'**
+  String get morphExplainHofal;
+
+  /// No description provided for @morphExplainImperative.
+  ///
+  /// In pt, this message translates to:
+  /// **'Imperativo = ordem ou pedido direto.'**
+  String get morphExplainImperative;
+
+  /// No description provided for @morphExplainImperfectGk.
+  ///
+  /// In pt, this message translates to:
+  /// **'Imperfeito grego = ação contínua ou repetida no passado.'**
+  String get morphExplainImperfectGk;
+
+  /// No description provided for @morphExplainImperfectHeb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Imperfecto = ação em curso, habitual ou futura.'**
+  String get morphExplainImperfectHeb;
+
+  /// No description provided for @morphExplainInfAbsolute.
+  ///
+  /// In pt, this message translates to:
+  /// **'Infinitivo absoluto = ênfase (“certamente fará”, “fazer de fato”).'**
+  String get morphExplainInfAbsolute;
+
+  /// No description provided for @morphExplainInfConstruct.
+  ///
+  /// In pt, this message translates to:
+  /// **'Infinitivo construto = forma verbal que se liga a outra palavra (“ao fazer”).'**
+  String get morphExplainInfConstruct;
+
+  /// No description provided for @morphExplainJussive.
+  ///
+  /// In pt, this message translates to:
+  /// **'Jussivo = desejo ou ordem suave na 3ª pessoa (“que ele…”).'**
+  String get morphExplainJussive;
+
+  /// No description provided for @morphExplainMasc.
+  ///
+  /// In pt, this message translates to:
+  /// **'Masculino = gênero gramatical no original (não é “macho” em português).'**
+  String get morphExplainMasc;
+
+  /// No description provided for @morphExplainNeuter.
+  ///
+  /// In pt, this message translates to:
+  /// **'Neutro = gênero gramatical sem masculino nem feminino (comum no grego).'**
+  String get morphExplainNeuter;
+
+  /// No description provided for @morphExplainNifal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nifal = voz passiva ou reflexiva (“foi feito”, “se fez”).'**
+  String get morphExplainNifal;
+
+  /// No description provided for @morphExplainNoun.
+  ///
+  /// In pt, this message translates to:
+  /// **'Substantivo = nomeia pessoa, lugar, coisa ou ideia.'**
+  String get morphExplainNoun;
+
+  /// No description provided for @morphExplainObjectMarker.
+  ///
+  /// In pt, this message translates to:
+  /// **'Marcador de objeto = aponta o complemento direto no hebraico (não se traduz).'**
+  String get morphExplainObjectMarker;
+
+  /// No description provided for @morphExplainParticiple.
+  ///
+  /// In pt, this message translates to:
+  /// **'Particípio = ação como qualidade ou estado contínuo (“o que faz”).'**
+  String get morphExplainParticiple;
+
+  /// No description provided for @morphExplainParticle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Partícula = palavra pequena que amarra o sentido (não é o “miolo” do versículo).'**
+  String get morphExplainParticle;
+
+  /// No description provided for @morphExplainPerfect.
+  ///
+  /// In pt, this message translates to:
+  /// **'Perfeito = ação vista como completa (muitas vezes no passado).'**
+  String get morphExplainPerfect;
+
+  /// No description provided for @morphExplainPerson1.
+  ///
+  /// In pt, this message translates to:
+  /// **'1ª pessoa = eu / nós — quem fala.'**
+  String get morphExplainPerson1;
+
+  /// No description provided for @morphExplainPerson2.
+  ///
+  /// In pt, this message translates to:
+  /// **'2ª pessoa = tu / vós — a quem se fala.'**
+  String get morphExplainPerson2;
+
+  /// No description provided for @morphExplainPerson3.
+  ///
+  /// In pt, this message translates to:
+  /// **'3ª pessoa = ele / ela / eles — de quem se fala.'**
+  String get morphExplainPerson3;
+
+  /// No description provided for @morphExplainPiel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Piel = ação intensa ou causativa (“fazer de verdade”, “intensificar”).'**
+  String get morphExplainPiel;
+
+  /// No description provided for @morphExplainPl.
+  ///
+  /// In pt, this message translates to:
+  /// **'Plural = mais de um. Em alguns nomes (como Elohim), pode marcar majestade, não quantidade.'**
+  String get morphExplainPl;
+
+  /// No description provided for @morphExplainPrep.
+  ///
+  /// In pt, this message translates to:
+  /// **'Preposição = liga o sentido (“em”, “para”, “com”, “sobre”).'**
+  String get morphExplainPrep;
+
+  /// No description provided for @morphExplainPresent.
+  ///
+  /// In pt, this message translates to:
+  /// **'Presente = ação agora ou habitual.'**
+  String get morphExplainPresent;
+
+  /// No description provided for @morphExplainPronominal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pronominal = o sufixo funciona como pronome (“meu”, “nosso”, “deles”).'**
+  String get morphExplainPronominal;
+
+  /// No description provided for @morphExplainProper.
+  ///
+  /// In pt, this message translates to:
+  /// **'Próprio = nome de pessoa, lugar ou título específico.'**
+  String get morphExplainProper;
+
+  /// No description provided for @morphExplainPual.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pual = passiva do piel (“foi feito com intensidade”).'**
+  String get morphExplainPual;
+
+  /// No description provided for @morphExplainQal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Qal = ação simples, no sentido básico do verbo.'**
+  String get morphExplainQal;
+
+  /// No description provided for @morphExplainSing.
+  ///
+  /// In pt, this message translates to:
+  /// **'Singular = um só — uma pessoa, coisa ou ação.'**
+  String get morphExplainSing;
+
+  /// No description provided for @morphExplainSuffix.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sufixo = terminção colada na palavra (muitas vezes “meu”, “teu”, “dele”).'**
+  String get morphExplainSuffix;
+
+  /// No description provided for @morphExplainVerb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Verbo = a ação ou o estado no versículo.'**
+  String get morphExplainVerb;
+
+  /// No description provided for @morphExplainWayyiqtol.
+  ///
+  /// In pt, this message translates to:
+  /// **'Wayyiqtol = narrativa sequencial (“e então…”), típica das histórias.'**
+  String get morphExplainWayyiqtol;
+
+  /// No description provided for @morphExplainWeqatal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Weqatal = sequência no perfeito — continua a linha narrativa ou instrutiva.'**
+  String get morphExplainWeqatal;
 
   /// No description provided for @morphExtraGentilic.
   ///
@@ -10737,6 +11169,30 @@ abstract class AppLocalizations {
   /// **'Responda para ver o que o grupo escreveu.'**
   String get planAnswersLocked;
 
+  /// No description provided for @planAnswersLockedPrivate.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua resposta fica com você e o líder.'**
+  String get planAnswersLockedPrivate;
+
+  /// No description provided for @planAnswersNowOpen.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quem responder vê as respostas do grupo.'**
+  String get planAnswersNowOpen;
+
+  /// No description provided for @planAnswersNowPrivate.
+  ///
+  /// In pt, this message translates to:
+  /// **'Agora só você vê as respostas.'**
+  String get planAnswersNowPrivate;
+
+  /// No description provided for @planAnswersPrivateNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Neste grupo, as respostas ficam com o líder.'**
+  String get planAnswersPrivateNote;
+
   /// No description provided for @planAnswersTitle.
   ///
   /// In pt, this message translates to:
@@ -10857,6 +11313,36 @@ abstract class AppLocalizations {
   /// **'O propósito do grupo foi fechado'**
   String get planClosingBannerTitle;
 
+  /// No description provided for @planCoverDay.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia {n} de {total}'**
+  String planCoverDay(int n, int total);
+
+  /// No description provided for @planCoverNoneToday.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ninguém foi hoje ainda'**
+  String get planCoverNoneToday;
+
+  /// No description provided for @planCoverStarts.
+  ///
+  /// In pt, this message translates to:
+  /// **'{days, plural, =0{Começa hoje} =1{Começa amanhã} other{Começa em {days} dias}}'**
+  String planCoverStarts(int days);
+
+  /// No description provided for @planCoverToday.
+  ///
+  /// In pt, this message translates to:
+  /// **'{done} de {total} já foram hoje'**
+  String planCoverToday(int done, int total);
+
+  /// No description provided for @planCoverTogether.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 caminha aqui} other{{count} caminham juntos}}'**
+  String planCoverTogether(int count);
+
   /// No description provided for @planDateRange.
   ///
   /// In pt, this message translates to:
@@ -10952,6 +11438,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Quantas semanas o grupo caminha junto. Você escolhe o dia de começar; o fim fecha a última semana.'**
   String get planEditorDurationBody;
+
+  /// No description provided for @planEditorDurationSeason.
+  ///
+  /// In pt, this message translates to:
+  /// **'Segue as datas do {name}: um dia do propósito para cada dia da estação.'**
+  String planEditorDurationSeason(String name);
+
+  /// No description provided for @planEditorDurationTrail.
+  ///
+  /// In pt, this message translates to:
+  /// **'Segue a trilha {name}: um dia do propósito para cada cena.'**
+  String planEditorDurationTrail(String name);
 
   /// No description provided for @planEditorEnd.
   ///
@@ -11175,16 +11673,28 @@ abstract class AppLocalizations {
   /// **'No dia 1: {items}'**
   String planFirstDay(String items);
 
+  /// No description provided for @planGoScene.
+  ///
+  /// In pt, this message translates to:
+  /// **'Abrir a cena'**
+  String get planGoScene;
+
   /// Countdown label until the plan ends (end of the last day).
   ///
   /// In pt, this message translates to:
   /// **'Termina em'**
   String get planHearthEnds;
 
+  /// No description provided for @planHearthEndsIn.
+  ///
+  /// In pt, this message translates to:
+  /// **'{days, plural, =0{Termina hoje} =1{Termina amanhã} other{Termina em {days} dias}}'**
+  String planHearthEndsIn(int days);
+
   /// Header of the group card (people + countdown) while a plan exists.
   ///
   /// In pt, this message translates to:
-  /// **'O grupo no propósito'**
+  /// **'Quem caminha junto'**
   String get planHearthLabel;
 
   /// Countdown label until the plan starts.
@@ -11294,6 +11804,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Marcar leitura do dia'**
   String get planMarkDayRead;
+
+  /// No description provided for @planMenuAnswersOpen.
+  ///
+  /// In pt, this message translates to:
+  /// **'Abrir as respostas ao grupo'**
+  String get planMenuAnswersOpen;
+
+  /// No description provided for @planMenuAnswersPrivate.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fechar as respostas (só o líder vê)'**
+  String get planMenuAnswersPrivate;
 
   /// No description provided for @planMenuCreate.
   ///
@@ -11607,6 +12129,24 @@ abstract class AppLocalizations {
   /// **'Você ganhou o selo Fiel. Ele fica ao lado do seu nome no grupo.'**
   String get planRevealYourSeal;
 
+  /// Person sheet: day label above one answer.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia {n}'**
+  String planSeatAnswerDay(int n);
+
+  /// Person sheet: the person answered days the viewer hasn't answered yet.
+  ///
+  /// In pt, this message translates to:
+  /// **'Responda os mesmos dias para ver o que {name} escreveu.'**
+  String planSeatAnswersHidden(String name);
+
+  /// Person sheet: section with this person's answers to the plan's daily questions.
+  ///
+  /// In pt, this message translates to:
+  /// **'Respostas'**
+  String get planSeatAnswersLabel;
+
   /// Person sheet stat label: days of the plan this person closed (value like 5/21).
   ///
   /// In pt, this message translates to:
@@ -11661,6 +12201,36 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{1 capítulo já lido foi pulado} other{{count} capítulos já lidos foram pulados}}'**
   String planSkippedChaptersToast(int count);
 
+  /// No description provided for @planSourceChangedFollows.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name}: {now} dias. A duração e as perguntas seguem a escolha nova.'**
+  String planSourceChangedFollows(String name, int now);
+
+  /// No description provided for @planSourceChangedLonger.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} é maior que a escolha anterior: {now} dias em vez de {before}. A duração e as perguntas seguem a escolha nova.'**
+  String planSourceChangedLonger(String name, int now, int before);
+
+  /// No description provided for @planSourceChangedSame.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} tem a mesma duração da escolha anterior: {now} dias. As perguntas seguem a escolha nova.'**
+  String planSourceChangedSame(String name, int now);
+
+  /// No description provided for @planSourceChangedShorter.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} é menor que a escolha anterior: {now} dias em vez de {before}. A duração e as perguntas seguem a escolha nova.'**
+  String planSourceChangedShorter(String name, int now, int before);
+
+  /// No description provided for @planSourceFromTomorrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'O propósito já começou: a troca vale a partir de amanhã.'**
+  String get planSourceFromTomorrow;
+
   /// No description provided for @planSourcePick.
   ///
   /// In pt, this message translates to:
@@ -11670,7 +12240,7 @@ abstract class AppLocalizations {
   /// No description provided for @planSourceQuestionBody.
   ///
   /// In pt, this message translates to:
-  /// **'Todo dia o grupo responde uma pergunta, tirada da cena do dia ou, sem cena, do capítulo. Abra os dias para ver cada uma e trocar a que quiser.'**
+  /// **'Todo dia o grupo responde uma pergunta, tirada da cena do dia ou, sem cena, do capítulo. Escolha para ver cada dia e trocar a que quiser.'**
   String get planSourceQuestionBody;
 
   /// No description provided for @planSourceQuestionNone.
@@ -11703,11 +12273,23 @@ abstract class AppLocalizations {
   /// **'{book}, a partir do capítulo {from}'**
   String planSourceReadingFrom(String book, int from);
 
+  /// No description provided for @planSourceReadingScenes.
+  ///
+  /// In pt, this message translates to:
+  /// **'Segue as cenas: cada dia traz o capítulo da passagem da cena do dia.'**
+  String get planSourceReadingScenes;
+
   /// No description provided for @planSourceRemove.
   ///
   /// In pt, this message translates to:
   /// **'Tirar'**
   String get planSourceRemove;
+
+  /// No description provided for @planSourceRestart.
+  ///
+  /// In pt, this message translates to:
+  /// **'O propósito recomeça no dia 1, em {date}. Quem já entrou continua dentro.'**
+  String planSourceRestart(String date);
 
   /// No description provided for @planSourceScene.
   ///
@@ -11733,6 +12315,12 @@ abstract class AppLocalizations {
   /// **'{trail} · a partir de “{title}”'**
   String planSourceSceneFrom(String trail, String title);
 
+  /// No description provided for @planSourceSeason.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} · cada dia traz a cena do dia da estação, na mesma data.'**
+  String planSourceSeason(String name);
+
   /// No description provided for @planStartAnother.
   ///
   /// In pt, this message translates to:
@@ -11744,6 +12332,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Começar plano · {minutes} min/dia'**
   String planStartCta(int minutes);
+
+  /// No description provided for @planStepRead.
+  ///
+  /// In pt, this message translates to:
+  /// **'Leitura'**
+  String get planStepRead;
+
+  /// No description provided for @planStepScene.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cena'**
+  String get planStepScene;
 
   /// No description provided for @planSuggestGeneral.
   ///
@@ -13965,6 +14565,30 @@ abstract class AppLocalizations {
   /// **'Grupo'**
   String get roomFallbackName;
 
+  /// No description provided for @roomFormingBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{Falta 1 pessoa} other{Faltam {count} pessoas}} para o grupo começar. Até lá, propósito, semana e presentes do grupo esperam.'**
+  String roomFormingBody(int count);
+
+  /// No description provided for @roomFormingCompanion.
+  ///
+  /// In pt, this message translates to:
+  /// **'Só vocês dois? Caminhem em Companhia'**
+  String get roomFormingCompanion;
+
+  /// No description provided for @roomFormingInvite.
+  ///
+  /// In pt, this message translates to:
+  /// **'Chamar pessoas'**
+  String get roomFormingInvite;
+
+  /// No description provided for @roomFormingTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'O grupo começa com {count}'**
+  String roomFormingTitle(int count);
+
   /// No description provided for @roomKindAmigos.
   ///
   /// In pt, this message translates to:
@@ -15465,6 +16089,18 @@ abstract class AppLocalizations {
   /// **'Versão'**
   String get settingsVersion;
 
+  /// No description provided for @settingsWhatsNew.
+  ///
+  /// In pt, this message translates to:
+  /// **'Novidades'**
+  String get settingsWhatsNew;
+
+  /// No description provided for @settingsWhatsNewSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que chegou nesta versão'**
+  String get settingsWhatsNewSubtitle;
+
   /// No description provided for @settingsYourName.
   ///
   /// In pt, this message translates to:
@@ -15962,6 +16598,48 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'O que você viu no texto'**
   String get takeawaysTitle;
+
+  /// Rótulo do segundo slide do carrossel Hoje
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu postal'**
+  String get todayPostcardSlideHint;
+
+  /// CTA na placa Hoje: imagem da frase do dia
+  ///
+  /// In pt, this message translates to:
+  /// **'Compartilhar esta frase'**
+  String get todayShareInsight;
+
+  /// Convite do Anan para compartilhar a frase (variante)
+  ///
+  /// In pt, this message translates to:
+  /// **'Alguém perto de você precisa ouvir isso.'**
+  String get todayShareNudgeA;
+
+  /// Convite do Anan para compartilhar a frase (variante)
+  ///
+  /// In pt, this message translates to:
+  /// **'Compartilhe a Palavra. Ela muda vidas.'**
+  String get todayShareNudgeB;
+
+  /// Convite do Anan para compartilhar a frase (variante)
+  ///
+  /// In pt, this message translates to:
+  /// **'Leve essa frase a alguém hoje.'**
+  String get todayShareNudgeC;
+
+  /// Rótulo do Anan acima do convite para compartilhar
+  ///
+  /// In pt, this message translates to:
+  /// **'Palavra'**
+  String get todayShareNudgeMark;
+
+  /// CTA no slide do postal na placa Hoje; abre imagem (grátis) ou vídeo (Plus)
+  ///
+  /// In pt, this message translates to:
+  /// **'Compartilhar postal'**
+  String get todaySharePostcard;
 
   /// No description provided for @tomorrowDayOf.
   ///
@@ -16593,6 +17271,12 @@ abstract class AppLocalizations {
   /// **'primeira'**
   String get verseStudyFirst;
 
+  /// No description provided for @verseStudyGlossCount.
+  ///
+  /// In pt, this message translates to:
+  /// **'{gloss} · {count}×'**
+  String verseStudyGlossCount(String gloss, int count);
+
   /// No description provided for @verseStudyGoToText.
   ///
   /// In pt, this message translates to:
@@ -16602,7 +17286,7 @@ abstract class AppLocalizations {
   /// No description provided for @verseStudyInThisBook.
   ///
   /// In pt, this message translates to:
-  /// **'Neste livro — as aparições perto deste versículo.'**
+  /// **'Neste livro — em ordem canônica.'**
   String get verseStudyInThisBook;
 
   /// No description provided for @verseStudyInThisVerse.
@@ -16623,6 +17307,12 @@ abstract class AppLocalizations {
   /// **'Lema'**
   String get verseStudyLemma;
 
+  /// No description provided for @verseStudyListenLemma.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ouvir o original'**
+  String get verseStudyListenLemma;
+
   /// No description provided for @verseStudyLoadFailed.
   ///
   /// In pt, this message translates to:
@@ -16634,6 +17324,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Abrindo o léxico…'**
   String get verseStudyLoading;
+
+  /// No description provided for @verseStudyMorphTap.
+  ///
+  /// In pt, this message translates to:
+  /// **'Toque um termo para explicar'**
+  String get verseStudyMorphTap;
 
   /// No description provided for @verseStudyNeedsRestart.
   ///
@@ -16677,6 +17373,12 @@ abstract class AppLocalizations {
   /// **'Só neste versículo no índice.'**
   String get verseStudyOnlyHere;
 
+  /// No description provided for @verseStudyOriginalForm.
+  ///
+  /// In pt, this message translates to:
+  /// **'Forma no {lang}'**
+  String verseStudyOriginalForm(String lang);
+
   /// No description provided for @verseStudyOtherBooks.
   ///
   /// In pt, this message translates to:
@@ -16686,7 +17388,7 @@ abstract class AppLocalizations {
   /// No description provided for @verseStudyOtherBooksBody.
   ///
   /// In pt, this message translates to:
-  /// **'A primeira aparição em cada livro onde a palavra é mais frequente.'**
+  /// **'A primeira aparição em cada livro, em ordem canônica.'**
   String get verseStudyOtherBooksBody;
 
   /// No description provided for @verseStudyParticleNearby.
@@ -16743,11 +17445,47 @@ abstract class AppLocalizations {
   /// **'Nesta forma'**
   String get verseStudyThisForm;
 
+  /// No description provided for @verseStudyTranslations.
+  ///
+  /// In pt, this message translates to:
+  /// **'Como a TB traduz'**
+  String get verseStudyTranslations;
+
+  /// No description provided for @verseStudyTranslationsAlso.
+  ///
+  /// In pt, this message translates to:
+  /// **'Também: {list}'**
+  String verseStudyTranslationsAlso(String list);
+
+  /// No description provided for @verseStudyTranslationsBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'A mesma palavra original aparece com estes sentidos na Tradução Brasileira.'**
+  String get verseStudyTranslationsBody;
+
+  /// No description provided for @verseStudyTranslationsHere.
+  ///
+  /// In pt, this message translates to:
+  /// **'Aqui: {word}'**
+  String verseStudyTranslationsHere(String word);
+
   /// No description provided for @verseStudyVerseUnavailable.
   ///
   /// In pt, this message translates to:
   /// **'Versículo indisponível nesta tradução.'**
   String get verseStudyVerseUnavailable;
+
+  /// No description provided for @verseStudyViewInterlinear.
+  ///
+  /// In pt, this message translates to:
+  /// **'Interlinear'**
+  String get verseStudyViewInterlinear;
+
+  /// No description provided for @verseStudyViewVerse.
+  ///
+  /// In pt, this message translates to:
+  /// **'Versículo'**
+  String get verseStudyViewVerse;
 
   /// No description provided for @walkCountdownDays.
   ///
@@ -17066,6 +17804,42 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Cena anterior'**
   String get weeklyReviewTodayPrev;
+
+  /// No description provided for @whatsNew148Advent.
+  ///
+  /// In pt, this message translates to:
+  /// **'Presente do Advento: caminhe os 26 dias (29/11 a 24/12) e ganhe até 3 meses de Peregrino+. Sozinho, 1 mês; com sua Companhia, 2; com 3 ou mais do seu grupo, 3. Perdeu um dia? Dá para fazer depois.'**
+  String get whatsNew148Advent;
+
+  /// No description provided for @whatsNew148Plan.
+  ///
+  /// In pt, this message translates to:
+  /// **'Propósito do grupo: dia de hoje, leitura e cena, respostas de cada um. O líder decide se o grupo vê as respostas.'**
+  String get whatsNew148Plan;
+
+  /// No description provided for @whatsNew148Share.
+  ///
+  /// In pt, this message translates to:
+  /// **'Compartilhe a frase e o postal do dia direto do Hoje.'**
+  String get whatsNew148Share;
+
+  /// No description provided for @whatsNew148Study.
+  ///
+  /// In pt, this message translates to:
+  /// **'Estudar o versículo: modo interlinear, ouvir a palavra no original e ver como a TB traduz.'**
+  String get whatsNew148Study;
+
+  /// No description provided for @whatsNewEyebrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Novidades'**
+  String get whatsNewEyebrow;
+
+  /// No description provided for @whatsNewTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'O caminho ganhou coisas novas'**
+  String get whatsNewTitle;
 
   /// No description provided for @widgetBackToTrail.
   ///

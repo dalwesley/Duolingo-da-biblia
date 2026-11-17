@@ -288,16 +288,79 @@ service cloud.firestore {
             || isYmd(request.resource.data.lastDay));
     }
 
+    // Prêmio do Advento (functions/advent.js). A cena do dia: o app cria
+    // "start" ao abrir e marca "done" ao terminar; o servidor confere os
+    // horários do próprio Firestore e grava a prova. Sem conta anônima.
+    match /seasonWalks/{campaign}/scenes/{id} {
+      function notAnonymous() {
+        return isSignedIn()
+          && request.auth.token.firebase.sign_in_provider != 'anonymous';
+      }
+      allow get: if isSignedIn()
+        && (resource == null || resource.data.uid == request.auth.uid);
+      allow list: if false;
+      allow create: if notAnonymous()
+        && request.resource.data.keys().hasOnly(['uid', 'day', 'state', 'at'])
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.day is int
+        && request.resource.data.day >= 1
+        && request.resource.data.day <= 40
+        && id == request.auth.uid + '_' + string(request.resource.data.day)
+        && request.resource.data.state == 'start'
+        && request.resource.data.at == request.time;
+      allow update: if notAnonymous()
+        && resource.data.uid == request.auth.uid
+        && resource.data.state == 'start'
+        && request.resource.data.state == 'done'
+        && request.resource.data.doneAt == request.time
+        && request.resource.data.diff(resource.data).affectedKeys()
+            .hasOnly(['state', 'doneAt']);
+      // Cena aberta e largada pode recomeçar; a terminada fica.
+      allow delete: if isSignedIn()
+        && resource.data.uid == request.auth.uid
+        && resource.data.state == 'start';
+    }
+
+    // Prova, prêmio e foto do dia 1: só o servidor grava; o dono lê.
+    match /seasonWalks/{campaign}/proof/{uid} {
+      allow get: if isSignedIn() && request.auth.uid == uid;
+      allow list, write: if false;
+    }
+    match /seasonWalks/{campaign}/rewards/{uid} {
+      allow get: if isSignedIn() && request.auth.uid == uid;
+      allow list, write: if false;
+    }
+    match /seasonWalks/{campaign}/roster/{uid} {
+      allow get: if isSignedIn() && request.auth.uid == uid;
+      allow list, write: if false;
+    }
+
+    // Configuração pública das campanhas (prazo, meses). Só o console grava.
+    match /campaigns/{id} {
+      allow get: if isSignedIn();
+      allow list, write: if false;
+    }
+
     // Salas de estudo privadas.
     match /rooms/{code} {
       function isRoomMember(uid) {
         return exists(/databases/$(database)/documents/rooms/$(code)/members/$(uid));
       }
 
+      // Grupo de verdade só com 3 pessoas: propósito, estudo e leitura só
+      // começam ou mudam com `memberCount` >= 3 (a function conta; sala
+      // antiga sem contagem passa até o backfill). Tirar sempre pode.
+      function formedOrSame(k) {
+        return request.resource.data.get(k, null) == resource.data.get(k, null)
+          || request.resource.data.get(k, null) == null
+          || resource.data.get('memberCount', 99) >= 3;
+      }
+
       allow read: if isSignedIn();
       // Grupo do piloto (`pilot`) só nasce de quem o admin marcou como
       // líder do piloto (users/{uid}.groupsPilot).
       allow create: if isSignedIn()
+        && !('memberCount' in request.resource.data)
         && request.resource.data.ownerId == request.auth.uid
         && (request.resource.data.get('pilot', false) == false
             || get(/databases/$(database)/documents/users/$(request.auth.uid)).data.get('groupsPilot', false) == true);
@@ -311,6 +374,13 @@ service cloud.firestore {
             == resource.data.get('pilot', false)
         && (request.resource.data.ownerId == resource.data.ownerId
             || isRoomMember(request.resource.data.ownerId))
+        && request.resource.data.get('memberCount', -1)
+            == resource.data.get('memberCount', -1)
+        && formedOrSame('plan')
+        && formedOrSame('study')
+        && formedOrSame('reading')
+        // O líder decide se os membros leem as respostas uns dos outros.
+        && request.resource.data.get('answersPrivate', false) is bool
         // Propósito do grupo: um mapa com até 60 dias.
         && (!('plan' in request.resource.data)
             || (request.resource.data.plan is map
@@ -323,6 +393,7 @@ service cloud.firestore {
         allow read: if isSignedIn() && isRoomMember(request.auth.uid);
         allow create, update: if isSignedIn()
           && get(/databases/$(database)/documents/rooms/$(code)).data.ownerId == request.auth.uid
+          && get(/databases/$(database)/documents/rooms/$(code)).data.get('memberCount', 99) >= 3
           && isYmd(week)
           && request.resource.data.week == week
           && request.resource.data.closedBy == request.auth.uid
@@ -342,8 +413,14 @@ service cloud.firestore {
       // Resposta à pergunta do dia do propósito (dayKey = "planId_dia").
       // Só quem é do grupo lê; cada um grava a própria; o líder apaga
       // qualquer uma.
+      // Membro lê as respostas do dia só depois de responder, e só se o
+      // líder não as fechou (`answersPrivate`); o líder lê sempre (modera).
       match /answers/{dayKey}/by/{uid} {
-        allow read: if isSignedIn() && isRoomMember(request.auth.uid);
+        allow read: if isSignedIn() && isRoomMember(request.auth.uid)
+          && (request.auth.uid == uid
+              || get(/databases/$(database)/documents/rooms/$(code)).data.ownerId == request.auth.uid
+              || (get(/databases/$(database)/documents/rooms/$(code)).data.get('answersPrivate', false) != true
+                  && exists(/databases/$(database)/documents/rooms/$(code)/answers/$(dayKey)/by/$(request.auth.uid))));
         allow create, update: if isSignedIn()
           && request.auth.uid == uid
           && isRoomMember(uid)
@@ -415,6 +492,12 @@ service cloud.firestore {
                 && request.resource.data.endedBy == request.auth.uid
                 && request.resource.data.diff(resource.data).affectedKeys()
                     .hasOnly(['endedAt', 'endedBy', 'updatedAt'])))
+        // Hora em que o par entrou (foto do Advento): só a do servidor, e
+        // não muda depois.
+        && (request.resource.data.get('guestJoinedAt', null)
+              == resource.data.get('guestJoinedAt', null)
+            || (resource.data.get('guestJoinedAt', null) == null
+                && request.resource.data.guestJoinedAt == request.time))
         // Aceno: texto curto (pronto ou escrito no Peregrino+). O push
         // passa pelo filtro na function onCompanionNudge.
         && (!('nudgeMessage' in request.resource.data)

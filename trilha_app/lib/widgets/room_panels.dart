@@ -2,12 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
+import '../data/season_walk_catalog.dart';
 import '../data/trail_repository.dart';
 import '../l10n/app_language.dart';
 import '../models/study_room.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
 import '../models/room_plan.dart';
+import '../models/season_walk.dart';
+import '../screens/paywall_screen.dart';
+import '../services/subscription_service.dart';
+import '../utils/plus_access.dart';
 import '../data/mission_study.dart';
 import '../services/bible_service.dart';
 import '../services/league_service.dart';
@@ -602,7 +607,7 @@ Future<RoomWaveKind?> showRoomWavePicker(
 /// (acenar, ver o perfil, passar a liderança, denunciar ou bloquear).
 Widget _planStat(BuildContext ctx, RoomMember member, RoomPlan plan) {
   final l10n = ctx.l10n;
-  final mine = member.plan?.planId == plan.id ? member.plan : null;
+  final mine = plan.progressOf(member.plan);
   if (plan.phase() == PlanPhase.upcoming) {
     final joined = mine?.joined ?? false;
     return _SeatStat(
@@ -632,6 +637,13 @@ Future<RoomSeatAction?> showRoomSeatSheet(
   bool canViewProfile = false,
   bool canTransfer = false,
   bool canModerate = false,
+
+  /// Respostas da pessoa às perguntas do propósito (dia → texto), só dos
+  /// dias que quem olha pode ver.
+  Future<Map<int, String>>? answers,
+
+  /// Dias que a pessoa respondeu e quem olha ainda não pode ver.
+  int hiddenAnswers = 0,
 }) {
   return showAppSheet<RoomSeatAction>(
     context,
@@ -746,6 +758,13 @@ Future<RoomSeatAction?> showRoomSeatSheet(
                 ],
               ),
             ),
+            if (plan != null && (answers != null || hiddenAnswers > 0))
+              _SeatAnswers(
+                plan: plan,
+                answers: answers,
+                hidden: hiddenAnswers,
+                firstName: first,
+              ),
             if (canCall) ...[
               const SizedBox(height: AppSpace.lg),
               CopperCta(
@@ -789,6 +808,117 @@ Future<RoomSeatAction?> showRoomSeatSheet(
       );
     },
   );
+}
+
+/// Respostas da pessoa na folha: a mais recente primeiro, cada uma com o
+/// dia e a pergunta. Rola por dentro para a folha não crescer demais.
+class _SeatAnswers extends StatelessWidget {
+  final RoomPlan plan;
+  final Future<Map<int, String>>? answers;
+  final int hidden;
+  final String firstName;
+
+  const _SeatAnswers({
+    required this.plan,
+    required this.answers,
+    required this.hidden,
+    required this.firstName,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    return FutureBuilder<Map<int, String>>(
+      future: answers,
+      builder: (context, snap) {
+        final loading =
+            answers != null && snap.connectionState != ConnectionState.done;
+        final map = snap.data ?? const <int, String>{};
+        final days = map.keys.toList()..sort((x, y) => y.compareTo(x));
+        if (!loading && days.isEmpty && hidden == 0) {
+          return const SizedBox.shrink();
+        }
+        return Padding(
+          padding: const EdgeInsets.only(top: AppSpace.md),
+          child: InsetPanel(
+            padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                SectionLabel(l10n.planSeatAnswersLabel, size: 10),
+                const SizedBox(height: AppSpace.sm),
+                if (loading)
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: AppSpace.sm),
+                    child: AppSpinner(inline: true),
+                  )
+                else if (days.isNotEmpty)
+                  ConstrainedBox(
+                    constraints: const BoxConstraints(maxHeight: 220),
+                    child: SingleChildScrollView(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          for (final (i, n) in days.indexed) ...[
+                            if (i > 0) const SizedBox(height: AppSpace.md),
+                            Text(
+                              [
+                                l10n.planSeatAnswerDay(n),
+                                ?plan.dayNumber(n)?.question?.trim(),
+                              ].join(' · '),
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
+                              style: AppTypography.body(
+                                size: 12,
+                                weight: FontWeight.w700,
+                                color: a.textFaint,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              map[n]!,
+                              style: AppTypography.body(
+                                size: 14,
+                                height: 1.35,
+                                color: a.text,
+                              ),
+                            ),
+                          ],
+                        ],
+                      ),
+                    ),
+                  ),
+                if (!loading && hidden > 0) ...[
+                  if (days.isNotEmpty) const SizedBox(height: AppSpace.sm),
+                  Row(
+                    children: [
+                      CinematicIcon(
+                        glyph: CinematicGlyph.lock,
+                        size: 14,
+                        accent: a.textSecondary,
+                        framed: false,
+                      ),
+                      const SizedBox(width: 6),
+                      Expanded(
+                        child: Text(
+                          l10n.planSeatAnswersHidden(firstName),
+                          style: AppTypography.body(
+                            size: 13,
+                            color: a.textSecondary,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
 }
 
 /// Rosto da folha: tocar abre o perfil (quando há perfil para ver).
@@ -1173,22 +1303,37 @@ class _KindChip extends StatelessWidget {
 
 /// [title] troca o topo ("Estudo da semana"); [skipNote] devolve a cena no
 /// toque, sem o passo do recado (o propósito tem recado por dia).
+/// [withSeason]: mostra a aba Estação (Advento). Escolher a temporada
+/// devolve um [RoomStudy] com [RoomStudy.seasonId] (só o propósito usa).
 Future<RoomStudy?> showRoomStudyPicker(
   BuildContext context, {
   String? title,
   bool skipNote = false,
+  bool withSeason = false,
 }) {
   return showAppSheet<RoomStudy>(
     context,
-    builder: (_) => _RoomStudyPicker(title: title, skipNote: skipNote),
+    builder: (_) => _RoomStudyPicker(
+      title: title,
+      skipNote: skipNote,
+      withSeason: withSeason,
+    ),
   );
 }
+
+/// Aba Estação do seletor (fora das prateleiras de trilha).
+const _seasonShelf = 'season';
 
 class _RoomStudyPicker extends StatefulWidget {
   final String? title;
   final bool skipNote;
+  final bool withSeason;
 
-  const _RoomStudyPicker({this.title, this.skipNote = false});
+  const _RoomStudyPicker({
+    this.title,
+    this.skipNote = false,
+    this.withSeason = false,
+  });
 
   @override
   State<_RoomStudyPicker> createState() => _RoomStudyPickerState();
@@ -1205,6 +1350,47 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
   /// Aba das trilhas: null = Suas trilhas; senão a prateleira da aba Trilhas.
   TrailShelf? _shelf;
   bool _shelfPicked = false;
+
+  /// Aba Estação aberta (só com [_RoomStudyPicker.withSeason]).
+  bool _seasonTab = false;
+
+  /// Temporada em cartaz: a que corre agora, senão a próxima.
+  /// Só aparece se começa em até 120 dias (mesmo limite do início do
+  /// propósito): depois do Natal não oferece o Advento do ano seguinte.
+  late final SeasonWalkCampaign? _season = () {
+    if (!widget.withSeason) return null;
+    final c = SeasonWalkCatalog.current();
+    final now = DateTime.now();
+    final limit = DateTime(now.year, now.month, now.day + 120);
+    return c.start.isAfter(limit) ? null : c;
+  }();
+
+  /// Sem o Plus, trilha do Plus e temporada fora do presente levam à
+  /// assinatura: o grupo caminharia por algo que o líder não abre.
+  bool get _plusOpen => context.read<SubscriptionService>().plusFeaturesOpen;
+
+  void _openPaywall() {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => const PaywallScreen(source: 'group_pick'),
+      ),
+    );
+  }
+
+  void _pickSeason(SeasonWalkCampaign c) {
+    if (!c.isGift && !_plusOpen) {
+      _openPaywall();
+      return;
+    }
+    Navigator.pop(
+      context,
+      RoomStudy(
+        missionSlug: c.days.first.missionSlug,
+        title: c.title,
+        week: '${RoomStudy.seasonPrefix}${c.id}',
+      ),
+    );
+  }
 
   /// Grupo aberto na aba Bíblia (um por vez).
   TrailCategory? _openGroup;
@@ -1412,15 +1598,47 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
     return out.toString();
   }
 
-  Widget _trailRow(Trail t) => _PickRow(
-    leading: _TrailDisc(visuals: TrailVisuals.forTrail(t)),
-    title: t.localizedTitle,
-    subtitle: context.l10n.commonScenes(t.missionSlugs.length),
-    onTap: () {
-      FocusScope.of(context).unfocus();
-      setState(() => _trail = t);
-    },
-  );
+  Widget _trailRow(Trail t) {
+    final locked = PlusAccess.trailIsPlus(t) && !_plusOpen;
+    return _PickRow(
+      leading: _TrailDisc(visuals: TrailVisuals.forTrail(t)),
+      title: t.localizedTitle,
+      subtitle: context.l10n.commonScenes(t.missionSlugs.length),
+      trailing: locked ? const _PlusLock() : null,
+      onTap: () {
+        FocusScope.of(context).unfocus();
+        if (locked) {
+          _openPaywall();
+          return;
+        }
+        setState(() => _trail = t);
+      },
+    );
+  }
+
+  Widget _seasonRow(SeasonWalkCampaign c) {
+    final locked = !c.isGift && !_plusOpen;
+    return _PickRow(
+      leading: ClipOval(
+        child: Image.asset(
+          SeasonWalkCatalog.artAsset(c.kind),
+          width: 40,
+          height: 40,
+          fit: BoxFit.cover,
+        ),
+      ),
+      title: c.title,
+      subtitle: [
+        context.l10n.commonScenes(c.length),
+        if (c.isGift) context.l10n.seasonGiftTag,
+      ].join(' · '),
+      trailing: locked ? const _PlusLock() : null,
+      onTap: () {
+        FocusScope.of(context).unfocus();
+        _pickSeason(c);
+      },
+    );
+  }
 
   Widget _trailList(List<Trail> all, AppearanceStyle a) {
     final trails = [
@@ -1464,7 +1682,9 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
               _fold(_categoryOf(t).label).contains(query))
             t,
       ];
-      rows = hits.isEmpty
+      final season = _season;
+      final seasonHit = season != null && _fold(season.title).contains(query);
+      rows = hits.isEmpty && !seasonHit
           ? [
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
@@ -1475,7 +1695,12 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
                 ),
               ),
             ]
-          : [for (final t in hits) _trailRow(t)];
+          : [
+              if (seasonHit) _seasonRow(season),
+              for (final t in hits) _trailRow(t),
+            ];
+    } else if (_seasonTab && _season != null) {
+      rows = [_seasonRow(_season)];
     } else if (shelf == null) {
       rows = [for (final t in mine) _trailRow(t)];
     } else if (shelf == TrailShelf.biblia) {
@@ -1525,17 +1750,20 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
             _ => context.l10n.trailsHubStudy,
           };
 
-    Widget chip(String label, TrailShelf? value) => Padding(
+    Widget chip(String label, Object? value) => Padding(
       padding: const EdgeInsets.only(right: AppSpace.sm),
       child: AppSelectChip(
         label: label,
-        selected: shelf == value,
+        selected: value == _seasonShelf
+            ? _seasonTab
+            : !_seasonTab && shelf == value,
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
         onTap: () {
           ActHaptics.tap();
           setState(() {
             _shelfPicked = true;
-            _shelf = value;
+            _seasonTab = value == _seasonShelf;
+            if (value is TrailShelf?) _shelf = value;
           });
         },
       ),
@@ -1589,6 +1817,8 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
               children: [
                 if (mine.isNotEmpty)
                   chip(context.l10n.groupPickerTabMine, null),
+                if (_season != null)
+                  chip(context.l10n.walkTogetherKicker, _seasonShelf),
                 for (final s in shelves) chip(shelfLabel(s), s),
               ],
             ),
@@ -1878,6 +2108,19 @@ class _PickGroup extends StatelessWidget {
 }
 
 /// Selo da trilha — o mesmo glifo e gradiente do mapa de trilhas.
+/// Cadeado do Peregrino+ no fim da linha do seletor.
+class _PlusLock extends StatelessWidget {
+  const _PlusLock();
+
+  @override
+  Widget build(BuildContext context) => CinematicIcon(
+    glyph: CinematicGlyph.lock,
+    size: AppMetrics.iconSm,
+    accent: Appearance.of(context).textFaint,
+    framed: false,
+  );
+}
+
 class _TrailDisc extends StatelessWidget {
   final TrailVisuals visuals;
 
@@ -1946,6 +2189,9 @@ enum RoomMenuAction {
   transfer,
   plan,
   endPlan,
+  answersPrivacy,
+  leave,
+  close,
 }
 
 /// Propósito do grupo visto pelo menu: nenhum, em curso/próximo, terminado.
@@ -1957,7 +2203,10 @@ Future<RoomMenuAction?> showRoomMenu(
   required bool hasStudy,
   required bool canTransfer,
   RoomMenuPlan plan = RoomMenuPlan.none,
+  bool isLeader = true,
 }) {
+  // Grupo se formando (menos de 3): sem propósito, semana nem meta.
+  final formed = context.read<RoomService>().isFormed;
   return showAppSheet<RoomMenuAction>(
     context,
     builder: (ctx) {
@@ -1999,46 +2248,76 @@ Future<RoomMenuAction?> showRoomMenu(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             AppSheetHeader(title: room.name),
-            Padding(
-              padding: const EdgeInsets.only(top: AppSpace.md, bottom: 2),
-              child: SectionLabel(ctx.l10n.groupMenuLeadSection),
-            ),
-            item(
-              RoomMenuAction.plan,
-              plan == RoomMenuPlan.live
-                  ? ctx.l10n.planMenuEdit
-                  : ctx.l10n.planMenuCreate,
-              CinematicGlyph.calendar,
-            ),
-            item(
-              RoomMenuAction.edit,
-              ctx.l10n.groupMenuEdit,
-              CinematicGlyph.pencil,
-            ),
-            item(
-              RoomMenuAction.goal,
-              room.weeklyGoalSteps != null
-                  ? ctx.l10n.groupMenuGoal(room.weeklyGoalSteps!)
-                  : ctx.l10n.groupMenuSetGoal,
-              CinematicGlyph.target,
-            ),
-            if (plan == RoomMenuPlan.live)
+            if (isLeader) ...[
+              Padding(
+                padding: const EdgeInsets.only(top: AppSpace.md, bottom: 2),
+                child: SectionLabel(ctx.l10n.groupMenuLeadSection),
+              ),
+              if (formed)
+                item(
+                  RoomMenuAction.plan,
+                  plan == RoomMenuPlan.live
+                      ? ctx.l10n.planMenuEdit
+                      : ctx.l10n.planMenuCreate,
+                  CinematicGlyph.calendar,
+                ),
               item(
-                RoomMenuAction.endPlan,
-                ctx.l10n.planMenuEnd,
+                RoomMenuAction.edit,
+                ctx.l10n.groupMenuEdit,
+                CinematicGlyph.pencil,
+              ),
+              if (formed)
+                item(
+                  RoomMenuAction.goal,
+                  room.weeklyGoalSteps != null
+                      ? ctx.l10n.groupMenuGoal(room.weeklyGoalSteps!)
+                      : ctx.l10n.groupMenuSetGoal,
+                  CinematicGlyph.target,
+                ),
+              // Liga/desliga: membros veem as respostas uns dos outros.
+              if (formed && plan == RoomMenuPlan.live)
+                item(
+                  RoomMenuAction.answersPrivacy,
+                  room.answersPrivate
+                      ? ctx.l10n.planMenuAnswersOpen
+                      : ctx.l10n.planMenuAnswersPrivate,
+                  room.answersPrivate
+                      ? CinematicGlyph.people
+                      : CinematicGlyph.lock,
+                ),
+              if (formed && plan == RoomMenuPlan.live)
+                item(
+                  RoomMenuAction.endPlan,
+                  ctx.l10n.planMenuEnd,
+                  CinematicGlyph.stop,
+                ),
+              if (formed && hasStudy && plan == RoomMenuPlan.none)
+                item(
+                  RoomMenuAction.clearStudy,
+                  ctx.l10n.groupMenuClearStudy,
+                  CinematicGlyph.close,
+                ),
+              if (canTransfer)
+                item(
+                  RoomMenuAction.transfer,
+                  ctx.l10n.groupMenuTransfer,
+                  CinematicGlyph.crown,
+                ),
+            ],
+            // Sair e encerrar moram aqui, não no fim da página.
+            const SizedBox(height: AppSpace.md),
+            item(
+              RoomMenuAction.leave,
+              ctx.l10n.groupMenuLeave,
+              CinematicGlyph.door,
+              danger: true,
+            ),
+            if (isLeader)
+              item(
+                RoomMenuAction.close,
+                ctx.l10n.groupMenuClose,
                 CinematicGlyph.stop,
-              ),
-            if (hasStudy && plan == RoomMenuPlan.none)
-              item(
-                RoomMenuAction.clearStudy,
-                ctx.l10n.groupMenuClearStudy,
-                CinematicGlyph.close,
-              ),
-            if (canTransfer)
-              item(
-                RoomMenuAction.transfer,
-                ctx.l10n.groupMenuTransfer,
-                CinematicGlyph.crown,
+                danger: true,
               ),
           ],
         ),

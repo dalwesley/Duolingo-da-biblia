@@ -18,6 +18,7 @@ import '../utils/liturgical_calendar.dart';
 import '../utils/home_support.dart';
 import '../utils/plus_offers.dart';
 import '../utils/season_walk_debug.dart';
+import '../widgets/whats_new_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/daily_chest_sheet.dart';
 import '../widgets/immersive_background.dart';
@@ -45,6 +46,12 @@ class PlusLabScreen extends StatefulWidget {
 
 class _PlusLabScreenState extends State<PlusLabScreen> {
   bool _busy = false;
+
+  /// Liga: "Abrir cena com estudo" pula gestos e cai na placa Hoje.
+  bool _startAtInsight = true;
+
+  /// Liga: mostra o slide do postal no carrossel (só preview de UI).
+  bool _previewPostal = true;
 
   String _ymd(DateTime? d) =>
       d == null ? '—' : d.toIso8601String().substring(0, 10);
@@ -482,6 +489,21 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                           () => _setPromo(sub, override: false),
                         ),
                       ]),
+                      section('Novidades da versão', [
+                        line(
+                          'Abre a folha de novidades desta versão. Zerar '
+                          'faz ela aparecer de novo na próxima abertura '
+                          '(se houver cena feita).',
+                        ),
+                        button(
+                          'Abrir novidades',
+                          () => WhatsNew.preview(context),
+                        ),
+                        button('Zerar novidades vistas', () async {
+                          await WhatsNew.reset();
+                          _toast('Novidades zeradas');
+                        }),
+                      ]),
                       section('Postais', [
                         line(
                           'Abre a retrospectiva do ano corrente agora, '
@@ -522,16 +544,29 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                         line(
                           'Abre "O Cordeiro no trono" (Apocalipse) em modo '
                           'prática, sem trava de trilha e sem mexer no '
-                          'progresso. Toque no Anan: a folha tem '
-                          'palavra-chave, pergunta e ligações.',
+                          'progresso. Com o switch ligado, pula intro e '
+                          'gestos e cai direto na placa Hoje (Anan + '
+                          'compartilhar).',
+                        ),
+                        toggle(
+                          'Ir direto à placa Hoje (sem gestos)',
+                          _startAtInsight,
+                          (v) => setState(() => _startAtInsight = v),
+                        ),
+                        toggle(
+                          'Preview do postal no carrossel',
+                          _previewPostal,
+                          (v) => setState(() => _previewPostal = v),
                         ),
                         button('Abrir cena com estudo', () {
                           Navigator.of(context).push(
                             MaterialPageRoute<void>(
-                              builder: (_) => const LessonScreen(
+                              builder: (_) => LessonScreen(
                                 missionSlug: 'apo-02-cordeiro',
                                 practiceMode: true,
                                 skipTrailLock: true,
+                                startAtInsight: _startAtInsight,
+                                previewPostal: _previewPostal,
                               ),
                             ),
                           );

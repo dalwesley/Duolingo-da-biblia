@@ -640,5 +640,235 @@
     "pt": "feminino",
     "en": "feminine",
     "es": "femenino"
+  },
+  "morphExplainQal": {
+    "pt": "Qal = ação simples, no sentido básico do verbo.",
+    "en": "Qal = simple action, the basic sense of the verb.",
+    "es": "Qal = acción simple, el sentido básico del verbo."
+  },
+  "morphExplainNifal": {
+    "pt": "Nifal = voz passiva ou reflexiva (“foi feito”, “se fez”).",
+    "en": "Niphal = passive or reflexive voice (“was done”, “did itself”).",
+    "es": "Nifal = voz pasiva o reflexiva (“fue hecho”, “se hizo”)."
+  },
+  "morphExplainPiel": {
+    "pt": "Piel = ação intensa ou causativa (“fazer de verdade”, “intensificar”).",
+    "en": "Piel = intensive or causative action (“really do”, “intensify”).",
+    "es": "Piel = acción intensa o causativa (“hacer de verdad”, “intensificar”)."
+  },
+  "morphExplainPual": {
+    "pt": "Pual = passiva do piel (“foi feito com intensidade”).",
+    "en": "Pual = passive of piel (“was done intensively”).",
+    "es": "Pual = pasiva del piel (“fue hecho con intensidad”)."
+  },
+  "morphExplainHifil": {
+    "pt": "Hifil = causativo (“fazer alguém fazer”, “fazer acontecer”).",
+    "en": "Hiphil = causative (“make someone do”, “cause to happen”).",
+    "es": "Hifil = causativo (“hacer que alguien haga”, “hacer acontecer”)."
+  },
+  "morphExplainHofal": {
+    "pt": "Hofal = passiva do hifil (“foi feito causar”).",
+    "en": "Hophal = passive of hiphil (“was caused to”).",
+    "es": "Hofal = pasiva del hifil (“fue causado a”)."
+  },
+  "morphExplainHitpael": {
+    "pt": "Hitpael = reflexivo ou recíproco (“fazer a si mesmo”, “uns aos outros”).",
+    "en": "Hithpael = reflexive or reciprocal (“do to oneself”, “to each other”).",
+    "es": "Hitpael = reflexivo o recíproco (“hacerse a sí”, “unos a otros”)."
+  },
+  "morphExplainPerfect": {
+    "pt": "Perfeito = ação vista como completa (muitas vezes no passado).",
+    "en": "Perfect = action viewed as complete (often past).",
+    "es": "Perfecto = acción vista como completa (a menudo en el pasado)."
+  },
+  "morphExplainImperfectHeb": {
+    "pt": "Imperfecto = ação em curso, habitual ou futura.",
+    "en": "Imperfect = ongoing, habitual, or future action.",
+    "es": "Imperfecto = acción en curso, habitual o futura."
+  },
+  "morphExplainWayyiqtol": {
+    "pt": "Wayyiqtol = narrativa sequencial (“e então…”), típica das histórias.",
+    "en": "Wayyiqtol = sequential narrative (“and then…”), typical of stories.",
+    "es": "Wayyiqtol = narrativa secuencial (“y entonces…”), típica de las historias."
+  },
+  "morphExplainWeqatal": {
+    "pt": "Weqatal = sequência no perfeito — continua a linha narrativa ou instrutiva.",
+    "en": "Weqatal = perfect sequence — continues the narrative or instructional line.",
+    "es": "Weqatal = secuencia en perfecto — continúa la línea narrativa o instructiva."
+  },
+  "morphExplainImperative": {
+    "pt": "Imperativo = ordem ou pedido direto.",
+    "en": "Imperative = direct command or request.",
+    "es": "Imperativo = orden o pedido directo."
+  },
+  "morphExplainCohortative": {
+    "pt": "Coortativo = “vamos…” / desejo na 1ª pessoa (“façamos”).",
+    "en": "Cohortative = “let us…” / 1st-person wish (“let us make”).",
+    "es": "Cohortativo = “vamos…” / deseo en 1ª persona (“hagamos”)."
+  },
+  "morphExplainJussive": {
+    "pt": "Jussivo = desejo ou ordem suave na 3ª pessoa (“que ele…”).",
+    "en": "Jussive = wish or soft command in the 3rd person (“let him…”).",
+    "es": "Yusivo = deseo u orden suave en 3ª persona (“que él…”)."
+  },
+  "morphExplainParticiple": {
+    "pt": "Particípio = ação como qualidade ou estado contínuo (“o que faz”).",
+    "en": "Participle = action as a quality or ongoing state (“the one who does”).",
+    "es": "Participio = acción como cualidad o estado continuo (“el que hace”)."
+  },
+  "morphExplainInfConstruct": {
+    "pt": "Infinitivo construto = forma verbal que se liga a outra palavra (“ao fazer”).",
+    "en": "Infinitive construct = verbal form that binds to another word (“in doing”).",
+    "es": "Infinitivo constructo = forma verbal que se une a otra palabra (“al hacer”)."
+  },
+  "morphExplainInfAbsolute": {
+    "pt": "Infinitivo absoluto = ênfase (“certamente fará”, “fazer de fato”).",
+    "en": "Infinitive absolute = emphasis (“will surely do”, “indeed do”).",
+    "es": "Infinitivo absoluto = énfasis (“ciertamente hará”, “hacer de hecho”)."
+  },
+  "morphExplainConstruct": {
+    "pt": "Construto = “de…” — liga dois nomes (casa de Davi).",
+    "en": "Construct = “of…” — links two nouns (house of David).",
+    "es": "Constructo = “de…” — une dos nombres (casa de David)."
+  },
+  "morphExplainAbsolute": {
+    "pt": "Absoluto = forma livre do nome, sem “de…” colado.",
+    "en": "Absolute = free form of the noun, without a bound “of…”.",
+    "es": "Absoluto = forma libre del nombre, sin un “de…” pegado."
+  },
+  "morphExplainNoun": {
+    "pt": "Substantivo = nomeia pessoa, lugar, coisa ou ideia.",
+    "en": "Noun = names a person, place, thing, or idea.",
+    "es": "Sustantivo = nombra persona, lugar, cosa o idea."
+  },
+  "morphExplainVerb": {
+    "pt": "Verbo = a ação ou o estado no versículo.",
+    "en": "Verb = the action or state in the verse.",
+    "es": "Verbo = la acción o el estado en el versículo."
+  },
+  "morphExplainPrep": {
+    "pt": "Preposição = liga o sentido (“em”, “para”, “com”, “sobre”).",
+    "en": "Preposition = links the sense (“in”, “to”, “with”, “upon”).",
+    "es": "Preposición = une el sentido (“en”, “para”, “con”, “sobre”)."
+  },
+  "morphExplainConjunction": {
+    "pt": "Conjunção = une frases ou palavras (“e”, “mas”, “que”).",
+    "en": "Conjunction = joins clauses or words (“and”, “but”, “that”).",
+    "es": "Conjunción = une frases o palabras (“y”, “pero”, “que”)."
+  },
+  "morphExplainArticle": {
+    "pt": "Artigo = marca o determinado (“o”, “a”) no hebraico.",
+    "en": "Article = marks the definite (“the”) in Hebrew.",
+    "es": "Artículo = marca lo determinado (“el”, “la”) en hebreo."
+  },
+  "morphExplainPresent": {
+    "pt": "Presente = ação agora ou habitual.",
+    "en": "Present = action now or habitual.",
+    "es": "Presente = acción ahora o habitual."
+  },
+  "morphExplainAorist": {
+    "pt": "Aoristo = ação vista como um ponto (sem duração).",
+    "en": "Aorist = action viewed as a point (without duration).",
+    "es": "Aoristo = acción vista como un punto (sin duración)."
+  },
+  "morphExplainFuture": {
+    "pt": "Futuro = ação ainda por vir.",
+    "en": "Future = action yet to come.",
+    "es": "Futuro = acción aún por venir."
+  },
+  "morphExplainImperfectGk": {
+    "pt": "Imperfeito grego = ação contínua ou repetida no passado.",
+    "en": "Greek imperfect = continuous or repeated past action.",
+    "es": "Imperfecto griego = acción continua o repetida en el pasado."
+  },
+  "morphExplainMasc": {
+    "pt": "Masculino = gênero gramatical no original (não é “macho” em português).",
+    "en": "Masculine = grammatical gender in the original (not “male” in English).",
+    "es": "Masculino = género gramatical en el original (no es “macho” en español)."
+  },
+  "morphExplainFem": {
+    "pt": "Feminino = gênero gramatical no original (não é “fêmea” em português).",
+    "en": "Feminine = grammatical gender in the original (not “female” in English).",
+    "es": "Femenino = género gramatical en el original (no es “hembra” en español)."
+  },
+  "morphExplainNeuter": {
+    "pt": "Neutro = gênero gramatical sem masculino nem feminino (comum no grego).",
+    "en": "Neuter = grammatical gender that is neither masculine nor feminine (common in Greek).",
+    "es": "Neutro = género gramatical sin masculino ni femenino (común en griego)."
+  },
+  "morphExplainSing": {
+    "pt": "Singular = um só — uma pessoa, coisa ou ação.",
+    "en": "Singular = just one — one person, thing, or action.",
+    "es": "Singular = uno solo — una persona, cosa o acción."
+  },
+  "morphExplainPl": {
+    "pt": "Plural = mais de um. Em alguns nomes (como Elohim), pode marcar majestade, não quantidade.",
+    "en": "Plural = more than one. In some names (like Elohim), it can mark majesty, not quantity.",
+    "es": "Plural = más de uno. En algunos nombres (como Elohim), puede marcar majestad, no cantidad."
+  },
+  "morphExplainDual": {
+    "pt": "Dual = exatamente dois (olhos, mãos, ou um par).",
+    "en": "Dual = exactly two (eyes, hands, or a pair).",
+    "es": "Dual = exactamente dos (ojos, manos, o un par)."
+  },
+  "morphExplainPerson1": {
+    "pt": "1ª pessoa = eu / nós — quem fala.",
+    "en": "1st person = I / we — the one speaking.",
+    "es": "1.ª persona = yo / nosotros — quien habla."
+  },
+  "morphExplainPerson2": {
+    "pt": "2ª pessoa = tu / vós — a quem se fala.",
+    "en": "2nd person = you — the one spoken to.",
+    "es": "2.ª persona = tú / vosotros — a quien se habla."
+  },
+  "morphExplainPerson3": {
+    "pt": "3ª pessoa = ele / ela / eles — de quem se fala.",
+    "en": "3rd person = he / she / they — the one spoken about.",
+    "es": "3.ª persona = él / ella / ellos — de quien se habla."
+  },
+  "morphExplainSuffix": {
+    "pt": "Sufixo = terminção colada na palavra (muitas vezes “meu”, “teu”, “dele”).",
+    "en": "Suffix = ending attached to the word (often “my”, “your”, “his”).",
+    "es": "Sufijo = terminación pegada a la palabra (a menudo “mi”, “tu”, “su”)."
+  },
+  "morphExplainPronominal": {
+    "pt": "Pronominal = o sufixo funciona como pronome (“meu”, “nosso”, “deles”).",
+    "en": "Pronominal = the suffix acts like a pronoun (“my”, “our”, “their”).",
+    "es": "Pronominal = el sufijo funciona como pronombre (“mi”, “nuestro”, “de ellos”)."
+  },
+  "morphExplainAdjective": {
+    "pt": "Adjetivo = qualifica o nome (“bom”, “grande”, “santo”).",
+    "en": "Adjective = qualifies the noun (“good”, “great”, “holy”).",
+    "es": "Adjetivo = califica el nombre (“bueno”, “grande”, “santo”)."
+  },
+  "morphExplainProper": {
+    "pt": "Próprio = nome de pessoa, lugar ou título específico.",
+    "en": "Proper = name of a specific person, place, or title.",
+    "es": "Propio = nombre de persona, lugar o título específico."
+  },
+  "morphExplainDivineName": {
+    "pt": "Nome divino = referência a Deus no original.",
+    "en": "Divine name = a reference to God in the original.",
+    "es": "Nombre divino = referencia a Dios en el original."
+  },
+  "morphExplainDetermined": {
+    "pt": "Determinado = forma marcada como “o/a” (definida).",
+    "en": "Determined = form marked as definite (“the”).",
+    "es": "Determinado = forma marcada como definida (“el/la”)."
+  },
+  "morphExplainObjectMarker": {
+    "pt": "Marcador de objeto = aponta o complemento direto no hebraico (não se traduz).",
+    "en": "Object marker = marks the direct object in Hebrew (often untranslated).",
+    "es": "Marcador de objeto = señala el complemento directo en hebreo (casi no se traduce)."
+  },
+  "morphExplainAdverb": {
+    "pt": "Advérbio = modifica a ação (“ainda”, “muito”, “ali”).",
+    "en": "Adverb = modifies the action (“still”, “very”, “there”).",
+    "es": "Adverbio = modifica la acción (“aún”, “mucho”, “allí”)."
+  },
+  "morphExplainParticle": {
+    "pt": "Partícula = palavra pequena que amarra o sentido (não é o “miolo” do versículo).",
+    "en": "Particle = small word that ties the sense together (not the core of the verse).",
+    "es": "Partícula = palabra pequeña que amarra el sentido (no es el núcleo del versículo)."
   }
 }

@@ -80,6 +80,44 @@ void main() {
       expect(days[2].note, 'Recado');
     });
 
+    test('fonte trocada no meio começa no dia indicado', () {
+      final days = RoomPlan.buildDays(
+        dates: ['2026-11-16', '2026-11-17', '2026-11-18', '2026-11-19'],
+        reading: (
+          abbrev: 'At',
+          name: 'Atos',
+          from: 5,
+          perDay: 1,
+          bookChapters: 28,
+        ),
+        scenes: const [
+          PlanScene(slug: 'a', title: 'A'),
+          PlanScene(slug: 'b', title: 'B'),
+        ],
+        readingFrom: 2,
+        sceneFrom: 3,
+      );
+      expect(days[0].reading, isNull);
+      expect(days[1].reading, isNull);
+      expect(days[2].reading!.label, 'Atos 5');
+      expect(days[3].reading!.label, 'Atos 6');
+      expect(days[2].scene, isNull);
+      expect(days[3].scene!.slug, 'a');
+    });
+
+    test('temporada: cena pela data, não pela fila', () {
+      final days = RoomPlan.buildDays(
+        dates: ['2026-11-28', '2026-11-29', '2026-11-30'],
+        scenes: const [PlanScene(slug: 'x', title: 'X')],
+        sceneOn: (d) => d == '2026-11-28'
+            ? null
+            : PlanScene(slug: 'adv-$d', title: d),
+      );
+      expect(days[0].scene, isNull);
+      expect(days[1].scene!.slug, 'adv-2026-11-29');
+      expect(days[2].scene!.slug, 'adv-2026-11-30');
+    });
+
     test('ida e volta pelo mapa', () {
       final p = plan5();
       final back = RoomPlan.fromMap(p.toMap())!;
@@ -186,5 +224,30 @@ void main() {
     expect(PlanQuestions.normBook('Gênesis'), 'genesis');
     expect(PlanQuestions.normBook('1 Coríntios'), '1corintios');
     expect(PlanQuestions.normBook('Êxodo'), PlanQuestions.normBook('exodo'));
+  });
+
+  test('propósito que recomeçou: quem entrou continua dentro, dias zeram', () {
+    final plan = RoomPlan(
+      id: 'novo',
+      title: 'Advento',
+      start: '2026-11-29',
+      end: '2026-12-24',
+      days: const [PlanDay(n: 1, date: '2026-11-29')],
+      gen: const {
+        'pv': ['velho'],
+      },
+    );
+    final old = PlanProgress(
+      planId: 'velho',
+      done: const {1: '2026-11-14'},
+      answered: const {1},
+      joined: true,
+    );
+    final carried = plan.progressOf(old)!;
+    expect(carried.planId, 'novo');
+    expect(carried.joined, isTrue);
+    expect(carried.done, isEmpty);
+    expect(carried.answered, isEmpty);
+    expect(plan.progressOf(PlanProgress(planId: 'outro', joined: true)), isNull);
   });
 }

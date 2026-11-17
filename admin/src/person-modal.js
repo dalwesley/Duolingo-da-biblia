@@ -114,17 +114,49 @@ export async function openPersonModal({ uid, name = '', reportId = '', onChanged
       console.warn(e);
       return fallback;
     });
-    const [user, against, by, log, mod] = await Promise.all([
+    const [user, against, by, log, mod, appReports] = await Promise.all([
       safe(getDocById(COL.users, uid), null),
       safe(listWhere(COL.userReports, 'targetUid', uid), []),
       safe(listWhere(COL.userReports, 'reporterUid', uid), []),
       isAdmin ? safe(listWhere('moderation_log', 'uid', uid), []) : [],
       isAdmin ? safe(moderateUser({ uid, action: 'info' }).then((r) => r.data), { error: true }) : null,
+      safe(listWhere(COL.appReports, 'uid', uid), []),
     ]);
     const ms = (x) => x?.toMillis?.() ?? (x ? new Date(x).getTime() : 0);
     log.sort((a, b) => ms(b.at) - ms(a.at));
     against.sort((a, b) => ms(b.createdAt) - ms(a.createdAt));
-    info = { user, against, by, log, mod };
+    appReports.sort((a, b) => ms(b.createdAt) - ms(a.createdAt));
+    info = { user, against, by, log, mod, appReports };
+  }
+
+  function platformOf() {
+    const u = info.user || {};
+    const raw = String(u.platform || '').toLowerCase();
+    if (raw) return { key: raw, source: 'perfil' };
+    const fromReport = info.appReports?.find((r) => r.platform);
+    if (fromReport?.platform) {
+      return { key: String(fromReport.platform).toLowerCase(), source: 'relato do app' };
+    }
+    const providers = info.mod?.auth?.providers || [];
+    if (providers.includes('apple.com') && !providers.includes('google.com')) {
+      return { key: 'ios', source: 'login Apple' };
+    }
+    return null;
+  }
+
+  /** Perfil primeiro; senão último relato com versão. */
+  function appVersionOf() {
+    const u = info.user || {};
+    if (u.appVersion) {
+      const build = u.buildNumber ? ` (${u.buildNumber})` : '';
+      return { label: `${u.appVersion}${build}`, source: 'perfil' };
+    }
+    const fromReport = info.appReports?.find((r) => r.appVersion);
+    if (fromReport?.appVersion) {
+      const build = fromReport.buildNumber ? ` (${fromReport.buildNumber})` : '';
+      return { label: `${fromReport.appVersion}${build}`, source: 'relato do app' };
+    }
+    return null;
   }
 
   function displayName() {
@@ -154,6 +186,18 @@ export async function openPersonModal({ uid, name = '', reportId = '', onChanged
             <h2>${escapeHtml(displayName())}</h2>
             <p class="pm-sub">
               <button type="button" class="rp-uid" data-copy="${escapeHtml(uid)}" title="Copiar uid"><code>${escapeHtml(uid)}</code><span aria-hidden="true">⧉</span></button>
+              ${(() => {
+                const plat = platformOf();
+                if (!plat) return '';
+                const label = ({ android: 'Android', ios: 'iOS', web: 'Web', macos: 'macOS' })[plat.key] || plat.key;
+                const tone = plat.key === 'ios' ? 'ok' : plat.key === 'android' ? 'warn' : '';
+                return `<span class="rv-pill ${tone}">${escapeHtml(label)}</span>`;
+              })()}
+              ${(() => {
+                const ver = appVersionOf();
+                if (!ver) return '';
+                return `<span class="rv-pill sm">v${escapeHtml(ver.label)}</span>`;
+              })()}
               ${st ? `<span class="rv-pill ${st[1]}">${escapeHtml(st[0] + until)}</span>` : ''}
             </p>
           </div>
@@ -178,8 +222,21 @@ export async function openPersonModal({ uid, name = '', reportId = '', onChanged
               ${row('Último login', isoDate(a?.lastSignInAt))}
               ${row('Login ligado', yesNo(!a?.disabled))}
             </ul>`;
+    const plat = platformOf();
+    const platLabel = plat
+      ? ({ android: 'Android', ios: 'iOS', web: 'Web', macos: 'macOS' }[plat.key] || plat.key)
+      : '—';
+    const platValue = plat
+      ? `${escapeHtml(platLabel)}${plat.source !== 'perfil' ? ` <span class="field-hint">· ${escapeHtml(plat.source)}</span>` : ''}`
+      : '— <span class="field-hint">· ainda sem sync do app</span>';
+    const ver = appVersionOf();
+    const verValue = ver
+      ? `${escapeHtml(ver.label)}${ver.source !== 'perfil' ? ` <span class="field-hint">· ${escapeHtml(ver.source)}</span>` : ''}`
+      : '— <span class="field-hint">· ainda sem sync do app</span>';
     const appRows = u
       ? `<ul class="db-list">
+          ${row('Aparelho', platValue)}
+          ${row('Versão do app', verValue)}
           ${row('Peregrino+', yesNo(u.plusActive))}
           ${row('Passos', escapeHtml(String(u.xp ?? u.steps ?? 0)))}
           ${row('Sequência', escapeHtml(String(u.streak ?? 0)))}

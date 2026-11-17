@@ -7,6 +7,9 @@ import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import '../data/season_walk_catalog.dart';
+import '../services/content_catalog_service.dart';
+import 'season_walk_screen.dart';
+import '../models/season_walk.dart';
 import '../l10n/app_language.dart';
 import '../models/corner_challenge.dart';
 import '../models/pilgrim_medal_models.dart';
@@ -1228,6 +1231,20 @@ class _LeagueScreenState extends State<LeagueScreen>
     );
 
     final isLeader = room.isOwner(backend.uid);
+    // Grupo com menos de 3 pessoas ainda está se formando: só pessoas,
+    // convite e saída. Dupla vai para a Companhia.
+    if (!rooms.isFormed && !(rooms.loading && members.isEmpty)) {
+      return _buildFormingRoom(
+        context,
+        rooms: rooms,
+        backend: backend,
+        progress: progress,
+        room: room,
+        isLeader: isLeader,
+        incoming: incoming,
+        callPeople: callPeople,
+      );
+    }
     if (room.plan != null) {
       return _buildPlanRoom(
         context,
@@ -1349,22 +1366,6 @@ class _LeagueScreenState extends State<LeagueScreen>
               : null,
         ),
       ),
-      const SizedBox(height: AppSpace.lg),
-      _reveal(
-        2,
-        _RoomExitActions(
-          isLeader: isLeader,
-          onLeave: () => _leaveRoom(
-            context,
-            isLeader: isLeader,
-            others: [
-              for (final m in members)
-                if (!m.isUser) m,
-            ],
-          ),
-          onClose: () => _closeRoom(context),
-        ),
-      ),
       const SizedBox(height: AppSpace.md),
       if (rooms.lastError != null) ...[
         InlineNotice(
@@ -1378,6 +1379,111 @@ class _LeagueScreenState extends State<LeagueScreen>
         const Padding(
           padding: EdgeInsets.symmetric(vertical: AppSpace.xxl),
           child: AppSpinner(),
+        ),
+    ];
+  }
+
+  /// Grupo com menos de [kRoomMinMembers] pessoas: o Anan explica que o
+  /// grupo começa com 3, chama gente e oferece a Companhia para a dupla.
+  List<Widget> _buildFormingRoom(
+    BuildContext context, {
+    required RoomService rooms,
+    required BackendService backend,
+    required ProgressService progress,
+    required StudyRoom room,
+    required bool isLeader,
+    required List<RoomInvite> incoming,
+    required VoidCallback callPeople,
+  }) {
+    final l10n = context.l10n;
+    final members = rooms.members;
+    return [
+      for (final invite in incoming) ...[
+        _reveal(1, _incomingInviteCard(context, invite)),
+        const SizedBox(height: AppSpace.md),
+      ],
+      _reveal(
+        2,
+        _RoomTitle(
+          room: room,
+          isOwner: isLeader,
+          onMenu: () => _openRoomMenu(context),
+        ),
+      ),
+      const SizedBox(height: AppSpace.md),
+      _reveal(
+        2,
+        AnanSpeech(
+          face: CloudFace.carregando,
+          padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                l10n.roomFormingTitle(kRoomMinMembers),
+                textAlign: TextAlign.center,
+                style: AppTypography.display(
+                  size: 22,
+                  color: AnanSpeechBubble.ink,
+                ),
+              ),
+              const SizedBox(height: AppSpace.sm),
+              Text(
+                l10n.roomFormingBody(rooms.missingToForm),
+                textAlign: TextAlign.center,
+                style: AppTypography.body(
+                  size: 14,
+                  height: 1.45,
+                  color: AnanSpeechBubble.muted,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+      const SizedBox(height: AppSpace.md),
+      _reveal(
+        2,
+        CopperCta(
+          label: l10n.roomFormingInvite,
+          leading: CinematicGlyph.share,
+          expanded: true,
+          onTap: callPeople,
+        ),
+      ),
+      const SizedBox(height: AppSpace.sm),
+      _reveal(
+        2,
+        GhostCta(
+          label: l10n.roomFormingCompanion,
+          leading: CinematicGlyph.people,
+          expanded: true,
+          onTap: () => setState(() => _tab = _tabCompanhia),
+        ),
+      ),
+      const SizedBox(height: AppSpace.lg),
+      _reveal(
+        2,
+        GlassCard(
+          padding: AppMetrics.cardPadding,
+          child: RoomMembersList(
+            members: _seatedMembers(members, room.ownerId),
+            myPhotoUrl: backend.userPhotoUrl,
+            myStyle: progress.settings.portraitStyle,
+            leaderId: room.ownerId,
+            leaderTitle: room.kind.leaderTitle,
+            study: null,
+            onTap: (m) => _showRoomSeat(context, m),
+            onInvite: rooms.isFull ? null : callPeople,
+          ),
+        ),
+      ),
+      const SizedBox(height: AppSpace.md),
+      if (rooms.lastError != null)
+        InlineNotice(
+          message: rooms.lastError!,
+          busy: rooms.loading,
+          onRetry: () => context.read<RoomService>().syncIfNeeded(),
         ),
     ];
   }
@@ -1410,7 +1516,23 @@ class _LeagueScreenState extends State<LeagueScreen>
         phase == PlanPhase.active && selected?.hasQuestion == true
         ? selected
         : null;
+    // Texto das respostas só depois de responder (o líder vê sempre): as
+    // rules recusam a leitura antes.
+    final answersUnlocked =
+        answersDay != null &&
+        (isLeader || mine.answered.contains(answersDay.n));
+    final othersAnswered = answersDay == null
+        ? 0
+        : members
+              .where(
+                (m) =>
+                    !m.isUser &&
+                    (plan.progressOf(m.plan)?.answered.contains(answersDay.n) ??
+                        false),
+              )
+              .length;
     if (answersDay != null &&
+        answersUnlocked &&
         rooms.answersFor(answersDay.n) == null &&
         !rooms.answersLoading(answersDay.n)) {
       WidgetsBinding.instance.addPostFrameCallback(
@@ -1437,6 +1559,9 @@ class _LeagueScreenState extends State<LeagueScreen>
             isOwner: isLeader,
             onMenu: () => _openRoomMenu(context),
           ),
+          onMenu: () => _openRoomMenu(context),
+          myPhotoUrl: backend.userPhotoUrl,
+          myStyle: progress.settings.portraitStyle,
           selected: selected,
           onSelect: (d) => setState(() => _planDay = d.n),
           closed: rooms.planClosed,
@@ -1467,17 +1592,6 @@ class _LeagueScreenState extends State<LeagueScreen>
           ),
         ),
       ],
-      if (phase == PlanPhase.active) ...[
-        const SizedBox(height: AppSpace.md),
-        _reveal(
-          2,
-          RoomPlanPulseCard(
-            group: group,
-            myPhotoUrl: backend.userPhotoUrl,
-            myStyle: progress.settings.portraitStyle,
-          ),
-        ),
-      ],
       if (answersDay != null) ...[
         const SizedBox(height: AppSpace.md),
         _reveal(
@@ -1485,7 +1599,10 @@ class _LeagueScreenState extends State<LeagueScreen>
           RoomPlanAnswersCard(
             day: answersDay,
             answered: mine.answered.contains(answersDay.n),
+            isLeader: isLeader,
             answers: rooms.answersFor(answersDay.n),
+            othersAnswered: othersAnswered,
+            private: room.answersPrivate,
             loading: rooms.answersLoading(answersDay.n),
             myUid: backend.uid,
             onAnswer: () => _answerPlanDay(context, answersDay),
@@ -1502,10 +1619,8 @@ class _LeagueScreenState extends State<LeagueScreen>
           members: members,
           walkedToday: progress.walkedToday,
           onClaim: () => _claimRoomChest(context, room.code),
-          // Antes do começo não há estudo do grupo: o Anan avisa quando começa.
-          onWalk: phase == PlanPhase.upcoming
-              ? () => _showPlanNotStarted(context, plan)
-              : widget.onGoToday,
+          // O card do propósito já tem o próximo passo: sem 2º botão.
+          onWalk: null,
           roster: RoomMembersList(
             members: _seatedMembers(members, room.ownerId),
             myPhotoUrl: backend.userPhotoUrl,
@@ -1516,22 +1631,6 @@ class _LeagueScreenState extends State<LeagueScreen>
             onTap: (m) => _showRoomSeat(context, m),
             onInvite: rooms.isFull ? null : callPeople,
           ),
-        ),
-      ),
-      const SizedBox(height: AppSpace.lg),
-      _reveal(
-        2,
-        _RoomExitActions(
-          isLeader: isLeader,
-          onLeave: () => _leaveRoom(
-            context,
-            isLeader: isLeader,
-            others: [
-              for (final m in members)
-                if (!m.isUser) m,
-            ],
-          ),
-          onClose: () => _closeRoom(context),
         ),
       ),
       const SizedBox(height: AppSpace.md),
@@ -1549,32 +1648,6 @@ class _LeagueScreenState extends State<LeagueScreen>
           child: AppSpinner(),
         ),
     ];
-  }
-
-  Future<void> _showPlanNotStarted(BuildContext context, RoomPlan plan) {
-    return showAppDialog<void>(
-      context,
-      builder: (ctx) => AppDialog(
-        // Espera = Anan carregando.
-        face: CloudFace.carregando,
-        title: ctx.l10n.planNotStartedTitle,
-        content: Text(
-          ctx.l10n.planNotStartedBody(
-            plan.daysUntilStart(),
-            planDateShort(ctx, plan.start),
-          ),
-          textAlign: TextAlign.center,
-        ),
-        actions: [
-          CopperCta(
-            label: ctx.l10n.commonGotIt,
-            dense: true,
-            trailing: null,
-            onTap: () => Navigator.pop(ctx),
-          ),
-        ],
-      ),
-    );
   }
 
   /// Dia escolhido na faixa do propósito (null = hoje).
@@ -1658,14 +1731,63 @@ class _LeagueScreenState extends State<LeagueScreen>
   Future<void> _openPlanScene(BuildContext context, PlanDay day) async {
     final scene = day.scene;
     if (scene == null) return;
+    // Dia de temporada (Advento) no propósito: vale a regra da estação
+    // (presente aberto a todos; fora dele, Plus do 2º dia em diante) e o
+    // dia conta na Caminhada como se aberto por ela.
+    final progress = context.read<ProgressService>();
+    final season = _seasonDayFor(scene.slug, day.date);
+    if (season != null) {
+      final access = SeasonWalkCatalog.access(
+        campaign: season.campaign,
+        index: season.day.index,
+        today: progress.seasonToday,
+        plusOpen: context.read<SubscriptionService>().plusFeaturesOpen,
+      );
+      if (access.needsPlus) {
+        openSeasonPaywall(context);
+        return;
+      }
+      if (!access.playable) return;
+      await ContentCatalogService.instance.ensureTrailBank(
+        season.day.trailSlug,
+      );
+      if (!context.mounted) return;
+    }
     await Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (_) =>
-            LessonScreen(missionSlug: scene.slug, skipTrailLock: true),
+        builder: (_) => LessonScreen(
+          missionSlug: scene.slug,
+          skipTrailLock: true,
+          plusGateDone: season != null,
+        ),
       ),
     );
     if (!context.mounted) return;
-    await context.read<RoomService>().syncPlan(context.read<ProgressService>());
+    if (season != null && progress.isMissionCompleted(scene.slug)) {
+      await progress.markWalkDate(season.campaign.id, day.date);
+      if (!context.mounted) return;
+    }
+    await context.read<RoomService>().syncPlan(progress);
+  }
+
+  /// O dia da temporada que cai em [date] com a cena [slug], se houver.
+  static ({SeasonWalkCampaign campaign, SeasonWalkDay day})? _seasonDayFor(
+    String slug,
+    String date,
+  ) {
+    final d = parsePlanYmd(date);
+    if (d == null) return null;
+    final now = DateTime.now();
+    for (final c in [
+      ...SeasonWalkCatalog.all(now),
+      ?SeasonWalkCatalog.justEnded(now),
+    ]) {
+      final day = c.dayAt(c.dayIndexOn(d) ?? 0);
+      if (day != null && day.missionSlug == slug) {
+        return (campaign: c, day: day);
+      }
+    }
+    return null;
   }
 
   Future<void> _answerPlanDay(BuildContext context, PlanDay day) async {
@@ -1987,6 +2109,32 @@ class _LeagueScreenState extends State<LeagueScreen>
     // Aceno vale para qualquer pessoa (apoio, oração, saudade), não só
     // para quem não caminhou: um por pessoa por dia.
     final canCall = other && !rooms.nudgedToday.contains(m.uid);
+    // Respostas da pessoa: o líder vê todas; quem é membro vê só os dias
+    // que também respondeu (mesma regra do card de respostas).
+    final plan = rooms.plan;
+    Future<Map<int, String>>? answers;
+    var hiddenAnswers = 0;
+    if (room != null && plan != null && m.uid.isNotEmpty) {
+      final theirs = plan.progressOf(m.plan)?.answered ?? const <int>{};
+      final myAnswered = rooms.myPlan?.answered ?? const <int>{};
+      final visible = m.isUser || iLead
+          ? theirs
+          : room.answersPrivate
+          ? <int>{}
+          : theirs.where(myAnswered.contains).toSet();
+      // Fechadas pelo líder: nada a destravar respondendo.
+      hiddenAnswers = room.answersPrivate && !iLead
+          ? 0
+          : theirs.length - visible.length;
+      if (visible.isNotEmpty) {
+        answers = context.read<BackendService>().fetchMemberPlanAnswers(
+          room.code,
+          plan.id,
+          m.uid,
+          visible,
+        );
+      }
+    }
     final action = await showRoomSeatSheet(
       context,
       member: m,
@@ -2000,6 +2148,8 @@ class _LeagueScreenState extends State<LeagueScreen>
       canViewProfile: other,
       canTransfer: other && iLead,
       canModerate: other,
+      answers: answers,
+      hiddenAnswers: hiddenAnswers,
     );
     if (action == null || !context.mounted) return;
     switch (action) {
@@ -2008,7 +2158,7 @@ class _LeagueScreenState extends State<LeagueScreen>
         final invitePlan =
             plan != null &&
             plan.phase() == PlanPhase.upcoming &&
-            !(m.plan?.planId == plan.id && m.plan!.joined);
+            !(plan.progressOf(m.plan)?.joined ?? false);
         final kind = await showRoomWavePicker(
           context,
           name: m.name.trim().split(RegExp(r'\s+')).first,
@@ -2209,6 +2359,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     final room = rooms.activeRoom;
     if (room == null) return;
     final others = rooms.members.where((m) => !m.isUser).toList();
+    final backend = context.read<BackendService>();
 
     final plan = rooms.plan;
     final action = await showRoomMenu(
@@ -2216,6 +2367,7 @@ class _LeagueScreenState extends State<LeagueScreen>
       room: room,
       hasStudy: rooms.currentStudy != null,
       canTransfer: others.isNotEmpty,
+      isLeader: room.isOwner(backend.uid),
       plan: plan == null
           ? RoomMenuPlan.none
           : plan.phase() == PlanPhase.ended
@@ -2239,6 +2391,20 @@ class _LeagueScreenState extends State<LeagueScreen>
         await rooms.editRoom(name: setup.name, kind: setup.kind);
       case RoomMenuAction.goal:
         await _editRoomGoal(context, room.weeklyGoalSteps);
+      case RoomMenuAction.answersPrivacy:
+        final private = !room.answersPrivate;
+        final ok = await rooms.setAnswersPrivate(private);
+        if (!context.mounted) return;
+        showAppToastFor(
+          context,
+          message: !ok
+              ? context.l10n.cornerActionFailed
+              : private
+              ? context.l10n.planAnswersNowPrivate
+              : context.l10n.planAnswersNowOpen,
+          glyph: ok ? CinematicGlyph.check : CinematicGlyph.wrong,
+          tone: ok ? AppToastTone.accent : AppToastTone.warn,
+        );
       case RoomMenuAction.clearStudy:
         await rooms.setStudy(null);
       case RoomMenuAction.transfer:
@@ -2252,6 +2418,14 @@ class _LeagueScreenState extends State<LeagueScreen>
         );
       case RoomMenuAction.endPlan:
         await _endRoomPlan(context);
+      case RoomMenuAction.leave:
+        await _leaveRoom(
+          context,
+          isLeader: room.isOwner(backend.uid),
+          others: others,
+        );
+      case RoomMenuAction.close:
+        await _closeRoom(context);
     }
   }
 
@@ -3131,10 +3305,7 @@ class _RoomTitle extends StatelessWidget {
           clipBehavior: Clip.none,
           children: [
             Padding(
-              padding: EdgeInsets.only(
-                top: AppSpace.sm,
-                right: isOwner ? 48 : 12,
-              ),
+              padding: const EdgeInsets.only(top: AppSpace.sm, right: 48),
               // Traço de título de card, na altura da 1ª linha do display.
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -3167,15 +3338,15 @@ class _RoomTitle extends StatelessWidget {
                 ],
               ),
             ),
-            if (isOwner)
-              Positioned(
-                top: 0,
-                right: 0,
-                child: _MenuButton(
-                  tooltip: context.l10n.juntosRoomOptions,
-                  onTap: onMenu,
-                ),
+            // Menu para todos: o líder conduz; todos podem sair por ele.
+            Positioned(
+              top: 0,
+              right: 0,
+              child: _MenuButton(
+                tooltip: context.l10n.juntosRoomOptions,
+                onTap: onMenu,
               ),
+            ),
           ],
         ),
         // 4 = mesmo vão visível (tinta a tinta) que o resto do card.
@@ -3352,45 +3523,6 @@ class _RoomHearth extends StatelessWidget {
           ],
         ],
       ),
-    );
-  }
-}
-
-/// Fim da página do grupo: sair (todos) e encerrar (só o líder).
-class _RoomExitActions extends StatelessWidget {
-  final bool isLeader;
-  final VoidCallback onLeave;
-  final VoidCallback onClose;
-
-  const _RoomExitActions({
-    required this.isLeader,
-    required this.onLeave,
-    required this.onClose,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        GhostCta(
-          label: context.l10n.groupMenuLeave,
-          leading: CinematicGlyph.back,
-          danger: true,
-          expanded: true,
-          onTap: onLeave,
-        ),
-        if (isLeader) ...[
-          const SizedBox(height: AppSpace.sm),
-          GhostCta(
-            label: context.l10n.groupMenuClose,
-            leading: CinematicGlyph.stop,
-            danger: true,
-            expanded: true,
-            onTap: onClose,
-          ),
-        ],
-      ],
     );
   }
 }
@@ -5301,7 +5433,7 @@ class _MenuButton extends StatelessWidget {
             height: 48,
             child: Center(
               child: CinematicIcon(
-                glyph: CinematicGlyph.tune,
+                glyph: CinematicGlyph.more,
                 size: AppMetrics.iconMd,
                 accent: a.textSecondary,
                 framed: false,

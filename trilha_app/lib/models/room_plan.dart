@@ -184,6 +184,25 @@ class RoomPlan {
 
   int get total => days.length;
 
+  /// Ids dos propósitos que este substituiu ao trocar a trilha com ele em
+  /// andamento (`gen.pv`, o mais recente primeiro).
+  List<String> get previousIds => [
+    if (gen['pv'] is List)
+      for (final v in gen['pv'] as List)
+        if (v is String) v,
+  ];
+
+  /// Progresso de uma pessoa neste propósito. Recomeçou com outra trilha:
+  /// quem tinha entrado no anterior continua dentro (dias e respostas zeram).
+  PlanProgress? progressOf(PlanProgress? p) {
+    if (p == null) return null;
+    if (p.planId == id) return p;
+    if (previousIds.contains(p.planId)) {
+      return PlanProgress(planId: id, joined: p.joined);
+    }
+    return null;
+  }
+
   PlanPhase phase([DateTime? now]) {
     final today = planYmd(now ?? DateTime.now());
     if (today.compareTo(start) < 0) return PlanPhase.upcoming;
@@ -305,7 +324,10 @@ class RoomPlan {
   /// Monta os dias: capítulos seguidos de um livro e cenas em ordem. A
   /// pergunta de cada dia sai de [questionFor] (índice do dia, capítulos e
   /// cena dele). [edits] guarda pergunta e recado que o líder trocou à mão,
-  /// por número do dia.
+  /// por número do dia. [sceneOn] troca a fila de cenas pela cena da data
+  /// (temporada: cada dia do Advento cai no seu dia). [readingFrom] e [sceneFrom] dizem a partir de que
+  /// índice de dia cada fonte começa (trocar a fonte com o propósito em
+  /// andamento: a nova vale só do dia seguinte em diante).
   static List<PlanDay> buildDays({
     required List<String> dates,
     ({String abbrev, String name, int from, int perDay, int bookChapters})?
@@ -314,13 +336,18 @@ class RoomPlan {
     String? Function(int index, PlanReading? reading, PlanScene? scene)?
     questionFor,
     Map<int, ({String? question, String? note})> edits = const {},
+    int readingFrom = 0,
+    int sceneFrom = 0,
+    PlanScene? Function(String date)? sceneOn,
   }) {
     final out = <PlanDay>[];
     var chapter = reading?.from ?? 0;
     for (var i = 0; i < dates.length; i++) {
       final n = i + 1;
       PlanReading? r;
-      if (reading != null && chapter <= reading.bookChapters) {
+      if (reading != null &&
+          i >= readingFrom &&
+          chapter <= reading.bookChapters) {
         final to = (chapter + reading.perDay - 1).clamp(
           chapter,
           reading.bookChapters,
@@ -334,7 +361,13 @@ class RoomPlan {
         chapter = to + 1;
       }
       final edit = edits[n];
-      final scene = i < scenes.length ? scenes[i] : null;
+      final si = i - sceneFrom;
+      // Temporada (Advento): a cena é a do dia do calendário, não a da fila.
+      final scene = sceneOn != null
+          ? sceneOn(dates[i])
+          : si >= 0 && si < scenes.length
+          ? scenes[si]
+          : null;
       out.add(
         PlanDay(
           n: n,
@@ -463,8 +496,7 @@ class PlanGroup {
     : now = now ?? DateTime.now();
 
   PlanProgress? _of(RoomMember m) {
-    final p = m.plan;
-    return p != null && p.planId == plan.id ? p : null;
+    return plan.progressOf(m.plan);
   }
 
   int joinedCount() => members.where((m) => _of(m)?.joined ?? false).length;

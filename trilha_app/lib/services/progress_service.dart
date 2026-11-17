@@ -158,6 +158,7 @@ class ProgressService extends ChangeNotifier {
   static const _keyReadBibleChapters = 'readBibleChapters';
   static const _keyBibleBookmarks = 'bibleBookmarks';
   static const _keySharedVerses = 'sharedVerses';
+  static const _keyLifeChallengesDone = 'lifeChallengesDone';
   static const _keyBibleBrowseOrder = 'bibleBrowseOrder';
   static const _keyLastBibleSpot = 'lastBibleSpot';
   static const _keyBibleSepia = 'bibleSepia';
@@ -378,6 +379,9 @@ class ProgressService extends ChangeNotifier {
 
   /// Total de compartilhamentos (contador persistente).
   int sharedVerseCount = 0;
+
+  /// Slugs de cena em que a prática IRL (`dailyChallenge`) foi marcada.
+  List<String> lifeChallengesDone = [];
 
   /// Missões concluídas com 100% de acertos (slug, 1ª vez).
   List<String> perfectMissions = [];
@@ -1251,6 +1255,8 @@ class ProgressService extends ChangeNotifier {
       'bibleBookmarks':
           prefs.getStringList(_keyBibleBookmarks) ?? const <String>[],
       'sharedVerses': prefs.getStringList(_keySharedVerses) ?? const <String>[],
+      'lifeChallengesDone':
+          prefs.getStringList(_keyLifeChallengesDone) ?? const <String>[],
       'memoryScores': memScores,
       'memoryMastered':
           prefs.getStringList(_keyMemoryMastered) ?? const <String>[],
@@ -1400,6 +1406,7 @@ class ProgressService extends ChangeNotifier {
     lastBibleSpot = null;
     sharedVerses = [];
     sharedVerseCount = 0;
+    lifeChallengesDone = [];
     perfectMissions = [];
     rankedScenes = [];
     borrowedMissions = [];
@@ -2050,6 +2057,21 @@ class ProgressService extends ChangeNotifier {
       sharedVerses = sharedVerses.sublist(0, 24);
     }
     sharedVerseCount = sharedVerseCount + 1;
+    await _save();
+    notifyListeners();
+  }
+
+  bool didLifeChallenge(String missionSlug) =>
+      lifeChallengesDone.contains(missionSlug);
+
+  /// Check-in da prática IRL desta cena. Sem moeda / XP.
+  Future<void> markLifeChallenge(String missionSlug) async {
+    final slug = missionSlug.trim();
+    if (slug.isEmpty || lifeChallengesDone.contains(slug)) return;
+    lifeChallengesDone = [slug, ...lifeChallengesDone];
+    if (lifeChallengesDone.length > 120) {
+      lifeChallengesDone = lifeChallengesDone.sublist(0, 120);
+    }
     await _save();
     notifyListeners();
   }
@@ -3352,6 +3374,7 @@ class ProgressService extends ChangeNotifier {
       },
       'sharedVerses': sharedVerses,
       'sharedVerseCount': sharedVerseCount,
+      'lifeChallengesDone': lifeChallengesDone,
       'perfectMissions': perfectMissions,
       'rankedScenes': rankedScenes,
       'borrowedMissions': borrowedMissions,
@@ -3893,6 +3916,12 @@ class ProgressService extends ChangeNotifier {
       }
       if (data.containsKey('bibleNotes')) {
         bibleNotes = _mergeBibleNotes(bibleNotes, data['bibleNotes']);
+      }
+      if (data.containsKey('lifeChallengesDone')) {
+        lifeChallengesDone = _unionStringLists(
+          lifeChallengesDone,
+          _asStringList(data['lifeChallengesDone']),
+        );
       }
       if (data.containsKey('sharedVerses')) {
         sharedVerses = _unionStringLists(
@@ -4594,6 +4623,7 @@ class ProgressService extends ChangeNotifier {
     bibleNotes = {};
     sharedVerses = [];
     sharedVerseCount = 0;
+    lifeChallengesDone = [];
     perfectMissions = [];
     rankedScenes = [];
     borrowedMissions = [];

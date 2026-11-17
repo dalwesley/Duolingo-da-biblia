@@ -9,6 +9,47 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.48] — 2026-11-16
+
+### Added
+- Presente do Advento: quem caminha os 26 dias (29/11 a 24/12) ganha Peregrino+ — 1 mês sozinho, 2 meses com a dupla da Companhia, 3 meses com 3+ do grupo concluindo. Dupla e grupo valem se formados até o fim do 1º dia; dia perdido pode ser feito depois, até 24/12. Card na tela do Advento, celebração quando o presente sobe e linha no texto de compartilhar
+- Propósito do grupo pode seguir o Advento (aba Estação): cada dia traz a cena do dia da estação, nas datas da estação. Cena feita pelo propósito conta para o presente
+- Propósito do grupo: capa com dia atual, quem já foi hoje e quando começa/termina; passos Leitura e Cena; respostas de cada pessoa (o líder vê todas, o membro vê os dias que também respondeu); aviso ao trocar a fonte (duração nova, recomeço ou troca a partir de amanhã)
+- Estudar o versículo: modo Interlinear ao lado de Versículo; "Ouvir o original" (voz hebraica/grega do aparelho, ou a transliteração); "Como a TB traduz" a mesma palavra; morfologia com explicação de cada termo ao tocar
+- Hoje: compartilhar a frase e o postal direto da tela, com convite a levar a Palavra a alguém
+- Trilhas capítulo a capítulo usam a pintura da trilha do livro
+- Novidades da versão: folha com Anan na primeira abertura depois de atualizar (uma vez por versão; quem acabou de instalar não vê). Ajustes › Sobre › Novidades reabre a folha. Itens em `lib/widgets/whats_new_sheet.dart` + `l10n/parts/whats_new.json`
+- Propósito do grupo: o líder abre ou fecha as respostas pelo menu. Abertas (padrão): cada um vê as do grupo depois de responder. Fechadas: cada membro vê só a própria, o líder vê todas
+
+### Changed
+- Grupo só começa com 3 pessoas, em todo o app. Abaixo disso, a aba do grupo mostra o grupo se formando: chamar pessoas ou caminhar em Companhia; propósito, semana e presentes esperam
+- Menu do grupo para todos: o líder conduz, qualquer um sai por ele
+- Integrantes mostram "caminhou ontem / há N dias" em vez de "dias sem caminhar"
+- Ocorrências da palavra em ordem canônica (neste livro e a primeira em cada livro)
+- Postal: nova composição — pintura em cima, frase e referência embaixo, Anan só quando não fala acima
+- Copy e componentes alinhados ao design language (voz, presença da Caravana, spinners, haptics, CTA, tokens); site e marketing falam cena/Stway/Caravana, com Cormorant + Nunito
+- Versão 1.0.48 (48), iOS 1048
+
+### Fixed
+- Advento: cena recusada por chegar fora de ordem ao servidor; dupla formada depois do 1º dia entrava na foto; cena feita pela A Promessa não contava; cena feita sem internet era recusada e apagada (agora espera o começo chegar ao servidor)
+- Advento: recuperar dias perdidos vale até 7 cenas por dia (de Brasília), configurável em `campaigns/{id}.maxPerDay`; o card avisa que cada cena vale a partir do dia dela
+- Grupo: regra das 3 pessoas também no servidor (`rooms/{code}.memberCount`, mantido pelas functions); com menos de 3 o menu não oferece propósito/semana/meta e fechar a semana não sai
+- Propósito que começa hoje e troca a fonte ganha id novo (o dia 1 antigo não fica marcado)
+- Respostas do propósito: rules só deixam o membro ler depois de responder (e nunca quando o líder fechou); o contador "N responderam" vem do progresso
+- Estudar o versículo: "este/como/para/casa" não se ligam mais a verbos; contagem do "Como a TB traduz" considera o livro; imperfeito hebraico com a explicação certa em en/es; áudio para ao fechar e não toca transliteração antiga
+- Compartilhar no Hoje não abre duas folhas; `lifeChallengesDone` vai para o doc privado
+- Painel: ficha de suporte fecha durante o carregamento e mostra "conta não encontrada"
+- "Ouvir o original" ficava mudo no Android quando a voz hebraica/grega não estava baixada: agora exige a voz instalada e, se falhar, lê a transliteração
+- Indicação só liga com chave `sk_` do RevenueCat
+
+### Infra
+- Functions: `onAdventSceneDone` (confere a cena pelos horários do Firestore: dia liberado, mínimo de 60s por cena e entre provas, dentro do prazo) e `adventTick` (a cada 30 min: foto da dupla/grupo do dia 1 e varredura de quem concluiu). Meses entram em `referralRewards.banked` (fora do teto de 12/ano). Config em `campaigns/advento-2026`
+- `firestore.rules`: `seasonWalks/{c}/scenes|proof|rewards|roster`, `campaigns/{id}`
+- Painel: Usuários com aparelho e versão do app, ficha rápida (copiar uid, comandos de Plus, abrir no Console, relatos)
+- Functions `onRoomMemberCreate`/`onRoomMemberDelete` mantêm `rooms/{code}.memberCount`; rodar `node admin/scripts/backfill_room_member_count.mjs --apply` depois do deploy
+- Companhia grava `guestJoinedAt` (hora do servidor) ao entrar o par; a foto do Advento usa
+- Deploy de functions + rules antes de 29/11 23:59 BRT (foto do dia 1)
+
 ## [1.0.47] — 2026-11-13
 
 ### Added

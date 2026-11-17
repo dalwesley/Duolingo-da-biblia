@@ -90,6 +90,14 @@ class BookOccurrence {
   const BookOccurrence({required this.bookIndex, required this.count});
 }
 
+/// Sentidos/glosses da TB para o mesmo Strong (contagem no cânon).
+class GlossVariant {
+  final String gloss;
+  final int count;
+
+  const GlossVariant({required this.gloss, required this.count});
+}
+
 /// Léxico + mapa de usos para uma entrada Strong.
 class StrongStudy {
   final StrongEntry? entry;
@@ -99,6 +107,7 @@ class StrongStudy {
   final List<BookOccurrence> byBook;
   final List<ConcordanceHit> nearby;
   final List<ConcordanceHit> spread;
+  final List<GlossVariant> glosses;
 
   const StrongStudy({
     required this.entry,
@@ -108,6 +117,7 @@ class StrongStudy {
     required this.byBook,
     required this.nearby,
     required this.spread,
+    this.glosses = const [],
   });
 }
 
@@ -171,6 +181,7 @@ class BibleStudyService {
     );
     final tokens = [for (final r in tokenRows) _tokenFrom(r)];
 
+    // Top por votos (relevância), depois ordem canônica na lista.
     final xrefRows = await db.query(
       'cross_refs',
       where: 'from_book = ? AND from_chapter = ? AND from_verse = ?',
@@ -178,16 +189,23 @@ class BibleStudyService {
       orderBy: 'votes DESC',
       limit: 12,
     );
-    final crossRefs = [
-      for (final r in xrefRows)
-        CrossRef(
-          bookIndex: r['to_book'] as int,
-          chapter: r['to_chapter'] as int,
-          verse: r['to_verse'] as int,
-          verseEnd: r['to_verse_end'] as int?,
-          votes: r['votes'] as int,
-        ),
-    ];
+    final crossRefs =
+        [
+          for (final r in xrefRows)
+            CrossRef(
+              bookIndex: r['to_book'] as int,
+              chapter: r['to_chapter'] as int,
+              verse: r['to_verse'] as int,
+              verseEnd: r['to_verse_end'] as int?,
+              votes: r['votes'] as int,
+            ),
+        ]..sort((a, b) {
+          final book = a.bookIndex.compareTo(b.bookIndex);
+          if (book != 0) return book;
+          final ch = a.chapter.compareTo(b.chapter);
+          if (ch != 0) return ch;
+          return a.verse.compareTo(b.verse);
+        });
 
     return VerseStudy(tokens: tokens, crossRefs: crossRefs);
   }
@@ -247,6 +265,45 @@ class BibleStudyService {
             [key, bookIndex, limit],
           );
     return _hitsFrom(key, rows);
+  }
+
+  /// Ocorrências no livro em ordem canônica, centradas no versículo atual.
+  Future<List<ConcordanceHit>> concordanceAround(
+    String strongId, {
+    required int bookIndex,
+    required int chapter,
+    required int verse,
+    int limit = 40,
+  }) async {
+    final db = await _database();
+    final key = _normalizeStrong(strongId);
+    final beforeLimit = (limit ~/ 3).clamp(1, limit);
+    final afterLimit = (limit - beforeLimit).clamp(1, limit);
+    final before = await db.rawQuery(
+      '''
+      SELECT book, chapter, verse, gloss, surface
+      FROM tokens
+      WHERE strong = ? AND book = ?
+        AND (chapter < ? OR (chapter = ? AND verse <= ?))
+      GROUP BY book, chapter, verse
+      ORDER BY chapter DESC, verse DESC
+      LIMIT ?
+      ''',
+      [key, bookIndex, chapter, chapter, verse, beforeLimit],
+    );
+    final after = await db.rawQuery(
+      '''
+      SELECT book, chapter, verse, gloss, surface
+      FROM tokens
+      WHERE strong = ? AND book = ?
+        AND (chapter > ? OR (chapter = ? AND verse > ?))
+      GROUP BY book, chapter, verse
+      ORDER BY chapter ASC, verse ASC
+      LIMIT ?
+      ''',
+      [key, bookIndex, chapter, chapter, verse, afterLimit],
+    );
+    return [..._hitsFrom(key, before).reversed, ..._hitsFrom(key, after)];
   }
 
   Future<List<BookOccurrence>> occurrenceByBook(String strongId) async {
@@ -316,22 +373,33 @@ class BibleStudyService {
     final packed = await Future.wait([
       strong(key),
       occurrenceByBook(key),
-      concordanceInBook(key, bookIndex, limit: 48),
+      concordanceAround(
+        key,
+        bookIndex: bookIndex,
+        chapter: chapter,
+        verse: verse,
+        limit: 48,
+      ),
       _edgeOccurrence(key, last: false),
       _edgeOccurrence(key, last: true),
+      _glossVariants(key),
     ]);
     final entry = packed[0] as StrongEntry?;
     final byBook = packed[1] as List<BookOccurrence>;
     final nearby = packed[2] as List<ConcordanceHit>;
     final first = packed[3] as ConcordanceHit?;
     final last = packed[4] as ConcordanceHit?;
+    final glosses = packed[5] as List<GlossVariant>;
     final occ = byBook.fold<int>(0, (s, b) => s + b.count);
 
-    final others = [...byBook.where((b) => b.bookIndex != bookIndex)]
-      ..sort((a, b) => b.count.compareTo(a.count));
+    // Outros livros em ordem canônica (não por frequência).
+    final others = [
+      for (final b in byBook)
+        if (b.bookIndex != bookIndex) b,
+    ];
     final spread = <ConcordanceHit>[];
     final samples = await Future.wait([
-      for (final b in others.take(8)) _firstInBook(key, b.bookIndex),
+      for (final b in others.take(12)) _firstInBook(key, b.bookIndex),
     ]);
     for (final h in samples) {
       if (h != null) spread.add(h);
@@ -345,7 +413,36 @@ class BibleStudyService {
       byBook: byBook,
       nearby: nearby,
       spread: spread,
+      glosses: glosses,
     );
+  }
+
+  Future<List<GlossVariant>> _glossVariants(String key) async {
+    final rows = await (await _database()).rawQuery(
+      '''
+      SELECT gloss, COUNT(DISTINCT book || ':' || chapter || ':' || verse) AS c
+      FROM tokens
+      WHERE strong = ? AND gloss IS NOT NULL AND TRIM(gloss) != ''
+      GROUP BY gloss
+      ORDER BY c DESC
+      LIMIT 8
+      ''',
+      [key],
+    );
+    // O overlay pode levar glosses diferentes ao mesmo texto: soma.
+    final merged = <String, GlossVariant>{};
+    for (final r in rows) {
+      final gloss = overlayLexiconGloss(key, (r['gloss'] as String?) ?? '');
+      if (gloss.trim().isEmpty) continue;
+      final count = (r['c'] as int?) ?? 0;
+      final k = gloss.trim().toLowerCase();
+      final prev = merged[k];
+      merged[k] = GlossVariant(
+        gloss: prev?.gloss ?? gloss,
+        count: (prev?.count ?? 0) + count,
+      );
+    }
+    return merged.values.toList()..sort((a, b) => b.count.compareTo(a.count));
   }
 
   static StudyToken _tokenFrom(Map<String, Object?> r) {

@@ -70,6 +70,8 @@ enum CinematicGlyph {
   flag,
   refresh,
   stop,
+  // Menu de opções ("…").
+  more,
   sprout,
   hourglass,
   // Marca do Peregrino+: o Anan com um +. Só para o Plus (selo, cartões,
@@ -263,6 +265,7 @@ class CinematicGlyphResolver {
       CinematicGlyph.plus => AppColors.medalGold,
       CinematicGlyph.check => accent ?? AppColors.accent,
       CinematicGlyph.tune ||
+      CinematicGlyph.more ||
       CinematicGlyph.pencil ||
       CinematicGlyph.share ||
       CinematicGlyph.refresh => accent ?? AppColors.accent,
@@ -411,6 +414,7 @@ class CinematicIcon extends StatelessWidget {
   }
 
   static const _chrome = {
+    CinematicGlyph.more,
     CinematicGlyph.back,
     CinematicGlyph.forward,
     CinematicGlyph.chevron,
@@ -591,6 +595,12 @@ class CinematicIcon extends StatelessWidget {
           IconData(0xe47c, fontFamily: _bold),
           IconData(0xe47c, fontFamily: _duo),
           IconData(0xe47d, fontFamily: _duo),
+        ),
+        CinematicGlyph.more => const (
+          // dotsThree
+          IconData(0xe1fe, fontFamily: _bold),
+          IconData(0xe1fe, fontFamily: _duo),
+          IconData(0xe1ff, fontFamily: _duo),
         ),
         CinematicGlyph.tune => const (
           // slidersHorizontal

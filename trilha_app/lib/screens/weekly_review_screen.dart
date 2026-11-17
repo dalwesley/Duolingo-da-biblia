@@ -523,31 +523,71 @@ class _TodayPage extends StatelessWidget {
             style: AppTypography.body(size: 12, color: a.textFaint),
           ),
           const SizedBox(height: AppSpace.md),
+          if (insight.isNotEmpty) ...[
+            AnanSideSpeech(
+              face: CloudFace.feliz,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    context.l10n.todayShareNudgeMark,
+                    style: AppTypography.body(
+                      size: 12,
+                      weight: FontWeight.w800,
+                      color: AnanSpeechBubble.mark,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    switch (DateTime.now().day % 3) {
+                      0 => context.l10n.todayShareNudgeA,
+                      1 => context.l10n.todayShareNudgeB,
+                      _ => context.l10n.todayShareNudgeC,
+                    },
+                    style: AppTypography.body(
+                      size: 15,
+                      color: AnanSpeechBubble.ink,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: AppSpace.md),
+          ],
           TodayStage(
             insight: insight,
             art: TrailArt.ofScene(scene.trail.slug, mission.slug),
             reference: ref,
             on: DateTime.tryParse(doneOn ?? '') ?? DateTime.now(),
             accent: accent,
-            onShare: insight.isEmpty
-                ? null
-                : () {
-                    AnalyticsService.instance.logEvent('today_share', {
-                      'source': 'weekly_review',
-                      'mission_slug': mission.slug,
-                    });
-                    shareTodayCard(
-                      context,
-                      insight: insight,
-                      verseRef: ref,
-                      art: TrailArt.ofScene(scene.trail.slug, mission.slug),
-                    );
-                  },
-            height: (MediaQuery.sizeOf(context).height * 0.42).clamp(
-              320.0,
-              380.0,
+            showCloud: insight.isEmpty,
+            height: (MediaQuery.sizeOf(context).height * 0.38).clamp(
+              280.0,
+              340.0,
             ),
           ),
+          if (insight.isNotEmpty) ...[
+            const SizedBox(height: AppSpace.md),
+            GhostCta(
+              label: context.l10n.todayShareInsight,
+              leading: CinematicGlyph.share,
+              expanded: true,
+              onTap: () async {
+                AnalyticsService.instance.logEvent('today_share', {
+                  'source': 'weekly_review',
+                  'mission_slug': mission.slug,
+                });
+                await shareTodayCard(
+                  context,
+                  insight: insight,
+                  verseRef: ref,
+                  art: TrailArt.ofScene(scene.trail.slug, mission.slug),
+                );
+                if (!context.mounted || ref.isEmpty) return;
+                await context.read<ProgressService>().recordSharedVerse(ref);
+              },
+            ),
+          ],
           const SizedBox(height: AppSpace.lg),
           if (facts.isNotEmpty)
             TodayFacts(

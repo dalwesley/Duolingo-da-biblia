@@ -69,5 +69,29 @@ void main() {
       final study = MissionStudy.fromMap({'passageRef': 'Gênesis 1:1'});
       expect(study.facts, isEmpty);
     });
+
+    test('MissionStudy lê dailyChallenge / lifeChallenge', () {
+      final daily = MissionStudy.fromMap({
+        'passageRef': 'Mateus 5:9',
+        'dailyChallenge': {
+          'title': 'Construtor de Pontes',
+          'description': 'Restaure um relacionamento hoje.',
+          'rewardXp': 20,
+        },
+      });
+      expect(daily.lifeChallenge?.title, 'Construtor de Pontes');
+      expect(
+        daily.lifeChallenge?.description,
+        'Restaure um relacionamento hoje.',
+      );
+
+      final life = MissionStudy.fromMap({
+        'lifeChallenge': {'title': 'Aja', 'description': 'Faça o bem.'},
+      });
+      expect(life.lifeChallenge?.title, 'Aja');
+
+      final empty = MissionStudy.fromMap({'passageRef': 'Gênesis 1:1'});
+      expect(empty.lifeChallenge, isNull);
+    });
   });
 }

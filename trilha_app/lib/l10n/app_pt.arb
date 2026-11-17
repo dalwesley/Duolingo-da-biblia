@@ -1,6 +1,111 @@
 {
   "@@locale": "pt",
   "@@x-generated": "tool/l10n_merge.py — edit lib/l10n/parts",
+  "adventPrizeClosed": "O prazo do presente terminou. A caminhada segue aberta.",
+  "adventPrizeConfirmed": "{done} de {total} cenas confirmadas",
+  "@adventPrizeConfirmed": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "adventPrizeEarnedGroup": "Seu grupo chegou junto ao Natal.",
+  "adventPrizeEarnedPair": "Você e sua dupla chegaram juntos ao Natal.",
+  "adventPrizeEarnedSolo": "Você caminhou o Advento inteiro, um passo por dia.",
+  "adventPrizeEarnedTitle": "Você ganhou {months, plural, =1{1 mês} other{{months} meses}} de Peregrino+",
+  "@adventPrizeEarnedTitle": {
+    "placeholders": {
+      "months": {
+        "type": "int"
+      }
+    }
+  },
+  "adventPrizeKept": "Seus meses ficam guardados e entram quando sua assinatura terminar.",
+  "adventPrizeKicker": "Presente do Advento",
+  "adventPrizeMonths": "{months, plural, =1{1 mês} other{{months} meses}}",
+  "@adventPrizeMonths": {
+    "placeholders": {
+      "months": {
+        "type": "int"
+      }
+    }
+  },
+  "adventPrizeNeedsLogin": "Entre com sua conta para o presente valer.",
+  "adventPrizePlusUntil": "Peregrino+ até {date}",
+  "@adventPrizePlusUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "adventPrizePromise": "Caminhe os {days} dias do Advento e ganhe até {months, plural, =1{1 mês} other{{months} meses}} de Peregrino+.",
+  "@adventPrizePromise": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "months": {
+        "type": "int"
+      }
+    }
+  },
+  "adventPrizeRosterBefore": "Dupla e grupo valem se estiverem formados até o fim do 1º dia ({date}).",
+  "@adventPrizeRosterBefore": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "adventPrizeRosterGroup": "Você caminha em grupo. Com {count} do grupo concluindo, cada um que concluir ganha 3 meses.",
+  "@adventPrizeRosterGroup": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adventPrizeRosterPair": "Você caminha em dupla. Se os dois concluírem, cada um ganha 2 meses.",
+  "adventPrizeRosterSolo": "Nesta estação você caminha sozinho. Ao concluir, ganha 1 mês.",
+  "adventPrizeShareLine": "Quem caminha os {days} dias ganha até {months, plural, =1{1 mês} other{{months} meses}} de Peregrino+. Em dupla ou em grupo, ganha mais.",
+  "@adventPrizeShareLine": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "months": {
+        "type": "int"
+      }
+    }
+  },
+  "adventPrizeStepADay": "Um passo por dia; cada cena vale a partir do dia dela. Perdeu um dia? Dá para fazer depois, até {max} cenas por dia, até {date}.",
+  "@adventPrizeStepADay": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "adventPrizeTierGroup": "Concluir com {count}+ do seu grupo",
+  "@adventPrizeTierGroup": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adventPrizeTierPair": "Concluir com sua dupla da Companhia",
+  "adventPrizeTierSolo": "Concluir sozinho",
+  "adventPrizeUnconfirmed": "Alguns dias não foram confirmados (sem internet, rápido demais ou além das cenas do dia). Refaça a cena com conexão para ela valer no presente.",
+  "adventPrizeWaitingOthers": "Quando sua dupla ou seu grupo concluir, seu presente sobe.",
   "appReportCategoryAccount": "Conta e progresso",
   "appReportCategoryBug": "Algo não funciona",
   "appReportCategoryOther": "Outro",
@@ -475,7 +580,6 @@
       }
     }
   },
-  "celebrationShareInsight": "Compartilhar o Hoje:",
   "celebrationStatAccuracy": "Acertos",
   "celebrationStatDay": "Dia",
   "@celebrationStatDay": {
@@ -1609,7 +1713,7 @@
   "groupCallSubtitle": "O convite aparece no app. Ou compartilhe o QR code e o código.",
   "groupCallTitle": "Chamar pessoas",
   "groupCreateCta": "Criar grupo",
-  "groupDaysAway": "{count, plural, =1{1 dia sem caminhar} other{{count} dias sem caminhar}}",
+  "groupDaysAway": "{count, plural, =1{caminhou ontem} other{caminhou há {count} dias}}",
   "@groupDaysAway": {
     "placeholders": {
       "count": {
@@ -2741,6 +2845,16 @@
       }
     }
   },
+  "lessonLifeDone": "Marquei",
+  "@lessonLifeDone": {
+    "description": "Check-in da prática IRL"
+  },
+  "lessonLifeEyebrow": "Prática de hoje",
+  "@lessonLifeEyebrow": {
+    "description": "Fase IRL após o insight (dailyChallenge)"
+  },
+  "lessonLifeLater": "Depois",
+  "lessonLifeSubtitle": "Viva o texto fora do app",
   "lessonListen": "Ouvir o texto",
   "lessonListenStop": "Parar",
   "lessonLoadError": "Não foi possível carregar as perguntas desta cena. Tente de novo.",
@@ -3534,6 +3648,52 @@
   "morphDetermined": "determinado",
   "morphDivineName": "nome divino",
   "morphDual": "dual",
+  "morphExplainAbsolute": "Absoluto = forma livre do nome, sem “de…” colado.",
+  "morphExplainAdjective": "Adjetivo = qualifica o nome (“bom”, “grande”, “santo”).",
+  "morphExplainAdverb": "Advérbio = modifica a ação (“ainda”, “muito”, “ali”).",
+  "morphExplainAorist": "Aoristo = ação vista como um ponto (sem duração).",
+  "morphExplainArticle": "Artigo = marca o determinado (“o”, “a”) no hebraico.",
+  "morphExplainCohortative": "Coortativo = “vamos…” / desejo na 1ª pessoa (“façamos”).",
+  "morphExplainConjunction": "Conjunção = une frases ou palavras (“e”, “mas”, “que”).",
+  "morphExplainConstruct": "Construto = “de…” — liga dois nomes (casa de Davi).",
+  "morphExplainDetermined": "Determinado = forma marcada como “o/a” (definida).",
+  "morphExplainDivineName": "Nome divino = referência a Deus no original.",
+  "morphExplainDual": "Dual = exatamente dois (olhos, mãos, ou um par).",
+  "morphExplainFem": "Feminino = gênero gramatical no original (não é “fêmea” em português).",
+  "morphExplainFuture": "Futuro = ação ainda por vir.",
+  "morphExplainHifil": "Hifil = causativo (“fazer alguém fazer”, “fazer acontecer”).",
+  "morphExplainHitpael": "Hitpael = reflexivo ou recíproco (“fazer a si mesmo”, “uns aos outros”).",
+  "morphExplainHofal": "Hofal = passiva do hifil (“foi feito causar”).",
+  "morphExplainImperative": "Imperativo = ordem ou pedido direto.",
+  "morphExplainImperfectGk": "Imperfeito grego = ação contínua ou repetida no passado.",
+  "morphExplainImperfectHeb": "Imperfecto = ação em curso, habitual ou futura.",
+  "morphExplainInfAbsolute": "Infinitivo absoluto = ênfase (“certamente fará”, “fazer de fato”).",
+  "morphExplainInfConstruct": "Infinitivo construto = forma verbal que se liga a outra palavra (“ao fazer”).",
+  "morphExplainJussive": "Jussivo = desejo ou ordem suave na 3ª pessoa (“que ele…”).",
+  "morphExplainMasc": "Masculino = gênero gramatical no original (não é “macho” em português).",
+  "morphExplainNeuter": "Neutro = gênero gramatical sem masculino nem feminino (comum no grego).",
+  "morphExplainNifal": "Nifal = voz passiva ou reflexiva (“foi feito”, “se fez”).",
+  "morphExplainNoun": "Substantivo = nomeia pessoa, lugar, coisa ou ideia.",
+  "morphExplainObjectMarker": "Marcador de objeto = aponta o complemento direto no hebraico (não se traduz).",
+  "morphExplainParticiple": "Particípio = ação como qualidade ou estado contínuo (“o que faz”).",
+  "morphExplainParticle": "Partícula = palavra pequena que amarra o sentido (não é o “miolo” do versículo).",
+  "morphExplainPerfect": "Perfeito = ação vista como completa (muitas vezes no passado).",
+  "morphExplainPerson1": "1ª pessoa = eu / nós — quem fala.",
+  "morphExplainPerson2": "2ª pessoa = tu / vós — a quem se fala.",
+  "morphExplainPerson3": "3ª pessoa = ele / ela / eles — de quem se fala.",
+  "morphExplainPiel": "Piel = ação intensa ou causativa (“fazer de verdade”, “intensificar”).",
+  "morphExplainPl": "Plural = mais de um. Em alguns nomes (como Elohim), pode marcar majestade, não quantidade.",
+  "morphExplainPrep": "Preposição = liga o sentido (“em”, “para”, “com”, “sobre”).",
+  "morphExplainPresent": "Presente = ação agora ou habitual.",
+  "morphExplainPronominal": "Pronominal = o sufixo funciona como pronome (“meu”, “nosso”, “deles”).",
+  "morphExplainProper": "Próprio = nome de pessoa, lugar ou título específico.",
+  "morphExplainPual": "Pual = passiva do piel (“foi feito com intensidade”).",
+  "morphExplainQal": "Qal = ação simples, no sentido básico do verbo.",
+  "morphExplainSing": "Singular = um só — uma pessoa, coisa ou ação.",
+  "morphExplainSuffix": "Sufixo = terminção colada na palavra (muitas vezes “meu”, “teu”, “dele”).",
+  "morphExplainVerb": "Verbo = a ação ou o estado no versículo.",
+  "morphExplainWayyiqtol": "Wayyiqtol = narrativa sequencial (“e então…”), típica das histórias.",
+  "morphExplainWeqatal": "Weqatal = sequência no perfeito — continua a linha narrativa ou instrutiva.",
   "morphExtraGentilic": "gentílico",
   "morphExtraLocal": "local",
   "morphExtraProper": "nome próprio",
@@ -4547,6 +4707,10 @@
     }
   },
   "planAnswersLocked": "Responda para ver o que o grupo escreveu.",
+  "planAnswersLockedPrivate": "Sua resposta fica com você e o líder.",
+  "planAnswersNowOpen": "Quem responder vê as respostas do grupo.",
+  "planAnswersNowPrivate": "Agora só você vê as respostas.",
+  "planAnswersPrivateNote": "Neste grupo, as respostas ficam com o líder.",
   "planAnswersTitle": "Respostas do dia {n}",
   "@planAnswersTitle": {
     "placeholders": {
@@ -4643,6 +4807,45 @@
   "planCloseReveal": "Fechar e revelar",
   "planClosing": "Fechando…",
   "planClosingBannerTitle": "O propósito do grupo foi fechado",
+  "planCoverDay": "Dia {n} de {total}",
+  "@planCoverDay": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "planCoverNoneToday": "Ninguém foi hoje ainda",
+  "planCoverStarts": "{days, plural, =0{Começa hoje} =1{Começa amanhã} other{Começa em {days} dias}}",
+  "@planCoverStarts": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "planCoverToday": "{done} de {total} já foram hoje",
+  "@planCoverToday": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "planCoverTogether": "{count, plural, =1{1 caminha aqui} other{{count} caminham juntos}}",
+  "@planCoverTogether": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "planDateRange": "{count, plural, =1{1 dia} other{{count} dias}} · {from} a {to}",
   "@planDateRange": {
     "placeholders": {
@@ -4736,6 +4939,22 @@
   },
   "planEditorDuration": "Duração",
   "planEditorDurationBody": "Quantas semanas o grupo caminha junto. Você escolhe o dia de começar; o fim fecha a última semana.",
+  "planEditorDurationSeason": "Segue as datas do {name}: um dia do propósito para cada dia da estação.",
+  "@planEditorDurationSeason": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "planEditorDurationTrail": "Segue a trilha {name}: um dia do propósito para cada cena.",
+  "@planEditorDurationTrail": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "planEditorEnd": "Termina",
   "planEditorHideDays": "Esconder os dias",
   "planEditorHowLong": "Por quanto tempo",
@@ -4825,11 +5044,20 @@
       }
     }
   },
+  "planGoScene": "Abrir a cena",
   "planHearthEnds": "Termina em",
   "@planHearthEnds": {
     "description": "Countdown label until the plan ends (end of the last day)."
   },
-  "planHearthLabel": "O grupo no propósito",
+  "planHearthEndsIn": "{days, plural, =0{Termina hoje} =1{Termina amanhã} other{Termina em {days} dias}}",
+  "@planHearthEndsIn": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "planHearthLabel": "Quem caminha junto",
   "@planHearthLabel": {
     "description": "Header of the group card (people + countdown) while a plan exists."
   },
@@ -4902,6 +5130,8 @@
   "planLastDayDone": "Era o último dia do propósito.",
   "planLockedGuidedBody": "Seus 3 dias grátis deste plano acabaram. Ele continua no Peregrino+; a Bíblia inteira segue grátis.",
   "planMarkDayRead": "Marcar leitura do dia",
+  "planMenuAnswersOpen": "Abrir as respostas ao grupo",
+  "planMenuAnswersPrivate": "Fechar as respostas (só o líder vê)",
   "planMenuCreate": "Criar propósito",
   "planMenuEdit": "Editar propósito",
   "planMenuEnd": "Encerrar o propósito",
@@ -5127,6 +5357,28 @@
   "planRevealFaithfulTitle": "Fiéis no propósito",
   "planRevealGroupPct": "dos dias do propósito, o grupo cumpriu junto",
   "planRevealYourSeal": "Você ganhou o selo Fiel. Ele fica ao lado do seu nome no grupo.",
+  "planSeatAnswerDay": "Dia {n}",
+  "@planSeatAnswerDay": {
+    "description": "Person sheet: day label above one answer.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "planSeatAnswersHidden": "Responda os mesmos dias para ver o que {name} escreveu.",
+  "@planSeatAnswersHidden": {
+    "description": "Person sheet: the person answered days the viewer hasn't answered yet.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "planSeatAnswersLabel": "Respostas",
+  "@planSeatAnswersLabel": {
+    "description": "Person sheet: section with this person's answers to the plan's daily questions."
+  },
   "planSeatDays": "Dias do propósito",
   "@planSeatDays": {
     "description": "Person sheet stat label: days of the plan this person closed (value like 5/21)."
@@ -5155,8 +5407,59 @@
       }
     }
   },
+  "planSourceChangedFollows": "{name}: {now} dias. A duração e as perguntas seguem a escolha nova.",
+  "@planSourceChangedFollows": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "now": {
+        "type": "int"
+      }
+    }
+  },
+  "planSourceChangedLonger": "{name} é maior que a escolha anterior: {now} dias em vez de {before}. A duração e as perguntas seguem a escolha nova.",
+  "@planSourceChangedLonger": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "now": {
+        "type": "int"
+      },
+      "before": {
+        "type": "int"
+      }
+    }
+  },
+  "planSourceChangedSame": "{name} tem a mesma duração da escolha anterior: {now} dias. As perguntas seguem a escolha nova.",
+  "@planSourceChangedSame": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "now": {
+        "type": "int"
+      }
+    }
+  },
+  "planSourceChangedShorter": "{name} é menor que a escolha anterior: {now} dias em vez de {before}. A duração e as perguntas seguem a escolha nova.",
+  "@planSourceChangedShorter": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "now": {
+        "type": "int"
+      },
+      "before": {
+        "type": "int"
+      }
+    }
+  },
+  "planSourceFromTomorrow": "O propósito já começou: a troca vale a partir de amanhã.",
   "planSourcePick": "Escolher",
-  "planSourceQuestionBody": "Todo dia o grupo responde uma pergunta, tirada da cena do dia ou, sem cena, do capítulo. Abra os dias para ver cada uma e trocar a que quiser.",
+  "planSourceQuestionBody": "Todo dia o grupo responde uma pergunta, tirada da cena do dia ou, sem cena, do capítulo. Escolha para ver cada dia e trocar a que quiser.",
   "planSourceQuestionNone": "Escolha a cena ou o capítulo: a pergunta sai deles.",
   "planSourceQuestionOff": "Desligada: o grupo faz a cena e lê o capítulo, sem pergunta para responder.",
   "@planSourceQuestionOff": {
@@ -5175,7 +5478,16 @@
       }
     }
   },
+  "planSourceReadingScenes": "Segue as cenas: cada dia traz o capítulo da passagem da cena do dia.",
   "planSourceRemove": "Tirar",
+  "planSourceRestart": "O propósito recomeça no dia 1, em {date}. Quem já entrou continua dentro.",
+  "@planSourceRestart": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "planSourceScene": "Cena da trilha",
   "planSourceSceneCount": "Uma cena por dia: {scenes} de {days} dias têm cena.",
   "@planSourceSceneCount": {
@@ -5200,6 +5512,14 @@
       }
     }
   },
+  "planSourceSeason": "{name} · cada dia traz a cena do dia da estação, na mesma data.",
+  "@planSourceSeason": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "planStartAnother": "Começar outro propósito",
   "planStartCta": "Começar plano · {minutes} min/dia",
   "@planStartCta": {
@@ -5209,6 +5529,8 @@
       }
     }
   },
+  "planStepRead": "Leitura",
+  "planStepScene": "Cena",
   "planSuggestGeneral": "Geral",
   "planSuggestLife": "Para a vida",
   "planSuggestText": "Sobre o texto",
@@ -6141,6 +6463,24 @@
   "roomErrorSignInCreate": "Entre com Google para criar um grupo.",
   "roomErrorSignInJoin": "Entre com Google para entrar num grupo.",
   "roomFallbackName": "Grupo",
+  "roomFormingBody": "{count, plural, =1{Falta 1 pessoa} other{Faltam {count} pessoas}} para o grupo começar. Até lá, propósito, semana e presentes do grupo esperam.",
+  "@roomFormingBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "roomFormingCompanion": "Só vocês dois? Caminhem em Companhia",
+  "roomFormingInvite": "Chamar pessoas",
+  "roomFormingTitle": "O grupo começa com {count}",
+  "@roomFormingTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "roomKindAmigos": "Círculo",
   "roomKindCelula": "Célula",
   "roomKindDiscipulado": "Discipulado",
@@ -6710,6 +7050,8 @@
     }
   },
   "settingsVersion": "Versão",
+  "settingsWhatsNew": "Novidades",
+  "settingsWhatsNewSubtitle": "O que chegou nesta versão",
   "settingsYourName": "Seu nome",
   "shellReferralBonus": "{count, plural, =1{Seu convite valeu +{steps} passos} other{Seus convites valeram +{steps} passos}}",
   "@shellReferralBonus": {
@@ -6920,6 +7262,34 @@
   "takeawaysRowReviewOnly": "Veja o que rever no texto",
   "takeawaysSubtitle": "Cada frase vem de uma pergunta que você respondeu. Toque para abrir o versículo.",
   "takeawaysTitle": "O que você viu no texto",
+  "todayPostcardSlideHint": "Seu postal",
+  "@todayPostcardSlideHint": {
+    "description": "Rótulo do segundo slide do carrossel Hoje"
+  },
+  "todayShareInsight": "Compartilhar esta frase",
+  "@todayShareInsight": {
+    "description": "CTA na placa Hoje: imagem da frase do dia"
+  },
+  "todayShareNudgeA": "Alguém perto de você precisa ouvir isso.",
+  "@todayShareNudgeA": {
+    "description": "Convite do Anan para compartilhar a frase (variante)"
+  },
+  "todayShareNudgeB": "Compartilhe a Palavra. Ela muda vidas.",
+  "@todayShareNudgeB": {
+    "description": "Convite do Anan para compartilhar a frase (variante)"
+  },
+  "todayShareNudgeC": "Leve essa frase a alguém hoje.",
+  "@todayShareNudgeC": {
+    "description": "Convite do Anan para compartilhar a frase (variante)"
+  },
+  "todayShareNudgeMark": "Palavra",
+  "@todayShareNudgeMark": {
+    "description": "Rótulo do Anan acima do convite para compartilhar"
+  },
+  "todaySharePostcard": "Compartilhar postal",
+  "@todaySharePostcard": {
+    "description": "CTA no slide do postal na placa Hoje; abre imagem (grátis) ou vídeo (Plus)"
+  },
   "tomorrowDayOf": "Dia {streak} de {goal}",
   "@tomorrowDayOf": {
     "placeholders": {
@@ -7271,13 +7641,26 @@
   "verseStudyEmptyTitle": "Toque numa palavra original",
   "verseStudyEyebrow": "Estudar",
   "verseStudyFirst": "primeira",
+  "verseStudyGlossCount": "{gloss} · {count}×",
+  "@verseStudyGlossCount": {
+    "placeholders": {
+      "gloss": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "verseStudyGoToText": "Ir para o texto",
-  "verseStudyInThisBook": "Neste livro — as aparições perto deste versículo.",
+  "verseStudyInThisBook": "Neste livro — em ordem canônica.",
   "verseStudyInThisVerse": "Neste versículo",
   "verseStudyLast": "última",
   "verseStudyLemma": "Lema",
+  "verseStudyListenLemma": "Ouvir o original",
   "verseStudyLoadFailed": "Não foi possível carregar o estudo.",
   "verseStudyLoading": "Abrindo o léxico…",
+  "verseStudyMorphTap": "Toque um termo para explicar",
   "verseStudyNeedsRestart": "Feche e abra o app de novo para carregar o estudo.",
   "verseStudyNoCrossRefs": "Sem conexões catalogadas para este versículo.",
   "verseStudyNoData": "Sem dados de originais para este versículo.",
@@ -7292,8 +7675,16 @@
     }
   },
   "verseStudyOnlyHere": "Só neste versículo no índice.",
+  "verseStudyOriginalForm": "Forma no {lang}",
+  "@verseStudyOriginalForm": {
+    "placeholders": {
+      "lang": {
+        "type": "String"
+      }
+    }
+  },
   "verseStudyOtherBooks": "Em outros livros",
-  "verseStudyOtherBooksBody": "A primeira aparição em cada livro onde a palavra é mais frequente.",
+  "verseStudyOtherBooksBody": "A primeira aparição em cada livro, em ordem canônica.",
   "verseStudyParticleNearby": "Esta partícula aparece milhares de vezes. Abaixo, as formas perto deste versículo.",
   "verseStudyParticleNote": "Partícula gramatical · {count} formas no cânon. O sentido está no nome ou no verbo que ela acompanha.",
   "@verseStudyParticleNote": {
@@ -7337,7 +7728,27 @@
   },
   "verseStudyTabWord": "Palavra",
   "verseStudyThisForm": "Nesta forma",
+  "verseStudyTranslations": "Como a TB traduz",
+  "verseStudyTranslationsAlso": "Também: {list}",
+  "@verseStudyTranslationsAlso": {
+    "placeholders": {
+      "list": {
+        "type": "String"
+      }
+    }
+  },
+  "verseStudyTranslationsBody": "A mesma palavra original aparece com estes sentidos na Tradução Brasileira.",
+  "verseStudyTranslationsHere": "Aqui: {word}",
+  "@verseStudyTranslationsHere": {
+    "placeholders": {
+      "word": {
+        "type": "String"
+      }
+    }
+  },
   "verseStudyVerseUnavailable": "Versículo indisponível nesta tradução.",
+  "verseStudyViewInterlinear": "Interlinear",
+  "verseStudyViewVerse": "Versículo",
   "walkCountdownDays": "dias",
   "walkCountdownHours": "horas",
   "walkCountdownLabel": "Abre em",
@@ -7542,6 +7953,12 @@
     }
   },
   "weeklyReviewTodayPrev": "Cena anterior",
+  "whatsNew148Advent": "Presente do Advento: caminhe os 26 dias (29/11 a 24/12) e ganhe até 3 meses de Peregrino+. Sozinho, 1 mês; com sua Companhia, 2; com 3 ou mais do seu grupo, 3. Perdeu um dia? Dá para fazer depois.",
+  "whatsNew148Plan": "Propósito do grupo: dia de hoje, leitura e cena, respostas de cada um. O líder decide se o grupo vê as respostas.",
+  "whatsNew148Share": "Compartilhe a frase e o postal do dia direto do Hoje.",
+  "whatsNew148Study": "Estudar o versículo: modo interlinear, ouvir a palavra no original e ver como a TB traduz.",
+  "whatsNewEyebrow": "Novidades",
+  "whatsNewTitle": "O caminho ganhou coisas novas",
   "widgetBackToTrail": "Volte para a trilha",
   "widgetGoalDone": "Meta concluída",
   "widgetKeepStreak": "Mantenha sua sequência",

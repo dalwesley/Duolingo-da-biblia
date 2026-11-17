@@ -4,11 +4,14 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../data/trail_repository.dart';
 import '../l10n/app_language.dart';
+import '../screens/paywall_screen.dart';
 import '../services/progress_service.dart';
+import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
@@ -549,6 +552,157 @@ Future<PostcardShareKind?> showPostcardShareSheet(
       ),
     ),
   );
+}
+
+/// Fluxo completo: escolhe imagem ou vídeo, monta o card fora da tela e
+/// compartilha. Usado no palco do postal e no carrossel da placa Hoje.
+Future<void> sharePostcardFlow(
+  BuildContext context,
+  Postcard postcard,
+) async {
+  final plus = context.read<SubscriptionService>().plusFeaturesOpen;
+  final kind = await showPostcardShareSheet(context, plus: plus);
+  if (kind == null || !context.mounted) return;
+  if (kind == PostcardShareKind.video && !plus) {
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => const PaywallScreen(source: 'postcard_video'),
+      ),
+    );
+    return;
+  }
+  if (!context.mounted) return;
+  final info = await postcardShareInfo(
+    context.read<ProgressService>(),
+    postcard,
+  );
+  for (final asset in [?postcard.art, ...PostcardShareCard.assets]) {
+    if (!context.mounted) return;
+    try {
+      await precacheImage(AssetImage(asset), context);
+    } catch (_) {}
+  }
+  if (!context.mounted) return;
+
+  final overlay = Overlay.maybeOf(context, rootOverlay: true);
+  if (overlay == null) return;
+  final shareKey = GlobalKey();
+  final video = kind == PostcardShareKind.video;
+  final t = ValueNotifier<double>(video ? 0 : 1);
+  final progress = ValueNotifier<double?>(video ? 0 : null);
+
+  late final OverlayEntry cardEntry;
+  late final OverlayEntry progressEntry;
+  cardEntry = OverlayEntry(
+    builder: (_) => Positioned(
+      left: -4000,
+      top: 0,
+      child: RepaintBoundary(
+        key: shareKey,
+        child: ValueListenableBuilder<double>(
+          valueListenable: t,
+          builder: (_, value, _) => PostcardShareCard(
+            postcard: postcard,
+            info: info,
+            t: value,
+          ),
+        ),
+      ),
+    ),
+  );
+  progressEntry = OverlayEntry(
+    builder: (_) => ValueListenableBuilder<double?>(
+      valueListenable: progress,
+      builder: (ctx, value, _) {
+        if (value == null) return const SizedBox.shrink();
+        const ink = AppColors.textOnDark;
+        return Positioned.fill(
+          child: ColoredBox(
+            color: AppColors.night.withValues(alpha: 0.92),
+            child: Center(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: AppSpace.screen * 2,
+                ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const CloudMascot(
+                      face: CloudFace.carregando,
+                      size: 96,
+                    ),
+                    const SizedBox(height: AppSpace.lg),
+                    Text(
+                      ctx.l10n.postcardShareRendering,
+                      style: AppTypography.title(size: 17, color: ink),
+                    ),
+                    const SizedBox(height: AppSpace.md),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(4),
+                      child: LinearProgressIndicator(
+                        value: value,
+                        minHeight: 6,
+                        color: AppRoles.reward,
+                        backgroundColor: ink.withValues(alpha: 0.15),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        );
+      },
+    ),
+  );
+
+  overlay.insert(cardEntry);
+  overlay.insert(progressEntry);
+  try {
+    await WidgetsBinding.instance.endOfFrame;
+    await WidgetsBinding.instance.endOfFrame;
+    if (!context.mounted) return;
+    if (video) {
+      final path = await PostcardVideo.render(
+        boundaryKey: shareKey,
+        t: t,
+        art: postcard.art,
+        onProgress: (v) => progress.value = v,
+      );
+      progress.value = null;
+      if (path != null && context.mounted) {
+        await PostcardVideo.share(context, path, postcard);
+      }
+    } else {
+      await sharePostcardImage(
+        context: context,
+        boundaryKey: shareKey,
+        postcard: postcard,
+      );
+    }
+  } catch (_) {
+    if (!context.mounted) return;
+    progress.value = null;
+    t.value = 1;
+    await WidgetsBinding.instance.endOfFrame;
+    if (!context.mounted) return;
+    await showAppToastFor(
+      context,
+      message: context.l10n.postcardShareVideoFailed,
+      tone: AppToastTone.warn,
+    );
+    if (!context.mounted) return;
+    await sharePostcardImage(
+      context: context,
+      boundaryKey: shareKey,
+      postcard: postcard,
+    );
+  } finally {
+    cardEntry.remove();
+    progressEntry.remove();
+    t.dispose();
+    progress.dispose();
+  }
 }
 
 /// Captura o card em [boundaryKey] (já montado, imagens em cache) e abre o

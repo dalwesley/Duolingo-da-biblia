@@ -7,6 +7,15 @@ import 'room_plan.dart';
 /// `onRoomMemberCreate` também corta quem passar disso.
 const int kRoomMemberLimit = 20;
 
+/// Mínimo de pessoas para o grupo existir de verdade. Abaixo disso o grupo
+/// está "se formando": só pessoas, convite e saída (sem propósito, semana,
+/// fechamento nem prêmio). Dupla é Companhia. O servidor usa o mesmo número
+/// (functions/advent.js `GROUP_MIN_MEMBERS`).
+const int kRoomMinMembers = 3;
+
+/// O grupo já existe de verdade?
+bool roomIsFormed(int members) => members >= kRoomMinMembers;
+
 /// Para que o grupo existe — muda rótulo, ícone e textos.
 enum RoomKind {
   celula('celula', CinematicGlyph.home),
@@ -76,6 +85,14 @@ class RoomStudy {
   });
 
   bool isForWeek(String weekKey) => week == weekKey;
+
+  /// O seletor do propósito devolve a temporada inteira (Advento) como um
+  /// estudo com `week` = `season:<id da campanha>`. Nunca é gravado assim.
+  static const seasonPrefix = 'season:';
+
+  String? get seasonId => week.startsWith(seasonPrefix)
+      ? week.substring(seasonPrefix.length)
+      : null;
 
   Map<String, dynamic> toMap() => {
     'missionSlug': missionSlug,
@@ -188,6 +205,11 @@ class StudyRoom {
   /// existe, toma o lugar do estudo e da leitura da semana.
   final RoomPlan? plan;
 
+  /// Líder fechou as respostas do propósito: cada membro vê só a própria
+  /// (o líder vê todas). Aberto (padrão): vê as dos outros depois de
+  /// responder. As rules garantem as duas coisas.
+  final bool answersPrivate;
+
   const StudyRoom({
     required this.code,
     required this.name,
@@ -200,6 +222,7 @@ class StudyRoom {
     this.reading,
     this.pilot = false,
     this.plan,
+    this.answersPrivate = false,
   });
 
   bool isOwner(String? uid) => uid != null && uid == ownerId;
@@ -223,6 +246,7 @@ class StudyRoom {
     bool clearReading = false,
     RoomPlan? plan,
     bool clearPlan = false,
+    bool? answersPrivate,
   }) {
     return StudyRoom(
       code: code,
@@ -238,6 +262,7 @@ class StudyRoom {
       reading: clearReading ? null : (reading ?? this.reading),
       pilot: pilot,
       plan: clearPlan ? null : (plan ?? this.plan),
+      answersPrivate: answersPrivate ?? this.answersPrivate,
     );
   }
 
@@ -269,6 +294,7 @@ class StudyRoom {
       reading: RoomReading.fromMap(data['reading']),
       pilot: data['pilot'] == true,
       plan: RoomPlan.fromMap(data['plan']),
+      answersPrivate: data['answersPrivate'] == true,
     );
   }
 }

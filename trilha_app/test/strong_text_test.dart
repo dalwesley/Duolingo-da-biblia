@@ -20,6 +20,58 @@ void main() {
     expect(wordMatchesNeedle('ti', 'ti'), isTrue);
   });
 
+  test('wordMatchesNeedle covers irregular Bible verbs', () {
+    expect(wordMatchesNeedle('Disse', 'dizer'), isTrue);
+    expect(wordMatchesNeedle('Façamos', 'fazer'), isTrue);
+    expect(wordMatchesNeedle('fez', 'fazer'), isTrue);
+    expect(wordMatchesNeedle('viu', 'ver'), isTrue);
+    expect(wordMatchesNeedle('domine', 'dominar'), isTrue);
+    // Partículas não devem colidir com ser/dar.
+    expect(wordMatchesNeedle('e', 'ser'), isFalse);
+    expect(wordMatchesNeedle('da', 'dar'), isFalse);
+    // Demonstrativos/conectivos não viram verbo (esta≠estar, como≠comer).
+    expect(wordMatchesNeedle('estas', 'estar'), isFalse);
+    expect(wordMatchesNeedle('esta', 'estar'), isFalse);
+    expect(wordMatchesNeedle('como', 'comer'), isFalse);
+    expect(wordMatchesNeedle('come', 'comer'), isTrue);
+  });
+
+  test('translationFormsInVerses collects TB forms', () {
+    const verses = [
+      'Disse também Deus: Façamos o homem.',
+      'E disse Deus: Haja luz.',
+      'Falou o Senhor a Moisés.',
+    ];
+    final forms = translationFormsInVerses(verses, ['dizer', 'falar']);
+    final words = [for (final f in forms) f.word.toLowerCase()];
+    expect(words, contains('disse'));
+    expect(forms.first.count, greaterThanOrEqualTo(2));
+  });
+
+  test('Gn 1:26 links dizer→Disse and fazer→Façamos', () {
+    const verse =
+        'Disse também Deus: Façamos o homem à nossa imagem, conforme a nossa '
+        'semelhança; domine ele sobre os peixes do mar, sobre as aves do céu, '
+        'sobre os animais e sobre toda a terra, e sobre todos os répteis que '
+        'se arrastam sobre a terra.';
+    final links = linkVerseToTokens(verse, const [
+      TokenNeedle(1, ['dizer']),
+      TokenNeedle(2, ['Deus']),
+      TokenNeedle(3, ['fazer']),
+      TokenNeedle(4, ['homem']),
+      TokenNeedle(5, ['imagem']),
+      TokenNeedle(6, ['semelhança']),
+      TokenNeedle(7, ['dominar']),
+    ]);
+    String word(VerseWordLink l) => verse.substring(l.start, l.end);
+    final byPos = {for (final l in links) l.tokenPos: word(l)};
+    expect(byPos[1], 'Disse');
+    expect(byPos[2], 'Deus');
+    expect(byPos[3], 'Façamos');
+    expect(byPos[4], 'homem');
+    expect(byPos[7], 'domine');
+  });
+
   test('highlightRanges marks gloss in the verse', () {
     const text = 'E Deus viu que a luz era boa; e separou a luz das trevas.';
     final hits = highlightRanges(text, ['luz', 'Deus', 'separar']);

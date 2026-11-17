@@ -4,7 +4,6 @@ import 'package:intl/intl.dart' show DateFormat;
 import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import 'act_feel.dart';
-import 'cinematic_icon.dart';
 import 'cloud_mascot.dart';
 import 'postcard.dart';
 import 'stway_brand.dart';
@@ -30,11 +29,11 @@ class TodayStage extends StatefulWidget {
   /// centrada no espaço que recebe.
   final double? height;
 
-  /// Mostra "Compartilhar" no rodapé, depois que a frase chega.
-  final VoidCallback? onShare;
-
   /// Sem animação, com a marca no rodapé — imagem para compartilhar.
   final bool still;
+
+  /// Anan no canto da pintura. Desliga quando o Anan já fala acima da placa.
+  final bool showCloud;
 
   /// Cena que rende postal novo: livro do carimbo ("Rute"). A placa vira a
   /// revelação do postal — o carimbo do dia pousa na pintura e "Novo
@@ -50,8 +49,8 @@ class TodayStage extends StatefulWidget {
     this.veiled = false,
     this.reference = '',
     this.height,
-    this.onShare,
     this.still = false,
+    this.showCloud = true,
     this.stampBook,
   });
 
@@ -201,8 +200,11 @@ class _TodayStageState extends State<TodayStage>
       borderRadius: BorderRadius.circular(AppRadii.xl),
       child: LayoutBuilder(
         builder: (context, box) {
-          // A pintura fica com ~60% de cima; a frase pousa na emenda.
-          final artH = box.maxHeight * 0.6;
+          // Pintura nos ~60% de cima (mesmo enquadramento de antes).
+          // Um pouco além da emenda + degradê local: some o corte seco
+          // sem esticar a arte na placa inteira (isso dava zoom no cover).
+          final artH = box.maxHeight * 0.5;
+          final artBand = artH * 1.12;
           return AnimatedBuilder(
             animation: _t,
             builder: (context, _) => Stack(
@@ -214,10 +216,29 @@ class _TodayStageState extends State<TodayStage>
                     left: 0,
                     right: 0,
                     top: 0,
-                    height: artH,
-                    child: _art(art),
+                    height: artBand,
+                    child: Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        _art(art),
+                        const DecoratedBox(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                Colors.transparent,
+                                Colors.transparent,
+                                AppColors.night,
+                              ],
+                              stops: [0, 0.58, 1],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                // Escurece o alto (o Anan) e funde a pintura no escuro.
+                // Escurece o alto (o Anan) e a faixa da frase.
                 Positioned.fill(
                   child: DecoratedBox(
                     decoration: BoxDecoration(
@@ -230,7 +251,7 @@ class _TodayStageState extends State<TodayStage>
                           AppColors.night.withValues(alpha: 0),
                           AppColors.night,
                         ],
-                        stops: const [0, 0.18, 0.36, 0.62],
+                        stops: const [0, 0.18, 0.42, 0.68],
                       ),
                     ),
                   ),
@@ -256,35 +277,27 @@ class _TodayStageState extends State<TodayStage>
                     top: (artH * 0.34).clamp(64.0, double.infinity),
                     child: _stamp(widget.on),
                   ),
-                // Alto: o Anan e o dia (e o postal guardado, se rendeu).
+                // Alto: data (e o postal guardado). Anan só se [showCloud].
                 Positioned(
                   left: 16,
                   top: 14,
                   child: ExcludeSemantics(
                     child: Row(
                       children: [
-                        CloudMascot(
-                          face: CloudFace.sucesso,
-                          size: 38,
-                          react: !widget.still,
-                        ),
-                        const SizedBox(width: 8),
+                        if (widget.showCloud) ...[
+                          CloudMascot(
+                            face: CloudFace.sucesso,
+                            size: 38,
+                            react: !widget.still,
+                          ),
+                          const SizedBox(width: 8),
+                        ],
                         Column(
                           mainAxisSize: MainAxisSize.min,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text.rich(
-                              TextSpan(
-                                children: [
-                                  TextSpan(
-                                    text: l10n.commonToday.toUpperCase(),
-                                    style: const TextStyle(
-                                      color: AppRoles.reward,
-                                    ),
-                                  ),
-                                  TextSpan(text: '  ·  $date'),
-                                ],
-                              ),
+                            Text(
+                              date,
                               style: AppTypography.body(
                                 size: 12,
                                 weight: FontWeight.w800,
@@ -313,54 +326,7 @@ class _TodayStageState extends State<TodayStage>
                     ),
                   ),
                 ),
-                // Canto: só o símbolo de compartilhar.
-                if (!widget.still && widget.onShare != null)
-                  Positioned(
-                    right: 8,
-                    top: 8,
-                    child: Opacity(
-                      opacity: _after(0.85),
-                      child: IgnorePointer(
-                        ignoring: _t.value < 0.85,
-                        child: Semantics(
-                          button: true,
-                          label: l10n.commonShare,
-                          child: GestureDetector(
-                            onTap: () {
-                              ActHaptics.tap();
-                              widget.onShare!();
-                            },
-                            behavior: HitTestBehavior.opaque,
-                            child: SizedBox(
-                              width: 48,
-                              height: 48,
-                              child: Center(
-                                child: DecoratedBox(
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    // Vidro claro: o símbolo acende sobre
-                                    // a pintura em vez de afundar nela.
-                                    color: Colors.white,
-                                    border: Border.all(color: Colors.white),
-                                  ),
-                                  child: const Padding(
-                                    padding: EdgeInsets.all(8),
-                                    child: CinematicIcon(
-                                      glyph: CinematicGlyph.share,
-                                      size: 20,
-                                      accent: Colors.white,
-                                      framed: false,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                // Baixo: a frase, a referência e o compartilhar (ou a marca).
+                // Baixo: a frase, a referência (ou a marca no card compartilhado).
                 Positioned(
                   left: 22,
                   right: 22,

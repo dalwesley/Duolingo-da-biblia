@@ -1,0 +1,1500 @@
+# Cenas sem arte — 1364
+
+Gerado em 2026-11-16. Fonte: trails.json × assets/art/scene_*.jpg.
+
+## 1 Coríntios (1corintios-cap) — 20
+
+- `coc-01-cristo-crucificado` — Cristo crucificado · scene_coc-01-cristo-crucificado.jpg
+- `coc-02-cristo-e-este-crucificado` — Cristo, e este crucificado · scene_coc-02-cristo-e-este-crucificado.jpg
+- `coc-03-deus-da-o-crescimento` — Deus dá o crescimento · scene_coc-03-deus-da-o-crescimento.jpg
+- `coc-04-despenseiros-fieis` — Despenseiros fiéis · scene_coc-04-despenseiros-fieis.jpg
+- `coc-05-novo-fermento` — Novo fermento · scene_coc-05-novo-fermento.jpg
+- `coc-06-templo-do-espirito` — Templo do Espírito · scene_coc-06-templo-do-espirito.jpg
+- `coc-07-casamento-e-dom` — Casamento e dom · scene_coc-07-casamento-e-dom.jpg
+- `coc-08-o-saber-incha` — O saber incha · scene_coc-08-o-saber-incha.jpg
+- `coc-09-tudo-para-todos` — Tudo para todos · scene_coc-09-tudo-para-todos.jpg
+- `coc-10-fujam-da-idolatria` — Fujam da idolatria · scene_coc-10-fujam-da-idolatria.jpg
+- `coc-11-em-memoria-de-mim` — Em memória de mim · scene_coc-11-em-memoria-de-mim.jpg
+- `coc-12-muitos-membros-um-corpo` — Muitos membros, um corpo · scene_coc-12-muitos-membros-um-corpo.jpg
+- `coc-13-o-maior-e-o` — O maior é o amor · scene_coc-13-o-maior-e-o.jpg
+- `coc-14-edificar-a-igreja` — Edificar a igreja · scene_coc-14-edificar-a-igreja.jpg
+- `coc-15-cristo-ressuscitou` — Cristo ressuscitou · scene_coc-15-cristo-ressuscitou.jpg
+- `coc-16-firmes-na-fe` — Firmes na fé · scene_coc-16-firmes-na-fe.jpg
+- `coc-boss-1` — Travessia: Cruz e sabedoria · Travessia · scene_coc-boss-1.jpg
+- `coc-boss-2` — Travessia: Pureza e liberdade · Travessia · scene_coc-boss-2.jpg
+- `coc-boss-3` — Travessia: Corrida e corpo · Travessia · scene_coc-boss-3.jpg
+- `coc-boss-4` — Travessia: Amor e ressurreição · Travessia · scene_coc-boss-4.jpg
+## 1 Crônicas (1cronicas-cap) — 24
+
+- `c1c-01-filhos-de-israel` — Filhos de Israel · scene_c1c-01-filhos-de-israel.jpg
+- `c1c-02-clamaram-na-peleja` — Clamaram na peleja · scene_c1c-02-clamaram-na-peleja.jpg
+- `c1c-03-servico-de-arao` — Serviço de Arão · scene_c1c-03-servico-de-arao.jpg
+- `c1c-04-de-volta-a-jerusalem` — De volta a Jerusalém · scene_c1c-04-de-volta-a-jerusalem.jpg
+- `c1c-05-saul-cai` — Saul cai · scene_c1c-05-saul-cai.jpg
+- `c1c-06-rei-em-hebrom` — Rei em Hebrom · scene_c1c-06-rei-em-hebrom.jpg
+- `c1c-07-exercito-de-deus` — Exército de Deus · scene_c1c-07-exercito-de-deus.jpg
+- `c1c-08-uza-e-a-arca` — Uzá e a arca · scene_c1c-08-uza-e-a-arca.jpg
+- `c1c-09-davi-consulta` — Davi consulta · scene_c1c-09-davi-consulta.jpg
+- `c1c-10-levitas-preparados` — Levitas preparados · scene_c1c-10-levitas-preparados.jpg
+- `c1c-11-cantem-ao-senhor` — Cantem ao Senhor · scene_c1c-11-cantem-ao-senhor.jpg
+- `c1c-12-casa-para-sempre` — Casa para sempre · scene_c1c-12-casa-para-sempre.jpg
+- `c1c-13-vitorias-do-senhor` — Vitórias do Senhor · scene_c1c-13-vitorias-do-senhor.jpg
+- `c1c-14-guerra-contra-amom` — Guerra contra Amom · scene_c1c-14-guerra-contra-amom.jpg
+- `c1c-15-censo-e-arrependimento` — Censo e arrependimento · scene_c1c-15-censo-e-arrependimento.jpg
+- `c1c-16-salomao-edificara` — Salomão edificará · scene_c1c-16-salomao-edificara.jpg
+- `c1c-17-levitas-em-paz` — Levitas em paz · scene_c1c-17-levitas-em-paz.jpg
+- `c1c-18-tesouros-dedicados` — Tesouros dedicados · scene_c1c-18-tesouros-dedicados.jpg
+- `c1c-19-conhece-o-deus` — Conhece o Deus · scene_c1c-19-conhece-o-deus.jpg
+- `c1c-20-tudo-vem-de-ti` — Tudo vem de ti · scene_c1c-20-tudo-vem-de-ti.jpg
+- `c1c-boss-1` — Travessia: Linhagens de Israel · Travessia · scene_c1c-boss-1.jpg
+- `c1c-boss-2` — Travessia: Davi sobe ao trono · Travessia · scene_c1c-boss-2.jpg
+- `c1c-boss-3` — Travessia: Arca, culto e aliança · Travessia · scene_c1c-boss-3.jpg
+- `c1c-boss-4` — Travessia: Templo e sucessão · Travessia · scene_c1c-boss-4.jpg
+## 1 João (1joao-cap) — 6
+
+- `j1c-01-o-que-vimos-e` — O que vimos e ouvimos · scene_j1c-01-o-que-vimos-e.jpg
+- `j1c-02-advogado-junto-ao-pai` — Advogado junto ao Pai · scene_j1c-02-advogado-junto-ao-pai.jpg
+- `j1c-03-filhos-de-deus` — Filhos de Deus · scene_j1c-03-filhos-de-deus.jpg
+- `j1c-04-provai-os-espiritos` — Provai os espíritos · scene_j1c-04-provai-os-espiritos.jpg
+- `j1c-05-a-vitoria-da-fe` — A vitória da fé · scene_j1c-05-a-vitoria-da-fe.jpg
+- `j1c-boss-1` — Travessia: Luz, amor e certeza · Travessia · scene_j1c-boss-1.jpg
+## 1 Pedro (1pedro-cap) — 6
+
+- `p1c-01-cingir-a-mente` — Cingir a mente · scene_p1c-01-cingir-a-mente.jpg
+- `p1c-02-sujeitos-por-causa-do` — Sujeitos por causa do Senhor · scene_p1c-02-sujeitos-por-causa-do.jpg
+- `p1c-03-prontos-para-responder` — Prontos para responder · scene_p1c-03-prontos-para-responder.jpg
+- `p1c-04-fogo-da-provacao` — Fogo da provação · scene_p1c-04-fogo-da-provacao.jpg
+- `p1c-05-debaixo-da-mao-de` — Debaixo da mão de Deus · scene_p1c-05-debaixo-da-mao-de.jpg
+- `p1c-boss-1` — Travessia: Esperança no sofrimento · Travessia · scene_p1c-boss-1.jpg
+## 1 Reis (1reis-cap) — 25
+
+- `r1c-01-salomao-ungido` — Salomão ungido · scene_r1c-01-salomao-ungido.jpg
+- `r1c-02-guarda-os-preceitos` — Guarda os preceitos · scene_r1c-02-guarda-os-preceitos.jpg
+- `r1c-03-duas-maes-um-bebe` — Duas mães, um bebê · scene_r1c-03-duas-maes-um-bebe.jpg
+- `r1c-04-cedros-para-a-casa` — Cedros para a casa · scene_r1c-04-cedros-para-a-casa.jpg
+- `r1c-05-a-casa-comeca` — A casa começa · scene_r1c-05-a-casa-comeca.jpg
+- `r1c-06-oracao-na-dedicacao` — Oração na dedicação · scene_r1c-06-oracao-na-dedicacao.jpg
+- `r1c-07-se-caminhares-diante-de` — Se caminhares diante de mim · scene_r1c-07-se-caminhares-diante-de.jpg
+- `r1c-08-a-rainha-de-saba` — A rainha de Sabá · scene_r1c-08-a-rainha-de-saba.jpg
+- `r1c-09-o-coracao-desviado` — O coração desviado · scene_r1c-09-o-coracao-desviado.jpg
+- `r1c-10-conselho-dos-jovens` — Conselho dos jovens · scene_r1c-10-conselho-dos-jovens.jpg
+- `r1c-11-o-altar-se-fende` — O altar se fende · scene_r1c-11-o-altar-se-fende.jpg
+- `r1c-12-mensagem-a-jeroboao` — Mensagem a Jeroboão · scene_r1c-12-mensagem-a-jeroboao.jpg
+- `r1c-13-asa-faz-o-reto` — Asa faz o reto · scene_r1c-13-asa-faz-o-reto.jpg
+- `r1c-14-acabe-comeca` — Acabe começa · scene_r1c-14-acabe-comeca.jpg
+- `r1c-15-a-viuva-de-sarepta` — A viúva de Sarepta · scene_r1c-15-a-viuva-de-sarepta.jpg
+- `r1c-16-fogo-do-ceu` — Fogo do céu · scene_r1c-16-fogo-do-ceu.jpg
+- `r1c-17-voz-suave` — Voz suave · scene_r1c-17-voz-suave.jpg
+- `r1c-18-acabe-poupa-ben-hadade` — Acabe poupa Ben-Hadade · scene_r1c-18-acabe-poupa-ben-hadade.jpg
+- `r1c-19-o-sangue-de-nabote` — O sangue de Nabote · scene_r1c-19-o-sangue-de-nabote.jpg
+- `r1c-20-a-flecha-ao-acaso` — A flecha ao acaso · scene_r1c-20-a-flecha-ao-acaso.jpg
+- `r1c-boss-1` — Travessia: Salomão sobe · Travessia · scene_r1c-boss-1.jpg
+- `r1c-boss-2` — Travessia: Templo e fama · Travessia · scene_r1c-boss-2.jpg
+- `r1c-boss-3` — Travessia: Queda e divisão · Travessia · scene_r1c-boss-3.jpg
+- `r1c-boss-4` — Travessia: Reis e Elias · Travessia · scene_r1c-boss-4.jpg
+- `r1c-boss-5` — Travessia: Acabe e o fim · Travessia · scene_r1c-boss-5.jpg
+## 1 Samuel (1samuel-cap) — 37
+
+- `s1c-01-o-menino-no-templo` — O menino no templo · scene_s1c-01-o-menino-no-templo.jpg
+- `s1c-02-o-cantico-de-ana` — O cântico de Ana · scene_s1c-02-o-cantico-de-ana.jpg
+- `s1c-03-a-palavra-dificil` — A palavra difícil · scene_s1c-03-a-palavra-dificil.jpg
+- `s1c-04-a-arca-capturada` — A arca capturada · scene_s1c-04-a-arca-capturada.jpg
+- `s1c-05-dagom-cai` — Dagom cai · scene_s1c-05-dagom-cai.jpg
+- `s1c-06-a-arca-em-bete` — A arca em Bete-Semes · scene_s1c-06-a-arca-em-bete.jpg
+- `s1c-07-ate-aqui-nos-ajudou` — Até aqui nos ajudou · scene_s1c-07-ate-aqui-nos-ajudou.jpg
+- `s1c-08-o-costume-do-rei` — O costume do rei · scene_s1c-08-o-costume-do-rei.jpg
+- `s1c-09-o-homem-de-benjamim` — O homem de Benjamim · scene_s1c-09-o-homem-de-benjamim.jpg
+- `s1c-10-coracao-mudado` — Coração mudado · scene_s1c-10-coracao-mudado.jpg
+- `s1c-11-socorro-a-jabes` — Socorro a Jabes · scene_s1c-11-socorro-a-jabes.jpg
+- `s1c-12-nao-vos-desvieis` — Não vos desvieis · scene_s1c-12-nao-vos-desvieis.jpg
+- `s1c-13-medo-em-gilgal` — Medo em Gilgal · scene_s1c-13-medo-em-gilgal.jpg
+- `s1c-14-o-juramento-de-saul` — O juramento de Saul · scene_s1c-14-o-juramento-de-saul.jpg
+- `s1c-15-obedecer-e-melhor` — Obedecer é melhor · scene_s1c-15-obedecer-e-melhor.jpg
+- `s1c-16-o-senhor-ve-o` — O Senhor vê o coração · scene_s1c-16-o-senhor-ve-o.jpg
+- `s1c-17-cinco-pedras-lisas` — Cinco pedras lisas · scene_s1c-17-cinco-pedras-lisas.jpg
+- `s1c-18-alianca-e-ciume` — Aliança e ciúme · scene_s1c-18-alianca-e-ciume.jpg
+- `s1c-19-fuga-pela-janela` — Fuga pela janela · scene_s1c-19-fuga-pela-janela.jpg
+- `s1c-20-vai-em-paz` — Vai em paz · scene_s1c-20-vai-em-paz.jpg
+- `s1c-21-pao-e-espada-em` — Pão e espada em Nobe · scene_s1c-21-pao-e-espada-em.jpg
+- `s1c-22-a-matanca-em-nobe` — A matança em Nobe · scene_s1c-22-a-matanca-em-nobe.jpg
+- `s1c-23-consulta-em-queila` — Consulta em Queila · scene_s1c-23-consulta-em-queila.jpg
+- `s1c-24-a-orla-do-manto` — A orla do manto · scene_s1c-24-a-orla-do-manto.jpg
+- `s1c-25-a-sabedoria-de-abigail` — A sabedoria de Abigail · scene_s1c-25-a-sabedoria-de-abigail.jpg
+- `s1c-26-lanca-e-bilha` — Lança e bilha · scene_s1c-26-lanca-e-bilha.jpg
+- `s1c-27-davi-em-gate` — Davi em Gate · scene_s1c-27-davi-em-gate.jpg
+- `s1c-28-a-medium-de-en` — A médium de En-Dor · scene_s1c-28-a-medium-de-en.jpg
+- `s1c-29-rejeitado-na-batalha` — Rejeitado na batalha · scene_s1c-29-rejeitado-na-batalha.jpg
+- `s1c-30-fortaleceu-se-no-senhor` — Fortaleceu-se no Senhor · scene_s1c-30-fortaleceu-se-no-senhor.jpg
+- `s1c-31-gilboa` — Gilboa · scene_s1c-31-gilboa.jpg
+- `s1c-boss-1` — Travessia: Samuel e a arca · Travessia · scene_s1c-boss-1.jpg
+- `s1c-boss-2` — Travessia: Volta e pedido de rei · Travessia · scene_s1c-boss-2.jpg
+- `s1c-boss-3` — Travessia: Saul no trono · Travessia · scene_s1c-boss-3.jpg
+- `s1c-boss-4` — Travessia: Davi entra em cena · Travessia · scene_s1c-boss-4.jpg
+- `s1c-boss-5` — Travessia: Davi perseguido · Travessia · scene_s1c-boss-5.jpg
+- `s1c-boss-6` — Travessia: O fim de Saul · Travessia · scene_s1c-boss-6.jpg
+## 1 Tessalonicenses (1tessalonicenses-cap) — 6
+
+- `t1c-01-ministerio-como-mae` — Ministério como mãe · scene_t1c-01-ministerio-como-mae.jpg
+- `t1c-02-consolados-pela-fe` — Consolados pela fé · scene_t1c-02-consolados-pela-fe.jpg
+- `t1c-03-nao-vos-entristecais` — Não vos entristeçais · scene_t1c-03-nao-vos-entristecais.jpg
+- `t1c-04-vigiai-e-dai-gracas` — Vigiai e dai graças · scene_t1c-04-vigiai-e-dai-gracas.jpg
+- `t1c-boss-1` — Travessia: Fé e cuidado · Travessia · scene_t1c-boss-1.jpg
+- `t1c-boss-2` — Travessia: Esperança e vigilância · Travessia · scene_t1c-boss-2.jpg
+## 1 Timóteo (1timoteo-cap) — 8
+
+- `i1c-01-o-primeiro-dos-pecadores` — O primeiro dos pecadores · scene_i1c-01-o-primeiro-dos-pecadores.jpg
+- `i1c-02-orar-por-todos` — Orar por todos · scene_i1c-02-orar-por-todos.jpg
+- `i1c-03-misterio-da-piedade` — Mistério da piedade · scene_i1c-03-misterio-da-piedade.jpg
+- `i1c-04-exercitar-se-na-piedade` — Exercitar-se na piedade · scene_i1c-04-exercitar-se-na-piedade.jpg
+- `i1c-05-cuidar-da-familia` — Cuidar da família · scene_i1c-05-cuidar-da-familia.jpg
+- `i1c-06-contentamento-e-luta` — Contentamento e luta · scene_i1c-06-contentamento-e-luta.jpg
+- `i1c-boss-1` — Travessia: Doutrina e oração · Travessia · scene_i1c-boss-1.jpg
+- `i1c-boss-2` — Travessia: Piedade e contentamento · Travessia · scene_i1c-boss-2.jpg
+## 2 Coríntios (2corintios-cap) — 17
+
+- `c2c-01-deus-de-toda-consolacao` — Deus de toda consolação · scene_c2c-01-deus-de-toda-consolacao.jpg
+- `c2c-02-perdoar-e-confortar` — Perdoar e confortar · scene_c2c-02-perdoar-e-confortar.jpg
+- `c2c-03-ministerio-do-espirito` — Ministério do Espírito · scene_c2c-03-ministerio-do-espirito.jpg
+- `c2c-04-tesouro-em-vasos-de` — Tesouro em vasos de barro · scene_c2c-04-tesouro-em-vasos-de.jpg
+- `c2c-05-nova-criatura` — Nova criatura · scene_c2c-05-nova-criatura.jpg
+- `c2c-06-nao-se-prendam-a` — Não se prendam a descrentes · scene_c2c-06-nao-se-prendam-a.jpg
+- `c2c-07-tristeza-segundo-deus` — Tristeza segundo Deus · scene_c2c-07-tristeza-segundo-deus.jpg
+- `c2c-08-a-graca-de-dar` — A graça de dar · scene_c2c-08-a-graca-de-dar.jpg
+- `c2c-09-quem-semeia-com-alegria` — Quem semeia com alegria · scene_c2c-09-quem-semeia-com-alegria.jpg
+- `c2c-10-armas-espirituais` — Armas espirituais · scene_c2c-10-armas-espirituais.jpg
+- `c2c-11-gloriar-se-nas-fraquezas` — Gloriar-se nas fraquezas · scene_c2c-11-gloriar-se-nas-fraquezas.jpg
+- `c2c-12-nao-busco-o-que` — Não busco o que é vosso · scene_c2c-12-nao-busco-o-que.jpg
+- `c2c-13-examinem-se-a-si` — Examinem-se a si mesmos · scene_c2c-13-examinem-se-a-si.jpg
+- `c2c-boss-1` — Travessia: Consolação e ministério · Travessia · scene_c2c-boss-1.jpg
+- `c2c-boss-2` — Travessia: Reconciliação e pureza · Travessia · scene_c2c-boss-2.jpg
+- `c2c-boss-3` — Travessia: Generosidade e autoridade · Travessia · scene_c2c-boss-3.jpg
+- `c2c-boss-4` — Travessia: Fraqueza e prova · Travessia · scene_c2c-boss-4.jpg
+## 2 Crônicas (2cronicas-cap) — 36
+
+- `c3c-01-pede-sabedoria` — Pede sabedoria · scene_c3c-01-pede-sabedoria.jpg
+- `c3c-02-casa-para-o-nome` — Casa para o nome · scene_c3c-02-casa-para-o-nome.jpg
+- `c3c-03-a-obra-concluida` — A obra concluída · scene_c3c-03-a-obra-concluida.jpg
+- `c3c-04-se-se-converterem` — Se se converterem · scene_c3c-04-se-se-converterem.jpg
+- `c3c-05-se-o-meu-povo` — Se o meu povo · scene_c3c-05-se-o-meu-povo.jpg
+- `c3c-06-rainha-de-saba` — Rainha de Sabá · scene_c3c-06-rainha-de-saba.jpg
+- `c3c-07-o-reino-se-divide` — O reino se divide · scene_c3c-07-o-reino-se-divide.jpg
+- `c3c-08-roboao-abandona` — Roboão abandona · scene_c3c-08-roboao-abandona.jpg
+- `c3c-09-alianca-com-davi` — Aliança com Davi · scene_c3c-09-alianca-com-davi.jpg
+- `c3c-10-asa-busca-o-senhor` — Asa busca o Senhor · scene_c3c-10-asa-busca-o-senhor.jpg
+- `c3c-11-o-senhor-esta-convosco` — O Senhor está convosco · scene_c3c-11-o-senhor-esta-convosco.jpg
+- `c3c-12-confianca-errada` — Confiança errada · scene_c3c-12-confianca-errada.jpg
+- `c3c-13-o-senhor-com-josafa` — O Senhor com Josafá · scene_c3c-13-o-senhor-com-josafa.jpg
+- `c3c-14-micaias-fala` — Micaías fala · scene_c3c-14-micaias-fala.jpg
+- `c3c-15-juizes-para-deus` — Juízes para Deus · scene_c3c-15-juizes-para-deus.jpg
+- `c3c-16-a-batalha-e-de` — A batalha é de Deus · scene_c3c-16-a-batalha-e-de.jpg
+- `c3c-17-jeorao-sem-luz` — Jeorão sem luz · scene_c3c-17-jeorao-sem-luz.jpg
+- `c3c-18-joas-e-coroado` — Joás é coroado · scene_c3c-18-joas-e-coroado.jpg
+- `c3c-19-joas-esquece` — Joás esquece · scene_c3c-19-joas-esquece.jpg
+- `c3c-20-deuses-de-seir` — Deuses de Seir · scene_c3c-20-deuses-de-seir.jpg
+- `c3c-21-uzias-se-exalta` — Uzias se exalta · scene_c3c-21-uzias-se-exalta.jpg
+- `c3c-22-acaz-se-fecha` — Acaz se fecha · scene_c3c-22-acaz-se-fecha.jpg
+- `c3c-23-abram-as-portas` — Abram as portas · scene_c3c-23-abram-as-portas.jpg
+- `c3c-24-voltai-ao-senhor` — Voltai ao Senhor · scene_c3c-24-voltai-ao-senhor.jpg
+- `c3c-25-ofertas-e-ordem` — Ofertas e ordem · scene_c3c-25-ofertas-e-ordem.jpg
+- `c3c-26-anjo-livra` — Anjo livra · scene_c3c-26-anjo-livra.jpg
+- `c3c-27-manasses-se-volta` — Manassés se volta · scene_c3c-27-manasses-se-volta.jpg
+- `c3c-28-livro-da-lei` — Livro da Lei · scene_c3c-28-livro-da-lei.jpg
+- `c3c-29-pascoa-e-queda` — Páscoa e queda · scene_c3c-29-pascoa-e-queda.jpg
+- `c3c-30-exilio-e-ciro` — Exílio e Ciro · scene_c3c-30-exilio-e-ciro.jpg
+- `c3c-boss-1` — Travessia: Salomão e o templo · Travessia · scene_c3c-boss-1.jpg
+- `c3c-boss-2` — Travessia: Divisão e primeiros reis · Travessia · scene_c3c-boss-2.jpg
+- `c3c-boss-3` — Travessia: Josafá e a fé · Travessia · scene_c3c-boss-3.jpg
+- `c3c-boss-4` — Travessia: Quedas e golpes · Travessia · scene_c3c-boss-4.jpg
+- `c3c-boss-5` — Travessia: Ezequias reforma · Travessia · scene_c3c-boss-5.jpg
+- `c3c-boss-6` — Travessia: Até o exílio · Travessia · scene_c3c-boss-6.jpg
+## 2 João (2joao-cap) — 2
+
+- `j2c-01-nao-recebais-o-enganador` — Não recebais o enganador · scene_j2c-01-nao-recebais-o-enganador.jpg
+- `j2c-boss-1` — Travessia: Verdade e cuidado · Travessia · scene_j2c-boss-1.jpg
+## 2 Pedro (2pedro-cap) — 4
+
+- `p2c-01-tudo-para-a-vida` — Tudo para a vida · scene_p2c-01-tudo-para-a-vida.jpg
+- `p2c-02-falsos-mestres` — Falsos mestres · scene_p2c-02-falsos-mestres.jpg
+- `p2c-03-crescei-na-graca` — Crescei na graça · scene_p2c-03-crescei-na-graca.jpg
+- `p2c-boss-1` — Travessia: Crescimento e alerta · Travessia · scene_p2c-boss-1.jpg
+## 2 Reis (2reis-cap) — 30
+
+- `r2c-01-fogo-do-ceu` — Fogo do céu · scene_r2c-01-fogo-do-ceu.jpg
+- `r2c-02-carro-de-fogo` — Carro de fogo · scene_r2c-02-carro-de-fogo.jpg
+- `r2c-03-agua-no-deserto` — Água no deserto · scene_r2c-03-agua-no-deserto.jpg
+- `r2c-04-o-azeite-que-multiplica` — O azeite que multiplica · scene_r2c-04-o-azeite-que-multiplica.jpg
+- `r2c-05-naama-no-jordao` — Naamã no Jordão · scene_r2c-05-naama-no-jordao.jpg
+- `r2c-06-carros-de-fogo` — Carros de fogo · scene_r2c-06-carros-de-fogo.jpg
+- `r2c-07-boas-novas-a-porta` — Boas-novas à porta · scene_r2c-07-boas-novas-a-porta.jpg
+- `r2c-08-hazael-e-a-lagrima` — Hazael e a lágrima · scene_r2c-08-hazael-e-a-lagrima.jpg
+- `r2c-09-jeu-ungido` — Jeú ungido · scene_r2c-09-jeu-ungido.jpg
+- `r2c-10-baal-destruido` — Baal destruído · scene_r2c-10-baal-destruido.jpg
+- `r2c-11-joas-escondido` — Joás escondido · scene_r2c-11-joas-escondido.jpg
+- `r2c-12-reparar-a-casa` — Reparar a casa · scene_r2c-12-reparar-a-casa.jpg
+- `r2c-13-flechas-da-vitoria` — Flechas da vitória · scene_r2c-13-flechas-da-vitoria.jpg
+- `r2c-14-amazias-em-juda` — Amazias em Judá · scene_r2c-14-amazias-em-juda.jpg
+- `r2c-15-o-altar-de-acaz` — O altar de Acaz · scene_r2c-15-o-altar-de-acaz.jpg
+- `r2c-16-samaria-cai` — Samaria cai · scene_r2c-16-samaria-cai.jpg
+- `r2c-17-ezequias-confia` — Ezequias confia · scene_r2c-17-ezequias-confia.jpg
+- `r2c-18-o-anjo-no-acampamento` — O anjo no acampamento · scene_r2c-18-o-anjo-no-acampamento.jpg
+- `r2c-19-quinze-anos-a-mais` — Quinze anos a mais · scene_r2c-19-quinze-anos-a-mais.jpg
+- `r2c-20-manasses-desvia` — Manassés desvia · scene_r2c-20-manasses-desvia.jpg
+- `r2c-21-o-livro-achado` — O livro achado · scene_r2c-21-o-livro-achado.jpg
+- `r2c-22-josias-limpa-a-terra` — Josias limpa a terra · scene_r2c-22-josias-limpa-a-terra.jpg
+- `r2c-23-a-primeira-leva` — A primeira leva · scene_r2c-23-a-primeira-leva.jpg
+- `r2c-24-jerusalem-cai` — Jerusalém cai · scene_r2c-24-jerusalem-cai.jpg
+- `r2c-boss-1` — Travessia: Elias e Eliseu · Travessia · scene_r2c-boss-1.jpg
+- `r2c-boss-2` — Travessia: Sinais de Eliseu · Travessia · scene_r2c-boss-2.jpg
+- `r2c-boss-3` — Travessia: Jeú e Judá · Travessia · scene_r2c-boss-3.jpg
+- `r2c-boss-4` — Travessia: Declínio do norte · Travessia · scene_r2c-boss-4.jpg
+- `r2c-boss-5` — Travessia: Ezequias · Travessia · scene_r2c-boss-5.jpg
+- `r2c-boss-6` — Travessia: Queda de Jerusalém · Travessia · scene_r2c-boss-6.jpg
+## 2 Samuel (2samuel-cap) — 28
+
+- `s2c-01-como-cairam-os-valentes` — Como caíram os valentes · scene_s2c-01-como-cairam-os-valentes.jpg
+- `s2c-02-ungido-em-hebrom` — Ungido em Hebrom · scene_s2c-02-ungido-em-hebrom.jpg
+- `s2c-03-o-sangue-de-abner` — O sangue de Abner · scene_s2c-03-o-sangue-de-abner.jpg
+- `s2c-04-justica-em-hebrom` — Justiça em Hebrom · scene_s2c-04-justica-em-hebrom.jpg
+- `s2c-05-rei-sobre-israel` — Rei sobre Israel · scene_s2c-05-rei-sobre-israel.jpg
+- `s2c-06-dancando-diante-do-senhor` — Dançando diante do Senhor · scene_s2c-06-dancando-diante-do-senhor.jpg
+- `s2c-07-casa-e-trono-eternos` — Casa e trono eternos · scene_s2c-07-casa-e-trono-eternos.jpg
+- `s2c-08-bondade-a-mefibosete` — Bondade a Mefibosete · scene_s2c-08-bondade-a-mefibosete.jpg
+- `s2c-09-joabe-e-a-batalha` — Joabe e a batalha · scene_s2c-09-joabe-e-a-batalha.jpg
+- `s2c-10-o-olhar-na-cobertura` — O olhar na cobertura · scene_s2c-10-o-olhar-na-cobertura.jpg
+- `s2c-11-a-ovelha-do-pobre` — A ovelha do pobre · scene_s2c-11-a-ovelha-do-pobre.jpg
+- `s2c-12-absalao-espera` — Absalão espera · scene_s2c-12-absalao-espera.jpg
+- `s2c-13-absalao-de-volta` — Absalão de volta · scene_s2c-13-absalao-de-volta.jpg
+- `s2c-14-fuga-de-jerusalem` — Fuga de Jerusalém · scene_s2c-14-fuga-de-jerusalem.jpg
+- `s2c-15-as-pedras-de-simei` — As pedras de Simei · scene_s2c-15-as-pedras-de-simei.jpg
+- `s2c-16-conselho-frustrado` — Conselho frustrado · scene_s2c-16-conselho-frustrado.jpg
+- `s2c-17-absalao-no-carvalho` — Absalão no carvalho · scene_s2c-17-absalao-no-carvalho.jpg
+- `s2c-18-vitoria-em-luto` — Vitória em luto · scene_s2c-18-vitoria-em-luto.jpg
+- `s2c-19-seba-e-a-espada` — Seba e a espada · scene_s2c-19-seba-e-a-espada.jpg
+- `s2c-20-fome-e-os-gibeonitas` — Fome e os gibeonitas · scene_s2c-20-fome-e-os-gibeonitas.jpg
+- `s2c-21-o-senhor-e-a` — O Senhor é a minha rocha · scene_s2c-21-o-senhor-e-a.jpg
+- `s2c-22-ultimas-palavras` — Últimas palavras · scene_s2c-22-ultimas-palavras.jpg
+- `s2c-23-caiamos-nas-maos-do` — Caiamos nas mãos do Senhor · scene_s2c-23-caiamos-nas-maos-do.jpg
+- `s2c-boss-1` — Travessia: Davi rei · Travessia · scene_s2c-boss-1.jpg
+- `s2c-boss-2` — Travessia: Arca e aliança · Travessia · scene_s2c-boss-2.jpg
+- `s2c-boss-3` — Travessia: Pecado e consequências · Travessia · scene_s2c-boss-3.jpg
+- `s2c-boss-4` — Travessia: Absalão · Travessia · scene_s2c-boss-4.jpg
+- `s2c-boss-5` — Travessia: Crise e restauração · Travessia · scene_s2c-boss-5.jpg
+## 2 Tessalonicenses (2tessalonicenses-cap) — 4
+
+- `t2c-01-dignos-do-chamado` — Dignos do chamado · scene_t2c-01-dignos-do-chamado.jpg
+- `t2c-02-firmes-na-verdade` — Firmes na verdade · scene_t2c-02-firmes-na-verdade.jpg
+- `t2c-03-trabalhai-em-silencio` — Trabalhai em silêncio · scene_t2c-03-trabalhai-em-silencio.jpg
+- `t2c-boss-1` — Travessia: Firmeza até o fim · Travessia · scene_t2c-boss-1.jpg
+## 2 Timóteo (2timoteo-cap) — 6
+
+- `i2c-01-reacende-o-dom` — Reacende o dom · scene_i2c-01-reacende-o-dom.jpg
+- `i2c-02-soldado-de-cristo` — Soldado de Cristo · scene_i2c-02-soldado-de-cristo.jpg
+- `i2c-03-toda-a-escritura` — Toda a Escritura · scene_i2c-03-toda-a-escritura.jpg
+- `i2c-04-a-coroa-da-justica` — A coroa da justiça · scene_i2c-04-a-coroa-da-justica.jpg
+- `i2c-boss-1` — Travessia: Ânimo e perseverança · Travessia · scene_i2c-boss-1.jpg
+- `i2c-boss-2` — Travessia: Escritura e coroa · Travessia · scene_i2c-boss-2.jpg
+## 3 João (3joao-cap) — 2
+
+- `j3c-01-cooperadores-da-verdade` — Cooperadores da verdade · scene_j3c-01-cooperadores-da-verdade.jpg
+- `j3c-boss-1` — Travessia: Hospitalidade e verdade · Travessia · scene_j3c-boss-1.jpg
+## Ageu (ageu-cap) — 3
+
+- `agc-01-tempo-de-construir` — Tempo de construir · scene_agc-01-tempo-de-construir.jpg
+- `agc-02-do-dia-em-diante` — Do dia em diante · scene_agc-02-do-dia-em-diante.jpg
+- `agc-boss-1` — Travessia: Reconstruir a casa · Travessia · scene_agc-boss-1.jpg
+## Amós (amos-cap) — 11
+
+- `amc-01-por-tres-transgressoes` — Por três transgressões · scene_amc-01-por-tres-transgressoes.jpg
+- `amc-02-juda-e-israel` — Judá e Israel · scene_amc-02-juda-e-israel.jpg
+- `amc-03-testemunhas-nas-montanhas` — Testemunhas nas montanhas · scene_amc-03-testemunhas-nas-montanhas.jpg
+- `amc-04-vacas-de-basa` — Vacas de Basã · scene_amc-04-vacas-de-basa.jpg
+- `amc-05-buscai-me-e-vivei` — Buscai-me e vivei · scene_amc-05-buscai-me-e-vivei.jpg
+- `amc-06-ai-dos-que-vivem` — Ai dos que vivem à vontade · scene_amc-06-ai-dos-que-vivem.jpg
+- `amc-07-tres-visoes` — Três visões · scene_amc-07-tres-visoes.jpg
+- `amc-08-fome-da-palavra` — Fome da palavra · scene_amc-08-fome-da-palavra.jpg
+- `amc-09-a-cabana-de-davi` — A cabana de Davi · scene_amc-09-a-cabana-de-davi.jpg
+- `amc-boss-1` — Travessia: Juízo às nações · Travessia · scene_amc-boss-1.jpg
+- `amc-boss-2` — Travessia: Buscai o Senhor · Travessia · scene_amc-boss-2.jpg
+## Apocalipse (apocalipse-cap) — 27
+
+- `apc-01-graca-das-sete-igrejas` — Graça das sete igrejas · scene_apc-01-graca-das-sete-igrejas.jpg
+- `apc-02-pergamo-sob-pressao` — Pérgamo sob pressão · scene_apc-02-pergamo-sob-pressao.jpg
+- `apc-03-laodiceia-morninha` — Laodiceia morninha · scene_apc-03-laodiceia-morninha.jpg
+- `apc-04-porta-aberta-no-ceu` — Porta aberta no céu · scene_apc-04-porta-aberta-no-ceu.jpg
+- `apc-05-quem-e-digno` — Quem é digno? · scene_apc-05-quem-e-digno.jpg
+- `apc-06-almas-debaixo-do-altar` — Almas debaixo do altar · scene_apc-06-almas-debaixo-do-altar.jpg
+- `apc-07-selados-na-terra` — Selados na terra · scene_apc-07-selados-na-terra.jpg
+- `apc-08-silencio-e-trombetas` — Silêncio e trombetas · scene_apc-08-silencio-e-trombetas.jpg
+- `apc-09-sexta-trombeta` — Sexta trombeta · scene_apc-09-sexta-trombeta.jpg
+- `apc-10-o-livrinho-aberto` — O livrinho aberto · scene_apc-10-o-livrinho-aberto.jpg
+- `apc-11-o-reino-do-mundo` — O reino do mundo · scene_apc-11-o-reino-do-mundo.jpg
+- `apc-12-guerra-no-ceu` — Guerra no céu · scene_apc-12-guerra-no-ceu.jpg
+- `apc-13-a-besta-do-mar` — A besta do mar · scene_apc-13-a-besta-do-mar.jpg
+- `apc-14-evangelho-eterno` — Evangelho eterno · scene_apc-14-evangelho-eterno.jpg
+- `apc-15-cantico-de-moises` — Cântico de Moisés · scene_apc-15-cantico-de-moises.jpg
+- `apc-16-as-primeiras-tacas` — As primeiras taças · scene_apc-16-as-primeiras-tacas.jpg
+- `apc-17-a-mulher-e-a` — A mulher e a besta · scene_apc-17-a-mulher-e-a.jpg
+- `apc-18-queda-de-babilonia` — Queda de Babilônia · scene_apc-18-queda-de-babilonia.jpg
+- `apc-19-o-verbo-de-deus` — O Verbo de Deus · scene_apc-19-o-verbo-de-deus.jpg
+- `apc-20-o-grande-trono-branco` — O grande trono branco · scene_apc-20-o-grande-trono-branco.jpg
+- `apc-21-sem-templo-na-cidade` — Sem templo na cidade · scene_apc-21-sem-templo-na-cidade.jpg
+- `apc-22-o-rio-da-vida` — O rio da vida · scene_apc-22-o-rio-da-vida.jpg
+- `apc-boss-1` — Travessia: Cartas e trono · Travessia · scene_apc-boss-1.jpg
+- `apc-boss-2` — Travessia: Cordeiro e juízos · Travessia · scene_apc-boss-2.jpg
+- `apc-boss-3` — Travessia: Testemunhas e conflito · Travessia · scene_apc-boss-3.jpg
+- `apc-boss-4` — Travessia: Taças e Babilônia · Travessia · scene_apc-boss-4.jpg
+- `apc-boss-5` — Travessia: Vitória e nova criação · Travessia · scene_apc-boss-5.jpg
+## Atos (atos-cap) — 34
+
+- `atc-01-unidos-em-oracao` — Unidos em oração · scene_atc-01-unidos-em-oracao.jpg
+- `atc-02-o-dia-de-pentecostes` — O dia de Pentecostes · scene_atc-02-o-dia-de-pentecostes.jpg
+- `atc-03-o-que-tenho-isso` — O que tenho, isso te dou · scene_atc-03-o-que-tenho-isso.jpg
+- `atc-04-nao-ha-outro-nome` — Não há outro nome · scene_atc-04-nao-ha-outro-nome.jpg
+- `atc-05-importa-obedecer-a-deus` — Importa obedecer a Deus · scene_atc-05-importa-obedecer-a-deus.jpg
+- `atc-06-sete-homens-cheios-do` — Sete homens cheios do Espírito · scene_atc-06-sete-homens-cheios-do.jpg
+- `atc-07-o-ceu-e-o` — O céu é o meu trono · scene_atc-07-o-ceu-e-o.jpg
+- `atc-08-entendes-o-que-les` — Entendes o que lês? · scene_atc-08-entendes-o-que-les.jpg
+- `atc-09-a-luz-no-caminho` — A luz no caminho · scene_atc-09-a-luz-no-caminho.jpg
+- `atc-10-nao-chame-impuro` — Não chame impuro · scene_atc-10-nao-chame-impuro.jpg
+- `atc-11-chamados-cristaos` — Chamados cristãos · scene_atc-11-chamados-cristaos.jpg
+- `atc-12-as-correntes-cairam` — As correntes caíram · scene_atc-12-as-correntes-cairam.jpg
+- `atc-13-luz-para-os-gentios` — Luz para os gentios · scene_atc-13-luz-para-os-gentios.jpg
+- `atc-14-por-muitas-tribulacoes` — Por muitas tribulações · scene_atc-14-por-muitas-tribulacoes.jpg
+- `atc-15-salvos-pela-graca` — Salvos pela graça · scene_atc-15-salvos-pela-graca.jpg
+- `atc-16-o-carcereiro-de-filipos` — O carcereiro de Filipos · scene_atc-16-o-carcereiro-de-filipos.jpg
+- `atc-17-ao-deus-desconhecido` — Ao Deus desconhecido · scene_atc-17-ao-deus-desconhecido.jpg
+- `atc-18-nao-temas-continua-falando` — Não temas, continua falando · scene_atc-18-nao-temas-continua-falando.jpg
+- `atc-19-a-palavra-prevalecia` — A palavra prevalecia · scene_atc-19-a-palavra-prevalecia.jpg
+- `atc-20-mais-feliz-e-dar` — Mais feliz é dar · scene_atc-20-mais-feliz-e-dar.jpg
+- `atc-21-pronto-para-morrer` — Pronto para morrer · scene_atc-21-pronto-para-morrer.jpg
+- `atc-22-levanta-te-e-se` — Levanta-te e sê batizado · scene_atc-22-levanta-te-e-se.jpg
+- `atc-23-tem-bom-animo` — Tem bom ânimo · scene_atc-23-tem-bom-animo.jpg
+- `atc-24-consciencia-limpa` — Consciência limpa · scene_atc-24-consciencia-limpa.jpg
+- `atc-25-apelo-para-cesar` — Apelo para César · scene_atc-25-apelo-para-cesar.jpg
+- `atc-26-das-trevas-para-a` — Das trevas para a luz · scene_atc-26-das-trevas-para-a.jpg
+- `atc-27-no-meio-da-tempestade` — No meio da tempestade · scene_atc-27-no-meio-da-tempestade.jpg
+- `atc-28-a-vibora-em-malta` — A víbora em Malta · scene_atc-28-a-vibora-em-malta.jpg
+- `atc-boss-1` — Travessia: Testemunhas em Jerusalém · Travessia · scene_atc-boss-1.jpg
+- `atc-boss-2` — Travessia: A igreja se espalha · Travessia · scene_atc-boss-2.jpg
+- `atc-boss-3` — Travessia: Para os gentios · Travessia · scene_atc-boss-3.jpg
+- `atc-boss-4` — Travessia: As viagens de Paulo · Travessia · scene_atc-boss-4.jpg
+- `atc-boss-5` — Travessia: Preso por causa de Jesus · Travessia · scene_atc-boss-5.jpg
+- `atc-boss-6` — Travessia: Até Roma · Travessia · scene_atc-boss-6.jpg
+## Cânticos (canticos-cap) — 10
+
+- `cnc-01-como-e-bela-amada` — Como é bela, amada · scene_cnc-01-como-e-bela-amada.jpg
+- `cnc-02-a-voz-do-meu` — A voz do meu amado · scene_cnc-02-a-voz-do-meu.jpg
+- `cnc-03-o-cortejo-de-salomao` — O cortejo de Salomão · scene_cnc-03-o-cortejo-de-salomao.jpg
+- `cnc-04-como-es-formosa` — Como és formosa · scene_cnc-04-como-es-formosa.jpg
+- `cnc-05-abre-me-minha-irma` — Abre-me, minha irmã · scene_cnc-05-abre-me-minha-irma.jpg
+- `cnc-06-para-onde-foi-o` — Para onde foi o amado · scene_cnc-06-para-onde-foi-o.jpg
+- `cnc-07-quao-formosa-e-quao` — Quão formosa e quão agradável · scene_cnc-07-quao-formosa-e-quao.jpg
+- `cnc-08-eu-era-muro` — Eu era muro · scene_cnc-08-eu-era-muro.jpg
+- `cnc-boss-1` — Travessia: Desejo e encontro · Travessia · scene_cnc-boss-1.jpg
+- `cnc-boss-2` — Travessia: Busca e selo · Travessia · scene_cnc-boss-2.jpg
+## Colossenses (colossenses-cap) — 6
+
+- `clc-01-reconciliados-para-serem-santos` — Reconciliados para serem santos · scene_clc-01-reconciliados-para-serem-santos.jpg
+- `clc-02-nao-vos-julgue-ninguem` — Não vos julgue ninguém · scene_clc-02-nao-vos-julgue-ninguem.jpg
+- `clc-03-revesti-vos-de-amor` — Revesti-vos de amor · scene_clc-03-revesti-vos-de-amor.jpg
+- `clc-04-orar-e-aproveitar-o` — Orar e aproveitar o tempo · scene_clc-04-orar-e-aproveitar-o.jpg
+- `clc-boss-1` — Travessia: Cristo suficiente · Travessia · scene_clc-boss-1.jpg
+- `clc-boss-2` — Travessia: Vida nova · Travessia · scene_clc-boss-2.jpg
+## Daniel (daniel-cap) — 15
+
+- `dnc-01-dez-dias-depois` — Dez dias depois · scene_dnc-01-dez-dias-depois.jpg
+- `dnc-02-ha-um-deus-no` — Há um Deus no céu · scene_dnc-02-ha-um-deus-no.jpg
+- `dnc-03-na-fornalha` — Na fornalha · scene_dnc-03-na-fornalha.jpg
+- `dnc-04-nabucodonosor-humilhado` — Nabucodonosor humilhado · scene_dnc-04-nabucodonosor-humilhado.jpg
+- `dnc-05-a-escrita-na-parede` — A escrita na parede · scene_dnc-05-a-escrita-na-parede.jpg
+- `dnc-06-janelas-abertas` — Janelas abertas · scene_dnc-06-janelas-abertas.jpg
+- `dnc-07-o-filho-do-homem` — O Filho do homem · scene_dnc-07-o-filho-do-homem.jpg
+- `dnc-08-a-visao-explicada` — A visão explicada · scene_dnc-08-a-visao-explicada.jpg
+- `dnc-09-setenta-semanas` — Setenta semanas · scene_dnc-09-setenta-semanas.jpg
+- `dnc-10-nao-temas-daniel` — Não temas, Daniel · scene_dnc-10-nao-temas-daniel.jpg
+- `dnc-11-o-povo-que-conhece` — O povo que conhece · scene_dnc-11-o-povo-que-conhece.jpg
+- `dnc-12-os-que-dormem-despertarao` — Os que dormem despertarão · scene_dnc-12-os-que-dormem-despertarao.jpg
+- `dnc-boss-1` — Travessia: Fidelidade na corte · Travessia · scene_dnc-boss-1.jpg
+- `dnc-boss-2` — Travessia: Reinos e oração · Travessia · scene_dnc-boss-2.jpg
+- `dnc-boss-3` — Travessia: Confissão e fim · Travessia · scene_dnc-boss-3.jpg
+## Deuteronômio (deuteronomio-cap) — 40
+
+- `dtc-01-medo-em-cades` — Medo em Cades · scene_dtc-01-medo-em-cades.jpg
+- `dtc-02-passai-por-edom` — Passai por Edom · scene_dtc-02-passai-por-edom.jpg
+- `dtc-03-josue-a-frente` — Josué à frente · scene_dtc-03-josue-a-frente.jpg
+- `dtc-04-ha-outro-deus` — Há outro Deus? · scene_dtc-04-ha-outro-deus.jpg
+- `dtc-05-eu-sou-o-senhor` — Eu sou o Senhor · scene_dtc-05-eu-sou-o-senhor.jpg
+- `dtc-06-quando-entrares-na-terra` — Quando entrares na terra · scene_dtc-06-quando-entrares-na-terra.jpg
+- `dtc-07-povo-santo` — Povo santo · scene_dtc-07-povo-santo.jpg
+- `dtc-08-nem-so-de-pao` — Nem só de pão · scene_dtc-08-nem-so-de-pao.jpg
+- `dtc-09-lembra-te-de-horebe` — Lembra-te de Horebe · scene_dtc-09-lembra-te-de-horebe.jpg
+- `dtc-10-novas-tabuas` — Novas tábuas · scene_dtc-10-novas-tabuas.jpg
+- `dtc-11-palavras-na-mao-e` — Palavras na mão e na porta · scene_dtc-11-palavras-na-mao-e.jpg
+- `dtc-12-o-lugar-que-o` — O lugar que o Senhor escolher · scene_dtc-12-o-lugar-que-o.jpg
+- `dtc-13-profeta-que-desvia` — Profeta que desvia · scene_dtc-13-profeta-que-desvia.jpg
+- `dtc-14-o-dizimo-e-a` — O dízimo e a festa · scene_dtc-14-o-dizimo-e-a.jpg
+- `dtc-15-nao-endurecas-o-coracao` — Não endureças o coração · scene_dtc-15-nao-endurecas-o-coracao.jpg
+- `dtc-16-festa-e-juizes` — Festa e juízes · scene_dtc-16-festa-e-juizes.jpg
+- `dtc-17-o-rei-e-a` — O rei e a lei · scene_dtc-17-o-rei-e-a.jpg
+- `dtc-18-sem-adivinhacao` — Sem adivinhação · scene_dtc-18-sem-adivinhacao.jpg
+- `dtc-19-duas-ou-tres-testemunhas` — Duas ou três testemunhas · scene_dtc-19-duas-ou-tres-testemunhas.jpg
+- `dtc-20-nao-temais-na-guerra` — Não temais na guerra · scene_dtc-20-nao-temais-na-guerra.jpg
+- `dtc-21-filho-rebelde-e-madeira` — Filho rebelde e madeira · scene_dtc-21-filho-rebelde-e-madeira.jpg
+- `dtc-22-o-boi-do-irmao` — O boi do irmão · scene_dtc-22-o-boi-do-irmao.jpg
+- `dtc-23-juros-e-voto` — Juros e voto · scene_dtc-23-juros-e-voto.jpg
+- `dtc-24-o-penhor-e-o` — O penhor e o salário · scene_dtc-24-o-penhor-e-o.jpg
+- `dtc-25-pesos-justos` — Pesos justos · scene_dtc-25-pesos-justos.jpg
+- `dtc-26-as-primicias` — As primícias · scene_dtc-26-as-primicias.jpg
+- `dtc-27-pedras-caiadas` — Pedras caiadas · scene_dtc-27-pedras-caiadas.jpg
+- `dtc-28-bencaos-que-alcancam` — Bênçãos que alcançam · scene_dtc-28-bencaos-que-alcancam.jpg
+- `dtc-29-todos-na-alianca` — Todos na aliança · scene_dtc-29-todos-na-alianca.jpg
+- `dtc-30-quando-vos-converterdes` — Quando vos converterdes · scene_dtc-30-quando-vos-converterdes.jpg
+- `dtc-31-lede-esta-lei` — Lede esta lei · scene_dtc-31-lede-esta-lei.jpg
+- `dtc-32-lembra-te-dos-dias` — Lembra-te dos dias · scene_dtc-32-lembra-te-dos-dias.jpg
+- `dtc-33-a-terra-vista-de` — A terra vista de longe · scene_dtc-33-a-terra-vista-de.jpg
+- `dtc-boss-1` — Travessia: Recordar a jornada · Travessia · scene_dtc-boss-1.jpg
+- `dtc-boss-2` — Travessia: Aliança e coração · Travessia · scene_dtc-boss-2.jpg
+- `dtc-boss-3` — Travessia: Coração e culto · Travessia · scene_dtc-boss-3.jpg
+- `dtc-boss-4` — Travessia: Povo distinto · Travessia · scene_dtc-boss-4.jpg
+- `dtc-boss-5` — Travessia: Profeta e justiça · Travessia · scene_dtc-boss-5.jpg
+- `dtc-boss-6` — Travessia: Aliança renovada · Travessia · scene_dtc-boss-6.jpg
+- `dtc-boss-7` — Travessia: Vida ou morte · Travessia · scene_dtc-boss-7.jpg
+## Eclesiastes (eclesiastes-cap) — 14
+
+- `ecc-01-geracoes-que-passam` — Gerações que passam · scene_ecc-01-geracoes-que-passam.jpg
+- `ecc-02-trabalho-e-herdeiro` — Trabalho e herdeiro · scene_ecc-02-trabalho-e-herdeiro.jpg
+- `ecc-03-tempo-para-tudo` — Tempo para tudo · scene_ecc-03-tempo-para-tudo.jpg
+- `ecc-04-melhor-serem-dois` — Melhor serem dois · scene_ecc-04-melhor-serem-dois.jpg
+- `ecc-05-chega-te-para-ouvir` — Chega-te para ouvir · scene_ecc-05-chega-te-para-ouvir.jpg
+- `ecc-06-riqueza-sem-proveito` — Riqueza sem proveito · scene_ecc-06-riqueza-sem-proveito.jpg
+- `ecc-07-dia-da-morte-e` — Dia da morte e da prosperidade · scene_ecc-07-dia-da-morte-e.jpg
+- `ecc-08-juizo-e-misterio` — Juízo e mistério · scene_ecc-08-juizo-e-misterio.jpg
+- `ecc-09-come-teu-pao-com` — Come teu pão com alegria · scene_ecc-09-come-teu-pao-com.jpg
+- `ecc-10-labios-do-sabio` — Lábios do sábio · scene_ecc-10-labios-do-sabio.jpg
+- `ecc-11-lanca-o-pao` — Lança o pão · scene_ecc-11-lanca-o-pao.jpg
+- `ecc-12-lembra-te-do-teu` — Lembra-te do teu Criador · scene_ecc-12-lembra-te-do-teu.jpg
+- `ecc-boss-1` — Travessia: Sob o sol · Travessia · scene_ecc-boss-1.jpg
+- `ecc-boss-2` — Travessia: Sabedoria e fim · Travessia · scene_ecc-boss-2.jpg
+## Efésios (efesios-cap) — 8
+
+- `efc-01-olhos-iluminados` — Olhos iluminados · scene_efc-01-olhos-iluminados.jpg
+- `efc-02-um-so-povo` — Um só povo · scene_efc-02-um-so-povo.jpg
+- `efc-03-compreender-o-amor` — Compreender o amor · scene_efc-03-compreender-o-amor.jpg
+- `efc-04-unidade-do-espirito` — Unidade do Espírito · scene_efc-04-unidade-do-espirito.jpg
+- `efc-05-andar-com-sabedoria` — Andar com sabedoria · scene_efc-05-andar-com-sabedoria.jpg
+- `efc-06-orar-em-todo-tempo` — Orar em todo tempo · scene_efc-06-orar-em-todo-tempo.jpg
+- `efc-boss-1` — Travessia: Em Cristo · Travessia · scene_efc-boss-1.jpg
+- `efc-boss-2` — Travessia: Andar e lutar · Travessia · scene_efc-boss-2.jpg
+## Esdras (esdras-cap) — 11
+
+- `esc-01-o-povo-que-voltou` — O povo que voltou · scene_esc-01-o-povo-que-voltou.jpg
+- `esc-02-altar-e-alicerces` — Altar e alicerces · scene_esc-02-altar-e-alicerces.jpg
+- `esc-03-o-povo-da-terra` — O povo da terra · scene_esc-03-o-povo-da-terra.jpg
+- `esc-04-profetas-animam` — Profetas animam · scene_esc-04-profetas-animam.jpg
+- `esc-05-casa-dedicada` — Casa dedicada · scene_esc-05-casa-dedicada.jpg
+- `esc-06-mao-do-rei-e` — Mão do rei e de Deus · scene_esc-06-mao-do-rei-e.jpg
+- `esc-07-jejum-no-caminho` — Jejum no caminho · scene_esc-07-jejum-no-caminho.jpg
+- `esc-08-oracao-de-vergonha` — Oração de vergonha · scene_esc-08-oracao-de-vergonha.jpg
+- `esc-09-pacto-de-reforma` — Pacto de reforma · scene_esc-09-pacto-de-reforma.jpg
+- `esc-boss-1` — Travessia: Volta e oposição · Travessia · scene_esc-boss-1.jpg
+- `esc-boss-2` — Travessia: Esdras e a reforma · Travessia · scene_esc-boss-2.jpg
+## Ester (ester-cap) — 10
+
+- `etc-01-vasti-recusa` — Vasti recusa · scene_etc-01-vasti-recusa.jpg
+- `etc-02-hama-exaltado` — Hamã exaltado · scene_etc-02-hama-exaltado.jpg
+- `etc-03-para-esta-ocasiao` — Para esta ocasião · scene_etc-03-para-esta-ocasiao.jpg
+- `etc-04-o-cetro-de-ouro` — O cetro de ouro · scene_etc-04-o-cetro-de-ouro.jpg
+- `etc-05-honra-a-mardoqueu` — Honra a Mardoqueu · scene_etc-05-honra-a-mardoqueu.jpg
+- `etc-06-hama-exposto` — Hamã exposto · scene_etc-06-hama-exposto.jpg
+- `etc-07-novo-decreto` — Novo decreto · scene_etc-07-novo-decreto.jpg
+- `etc-08-dias-de-festa` — Dias de festa · scene_etc-08-dias-de-festa.jpg
+- `etc-boss-1` — Travessia: Ameaça no palácio · Travessia · scene_etc-boss-1.jpg
+- `etc-boss-2` — Travessia: Virada e livramento · Travessia · scene_etc-boss-2.jpg
+## Êxodo (exodo-cap) — 44
+
+- `exc-01-as-parteiras-temeram` — As parteiras temeram · scene_exc-01-as-parteiras-temeram.jpg
+- `exc-02-um-cesto-no-rio` — Um cesto no rio · scene_exc-02-um-cesto-no-rio.jpg
+- `exc-03-este-e-o-meu` — Este é o meu nome · scene_exc-03-este-e-o-meu.jpg
+- `exc-04-sinais-na-mao` — Sinais na mão · scene_exc-04-sinais-na-mao.jpg
+- `exc-05-deixem-o-povo-ir` — Deixem o povo ir · scene_exc-05-deixem-o-povo-ir.jpg
+- `exc-06-eu-sou-o-senhor` — Eu sou o Senhor · scene_exc-06-eu-sou-o-senhor.jpg
+- `exc-07-piolhos-e-moscas` — Piolhos e moscas · scene_exc-07-piolhos-e-moscas.jpg
+- `exc-08-a-saraiva-anunciada` — A saraiva anunciada · scene_exc-08-a-saraiva-anunciada.jpg
+- `exc-09-trevas-espessas` — Trevas espessas · scene_exc-09-trevas-espessas.jpg
+- `exc-10-mais-uma-praga` — Mais uma praga · scene_exc-10-mais-uma-praga.jpg
+- `exc-11-o-sangue-na-porta` — O sangue na porta · scene_exc-11-o-sangue-na-porta.jpg
+- `exc-12-coluna-de-nuvem-e` — Coluna de nuvem e fogo · scene_exc-12-coluna-de-nuvem-e.jpg
+- `exc-13-presos-entre-o-mar` — Presos entre o mar · scene_exc-13-presos-entre-o-mar.jpg
+- `exc-14-cantarei-ao-senhor` — Cantarei ao Senhor · scene_exc-14-cantarei-ao-senhor.jpg
+- `exc-15-pao-do-ceu` — Pão do céu · scene_exc-15-pao-do-ceu.jpg
+- `exc-16-agua-da-rocha` — Água da rocha · scene_exc-16-agua-da-rocha.jpg
+- `exc-17-jetro-aconselha` — Jetro aconselha · scene_exc-17-jetro-aconselha.jpg
+- `exc-18-preparai-o-povo` — Preparai o povo · scene_exc-18-preparai-o-povo.jpg
+- `exc-19-as-palavras-do-sinai` — As palavras do Sinai · scene_exc-19-as-palavras-do-sinai.jpg
+- `exc-20-servo-e-liberdade` — Servo e liberdade · scene_exc-20-servo-e-liberdade.jpg
+- `exc-21-o-estrangeiro-e-a` — O estrangeiro e a viúva · scene_exc-21-o-estrangeiro-e-a.jpg
+- `exc-22-nao-seguir-a-multidao` — Não seguir a multidão · scene_exc-22-nao-seguir-a-multidao.jpg
+- `exc-23-sangue-da-alianca` — Sangue da aliança · scene_exc-23-sangue-da-alianca.jpg
+- `exc-24-o-propiciatorio` — O propiciatório · scene_exc-24-o-propiciatorio.jpg
+- `exc-25-segundo-o-modelo` — Segundo o modelo · scene_exc-25-segundo-o-modelo.jpg
+- `exc-26-aarao-no-peito` — Áarão no peito · scene_exc-26-aarao-no-peito.jpg
+- `exc-27-holocausto-continuo` — Holocausto contínuo · scene_exc-27-holocausto-continuo.jpg
+- `exc-28-o-sabado-e-as` — O sábado e as tábuas · scene_exc-28-o-sabado-e-as.jpg
+- `exc-29-moises-intercede` — Moisés intercede · scene_exc-29-moises-intercede.jpg
+- `exc-30-mostra-me-a-tua` — Mostra-me a tua glória · scene_exc-30-mostra-me-a-tua.jpg
+- `exc-31-novas-tabuas` — Novas tábuas · scene_exc-31-novas-tabuas.jpg
+- `exc-32-o-rosto-que-brilha` — O rosto que brilha · scene_exc-32-o-rosto-que-brilha.jpg
+- `exc-33-coracao-disposto` — Coração disposto · scene_exc-33-coracao-disposto.jpg
+- `exc-34-bastante-oferta` — Bastante oferta · scene_exc-34-bastante-oferta.jpg
+- `exc-35-como-o-senhor-ordenou` — Como o Senhor ordenou · scene_exc-35-como-o-senhor-ordenou.jpg
+- `exc-36-a-gloria-enche` — A glória enche · scene_exc-36-a-gloria-enche.jpg
+- `exc-boss-1` — Travessia: Opressão e chamado · Travessia · scene_exc-boss-1.jpg
+- `exc-boss-2` — Travessia: Pragas · Travessia · scene_exc-boss-2.jpg
+- `exc-boss-3` — Travessia: Libertação · Travessia · scene_exc-boss-3.jpg
+- `exc-boss-4` — Travessia: Deserto até Sinai · Travessia · scene_exc-boss-4.jpg
+- `exc-boss-5` — Travessia: Aliança e justiça · Travessia · scene_exc-boss-5.jpg
+- `exc-boss-6` — Travessia: O santuário · Travessia · scene_exc-boss-6.jpg
+- `exc-boss-7` — Travessia: Queda e glória · Travessia · scene_exc-boss-7.jpg
+- `exc-boss-8` — Travessia: A obra concluída · Travessia · scene_exc-boss-8.jpg
+## Ezequiel (ezequiel-cap) — 51
+
+- `ezc-01-a-visao-do-trono` — A visão do trono · scene_ezc-01-a-visao-do-trono.jpg
+- `ezc-02-filho-do-homem-poe` — Filho do homem, põe-te · scene_ezc-02-filho-do-homem-poe.jpg
+- `ezc-03-come-este-rolo` — Come este rolo · scene_ezc-03-come-este-rolo.jpg
+- `ezc-04-o-tijolo-sitiado` — O tijolo sitiado · scene_ezc-04-o-tijolo-sitiado.jpg
+- `ezc-05-cabelo-e-barba` — Cabelo e barba · scene_ezc-05-cabelo-e-barba.jpg
+- `ezc-06-contra-os-montes` — Contra os montes · scene_ezc-06-contra-os-montes.jpg
+- `ezc-07-o-fim-chegou` — O fim chegou · scene_ezc-07-o-fim-chegou.jpg
+- `ezc-08-abominacoes-no-templo` — Abominações no templo · scene_ezc-08-abominacoes-no-templo.jpg
+- `ezc-09-a-marca-na-testa` — A marca na testa · scene_ezc-09-a-marca-na-testa.jpg
+- `ezc-10-a-gloria-se-move` — A glória se move · scene_ezc-10-a-gloria-se-move.jpg
+- `ezc-11-um-so-coracao` — Um só coração · scene_ezc-11-um-so-coracao.jpg
+- `ezc-12-bagagem-de-emigrante` — Bagagem de emigrante · scene_ezc-12-bagagem-de-emigrante.jpg
+- `ezc-13-paredes-sem-argamassa` — Paredes sem argamassa · scene_ezc-13-paredes-sem-argamassa.jpg
+- `ezc-14-idolos-no-coracao` — Ídolos no coração · scene_ezc-14-idolos-no-coracao.jpg
+- `ezc-15-a-videira-inutil` — A videira inútil · scene_ezc-15-a-videira-inutil.jpg
+- `ezc-16-jerusalem-achada` — Jerusalém achada · scene_ezc-16-jerusalem-achada.jpg
+- `ezc-17-a-aguia-e-o` — A águia e o cedro · scene_ezc-17-a-aguia-e-o.jpg
+- `ezc-18-a-alma-que-pecar` — A alma que pecar · scene_ezc-18-a-alma-que-pecar.jpg
+- `ezc-19-lamento-sobre-os-principes` — Lamento sobre os príncipes · scene_ezc-19-lamento-sobre-os-principes.jpg
+- `ezc-20-nao-se-consultam` — Não se consultam · scene_ezc-20-nao-se-consultam.jpg
+- `ezc-21-a-espada-afiada` — A espada afiada · scene_ezc-21-a-espada-afiada.jpg
+- `ezc-22-cidade-de-sangue` — Cidade de sangue · scene_ezc-22-cidade-de-sangue.jpg
+- `ezc-23-oola-e-ooliba` — Oolá e Oolibá · scene_ezc-23-oola-e-ooliba.jpg
+- `ezc-24-a-mulher-de-ezequiel` — A mulher de Ezequiel · scene_ezc-24-a-mulher-de-ezequiel.jpg
+- `ezc-25-contra-amom` — Contra Amom · scene_ezc-25-contra-amom.jpg
+- `ezc-26-contra-tiro` — Contra Tiro · scene_ezc-26-contra-tiro.jpg
+- `ezc-27-lamento-sobre-tiro` — Lamento sobre Tiro · scene_ezc-27-lamento-sobre-tiro.jpg
+- `ezc-28-principe-de-tiro` — Príncipe de Tiro · scene_ezc-28-principe-de-tiro.jpg
+- `ezc-29-contra-o-egito` — Contra o Egito · scene_ezc-29-contra-o-egito.jpg
+- `ezc-30-o-dia-do-egito` — O dia do Egito · scene_ezc-30-o-dia-do-egito.jpg
+- `ezc-31-o-cedro-do-libano` — O cedro do Líbano · scene_ezc-31-o-cedro-do-libano.jpg
+- `ezc-32-lamento-sobre-farao` — Lamento sobre Faraó · scene_ezc-32-lamento-sobre-farao.jpg
+- `ezc-33-o-atalaia` — O atalaia · scene_ezc-33-o-atalaia.jpg
+- `ezc-34-eu-mesmo-buscarei` — Eu mesmo buscarei · scene_ezc-34-eu-mesmo-buscarei.jpg
+- `ezc-35-contra-o-monte-seir` — Contra o monte Seir · scene_ezc-35-contra-o-monte-seir.jpg
+- `ezc-36-por-amor-do-meu` — Por amor do meu nome · scene_ezc-36-por-amor-do-meu.jpg
+- `ezc-37-duas-varas` — Duas varas · scene_ezc-37-duas-varas.jpg
+- `ezc-38-gogue-da-terra-de` — Gogue da terra de Magogue · scene_ezc-38-gogue-da-terra-de.jpg
+- `ezc-39-a-queda-de-gogue` — A queda de Gogue · scene_ezc-39-a-queda-de-gogue.jpg
+- `ezc-40-a-visao-do-templo` — A visão do templo · scene_ezc-40-a-visao-do-templo.jpg
+- `ezc-41-a-gloria-volta` — A glória volta · scene_ezc-41-a-gloria-volta.jpg
+- `ezc-42-a-porta-fechada` — A porta fechada · scene_ezc-42-a-porta-fechada.jpg
+- `ezc-43-o-rio-do-templo` — O rio do templo · scene_ezc-43-o-rio-do-templo.jpg
+- `ezc-boss-1` — Travessia: A glória e o chamado · Travessia · scene_ezc-boss-1.jpg
+- `ezc-boss-2` — Travessia: O fim e a glória que sai · Travessia · scene_ezc-boss-2.jpg
+- `ezc-boss-3` — Travessia: Falsos e alianças · Travessia · scene_ezc-boss-3.jpg
+- `ezc-boss-4` — Travessia: Lamento e espada · Travessia · scene_ezc-boss-4.jpg
+- `ezc-boss-5` — Travessia: Nações vizinhas · Travessia · scene_ezc-boss-5.jpg
+- `ezc-boss-6` — Travessia: Cedro e pastor · Travessia · scene_ezc-boss-6.jpg
+- `ezc-boss-7` — Travessia: Ossos e nações · Travessia · scene_ezc-boss-7.jpg
+- `ezc-boss-8` — Travessia: Templo e rio · Travessia · scene_ezc-boss-8.jpg
+## Filemom (filemom-cap) — 2
+
+- `fmc-01-fe-que-se-torna` — Fé que se torna eficaz · scene_fmc-01-fe-que-se-torna.jpg
+- `fmc-boss-1` — Travessia: Amor e confiança · Travessia · scene_fmc-boss-1.jpg
+## Filipenses (filipenses-cap) — 6
+
+- `flc-01-obra-comecada` — Obra começada · scene_flc-01-obra-comecada.jpg
+- `flc-02-resplandecer-como-luzes` — Resplandecer como luzes · scene_flc-02-resplandecer-como-luzes.jpg
+- `flc-03-tudo-como-perda` — Tudo como perda · scene_flc-03-tudo-como-perda.jpg
+- `flc-04-alegrai-vos-no-senhor` — Alegrai-vos no Senhor · scene_flc-04-alegrai-vos-no-senhor.jpg
+- `flc-boss-1` — Travessia: Alegria e progresso · Travessia · scene_flc-boss-1.jpg
+- `flc-boss-2` — Travessia: Ganho e paz · Travessia · scene_flc-boss-2.jpg
+## Gálatas (galatas-cap) — 8
+
+- `glc-01-chamado-pela-graca` — Chamado pela graça · scene_glc-01-chamado-pela-graca.jpg
+- `glc-02-justificados-pela-fe` — Justificados pela fé · scene_glc-02-justificados-pela-fe.jpg
+- `glc-03-comecaram-no-espirito` — Começaram no Espírito · scene_glc-03-comecaram-no-espirito.jpg
+- `glc-04-filhos-e-herdeiros` — Filhos e herdeiros · scene_glc-04-filhos-e-herdeiros.jpg
+- `glc-05-liberdade-para-amar` — Liberdade para amar · scene_glc-05-liberdade-para-amar.jpg
+- `glc-06-levar-os-fardos` — Levar os fardos · scene_glc-06-levar-os-fardos.jpg
+- `glc-boss-1` — Travessia: Evangelho e justificação · Travessia · scene_glc-boss-1.jpg
+- `glc-boss-2` — Travessia: Filhos e liberdade · Travessia · scene_glc-boss-2.jpg
+## Gênesis (genesis-cap) — 56
+
+- `gnc-01-a-imagem-de-deus` — À imagem de Deus · scene_gnc-01-a-imagem-de-deus.jpg
+- `gnc-02-nao-e-bom-estar` — Não é bom estar só · scene_gnc-02-nao-e-bom-estar.jpg
+- `gnc-03-a-voz-no-jardim` — A voz no jardim · scene_gnc-03-a-voz-no-jardim.jpg
+- `gnc-04-comecaram-a-invocar` — Começaram a invocar · scene_gnc-04-comecaram-a-invocar.jpg
+- `gnc-05-faze-uma-arca` — Faze uma arca · scene_gnc-05-faze-uma-arca.jpg
+- `gnc-06-as-aguas-prevalecem` — As águas prevalecem · scene_gnc-06-as-aguas-prevalecem.jpg
+- `gnc-07-saia-da-arca` — Saia da arca · scene_gnc-07-saia-da-arca.jpg
+- `gnc-08-frutificai-e-multiplicai` — Frutificai e multiplicai · scene_gnc-08-frutificai-e-multiplicai.jpg
+- `gnc-09-a-familia-de-tera` — A família de Terá · scene_gnc-09-a-familia-de-tera.jpg
+- `gnc-10-fome-e-medo` — Fome e medo · scene_gnc-10-fome-e-medo.jpg
+- `gnc-11-de-volta-ao-altar` — De volta ao altar · scene_gnc-11-de-volta-ao-altar.jpg
+- `gnc-12-guerra-no-vale` — Guerra no vale · scene_gnc-12-guerra-no-vale.jpg
+- `gnc-13-a-terra-prometida` — A terra prometida · scene_gnc-13-a-terra-prometida.jpg
+- `gnc-14-a-circuncisao-e-o` — A circuncisão e o riso · scene_gnc-14-a-circuncisao-e-o.jpg
+- `gnc-15-tres-visitantes` — Três visitantes · scene_gnc-15-tres-visitantes.jpg
+- `gnc-16-fuja-para-o-monte` — Fuja para o monte · scene_gnc-16-fuja-para-o-monte.jpg
+- `gnc-17-abraao-e-abimeleque` — Abraão e Abimeleque · scene_gnc-17-abraao-e-abimeleque.jpg
+- `gnc-18-agua-no-deserto` — Água no deserto · scene_gnc-18-agua-no-deserto.jpg
+- `gnc-19-toma-o-teu-filho` — Toma o teu filho · scene_gnc-19-toma-o-teu-filho.jpg
+- `gnc-20-o-tumulo-de-sara` — O túmulo de Sara · scene_gnc-20-o-tumulo-de-sara.jpg
+- `gnc-21-rebeca-decide-ir` — Rebeca decide ir · scene_gnc-21-rebeca-decide-ir.jpg
+- `gnc-22-abraao-descansa` — Abraão descansa · scene_gnc-22-abraao-descansa.jpg
+- `gnc-23-isaque-na-terra` — Isaque na terra · scene_gnc-23-isaque-na-terra.jpg
+- `gnc-24-a-bencao-em-jogo` — A bênção em jogo · scene_gnc-24-a-bencao-em-jogo.jpg
+- `gnc-25-jaco-e-enviado` — Jacó é enviado · scene_gnc-25-jaco-e-enviado.jpg
+- `gnc-26-o-poco-e-raquel` — O poço e Raquel · scene_gnc-26-o-poco-e-raquel.jpg
+- `gnc-27-deus-se-lembra-de` — Deus se lembra de Raquel · scene_gnc-27-deus-se-lembra-de.jpg
+- `gnc-28-o-monte-da-testemunha` — O monte da testemunha · scene_gnc-28-o-monte-da-testemunha.jpg
+- `gnc-29-acampamento-de-deus` — Acampamento de Deus · scene_gnc-29-acampamento-de-deus.jpg
+- `gnc-30-o-abraco-de-esau` — O abraço de Esaú · scene_gnc-30-o-abraco-de-esau.jpg
+- `gnc-31-dina-em-siquem` — Diná em Siquém · scene_gnc-31-dina-em-siquem.jpg
+- `gnc-32-sobe-a-betel` — Sobe a Betel · scene_gnc-32-sobe-a-betel.jpg
+- `gnc-33-sonhos-que-ferem` — Sonhos que ferem · scene_gnc-33-sonhos-que-ferem.jpg
+- `gnc-34-tamar-e-os-gemeos` — Tamar e os gêmeos · scene_gnc-34-tamar-e-os-gemeos.jpg
+- `gnc-35-jose-resiste` — José resiste · scene_gnc-35-jose-resiste.jpg
+- `gnc-36-sonhos-na-prisao` — Sonhos na prisão · scene_gnc-36-sonhos-na-prisao.jpg
+- `gnc-37-sonhos-de-farao` — Sonhos de Faraó · scene_gnc-37-sonhos-de-farao.jpg
+- `gnc-38-descam-ao-egito` — Desçam ao Egito · scene_gnc-38-descam-ao-egito.jpg
+- `gnc-39-juda-se-oferece` — Judá se oferece · scene_gnc-39-juda-se-oferece.jpg
+- `gnc-40-deus-achou-a-culpa` — Deus achou a culpa · scene_gnc-40-deus-achou-a-culpa.jpg
+- `gnc-41-noticia-na-casa-de` — Notícia na casa de Faraó · scene_gnc-41-noticia-na-casa-de.jpg
+- `gnc-42-israel-oferece-sacrificios` — Israel oferece sacrifícios · scene_gnc-42-israel-oferece-sacrificios.jpg
+- `gnc-43-diante-de-farao` — Diante de Faraó · scene_gnc-43-diante-de-farao.jpg
+- `gnc-44-as-maos-cruzadas` — As mãos cruzadas · scene_gnc-44-as-maos-cruzadas.jpg
+- `gnc-45-juda-e-o-cetro` — Judá e o cetro · scene_gnc-45-juda-e-o-cetro.jpg
+- `gnc-46-vos-pensastes-mal` — Vós pensastes mal · scene_gnc-46-vos-pensastes-mal.jpg
+- `gnc-boss-1` — Travessia: Criação e queda · Travessia · scene_gnc-boss-1.jpg
+- `gnc-boss-10` — Travessia: Bênção e fim · Travessia · scene_gnc-boss-10.jpg
+- `gnc-boss-2` — Travessia: Dilúvio e nações · Travessia · scene_gnc-boss-2.jpg
+- `gnc-boss-3` — Travessia: Abrão na terra · Travessia · scene_gnc-boss-3.jpg
+- `gnc-boss-4` — Travessia: Aliança e juízo · Travessia · scene_gnc-boss-4.jpg
+- `gnc-boss-5` — Travessia: Isaque e a família · Travessia · scene_gnc-boss-5.jpg
+- `gnc-boss-6` — Travessia: Jacó e Esaú · Travessia · scene_gnc-boss-6.jpg
+- `gnc-boss-7` — Travessia: Volta a Canaã · Travessia · scene_gnc-boss-7.jpg
+- `gnc-boss-8` — Travessia: José no Egito · Travessia · scene_gnc-boss-8.jpg
+- `gnc-boss-9` — Travessia: A família reunida · Travessia · scene_gnc-boss-9.jpg
+## Habacuque (habacuque-cap) — 4
+
+- `hqc-01-olhai-entre-as-nacoes` — Olhai entre as nações · scene_hqc-01-olhai-entre-as-nacoes.jpg
+- `hqc-02-ai-dos-opressores` — Ai dos opressores · scene_hqc-02-ai-dos-opressores.jpg
+- `hqc-03-ainda-assim-me-alegrarei` — Ainda assim me alegrarei · scene_hqc-03-ainda-assim-me-alegrarei.jpg
+- `hqc-boss-1` — Travessia: Da queixa à confiança · Travessia · scene_hqc-boss-1.jpg
+## Hebreus (hebreus-cap) — 15
+
+- `hbc-01-o-trono-do-filho` — O trono do Filho · scene_hbc-01-o-trono-do-filho.jpg
+- `hbc-02-jesus-por-todos` — Jesus por todos · scene_hbc-02-jesus-por-todos.jpg
+- `hbc-03-hoje-se-ouvirdes` — Hoje, se ouvirdes · scene_hbc-03-hoje-se-ouvirdes.jpg
+- `hbc-04-o-descanso-de-deus` — O descanso de Deus · scene_hbc-04-o-descanso-de-deus.jpg
+- `hbc-05-sacerdote-eterno` — Sacerdote eterno · scene_hbc-05-sacerdote-eterno.jpg
+- `hbc-06-ancora-da-alma` — Âncora da alma · scene_hbc-06-ancora-da-alma.jpg
+- `hbc-07-salva-completamente` — Salva completamente · scene_hbc-07-salva-completamente.jpg
+- `hbc-08-sangue-que-limpa` — Sangue que limpa · scene_hbc-08-sangue-que-limpa.jpg
+- `hbc-09-aproximemo-nos` — Aproximemo-nos · scene_hbc-09-aproximemo-nos.jpg
+- `hbc-10-abraao-pela-fe` — Abraão pela fé · scene_hbc-10-abraao-pela-fe.jpg
+- `hbc-11-olhando-para-jesus` — Olhando para Jesus · scene_hbc-11-olhando-para-jesus.jpg
+- `hbc-12-fora-do-acampamento` — Fora do acampamento · scene_hbc-12-fora-do-acampamento.jpg
+- `hbc-boss-1` — Travessia: Cristo superior · Travessia · scene_hbc-boss-1.jpg
+- `hbc-boss-2` — Travessia: Sacerdote e aliança · Travessia · scene_hbc-boss-2.jpg
+- `hbc-boss-3` — Travessia: Fé e perseverança · Travessia · scene_hbc-boss-3.jpg
+## Isaías (isaias-cap) — 77
+
+- `isc-01-lavai-vos-limpai-vos` — Lavai-vos, limpai-vos · scene_isc-01-lavai-vos-limpai-vos.jpg
+- `isc-02-a-lei-de-siao` — A lei de Sião · scene_isc-02-a-lei-de-siao.jpg
+- `isc-03-o-senhor-tira-o` — O Senhor tira o sustento · scene_isc-03-o-senhor-tira-o.jpg
+- `isc-04-o-renovo-do-senhor` — O Renovo do Senhor · scene_isc-04-o-renovo-do-senhor.jpg
+- `isc-05-a-vinha-do-senhor` — A vinha do Senhor · scene_isc-05-a-vinha-do-senhor.jpg
+- `isc-06-eis-me-aqui` — Eis-me aqui · scene_isc-06-eis-me-aqui.jpg
+- `isc-07-se-nao-crerdes` — Se não crerdes · scene_isc-07-se-nao-crerdes.jpg
+- `isc-08-nao-temas-o-que` — Não temas o que temem · scene_isc-08-nao-temas-o-que.jpg
+- `isc-09-um-menino-nos-nasceu` — Um menino nos nasceu · scene_isc-09-um-menino-nos-nasceu.jpg
+- `isc-10-o-remanescente-voltara` — O remanescente voltará · scene_isc-10-o-remanescente-voltara.jpg
+- `isc-11-vara-do-tronco-de` — Vara do tronco de Jessé · scene_isc-11-vara-do-tronco-de.jpg
+- `isc-12-deus-e-a-minha` — Deus é a minha salvação · scene_isc-12-deus-e-a-minha.jpg
+- `isc-13-o-dia-do-senhor` — O dia do Senhor · scene_isc-13-o-dia-do-senhor.jpg
+- `isc-14-como-caiste-do-ceu` — Como caíste do céu · scene_isc-14-como-caiste-do-ceu.jpg
+- `isc-15-pranto-sobre-moabe` — Pranto sobre Moabe · scene_isc-15-pranto-sobre-moabe.jpg
+- `isc-16-o-trono-em-misericordia` — O trono em misericórdia · scene_isc-16-o-trono-em-misericordia.jpg
+- `isc-17-a-gloria-de-jaco` — A glória de Jacó · scene_isc-17-a-gloria-de-jaco.jpg
+- `isc-18-terra-de-asas-zumbidoras` — Terra de asas zumbidoras · scene_isc-18-terra-de-asas-zumbidoras.jpg
+- `isc-19-bencao-no-meio-da` — Bênção no meio da terra · scene_isc-19-bencao-no-meio-da.jpg
+- `isc-20-profeta-descalco` — Profeta descalço · scene_isc-20-profeta-descalco.jpg
+- `isc-21-caiu-babilonia` — Caiu Babilônia · scene_isc-21-caiu-babilonia.jpg
+- `isc-22-alegria-no-dia-da` — Alegria no dia da angústia · scene_isc-22-alegria-no-dia-da.jpg
+- `isc-23-pranto-sobre-tiro` — Pranto sobre Tiro · scene_isc-23-pranto-sobre-tiro.jpg
+- `isc-24-a-terra-devastada` — A terra devastada · scene_isc-24-a-terra-devastada.jpg
+- `isc-25-ele-engoliu-a-morte` — Ele engoliu a morte · scene_isc-25-ele-engoliu-a-morte.jpg
+- `isc-26-cidade-forte` — Cidade forte · scene_isc-26-cidade-forte.jpg
+- `isc-27-a-vinha-de-novo` — A vinha de novo · scene_isc-27-a-vinha-de-novo.jpg
+- `isc-28-a-pedra-angular` — A pedra angular · scene_isc-28-a-pedra-angular.jpg
+- `isc-29-labios-longe-do-coracao` — Lábios longe do coração · scene_isc-29-labios-longe-do-coracao.jpg
+- `isc-30-em-quietacao-e-confianca` — Em quietação e confiança · scene_isc-30-em-quietacao-e-confianca.jpg
+- `isc-31-ai-dos-que-descem` — Ai dos que descem ao Egito · scene_isc-31-ai-dos-que-descem.jpg
+- `isc-32-um-rei-reinara` — Um rei reinará · scene_isc-32-um-rei-reinara.jpg
+- `isc-33-o-senhor-e-a` — O Senhor é a nossa salvação · scene_isc-33-o-senhor-e-a.jpg
+- `isc-34-indignacao-sobre-as-nacoes` — Indignação sobre as nações · scene_isc-34-indignacao-sobre-as-nacoes.jpg
+- `isc-35-o-deserto-florescera` — O deserto florescerá · scene_isc-35-o-deserto-florescera.jpg
+- `isc-36-rabsaque-em-jerusalem` — Rabsaqué em Jerusalém · scene_isc-36-rabsaque-em-jerusalem.jpg
+- `isc-37-a-oracao-de-ezequias` — A oração de Ezequias · scene_isc-37-a-oracao-de-ezequias.jpg
+- `isc-38-quinze-anos-a-mais` — Quinze anos a mais · scene_isc-38-quinze-anos-a-mais.jpg
+- `isc-39-os-mensageiros-de-babilonia` — Os mensageiros de Babilônia · scene_isc-39-os-mensageiros-de-babilonia.jpg
+- `isc-40-consolai-o-meu-povo` — Consolai o meu povo · scene_isc-40-consolai-o-meu-povo.jpg
+- `isc-41-nao-temas-servo-meu` — Não temas, servo meu · scene_isc-41-nao-temas-servo-meu.jpg
+- `isc-42-o-meu-servo-escolhido` — O meu servo escolhido · scene_isc-42-o-meu-servo-escolhido.jpg
+- `isc-43-eu-te-remi` — Eu te remi · scene_isc-43-eu-te-remi.jpg
+- `isc-44-nao-ha-outro-deus` — Não há outro Deus · scene_isc-44-nao-ha-outro-deus.jpg
+- `isc-45-a-ciro-o-ungido` — A Ciro, o ungido · scene_isc-45-a-ciro-o-ungido.jpg
+- `isc-46-eu-vos-carreguei` — Eu vos carreguei · scene_isc-46-eu-vos-carreguei.jpg
+- `isc-47-desce-o-virgem` — Desce, ó virgem · scene_isc-47-desce-o-virgem.jpg
+- `isc-48-sai-de-babilonia` — Sai de Babilônia · scene_isc-48-sai-de-babilonia.jpg
+- `isc-49-luz-dos-gentios` — Luz dos gentios · scene_isc-49-luz-dos-gentios.jpg
+- `isc-50-lingua-de-eruditos` — Língua de eruditos · scene_isc-50-lingua-de-eruditos.jpg
+- `isc-51-olhai-para-a-rocha` — Olhai para a rocha · scene_isc-51-olhai-para-a-rocha.jpg
+- `isc-52-quao-formosos` — Quão formosos · scene_isc-52-quao-formosos.jpg
+- `isc-53-homem-de-dores` — Homem de dores · scene_isc-53-homem-de-dores.jpg
+- `isc-54-a-tua-misericordia` — A tua misericórdia · scene_isc-54-a-tua-misericordia.jpg
+- `isc-55-vinde-as-aguas` — Vinde às águas · scene_isc-55-vinde-as-aguas.jpg
+- `isc-56-casa-de-oracao` — Casa de oração · scene_isc-56-casa-de-oracao.jpg
+- `isc-57-habito-no-alto` — Habito no alto · scene_isc-57-habito-no-alto.jpg
+- `isc-58-o-jejum-que-escolhi` — O jejum que escolhi · scene_isc-58-o-jejum-que-escolhi.jpg
+- `isc-59-a-mao-do-senhor` — A mão do Senhor · scene_isc-59-a-mao-do-senhor.jpg
+- `isc-60-levanta-te-resplandece` — Levanta-te, resplandece · scene_isc-60-levanta-te-resplandece.jpg
+- `isc-61-o-espirito-do-senhor` — O Espírito do Senhor · scene_isc-61-o-espirito-do-senhor.jpg
+- `isc-62-nao-me-calarei` — Não me calarei · scene_isc-62-nao-me-calarei.jpg
+- `isc-63-as-misericordias-do-senhor` — As misericórdias do Senhor · scene_isc-63-as-misericordias-do-senhor.jpg
+- `isc-64-oh-se-fendesses` — Oh! Se fendesses · scene_isc-64-oh-se-fendesses.jpg
+- `isc-65-novos-ceus-e-nova` — Novos céus e nova terra · scene_isc-65-novos-ceus-e-nova.jpg
+- `isc-66-onde-esta-a-casa` — Onde está a casa? · scene_isc-66-onde-esta-a-casa.jpg
+- `isc-boss-1` — Travessia: Chamado e juízo · Travessia · scene_isc-boss-1.jpg
+- `isc-boss-10` — Travessia: Convite e justiça · Travessia · scene_isc-boss-10.jpg
+- `isc-boss-11` — Travessia: Ano aceitável · Travessia · scene_isc-boss-11.jpg
+- `isc-boss-2` — Travessia: Sinal e esperança · Travessia · scene_isc-boss-2.jpg
+- `isc-boss-3` — Travessia: Oráculos às nações · Travessia · scene_isc-boss-3.jpg
+- `isc-boss-4` — Travessia: Egito e a cidade · Travessia · scene_isc-boss-4.jpg
+- `isc-boss-5` — Travessia: Louvor e ais · Travessia · scene_isc-boss-5.jpg
+- `isc-boss-6` — Travessia: Livramento e história · Travessia · scene_isc-boss-6.jpg
+- `isc-boss-7` — Travessia: Ezequias e o consolo · Travessia · scene_isc-boss-7.jpg
+- `isc-boss-8` — Travessia: Redenção de Israel · Travessia · scene_isc-boss-8.jpg
+- `isc-boss-9` — Travessia: O servo sofredor · Travessia · scene_isc-boss-9.jpg
+## Jeremias (jeremias-cap) — 61
+
+- `jrc-01-profeta-as-nacoes` — Profeta às nações · scene_jrc-01-profeta-as-nacoes.jpg
+- `jrc-02-o-amor-do-noivado` — O amor do noivado · scene_jrc-02-o-amor-do-noivado.jpg
+- `jrc-03-volta-o-rebelde` — Volta, ó rebelde · scene_jrc-03-volta-o-rebelde.jpg
+- `jrc-04-circuncidai-o-coracao` — Circuncidai o coração · scene_jrc-04-circuncidai-o-coracao.jpg
+- `jrc-05-buscai-um-homem` — Buscai um homem · scene_jrc-05-buscai-um-homem.jpg
+- `jrc-06-paz-paz` — Paz, paz · scene_jrc-06-paz-paz.jpg
+- `jrc-07-templo-de-ladroes` — Templo de ladrões · scene_jrc-07-templo-de-ladroes.jpg
+- `jrc-08-por-que-se-afastam` — Por que se afastam? · scene_jrc-08-por-que-se-afastam.jpg
+- `jrc-09-pranto-e-gloria` — Pranto e glória · scene_jrc-09-pranto-e-gloria.jpg
+- `jrc-10-idolos-mudos` — Ídolos mudos · scene_jrc-10-idolos-mudos.jpg
+- `jrc-11-ouvi-os-termos` — Ouvi os termos · scene_jrc-11-ouvi-os-termos.jpg
+- `jrc-12-por-que-prosperam` — Por que prosperam? · scene_jrc-12-por-que-prosperam.jpg
+- `jrc-13-o-cinto-de-linho` — O cinto de linho · scene_jrc-13-o-cinto-de-linho.jpg
+- `jrc-14-age-por-amor-do` — Age por amor do teu nome · scene_jrc-14-age-por-amor-do.jpg
+- `jrc-15-a-tua-palavra-foi` — A tua palavra foi achada · scene_jrc-15-a-tua-palavra-foi.jpg
+- `jrc-16-novamente-os-trarei` — Novamente os trarei · scene_jrc-16-novamente-os-trarei.jpg
+- `jrc-17-maldito-e-bendito` — Maldito e bendito · scene_jrc-17-maldito-e-bendito.jpg
+- `jrc-18-o-oleiro` — O oleiro · scene_jrc-18-o-oleiro.jpg
+- `jrc-19-o-vaso-quebrado` — O vaso quebrado · scene_jrc-19-o-vaso-quebrado.jpg
+- `jrc-20-seduziste-me` — Seduziste-me · scene_jrc-20-seduziste-me.jpg
+- `jrc-21-o-caminho-da-vida` — O caminho da vida · scene_jrc-21-o-caminho-da-vida.jpg
+- `jrc-22-fazei-juizo` — Fazei juízo · scene_jrc-22-fazei-juizo.jpg
+- `jrc-23-pastores-que-destroem` — Pastores que destroem · scene_jrc-23-pastores-que-destroem.jpg
+- `jrc-24-dois-cestos-de-figos` — Dois cestos de figos · scene_jrc-24-dois-cestos-de-figos.jpg
+- `jrc-25-setenta-anos` — Setenta anos · scene_jrc-25-setenta-anos.jpg
+- `jrc-26-nao-omitas-palavra` — Não omitas palavra · scene_jrc-26-nao-omitas-palavra.jpg
+- `jrc-27-o-jugo-de-madeira` — O jugo de madeira · scene_jrc-27-o-jugo-de-madeira.jpg
+- `jrc-28-hananias-e-a-paz` — Hananias e a paz · scene_jrc-28-hananias-e-a-paz.jpg
+- `jrc-29-buscai-a-paz-da` — Buscai a paz da cidade · scene_jrc-29-buscai-a-paz-da.jpg
+- `jrc-30-eu-te-restaurarei` — Eu te restaurarei · scene_jrc-30-eu-te-restaurarei.jpg
+- `jrc-31-nova-alianca` — Nova aliança · scene_jrc-31-nova-alianca.jpg
+- `jrc-32-o-campo-em-anatote` — O campo em Anatote · scene_jrc-32-o-campo-em-anatote.jpg
+- `jrc-33-clama-a-mim` — Clama a mim · scene_jrc-33-clama-a-mim.jpg
+- `jrc-34-a-liberdade-quebrada` — A liberdade quebrada · scene_jrc-34-a-liberdade-quebrada.jpg
+- `jrc-35-os-recabitas` — Os recabitas · scene_jrc-35-os-recabitas.jpg
+- `jrc-36-o-rolo-queimado` — O rolo queimado · scene_jrc-36-o-rolo-queimado.jpg
+- `jrc-37-nao-vos-enganeis` — Não vos enganeis · scene_jrc-37-nao-vos-enganeis.jpg
+- `jrc-38-na-cisterna` — Na cisterna · scene_jrc-38-na-cisterna.jpg
+- `jrc-39-a-queda-da-cidade` — A queda da cidade · scene_jrc-39-a-queda-da-cidade.jpg
+- `jrc-40-jeremias-livre` — Jeremias livre · scene_jrc-40-jeremias-livre.jpg
+- `jrc-41-o-assassinato-de-gedalias` — O assassinato de Gedalias · scene_jrc-41-o-assassinato-de-gedalias.jpg
+- `jrc-42-pedi-por-nos` — Pedi por nós · scene_jrc-42-pedi-por-nos.jpg
+- `jrc-43-nao-ouviram` — Não ouviram · scene_jrc-43-nao-ouviram.jpg
+- `jrc-44-no-egito-ainda` — No Egito ainda · scene_jrc-44-no-egito-ainda.jpg
+- `jrc-45-sobre-o-egito` — Sobre o Egito · scene_jrc-45-sobre-o-egito.jpg
+- `jrc-46-sobre-os-filisteus` — Sobre os filisteus · scene_jrc-46-sobre-os-filisteus.jpg
+- `jrc-47-sobre-moabe` — Sobre Moabe · scene_jrc-47-sobre-moabe.jpg
+- `jrc-48-sobre-amom` — Sobre Amom · scene_jrc-48-sobre-amom.jpg
+- `jrc-49-caiu-babilonia` — Caiu Babilônia · scene_jrc-49-caiu-babilonia.jpg
+- `jrc-50-o-senhor-nao-abandonou` — O Senhor não abandonou · scene_jrc-50-o-senhor-nao-abandonou.jpg
+- `jrc-51-sai-do-meio-dela` — Sai do meio dela · scene_jrc-51-sai-do-meio-dela.jpg
+- `jrc-52-zedequias-cego` — Zedequias cego · scene_jrc-52-zedequias-cego.jpg
+- `jrc-boss-1` — Travessia: Chamado e contenda · Travessia · scene_jrc-boss-1.jpg
+- `jrc-boss-2` — Travessia: Templo e lágrimas · Travessia · scene_jrc-boss-2.jpg
+- `jrc-boss-3` — Travessia: Sinais e seca · Travessia · scene_jrc-boss-3.jpg
+- `jrc-boss-4` — Travessia: Vasos e pastores · Travessia · scene_jrc-boss-4.jpg
+- `jrc-boss-5` — Travessia: Cálice e jugo · Travessia · scene_jrc-boss-5.jpg
+- `jrc-boss-6` — Travessia: Nova aliança · Travessia · scene_jrc-boss-6.jpg
+- `jrc-boss-7` — Travessia: Cercado e caído · Travessia · scene_jrc-boss-7.jpg
+- `jrc-boss-8` — Travessia: Egito e nações · Travessia · scene_jrc-boss-8.jpg
+- `jrc-boss-9` — Travessia: Babilônia e o fim · Travessia · scene_jrc-boss-9.jpg
+## Jó (jo-cap) — 45
+
+- `jbc-01-a-segunda-prova` — A segunda prova · scene_jbc-01-a-segunda-prova.jpg
+- `jbc-02-amaldicoa-o-dia` — Amaldiçoa o dia · scene_jbc-02-amaldicoa-o-dia.jpg
+- `jbc-03-elifaz-acusa` — Elifaz acusa · scene_jbc-03-elifaz-acusa.jpg
+- `jbc-04-feliz-o-corrigido` — Feliz o corrigido · scene_jbc-04-feliz-o-corrigido.jpg
+- `jbc-05-que-deus-me-esmague` — Que Deus me esmague · scene_jbc-05-que-deus-me-esmague.jpg
+- `jbc-06-por-que-me-tomas` — Por que me tomas por alvo · scene_jbc-06-por-que-me-tomas.jpg
+- `jbc-07-bildade-e-a-tradicao` — Bildade e a tradição · scene_jbc-07-bildade-e-a-tradicao.jpg
+- `jbc-08-como-ser-justo` — Como ser justo · scene_jbc-08-como-ser-justo.jpg
+- `jbc-09-tuas-maos-me-fizeram` — Tuas mãos me fizeram · scene_jbc-09-tuas-maos-me-fizeram.jpg
+- `jbc-10-zofar-e-o-misterio` — Zofar e o mistério · scene_jbc-10-zofar-e-o-misterio.jpg
+- `jbc-11-pergunta-aos-animais` — Pergunta aos animais · scene_jbc-11-pergunta-aos-animais.jpg
+- `jbc-12-ainda-que-me-mate` — Ainda que me mate · scene_jbc-12-ainda-que-me-mate.jpg
+- `jbc-13-o-homem-nasce-para` — O homem nasce para o sofrimento · scene_jbc-13-o-homem-nasce-para.jpg
+- `jbc-14-elifaz-aperta-o-cerco` — Elifaz aperta o cerco · scene_jbc-14-elifaz-aperta-o-cerco.jpg
+- `jbc-15-testemunha-no-ceu` — Testemunha no céu · scene_jbc-15-testemunha-no-ceu.jpg
+- `jbc-16-o-justo-segue-firme` — O justo segue firme · scene_jbc-16-o-justo-segue-firme.jpg
+- `jbc-17-bildade-e-a-lampada` — Bildade e a lâmpada · scene_jbc-17-bildade-e-a-lampada.jpg
+- `jbc-18-meu-redentor-vive` — Meu Redentor vive · scene_jbc-18-meu-redentor-vive.jpg
+- `jbc-19-zofar-e-o-impio` — Zofar e o ímpio · scene_jbc-19-zofar-e-o-impio.jpg
+- `jbc-20-por-que-prosperam` — Por que prosperam · scene_jbc-20-por-que-prosperam.jpg
+- `jbc-21-elifaz-reconcilia-te` — Elifaz: reconcilia-te · scene_jbc-21-elifaz-reconcilia-te.jpg
+- `jbc-22-se-eu-soubesse-onde` — Se eu soubesse onde · scene_jbc-22-se-eu-soubesse-onde.jpg
+- `jbc-23-os-oprimidos-gritam` — Os oprimidos gritam · scene_jbc-23-os-oprimidos-gritam.jpg
+- `jbc-24-beira-dos-caminhos-de` — Beira dos caminhos de Deus · scene_jbc-24-beira-dos-caminhos-de.jpg
+- `jbc-25-nao-nego-a-minha` — Não nego a minha integridade · scene_jbc-25-nao-nego-a-minha.jpg
+- `jbc-26-onde-acha-a-sabedoria` — Onde acha a sabedoria · scene_jbc-26-onde-acha-a-sabedoria.jpg
+- `jbc-27-como-eram-os-dias` — Como eram os dias · scene_jbc-27-como-eram-os-dias.jpg
+- `jbc-28-agora-zombam-de-mim` — Agora zombam de mim · scene_jbc-28-agora-zombam-de-mim.jpg
+- `jbc-29-pacto-com-os-olhos` — Pacto com os olhos · scene_jbc-29-pacto-com-os-olhos.jpg
+- `jbc-30-eliu-se-aquece` — Eliú se aquece · scene_jbc-30-eliu-se-aquece.jpg
+- `jbc-31-deus-fala-de-modos` — Deus fala de modos · scene_jbc-31-deus-fala-de-modos.jpg
+- `jbc-32-deus-nao-perverte-o` — Deus não perverte o juízo · scene_jbc-32-deus-nao-perverte-o.jpg
+- `jbc-33-olha-para-os-ceus` — Olha para os céus · scene_jbc-33-olha-para-os-ceus.jpg
+- `jbc-34-deus-e-poderoso` — Deus é poderoso · scene_jbc-34-deus-e-poderoso.jpg
+- `jbc-35-para-e-considera` — Para e considera · scene_jbc-35-para-e-considera.jpg
+- `jbc-36-o-cavalo-e-a` — O cavalo e a águia · scene_jbc-36-o-cavalo-e-a.jpg
+- `jbc-37-cinge-os-lombos` — Cinge os lombos · scene_jbc-37-cinge-os-lombos.jpg
+- `jbc-38-o-leviata` — O Leviatã · scene_jbc-38-o-leviata.jpg
+- `jbc-39-restauracao-e-intercessao` — Restauração e intercessão · scene_jbc-39-restauracao-e-intercessao.jpg
+- `jbc-boss-1` — Travessia: A prova · Travessia · scene_jbc-boss-1.jpg
+- `jbc-boss-2` — Travessia: Primeiro ciclo · Travessia · scene_jbc-boss-2.jpg
+- `jbc-boss-3` — Travessia: Segundo ciclo · Travessia · scene_jbc-boss-3.jpg
+- `jbc-boss-4` — Travessia: Terceiro ciclo e sabedoria · Travessia · scene_jbc-boss-4.jpg
+- `jbc-boss-5` — Travessia: Defesa de Jó e Eliú · Travessia · scene_jbc-boss-5.jpg
+- `jbc-boss-6` — Travessia: Deus responde · Travessia · scene_jbc-boss-6.jpg
+## João (joao-cap) — 25
+
+- `joc-01-venham-e-vejam` — Venham e vejam · scene_joc-01-venham-e-vejam.jpg
+- `joc-02-o-vinho-em-cana` — O vinho em Caná · scene_joc-02-o-vinho-em-cana.jpg
+- `joc-03-deus-amou-o-mundo` — Deus amou o mundo · scene_joc-03-deus-amou-o-mundo.jpg
+- `joc-04-a-agua-viva` — A água viva · scene_joc-04-a-agua-viva.jpg
+- `joc-05-levanta-te-e-anda` — Levanta-te e anda · scene_joc-05-levanta-te-e-anda.jpg
+- `joc-06-o-pao-da-vida` — O pão da vida · scene_joc-06-o-pao-da-vida.jpg
+- `joc-07-rios-de-agua-viva` — Rios de água viva · scene_joc-07-rios-de-agua-viva.jpg
+- `joc-08-a-verdade-liberta` — A verdade liberta · scene_joc-08-a-verdade-liberta.jpg
+- `joc-09-o-cego-de-nascenca` — O cego de nascença · scene_joc-09-o-cego-de-nascenca.jpg
+- `joc-10-o-bom-pastor` — O bom pastor · scene_joc-10-o-bom-pastor.jpg
+- `joc-11-eu-sou-a-ressurreicao` — Eu sou a ressurreição · scene_joc-11-eu-sou-a-ressurreicao.jpg
+- `joc-12-o-grao-de-trigo` — O grão de trigo · scene_joc-12-o-grao-de-trigo.jpg
+- `joc-13-jesus-lava-os-pes` — Jesus lava os pés · scene_joc-13-jesus-lava-os-pes.jpg
+- `joc-14-nao-os-deixarei-orfaos` — Não os deixarei órfãos · scene_joc-14-nao-os-deixarei-orfaos.jpg
+- `joc-15-voces-sao-meus-amigos` — Vocês são meus amigos · scene_joc-15-voces-sao-meus-amigos.jpg
+- `joc-16-a-tristeza-vira-alegria` — A tristeza vira alegria · scene_joc-16-a-tristeza-vira-alegria.jpg
+- `joc-17-que-todos-sejam-um` — Que todos sejam um · scene_joc-17-que-todos-sejam-um.jpg
+- `joc-18-o-que-e-a` — O que é a verdade? · scene_joc-18-o-que-e-a.jpg
+- `joc-19-o-rei-dos-judeus` — O Rei dos judeus · scene_joc-19-o-rei-dos-judeus.jpg
+- `joc-20-senhor-meu-e-deus` — Senhor meu e Deus meu · scene_joc-20-senhor-meu-e-deus.jpg
+- `joc-21-tu-me-amas` — Tu me amas? · scene_joc-21-tu-me-amas.jpg
+- `joc-boss-1` — Travessia: O Verbo entre nós · Travessia · scene_joc-boss-1.jpg
+- `joc-boss-2` — Travessia: Eu sou · Travessia · scene_joc-boss-2.jpg
+- `joc-boss-3` — Travessia: A hora chegou · Travessia · scene_joc-boss-3.jpg
+- `joc-boss-4` — Travessia: Para que vocês creiam · Travessia · scene_joc-boss-4.jpg
+## Joel (joel-cap) — 4
+
+- `jlc-01-lamento-no-templo` — Lamento no templo · scene_jlc-01-lamento-no-templo.jpg
+- `jlc-02-trombeta-em-siao` — Trombeta em Sião · scene_jlc-02-trombeta-em-siao.jpg
+- `jlc-03-no-vale-da-decisao` — No vale da decisão · scene_jlc-03-no-vale-da-decisao.jpg
+- `jlc-boss-1` — Travessia: O dia do Senhor · Travessia · scene_jlc-boss-1.jpg
+## Jonas (jonas-cap) — 5
+
+- `jnc-01-a-sorte-cai-sobre` — A sorte cai sobre Jonas · scene_jnc-01-a-sorte-cai-sobre.jpg
+- `jnc-02-oracao-no-peixe` — Oração no peixe · scene_jnc-02-oracao-no-peixe.jpg
+- `jnc-03-ninive-se-arrepende` — Nínive se arrepende · scene_jnc-03-ninive-se-arrepende.jpg
+- `jnc-04-a-planta-e-a` — A planta e a cidade · scene_jnc-04-a-planta-e-a.jpg
+- `jnc-boss-1` — Travessia: Fuga e misericórdia · Travessia · scene_jnc-boss-1.jpg
+## Josué (josue-cap) — 22
+
+- `jsc-01-ordens-de-josue` — Ordens de Josué · scene_jsc-01-ordens-de-josue.jpg
+- `jsc-02-raabe-esconde-os-espias` — Raabe esconde os espias · scene_jsc-02-raabe-esconde-os-espias.jpg
+- `jsc-03-a-arca-na-frente` — A arca na frente · scene_jsc-03-a-arca-na-frente.jpg
+- `jsc-04-doze-pedras` — Doze pedras · scene_jsc-04-doze-pedras.jpg
+- `jsc-05-pascoa-e-o-principe` — Páscoa e o príncipe · scene_jsc-05-pascoa-e-o-principe.jpg
+- `jsc-06-sete-trombetas` — Sete trombetas · scene_jsc-06-sete-trombetas.jpg
+- `jsc-07-derrota-em-ai` — Derrota em Ai · scene_jsc-07-derrota-em-ai.jpg
+- `jsc-08-altar-no-ebal` — Altar no Ebal · scene_jsc-08-altar-no-ebal.jpg
+- `jsc-09-engano-de-gibeao` — Engano de Gibeão · scene_jsc-09-engano-de-gibeao.jpg
+- `jsc-10-sol-em-gibeao` — Sol em Gibeão · scene_jsc-10-sol-em-gibeao.jpg
+- `jsc-11-josue-cumpriu-tudo` — Josué cumpriu tudo · scene_jsc-11-josue-cumpriu-tudo.jpg
+- `jsc-12-calebe-pede-hebrom` — Calebe pede Hebrom · scene_jsc-12-calebe-pede-hebrom.jpg
+- `jsc-13-um-quinhao-so` — Um quinhão só · scene_jsc-13-um-quinhao-so.jpg
+- `jsc-14-a-tenda-em-silo` — A tenda em Siló · scene_jsc-14-a-tenda-em-silo.jpg
+- `jsc-15-cidades-de-refugio` — Cidades de refúgio · scene_jsc-15-cidades-de-refugio.jpg
+- `jsc-16-altar-junto-ao-jordao` — Altar junto ao Jordão · scene_jsc-16-altar-junto-ao-jordao.jpg
+- `jsc-17-josue-ja-velho` — Josué já velho · scene_jsc-17-josue-ja-velho.jpg
+- `jsc-18-historia-em-siquem` — História em Siquém · scene_jsc-18-historia-em-siquem.jpg
+- `jsc-boss-1` — Travessia: Entrada · Travessia · scene_jsc-boss-1.jpg
+- `jsc-boss-2` — Travessia: Conquista · Travessia · scene_jsc-boss-2.jpg
+- `jsc-boss-3` — Travessia: Vitória e herança · Travessia · scene_jsc-boss-3.jpg
+- `jsc-boss-4` — Travessia: Repouso e aliança · Travessia · scene_jsc-boss-4.jpg
+## Judas (judas-cap) — 2
+
+- `jdc-01-exemplos-de-juizo` — Exemplos de juízo · scene_jdc-01-exemplos-de-juizo.jpg
+- `jdc-boss-1` — Travessia: Alerta e juízo · Travessia · scene_jdc-boss-1.jpg
+## Juízes (juizes-cap) — 24
+
+- `jzc-01-nao-expulsaram-todos` — Não expulsaram todos · scene_jzc-01-nao-expulsaram-todos.jpg
+- `jzc-02-fizeram-o-que-era` — Fizeram o que era mau · scene_jzc-02-fizeram-o-que-era.jpg
+- `jzc-03-eude-e-eglom` — Eúde e Eglom · scene_jzc-03-eude-e-eglom.jpg
+- `jzc-04-baraque-e-sisera` — Baraque e Sísera · scene_jzc-04-baraque-e-sisera.jpg
+- `jzc-05-cantico-de-debora` — Cântico de Débora · scene_jzc-05-cantico-de-debora.jpg
+- `jzc-06-gideao-no-lagar` — Gideão no lagar · scene_jzc-06-gideao-no-lagar.jpg
+- `jzc-07-trezentos-homens` — Trezentos homens · scene_jzc-07-trezentos-homens.jpg
+- `jzc-08-nem-eu-nem-meu` — Nem eu nem meu filho · scene_jzc-08-nem-eu-nem-meu.jpg
+- `jzc-09-parabola-das-arvores` — Parábola das árvores · scene_jzc-09-parabola-das-arvores.jpg
+- `jzc-10-o-voto-de-jefte` — O voto de Jefté · scene_jzc-10-o-voto-de-jefte.jpg
+- `jzc-11-efraim-contra-jefte` — Efraim contra Jefté · scene_jzc-11-efraim-contra-jefte.jpg
+- `jzc-12-anuncio-a-manoa` — Anúncio a Manoá · scene_jzc-12-anuncio-a-manoa.jpg
+- `jzc-13-leao-e-enigma` — Leão e enigma · scene_jzc-13-leao-e-enigma.jpg
+- `jzc-14-queixada-de-jumento` — Queixada de jumento · scene_jzc-14-queixada-de-jumento.jpg
+- `jzc-15-dalila-insiste` — Dalila insiste · scene_jzc-15-dalila-insiste.jpg
+- `jzc-16-sacerdote-particular` — Sacerdote particular · scene_jzc-16-sacerdote-particular.jpg
+- `jzc-17-danitas-buscam-terra` — Danitas buscam terra · scene_jzc-17-danitas-buscam-terra.jpg
+- `jzc-18-crime-em-gibea` — Crime em Gibeá · scene_jzc-18-crime-em-gibea.jpg
+- `jzc-19-guerra-contra-benjamim` — Guerra contra Benjamim · scene_jzc-19-guerra-contra-benjamim.jpg
+- `jzc-20-juramento-em-mispa` — Juramento em Mispá · scene_jzc-20-juramento-em-mispa.jpg
+- `jzc-boss-1` — Travessia: Fracasso e Débora · Travessia · scene_jzc-boss-1.jpg
+- `jzc-boss-2` — Travessia: Gideão e Abimeleque · Travessia · scene_jzc-boss-2.jpg
+- `jzc-boss-3` — Travessia: Jefté e Sansão · Travessia · scene_jzc-boss-3.jpg
+- `jzc-boss-4` — Travessia: Sem rei · Travessia · scene_jzc-boss-4.jpg
+## Lamentações (lamentacoes-cap) — 6
+
+- `lmc-01-olhai-e-vede` — Olhai e vede · scene_lmc-01-olhai-e-vede.jpg
+- `lmc-02-a-ira-do-senhor` — A ira do Senhor · scene_lmc-02-a-ira-do-senhor.jpg
+- `lmc-03-nao-rejeita-para-sempre` — Não rejeita para sempre · scene_lmc-03-nao-rejeita-para-sempre.jpg
+- `lmc-04-ouro-escurecido` — Ouro escurecido · scene_lmc-04-ouro-escurecido.jpg
+- `lmc-05-lembra-te-senhor` — Lembra-te, Senhor · scene_lmc-05-lembra-te-senhor.jpg
+- `lmc-boss-1` — Travessia: A cidade caída · Travessia · scene_lmc-boss-1.jpg
+## Levítico (levitico-cap) — 30
+
+- `lvc-01-holocausto-no-altar` — Holocausto no altar · scene_lvc-01-holocausto-no-altar.jpg
+- `lvc-02-oferta-de-cereais` — Oferta de cereais · scene_lvc-02-oferta-de-cereais.jpg
+- `lvc-03-pecado-sem-querer` — Pecado sem querer · scene_lvc-03-pecado-sem-querer.jpg
+- `lvc-04-confissao-e-oferta` — Confissão e oferta · scene_lvc-04-confissao-e-oferta.jpg
+- `lvc-05-fogo-continuo` — Fogo contínuo · scene_lvc-05-fogo-continuo.jpg
+- `lvc-06-oferta-de-paz` — Oferta de paz · scene_lvc-06-oferta-de-paz.jpg
+- `lvc-07-sangue-na-ordenacao` — Sangue na ordenação · scene_lvc-07-sangue-na-ordenacao.jpg
+- `lvc-08-fogo-que-sai` — Fogo que sai · scene_lvc-08-fogo-que-sai.jpg
+- `lvc-09-santos-e-sobrios` — Santos e sóbrios · scene_lvc-09-santos-e-sobrios.jpg
+- `lvc-10-santos-porque-eu-sou` — Santos porque eu sou · scene_lvc-10-santos-porque-eu-sou.jpg
+- `lvc-11-purificacao-da-mae` — Purificação da mãe · scene_lvc-11-purificacao-da-mae.jpg
+- `lvc-12-o-sacerdote-examina` — O sacerdote examina · scene_lvc-12-o-sacerdote-examina.jpg
+- `lvc-13-limpo-de-novo` — Limpo de novo · scene_lvc-13-limpo-de-novo.jpg
+- `lvc-14-fluxo-e-oferta` — Fluxo e oferta · scene_lvc-14-fluxo-e-oferta.jpg
+- `lvc-15-sangue-e-bode` — Sangue e bode · scene_lvc-15-sangue-e-bode.jpg
+- `lvc-16-so-perante-a-tenda` — Só perante a tenda · scene_lvc-16-so-perante-a-tenda.jpg
+- `lvc-17-nao-vos-contamineis` — Não vos contamineis · scene_lvc-17-nao-vos-contamineis.jpg
+- `lvc-18-amaras-o-teu-proximo` — Amarás o teu próximo · scene_lvc-18-amaras-o-teu-proximo.jpg
+- `lvc-19-separados-para-mim` — Separados para mim · scene_lvc-19-separados-para-mim.jpg
+- `lvc-20-santos-ao-seu-deus` — Santos ao seu Deus · scene_lvc-20-santos-ao-seu-deus.jpg
+- `lvc-21-sem-defeito` — Sem defeito · scene_lvc-21-sem-defeito.jpg
+- `lvc-22-festas-e-espigas` — Festas e espigas · scene_lvc-22-festas-e-espigas.jpg
+- `lvc-23-azeite-e-paes` — Azeite e pães · scene_lvc-23-azeite-e-paes.jpg
+- `lvc-24-ano-do-jubileu` — Ano do jubileu · scene_lvc-24-ano-do-jubileu.jpg
+- `lvc-25-se-andardes-nos-meus` — Se andardes nos meus estatutos · scene_lvc-25-se-andardes-nos-meus.jpg
+- `lvc-boss-1` — Travessia: Ofertas · Travessia · scene_lvc-boss-1.jpg
+- `lvc-boss-2` — Travessia: Sacerdotes · Travessia · scene_lvc-boss-2.jpg
+- `lvc-boss-3` — Travessia: Pureza · Travessia · scene_lvc-boss-3.jpg
+- `lvc-boss-4` — Travessia: Expiação e santidade · Travessia · scene_lvc-boss-4.jpg
+- `lvc-boss-5` — Travessia: Festas e aliança · Travessia · scene_lvc-boss-5.jpg
+## Lucas (lucas-cap) — 29
+
+- `lcc-01-o-anjo-e-maria` — O anjo e Maria · scene_lcc-01-o-anjo-e-maria.jpg
+- `lcc-02-na-casa-do-meu` — Na casa do meu Pai · scene_lcc-02-na-casa-do-meu.jpg
+- `lcc-03-que-devemos-fazer` — Que devemos fazer? · scene_lcc-03-que-devemos-fazer.jpg
+- `lcc-04-o-espirito-esta-sobre` — O Espírito está sobre mim · scene_lcc-04-o-espirito-esta-sobre.jpg
+- `lcc-05-a-pesca-maravilhosa` — A pesca maravilhosa · scene_lcc-05-a-pesca-maravilhosa.jpg
+- `lcc-06-a-trave-no-olho` — A trave no olho · scene_lcc-06-a-trave-no-olho.jpg
+- `lcc-07-muito-perdoada-muito-amou` — Muito perdoada, muito amou · scene_lcc-07-muito-perdoada-muito-amou.jpg
+- `lcc-08-quem-e-este` — Quem é este? · scene_lcc-08-quem-e-este.jpg
+- `lcc-09-seguir-sem-olhar-para` — Seguir sem olhar para trás · scene_lcc-09-seguir-sem-olhar-para.jpg
+- `lcc-10-o-bom-samaritano` — O bom samaritano · scene_lcc-10-o-bom-samaritano.jpg
+- `lcc-11-pecam-e-receberao` — Peçam e receberão · scene_lcc-11-pecam-e-receberao.jpg
+- `lcc-12-o-rico-insensato` — O rico insensato · scene_lcc-12-o-rico-insensato.jpg
+- `lcc-13-a-mulher-encurvada` — A mulher encurvada · scene_lcc-13-a-mulher-encurvada.jpg
+- `lcc-14-o-grande-banquete` — O grande banquete · scene_lcc-14-o-grande-banquete.jpg
+- `lcc-15-o-filho-que-voltou` — O filho que voltou · scene_lcc-15-o-filho-que-voltou.jpg
+- `lcc-16-o-rico-e-lazaro` — O rico e Lázaro · scene_lcc-16-o-rico-e-lazaro.jpg
+- `lcc-17-os-dez-leprosos` — Os dez leprosos · scene_lcc-17-os-dez-leprosos.jpg
+- `lcc-18-o-fariseu-e-o` — O fariseu e o publicano · scene_lcc-18-o-fariseu-e-o.jpg
+- `lcc-19-zaqueu` — Zaqueu · scene_lcc-19-zaqueu.jpg
+- `lcc-20-a-cesar-e-a` — A César e a Deus · scene_lcc-20-a-cesar-e-a.jpg
+- `lcc-21-a-oferta-da-viuva` — A oferta da viúva · scene_lcc-21-a-oferta-da-viuva.jpg
+- `lcc-22-orem-para-nao-cair` — Orem para não cair · scene_lcc-22-orem-para-nao-cair.jpg
+- `lcc-23-hoje-estaras-comigo` — Hoje estarás comigo · scene_lcc-23-hoje-estaras-comigo.jpg
+- `lcc-24-no-partir-do-pao` — No partir do pão · scene_lcc-24-no-partir-do-pao.jpg
+- `lcc-boss-1` — Travessia: O Salvador nasce · Travessia · scene_lcc-boss-1.jpg
+- `lcc-boss-2` — Travessia: O Reino de perto · Travessia · scene_lcc-boss-2.jpg
+- `lcc-boss-3` — Travessia: No caminho de Jerusalém · Travessia · scene_lcc-boss-3.jpg
+- `lcc-boss-4` — Travessia: Perdidos e achados · Travessia · scene_lcc-boss-4.jpg
+- `lcc-boss-5` — Travessia: Entregue e ressuscitado · Travessia · scene_lcc-boss-5.jpg
+## Malaquias (malaquias-cap) — 5
+
+- `mlc-01-ofertas-desprezadas` — Ofertas desprezadas · scene_mlc-01-ofertas-desprezadas.jpg
+- `mlc-02-a-alianca-com-levi` — A aliança com Levi · scene_mlc-02-a-alianca-com-levi.jpg
+- `mlc-03-voltai-a-mim` — Voltai a mim · scene_mlc-03-voltai-a-mim.jpg
+- `mlc-04-o-sol-da-justica` — O sol da justiça · scene_mlc-04-o-sol-da-justica.jpg
+- `mlc-boss-1` — Travessia: Voltai a mim · Travessia · scene_mlc-boss-1.jpg
+## Marcos (marcos-cap) — 21
+
+- `mcc-01-leproso` — O leproso purificado · scene_mcc-01-leproso.jpg
+- `mcc-02-paralitico` — O paralítico descido pelo teto · scene_mcc-02-paralitico.jpg
+- `mcc-03-mao-atrofiada` — A mão atrofiada no sábado · scene_mcc-03-mao-atrofiada.jpg
+- `mcc-04-semeador` — O semeador e os solos · scene_mcc-04-semeador.jpg
+- `mcc-05-mulher-fluxo` — A mulher que tocou no manto · scene_mcc-05-mulher-fluxo.jpg
+- `mcc-06-filha-jairo` — A filha de Jairo · scene_mcc-06-filha-jairo.jpg
+- `mcc-07-sobre-o-mar` — Jesus anda sobre o mar · scene_mcc-07-sobre-o-mar.jpg
+- `mcc-08-o-que-contamina` — O que contamina · scene_mcc-08-o-que-contamina.jpg
+- `mcc-09-quatro-mil` — Pão para quatro mil · scene_mcc-09-quatro-mil.jpg
+- `mcc-10-cego-betsaida` — O cego de Betsaida · scene_mcc-10-cego-betsaida.jpg
+- `mcc-11-transfiguracao` — A transfiguração · scene_mcc-11-transfiguracao.jpg
+- `mcc-12-veio-para-servir` — Veio para servir · scene_mcc-12-veio-para-servir.jpg
+- `mcc-13-entrada-jerusalem` — A entrada em Jerusalém · scene_mcc-13-entrada-jerusalem.jpg
+- `mcc-14-maior-mandamento` — O maior mandamento · scene_mcc-14-maior-mandamento.jpg
+- `mcc-15-vigiem` — Vigiem · scene_mcc-15-vigiem.jpg
+- `mcc-16-getsemani` — Getsêmani · scene_mcc-16-getsemani.jpg
+- `mcc-17-morte-do-filho` — A morte do Filho · scene_mcc-17-morte-do-filho.jpg
+- `mcc-18-enviados` — Enviados ao mundo · scene_mcc-18-enviados.jpg
+- `mcc-boss-1` — Travessia: O Servo começa · Travessia · scene_mcc-boss-1.jpg
+- `mcc-boss-2` — Travessia: Quem é este? · Travessia · scene_mcc-boss-2.jpg
+- `mcc-boss-3` — Travessia: O Servo entregue · Travessia · scene_mcc-boss-3.jpg
+## Mateus (mateus-cap) — 34
+
+- `mtc-01-a-familia-do-rei` — A família do Rei · scene_mtc-01-a-familia-do-rei.jpg
+- `mtc-02-os-magos-e-a` — Os magos e a estrela · scene_mtc-02-os-magos-e-a.jpg
+- `mtc-03-a-voz-no-deserto` — A voz no deserto · scene_mtc-03-a-voz-no-deserto.jpg
+- `mtc-04-pescadores-de-homens` — Pescadores de homens · scene_mtc-04-pescadores-de-homens.jpg
+- `mtc-05-amem-os-inimigos` — Amem os inimigos · scene_mtc-05-amem-os-inimigos.jpg
+- `mtc-06-nao-andem-ansiosos` — Não andem ansiosos · scene_mtc-06-nao-andem-ansiosos.jpg
+- `mtc-07-a-casa-na-rocha` — A casa na rocha · scene_mtc-07-a-casa-na-rocha.jpg
+- `mtc-08-a-fe-do-centuriao` — A fé do centurião · scene_mtc-08-a-fe-do-centuriao.jpg
+- `mtc-09-o-chamado-de-mateus` — O chamado de Mateus · scene_mtc-09-o-chamado-de-mateus.jpg
+- `mtc-10-nao-temam` — Não temam · scene_mtc-10-nao-temam.jpg
+- `mtc-11-venham-a-mim` — Venham a mim · scene_mtc-11-venham-a-mim.jpg
+- `mtc-12-a-familia-de-jesus` — A família de Jesus · scene_mtc-12-a-familia-de-jesus.jpg
+- `mtc-13-o-tesouro-e-a` — O tesouro e a pérola · scene_mtc-13-o-tesouro-e-a.jpg
+- `mtc-14-pedro-sobre-as-aguas` — Pedro sobre as águas · scene_mtc-14-pedro-sobre-as-aguas.jpg
+- `mtc-15-a-fe-da-mulher` — A fé da mulher cananeia · scene_mtc-15-a-fe-da-mulher.jpg
+- `mtc-16-tu-es-o-cristo` — Tu és o Cristo · scene_mtc-16-tu-es-o-cristo.jpg
+- `mtc-17-no-alto-monte` — No alto monte · scene_mtc-17-no-alto-monte.jpg
+- `mtc-18-perdoar-setenta-vezes-sete` — Perdoar setenta vezes sete · scene_mtc-18-perdoar-setenta-vezes-sete.jpg
+- `mtc-19-o-jovem-rico` — O jovem rico · scene_mtc-19-o-jovem-rico.jpg
+- `mtc-20-os-trabalhadores-da-vinha` — Os trabalhadores da vinha · scene_mtc-20-os-trabalhadores-da-vinha.jpg
+- `mtc-21-eis-o-teu-rei` — Eis o teu Rei · scene_mtc-21-eis-o-teu-rei.jpg
+- `mtc-22-o-grande-mandamento` — O grande mandamento · scene_mtc-22-o-grande-mandamento.jpg
+- `mtc-23-por-fora-e-por` — Por fora e por dentro · scene_mtc-23-por-fora-e-por.jpg
+- `mtc-24-como-nos-dias-de` — Como nos dias de Noé · scene_mtc-24-como-nos-dias-de.jpg
+- `mtc-25-ao-menor-destes` — Ao menor destes · scene_mtc-25-ao-menor-destes.jpg
+- `mtc-26-o-pao-e-o` — O pão e o cálice · scene_mtc-26-o-pao-e-o.jpg
+- `mtc-27-verdadeiramente-era-o-filho` — Verdadeiramente era o Filho · scene_mtc-27-verdadeiramente-era-o-filho.jpg
+- `mtc-28-ele-ressuscitou` — Ele ressuscitou · scene_mtc-28-ele-ressuscitou.jpg
+- `mtc-boss-1` — Travessia: O Rei chega · Travessia · scene_mtc-boss-1.jpg
+- `mtc-boss-2` — Travessia: O Reino ensinado · Travessia · scene_mtc-boss-2.jpg
+- `mtc-boss-3` — Travessia: O Reino cresce · Travessia · scene_mtc-boss-3.jpg
+- `mtc-boss-4` — Travessia: Quem é Jesus? · Travessia · scene_mtc-boss-4.jpg
+- `mtc-boss-5` — Travessia: O Rei em Jerusalém · Travessia · scene_mtc-boss-5.jpg
+- `mtc-boss-6` — Travessia: O Rei entregue e vivo · Travessia · scene_mtc-boss-6.jpg
+## Miquéias (miqueias-cap) — 9
+
+- `mqc-01-o-senhor-desce` — O Senhor desce · scene_mqc-01-o-senhor-desce.jpg
+- `mqc-02-ai-dos-que-maquinam` — Ai dos que maquinam · scene_mqc-02-ai-dos-que-maquinam.jpg
+- `mqc-03-principes-e-profetas` — Príncipes e profetas · scene_mqc-03-principes-e-profetas.jpg
+- `mqc-04-a-claudicante-reunida` — A claudicante reunida · scene_mqc-04-a-claudicante-reunida.jpg
+- `mqc-05-o-remanescente-no-meio` — O remanescente no meio · scene_mqc-05-o-remanescente-no-meio.jpg
+- `mqc-06-o-que-o-senhor` — O que o Senhor pede · scene_mqc-06-o-que-o-senhor.jpg
+- `mqc-07-eu-porem-olharei` — Eu, porém, olharei · scene_mqc-07-eu-porem-olharei.jpg
+- `mqc-boss-1` — Travessia: Juízo e pastor · Travessia · scene_mqc-boss-1.jpg
+- `mqc-boss-2` — Travessia: O que o Senhor pede · Travessia · scene_mqc-boss-2.jpg
+## Naum (naum-cap) — 4
+
+- `nac-01-o-senhor-e-bom` — O Senhor é bom · scene_nac-01-o-senhor-e-bom.jpg
+- `nac-02-o-saque-de-ninive` — O saque de Nínive · scene_nac-02-o-saque-de-ninive.jpg
+- `nac-03-eis-me-contra-ti` — Eis-me contra ti · scene_nac-03-eis-me-contra-ti.jpg
+- `nac-boss-1` — Travessia: Queda de Nínive · Travessia · scene_nac-boss-1.jpg
+## Neemias (neemias-cap) — 11
+
+- `nec-01-vamos-edificar` — Vamos edificar · scene_nec-01-vamos-edificar.jpg
+- `nec-02-edificam-apesar-do-escarnio` — Edificam apesar do escárnio · scene_nec-02-edificam-apesar-do-escarnio.jpg
+- `nec-03-basta-de-usura` — Basta de usura · scene_nec-03-basta-de-usura.jpg
+- `nec-04-intrigas-no-caminho` — Intrigas no caminho · scene_nec-04-intrigas-no-caminho.jpg
+- `nec-05-deus-poe-no-coracao` — Deus põe no coração · scene_nec-05-deus-poe-no-coracao.jpg
+- `nec-06-tu-so-es-senhor` — Tu só és Senhor · scene_nec-06-tu-so-es-senhor.jpg
+- `nec-07-pacto-por-escrito` — Pacto por escrito · scene_nec-07-pacto-por-escrito.jpg
+- `nec-08-dedicacao-com-alegria` — Dedicação com alegria · scene_nec-08-dedicacao-com-alegria.jpg
+- `nec-09-guardar-o-sabado` — Guardar o sábado · scene_nec-09-guardar-o-sabado.jpg
+- `nec-boss-1` — Travessia: O muro sob oposição · Travessia · scene_nec-boss-1.jpg
+- `nec-boss-2` — Travessia: Lei e renovação · Travessia · scene_nec-boss-2.jpg
+## Números (numeros-cap) — 38
+
+- `nmc-01-os-levitas-a-parte` — Os levitas à parte · scene_nmc-01-os-levitas-a-parte.jpg
+- `nmc-02-em-lugar-dos-primogenitos` — Em lugar dos primogênitos · scene_nmc-02-em-lugar-dos-primogenitos.jpg
+- `nmc-03-restituir-o-dano` — Restituir o dano · scene_nmc-03-restituir-o-dano.jpg
+- `nmc-04-a-bencao-de-aarao` — A bênção de Áarão · scene_nmc-04-a-bencao-de-aarao.jpg
+- `nmc-05-voz-sobre-a-arca` — Voz sobre a arca · scene_nmc-05-voz-sobre-a-arca.jpg
+- `nmc-06-levitas-apresentados` — Levitas apresentados · scene_nmc-06-levitas-apresentados.jpg
+- `nmc-07-pascoa-no-deserto` — Páscoa no deserto · scene_nmc-07-pascoa-no-deserto.jpg
+- `nmc-08-vem-conosco` — Vem conosco · scene_nmc-08-vem-conosco.jpg
+- `nmc-09-o-mana-enjoa` — O maná enjoa · scene_nmc-09-o-mana-enjoa.jpg
+- `nmc-10-contra-moises` — Contra Moisés · scene_nmc-10-contra-moises.jpg
+- `nmc-11-o-relatorio-dos-espias` — O relatório dos espias · scene_nmc-11-o-relatorio-dos-espias.jpg
+- `nmc-12-queremos-outro-chefe` — Queremos outro chefe · scene_nmc-12-queremos-outro-chefe.jpg
+- `nmc-13-as-franjas-da-memoria` — As franjas da memória · scene_nmc-13-as-franjas-da-memoria.jpg
+- `nmc-14-basta-vos` — Basta-vos · scene_nmc-14-basta-vos.jpg
+- `nmc-15-a-vara-que-floresce` — A vara que floresce · scene_nmc-15-a-vara-que-floresce.jpg
+- `nmc-16-levai-a-iniquidade` — Levai a iniquidade · scene_nmc-16-levai-a-iniquidade.jpg
+- `nmc-17-a-novilha-vermelha` — A novilha vermelha · scene_nmc-17-a-novilha-vermelha.jpg
+- `nmc-18-aguas-de-meriba` — Águas de Meribá · scene_nmc-18-aguas-de-meriba.jpg
+- `nmc-19-vitoria-sobre-seom` — Vitória sobre Seom · scene_nmc-19-vitoria-sobre-seom.jpg
+- `nmc-20-balaque-chama-balaao` — Balaque chama Balaão · scene_nmc-20-balaque-chama-balaao.jpg
+- `nmc-21-deus-nao-e-homem` — Deus não é homem · scene_nmc-21-deus-nao-e-homem.jpg
+- `nmc-22-a-estrela-de-jaco` — A estrela de Jacó · scene_nmc-22-a-estrela-de-jaco.jpg
+- `nmc-23-o-zelo-de-fineias` — O zelo de Fineias · scene_nmc-23-o-zelo-de-fineias.jpg
+- `nmc-24-as-filhas-de-zelofeade` — As filhas de Zelofeade · scene_nmc-24-as-filhas-de-zelofeade.jpg
+- `nmc-25-oferta-de-cada-dia` — Oferta de cada dia · scene_nmc-25-oferta-de-cada-dia.jpg
+- `nmc-26-votos-e-palavra` — Votos e palavra · scene_nmc-26-votos-e-palavra.jpg
+- `nmc-27-guerra-contra-midia` — Guerra contra Midiã · scene_nmc-27-guerra-contra-midia.jpg
+- `nmc-28-deste-lado-do-jordao` — Deste lado do Jordão · scene_nmc-28-deste-lado-do-jordao.jpg
+- `nmc-29-os-limites-da-terra` — Os limites da terra · scene_nmc-29-os-limites-da-terra.jpg
+- `nmc-30-cidades-de-refugio` — Cidades de refúgio · scene_nmc-30-cidades-de-refugio.jpg
+- `nmc-31-heranca-na-tribo` — Herança na tribo · scene_nmc-31-heranca-na-tribo.jpg
+- `nmc-boss-1` — Travessia: Acampamento · Travessia · scene_nmc-boss-1.jpg
+- `nmc-boss-2` — Travessia: Dedicação e partida · Travessia · scene_nmc-boss-2.jpg
+- `nmc-boss-3` — Travessia: Queixas no deserto · Travessia · scene_nmc-boss-3.jpg
+- `nmc-boss-4` — Travessia: Corá e o sacerdócio · Travessia · scene_nmc-boss-4.jpg
+- `nmc-boss-5` — Travessia: Água, serpente e Balaão · Travessia · scene_nmc-boss-5.jpg
+- `nmc-boss-6` — Travessia: Nova geração · Travessia · scene_nmc-boss-6.jpg
+- `nmc-boss-7` — Travessia: Herança · Travessia · scene_nmc-boss-7.jpg
+## Obadias (obadias-cap) — 2
+
+- `obc-01-o-dia-do-senhor` — O dia do Senhor · scene_obc-01-o-dia-do-senhor.jpg
+- `obc-boss-1` — Travessia: Edom e o dia do Senhor · Travessia · scene_obc-boss-1.jpg
+## Oséias (oseias-cap) — 16
+
+- `osc-01-lo-ruama-e-lo` — Lo-Ruama e Lo-Ami · scene_osc-01-lo-ruama-e-lo.jpg
+- `osc-02-contendei-com-vossa-mae` — Contendei com vossa mãe · scene_osc-02-contendei-com-vossa-mae.jpg
+- `osc-03-amor-e-conhecimento` — Amor e conhecimento · scene_osc-03-amor-e-conhecimento.jpg
+- `osc-04-ouvi-isto-sacerdotes` — Ouvi isto, sacerdotes · scene_osc-04-ouvi-isto-sacerdotes.jpg
+- `osc-05-vinde-e-tornemos` — Vinde, e tornemos · scene_osc-05-vinde-e-tornemos.jpg
+- `osc-06-o-forno-do-coracao` — O forno do coração · scene_osc-06-o-forno-do-coracao.jpg
+- `osc-07-semearam-vento` — Semearam vento · scene_osc-07-semearam-vento.jpg
+- `osc-08-nao-te-alegres-israel` — Não te alegres, Israel · scene_osc-08-nao-te-alegres-israel.jpg
+- `osc-09-semeai-em-justica` — Semeai em justiça · scene_osc-09-semeai-em-justica.jpg
+- `osc-10-quando-israel-era-menino` — Quando Israel era menino · scene_osc-10-quando-israel-era-menino.jpg
+- `osc-11-jaco-e-a-luta` — Jacó e a luta · scene_osc-11-jaco-e-a-luta.jpg
+- `osc-12-eu-sou-o-teu` — Eu sou o teu Deus · scene_osc-12-eu-sou-o-teu.jpg
+- `osc-13-cura-das-tuas-rebelioes` — Cura das tuas rebeliões · scene_osc-13-cura-das-tuas-rebelioes.jpg
+- `osc-boss-1` — Travessia: Amor e infidelidade · Travessia · scene_osc-boss-1.jpg
+- `osc-boss-2` — Travessia: Voltar ao Senhor · Travessia · scene_osc-boss-2.jpg
+- `osc-boss-3` — Travessia: Amor que não desiste · Travessia · scene_osc-boss-3.jpg
+## Provérbios (proverbios-cap) — 37
+
+- `pvc-01-a-sabedoria-clama` — A sabedoria clama · scene_pvc-01-a-sabedoria-clama.jpg
+- `pvc-02-se-buscares-como-a` — Se buscares como a prata · scene_pvc-02-se-buscares-como-a.jpg
+- `pvc-03-confia-no-senhor` — Confia no Senhor · scene_pvc-03-confia-no-senhor.jpg
+- `pvc-04-adquire-a-sabedoria` — Adquire a sabedoria · scene_pvc-04-adquire-a-sabedoria.jpg
+- `pvc-05-aguas-da-cisterna` — Águas da cisterna · scene_pvc-05-aguas-da-cisterna.jpg
+- `pvc-06-vai-ter-com-a` — Vai ter com a formiga · scene_pvc-06-vai-ter-com-a.jpg
+- `pvc-07-guarda-meus-mandamentos` — Guarda meus mandamentos · scene_pvc-07-guarda-meus-mandamentos.jpg
+- `pvc-08-o-senhor-me-possuiu` — O Senhor me possuiu · scene_pvc-08-o-senhor-me-possuiu.jpg
+- `pvc-09-a-casa-da-sabedoria` — A casa da sabedoria · scene_pvc-09-a-casa-da-sabedoria.jpg
+- `pvc-10-filho-sabio-e-odio` — Filho sábio e ódio · scene_pvc-10-filho-sabio-e-odio.jpg
+- `pvc-11-balanca-falsa` — Balança falsa · scene_pvc-11-balanca-falsa.jpg
+- `pvc-12-labios-que-salvam` — Lábios que salvam · scene_pvc-12-labios-que-salvam.jpg
+- `pvc-13-ouvir-a-correcao` — Ouvir a correção · scene_pvc-13-ouvir-a-correcao.jpg
+- `pvc-14-misericordia-aos-pobres` — Misericórdia aos pobres · scene_pvc-14-misericordia-aos-pobres.jpg
+- `pvc-15-resposta-branda` — Resposta branda · scene_pvc-15-resposta-branda.jpg
+- `pvc-16-o-coracao-planeja` — O coração planeja · scene_pvc-16-o-coracao-planeja.jpg
+- `pvc-17-melhor-o-bocado-seco` — Melhor o bocado seco · scene_pvc-17-melhor-o-bocado-seco.jpg
+- `pvc-18-torre-forte-e-lingua` — Torre forte e língua · scene_pvc-18-torre-forte-e-lingua.jpg
+- `pvc-19-o-temor-do-senhor` — O temor do Senhor · scene_pvc-19-o-temor-do-senhor.jpg
+- `pvc-20-o-vinho-e-o` — O vinho e o rei · scene_pvc-20-o-vinho-e-o.jpg
+- `pvc-21-o-coracao-do-rei` — O coração do rei · scene_pvc-21-o-coracao-do-rei.jpg
+- `pvc-22-bom-nome-e-ricos` — Bom nome e ricos · scene_pvc-22-bom-nome-e-ricos.jpg
+- `pvc-23-ouve-filho-meu` — Ouve, filho meu · scene_pvc-23-ouve-filho-meu.jpg
+- `pvc-24-se-desfaleces` — Se desfaleces · scene_pvc-24-se-desfaleces.jpg
+- `pvc-25-macas-de-ouro` — Maçãs de ouro · scene_pvc-25-macas-de-ouro.jpg
+- `pvc-26-nao-respondas-ao-tolo` — Não respondas ao tolo · scene_pvc-26-nao-respondas-ao-tolo.jpg
+- `pvc-27-nao-te-glories-do` — Não te glories do dia · scene_pvc-27-nao-te-glories-do.jpg
+- `pvc-28-o-justo-e-o` — O justo e o ímpio · scene_pvc-28-o-justo-e-o.jpg
+- `pvc-29-quem-endurece-a-cerviz` — Quem endurece a cerviz · scene_pvc-29-quem-endurece-a-cerviz.jpg
+- `pvc-30-toda-palavra-de-deus` — Toda palavra de Deus · scene_pvc-30-toda-palavra-de-deus.jpg
+- `pvc-31-mulher-virtuosa` — Mulher virtuosa · scene_pvc-31-mulher-virtuosa.jpg
+- `pvc-32-louvor-as-portas` — Louvor às portas · scene_pvc-32-louvor-as-portas.jpg
+- `pvc-boss-1` — Travessia: Convite da sabedoria · Travessia · scene_pvc-boss-1.jpg
+- `pvc-boss-2` — Travessia: Provérbios de Salomão I · Travessia · scene_pvc-boss-2.jpg
+- `pvc-boss-3` — Travessia: Provérbios de Salomão II · Travessia · scene_pvc-boss-3.jpg
+- `pvc-boss-4` — Travessia: Palavras dos sábios · Travessia · scene_pvc-boss-4.jpg
+- `pvc-boss-5` — Travessia: Agur, Lemuel e a virtuosa · Travessia · scene_pvc-boss-5.jpg
+## Romanos (romanos-cap) — 20
+
+- `rmc-01-o-poder-do-evangelho` — O poder do evangelho · scene_rmc-01-o-poder-do-evangelho.jpg
+- `rmc-02-sem-favoritismo` — Sem favoritismo · scene_rmc-02-sem-favoritismo.jpg
+- `rmc-03-nao-ha-justo` — Não há justo · scene_rmc-03-nao-ha-justo.jpg
+- `rmc-04-abraao-creu` — Abraão creu · scene_rmc-04-abraao-creu.jpg
+- `rmc-05-cristo-morreu-por-nos` — Cristo morreu por nós · scene_rmc-05-cristo-morreu-por-nos.jpg
+- `rmc-06-mortos-para-o-pecado` — Mortos para o pecado · scene_rmc-06-mortos-para-o-pecado.jpg
+- `rmc-07-o-bem-que-quero` — O bem que quero · scene_rmc-07-o-bem-que-quero.jpg
+- `rmc-08-nada-nos-separara` — Nada nos separará · scene_rmc-08-nada-nos-separara.jpg
+- `rmc-09-dor-por-israel` — Dor por Israel · scene_rmc-09-dor-por-israel.jpg
+- `rmc-10-perto-da-boca-e` — Perto da boca e do coração · scene_rmc-10-perto-da-boca-e.jpg
+- `rmc-11-a-oliveira` — A oliveira · scene_rmc-11-a-oliveira.jpg
+- `rmc-12-amor-sem-hipocrisia` — Amor sem hipocrisia · scene_rmc-12-amor-sem-hipocrisia.jpg
+- `rmc-13-o-amor-cumpre-a` — O amor cumpre a lei · scene_rmc-13-o-amor-cumpre-a.jpg
+- `rmc-14-recebam-o-fraco` — Recebam o fraco · scene_rmc-14-recebam-o-fraco.jpg
+- `rmc-15-suportar-os-fracos` — Suportar os fracos · scene_rmc-15-suportar-os-fracos.jpg
+- `rmc-16-o-deus-que-firma` — O Deus que firma · scene_rmc-16-o-deus-que-firma.jpg
+- `rmc-boss-1` — Travessia: Justiça e pecado · Travessia · scene_rmc-boss-1.jpg
+- `rmc-boss-2` — Travessia: Graça e nova vida · Travessia · scene_rmc-boss-2.jpg
+- `rmc-boss-3` — Travessia: Israel e o amor · Travessia · scene_rmc-boss-3.jpg
+- `rmc-boss-4` — Travessia: Vida em comunidade · Travessia · scene_rmc-boss-4.jpg
+## Rute (rute-cap) — 5
+
+- `rtc-01-volta-de-moabe` — Volta de Moabe · scene_rtc-01-volta-de-moabe.jpg
+- `rtc-02-favor-no-campo` — Favor no campo · scene_rtc-02-favor-no-campo.jpg
+- `rtc-03-noite-na-eira` — Noite na eira · scene_rtc-03-noite-na-eira.jpg
+- `rtc-04-na-porta-da-cidade` — Na porta da cidade · scene_rtc-04-na-porta-da-cidade.jpg
+- `rtc-boss-1` — Travessia: Lealdade e redenção · Travessia · scene_rtc-boss-1.jpg
+## Salmos (salmos-cap) — 165
+
+- `slc-01-dois-caminhos` — Dois caminhos · scene_slc-01-dois-caminhos.jpg
+- `slc-02-o-rei-ungido` — O Rei ungido · scene_slc-02-o-rei-ungido.jpg
+- `slc-03-escudo-ao-redor` — Escudo ao redor · scene_slc-03-escudo-ao-redor.jpg
+- `slc-04-em-paz-me-deito` — Em paz me deito · scene_slc-04-em-paz-me-deito.jpg
+- `slc-05-de-manha-ouves` — De manhã ouves · scene_slc-05-de-manha-ouves.jpg
+- `slc-06-ate-quando-senhor` — Até quando, Senhor · scene_slc-06-ate-quando-senhor.jpg
+- `slc-07-julga-me-senhor` — Julga-me, Senhor · scene_slc-07-julga-me-senhor.jpg
+- `slc-08-quao-admiravel` — Quão admirável · scene_slc-08-quao-admiravel.jpg
+- `slc-09-gracas-de-todo-o` — Graças de todo o coração · scene_slc-09-gracas-de-todo-o.jpg
+- `slc-10-por-que-te-escondes` — Por que te escondes · scene_slc-10-por-que-te-escondes.jpg
+- `slc-100-oracao-do-aflito` — Oração do aflito · scene_slc-100-oracao-do-aflito.jpg
+- `slc-101-bendize-o-minh-alma` — Bendize, ó minh’alma · scene_slc-101-bendize-o-minh-alma.jpg
+- `slc-102-deus-da-criacao` — Deus da criação · scene_slc-102-deus-da-criacao.jpg
+- `slc-103-lembrai-as-maravilhas` — Lembrai as maravilhas · scene_slc-103-lembrai-as-maravilhas.jpg
+- `slc-104-pecamos-com-os-pais` — Pecamos com os pais · scene_slc-104-pecamos-com-os-pais.jpg
+- `slc-105-louvai-ao-senhor` — Louvai ao Senhor · scene_slc-105-louvai-ao-senhor.jpg
+- `slc-106-o-meu-coracao-esta` — O meu coração está firme · scene_slc-106-o-meu-coracao-esta.jpg
+- `slc-107-boca-de-mentira` — Boca de mentira · scene_slc-107-boca-de-mentira.jpg
+- `slc-108-assenta-te-a-minha` — Assenta-te à minha direita · scene_slc-108-assenta-te-a-minha.jpg
+- `slc-109-grandes-obras` — Grandes obras · scene_slc-109-grandes-obras.jpg
+- `slc-11-no-senhor-me-refugio` — No Senhor me refugio · scene_slc-11-no-senhor-me-refugio.jpg
+- `slc-110-bem-aventurado-o-que` — Bem-aventurado o que teme · scene_slc-110-bem-aventurado-o-que.jpg
+- `slc-111-do-po-a-gloria` — Do pó à glória · scene_slc-111-do-po-a-gloria.jpg
+- `slc-112-o-mar-viu-e` — O mar viu e fugiu · scene_slc-112-o-mar-viu-e.jpg
+- `slc-113-a-nos-nao-senhor` — A nós não, Senhor · scene_slc-113-a-nos-nao-senhor.jpg
+- `slc-114-amo-o-senhor` — Amo o Senhor · scene_slc-114-amo-o-senhor.jpg
+- `slc-115-louvai-nacoes` — Louvai, nações · scene_slc-115-louvai-nacoes.jpg
+- `slc-116-a-pedra-rejeitada` — A pedra rejeitada · scene_slc-116-a-pedra-rejeitada.jpg
+- `slc-117-lampada-para-os-pes` — Lâmpada para os pés · scene_slc-117-lampada-para-os-pes.jpg
+- `slc-118-livra-me-dos-labios` — Livra-me dos lábios · scene_slc-118-livra-me-dos-labios.jpg
+- `slc-119-o-senhor-te-guarda` — O Senhor te guarda · scene_slc-119-o-senhor-te-guarda.jpg
+- `slc-12-labios-lisonjeiros` — Lábios lisonjeiros · scene_slc-12-labios-lisonjeiros.jpg
+- `slc-120-alegrei-me` — Alegrei-me · scene_slc-120-alegrei-me.jpg
+- `slc-121-como-os-olhos-dos` — Como os olhos dos servos · scene_slc-121-como-os-olhos-dos.jpg
+- `slc-122-se-nao-fora-o` — Se não fora o Senhor · scene_slc-122-se-nao-fora-o.jpg
+- `slc-123-como-monte-siao` — Como Monte Sião · scene_slc-123-como-monte-siao.jpg
+- `slc-124-restaurados-com-canto` — Restaurados com canto · scene_slc-124-restaurados-com-canto.jpg
+- `slc-125-se-o-senhor-nao` — Se o Senhor não edificar · scene_slc-125-se-o-senhor-nao.jpg
+- `slc-126-temor-e-mesa` — Temor e mesa · scene_slc-126-temor-e-mesa.jpg
+- `slc-127-muitas-vezes-me-angustiaram` — Muitas vezes me angustiaram · scene_slc-127-muitas-vezes-me-angustiaram.jpg
+- `slc-128-das-profundezas` — Das profundezas · scene_slc-128-das-profundezas.jpg
+- `slc-129-como-crianca-desmamada` — Como criança desmamada · scene_slc-129-como-crianca-desmamada.jpg
+- `slc-13-nao-ha-deus` — Não há Deus · scene_slc-13-nao-ha-deus.jpg
+- `slc-130-o-juramento-a-davi` — O juramento a Davi · scene_slc-130-o-juramento-a-davi.jpg
+- `slc-131-que-bom-e-agradavel` — Que bom e agradável · scene_slc-131-que-bom-e-agradavel.jpg
+- `slc-132-bendizei-na-noite` — Bendizei na noite · scene_slc-132-bendizei-na-noite.jpg
+- `slc-133-nosso-deus-faz` — Nosso Deus faz · scene_slc-133-nosso-deus-faz.jpg
+- `slc-134-porque-a-sua-misericordia` — Porque a sua misericórdia · scene_slc-134-porque-a-sua-misericordia.jpg
+- `slc-135-junto-aos-rios-da` — Junto aos rios da Babilônia · scene_slc-135-junto-aos-rios-da.jpg
+- `slc-136-de-todo-o-coracao` — De todo o coração · scene_slc-136-de-todo-o-coracao.jpg
+- `slc-137-tu-me-conheces` — Tu me conheces · scene_slc-137-tu-me-conheces.jpg
+- `slc-138-livra-me-do-homem` — Livra-me do homem mau · scene_slc-138-livra-me-do-homem.jpg
+- `slc-139-a-minha-oracao` — A minha oração · scene_slc-139-a-minha-oracao.jpg
+- `slc-14-quem-habitara` — Quem habitará · scene_slc-14-quem-habitara.jpg
+- `slc-140-clamo-com-a-voz` — Clamo com a voz · scene_slc-140-clamo-com-a-voz.jpg
+- `slc-141-ouve-a-minha-oracao` — Ouve a minha oração · scene_slc-141-ouve-a-minha-oracao.jpg
+- `slc-142-bendito-seja-o-senhor` — Bendito seja o Senhor · scene_slc-142-bendito-seja-o-senhor.jpg
+- `slc-143-grandioso-es-tu` — Grandioso és tu · scene_slc-143-grandioso-es-tu.jpg
+- `slc-144-nao-confieis-em-principes` — Não confieis em príncipes · scene_slc-144-nao-confieis-em-principes.jpg
+- `slc-145-ele-sara-os-quebrantados` — Ele sara os quebrantados · scene_slc-145-ele-sara-os-quebrantados.jpg
+- `slc-146-louvai-nos-ceus` — Louvai nos céus · scene_slc-146-louvai-nos-ceus.jpg
+- `slc-147-cantico-novo-em-siao` — Cântico novo em Sião · scene_slc-147-cantico-novo-em-siao.jpg
+- `slc-148-tudo-que-tem-folego` — Tudo que tem fôlego · scene_slc-148-tudo-que-tem-folego.jpg
+- `slc-15-tu-es-o-meu` — Tu és o meu Senhor · scene_slc-15-tu-es-o-meu.jpg
+- `slc-16-guarda-me-como-a` — Guarda-me como a menina · scene_slc-16-guarda-me-como-a.jpg
+- `slc-17-rocha-e-libertador` — Rocha e libertador · scene_slc-17-rocha-e-libertador.jpg
+- `slc-18-os-ceus-narram` — Os céus narram · scene_slc-18-os-ceus-narram.jpg
+- `slc-19-o-senhor-te-ouca` — O Senhor te ouça · scene_slc-19-o-senhor-te-ouca.jpg
+- `slc-20-o-rei-se-alegra` — O rei se alegra · scene_slc-20-o-rei-se-alegra.jpg
+- `slc-21-por-que-me-desamparaste` — Por que me desamparaste · scene_slc-21-por-que-me-desamparaste.jpg
+- `slc-22-do-senhor-e-a` — Do Senhor é a terra · scene_slc-22-do-senhor-e-a.jpg
+- `slc-23-a-ti-senhor-levanto` — A ti, Senhor, levanto · scene_slc-23-a-ti-senhor-levanto.jpg
+- `slc-24-julga-me-senhor` — Julga-me, Senhor · scene_slc-24-julga-me-senhor.jpg
+- `slc-25-o-senhor-e-a` — O Senhor é a minha luz · scene_slc-25-o-senhor-e-a.jpg
+- `slc-26-a-ti-clamo` — A ti clamo · scene_slc-26-a-ti-clamo.jpg
+- `slc-27-voz-do-senhor` — Voz do Senhor · scene_slc-27-voz-do-senhor.jpg
+- `slc-28-mudaste-o-meu-pranto` — Mudaste o meu pranto · scene_slc-28-mudaste-o-meu-pranto.jpg
+- `slc-29-em-tuas-maos` — Em tuas mãos · scene_slc-29-em-tuas-maos.jpg
+- `slc-30-bem-aventurado-o-perdoado` — Bem-aventurado o perdoado · scene_slc-30-bem-aventurado-o-perdoado.jpg
+- `slc-31-cantai-ao-senhor` — Cantai ao Senhor · scene_slc-31-cantai-ao-senhor.jpg
+- `slc-32-bendizei-comigo` — Bendizei comigo · scene_slc-32-bendizei-comigo.jpg
+- `slc-33-contende-senhor` — Contende, Senhor · scene_slc-33-contende-senhor.jpg
+- `slc-34-fonte-da-vida` — Fonte da vida · scene_slc-34-fonte-da-vida.jpg
+- `slc-35-nao-te-indignes` — Não te indignes · scene_slc-35-nao-te-indignes.jpg
+- `slc-36-tua-flecha-me-penetrou` — Tua flecha me penetrou · scene_slc-36-tua-flecha-me-penetrou.jpg
+- `slc-37-cala-me-a-boca` — Cala-me a boca · scene_slc-37-cala-me-a-boca.jpg
+- `slc-38-tirou-me-do-poco` — Tirou-me do poço · scene_slc-38-tirou-me-do-poco.jpg
+- `slc-39-feliz-o-que-cuida` — Feliz o que cuida · scene_slc-39-feliz-o-que-cuida.jpg
+- `slc-40-a-minh-alma-tem` — A minh’alma tem sede · scene_slc-40-a-minh-alma-tem.jpg
+- `slc-41-envia-a-tua-luz` — Envia a tua luz · scene_slc-41-envia-a-tua-luz.jpg
+- `slc-42-por-amor-de-ti` — Por amor de ti · scene_slc-42-por-amor-de-ti.jpg
+- `slc-43-o-rei-formoso` — O rei formoso · scene_slc-43-o-rei-formoso.jpg
+- `slc-44-deus-e-o-nosso` — Deus é o nosso refúgio · scene_slc-44-deus-e-o-nosso.jpg
+- `slc-45-batei-palmas` — Batei palmas · scene_slc-45-batei-palmas.jpg
+- `slc-46-grande-e-o-senhor` — Grande é o Senhor · scene_slc-46-grande-e-o-senhor.jpg
+- `slc-47-ricos-que-perecem` — Ricos que perecem · scene_slc-47-ricos-que-perecem.jpg
+- `slc-48-deus-vem-e-nao` — Deus vem e não cala · scene_slc-48-deus-vem-e-nao.jpg
+- `slc-49-cria-em-mim` — Cria em mim · scene_slc-49-cria-em-mim.jpg
+- `slc-50-lingua-destruidora` — Língua destruidora · scene_slc-50-lingua-destruidora.jpg
+- `slc-51-o-tolo-outra-vez` — O tolo outra vez · scene_slc-51-o-tolo-outra-vez.jpg
+- `slc-52-salva-me-pelo-teu` — Salva-me pelo teu nome · scene_slc-52-salva-me-pelo-teu.jpg
+- `slc-53-lanca-o-teu-cuidado` — Lança o teu cuidado · scene_slc-53-lanca-o-teu-cuidado.jpg
+- `slc-54-em-deus-confio` — Em Deus confio · scene_slc-54-em-deus-confio.jpg
+- `slc-55-a-sombra-das-tuas` — À sombra das tuas asas · scene_slc-55-a-sombra-das-tuas.jpg
+- `slc-56-juizes-injustos` — Juízes injustos · scene_slc-56-juizes-injustos.jpg
+- `slc-57-livra-me-dos-inimigos` — Livra-me dos inimigos · scene_slc-57-livra-me-dos-inimigos.jpg
+- `slc-58-restaurados-por-deus` — Restaurados por Deus · scene_slc-58-restaurados-por-deus.jpg
+- `slc-59-do-fim-da-terra` — Do fim da terra · scene_slc-59-do-fim-da-terra.jpg
+- `slc-60-so-em-deus` — Só em Deus · scene_slc-60-so-em-deus.jpg
+- `slc-61-sede-na-terra-seca` — Sede na terra seca · scene_slc-61-sede-na-terra-seca.jpg
+- `slc-62-esconde-me-do-secreto` — Esconde-me do secreto · scene_slc-62-esconde-me-do-secreto.jpg
+- `slc-63-a-ti-o-deus` — A ti, ó Deus, espera · scene_slc-63-a-ti-o-deus.jpg
+- `slc-64-vinde-e-vede` — Vinde e vede · scene_slc-64-vinde-e-vede.jpg
+- `slc-65-deus-tenha-misericordia` — Deus tenha misericórdia · scene_slc-65-deus-tenha-misericordia.jpg
+- `slc-66-levanta-se-deus` — Levanta-se Deus · scene_slc-66-levanta-se-deus.jpg
+- `slc-67-as-aguas-me-sobem` — As águas me sobem · scene_slc-67-as-aguas-me-sobem.jpg
+- `slc-68-apressa-te-o-deus` — Apressa-te, ó Deus · scene_slc-68-apressa-te-o-deus.jpg
+- `slc-69-em-ti-me-refugio` — Em ti me refugio · scene_slc-69-em-ti-me-refugio.jpg
+- `slc-70-o-rei-justo` — O rei justo · scene_slc-70-o-rei-justo.jpg
+- `slc-71-quase-me-desviaram` — Quase me desviaram · scene_slc-71-quase-me-desviaram.jpg
+- `slc-72-ate-quando-o-deus` — Até quando, ó Deus · scene_slc-72-ate-quando-o-deus.jpg
+- `slc-73-deus-e-o-juiz` — Deus é o juiz · scene_slc-73-deus-e-o-juiz.jpg
+- `slc-74-conhecido-em-juda` — Conhecido em Judá · scene_slc-74-conhecido-em-juda.jpg
+- `slc-75-lembro-me-de-deus` — Lembro-me de Deus · scene_slc-75-lembro-me-de-deus.jpg
+- `slc-76-contai-aos-filhos` — Contai aos filhos · scene_slc-76-contai-aos-filhos.jpg
+- `slc-77-as-nacoes-entraram` — As nações entraram · scene_slc-77-as-nacoes-entraram.jpg
+- `slc-78-pastor-de-israel` — Pastor de Israel · scene_slc-78-pastor-de-israel.jpg
+- `slc-79-ouviste-povo-meu` — Ouviste, povo meu · scene_slc-79-ouviste-povo-meu.jpg
+- `slc-80-deuses-e-juizo` — Deuses e juízo · scene_slc-80-deuses-e-juizo.jpg
+- `slc-81-nao-te-silencies` — Não te silencies · scene_slc-81-nao-te-silencies.jpg
+- `slc-82-quao-amaveis` — Quão amáveis · scene_slc-82-quao-amaveis.jpg
+- `slc-83-restauraste-nos` — Restauraste-nos · scene_slc-83-restauraste-nos.jpg
+- `slc-84-inclina-os-ouvidos` — Inclina os ouvidos · scene_slc-84-inclina-os-ouvidos.jpg
+- `slc-85-siao-mae-dos-povos` — Sião, mãe dos povos · scene_slc-85-siao-mae-dos-povos.jpg
+- `slc-86-clamo-de-dia-e` — Clamo de dia e de noite · scene_slc-86-clamo-de-dia-e.jpg
+- `slc-87-a-alianca-com-davi` — A aliança com Davi · scene_slc-87-a-alianca-com-davi.jpg
+- `slc-88-tu-es-deus` — Tu és Deus · scene_slc-88-tu-es-deus.jpg
+- `slc-89-a-sombra-do-altissimo` — À sombra do Altíssimo · scene_slc-89-a-sombra-do-altissimo.jpg
+- `slc-90-bom-e-louvar` — Bom é louvar · scene_slc-90-bom-e-louvar.jpg
+- `slc-91-o-senhor-reina` — O Senhor reina · scene_slc-91-o-senhor-reina.jpg
+- `slc-92-deus-das-vingancas` — Deus das vinganças · scene_slc-92-deus-das-vingancas.jpg
+- `slc-93-hoje-se-ouvirdes` — Hoje, se ouvirdes · scene_slc-93-hoje-se-ouvirdes.jpg
+- `slc-94-cantai-novo-cantico` — Cantai novo cântico · scene_slc-94-cantai-novo-cantico.jpg
+- `slc-95-o-senhor-reina` — O Senhor reina · scene_slc-95-o-senhor-reina.jpg
+- `slc-96-maravilhas-do-senhor` — Maravilhas do Senhor · scene_slc-96-maravilhas-do-senhor.jpg
+- `slc-97-santo-e-o-senhor` — Santo é o Senhor · scene_slc-97-santo-e-o-senhor.jpg
+- `slc-98-celebrai-com-jubilo` — Celebrai com júbilo · scene_slc-98-celebrai-com-jubilo.jpg
+- `slc-99-canto-a-misericordia` — Canto à misericórdia · scene_slc-99-canto-a-misericordia.jpg
+- `slc-boss-1` — Travessia: Livro I 1–10 · Travessia · scene_slc-boss-1.jpg
+- `slc-boss-10` — Travessia: Livro III 83–89 · Travessia · scene_slc-boss-10.jpg
+- `slc-boss-11` — Travessia: Livro IV 90–99 · Travessia · scene_slc-boss-11.jpg
+- `slc-boss-12` — Travessia: Livro IV 100–106 · Travessia · scene_slc-boss-12.jpg
+- `slc-boss-13` — Travessia: Livro V 107–116 · Travessia · scene_slc-boss-13.jpg
+- `slc-boss-14` — Travessia: Livro V 117–126 · Travessia · scene_slc-boss-14.jpg
+- `slc-boss-15` — Travessia: Livro V 127–136 · Travessia · scene_slc-boss-15.jpg
+- `slc-boss-16` — Travessia: Livro V 137–146 · Travessia · scene_slc-boss-16.jpg
+- `slc-boss-17` — Travessia: Livro V 147–150 · Travessia · scene_slc-boss-17.jpg
+- `slc-boss-2` — Travessia: Livro I 11–21 · Travessia · scene_slc-boss-2.jpg
+- `slc-boss-3` — Travessia: Livro I 22–32 · Travessia · scene_slc-boss-3.jpg
+- `slc-boss-4` — Travessia: Livro I 33–41 · Travessia · scene_slc-boss-4.jpg
+- `slc-boss-5` — Travessia: Livro II 42–51 · Travessia · scene_slc-boss-5.jpg
+- `slc-boss-6` — Travessia: Livro II 52–61 · Travessia · scene_slc-boss-6.jpg
+- `slc-boss-7` — Travessia: Livro II 62–71 · Travessia · scene_slc-boss-7.jpg
+- `slc-boss-8` — Travessia: Livro II 72–72 · Travessia · scene_slc-boss-8.jpg
+- `slc-boss-9` — Travessia: Livro III 73–82 · Travessia · scene_slc-boss-9.jpg
+## Sofonias (sofonias-cap) — 4
+
+- `sfc-01-consumirei-tudo` — Consumirei tudo · scene_sfc-01-consumirei-tudo.jpg
+- `sfc-02-buscai-o-senhor` — Buscai o Senhor · scene_sfc-02-buscai-o-senhor.jpg
+- `sfc-03-um-povo-humilde` — Um povo humilde · scene_sfc-03-um-povo-humilde.jpg
+- `sfc-boss-1` — Travessia: Dia e restauração · Travessia · scene_sfc-boss-1.jpg
+## Tiago (tiago-cap) — 6
+
+- `tjc-01-alegria-na-prova` — Alegria na prova · scene_tjc-01-alegria-na-prova.jpg
+- `tjc-02-sem-acepcao` — Sem acepção · scene_tjc-02-sem-acepcao.jpg
+- `tjc-03-sabedoria-do-alto` — Sabedoria do alto · scene_tjc-03-sabedoria-do-alto.jpg
+- `tjc-04-aproximem-se-de-deus` — Aproximem-se de Deus · scene_tjc-04-aproximem-se-de-deus.jpg
+- `tjc-05-paciencia-ate-a-vinda` — Paciência até a vinda · scene_tjc-05-paciencia-ate-a-vinda.jpg
+- `tjc-boss-1` — Travessia: Fé que se vê · Travessia · scene_tjc-boss-1.jpg
+## Tito (tito-cap) — 4
+
+- `tic-01-repreender-com-firmeza` — Repreender com firmeza · scene_tic-01-repreender-com-firmeza.jpg
+- `tic-02-ensinar-o-que-convem` — Ensinar o que convém · scene_tic-02-ensinar-o-que-convem.jpg
+- `tic-03-salvos-pela-misericordia` — Salvos pela misericórdia · scene_tic-03-salvos-pela-misericordia.jpg
+- `tic-boss-1` — Travessia: Doutrina que transforma · Travessia · scene_tic-boss-1.jpg
+## Zacarias (zacarias-cap) — 17
+
+- `zcc-01-voltai-a-mim` — Voltai a mim · scene_zcc-01-voltai-a-mim.jpg
+- `zcc-02-muro-de-fogo` — Muro de fogo · scene_zcc-02-muro-de-fogo.jpg
+- `zcc-03-vestes-limpas` — Vestes limpas · scene_zcc-03-vestes-limpas.jpg
+- `zcc-04-nao-por-forca` — Não por força · scene_zcc-04-nao-por-forca.jpg
+- `zcc-05-o-rolo-e-o` — O rolo e o efa · scene_zcc-05-o-rolo-e-o.jpg
+- `zcc-06-coroas-na-cabeca` — Coroas na cabeça · scene_zcc-06-coroas-na-cabeca.jpg
+- `zcc-07-juizo-verdadeiro` — Juízo verdadeiro · scene_zcc-07-juizo-verdadeiro.jpg
+- `zcc-08-cidades-da-verdade` — Cidades da verdade · scene_zcc-08-cidades-da-verdade.jpg
+- `zcc-09-o-senhor-aparecera` — O Senhor aparecerá · scene_zcc-09-o-senhor-aparecera.jpg
+- `zcc-10-eu-os-fortalecerei` — Eu os fortalecerei · scene_zcc-10-eu-os-fortalecerei.jpg
+- `zcc-11-trinta-moedas` — Trinta moedas · scene_zcc-11-trinta-moedas.jpg
+- `zcc-12-olharao-para-mim` — Olharão para mim · scene_zcc-12-olharao-para-mim.jpg
+- `zcc-13-fonte-aberta` — Fonte aberta · scene_zcc-13-fonte-aberta.jpg
+- `zcc-14-o-senhor-sera-rei` — O Senhor será rei · scene_zcc-14-o-senhor-sera-rei.jpg
+- `zcc-boss-1` — Travessia: Visões de esperança · Travessia · scene_zcc-boss-1.jpg
+- `zcc-boss-2` — Travessia: Jejum e promessa · Travessia · scene_zcc-boss-2.jpg
+- `zcc-boss-3` — Travessia: O Pastor e o dia · Travessia · scene_zcc-boss-3.jpg

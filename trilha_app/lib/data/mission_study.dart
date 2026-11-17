@@ -39,6 +39,28 @@ class StudyFact {
   }
 }
 
+/// Prática IRL no fim da cena (`dailyChallenge` / `lifeChallenge` no study).
+/// Sem moeda: só título + frase acionável + check-in.
+class LifeChallenge {
+  final String title;
+  final String description;
+
+  const LifeChallenge({required this.title, required this.description});
+
+  static LifeChallenge? tryParse(Map<String, dynamic> remote) {
+    final raw = remote['dailyChallenge'] ?? remote['lifeChallenge'];
+    if (raw is! Map) return null;
+    final map = Map<String, dynamic>.from(raw);
+    final title = (map['title'] as String? ?? '').trim();
+    final description = (map['description'] as String? ?? '').trim();
+    if (title.isEmpty && description.isEmpty) return null;
+    return LifeChallenge(
+      title: title.isEmpty ? description : title,
+      description: description,
+    );
+  }
+}
+
 class MissionStudy {
   final String passageRef;
   final String passageText;
@@ -49,6 +71,7 @@ class MissionStudy {
   final List<String> reflectionPrompts;
   final List<RelatedVerse> relatedVerses;
   final List<StudyFact> facts;
+  final LifeChallenge? lifeChallenge;
   final String? slug;
 
   const MissionStudy({
@@ -61,6 +84,7 @@ class MissionStudy {
     required this.reflectionPrompts,
     this.relatedVerses = const [],
     this.facts = const [],
+    this.lifeChallenge,
     this.slug,
   });
 
@@ -85,6 +109,7 @@ class MissionStudy {
           .map((e) => StudyFact.fromMap(Map<String, dynamic>.from(e)))
           .where((f) => f.text.trim().isNotEmpty)
           .toList(),
+      lifeChallenge: LifeChallenge.tryParse(remote),
       slug: slug ?? remote['slug'] as String?,
     );
   }

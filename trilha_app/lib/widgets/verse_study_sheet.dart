@@ -10,6 +10,7 @@ import '../l10n/l10n_global.dart';
 import '../services/analytics_service.dart';
 import '../services/bible_service.dart';
 import '../services/bible_study_service.dart';
+import '../services/tts_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/answer_phrase.dart';
 import '../utils/appearance.dart';
@@ -227,6 +228,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
   int? _filterBook;
   List<ConcordanceHit> _filterHits = const [];
   bool _copied = false;
+  bool _interlinear = false;
   final _tokenKeys = <int, GlobalKey>{};
 
   String get _ref => '${widget.bookName} ${widget.chapter}:${widget.verse}';
@@ -248,6 +250,13 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
   void initState() {
     super.initState();
     _future = _load();
+  }
+
+  @override
+  void dispose() {
+    // Fechar a folha cala o "Ouvir o original".
+    unawaited(TtsService.instance.stop());
+    super.dispose();
   }
 
   Future<_StudyPayload> _load() async {
@@ -480,48 +489,95 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                   }
 
                   final links = _verseLinks(study.tokens);
+                  final needlesByPos = <int, List<String>>{
+                    for (final t in study.tokens)
+                      if (!isPunctuationStrong(t.strong))
+                        t.pos: _viewFor(t, null).needles,
+                  };
                   final verseWordByPos = <int, String>{
                     for (final l in links)
                       l.tokenPos: widget.text.substring(l.start, l.end),
                   };
-                  return Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(18, 4, 18, 8),
-                        child: _VerseQuote(
-                          text: widget.text,
-                          links: links,
-                          selectedPos: _selected?.pos,
-                          accent: a.selected,
-                          onSelectPos: (pos) {
-                            for (final t in study.tokens) {
-                              if (t.pos == pos) {
-                                _selectToken(t);
-                                break;
-                              }
-                            }
-                          },
-                        ),
-                      ),
-                      if (study.tokens.isNotEmpty)
-                        _WordRibbon(
-                          tokens: study.tokens,
-                          verseText: widget.text,
-                          verseWordByPos: verseWordByPos,
-                          selectedPos: _selected?.pos,
-                          tokenKeys: _tokenKeys,
-                          onSelect: _selectToken,
-                        ),
-                      if (_selected != null)
-                        _StudyTabs(
-                          index: _tab,
-                          xrefCount: study.crossRefs.length,
-                          occ: _strong?.occurrences,
-                          onChanged: _setTab,
-                        ),
-                      Expanded(
-                        child: SingleChildScrollView(
-                          padding: const EdgeInsets.fromLTRB(16, 8, 16, 20),
+                  void selectPos(int pos) {
+                    for (final t in study.tokens) {
+                      if (t.pos == pos) {
+                        _selectToken(t);
+                        break;
+                      }
+                    }
+                  }
+
+                  return SingleChildScrollView(
+                    padding: const EdgeInsets.only(bottom: 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        if (study.tokens.isNotEmpty)
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(16, 0, 16, 4),
+                            child: AppSegmentedTabs(
+                              index: _interlinear ? 1 : 0,
+                              accent: AppRoles.presence,
+                              onChanged: (i) {
+                                ActHaptics.tap();
+                                setState(() => _interlinear = i == 1);
+                              },
+                              items: [
+                                (
+                                  label: context.l10n.verseStudyViewVerse,
+                                  glyph: null,
+                                  mark: null,
+                                  alert: false,
+                                ),
+                                (
+                                  label: context.l10n.verseStudyViewInterlinear,
+                                  glyph: null,
+                                  mark: null,
+                                  alert: false,
+                                ),
+                              ],
+                            ),
+                          ),
+                        if (_interlinear && study.tokens.isNotEmpty)
+                          _InterlinearBoard(
+                            tokens: study.tokens,
+                            verseWordByPos: verseWordByPos,
+                            verseText: widget.text,
+                            selectedPos: _selected?.pos,
+                            tokenKeys: _tokenKeys,
+                            onSelect: _selectToken,
+                          )
+                        else ...[
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(18, 4, 18, 8),
+                            child: _VerseQuote(
+                              text: widget.text,
+                              links: links,
+                              needlesByPos: needlesByPos,
+                              selectedPos: _selected?.pos,
+                              accent: a.selected,
+                              onSelectPos: selectPos,
+                            ),
+                          ),
+                          if (study.tokens.isNotEmpty)
+                            _WordRibbon(
+                              tokens: study.tokens,
+                              verseText: widget.text,
+                              verseWordByPos: verseWordByPos,
+                              selectedPos: _selected?.pos,
+                              tokenKeys: _tokenKeys,
+                              onSelect: _selectToken,
+                            ),
+                        ],
+                        if (_selected != null)
+                          _StudyTabs(
+                            index: _tab,
+                            xrefCount: study.crossRefs.length,
+                            occ: _strong?.occurrences,
+                            onChanged: _setTab,
+                          ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
@@ -555,8 +611,8 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                             ],
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   );
                 },
               ),
@@ -609,8 +665,6 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
           loading: loading,
           books: books,
           currentBook: widget.bookIndex,
-          currentChapter: widget.chapter,
-          currentVerse: widget.verse,
           currentRef: _ref,
           filterBook: _filterBook,
           filterHits: _filterHits,
@@ -706,6 +760,7 @@ class _StudyLoading extends StatelessWidget {
 class _VerseQuote extends StatefulWidget {
   final String text;
   final List<VerseWordLink> links;
+  final Map<int, List<String>> needlesByPos;
   final int? selectedPos;
   final Color accent;
   final ValueChanged<int> onSelectPos;
@@ -713,6 +768,7 @@ class _VerseQuote extends StatefulWidget {
   const _VerseQuote({
     required this.text,
     required this.links,
+    required this.needlesByPos,
     required this.selectedPos,
     required this.accent,
     required this.onSelectPos,
@@ -766,33 +822,64 @@ class _VerseQuoteState extends State<_VerseQuote> {
     );
   }
 
+  int? _tokenPosForWord(String word, int start) {
+    for (final link in widget.links) {
+      if (link.start == start) return link.tokenPos;
+    }
+    var bestPos = -1;
+    var bestScore = 0;
+    for (final e in widget.needlesByPos.entries) {
+      var score = 0;
+      for (final n in e.value) {
+        if (!wordMatchesNeedle(word, n)) continue;
+        final s = foldKey(word) == foldKey(n) ? 10 : 7;
+        if (s > score) score = s;
+      }
+      if (score > bestScore) {
+        bestScore = score;
+        bestPos = e.key;
+      }
+    }
+    return bestPos >= 0 ? bestPos : null;
+  }
+
   TextSpan _spans(TextStyle base) {
     final a = Appearance.of(context);
     for (final r in _taps) {
       r.dispose();
     }
     _taps.clear();
-    if (widget.links.isEmpty) {
+
+    final linkByStart = <int, VerseWordLink>{
+      for (final l in widget.links) l.start: l,
+    };
+    final wordRe = RegExp(r'[\p{L}\p{M}]+', unicode: true);
+    final words = wordRe.allMatches(widget.text).toList();
+    if (words.isEmpty) {
       return TextSpan(text: widget.text, style: base);
     }
+
     final children = <InlineSpan>[];
     var cursor = 0;
-    for (final link in widget.links) {
-      if (link.start > cursor) {
+    for (final m in words) {
+      if (m.start > cursor) {
         children.add(
-          TextSpan(
-            text: widget.text.substring(cursor, link.start),
-            style: base,
-          ),
+          TextSpan(text: widget.text.substring(cursor, m.start), style: base),
         );
       }
-      final on = link.tokenPos == widget.selectedPos;
-      final tap = TapGestureRecognizer()
-        ..onTap = () => widget.onSelectPos(link.tokenPos);
-      _taps.add(tap);
+      final word = m.group(0)!;
+      final link = linkByStart[m.start];
+      final pos = link?.tokenPos ?? _tokenPosForWord(word, m.start);
+      final on = pos != null && pos == widget.selectedPos;
+      final canTap = pos != null;
+      TapGestureRecognizer? tap;
+      if (canTap) {
+        tap = TapGestureRecognizer()..onTap = () => widget.onSelectPos(pos);
+        _taps.add(tap);
+      }
       children.add(
         TextSpan(
-          text: widget.text.substring(link.start, link.end),
+          text: word,
           recognizer: tap,
           style: base.copyWith(
             color: on ? widget.accent : a.text,
@@ -806,7 +893,7 @@ class _VerseQuoteState extends State<_VerseQuote> {
           ),
         ),
       );
-      cursor = link.end;
+      cursor = m.end;
     }
     if (cursor < widget.text.length) {
       children.add(TextSpan(text: widget.text.substring(cursor), style: base));
@@ -864,6 +951,129 @@ class _WordRibbon extends StatelessWidget {
               selected: selectedPos == t.pos,
               dimmed: selectedPos != null && selectedPos != t.pos,
               onTap: () => onSelect(t),
+            ),
+          );
+        },
+      ),
+    );
+  }
+}
+
+class _InterlinearBoard extends StatelessWidget {
+  final List<StudyToken> tokens;
+  final Map<int, String> verseWordByPos;
+  final String verseText;
+  final int? selectedPos;
+  final Map<int, GlobalKey> tokenKeys;
+  final void Function(StudyToken token) onSelect;
+
+  const _InterlinearBoard({
+    required this.tokens,
+    required this.verseWordByPos,
+    required this.verseText,
+    required this.selectedPos,
+    required this.tokenKeys,
+    required this.onSelect,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final visible = [
+      for (final t in tokens)
+        if (!isPunctuationStrong(t.strong)) t,
+    ];
+    return SizedBox(
+      height: 118,
+      child: ListView.separated(
+        scrollDirection: Axis.horizontal,
+        padding: const EdgeInsets.fromLTRB(16, 4, 16, 10),
+        itemCount: visible.length,
+        separatorBuilder: (_, _) => const SizedBox(width: 8),
+        itemBuilder: (context, i) {
+          final t = visible[i];
+          final view = buildTokenStudyView(
+            strong: t.strong,
+            morph: t.morph,
+            tokenGloss: t.gloss,
+            verseText: verseText,
+            hebrew: t.strong.toUpperCase().startsWith('H'),
+          );
+          final verseWord = verseWordByPos[t.pos];
+          final selected = selectedPos == t.pos;
+          final hebrew = t.strong.toUpperCase().startsWith('H');
+          final a = Appearance.of(context);
+          final accent = a.selected;
+          return KeyedSubtree(
+            key: tokenKeys.putIfAbsent(t.pos, GlobalKey.new),
+            child: Material(
+              color: Colors.transparent,
+              child: InkWell(
+                onTap: () => onSelect(t),
+                borderRadius: BorderRadius.circular(AppRadii.md),
+                child: Ink(
+                  width: 92,
+                  padding: const EdgeInsets.fromLTRB(10, 10, 10, 8),
+                  decoration: BoxDecoration(
+                    color: selected
+                        ? AppMetrics.accentFill(color: accent, alpha: 0.12)
+                        : a.insetFill,
+                    borderRadius: BorderRadius.circular(AppRadii.md),
+                    border: Border.all(
+                      color: selected
+                          ? AppMetrics.accentBorder(color: accent, alpha: 0.7)
+                          : a.insetBorder,
+                      width: selected ? 1.5 : 1,
+                    ),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        t.surface,
+                        textAlign: TextAlign.center,
+                        textDirection: hebrew
+                            ? TextDirection.rtl
+                            : TextDirection.ltr,
+                        maxLines: 1,
+                        overflow: TextOverflow.fade,
+                        softWrap: false,
+                        style: AppTypography.original(
+                          hebrew: hebrew,
+                          size: hebrew ? 20 : 16,
+                          height: 1.15,
+                          weight: FontWeight.w700,
+                          color: a.text,
+                        ),
+                      ),
+                      if (t.translit.isNotEmpty) ...[
+                        const SizedBox(height: 2),
+                        Text(
+                          t.translit,
+                          textAlign: TextAlign.center,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.body(
+                            size: 10,
+                            color: a.textFaint,
+                          ).copyWith(fontStyle: FontStyle.italic),
+                        ),
+                      ],
+                      const Spacer(),
+                      Text(
+                        verseWord ??
+                            (view.gloss.isNotEmpty ? view.gloss : t.gloss),
+                        textAlign: TextAlign.center,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppTypography.label(
+                          size: 11,
+                          color: selected ? accent : a.textSecondary,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
           );
         },
@@ -1028,7 +1238,7 @@ class _EmptyStudyHint extends StatelessWidget {
   }
 }
 
-class _WordPane extends StatelessWidget {
+class _WordPane extends StatefulWidget {
   final StudyToken token;
   final StrongEntry? entry;
   final bool loading;
@@ -1058,7 +1268,41 @@ class _WordPane extends StatelessWidget {
   });
 
   @override
+  State<_WordPane> createState() => _WordPaneState();
+}
+
+class _WordPaneState extends State<_WordPane> {
+  String? _explainChip;
+
+  @override
+  void didUpdateWidget(covariant _WordPane oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.token.pos != widget.token.pos) {
+      _explainChip = null;
+    }
+  }
+
+  Future<void> _listenOriginal({
+    required bool hebrew,
+    required String lemma,
+    required String translit,
+  }) async {
+    ActHaptics.tap();
+    await TtsService.instance.speakOriginal(
+      lemma,
+      hebrew: hebrew,
+      fallback: translit,
+    );
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final token = widget.token;
+    final entry = widget.entry;
+    final view = widget.view;
+    final study = widget.study;
+    final verseWord = widget.verseWord;
+    final accent = widget.accent;
     final hebrew = _isHebrew(token, entry);
     final lemma = (entry?.lemma.isNotEmpty == true)
         ? entry!.lemma
@@ -1077,19 +1321,20 @@ class _WordPane extends StatelessWidget {
       view.needles,
     );
     final occ = study?.occurrences ?? 0;
-    final strongLabel = copied
+    final strongLabel = widget.copied
         ? context.l10n.verseStudyCopied
         : [
             token.strong,
             if (view.extended) 'STEP',
             if (!view.isAffix && occ > 0) '$occ×',
           ].join(' · ');
-    final phrase = morphologyPhrase(
-      token.morph.isNotEmpty ? token.morph : null,
-      gloss: gloss,
-    );
-    final inVerse = verseWord != null && verseWord!.isNotEmpty;
+    final inVerse = verseWord != null && verseWord.isNotEmpty;
     final a = Appearance.of(context);
+    final glosses = study?.glosses ?? const <GlossVariant>[];
+    final explainChip = _explainChip;
+    final explain = explainChip == null
+        ? null
+        : morphologyChipExplain(explainChip, hebrew: hebrew);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -1104,7 +1349,7 @@ class _WordPane extends StatelessWidget {
             ),
             const SizedBox(width: 8),
             InkWell(
-              onTap: onCopy,
+              onTap: widget.onCopy,
               borderRadius: BorderRadius.circular(AppRadii.sm),
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
@@ -1121,12 +1366,12 @@ class _WordPane extends StatelessWidget {
                       style: AppTypography.label(
                         size: 11,
                         letterSpacing: 0.4,
-                        color: copied ? accent : a.text,
+                        color: widget.copied ? accent : a.text,
                       ),
                     ),
                     const SizedBox(width: 4),
                     CinematicIcon(
-                      glyph: copied
+                      glyph: widget.copied
                           ? CinematicGlyph.check
                           : CinematicGlyph.copy,
                       size: AppMetrics.chipIcon,
@@ -1140,7 +1385,22 @@ class _WordPane extends StatelessWidget {
             const Spacer(),
             IconButton(
               visualDensity: VisualDensity.compact,
-              onPressed: onShare,
+              onPressed: () => _listenOriginal(
+                hebrew: hebrew,
+                lemma: headline,
+                translit: translit,
+              ),
+              tooltip: context.l10n.verseStudyListenLemma,
+              icon: CinematicIcon(
+                glyph: CinematicGlyph.echo,
+                size: AppMetrics.iconMd,
+                accent: a.textFaint,
+                framed: false,
+              ),
+            ),
+            IconButton(
+              visualDensity: VisualDensity.compact,
+              onPressed: widget.onShare,
               tooltip: context.l10n.commonShare,
               icon: CinematicIcon(
                 glyph: CinematicGlyph.share,
@@ -1161,7 +1421,7 @@ class _WordPane extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            verseWord!,
+            verseWord,
             textAlign: TextAlign.center,
             style: AppTypography.display(
               size: 20,
@@ -1217,24 +1477,12 @@ class _WordPane extends StatelessWidget {
         ],
         if (inVerse &&
             view.gloss.isNotEmpty &&
-            foldKey(view.gloss) != foldKey(verseWord!)) ...[
+            foldKey(view.gloss) != foldKey(verseWord)) ...[
           const SizedBox(height: 6),
           Text(
             view.gloss,
             textAlign: TextAlign.center,
             style: AppTypography.body(size: 13, color: a.textFaint),
-          ),
-        ],
-        if (phrase.isNotEmpty) ...[
-          const SizedBox(height: 6),
-          Text(
-            phrase,
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              height: 1.35,
-              color: a.textSecondary,
-            ),
           ),
         ],
         if (view.grammarNote != null) ...[
@@ -1251,12 +1499,92 @@ class _WordPane extends StatelessWidget {
         ],
         if (chips.isNotEmpty) ...[
           const SizedBox(height: 12),
+          Center(
+            child: SectionLabel(
+              context.l10n.verseStudyOriginalForm(
+                hebrew
+                    ? context.l10n.morphLangHebrew
+                    : context.l10n.morphLangGreek,
+              ),
+              color: a.sectionLabel,
+            ),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            context.l10n.verseStudyMorphTap,
+            textAlign: TextAlign.center,
+            style: AppTypography.body(size: 11, color: a.textFaint),
+          ),
+          const SizedBox(height: 8),
           Wrap(
             spacing: 6,
             runSpacing: 6,
             alignment: WrapAlignment.center,
             children: [
-              for (final c in chips) _MorphChip(label: c, accent: accent),
+              for (final c in chips)
+                _MorphChip(
+                  label: c,
+                  accent: accent,
+                  selected: _explainChip == c,
+                  onTap: morphologyChipExplain(c) == null
+                      ? null
+                      : () {
+                          ActHaptics.tap();
+                          setState(() {
+                            _explainChip = _explainChip == c ? null : c;
+                          });
+                        },
+                ),
+            ],
+          ),
+          if (explain != null) ...[
+            const SizedBox(height: 10),
+            InsetPanel(
+              padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
+              child: Text(
+                explain,
+                textAlign: TextAlign.center,
+                style: AppTypography.body(
+                  size: 13,
+                  height: 1.4,
+                  color: a.textSecondary,
+                ),
+              ),
+            ),
+          ],
+        ],
+        if (!widget.loading && glosses.length > 1) ...[
+          const SizedBox(height: 16),
+          _SectionEyebrow(context.l10n.verseStudyTranslations),
+          const SizedBox(height: 6),
+          Text(
+            context.l10n.verseStudyTranslationsBody,
+            style: AppTypography.body(
+              size: 12,
+              height: 1.35,
+              color: a.textFaint,
+            ),
+          ),
+          if (inVerse) ...[
+            const SizedBox(height: 8),
+            Text(
+              context.l10n.verseStudyTranslationsHere(verseWord),
+              style: AppTypography.title(size: 13, color: accent),
+            ),
+          ],
+          const SizedBox(height: 8),
+          Wrap(
+            spacing: 6,
+            runSpacing: 6,
+            children: [
+              for (final g in glosses.take(6))
+                SoftBadge(
+                  text: context.l10n.verseStudyGlossCount(g.gloss, g.count),
+                  accent: foldKey(g.gloss) == foldKey(gloss)
+                      ? accent
+                      : a.chrome,
+                  bordered: true,
+                ),
             ],
           ),
         ],
@@ -1267,11 +1595,11 @@ class _WordPane extends StatelessWidget {
             accent: accent,
             form: token.surface,
             formTranslit: token.translit,
-            lemma: entry!.lemma,
-            lemmaTranslit: entry!.translit,
+            lemma: entry.lemma,
+            lemmaTranslit: entry.translit,
           ),
         ],
-        if (loading) ...[
+        if (widget.loading) ...[
           const SizedBox(height: 16),
           ClipRRect(
             borderRadius: BorderRadius.circular(AppRadii.hair),
@@ -1317,11 +1645,11 @@ class _WordPane extends StatelessWidget {
               ),
             ],
           ],
-          if (study?.first != null && study?.last != null) ...[
+          if (study case final s? when s.first != null && s.last != null) ...[
             const SizedBox(height: 16),
-            if (view.isAffix && study!.occurrences > 200)
+            if (view.isAffix && s.occurrences > 200)
               Text(
-                context.l10n.verseStudyParticleNote(study!.occurrences),
+                context.l10n.verseStudyParticleNote(s.occurrences),
                 style: AppTypography.body(
                   size: 12,
                   height: 1.35,
@@ -1330,12 +1658,12 @@ class _WordPane extends StatelessWidget {
               )
             else
               _SpanLine(
-                first: study!.first!,
-                last: study!.last!,
-                books: books,
+                first: s.first!,
+                last: s.last!,
+                books: widget.books,
                 accent: accent,
-                occurrences: study!.occurrences,
-                onOpenHit: onOpenHit,
+                occurrences: s.occurrences,
+                onOpenHit: widget.onOpenHit,
               ),
           ],
         ],
@@ -1443,8 +1771,6 @@ class _ConcordancePane extends StatelessWidget {
   final bool loading;
   final List<BibleBook> books;
   final int currentBook;
-  final int currentChapter;
-  final int currentVerse;
   final String currentRef;
   final int? filterBook;
   final List<ConcordanceHit> filterHits;
@@ -1460,8 +1786,6 @@ class _ConcordancePane extends StatelessWidget {
     required this.loading,
     required this.books,
     required this.currentBook,
-    required this.currentChapter,
-    required this.currentVerse,
     required this.currentRef,
     required this.filterBook,
     required this.filterHits,
@@ -1483,20 +1807,55 @@ class _ConcordancePane extends StatelessWidget {
     final byBook = study?.byBook ?? const <BookOccurrence>[];
     final nearby = study?.nearby ?? const <ConcordanceHit>[];
     final spread = study?.spread ?? const <ConcordanceHit>[];
+    final glosses = study?.glosses ?? const <GlossVariant>[];
     final filtered = filterBook != null;
     final rawHits = filtered
         ? (filterBook == currentBook ? nearby : filterHits)
         : nearby;
-    final hits = filtered
-        ? rawHits
-        : _aroundHits(rawHits, currentChapter, currentVerse, 12);
+    final hits = _canonicalHits(rawHits);
     final grouped = _groupHits(hits);
     final scriptureHits = spread;
     final a = Appearance.of(context);
+    final sampleVerses = <String>[
+      for (final h in [...nearby.take(24), ...spread])
+        ?_verseSnippet(books, h.bookIndex, h.chapter, h.verse),
+    ];
+    final forms = translationFormsInVerses(sampleVerses, view.needles);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        if (!view.isAffix && (glosses.length > 1 || forms.length > 1)) ...[
+          _SectionEyebrow(context.l10n.verseStudyTranslations),
+          const SizedBox(height: 6),
+          if (forms.isNotEmpty)
+            Text(
+              context.l10n.verseStudyTranslationsAlso(
+                forms.map((f) => f.word).take(5).join(' · '),
+              ),
+              style: AppTypography.body(
+                size: 13,
+                height: 1.35,
+                color: a.textSecondary,
+              ),
+            ),
+          if (glosses.length > 1) ...[
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 6,
+              runSpacing: 6,
+              children: [
+                for (final g in glosses.take(5))
+                  SoftBadge(
+                    text: context.l10n.verseStudyGlossCount(g.gloss, g.count),
+                    accent: accent,
+                    bordered: true,
+                  ),
+              ],
+            ),
+          ],
+          const SizedBox(height: 14),
+        ],
         Text(
           filtered
               ? context.l10n.verseStudyOccurrencesIn(
@@ -1597,12 +1956,33 @@ class _ConcordancePane extends StatelessWidget {
 class _MorphChip extends StatelessWidget {
   final String label;
   final Color accent;
+  final bool selected;
+  final VoidCallback? onTap;
 
-  const _MorphChip({required this.label, required this.accent});
+  const _MorphChip({
+    required this.label,
+    required this.accent,
+    this.selected = false,
+    this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return SoftBadge(text: label, accent: accent);
+    final chip = SoftBadge(
+      text: label,
+      accent: accent,
+      bordered: true,
+      solid: selected,
+    );
+    if (onTap == null) return chip;
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(AppRadii.sm),
+        child: chip,
+      ),
+    );
   }
 }
 
@@ -1933,22 +2313,15 @@ TextSpan _snippetSpan(
   return TextSpan(children: children);
 }
 
-List<ConcordanceHit> _aroundHits(
-  List<ConcordanceHit> hits,
-  int chapter,
-  int verse,
-  int window,
-) {
-  if (hits.length <= window) return hits;
-  var i = hits.indexWhere((h) => h.chapter == chapter && h.verse == verse);
-  if (i < 0) {
-    i = hits.indexWhere(
-      (h) => h.chapter > chapter || (h.chapter == chapter && h.verse >= verse),
-    );
-  }
-  if (i < 0) i = 0;
-  final start = (i - window ~/ 3).clamp(0, hits.length - window);
-  return hits.sublist(start, start + window);
+List<ConcordanceHit> _canonicalHits(List<ConcordanceHit> hits) {
+  if (hits.length <= 1) return hits;
+  return [...hits]..sort((a, b) {
+    final book = a.bookIndex.compareTo(b.bookIndex);
+    if (book != 0) return book;
+    final ch = a.chapter.compareTo(b.chapter);
+    if (ch != 0) return ch;
+    return a.verse.compareTo(b.verse);
+  });
 }
 
 String _bookName(List<BibleBook> books, int index) {

@@ -239,6 +239,16 @@
     "en": "Answer to see what the group wrote.",
     "es": "Responde para ver lo que escribió el grupo."
   },
+  "planAnswersLockedPrivate": {
+    "pt": "Sua resposta fica com você e o líder.",
+    "en": "Your answer stays between you and the leader.",
+    "es": "Tu respuesta queda entre tú y el líder."
+  },
+  "planAnswersPrivateNote": {
+    "pt": "Neste grupo, as respostas ficam com o líder.",
+    "en": "In this group, answers stay with the leader.",
+    "es": "En este grupo, las respuestas quedan con el líder."
+  },
   "planAnswersCount": {
     "pt": "{count, plural, =0{Ninguém respondeu ainda.} =1{1 pessoa já respondeu.} other{{count} pessoas já responderam.}}",
     "en": "{count, plural, =0{No one has answered yet.} =1{1 person has answered.} other{{count} people have answered.}}",
@@ -402,6 +412,19 @@
     "placeholders": {
       "n": "int"
     }
+  },
+  "planSourceSeason": {
+    "pt": "{name} · cada dia traz a cena do dia da estação, na mesma data.",
+    "en": "{name} · each day brings the season's scene for that date.",
+    "es": "{name} · cada día trae la escena del día de la estación, en la misma fecha.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "planSourceFromTomorrow": {
+    "pt": "O propósito já começou: a troca vale a partir de amanhã.",
+    "en": "The plan has started: the change applies from tomorrow.",
+    "es": "El propósito ya empezó: el cambio vale desde mañana."
   },
   "planEditorQuestion": {
     "pt": "Pergunta do dia",
@@ -661,9 +684,9 @@
     }
   },
   "planSourceQuestionBody": {
-    "pt": "Todo dia o grupo responde uma pergunta, tirada da cena do dia ou, sem cena, do capítulo. Abra os dias para ver cada uma e trocar a que quiser.",
-    "en": "Each day the group answers one question, taken from the day's scene or, with no scene, from the chapter. Open the days to see each one and change any.",
-    "es": "Cada día el grupo responde una pregunta, sacada de la escena del día o, sin escena, del capítulo. Abre los días para ver cada una y cambiar la que quieras."
+    "pt": "Todo dia o grupo responde uma pergunta, tirada da cena do dia ou, sem cena, do capítulo. Escolha para ver cada dia e trocar a que quiser.",
+    "en": "Each day the group answers one question, taken from the day's scene or, with no scene, from the chapter. Choose to see each day and change any.",
+    "es": "Cada día el grupo responde una pregunta, sacada de la escena del día o, sin escena, del capítulo. Elige para ver cada día y cambiar la que quieras."
   },
   "planSourcePick": {
     "pt": "Escolher",
@@ -774,6 +797,14 @@
     "en": "How many weeks the group walks together. You pick the start day; the end closes the last week.",
     "es": "Cuántas semanas camina junto el grupo. Tú eliges el día de inicio; el final cierra la última semana."
   },
+  "planEditorDurationSeason": {
+    "pt": "Segue as datas do {name}: um dia do propósito para cada dia da estação.",
+    "en": "Follows the dates of {name}: one plan day for each day of the season.",
+    "es": "Sigue las fechas de {name}: un día del propósito para cada día de la estación.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
   "planEditorWeeks": {
     "pt": "{count, plural, =1{1 semana} other{{count} semanas}}",
     "en": "{count, plural, =1{1 week} other{{count} weeks}}",
@@ -848,9 +879,9 @@
     "description": "Day row in the plan editor when the day has nothing."
   },
   "planHearthLabel": {
-    "pt": "O grupo no propósito",
-    "en": "The group in the plan",
-    "es": "El grupo en el propósito",
+    "pt": "Quem caminha junto",
+    "en": "Who walks together",
+    "es": "Quién camina junto",
     "description": "Header of the group card (people + countdown) while a plan exists."
   },
   "planHearthStarts": {
@@ -904,5 +935,170 @@
     "en": "Plan days",
     "es": "Días del propósito",
     "description": "Person sheet stat label: days of the plan this person closed (value like 5/21)."
+  },
+  "planEditorDurationTrail": {
+    "pt": "Segue a trilha {name}: um dia do propósito para cada cena.",
+    "en": "Follows the {name} trail: one plan day for each scene.",
+    "es": "Sigue la ruta {name}: un día del propósito para cada escena.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "planSourceChangedShorter": {
+    "pt": "{name} é menor que a escolha anterior: {now} dias em vez de {before}. A duração e as perguntas seguem a escolha nova.",
+    "en": "{name} is shorter than the previous choice: {now} days instead of {before}. The length and questions follow the new choice.",
+    "es": "{name} es más corta que la elección anterior: {now} días en vez de {before}. La duración y las preguntas siguen la nueva elección.",
+    "placeholders": {
+      "name": "String",
+      "now": "int",
+      "before": "int"
+    }
+  },
+  "planSourceChangedLonger": {
+    "pt": "{name} é maior que a escolha anterior: {now} dias em vez de {before}. A duração e as perguntas seguem a escolha nova.",
+    "en": "{name} is longer than the previous choice: {now} days instead of {before}. The length and questions follow the new choice.",
+    "es": "{name} es más larga que la elección anterior: {now} días en vez de {before}. La duración y las preguntas siguen la nueva elección.",
+    "placeholders": {
+      "name": "String",
+      "now": "int",
+      "before": "int"
+    }
+  },
+  "planSourceChangedSame": {
+    "pt": "{name} tem a mesma duração da escolha anterior: {now} dias. As perguntas seguem a escolha nova.",
+    "en": "{name} has the same length as the previous choice: {now} days. The questions follow the new choice.",
+    "es": "{name} tiene la misma duración que la elección anterior: {now} días. Las preguntas siguen la nueva elección.",
+    "placeholders": {
+      "name": "String",
+      "now": "int"
+    }
+  },
+  "planSourceChangedFollows": {
+    "pt": "{name}: {now} dias. A duração e as perguntas seguem a escolha nova.",
+    "en": "{name}: {now} days. The length and questions follow the new choice.",
+    "es": "{name}: {now} días. La duración y las preguntas siguen la nueva elección.",
+    "placeholders": {
+      "name": "String",
+      "now": "int"
+    }
+  },
+  "planSourceRestart": {
+    "pt": "O propósito recomeça no dia 1, em {date}. Quem já entrou continua dentro.",
+    "en": "The plan starts over on day 1, on {date}. Whoever joined stays in.",
+    "es": "El propósito vuelve a empezar en el día 1, el {date}. Quien ya entró sigue dentro.",
+    "placeholders": {
+      "date": "String"
+    }
+  },
+  "planSourceReadingScenes": {
+    "pt": "Segue as cenas: cada dia traz o capítulo da passagem da cena do dia.",
+    "en": "Follows the scenes: each day brings the chapter of that day's scene passage.",
+    "es": "Sigue las escenas: cada día trae el capítulo del pasaje de la escena del día."
+  },
+  "planCoverDay": {
+    "pt": "Dia {n} de {total}",
+    "en": "Day {n} of {total}",
+    "es": "Día {n} de {total}",
+    "placeholders": {
+      "n": "int",
+      "total": "int"
+    }
+  },
+  "planCoverStarts": {
+    "pt": "{days, plural, =0{Começa hoje} =1{Começa amanhã} other{Começa em {days} dias}}",
+    "en": "{days, plural, =0{Starts today} =1{Starts tomorrow} other{Starts in {days} days}}",
+    "es": "{days, plural, =0{Empieza hoy} =1{Empieza mañana} other{Empieza en {days} días}}",
+    "placeholders": {
+      "days": "int"
+    }
+  },
+  "planCoverToday": {
+    "pt": "{done} de {total} já foram hoje",
+    "en": "{done} of {total} went today",
+    "es": "{done} de {total} ya fueron hoy",
+    "placeholders": {
+      "done": "int",
+      "total": "int"
+    }
+  },
+  "planCoverNoneToday": {
+    "pt": "Ninguém foi hoje ainda",
+    "en": "No one has gone today yet",
+    "es": "Nadie fue hoy todavía"
+  },
+  "planCoverTogether": {
+    "pt": "{count, plural, =1{1 caminha aqui} other{{count} caminham juntos}}",
+    "en": "{count, plural, =1{1 walks here} other{{count} walk together}}",
+    "es": "{count, plural, =1{1 camina aquí} other{{count} caminan juntos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planStepScene": {
+    "pt": "Cena",
+    "en": "Scene",
+    "es": "Escena"
+  },
+  "planStepRead": {
+    "pt": "Leitura",
+    "en": "Reading",
+    "es": "Lectura"
+  },
+  "planGoScene": {
+    "pt": "Abrir a cena",
+    "en": "Open the scene",
+    "es": "Abrir la escena"
+  },
+  "planHearthEndsIn": {
+    "pt": "{days, plural, =0{Termina hoje} =1{Termina amanhã} other{Termina em {days} dias}}",
+    "en": "{days, plural, =0{Ends today} =1{Ends tomorrow} other{Ends in {days} days}}",
+    "es": "{days, plural, =0{Termina hoy} =1{Termina mañana} other{Termina en {days} días}}",
+    "placeholders": {
+      "days": "int"
+    }
+  },
+  "planSeatAnswersLabel": {
+    "pt": "Respostas",
+    "en": "Answers",
+    "es": "Respuestas",
+    "description": "Person sheet: section with this person's answers to the plan's daily questions."
+  },
+  "planSeatAnswerDay": {
+    "pt": "Dia {n}",
+    "en": "Day {n}",
+    "es": "Día {n}",
+    "placeholders": {
+      "n": "int"
+    },
+    "description": "Person sheet: day label above one answer."
+  },
+  "planSeatAnswersHidden": {
+    "pt": "Responda os mesmos dias para ver o que {name} escreveu.",
+    "en": "Answer the same days to see what {name} wrote.",
+    "es": "Responde los mismos días para ver lo que escribió {name}.",
+    "placeholders": {
+      "name": "String"
+    },
+    "description": "Person sheet: the person answered days the viewer hasn't answered yet."
+  },
+  "planMenuAnswersPrivate": {
+    "pt": "Fechar as respostas (só o líder vê)",
+    "en": "Close answers (only the leader sees)",
+    "es": "Cerrar respuestas (solo el líder ve)"
+  },
+  "planMenuAnswersOpen": {
+    "pt": "Abrir as respostas ao grupo",
+    "en": "Open answers to the group",
+    "es": "Abrir respuestas al grupo"
+  },
+  "planAnswersNowPrivate": {
+    "pt": "Agora só você vê as respostas.",
+    "en": "Now only you see the answers.",
+    "es": "Ahora solo tú ves las respuestas."
+  },
+  "planAnswersNowOpen": {
+    "pt": "Quem responder vê as respostas do grupo.",
+    "en": "Whoever answers sees the group's answers.",
+    "es": "Quien responda ve las respuestas del grupo."
   }
 }

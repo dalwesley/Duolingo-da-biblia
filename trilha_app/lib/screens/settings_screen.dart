@@ -31,6 +31,7 @@ import '../utils/content_filter.dart';
 import '../utils/appearance.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/trail_progress.dart';
+import '../widgets/whats_new_sheet.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/app_report_sheet.dart';
 import '../widgets/app_sheet.dart';
@@ -1372,6 +1373,15 @@ class _SettingsScreenState extends State<SettingsScreen>
               (_) => false,
             );
           },
+        ),
+        const _SettingsDivider(compact: true),
+        _navRow(
+          a,
+          context.l10n.settingsWhatsNew,
+          context.l10n.settingsWhatsNewSubtitle,
+          glyph: CinematicGlyph.spark,
+          accent: AppRoles.areaChristianLife,
+          onTap: () => WhatsNew.preview(context),
         ),
         const _SettingsDivider(compact: true),
         _navRow(

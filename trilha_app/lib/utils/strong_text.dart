@@ -370,10 +370,28 @@ bool wordMatchesNeedle(String word, String needle) {
       n.substring(0, n.length - 3) == w.substring(0, w.length - 2)) {
     return true;
   }
+  // Irregulars of the Portuguese Bible (disse/dizer, fez/fazer…).
+  final vw = _verbFamily(w);
+  final vn = _verbFamily(n);
+  if (vw != null && vn != null && vw == vn) return true;
+  final verbish = !_notVerbForms.contains(w) && !_notVerbForms.contains(n);
+  if (verbish && _regularVerbMatch(w, n)) return true;
   final ws = _stemPt(w);
   final ns = _stemPt(n);
   if (ws.length >= 3 && ns.length >= 3 && ws == ns) {
     return true;
+  }
+  // Prefix on short verb roots (faz↔façamos, diz↔dizem).
+  if (verbish &&
+      ws.length >= 3 &&
+      ns.length >= 3 &&
+      (w.startsWith(ns) || n.startsWith(ws))) {
+    final shorter = ws.length <= ns.length ? ws : ns;
+    final longer = w.length >= n.length ? w : n;
+    if (longer.startsWith(shorter) &&
+        _looksLikeVerbEnding(longer.substring(shorter.length))) {
+      return true;
+    }
   }
   if (ws.length >= 4 &&
       ns.length >= 4 &&
@@ -383,7 +401,123 @@ bool wordMatchesNeedle(String word, String needle) {
   return false;
 }
 
+/// Famílias verbais irregulares frequentes na TB/NVI.
+/// Só formas distintivas — nunca partículas (e, de, da, a…).
+/// Chave = foldKey(forma); valor = raiz canônica (≥3 letras).
+const _irregularVerbForms = <String, String>{
+  // dizer
+  'dizer': 'diz', 'disse': 'diz', 'disseram': 'diz', 'dissemos': 'diz',
+  'digo': 'diz', 'dizes': 'diz', 'dizem': 'diz', 'diga': 'diz',
+  'digamos': 'diz', 'digam': 'diz', 'dizia': 'diz', 'diziam': 'diz',
+  'dito': 'diz', 'diriam': 'diz',
+  // fazer
+  'fazer': 'faz', 'fez': 'faz', 'fizeram': 'faz', 'fizemos': 'faz',
+  'faco': 'faz', 'fazes': 'faz', 'fazem': 'faz', 'faca': 'faz',
+  'facamos': 'faz', 'facam': 'faz', 'fazia': 'faz', 'faziam': 'faz',
+  'feito': 'faz', 'feita': 'faz', 'feitos': 'faz', 'feitas': 'faz',
+  'farei': 'faz', 'fara': 'faz',
+  // ver
+  'ver': 'ver', 'viu': 'ver', 'viram': 'ver', 'vejo': 'ver',
+  'veja': 'ver', 'vejamos': 'ver', 'visto': 'ver',
+  // vir
+  'vir': 'vin', 'veio': 'vin', 'vieram': 'vin', 'venho': 'vin',
+  'venha': 'vin', 'viemos': 'vin', 'vindo': 'vin',
+  // pôr
+  'ponho': 'pon', 'ponha': 'pon', 'puseram': 'pon', 'posto': 'pon',
+  // ter
+  'ter': 'ter', 'teve': 'ter', 'tiveram': 'ter', 'tenho': 'ter',
+  'tenha': 'ter', 'tido': 'ter', 'tinha': 'ter', 'tinham': 'ter',
+  // ser (sem "é"/"e" — colide com a conjunção)
+  'ser': 'ser', 'foi': 'ser', 'foram': 'ser', 'somos': 'ser',
+  'seja': 'ser', 'sendo': 'ser', 'eram': 'ser', 'sido': 'ser',
+  // ir (sem "foi" — já em ser; gloss/posição desambiguam)
+  'ir': 'ir', 'vou': 'ir', 'vamos': 'ir', 'indo': 'ir',
+  // dar (sem "da"/"de")
+  'dar': 'dar', 'deu': 'dar', 'deram': 'dar', 'dou': 'dar',
+  'demos': 'dar', 'dado': 'dar',
+  // haver / estar
+  'haver': 'hav', 'havia': 'hav', 'houve': 'hav', 'houveram': 'hav',
+  'estar': 'est', 'estive': 'est', 'esteve': 'est', 'estavam': 'est',
+  'esteja': 'est',
+  // saber / poder / querer / trazer
+  'saber': 'sab', 'soube': 'sab', 'saiba': 'sab',
+  'poder': 'pod', 'pude': 'pod', 'puderam': 'pod', 'possa': 'pod',
+  'possam': 'pod',
+  'querer': 'quer', 'quis': 'quer', 'quiseram': 'quer',
+  'trazer': 'traz', 'trouxe': 'traz', 'trouxeram': 'traz',
+};
+
+/// Palavras frequentes que parecem raiz+desinência mas não são verbo
+/// (esta≠estar, como≠comer, para≠parar, casa≠casar).
+const _notVerbForms = {
+  'este', 'esta', 'estes', 'estas', 'como', 'para', 'pela', 'pelo',
+  'pelas', 'pelos', 'casa', 'casas',
+};
+
+String? _verbFamily(String folded) => _irregularVerbForms[folded];
+
+bool _isInfinitive(String folded) =>
+    folded.length > 3 &&
+    (folded.endsWith('ar') || folded.endsWith('er') || folded.endsWith('ir'));
+
+/// Desinências verbais PT depois da raiz (faç+amos, cri+ou, domin+e).
+bool _looksLikeVerbEnding(String rest) {
+  if (rest.isEmpty) return true;
+  const endings = {
+    'o', 'a', 'e', 'i', 'as', 'es', 'is', 'am', 'em', 'im',
+    'amos', 'emos', 'imos', 'ais', 'eis',
+    'ou', 'eu', 'iu', 'ei',
+    'aram', 'eram', 'iram',
+    'ava', 'avam', 'ia', 'iam',
+    'asse', 'esse', 'isse', 'assem', 'essem', 'issem',
+    'armos', 'ermos', 'irmos',
+    'ado', 'idos', 'ida', 'idas', 'ido',
+    'ando', 'endo', 'indo',
+    'arei', 'erei', 'irei', 'ara', 'era', 'ira',
+    'se', // disse = diz+se
+  };
+  return endings.contains(rest);
+}
+
+bool _regularVerbMatch(String a, String b) {
+  final String inf;
+  final String form;
+  if (_isInfinitive(a) && !_isInfinitive(b)) {
+    inf = a;
+    form = b;
+  } else if (_isInfinitive(b) && !_isInfinitive(a)) {
+    inf = b;
+    form = a;
+  } else {
+    return false;
+  }
+  final root = inf.substring(0, inf.length - 2);
+  if (root.length < 3) return false;
+  if (form.startsWith(root) &&
+      _looksLikeVerbEnding(form.substring(root.length))) {
+    return true;
+  }
+  // Soft mutation: ficar→fiquemos, chegar→cheguemos.
+  if (root.endsWith('c')) {
+    final mutated = '${root.substring(0, root.length - 1)}qu';
+    if (form.startsWith(mutated) &&
+        _looksLikeVerbEnding(form.substring(mutated.length))) {
+      return true;
+    }
+  }
+  if (root.endsWith('g')) {
+    final mutated = '${root.substring(0, root.length - 1)}gu';
+    if (form.startsWith(mutated) &&
+        _looksLikeVerbEnding(form.substring(mutated.length))) {
+      return true;
+    }
+  }
+  return false;
+}
+
 String _stemPt(String s) {
+  final family = _irregularVerbForms[s];
+  if (family != null && family.length >= 3) return family;
   if (s.length >= 5 && (s.endsWith('ou') || s.endsWith('am'))) {
     return s.substring(0, s.length - 2);
   }
@@ -398,11 +532,49 @@ String _stemPt(String s) {
       s.length - (s.endsWith('ado') || s.endsWith('ido') ? 3 : 2),
     );
   }
+  if (s.length >= 6 &&
+      (s.endsWith('amos') ||
+          s.endsWith('emos') ||
+          s.endsWith('imos') ||
+          s.endsWith('aram') ||
+          s.endsWith('eram') ||
+          s.endsWith('iram'))) {
+    return s.substring(0, s.length - 4);
+  }
   if (s.length > 4 &&
       (s.endsWith('os') || s.endsWith('as') || s.endsWith('es'))) {
     return s.substring(0, s.length - 1);
   }
   return s;
+}
+
+/// Formas da TB que casam com [needles] nos versículos amostrados.
+List<({String word, int count})> translationFormsInVerses(
+  Iterable<String> verses,
+  List<String> needles, {
+  int limit = 6,
+}) {
+  if (needles.isEmpty) return const [];
+  final counts = <String, int>{};
+  final display = <String, String>{};
+  for (final text in verses) {
+    if (text.isEmpty) continue;
+    for (final r in highlightRanges(text, needles)) {
+      final raw = text.substring(r.start, r.end);
+      final k = foldKey(raw);
+      if (k.length < 2 || _skipVerseLink.contains(k)) continue;
+      counts[k] = (counts[k] ?? 0) + 1;
+      display.putIfAbsent(k, () => raw);
+    }
+  }
+  final keys = counts.keys.toList()
+    ..sort((a, b) {
+      final c = counts[b]!.compareTo(counts[a]!);
+      return c != 0 ? c : a.compareTo(b);
+    });
+  return [
+    for (final k in keys.take(limit)) (word: display[k]!, count: counts[k]!),
+  ];
 }
 
 /// Intervalos no texto original que coincidem com os needles (palavras).

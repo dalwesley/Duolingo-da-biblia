@@ -667,6 +667,7 @@ class TrailJourney {
     TrailRealm.vidaCrista,
     [TrailCategory.entenderABiblia],
   );
+
   /// Pontos altos de cada livro (e as trilhas que passam por vários livros):
   /// coleção da Bíblia, ao lado de AT e NT. A trilha entra aqui pelo campo
   /// `collection: panorama`; o livro capítulo a capítulo fica em AT/NT.

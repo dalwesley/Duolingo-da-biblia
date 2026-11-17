@@ -95,13 +95,29 @@ class TrailArt {
     'zacarias',
   };
 
-  static String? of(String slug) => switch (slug) {
+  static String? of(String slug) => switch (bookOf(slug)) {
     // Única trilha do grupo: usa a pintura do card do grupo.
     'cristologia' => 'assets/art/journey_cristologia.jpg',
     CuratedTrails.promiseSlug => 'assets/art/journey_promessaCumprimento.jpg',
-    _ when _painted.contains(slug) => 'assets/art/trail_$slug.jpg',
+    final s when _painted.contains(s) => 'assets/art/trail_$s.jpg',
     _ => null,
   };
+
+  /// Trilha capítulo a capítulo (`<livro>-cap`) usa a pintura da trilha do
+  /// livro: `1corintios-cap` → `corintios`, `1joao-cap` → `cartas-joao`.
+  /// Outra trilha fica como está.
+  static String bookOf(String slug) {
+    if (!slug.endsWith('-cap')) return slug;
+    final book = slug.substring(0, slug.length - '-cap'.length);
+    final numbered = RegExp(r'^[1-3]').hasMatch(book);
+    final base = numbered ? book.substring(1) : book;
+    return switch (base) {
+      'joao' when numbered => 'cartas-joao',
+      'canticos' => 'cantares',
+      'genesis' => 'genesis-1-11',
+      _ => base,
+    };
+  }
 
   /// Pintura da cena; sem arte própria, a da trilha.
   /// Cena costurada ([CuratedTrails]) mostra a pintura da cena de origem.

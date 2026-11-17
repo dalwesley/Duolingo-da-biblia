@@ -176,9 +176,42 @@ const ROOM_MEMBER_LIMIT = 20;
  * O app confere o teto antes de entrar, mas duas entradas ao mesmo tempo
  * passam. Aqui quem chegou depois do 20º sai da lista.
  */
+/**
+ * `rooms/{code}.memberCount`: quantos estão no grupo. Só o servidor grava;
+ * as rules usam para exigir 3 pessoas antes de propósito, estudo, leitura
+ * e fechamento da semana (o app também confere).
+ */
+async function syncRoomMemberCount(db, code) {
+  try {
+    const roomRef = db.doc(`rooms/${code}`);
+    const agg = await db.collection(`rooms/${code}/members`).count().get();
+    const n = agg.data().count;
+    const room = await roomRef.get();
+    if (!room.exists || room.get('memberCount') === n) return;
+    await roomRef.set({ memberCount: n }, { merge: true });
+  } catch (e) {
+    logger.warn('grupo: não contei os membros', { code, error: e.message });
+  }
+}
+
+exports.onRoomMemberDelete = functions.firestore
+  .document('rooms/{code}/members/{uid}')
+  .onDelete(async (_snap, context) => {
+    await syncRoomMemberCount(getFirestore(), context.params.code);
+  });
+
 exports.onRoomMemberCreate = functions.firestore
   .document('rooms/{code}/members/{uid}')
   .onCreate(async (snap, context) => {
+    const { code } = context.params;
+    try {
+      await roomMemberJoined(snap, context);
+    } finally {
+      await syncRoomMemberCount(getFirestore(), code);
+    }
+  });
+
+async function roomMemberJoined(snap, context) {
     const { code, uid } = context.params;
     const db = getFirestore();
     const room = await db.doc(`rooms/${code}`).get();
@@ -210,7 +243,7 @@ exports.onRoomMemberCreate = functions.firestore
     }
     await snap.ref.delete();
     logger.info('grupo cheio, membro removido', { code, uid });
-  });
+}
 
 /**
  * Alguém do grupo chamou outra pessoa para estudar.
@@ -667,6 +700,83 @@ exports.releaseReferralMonths = functions
     if (!rc) return;
     const released = await referral.releaseAllBanked(getFirestore(), rc, logger);
     if (released) logger.info('indicação: meses guardados entregues', { released });
+  });
+
+// ---- Prêmio do Advento (ver advent.js) -------------------------------------
+
+const advent = require('./advent');
+
+/** Cena do Advento terminada: confere os horários e grava a prova. */
+exports.onAdventSceneDone = functions
+  .runWith({ secrets: [revenueCatSecretKey] })
+  .firestore.document('seasonWalks/{campaign}/scenes/{id}')
+  .onUpdate(async (change, context) => {
+    const before = change.before.data() || {};
+    const after = change.after.data() || {};
+    if (before.state !== 'start' || after.state !== 'done') return;
+    const db = getFirestore();
+    const cfg = await advent.loadConfig(db, context.params.campaign);
+    if (!cfg) return;
+    const uid = String(after.uid || '');
+    if (!uid || context.params.id !== `${uid}_${after.day}`) return;
+    try {
+      const out = await advent.onSceneDone(
+        db,
+        cfg,
+        {
+          uid,
+          day: after.day,
+          startMs: advent.msOf(change.after.createTime),
+          doneMs: advent.msOf(change.after.updateTime),
+          ref: change.after.ref,
+        },
+        logger,
+      );
+      if (!out.accepted) {
+        logger.info('advento: cena recusada', { uid, day: after.day, reason: out.reason });
+        return;
+      }
+      if (out.completed) {
+        await advent.evaluateAround(db, cfg, uid, {
+          rc: referralRc(),
+          release: referral.releaseBanked,
+          logger,
+        });
+      }
+    } catch (e) {
+      logger.error('advento: falha na prova', { uid, error: e.message });
+    }
+  });
+
+/**
+ * De meia em meia hora durante a campanha: tira a foto do dia 1 (uma vez)
+ * e recalcula quem concluiu (cobre duas conclusões ao mesmo tempo).
+ */
+exports.adventTick = functions
+  .runWith({ secrets: [revenueCatSecretKey], timeoutSeconds: 300, memory: '512MB' })
+  .pubsub.schedule('every 30 minutes')
+  .onRun(async () => {
+    const db = getFirestore();
+    const now = Date.now();
+    for (const id of Object.keys(advent.DEFAULTS)) {
+      const cfg = await advent.loadConfig(db, id);
+      if (!cfg) continue;
+      // Até 3 dias depois do prazo (meses que ficaram na fila).
+      if (now > cfg.deadlineMs + 3 * advent.DAY_MS) continue;
+      try {
+        await advent.takeRosterIfDue(db, cfg, now, logger);
+        if (now >= cfg.rosterAtMs) {
+          const delta = await advent.sweep(db, cfg, {
+            rc: referralRc(),
+            release: referral.releaseBanked,
+            logger,
+          });
+          if (delta) logger.info('advento: varredura', { id, delta });
+        }
+      } catch (e) {
+        logger.error('advento: falha na rodada', { id, error: e.message });
+      }
+    }
   });
 
 // ---- Caravana: salas e fechamento semanal (league.js) — em pausa ------------

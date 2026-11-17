@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../data/season_walk_catalog.dart';
 import '../firebase_options.dart';
@@ -882,6 +883,7 @@ class BackendService extends ChangeNotifier {
     'bibleBookmarks',
     'bibleNotes',
     'sharedVerses',
+    'lifeChallengesDone',
     'settings',
     'bibleReadingPlan',
     'companionCodes',
@@ -957,12 +959,34 @@ class BackendService extends ChangeNotifier {
     }
   }
 
-  Map<String, dynamic> _payload(ProgressService p, {LeagueService? league}) {
+  /// Valor estável no doc público (`android` / `ios` / …) — igual ao
+  /// `platform` dos relatos do app, para o painel de Suporte.
+  static String cloudPlatform() {
+    if (kIsWeb) return 'web';
+    return switch (defaultTargetPlatform) {
+      TargetPlatform.iOS => 'ios',
+      TargetPlatform.android => 'android',
+      TargetPlatform.macOS => 'macos',
+      TargetPlatform.windows => 'windows',
+      TargetPlatform.linux => 'linux',
+      TargetPlatform.fuchsia => 'fuchsia',
+    };
+  }
+
+  /// Versão do app no doc público — painel de Suporte (igual aos relatos).
+  Future<Map<String, dynamic>> _payload(
+    ProgressService p, {
+    LeagueService? league,
+  }) async {
     final user = currentUser;
+    final info = await PackageInfo.fromPlatform();
     return {
       ...p.toCloudMap(),
       if (league != null) ...league.toCloudMap(),
       'lastSeenDate': _todayKey(),
+      'platform': cloudPlatform(),
+      'appVersion': info.version,
+      'buildNumber': info.buildNumber,
       'email': user?.email,
       if (userPhotoUrl != null) 'photoUrl': userPhotoUrl,
       'authProvider': isAppleSignedIn
@@ -1041,7 +1065,7 @@ class BackendService extends ChangeNotifier {
       // 1) Progresso do usuário — nunca depende do ranking.
       // Timeout evita travar a cadeia _saveChain (e a aba Caravana) se a
       // rede/Firestore não responde.
-      await _writeUserDocs(_payload(progress, league: league));
+      await _writeUserDocs(await _payload(progress, league: league));
       if (generation != _saveGeneration) return false;
       lastCloudSaveAt = DateTime.now();
       // Não notifyListeners aqui — evita refresh em cascata (companions).
@@ -1787,6 +1811,35 @@ class BackendService extends ChangeNotifier {
       debugPrint('Falha ao ler respostas do propósito: $e');
       return const [];
     }
+  }
+
+  /// Respostas de uma pessoa a alguns dias do propósito (folha da pessoa).
+  /// Dia → texto; dias sem resposta não entram.
+  Future<Map<int, String>> fetchMemberPlanAnswers(
+    String code,
+    String planId,
+    String uid,
+    Iterable<int> days,
+  ) async {
+    if (!isActive || uid.isEmpty) return const {};
+    final normalized = code.trim().toUpperCase();
+    final out = <int, String>{};
+    await Future.wait([
+      for (final n in days)
+        _db
+            .doc(
+              'rooms/$normalized/answers/${PlanAnswer.dayKey(planId, n)}/by/$uid',
+            )
+            .get()
+            .then((d) {
+              final text = (d.data()?['text'] as String?)?.trim() ?? '';
+              if (text.isNotEmpty) out[n] = text;
+            })
+            .catchError((Object e) {
+              debugPrint('Falha ao ler resposta do dia $n: $e');
+            }),
+    ]);
+    return out;
   }
 
   /// Apaga uma resposta (a própria, ou qualquer uma se for o líder).
@@ -2660,6 +2713,7 @@ class BackendService extends ChangeNotifier {
         tx.set(ref, {
           'guestId': _uid,
           'guestName': userName,
+          'guestJoinedAt': FieldValue.serverTimestamp(),
           'guestHadMissionsAtJoin': hadMissionsAtJoin,
           'updatedAt': FieldValue.serverTimestamp(),
         }, SetOptions(merge: true));

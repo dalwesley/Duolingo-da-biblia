@@ -42,6 +42,17 @@ void main() {
     expect(chips, isNot(contains('hebraico')));
   });
 
+  test('morphologyChipExplain teaches qal, gender and number', () {
+    expect(morphologyChipExplain('qal'), contains('ação simples'));
+    expect(
+      morphologyChipExplain('sequencial imperfecto (wayyiqtol)'),
+      contains('narrativa'),
+    );
+    expect(morphologyChipExplain('masc.'), contains('gênero'));
+    expect(morphologyChipExplain('pl.'), contains('Plural'));
+    expect(morphologyChipExplain('3ª pessoa'), contains('ele'));
+  });
+
   test('morphologyChips splits prefixed compounds', () {
     final chips = morphologyChips('HR/Ncmsc');
     expect(chips.first, 'preposição');

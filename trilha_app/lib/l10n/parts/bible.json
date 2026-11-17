@@ -955,9 +955,9 @@
     "es": "Esta partícula aparece miles de veces. Abajo, las formas cerca de este versículo."
   },
   "verseStudyInThisBook": {
-    "pt": "Neste livro — as aparições perto deste versículo.",
-    "en": "In this book — the appearances near this verse.",
-    "es": "En este libro — las apariciones cerca de este versículo."
+    "pt": "Neste livro — em ordem canônica.",
+    "en": "In this book — in canonical order.",
+    "es": "En este libro — en orden canónico."
   },
   "verseStudyNoOtherHits": {
     "pt": "Sem outras ocorrências neste recorte.",
@@ -970,9 +970,9 @@
     "es": "En otros libros"
   },
   "verseStudyOtherBooksBody": {
-    "pt": "A primeira aparição em cada livro onde a palavra é mais frequente.",
-    "en": "The first appearance in each book where the word is most frequent.",
-    "es": "La primera aparición en cada libro donde la palabra es más frecuente."
+    "pt": "A primeira aparição em cada livro, em ordem canônica.",
+    "en": "The first appearance in each book, in canonical order.",
+    "es": "La primera aparición en cada libro, en orden canónico."
   },
   "verseStudyThisForm": {
     "pt": "Nesta forma",
@@ -983,5 +983,68 @@
     "pt": "Lema",
     "en": "Lemma",
     "es": "Lema"
+  },
+  "verseStudyListenLemma": {
+    "pt": "Ouvir o original",
+    "en": "Hear the original",
+    "es": "Oír el original"
+  },
+  "verseStudyOriginalForm": {
+    "pt": "Forma no {lang}",
+    "en": "Form in {lang}",
+    "es": "Forma en {lang}",
+    "placeholders": {
+      "lang": "String"
+    }
+  },
+  "verseStudyMorphTap": {
+    "pt": "Toque um termo para explicar",
+    "en": "Tap a term to explain it",
+    "es": "Toca un término para explicarlo"
+  },
+  "verseStudyTranslations": {
+    "pt": "Como a TB traduz",
+    "en": "How the TB translates it",
+    "es": "Cómo lo traduce la TB"
+  },
+  "verseStudyTranslationsHere": {
+    "pt": "Aqui: {word}",
+    "en": "Here: {word}",
+    "es": "Aquí: {word}",
+    "placeholders": {
+      "word": "String"
+    }
+  },
+  "verseStudyTranslationsAlso": {
+    "pt": "Também: {list}",
+    "en": "Also: {list}",
+    "es": "También: {list}",
+    "placeholders": {
+      "list": "String"
+    }
+  },
+  "verseStudyTranslationsBody": {
+    "pt": "A mesma palavra original aparece com estes sentidos na Tradução Brasileira.",
+    "en": "The same original word shows up with these senses in the Tradução Brasileira.",
+    "es": "La misma palabra original aparece con estos sentidos en la Tradução Brasileira."
+  },
+  "verseStudyViewVerse": {
+    "pt": "Versículo",
+    "en": "Verse",
+    "es": "Versículo"
+  },
+  "verseStudyViewInterlinear": {
+    "pt": "Interlinear",
+    "en": "Interlinear",
+    "es": "Interlineal"
+  },
+  "verseStudyGlossCount": {
+    "pt": "{gloss} · {count}×",
+    "en": "{gloss} · {count}×",
+    "es": "{gloss} · {count}×",
+    "placeholders": {
+      "gloss": "String",
+      "count": "int"
+    }
   }
 }

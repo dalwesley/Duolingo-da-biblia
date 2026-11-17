@@ -3,13 +3,9 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart' show DateFormat;
-import 'package:provider/provider.dart';
 
 import '../l10n/app_language.dart';
-import '../screens/paywall_screen.dart';
-import '../services/progress_service.dart';
 import '../services/sound_service.dart';
-import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import 'act_feel.dart';
 import 'anan_speech.dart';
@@ -713,14 +709,8 @@ class _RevealStageState extends State<_RevealStage>
     duration: const Duration(milliseconds: 2000),
   );
   bool _started = false;
-
-  /// Card de story montado fora da tela só enquanto compartilha.
-  final _shareKey = GlobalKey();
-  ({PostcardShareInfo info, ValueNotifier<double> t})? _sharing;
-
-  /// Progresso do vídeo (0–1) enquanto ele é gerado.
-  double? _videoProgress;
   bool _stamped = false;
+  bool _sharing = false;
 
   @override
   void initState() {
@@ -770,83 +760,12 @@ class _RevealStageState extends State<_RevealStage>
 
   /// Imagem para todos; o postal animado (vídeo) é do Peregrino+.
   Future<void> _share() async {
-    if (_sharing != null) return;
-    final p = widget.postcard;
-    final plus = context.read<SubscriptionService>().plusFeaturesOpen;
-    final kind = await showPostcardShareSheet(context, plus: plus);
-    if (kind == null || !mounted) return;
-    if (kind == PostcardShareKind.video && !plus) {
-      await Navigator.of(context).push(
-        MaterialPageRoute<void>(
-          builder: (_) => const PaywallScreen(source: 'postcard_video'),
-        ),
-      );
-      return;
-    }
-    final info = await postcardShareInfo(context.read<ProgressService>(), p);
-    // Tudo que o card desenha já decodificado: a captura sai logo depois
-    // de montar (sem isso, logo e selo saíam em branco).
-    for (final asset in [?p.art, ...PostcardShareCard.assets]) {
-      if (!mounted) return;
-      await precacheImage(AssetImage(asset), context);
-    }
-    if (!mounted) return;
-    final video = kind == PostcardShareKind.video;
-    final t = ValueNotifier<double>(video ? 0 : 1);
-    setState(() {
-      _sharing = (info: info, t: t);
-      _videoProgress = video ? 0 : null;
-    });
-    await WidgetsBinding.instance.endOfFrame;
-    await WidgetsBinding.instance.endOfFrame;
-    if (!mounted) return;
+    if (_sharing) return;
+    setState(() => _sharing = true);
     try {
-      if (video) {
-        final path = await PostcardVideo.render(
-          boundaryKey: _shareKey,
-          t: t,
-          art: p.art,
-          onProgress: (v) {
-            if (mounted) setState(() => _videoProgress = v);
-          },
-        );
-        if (mounted) setState(() => _videoProgress = null);
-        if (path != null && mounted) {
-          await PostcardVideo.share(context, path, p);
-        }
-      } else {
-        await sharePostcardImage(
-          context: context,
-          boundaryKey: _shareKey,
-          postcard: p,
-        );
-      }
-    } catch (_) {
-      // Vídeo falhou (encoder do aparelho): manda a imagem.
-      if (!mounted) return;
-      setState(() => _videoProgress = null);
-      t.value = 1;
-      await WidgetsBinding.instance.endOfFrame;
-      if (!mounted) return;
-      await showAppToastFor(
-        context,
-        message: context.l10n.postcardShareVideoFailed,
-        tone: AppToastTone.warn,
-      );
-      if (!mounted) return;
-      await sharePostcardImage(
-        context: context,
-        boundaryKey: _shareKey,
-        postcard: p,
-      );
+      await sharePostcardFlow(context, widget.postcard);
     } finally {
-      if (mounted) {
-        setState(() {
-          _sharing = null;
-          _videoProgress = null;
-        });
-      }
-      t.dispose();
+      if (mounted) setState(() => _sharing = false);
     }
   }
 
@@ -1024,7 +943,7 @@ class _RevealStageState extends State<_RevealStage>
                                 label: l10n.commonShare,
                                 leading: CinematicGlyph.share,
                                 expanded: true,
-                                onTap: _sharing == null ? _share : null,
+                                onTap: _sharing ? null : _share,
                               ),
                             ],
                             const SizedBox(height: AppSpace.lg),
@@ -1035,59 +954,6 @@ class _RevealStageState extends State<_RevealStage>
                   ),
                 ),
               ),
-              if (_sharing case final share?)
-                Positioned(
-                  left: -4000,
-                  top: 0,
-                  child: RepaintBoundary(
-                    key: _shareKey,
-                    child: ValueListenableBuilder<double>(
-                      valueListenable: share.t,
-                      builder: (_, t, _) => PostcardShareCard(
-                        postcard: p,
-                        info: share.info,
-                        t: t,
-                      ),
-                    ),
-                  ),
-                ),
-              if (_videoProgress case final progress?)
-                Positioned.fill(
-                  child: ColoredBox(
-                    color: AppColors.night.withValues(alpha: 0.92),
-                    child: Center(
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: AppSpace.screen * 2,
-                        ),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            const CloudMascot(
-                              face: CloudFace.carregando,
-                              size: 96,
-                            ),
-                            const SizedBox(height: AppSpace.lg),
-                            Text(
-                              l10n.postcardShareRendering,
-                              style: AppTypography.title(size: 17, color: ink),
-                            ),
-                            const SizedBox(height: AppSpace.md),
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(4),
-                              child: LinearProgressIndicator(
-                                value: progress,
-                                minHeight: 6,
-                                color: AppRoles.reward,
-                                backgroundColor: ink.withValues(alpha: 0.15),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
               // Fechar fica solto no canto: não empurra o Anan para baixo.
               SafeArea(
                 child: Align(

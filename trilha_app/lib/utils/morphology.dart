@@ -47,6 +47,70 @@ List<String> morphologyChips(String? code) {
       .toList();
 }
 
+/// Explicação pedagógica de um chip (toque → 1 frase).
+/// [hebrew] desfaz rótulos iguais entre línguas (en/es "imperfect").
+String? morphologyChipExplain(String chip, {bool? hebrew}) {
+  final l = L10n.current;
+  if (hebrew == true && chip == l.morphTenseImperfectHeb) {
+    return l.morphExplainImperfectHeb;
+  }
+  if (hebrew == false && chip == l.morphTenseImperfectGk) {
+    return l.morphExplainImperfectGk;
+  }
+  final map = <String, String>{
+    l.morphStemQal: l.morphExplainQal,
+    l.morphStemNifal: l.morphExplainNifal,
+    l.morphStemPiel: l.morphExplainPiel,
+    l.morphStemPual: l.morphExplainPual,
+    l.morphStemHifil: l.morphExplainHifil,
+    l.morphStemHofal: l.morphExplainHofal,
+    l.morphStemHitpael: l.morphExplainHitpael,
+    l.morphTensePerfect: l.morphExplainPerfect,
+    l.morphTenseImperfectHeb: l.morphExplainImperfectHeb,
+    l.morphTenseWayyiqtol: l.morphExplainWayyiqtol,
+    l.morphTenseWeqatal: l.morphExplainWeqatal,
+    l.morphTenseImperative: l.morphExplainImperative,
+    l.morphTenseCohortative: l.morphExplainCohortative,
+    l.morphTenseJussive: l.morphExplainJussive,
+    l.morphTenseParticiple: l.morphExplainParticiple,
+    l.morphTenseParticiplePassive: l.morphExplainParticiple,
+    l.morphTenseInfConstruct: l.morphExplainInfConstruct,
+    l.morphTenseInfAbsolute: l.morphExplainInfAbsolute,
+    l.morphTensePresent: l.morphExplainPresent,
+    l.morphTenseAorist: l.morphExplainAorist,
+    l.morphTenseFuture: l.morphExplainFuture,
+    l.morphTenseImperfectGk: l.morphExplainImperfectGk,
+    l.morphConstruct: l.morphExplainConstruct,
+    l.morphAbsolute: l.morphExplainAbsolute,
+    l.morphNoun: l.morphExplainNoun,
+    l.morphVerb: l.morphExplainVerb,
+    l.morphPrep: l.morphExplainPrep,
+    l.morphConjunction: l.morphExplainConjunction,
+    l.morphConjConsecutive: l.morphExplainConjunction,
+    l.morphArticle: l.morphExplainArticle,
+    l.morphMasc: l.morphExplainMasc,
+    l.morphFem: l.morphExplainFem,
+    l.morphNeuter: l.morphExplainNeuter,
+    l.morphSing: l.morphExplainSing,
+    l.morphPl: l.morphExplainPl,
+    l.morphDual: l.morphExplainDual,
+    l.morphPerson1: l.morphExplainPerson1,
+    l.morphPerson2: l.morphExplainPerson2,
+    l.morphPerson3: l.morphExplainPerson3,
+    l.morphSuffix: l.morphExplainSuffix,
+    l.morphPronominalSuffix: l.morphExplainPronominal,
+    l.morphSuffixPronominal: l.morphExplainPronominal,
+    l.morphAdjective: l.morphExplainAdjective,
+    l.morphNounProper: l.morphExplainProper,
+    l.morphDivineName: l.morphExplainDivineName,
+    l.morphDetermined: l.morphExplainDetermined,
+    l.morphObjectMarker: l.morphExplainObjectMarker,
+    l.morphAdverb: l.morphExplainAdverb,
+    l.morphParticle: l.morphExplainParticle,
+  };
+  return map[chip];
+}
+
 /// Uma frase só, no lugar de códigos e chips soltos.
 String morphologyPhrase(String? code, {String gloss = ''}) {
   final chips = morphologyChips(code);

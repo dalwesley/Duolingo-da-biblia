@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../data/question_bank.dart';
 import '../data/season_walk_catalog.dart';
 import '../l10n/app_language.dart';
+import '../models/advent_prize.dart';
 import '../models/difficulty.dart';
 import '../models/season_walk.dart';
 import '../models/trail.dart';
@@ -14,6 +15,7 @@ import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
+import '../widgets/advent_prize_card.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
 import '../widgets/immersive_background.dart';
@@ -144,6 +146,11 @@ class SeasonWalkScreen extends StatelessWidget {
                           ],
                         ),
                       ),
+                      if (AdventPrizeConfig.forCampaign(campaign.id) !=
+                          null) ...[
+                        const SizedBox(height: AppSpace.md),
+                        AdventPrizeCard(campaign: campaign),
+                      ],
                       const SizedBox(height: AppSpace.section),
                       for (var w = 0; w < campaign.weekCount; w++) ...[
                         _WeekBlock(

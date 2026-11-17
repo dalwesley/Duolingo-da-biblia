@@ -11,6 +11,7 @@ import '../data/season_walk_catalog.dart';
 import '../l10n/app_language.dart';
 import '../models/season_walk.dart';
 import '../screens/season_walk_screen.dart';
+import '../services/advent_prize_service.dart';
 import '../services/app_update_service.dart';
 import '../services/backend_service.dart';
 import '../services/league_service.dart';
@@ -123,10 +124,16 @@ class _SeasonWalkTogetherCardState extends State<SeasonWalkTogetherCard> {
     final store = !kIsWeb && Platform.isIOS
         ? AppUpdateService.iosStoreUrl
         : AppUpdateService.androidStoreUrl;
+    // Campanha com presente: o convite fala do Peregrino+ (e que em dupla
+    // ou grupo vale mais).
+    final prize = AdventPrizeService.instance.configFor(campaign.id);
+    final pitch = l10n.walkTogetherPitch(campaign.length);
     final text = l10n.walkTogetherShareText(
       name.isEmpty ? l10n.juntosSomeone : name,
       campaign.title,
-      l10n.walkTogetherPitch(campaign.length),
+      prize != null && prize.isOpen(DateTime.now())
+          ? '$pitch\n${l10n.adventPrizeShareLine(campaign.length, prize.maxMonths)}'
+          : pitch,
       start,
       store,
     );

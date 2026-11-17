@@ -85,12 +85,20 @@ class RoomService extends ChangeNotifier {
     };
   }
 
+  /// O grupo existe de verdade ([kRoomMinMembers]+ pessoas)? Abaixo disso
+  /// está se formando: estudo, leitura e propósito ficam esperando.
+  bool get isFormed => roomIsFormed(members.length);
+
+  /// Pessoas que faltam para o grupo começar (0 = já começou).
+  int get missingToForm => isFormed ? 0 : kRoomMinMembers - members.length;
+
   /// Estudo marcado para a semana corrente (ou `null`).
-  RoomStudy? get currentStudy => activeRoom?.studyFor(LeagueService.weekKey());
+  RoomStudy? get currentStudy =>
+      isFormed ? activeRoom?.studyFor(LeagueService.weekKey()) : null;
 
   /// Leitura da Bíblia marcada para a semana corrente (ou `null`).
   RoomReading? get currentReading =>
-      activeRoom?.readingFor(LeagueService.weekKey());
+      isFormed ? activeRoom?.readingFor(LeagueService.weekKey()) : null;
 
   /// Grupos abertos para esta pessoa: a chave geral, ou o piloto (líder do
   /// piloto ou membro de um grupo do piloto).
@@ -114,7 +122,8 @@ class RoomService extends ChangeNotifier {
   // ───────────── Propósito do grupo ─────────────
 
   /// Propósito do grupo (próximo, em curso ou terminado e não trocado).
-  RoomPlan? get plan => activeRoom?.plan;
+  /// Grupo ainda se formando: nenhum.
+  RoomPlan? get plan => isFormed ? activeRoom?.plan : null;
 
   /// Contas do grupo no propósito (null sem propósito).
   PlanGroup? get planGroup {
@@ -127,9 +136,7 @@ class RoomService extends ChangeNotifier {
     final p = plan;
     if (p == null) return null;
     final mine = members.where((m) => m.isUser).firstOrNull?.plan;
-    return mine != null && mine.planId == p.id
-        ? mine
-        : PlanProgress(planId: p.id);
+    return p.progressOf(mine) ?? PlanProgress(planId: p.id);
   }
 
   /// Respostas carregadas por dia ("planId_n").
@@ -161,7 +168,19 @@ class RoomService extends ChangeNotifier {
     if (!force && _answers.containsKey(key)) return;
     _answersLoading.add(key);
     notifyListeners();
-    final list = await backend.fetchRoomPlanAnswers(room.code, p.id, day);
+    // Respostas fechadas pelo líder: o membro lê só a própria.
+    final me = backend.uid;
+    final List<PlanAnswer> list;
+    if (room.answersPrivate && !room.isOwner(me)) {
+      final mine = me == null
+          ? const <int, String>{}
+          : await backend.fetchMemberPlanAnswers(room.code, p.id, me, [day]);
+      list = [
+        if (mine[day] != null) PlanAnswer(uid: me!, name: '', text: mine[day]!),
+      ];
+    } else {
+      list = await backend.fetchRoomPlanAnswers(room.code, p.id, day);
+    }
     _answersLoading.remove(key);
     _answers[key] = list;
     notifyListeners();
@@ -353,6 +372,8 @@ class RoomService extends ChangeNotifier {
 
   /// Líder grava (ou tira, com `null`) o propósito do grupo.
   Future<bool> setPlan(RoomPlan? next) async {
+    // Grupo se formando não começa propósito (nem troca o que ficou gravado).
+    if (next != null && !isFormed) return false;
     final previous = plan;
     final ok = await _updateRoom(
       {'plan': next?.toMap()},
@@ -751,7 +772,8 @@ class RoomService extends ChangeNotifier {
   /// Líder fecha a semana corrente: grava o fechamento para a revelação.
   Future<RoomClosing?> closeWeek() async {
     final room = activeRoom;
-    if (room == null || !room.isOwner(backend.uid)) return null;
+    // Grupo se formando não fecha semana (nem dá selo).
+    if (room == null || !room.isOwner(backend.uid) || !isFormed) return null;
     final closing = week.close(week: LeagueService.weekKey());
     final ok = await backend.saveRoomClosing(room.code, closing);
     if (!ok) return null;
@@ -806,6 +828,14 @@ class RoomService extends ChangeNotifier {
       notifyListeners();
     }
     return ok;
+  }
+
+  /// Líder abre ou fecha as respostas do propósito para os membros.
+  Future<bool> setAnswersPrivate(bool private) {
+    _answers.clear();
+    return _updateRoom({
+      'answersPrivate': private ? true : null,
+    }, (r) => r.copyWith(answersPrivate: private));
   }
 
   Future<bool> editRoom({required String name, required RoomKind kind}) {

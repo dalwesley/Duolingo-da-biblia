@@ -46,9 +46,7 @@ import '../widgets/postcard.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/reminder_prompt_sheet.dart';
 import '../widgets/scene_takeaways_sheet.dart';
-import '../widgets/share_insight_card.dart';
 import '../widgets/share_seal_card.dart';
-import '../widgets/share_streak_button.dart';
 import '../widgets/streak_repair_banner.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/set_piece.dart';
@@ -59,6 +57,7 @@ import 'paywall_screen.dart';
 import 'trail_map_screen.dart';
 import '../widgets/one_trail_sheet.dart';
 import 'support_screen.dart';
+import '../services/advent_prize_service.dart';
 
 class CelebrationScreen extends StatefulWidget {
   final String missionSlug;
@@ -127,8 +126,6 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   /// Postal revelado por esta cena (1ª vez), mostrado depois da contagem.
   Postcard? _newPostcard;
   CornerChallenge? _closedCorner;
-  final _sealShareKey = GlobalKey();
-  final _insightShareKey = GlobalKey();
   final _stageKey = GlobalKey();
   final _cloudKey = GlobalKey();
   Offset? _rainSource;
@@ -577,6 +574,11 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 await progress.markWalkDate(campaign.id, ymd);
                 break;
               }
+            }
+            if (!widget.failed) {
+              unawaited(
+                AdventPrizeService.instance.sceneFinished(widget.missionSlug),
+              );
             }
             if (!widget.failed) {
               // Dia em que a cena foi feita (refazer conta) e aviso ao grupo
@@ -1058,34 +1060,6 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                     },
                   ),
                 ),
-                if ((_todayLine ?? '').trim().isNotEmpty && !widget.failed)
-                  Positioned(
-                    left: -4000,
-                    top: 0,
-                    child: Builder(
-                      builder: (_) {
-                        final art = TrailArt.ofScene(
-                          widget.trailSlug,
-                          widget.missionSlug,
-                        );
-                        final size = art != null
-                            ? ShareInsightCard.artSize
-                            : const Size(320, 320);
-                        return SizedBox(
-                          width: size.width,
-                          height: size.height,
-                          child: RepaintBoundary(
-                            key: _insightShareKey,
-                            child: ShareInsightCard(
-                              insight: _todayLine!,
-                              verseRef: _hook?.hookRef,
-                              art: art,
-                            ),
-                          ),
-                        );
-                      },
-                    ),
-                  ),
                 SafeArea(
                   child: LayoutBuilder(
                     builder: (context, constraints) {
@@ -1145,10 +1119,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                           titled(
                             ScaleTransition(
                               scale: _heroScale,
-                              child: RepaintBoundary(
-                                key: _sealShareKey,
-                                child: ShareSealCard(seal: _newSeal!),
-                              ),
+                              child: ShareSealCard(seal: _newSeal!),
                             ),
                           )
                         else
@@ -1325,41 +1296,6 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                           ),
                                         ],
                                       ],
-                                      _CelebrationSecondaryRow(
-                                        appearance: appearance,
-                                        onShareInsight:
-                                            (_todayLine ?? '').trim().isEmpty ||
-                                                widget.failed
-                                            ? null
-                                            : () => shareInsightImage(
-                                                boundaryKey: _insightShareKey,
-                                                insight: _todayLine!,
-                                                verseRef: _hook?.hookRef,
-                                              ),
-                                        onShareSeal: _newSeal == null
-                                            ? null
-                                            : () => shareSealImage(
-                                                boundaryKey: _sealShareKey,
-                                                seal: _newSeal!,
-                                              ),
-                                        shareStreak:
-                                            (_todayLine ?? '').trim().isEmpty &&
-                                                _newSeal == null &&
-                                                progress.streak > 0 &&
-                                                !progress.showStreakRepairOffer
-                                            ? ShareStreakButton(
-                                                streak: progress.streak,
-                                                userName:
-                                                    progress.publicUserName,
-                                                steps: progress.steps,
-                                                asLink: true,
-                                              )
-                                            : null,
-                                        onHome: () => _leaveCelebration(
-                                          toTrailMap: false,
-                                        ),
-                                        hideHome: true,
-                                      ),
                                       if ((_trailComplete ||
                                               (_hook?.trailJustCompleted ??
                                                   false)) &&
@@ -1734,65 +1670,6 @@ class _StreakIgniteState extends State<_StreakIgnite>
           ),
         );
       },
-    );
-  }
-}
-
-class _CelebrationSecondaryRow extends StatelessWidget {
-  final AppearanceStyle appearance;
-  final VoidCallback? onShareInsight;
-  final VoidCallback? onShareSeal;
-  final Widget? shareStreak;
-  final VoidCallback onHome;
-  final bool hideHome;
-
-  const _CelebrationSecondaryRow({
-    required this.appearance,
-    required this.onHome,
-    this.onShareInsight,
-    this.onShareSeal,
-    this.shareStreak,
-    this.hideHome = false,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final share = onShareInsight != null
-        ? TextCta(
-            label: context.l10n.celebrationShareInsight,
-            leading: CinematicGlyph.share,
-            color: appearance.text,
-            onTap: onShareInsight,
-          )
-        : onShareSeal != null
-        ? TextCta(
-            label: context.l10n.commonShare,
-            leading: CinematicGlyph.share,
-            color: appearance.text,
-            onTap: onShareSeal,
-          )
-        : shareStreak;
-
-    final home = TextCta(
-      label: context.l10n.celebrationBackHome,
-      color: appearance.text,
-      onTap: onHome,
-    );
-
-    if (share == null) {
-      if (hideHome) return const SizedBox.shrink();
-      return home;
-    }
-
-    if (hideHome) return share;
-
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        share,
-        Text('·', style: AppTypography.body(color: appearance.textFaint)),
-        home,
-      ],
     );
   }
 }

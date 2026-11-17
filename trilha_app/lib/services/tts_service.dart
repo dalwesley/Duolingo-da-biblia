@@ -11,6 +11,9 @@ class TtsService extends ChangeNotifier {
   bool _configured = false;
   bool _speaking = false;
 
+  /// Texto em pt-BR para ler se a voz original falhar no meio.
+  String? _fallbackOnError;
+
   /// Leitura em sequência (capítulo inteiro, versículo a versículo).
   int _sequenceGen = 0;
   bool _inSequence = false;
@@ -32,17 +35,23 @@ class TtsService extends ChangeNotifier {
       await _tts.setLanguage('pt-BR');
       await _tts.setSpeechRate(0.45);
       _tts.setCompletionHandler(() {
+        _fallbackOnError = null;
         if (_inSequence) return;
         _speaking = false;
         notifyListeners();
       });
       _tts.setCancelHandler(() {
+        _fallbackOnError = null;
         _speaking = false;
         notifyListeners();
       });
-      _tts.setErrorHandler((_) {
+      _tts.setErrorHandler((msg) {
+        debugPrint('TtsService erro: $msg');
         _speaking = false;
         notifyListeners();
+        final fallback = _fallbackOnError;
+        _fallbackOnError = null;
+        if (fallback != null) speak(fallback);
       });
       try {
         await _tts.setIosAudioCategory(
@@ -63,8 +72,11 @@ class TtsService extends ChangeNotifier {
     if (text.trim().isEmpty) return;
     await _ensureConfigured();
     _endSequence();
+    _fallbackOnError = null;
     try {
       await _tts.stop();
+      await _tts.setLanguage('pt-BR');
+      await _tts.awaitSpeakCompletion(false);
       _speaking = true;
       notifyListeners();
       await _tts.speak(text);
@@ -72,6 +84,55 @@ class TtsService extends ChangeNotifier {
       _speaking = false;
       notifyListeners();
       debugPrint('TtsService.speak falhou: $e');
+    }
+  }
+
+  /// Lê lema hebraico/grego com a voz do aparelho.
+  /// Sem voz do idioma instalada (ou se ela falhar), lê [fallback] em pt-BR.
+  /// Retorna `false` quando nem chegou a tentar a voz original.
+  Future<bool> speakOriginal(
+    String text, {
+    required bool hebrew,
+    String fallback = '',
+  }) async {
+    if (text.trim().isEmpty) {
+      if (fallback.isNotEmpty) await speak(fallback);
+      return false;
+    }
+    await _ensureConfigured();
+    _endSequence();
+    // Outro speak/stop/toque durante os awaits invalida este pedido.
+    final gen = _sequenceGen;
+    final lang = hebrew ? 'he-IL' : 'el-GR';
+    try {
+      await _tts.stop();
+      // Android: "disponível" não quer dizer baixada — sem a voz local o
+      // motor só dispara onError. Exige a voz instalada.
+      final dynamic ok = defaultTargetPlatform == TargetPlatform.android
+          ? await _tts.isLanguageInstalled(lang)
+          : await _tts.isLanguageAvailable(lang);
+      if (gen != _sequenceGen) return false;
+      if (ok != true) {
+        debugPrint('TtsService: voz $lang indisponível');
+        if (fallback.isNotEmpty) await speak(fallback);
+        return false;
+      }
+      await _tts.setLanguage(lang);
+      if (gen != _sequenceGen) return false;
+      // Sem esperar o fim: no Android um onError deixa o future pendurado.
+      await _tts.awaitSpeakCompletion(false);
+      _fallbackOnError = fallback.isEmpty ? null : fallback;
+      _speaking = true;
+      notifyListeners();
+      await _tts.speak(text);
+      return true;
+    } catch (e) {
+      _fallbackOnError = null;
+      _speaking = false;
+      notifyListeners();
+      debugPrint('TtsService.speakOriginal falhou: $e');
+      if (fallback.isNotEmpty) await speak(fallback);
+      return false;
     }
   }
 
@@ -85,8 +146,10 @@ class TtsService extends ChangeNotifier {
     if (parts.isEmpty) return;
     await _ensureConfigured();
     final gen = ++_sequenceGen;
+    _fallbackOnError = null;
     try {
       await _tts.stop();
+      await _tts.setLanguage('pt-BR');
       await _tts.awaitSpeakCompletion(true);
     } catch (_) {}
     _inSequence = true;
@@ -119,6 +182,7 @@ class TtsService extends ChangeNotifier {
   Future<void> stop() async {
     final wasSequence = _inSequence;
     _endSequence();
+    _fallbackOnError = null;
     try {
       await _tts.stop();
     } catch (_) {}

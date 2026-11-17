@@ -9,6 +9,128 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
+  String get adventPrizeClosed =>
+      'The gift deadline has passed. The walk stays open.';
+
+  @override
+  String adventPrizeConfirmed(int done, int total) {
+    return '$done of $total scenes confirmed';
+  }
+
+  @override
+  String get adventPrizeEarnedGroup => 'Your group reached Christmas together.';
+
+  @override
+  String get adventPrizeEarnedPair =>
+      'You and your Companion reached Christmas together.';
+
+  @override
+  String get adventPrizeEarnedSolo =>
+      'You walked all of Advent, one step a day.';
+
+  @override
+  String adventPrizeEarnedTitle(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months months',
+      one: '1 month',
+    );
+    return 'You got $_temp0 of Peregrino+';
+  }
+
+  @override
+  String get adventPrizeKept =>
+      'Your months are saved and start when your subscription ends.';
+
+  @override
+  String get adventPrizeKicker => 'Advent gift';
+
+  @override
+  String adventPrizeMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months months',
+      one: '1 month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get adventPrizeNeedsLogin =>
+      'Sign in to your account so the gift counts.';
+
+  @override
+  String adventPrizePlusUntil(String date) {
+    return 'Peregrino+ until $date';
+  }
+
+  @override
+  String adventPrizePromise(int days, int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months months',
+      one: '1 month',
+    );
+    return 'Walk the $days days of Advent and get up to $_temp0 of Peregrino+.';
+  }
+
+  @override
+  String adventPrizeRosterBefore(String date) {
+    return 'Companion and group count if they are formed by the end of day 1 ($date).';
+  }
+
+  @override
+  String adventPrizeRosterGroup(int count) {
+    return 'You walk with a group. Once $count from the group finish, everyone who finishes gets 3 months.';
+  }
+
+  @override
+  String get adventPrizeRosterPair =>
+      'You walk as a pair. If you both finish, each of you gets 2 months.';
+
+  @override
+  String get adventPrizeRosterSolo =>
+      'This season you walk on your own. Finish and you get 1 month.';
+
+  @override
+  String adventPrizeShareLine(int days, int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months months',
+      one: '1 month',
+    );
+    return 'Walk the $days days and get up to $_temp0 of Peregrino+. As a pair or a group, you get more.';
+  }
+
+  @override
+  String adventPrizeStepADay(String date, int max) {
+    return 'One step a day; each scene counts from its own day. Missed a day? You can do it later, up to $max scenes a day, until $date.';
+  }
+
+  @override
+  String adventPrizeTierGroup(int count) {
+    return 'Finish with $count+ from your group';
+  }
+
+  @override
+  String get adventPrizeTierPair => 'Finish with your Companion';
+
+  @override
+  String get adventPrizeTierSolo => 'Finish on your own';
+
+  @override
+  String get adventPrizeUnconfirmed =>
+      'Some days weren\'t confirmed (offline, too fast, or over the day\'s limit). Redo the scene while online so it counts toward the gift.';
+
+  @override
+  String get adventPrizeWaitingOthers =>
+      'When your Companion or group finishes, your gift goes up.';
+
+  @override
   String get appReportCategoryAccount => 'Account and progress';
 
   @override
@@ -754,9 +876,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String celebrationSeeYouTomorrow(int hour) {
     return 'See you tomorrow at $hour:00';
   }
-
-  @override
-  String get celebrationShareInsight => 'Share today\'s insight';
 
   @override
   String get celebrationStatAccuracy => 'Accuracy';
@@ -2599,8 +2718,8 @@ class AppLocalizationsEn extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count days without walking',
-      one: '1 day without walking',
+      other: 'walked $count days ago',
+      one: 'walked yesterday',
     );
     return '$_temp0';
   }
@@ -4160,6 +4279,18 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get lessonLifeDone => 'Done';
+
+  @override
+  String get lessonLifeEyebrow => 'Today\'s practice';
+
+  @override
+  String get lessonLifeLater => 'Later';
+
+  @override
+  String get lessonLifeSubtitle => 'Live the text outside the app';
+
+  @override
   String get lessonListen => 'Listen to the text';
 
   @override
@@ -5289,6 +5420,184 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get morphDual => 'dual';
+
+  @override
+  String get morphExplainAbsolute =>
+      'Absolute = free form of the noun, without a bound “of…”.';
+
+  @override
+  String get morphExplainAdjective =>
+      'Adjective = qualifies the noun (“good”, “great”, “holy”).';
+
+  @override
+  String get morphExplainAdverb =>
+      'Adverb = modifies the action (“still”, “very”, “there”).';
+
+  @override
+  String get morphExplainAorist =>
+      'Aorist = action viewed as a point (without duration).';
+
+  @override
+  String get morphExplainArticle =>
+      'Article = marks the definite (“the”) in Hebrew.';
+
+  @override
+  String get morphExplainCohortative =>
+      'Cohortative = “let us…” / 1st-person wish (“let us make”).';
+
+  @override
+  String get morphExplainConjunction =>
+      'Conjunction = joins clauses or words (“and”, “but”, “that”).';
+
+  @override
+  String get morphExplainConstruct =>
+      'Construct = “of…” — links two nouns (house of David).';
+
+  @override
+  String get morphExplainDetermined =>
+      'Determined = form marked as definite (“the”).';
+
+  @override
+  String get morphExplainDivineName =>
+      'Divine name = a reference to God in the original.';
+
+  @override
+  String get morphExplainDual => 'Dual = exactly two (eyes, hands, or a pair).';
+
+  @override
+  String get morphExplainFem =>
+      'Feminine = grammatical gender in the original (not “female” in English).';
+
+  @override
+  String get morphExplainFuture => 'Future = action yet to come.';
+
+  @override
+  String get morphExplainHifil =>
+      'Hiphil = causative (“make someone do”, “cause to happen”).';
+
+  @override
+  String get morphExplainHitpael =>
+      'Hithpael = reflexive or reciprocal (“do to oneself”, “to each other”).';
+
+  @override
+  String get morphExplainHofal =>
+      'Hophal = passive of hiphil (“was caused to”).';
+
+  @override
+  String get morphExplainImperative =>
+      'Imperative = direct command or request.';
+
+  @override
+  String get morphExplainImperfectGk =>
+      'Greek imperfect = continuous or repeated past action.';
+
+  @override
+  String get morphExplainImperfectHeb =>
+      'Imperfect = ongoing, habitual, or future action.';
+
+  @override
+  String get morphExplainInfAbsolute =>
+      'Infinitive absolute = emphasis (“will surely do”, “indeed do”).';
+
+  @override
+  String get morphExplainInfConstruct =>
+      'Infinitive construct = verbal form that binds to another word (“in doing”).';
+
+  @override
+  String get morphExplainJussive =>
+      'Jussive = wish or soft command in the 3rd person (“let him…”).';
+
+  @override
+  String get morphExplainMasc =>
+      'Masculine = grammatical gender in the original (not “male” in English).';
+
+  @override
+  String get morphExplainNeuter =>
+      'Neuter = grammatical gender that is neither masculine nor feminine (common in Greek).';
+
+  @override
+  String get morphExplainNifal =>
+      'Niphal = passive or reflexive voice (“was done”, “did itself”).';
+
+  @override
+  String get morphExplainNoun =>
+      'Noun = names a person, place, thing, or idea.';
+
+  @override
+  String get morphExplainObjectMarker =>
+      'Object marker = marks the direct object in Hebrew (often untranslated).';
+
+  @override
+  String get morphExplainParticiple =>
+      'Participle = action as a quality or ongoing state (“the one who does”).';
+
+  @override
+  String get morphExplainParticle =>
+      'Particle = small word that ties the sense together (not the core of the verse).';
+
+  @override
+  String get morphExplainPerfect =>
+      'Perfect = action viewed as complete (often past).';
+
+  @override
+  String get morphExplainPerson1 => '1st person = I / we — the one speaking.';
+
+  @override
+  String get morphExplainPerson2 => '2nd person = you — the one spoken to.';
+
+  @override
+  String get morphExplainPerson3 =>
+      '3rd person = he / she / they — the one spoken about.';
+
+  @override
+  String get morphExplainPiel =>
+      'Piel = intensive or causative action (“really do”, “intensify”).';
+
+  @override
+  String get morphExplainPl =>
+      'Plural = more than one. In some names (like Elohim), it can mark majesty, not quantity.';
+
+  @override
+  String get morphExplainPrep =>
+      'Preposition = links the sense (“in”, “to”, “with”, “upon”).';
+
+  @override
+  String get morphExplainPresent => 'Present = action now or habitual.';
+
+  @override
+  String get morphExplainPronominal =>
+      'Pronominal = the suffix acts like a pronoun (“my”, “our”, “their”).';
+
+  @override
+  String get morphExplainProper =>
+      'Proper = name of a specific person, place, or title.';
+
+  @override
+  String get morphExplainPual =>
+      'Pual = passive of piel (“was done intensively”).';
+
+  @override
+  String get morphExplainQal =>
+      'Qal = simple action, the basic sense of the verb.';
+
+  @override
+  String get morphExplainSing =>
+      'Singular = just one — one person, thing, or action.';
+
+  @override
+  String get morphExplainSuffix =>
+      'Suffix = ending attached to the word (often “my”, “your”, “his”).';
+
+  @override
+  String get morphExplainVerb => 'Verb = the action or state in the verse.';
+
+  @override
+  String get morphExplainWayyiqtol =>
+      'Wayyiqtol = sequential narrative (“and then…”), typical of stories.';
+
+  @override
+  String get morphExplainWeqatal =>
+      'Weqatal = perfect sequence — continues the narrative or instructional line.';
 
   @override
   String get morphExtraGentilic => 'gentilic';
@@ -6780,6 +7089,20 @@ class AppLocalizationsEn extends AppLocalizations {
   String get planAnswersLocked => 'Answer to see what the group wrote.';
 
   @override
+  String get planAnswersLockedPrivate =>
+      'Your answer stays between you and the leader.';
+
+  @override
+  String get planAnswersNowOpen => 'Whoever answers sees the group\'s answers.';
+
+  @override
+  String get planAnswersNowPrivate => 'Now only you see the answers.';
+
+  @override
+  String get planAnswersPrivateNote =>
+      'In this group, answers stay with the leader.';
+
+  @override
   String planAnswersTitle(int n) {
     return 'Answers for day $n';
   }
@@ -6891,6 +7214,42 @@ class AppLocalizationsEn extends AppLocalizations {
   String get planClosingBannerTitle => 'The group\'s purpose was closed';
 
   @override
+  String planCoverDay(int n, int total) {
+    return 'Day $n of $total';
+  }
+
+  @override
+  String get planCoverNoneToday => 'No one has gone today yet';
+
+  @override
+  String planCoverStarts(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Starts in $days days',
+      one: 'Starts tomorrow',
+      zero: 'Starts today',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planCoverToday(int done, int total) {
+    return '$done of $total went today';
+  }
+
+  @override
+  String planCoverTogether(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count walk together',
+      one: '1 walks here',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String planDateRange(int count, String from, String to) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -6981,6 +7340,16 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get planEditorDurationBody =>
       'How many weeks the group walks together. You pick the start day; the end closes the last week.';
+
+  @override
+  String planEditorDurationSeason(String name) {
+    return 'Follows the dates of $name: one plan day for each day of the season.';
+  }
+
+  @override
+  String planEditorDurationTrail(String name) {
+    return 'Follows the $name trail: one plan day for each scene.';
+  }
 
   @override
   String get planEditorEnd => 'Ends';
@@ -7119,10 +7488,25 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get planGoScene => 'Open the scene';
+
+  @override
   String get planHearthEnds => 'Ends in';
 
   @override
-  String get planHearthLabel => 'The group in the plan';
+  String planHearthEndsIn(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Ends in $days days',
+      one: 'Ends tomorrow',
+      zero: 'Ends today',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get planHearthLabel => 'Who walks together';
 
   @override
   String get planHearthStarts => 'Starts in';
@@ -7199,6 +7583,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get planMarkDayRead => 'Mark today\'s reading';
+
+  @override
+  String get planMenuAnswersOpen => 'Open answers to the group';
+
+  @override
+  String get planMenuAnswersPrivate => 'Close answers (only the leader sees)';
 
   @override
   String get planMenuCreate => 'Create purpose';
@@ -7424,6 +7814,19 @@ class AppLocalizationsEn extends AppLocalizations {
       'You earned the Faithful seal. It sits next to your name in the group.';
 
   @override
+  String planSeatAnswerDay(int n) {
+    return 'Day $n';
+  }
+
+  @override
+  String planSeatAnswersHidden(String name) {
+    return 'Answer the same days to see what $name wrote.';
+  }
+
+  @override
+  String get planSeatAnswersLabel => 'Answers';
+
+  @override
   String get planSeatDays => 'Plan days';
 
   @override
@@ -7460,11 +7863,35 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String planSourceChangedFollows(String name, int now) {
+    return '$name: $now days. The length and questions follow the new choice.';
+  }
+
+  @override
+  String planSourceChangedLonger(String name, int now, int before) {
+    return '$name is longer than the previous choice: $now days instead of $before. The length and questions follow the new choice.';
+  }
+
+  @override
+  String planSourceChangedSame(String name, int now) {
+    return '$name has the same length as the previous choice: $now days. The questions follow the new choice.';
+  }
+
+  @override
+  String planSourceChangedShorter(String name, int now, int before) {
+    return '$name is shorter than the previous choice: $now days instead of $before. The length and questions follow the new choice.';
+  }
+
+  @override
+  String get planSourceFromTomorrow =>
+      'The plan has started: the change applies from tomorrow.';
+
+  @override
   String get planSourcePick => 'Choose';
 
   @override
   String get planSourceQuestionBody =>
-      'Each day the group answers one question, taken from the day\'s scene or, with no scene, from the chapter. Open the days to see each one and change any.';
+      'Each day the group answers one question, taken from the day\'s scene or, with no scene, from the chapter. Choose to see each day and change any.';
 
   @override
   String get planSourceQuestionNone =>
@@ -7487,7 +7914,16 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get planSourceReadingScenes =>
+      'Follows the scenes: each day brings the chapter of that day\'s scene passage.';
+
+  @override
   String get planSourceRemove => 'Remove';
+
+  @override
+  String planSourceRestart(String date) {
+    return 'The plan starts over on day 1, on $date. Whoever joined stays in.';
+  }
 
   @override
   String get planSourceScene => 'Trail scene';
@@ -7507,12 +7943,23 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String planSourceSeason(String name) {
+    return '$name · each day brings the season\'s scene for that date.';
+  }
+
+  @override
   String get planStartAnother => 'Start another purpose';
 
   @override
   String planStartCta(int minutes) {
     return 'Start plan · $minutes min/day';
   }
+
+  @override
+  String get planStepRead => 'Reading';
+
+  @override
+  String get planStepScene => 'Scene';
 
   @override
   String get planSuggestGeneral => 'General';
@@ -8931,6 +9378,28 @@ class AppLocalizationsEn extends AppLocalizations {
   String get roomFallbackName => 'Group';
 
   @override
+  String roomFormingBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count more people',
+      one: '1 more person',
+    );
+    return '$_temp0 and the group begins. Until then, purpose, week and group gifts wait.';
+  }
+
+  @override
+  String get roomFormingCompanion => 'Just the two of you? Walk as Companions';
+
+  @override
+  String get roomFormingInvite => 'Invite people';
+
+  @override
+  String roomFormingTitle(int count) {
+    return 'A group starts with $count';
+  }
+
+  @override
   String get roomKindAmigos => 'Circle';
 
   @override
@@ -9863,6 +10332,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsVersion => 'Version';
 
   @override
+  String get settingsWhatsNew => 'What\'s new';
+
+  @override
+  String get settingsWhatsNewSubtitle => 'What came in this version';
+
+  @override
   String get settingsYourName => 'Your name';
 
   @override
@@ -10206,6 +10681,27 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get takeawaysTitle => 'What you saw in the text';
+
+  @override
+  String get todayPostcardSlideHint => 'Your postcard';
+
+  @override
+  String get todayShareInsight => 'Share this line';
+
+  @override
+  String get todayShareNudgeA => 'Someone near you needs to hear this.';
+
+  @override
+  String get todayShareNudgeB => 'Share the Word. It changes lives.';
+
+  @override
+  String get todayShareNudgeC => 'Take this line to someone today.';
+
+  @override
+  String get todayShareNudgeMark => 'Word';
+
+  @override
+  String get todaySharePostcard => 'Share postcard';
 
   @override
   String tomorrowDayOf(int streak, int goal) {
@@ -10628,11 +11124,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get verseStudyFirst => 'first';
 
   @override
+  String verseStudyGlossCount(String gloss, int count) {
+    return '$gloss · $count×';
+  }
+
+  @override
   String get verseStudyGoToText => 'Go to text';
 
   @override
-  String get verseStudyInThisBook =>
-      'In this book — the appearances near this verse.';
+  String get verseStudyInThisBook => 'In this book — in canonical order.';
 
   @override
   String get verseStudyInThisVerse => 'In this verse';
@@ -10644,10 +11144,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get verseStudyLemma => 'Lemma';
 
   @override
+  String get verseStudyListenLemma => 'Hear the original';
+
+  @override
   String get verseStudyLoadFailed => 'Couldn\'t load the study.';
 
   @override
   String get verseStudyLoading => 'Opening the lexicon…';
+
+  @override
+  String get verseStudyMorphTap => 'Tap a term to explain it';
 
   @override
   String get verseStudyNeedsRestart =>
@@ -10676,11 +11182,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get verseStudyOnlyHere => 'Only in this verse in the index.';
 
   @override
+  String verseStudyOriginalForm(String lang) {
+    return 'Form in $lang';
+  }
+
+  @override
   String get verseStudyOtherBooks => 'In other books';
 
   @override
   String get verseStudyOtherBooksBody =>
-      'The first appearance in each book where the word is most frequent.';
+      'The first appearance in each book, in canonical order.';
 
   @override
   String get verseStudyParticleNearby =>
@@ -10719,8 +11230,31 @@ class AppLocalizationsEn extends AppLocalizations {
   String get verseStudyThisForm => 'This form';
 
   @override
+  String get verseStudyTranslations => 'How the TB translates it';
+
+  @override
+  String verseStudyTranslationsAlso(String list) {
+    return 'Also: $list';
+  }
+
+  @override
+  String get verseStudyTranslationsBody =>
+      'The same original word shows up with these senses in the Tradução Brasileira.';
+
+  @override
+  String verseStudyTranslationsHere(String word) {
+    return 'Here: $word';
+  }
+
+  @override
   String get verseStudyVerseUnavailable =>
       'This verse isn\'t available in this translation.';
+
+  @override
+  String get verseStudyViewInterlinear => 'Interlinear';
+
+  @override
+  String get verseStudyViewVerse => 'Verse';
 
   @override
   String get walkCountdownDays => 'days';
@@ -10963,6 +11497,28 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get weeklyReviewTodayPrev => 'Previous scene';
+
+  @override
+  String get whatsNew148Advent =>
+      'Advent gift: walk the 26 days (Nov 29 to Dec 24) and get up to 3 months of Peregrino+. Alone, 1 month; with your Companion, 2; with 3 or more from your group, 3. Missed a day? You can do it later.';
+
+  @override
+  String get whatsNew148Plan =>
+      'Group purpose: today\'s day, reading and scene, everyone\'s answers. The leader decides whether the group sees the answers.';
+
+  @override
+  String get whatsNew148Share =>
+      'Share the day\'s phrase and postcard right from Today.';
+
+  @override
+  String get whatsNew148Study =>
+      'Study the verse: interlinear mode, hear the word in the original and see how the translation renders it.';
+
+  @override
+  String get whatsNewEyebrow => 'What\'s new';
+
+  @override
+  String get whatsNewTitle => 'The path has something new';
 
   @override
   String get widgetBackToTrail => 'Back to the trail';

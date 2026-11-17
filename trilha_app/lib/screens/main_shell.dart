@@ -3,7 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
 import '../l10n/app_language.dart';
+import '../data/season_walk_catalog.dart';
+import '../models/advent_prize.dart';
 import '../models/corner_challenge.dart';
+import '../services/advent_prize_service.dart';
+import '../widgets/whats_new_sheet.dart';
+import '../widgets/advent_prize_card.dart';
 import '../models/walk_companion.dart';
 import '../services/referral_rewards_service.dart';
 import '../services/app_update_service.dart';
@@ -126,6 +131,20 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   bool _routeCurrent = true;
   bool _medalCheckPending = false;
 
+  /// Presente do Advento subiu com uma cena por cima: celebra ao voltar.
+  bool _adventCheckPending = false;
+
+  void _onAdventPrize() {
+    if (!mounted) return;
+    if (!_routeCurrent) {
+      _adventCheckPending = true;
+      return;
+    }
+    unawaited(
+      maybeCelebrateAdventPrize(context, SeasonWalkCatalog.current().id),
+    );
+  }
+
   /// Já avisou que o passe de trilha espera o login (uma vez por sessão).
   bool _trailGiftWaitShown = false;
 
@@ -202,6 +221,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     super.initState();
     MainShell._active = this;
     WidgetsBinding.instance.addObserver(this);
+    AdventPrizeService.instance.addListener(_onAdventPrize);
     _lastClockPhase = DayPhaseHelper.current();
     _phaseTimer = Timer.periodic(const Duration(minutes: 1), (_) {
       if (!mounted) return;
@@ -219,7 +239,12 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     InviteDeepLinkService.instance.addListener(_onInviteDeepLink);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
-      unawaited(_maybeSeasonTurn());
+      // Estação nova primeiro; depois, uma vez por versão, as novidades.
+      unawaited(
+        _maybeSeasonTurn().then((_) {
+          if (mounted) return WhatsNew.maybeShow(context);
+        }),
+      );
       _progressRef = context.read<ProgressService>();
       _progressRef!.addListener(_onProgressChanged);
       _backendRef = context.read<BackendService>();
@@ -429,6 +454,15 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   /// Alguém assinou o Peregrino+ por um convite desta pessoa: avisa uma
   /// vez por mês ganho (functions/referral.js grava o saldo).
   Future<void> _checkReferralReward() async {
+    // Presente do Advento: a prova da cena chega segundos depois; ao voltar
+    // ao shell, relê e celebra uma vez cada subida.
+    final adventId = SeasonWalkCatalog.current().id;
+    if (AdventPrizeConfig.forCampaign(adventId) != null) {
+      await AdventPrizeService.instance.refresh(adventId);
+      if (!mounted) return;
+      await maybeCelebrateAdventPrize(context, adventId);
+      if (!mounted) return;
+    }
     final uid = context.read<BackendService>().uid;
     final reward = await ReferralRewardsService.instance.refresh(uid);
     if (!mounted || reward == null) return;
@@ -609,6 +643,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   void dispose() {
     if (MainShell._active == this) MainShell._active = null;
     WidgetsBinding.instance.removeObserver(this);
+    AdventPrizeService.instance.removeListener(_onAdventPrize);
     _phaseTimer?.cancel();
     _presenceTimer?.cancel();
     _warmTimer?.cancel();
@@ -714,6 +749,12 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     // Reconstrói quando uma rota entra ou sai por cima do shell.
     _routeCurrent = ModalRoute.isCurrentOf(context) ?? true;
     _maybeAskGuestToSave();
+    if (_routeCurrent && _adventCheckPending) {
+      _adventCheckPending = false;
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) _onAdventPrize();
+      });
+    }
     if (_routeCurrent && _medalCheckPending) {
       _medalCheckPending = false;
       WidgetsBinding.instance.addPostFrameCallback((_) {

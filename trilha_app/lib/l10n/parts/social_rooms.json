@@ -337,9 +337,9 @@
     "es": "aún no caminó esta semana"
   },
   "groupDaysAway": {
-    "pt": "{count, plural, =1{1 dia sem caminhar} other{{count} dias sem caminhar}}",
-    "en": "{count, plural, =1{1 day without walking} other{{count} days without walking}}",
-    "es": "{count, plural, =1{1 día sin caminar} other{{count} días sin caminar}}",
+    "pt": "{count, plural, =1{caminhou ontem} other{caminhou há {count} dias}}",
+    "en": "{count, plural, =1{walked yesterday} other{walked {count} days ago}}",
+    "es": "{count, plural, =1{caminó ayer} other{caminó hace {count} días}}",
     "placeholders": {
       "count": "int"
     }

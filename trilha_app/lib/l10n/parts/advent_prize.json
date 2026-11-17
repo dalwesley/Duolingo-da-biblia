@@ -1,0 +1,177 @@
+{
+  "adventPrizeKicker": {
+    "pt": "Presente do Advento",
+    "en": "Advent gift",
+    "es": "Regalo de Adviento"
+  },
+  "adventPrizePromise": {
+    "pt": "Caminhe os {days} dias do Advento e ganhe até {months, plural, =1{1 mês} other{{months} meses}} de Peregrino+.",
+    "en": "Walk the {days} days of Advent and get up to {months, plural, =1{1 month} other{{months} months}} of Peregrino+.",
+    "es": "Camina los {days} días de Adviento y gana hasta {months, plural, =1{1 mes} other{{months} meses}} de Peregrino+.",
+    "placeholders": {
+      "days": "int",
+      "months": "int"
+    }
+  },
+  "adventPrizeMonths": {
+    "pt": "{months, plural, =1{1 mês} other{{months} meses}}",
+    "en": "{months, plural, =1{1 month} other{{months} months}}",
+    "es": "{months, plural, =1{1 mes} other{{months} meses}}",
+    "placeholders": {
+      "months": "int"
+    }
+  },
+  "adventPrizeTierSolo": {
+    "pt": "Concluir sozinho",
+    "en": "Finish on your own",
+    "es": "Terminar solo"
+  },
+  "adventPrizeTierPair": {
+    "pt": "Concluir com sua dupla da Companhia",
+    "en": "Finish with your Companion",
+    "es": "Terminar con tu dupla de Compañía"
+  },
+  "adventPrizeTierGroup": {
+    "pt": "Concluir com {count}+ do seu grupo",
+    "en": "Finish with {count}+ from your group",
+    "es": "Terminar con {count}+ de tu grupo",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "adventPrizeConfirmed": {
+    "pt": "{done} de {total} cenas confirmadas",
+    "en": "{done} of {total} scenes confirmed",
+    "es": "{done} de {total} escenas confirmadas",
+    "placeholders": {
+      "done": "int",
+      "total": "int"
+    }
+  },
+  "adventPrizeStepADay": {
+    "pt": "Um passo por dia; cada cena vale a partir do dia dela. Perdeu um dia? Dá para fazer depois, até {max} cenas por dia, até {date}.",
+    "en": "One step a day; each scene counts from its own day. Missed a day? You can do it later, up to {max} scenes a day, until {date}.",
+    "es": "Un paso por día; cada escena vale desde su propio día. ¿Perdiste un día? Puedes hacerlo después, hasta {max} escenas por día, hasta el {date}.",
+    "placeholders": {
+      "date": "String",
+      "max": "int"
+    }
+  },
+  "adventPrizeUnconfirmed": {
+    "pt": "Alguns dias não foram confirmados (sem internet, rápido demais ou além das cenas do dia). Refaça a cena com conexão para ela valer no presente.",
+    "en": "Some days weren't confirmed (offline, too fast, or over the day's limit). Redo the scene while online so it counts toward the gift.",
+    "es": "Algunos días no se confirmaron (sin internet, demasiado rápido o por encima del límite del día). Rehaz la escena con conexión para que cuente en el regalo."
+  },
+  "adventPrizeRosterBefore": {
+    "pt": "Dupla e grupo valem se estiverem formados até o fim do 1º dia ({date}).",
+    "en": "Companion and group count if they are formed by the end of day 1 ({date}).",
+    "es": "La dupla y el grupo valen si están formados hasta el final del 1.er día ({date}).",
+    "placeholders": {
+      "date": "String"
+    }
+  },
+  "adventPrizeRosterPair": {
+    "pt": "Você caminha em dupla. Se os dois concluírem, cada um ganha 2 meses.",
+    "en": "You walk as a pair. If you both finish, each of you gets 2 months.",
+    "es": "Caminas en dupla. Si los dos terminan, cada uno gana 2 meses."
+  },
+  "adventPrizeRosterGroup": {
+    "pt": "Você caminha em grupo. Com {count} do grupo concluindo, cada um que concluir ganha 3 meses.",
+    "en": "You walk with a group. Once {count} from the group finish, everyone who finishes gets 3 months.",
+    "es": "Caminas en grupo. Si {count} del grupo terminan, cada uno que termine gana 3 meses.",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "adventPrizeRosterSolo": {
+    "pt": "Nesta estação você caminha sozinho. Ao concluir, ganha 1 mês.",
+    "en": "This season you walk on your own. Finish and you get 1 month.",
+    "es": "En esta estación caminas solo. Al terminar, ganas 1 mes."
+  },
+  "adventPrizeWaitingOthers": {
+    "pt": "Quando sua dupla ou seu grupo concluir, seu presente sobe.",
+    "en": "When your Companion or group finishes, your gift goes up.",
+    "es": "Cuando tu dupla o tu grupo termine, tu regalo sube."
+  },
+  "adventPrizeNeedsLogin": {
+    "pt": "Entre com sua conta para o presente valer.",
+    "en": "Sign in to your account so the gift counts.",
+    "es": "Entra con tu cuenta para que el regalo valga."
+  },
+  "adventPrizeClosed": {
+    "pt": "O prazo do presente terminou. A caminhada segue aberta.",
+    "en": "The gift deadline has passed. The walk stays open.",
+    "es": "El plazo del regalo terminó. El camino sigue abierto."
+  },
+  "adventPrizeEarnedTitle": {
+    "pt": "Você ganhou {months, plural, =1{1 mês} other{{months} meses}} de Peregrino+",
+    "en": "You got {months, plural, =1{1 month} other{{months} months}} of Peregrino+",
+    "es": "Ganaste {months, plural, =1{1 mes} other{{months} meses}} de Peregrino+",
+    "placeholders": {
+      "months": "int"
+    }
+  },
+  "adventPrizeEarnedSolo": {
+    "pt": "Você caminhou o Advento inteiro, um passo por dia.",
+    "en": "You walked all of Advent, one step a day.",
+    "es": "Caminaste todo el Adviento, un paso por día."
+  },
+  "adventPrizeEarnedPair": {
+    "pt": "Você e sua dupla chegaram juntos ao Natal.",
+    "en": "You and your Companion reached Christmas together.",
+    "es": "Tú y tu dupla llegaron juntos a la Navidad."
+  },
+  "adventPrizeEarnedGroup": {
+    "pt": "Seu grupo chegou junto ao Natal.",
+    "en": "Your group reached Christmas together.",
+    "es": "Tu grupo llegó junto a la Navidad."
+  },
+  "adventPrizePlusUntil": {
+    "pt": "Peregrino+ até {date}",
+    "en": "Peregrino+ until {date}",
+    "es": "Peregrino+ hasta el {date}",
+    "placeholders": {
+      "date": "String"
+    }
+  },
+  "adventPrizeKept": {
+    "pt": "Seus meses ficam guardados e entram quando sua assinatura terminar.",
+    "en": "Your months are saved and start when your subscription ends.",
+    "es": "Tus meses quedan guardados y empiezan cuando termine tu suscripción."
+  },
+  "adventPrizeShareLine": {
+    "pt": "Quem caminha os {days} dias ganha até {months, plural, =1{1 mês} other{{months} meses}} de Peregrino+. Em dupla ou em grupo, ganha mais.",
+    "en": "Walk the {days} days and get up to {months, plural, =1{1 month} other{{months} months}} of Peregrino+. As a pair or a group, you get more.",
+    "es": "Quien camina los {days} días gana hasta {months, plural, =1{1 mes} other{{months} meses}} de Peregrino+. En dupla o en grupo, gana más.",
+    "placeholders": {
+      "days": "int",
+      "months": "int"
+    }
+  },
+  "roomFormingTitle": {
+    "pt": "O grupo começa com {count}",
+    "en": "A group starts with {count}",
+    "es": "El grupo empieza con {count}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "roomFormingBody": {
+    "pt": "{count, plural, =1{Falta 1 pessoa} other{Faltam {count} pessoas}} para o grupo começar. Até lá, propósito, semana e presentes do grupo esperam.",
+    "en": "{count, plural, =1{1 more person} other{{count} more people}} and the group begins. Until then, purpose, week and group gifts wait.",
+    "es": "{count, plural, =1{Falta 1 persona} other{Faltan {count} personas}} para que el grupo empiece. Hasta entonces, propósito, semana y regalos del grupo esperan.",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "roomFormingInvite": {
+    "pt": "Chamar pessoas",
+    "en": "Invite people",
+    "es": "Llamar personas"
+  },
+  "roomFormingCompanion": {
+    "pt": "Só vocês dois? Caminhem em Companhia",
+    "en": "Just the two of you? Walk as Companions",
+    "es": "¿Solo ustedes dos? Caminen en Compañía"
+  }
+}

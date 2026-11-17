@@ -76,6 +76,15 @@ class RoomMembersList extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
+        // Dias da semana uma vez só, sobre a coluna das bolinhas.
+        if (members.isNotEmpty)
+          const Padding(
+            padding: EdgeInsets.only(right: inset, bottom: 2),
+            child: Align(
+              alignment: Alignment.centerRight,
+              child: RoomWeekLetters(),
+            ),
+          ),
         for (var i = 0; i < members.length; i++)
           _MemberRow(
             member: members[i],
@@ -428,11 +437,7 @@ class _WeekDots extends StatelessWidget {
         ],
       ),
     );
-    // Letras em cima das bolinhas, na própria linha de cada pessoa.
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [const RoomWeekLetters(), const SizedBox(height: 3), dots],
-    );
+    return dots;
   }
 }
 

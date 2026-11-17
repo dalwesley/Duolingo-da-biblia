@@ -44,10 +44,12 @@ import '../widgets/app_sheet.dart';
 import '../widgets/free_slot_gate.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
+import '../services/advent_prize_service.dart';
 import '../widgets/scene_study_panel.dart';
 import '../widgets/exercise_feedback_dialog.dart';
 import '../widgets/today_facts.dart';
 import '../widgets/share_insight_card.dart';
+import '../widgets/postcard_share.dart';
 import '../widgets/today_stage.dart';
 import '../widgets/exercise_panel.dart';
 import '../widgets/lamps_bar.dart';
@@ -65,9 +67,9 @@ import '../widgets/set_piece.dart';
 import '../widgets/verse_study_sheet.dart';
 import '../screens/difficulty_picker_screen.dart';
 
-/// Sessão única: entrada → atos → (micro) → insight → saída.
+/// Sessão única: entrada → atos → (micro) → insight → (prática) → saída.
 /// Estudo longo pré-quiz removido ([docs/SESSAO_TREINO.md]).
-enum _Phase { intro, quiz, micro, insight }
+enum _Phase { intro, quiz, micro, insight, life }
 
 /// O Anan chamando: na primeira vez (ensina o toque) ou quando a pessoa
 /// travou (erro, ou parada há um tempo).
@@ -91,6 +93,12 @@ class LessonScreen extends StatefulWidget {
   /// que acabou de passar pela trava).
   final bool plusGateDone;
 
+  /// Laboratório: pula intro/gestos e abre na placa Hoje (insight).
+  final bool startAtInsight;
+
+  /// Laboratório: mostra o slide do postal mesmo em prática (só UI).
+  final bool previewPostal;
+
   const LessonScreen({
     super.key,
     required this.missionSlug,
@@ -100,6 +108,8 @@ class LessonScreen extends StatefulWidget {
     this.questionIdsOverride,
     this.requiresPlus = false,
     this.plusGateDone = false,
+    this.startAtInsight = false,
+    this.previewPostal = false,
   });
 
   @override
@@ -182,6 +192,10 @@ class _LessonScreenState extends State<LessonScreen>
     super.initState();
     _impactFlash = AnimationController(vsync: this, duration: AppMotion.gentle);
     _load();
+    // Advento: a cena do dia vale como prova do prêmio (o servidor confere).
+    if (!widget.practiceMode) {
+      unawaited(AdventPrizeService.instance.sceneOpened(widget.missionSlug));
+    }
   }
 
   @override
@@ -529,7 +543,10 @@ class _LessonScreenState extends State<LessonScreen>
           .length
           .clamp(1, 99);
       _lamps = _lampCount;
-      _phase = _Phase.intro;
+      // Lab: vai direto à placa Hoje quando há frase; senão cai na intro.
+      _phase = widget.startAtInsight && plan.insight.trim().isNotEmpty
+          ? _Phase.insight
+          : _Phase.intro;
       _mission = Mission(
         slug: mission.slug,
         title: mission.localizedTitle,
@@ -963,10 +980,11 @@ class _LessonScreenState extends State<LessonScreen>
 
   void _goToCelebration({required bool forced}) {
     if (_mission == null) return;
-    // Atos → (micro) → insight → saída. Insight é sempre o último bate.
+    // Atos → (micro) → insight → (prática IRL) → saída.
     if (!forced &&
         _phase != _Phase.micro &&
         _phase != _Phase.insight &&
+        _phase != _Phase.life &&
         !widget.practiceMode &&
         !_insightOnConnect &&
         _canOfferMicro()) {
@@ -981,6 +999,7 @@ class _LessonScreenState extends State<LessonScreen>
     }
     if (_closingInsight.trim().isNotEmpty &&
         _phase != _Phase.insight &&
+        _phase != _Phase.life &&
         !_insightOnConnect) {
       setState(() {
         _celebrationForced = forced;
@@ -991,7 +1010,51 @@ class _LessonScreenState extends State<LessonScreen>
       });
       return;
     }
+    if (_shouldOfferLife()) {
+      setState(() {
+        _celebrationForced = forced;
+        _showFeedback = false;
+        _selected = null;
+        _isCorrect = null;
+        _phase = _Phase.life;
+      });
+      return;
+    }
     _pushCelebration(forced: forced);
+  }
+
+  bool _shouldOfferLife() {
+    if (_phase == _Phase.life) return false;
+    if (widget.practiceMode || _outOfLamps) return false;
+    final challenge = _study?.lifeChallenge;
+    if (challenge == null) return false;
+    final slug = _mission?.slug;
+    if (slug == null || slug.isEmpty) return false;
+    return !context.read<ProgressService>().didLifeChallenge(slug);
+  }
+
+  void _finishInsight() {
+    if (_shouldOfferLife()) {
+      setState(() => _phase = _Phase.life);
+      return;
+    }
+    _pushCelebration(forced: _celebrationForced);
+  }
+
+  Future<void> _completeLife({required bool marked}) async {
+    final slug = _mission?.slug;
+    if (marked && slug != null && slug.isNotEmpty) {
+      await context.read<ProgressService>().markLifeChallenge(slug);
+      AnalyticsService.instance.logEvent('life_challenge_done', {
+        'mission': slug,
+      });
+    } else if (slug != null) {
+      AnalyticsService.instance.logEvent('life_challenge_skip', {
+        'mission': slug,
+      });
+    }
+    if (!mounted) return;
+    _pushCelebration(forced: _celebrationForced || _outOfLamps);
   }
 
   bool _isReplayRun(ProgressService progress) =>
@@ -1009,9 +1072,22 @@ class _LessonScreenState extends State<LessonScreen>
   /// Livro do carimbo quando esta cena rende postal novo — mesma regra da
   /// celebração, que grava o postal. Null: a Hoje não carimba.
   String? _newPostcardBook(ProgressService progress) {
-    if (_mission == null || _outOfLamps || _isReplayRun(progress)) return null;
+    if (_mission == null || _outOfLamps) return null;
     final ref = _postcardRef;
-    if (ref.isEmpty || progress.postcardsOn.containsKey(_mission!.slug)) {
+    if (ref.isEmpty) return null;
+    // Lab: força o slide do postal na placa Hoje, sem gravar.
+    if (widget.previewPostal) {
+      return Postcard(
+        slug: _mission!.slug,
+        title: '',
+        ref: ref,
+        insight: '',
+        art: null,
+        on: DateTime.now(),
+      ).book;
+    }
+    if (_isReplayRun(progress) ||
+        progress.postcardsOn.containsKey(_mission!.slug)) {
       return null;
     }
     return Postcard(
@@ -1119,13 +1195,22 @@ class _LessonScreenState extends State<LessonScreen>
       await context.read<ProgressService>().grantBonusSteps(2);
     }
     if (!mounted) return;
-    // Micro antes do insight — insight fecha a sessão.
+    // Micro → insight → (prática) → saída.
     if (_closingInsight.trim().isNotEmpty && !_insightOnConnect) {
       setState(() {
         _showFeedback = false;
         _selected = null;
         _isCorrect = null;
         _phase = _Phase.insight;
+      });
+      return;
+    }
+    if (_shouldOfferLife()) {
+      setState(() {
+        _showFeedback = false;
+        _selected = null;
+        _isCorrect = null;
+        _phase = _Phase.life;
       });
       return;
     }
@@ -1461,6 +1546,7 @@ class _LessonScreenState extends State<LessonScreen>
                                 _Phase.quiz => _exercise.taskPromptLabel,
                                 _Phase.micro => context.l10n.lessonBonus,
                                 _Phase.insight => context.l10n.commonToday,
+                                _Phase.life => context.l10n.lessonLifeEyebrow,
                               },
                               subtitle: switch (_phase) {
                                 _Phase.intro => _address,
@@ -1469,6 +1555,7 @@ class _LessonScreenState extends State<LessonScreen>
                                 _Phase.micro => null,
                                 _Phase.insight =>
                                   context.l10n.lessonInsightSubtitle,
+                                _Phase.life => context.l10n.lessonLifeSubtitle,
                               },
                               onBack: _confirmExit,
                               leadingGlyph: CinematicGlyphResolver.forMission(
@@ -1614,10 +1701,17 @@ class _LessonScreenState extends State<LessonScreen>
                               stampBook: _newPostcardBook(
                                 context.read<ProgressService>(),
                               ),
+                              missionSlug: widget.missionSlug,
+                              sceneTitle: mission.localizedTitle,
                               accent: accent,
-                              onContinue: () {
-                                _pushCelebration(forced: _celebrationForced);
-                              },
+                              onContinue: _finishInsight,
+                            ),
+                            _Phase.life => _LifeChallengePanel(
+                              key: const ValueKey('life'),
+                              challenge: _study!.lifeChallenge!,
+                              accent: accent,
+                              onDone: () => _completeLife(marked: true),
+                              onLater: () => _completeLife(marked: false),
                             ),
                           },
                         ),
@@ -2078,9 +2172,88 @@ class _IntroPanel extends StatelessWidget {
   }
 }
 
+/// Prática IRL depois do insight — só aparece se o study tem dailyChallenge.
+class _LifeChallengePanel extends StatelessWidget {
+  final LifeChallenge challenge;
+  final Color accent;
+  final VoidCallback onDone;
+  final VoidCallback onLater;
+
+  const _LifeChallengePanel({
+    super.key,
+    required this.challenge,
+    required this.accent,
+    required this.onDone,
+    required this.onLater,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const SizedBox(height: AppSpace.sm),
+          Expanded(
+            child: StagePlate(
+              accent: accent,
+              tint: true,
+              padding: const EdgeInsets.fromLTRB(22, 24, 22, 24),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  SectionLabel(
+                    context.l10n.lessonLifeEyebrow,
+                    size: 12,
+                    color: a.sectionLabel,
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    challenge.title,
+                    style: AppTypography.title(size: 20, color: a.text),
+                  ),
+                  if (challenge.description.trim().isNotEmpty &&
+                      challenge.description.trim() !=
+                          challenge.title.trim()) ...[
+                    const SizedBox(height: 12),
+                    Text(
+                      challenge.description,
+                      style: AppTypography.body(
+                        size: 15,
+                        color: a.textSecondary,
+                      ),
+                    ),
+                  ],
+                  const Spacer(),
+                  Text(
+                    context.l10n.lessonLifeSubtitle,
+                    style: AppTypography.body(size: 13, color: a.textFaint),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: AppSpace.md),
+          CopperCta(
+            label: context.l10n.lessonLifeDone,
+            onTap: onDone,
+            trailing: null,
+          ),
+          const SizedBox(height: 10),
+          GhostCta(label: context.l10n.lessonLifeLater, onTap: onLater),
+          const SizedBox(height: AppSpace.sm),
+        ],
+      ),
+    );
+  }
+}
+
 /// Fim da cena: a placa Hoje ([TodayStage]) e, quando o estudo traz, os
-/// fatos que a pessoa leva ([TodayFacts]).
-class _InsightPanel extends StatelessWidget {
+/// fatos que a pessoa leva ([TodayFacts]). Com postal novo, carrossel
+/// frase ↔ postal e CTA de compartilhar conforme o slide.
+class _InsightPanel extends StatefulWidget {
   final String text;
   final List<StudyFact> facts;
   final String passageRef;
@@ -2088,6 +2261,8 @@ class _InsightPanel extends StatelessWidget {
   final String? art;
   final bool veiled;
   final String? stampBook;
+  final String missionSlug;
+  final String sceneTitle;
   final Color accent;
   final VoidCallback onContinue;
 
@@ -2096,6 +2271,8 @@ class _InsightPanel extends StatelessWidget {
     required this.text,
     required this.accent,
     required this.onContinue,
+    required this.missionSlug,
+    required this.sceneTitle,
     this.facts = const [],
     this.passageRef = '',
     this.passageText = '',
@@ -2105,58 +2282,263 @@ class _InsightPanel extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
-    final stage = TodayStage(
-      insight: text,
-      art: art,
-      veiled: veiled,
-      stampBook: stampBook,
-      reference: passageRef,
+  State<_InsightPanel> createState() => _InsightPanelState();
+}
+
+class _InsightPanelState extends State<_InsightPanel> {
+  final _pages = PageController();
+  int _page = 0;
+
+  /// Um compartilhar por vez: o 2º toque abriria outra folha do sistema.
+  bool _sharing = false;
+
+  Future<void> _guardShare(Future<void> Function() run) async {
+    if (_sharing) return;
+    _sharing = true;
+    try {
+      await run();
+    } finally {
+      _sharing = false;
+    }
+  }
+
+  @override
+  void dispose() {
+    _pages.dispose();
+    super.dispose();
+  }
+
+  Postcard? get _postcard {
+    final book = (widget.stampBook ?? '').trim();
+    if (book.isEmpty) return null;
+    final insight = widget.text.trim();
+    if (insight.isEmpty) return null;
+    return Postcard(
+      slug: widget.missionSlug,
+      title: widget.sceneTitle,
+      ref: widget.passageRef.trim(),
+      insight: insight,
+      art: widget.art,
       on: DateTime.now(),
-      accent: accent,
-      height: facts.isEmpty
-          ? null
-          // Baixa o bastante para os fatos começarem na primeira tela.
-          : (MediaQuery.sizeOf(context).height * 0.42).clamp(320.0, 380.0),
-      onShare: text.trim().isEmpty
-          ? null
-          : () {
-              AnalyticsService.instance.logEvent('today_share', {
-                'source': 'scene_end',
-              });
-              shareTodayCard(
-                context,
-                insight: text,
-                verseRef: passageRef,
-                art: art,
-              );
-            },
     );
+  }
+
+  bool get _hasPostal => _postcard != null;
+
+  /// Uma das três falas do Anan — muda com o dia, sem repetir sempre a mesma.
+  String _shareNudge(AppLocalizations l10n) {
+    return switch (DateTime.now().day % 3) {
+      0 => l10n.todayShareNudgeA,
+      1 => l10n.todayShareNudgeB,
+      _ => l10n.todayShareNudgeC,
+    };
+  }
+
+  Widget? _ananNudge(BuildContext context) {
+    if (widget.text.trim().isEmpty) return null;
+    final l10n = context.l10n;
+    return AnanSideSpeech(
+      face: CloudFace.feliz,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            l10n.todayShareNudgeMark,
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w800,
+              color: AnanSpeechBubble.mark,
+            ),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            _shareNudge(l10n),
+            style: AppTypography.body(
+              size: 15,
+              color: AnanSpeechBubble.ink,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _shareInsight() async {
+    AnalyticsService.instance.logEvent('today_share', {
+      'source': 'scene_end',
+    });
+    await shareTodayCard(
+      context,
+      insight: widget.text,
+      verseRef: widget.passageRef,
+      art: widget.art,
+    );
+    final ref = widget.passageRef.trim();
+    if (!mounted || ref.isEmpty) return;
+    await context.read<ProgressService>().recordSharedVerse(ref);
+  }
+
+  Future<void> _sharePostcard() async {
+    final card = _postcard;
+    if (card == null) return;
+    AnalyticsService.instance.logEvent('today_share', {
+      'source': 'scene_end_postcard',
+    });
+    await sharePostcardFlow(context, card);
+  }
+
+  Widget? _shareButton(BuildContext context) {
+    if (widget.text.trim().isEmpty) return null;
+    final onPostal = _hasPostal && _page == 1;
+    return GhostCta(
+      label: onPostal
+          ? context.l10n.todaySharePostcard
+          : context.l10n.todayShareInsight,
+      leading: CinematicGlyph.share,
+      expanded: true,
+      onTap: () => _guardShare(onPostal ? _sharePostcard : _shareInsight),
+    );
+  }
+
+  Widget _dots(AppearanceStyle a) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        for (var i = 0; i < 2; i++) ...[
+          if (i > 0) const SizedBox(width: 8),
+          AnimatedContainer(
+            duration: AppMotion.quick,
+            width: _page == i ? 18 : 8,
+            height: 8,
+            decoration: BoxDecoration(
+              color: _page == i
+                  ? AppRoles.reward
+                  : a.textFaint.withValues(alpha: 0.55),
+              borderRadius: BorderRadius.circular(AppRadii.pill),
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+
+  Widget _postalSlide(Postcard postcard, double height) {
+    final a = Appearance.of(context);
+    final width = (height * 0.72).clamp(200.0, 320.0);
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: a.cardFillSoft,
+        borderRadius: BorderRadius.circular(AppRadii.xl),
+        border: Border.all(color: a.cardBorder),
+      ),
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 14, 16, 8),
+            child: Text(
+              context.l10n.todayPostcardSlideHint,
+              style: AppTypography.body(
+                size: 12,
+                weight: FontWeight.w800,
+                color: AppRoles.reward,
+              ).copyWith(letterSpacing: 1.2),
+            ),
+          ),
+          Expanded(
+            child: Center(
+              child: Transform.rotate(
+                angle: -0.03,
+                child: PostcardView(
+                  postcard: postcard,
+                  width: width,
+                  reveal: 1,
+                  postmark: 1,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 12),
+        ],
+      ),
+    );
+  }
+
+  Widget _stageCarousel({required double? stageHeight, required Widget? anan}) {
+    final postcard = _postcard;
+    final stage = TodayStage(
+      insight: widget.text,
+      art: widget.art,
+      veiled: widget.veiled,
+      stampBook: widget.stampBook,
+      reference: widget.passageRef,
+      on: DateTime.now(),
+      accent: widget.accent,
+      showCloud: anan == null,
+      height: stageHeight,
+    );
+    if (postcard == null) return stage;
+
+    return LayoutBuilder(
+      builder: (context, box) {
+        final h = stageHeight ?? box.maxHeight;
+        final a = Appearance.of(context);
+        return Column(
+          children: [
+            Expanded(
+              child: PageView(
+                controller: _pages,
+                onPageChanged: (i) => setState(() => _page = i),
+                children: [
+                  stageHeight == null
+                      ? stage
+                      : SizedBox(height: h, child: stage),
+                  _postalSlide(postcard, h),
+                ],
+              ),
+            ),
+            const SizedBox(height: 10),
+            _dots(a),
+          ],
+        );
+      },
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final anan = _ananNudge(context);
+    final share = _shareButton(context);
+    final stageH = widget.facts.isEmpty
+        ? null
+        : (MediaQuery.sizeOf(context).height * 0.38).clamp(280.0, 340.0);
+    final carousel = _stageCarousel(stageHeight: stageH, anan: anan);
     final cta = CopperCta(
       label: context.l10n.commonContinue,
-      onTap: onContinue,
+      onTap: widget.onContinue,
       trailing: null,
     );
-    if (facts.isEmpty) {
+    final actions = <Widget>[
+      if (share != null) ...[share, const SizedBox(height: AppSpace.sm)],
+      cta,
+    ];
+    if (widget.facts.isEmpty) {
       return Padding(
         padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            const SizedBox(height: AppSpace.sm),
-            Expanded(child: stage),
+            if (anan != null) ...[
+              anan,
+              const SizedBox(height: AppSpace.md),
+            ],
+            Expanded(child: carousel),
             const SizedBox(height: AppSpace.md),
-            cta,
+            ...actions,
             const SizedBox(height: AppSpace.sm),
           ],
         ),
       );
     }
-    // Com fatos, o botão rola junto e fecha a leitura: pintura, fatos,
-    // Continuar. Se tudo couber, ele desce até o pé da tela.
-    // Sem IntrinsicHeight/SliverFillRemaining: a placa usa LayoutBuilder,
-    // que não responde intrínsecos. O minHeight + spaceBetween empurra o
-    // botão para o pé quando sobra espaço.
     return LayoutBuilder(
       builder: (context, box) => SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
@@ -2170,21 +2552,30 @@ class _InsightPanel extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  const SizedBox(height: AppSpace.sm),
-                  stage,
+                  if (anan != null) ...[
+                    anan,
+                    const SizedBox(height: AppSpace.md),
+                  ],
+                  SizedBox(
+                    height: (stageH ?? 320) + (_hasPostal ? 28 : 0),
+                    child: carousel,
+                  ),
                   const SizedBox(height: AppSpace.md),
                   TodayFacts(
-                    facts: facts,
-                    passageRef: passageRef,
-                    passageText: passageText,
-                    accent: accent,
+                    facts: widget.facts,
+                    passageRef: widget.passageRef,
+                    passageText: widget.passageText,
+                    accent: widget.accent,
                   ),
                   const SizedBox(height: AppSpace.lg),
                 ],
               ),
               Padding(
                 padding: const EdgeInsets.only(bottom: AppSpace.sm),
-                child: cta,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: actions,
+                ),
               ),
             ],
           ),

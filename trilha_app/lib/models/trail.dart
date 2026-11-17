@@ -250,12 +250,11 @@ class Trail {
       ContentOverlay.instance.trailField(slug, 'title') ?? title;
 
   /// Card da aba Trilhas onde esta trilha mora.
-  TrailJourney get journey =>
-      TrailJourney.forTrail(
-        realmId: realmId,
-        categoryId: categoryId,
-        collectionId: collectionId,
-      );
+  TrailJourney get journey => TrailJourney.forTrail(
+    realmId: realmId,
+    categoryId: categoryId,
+    collectionId: collectionId,
+  );
 
   String get localizedDescription =>
       ContentOverlay.instance.trailField(slug, 'description') ?? description;
