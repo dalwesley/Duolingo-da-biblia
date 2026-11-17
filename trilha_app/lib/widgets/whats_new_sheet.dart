@@ -19,7 +19,7 @@ import 'ui_primitives.dart';
 class WhatsNew {
   WhatsNew._();
 
-  static const _release = '1.0.48';
+  static const _release = '1.0.49';
   static const _key = 'whats_new_seen';
 
   static List<(CinematicGlyph, String)> _items(AppLocalizations l) => [

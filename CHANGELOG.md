@@ -9,7 +9,7 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
-## [1.0.48] — 2026-11-16
+## [1.0.49] — 2026-11-17
 
 ### Added
 - Presente do Advento: quem caminha os 26 dias (29/11 a 24/12) ganha Peregrino+ — 1 mês sozinho, 2 meses com a dupla da Companhia, 3 meses com 3+ do grupo concluindo. Dupla e grupo valem se formados até o fim do 1º dia; dia perdido pode ser feito depois, até 24/12. Card na tela do Advento, celebração quando o presente sobe e linha no texto de compartilhar
