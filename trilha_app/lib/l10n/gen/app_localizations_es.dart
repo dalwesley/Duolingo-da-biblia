@@ -3769,7 +3769,29 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get juntosInviteAdventBody =>
+      'Juntos, el regalo crece. Quien termina las escenas gana Peregrino+:';
+
+  @override
+  String get juntosInviteAdventTitle => 'Invita a alguien al Adviento';
+
+  @override
   String get juntosInviteCompanion => 'Invitar a un compañero';
+
+  @override
+  String get juntosInviteReferralCap =>
+      'Cada persona que se suscriba es 1 mes más, hasta 12 meses al año.';
+
+  @override
+  String get juntosInviteReferralEyebrow =>
+      'Una invitación que se vuelve regalo';
+
+  @override
+  String get juntosInviteReferralHow =>
+      'Vale la invitación de la Compañía y del grupo.';
+
+  @override
+  String get juntosInviteReferralTitle => 'Invita a alguien a caminar contigo';
 
   @override
   String get juntosInviteShort => 'Invitar';
@@ -9201,7 +9223,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get referralInviteLine =>
-      'Si la persona se suscribe a Peregrino+, ganas 1 mes de Plus.';
+      'Si la persona se suscribe a Peregrino+, ganas 1 mes de Peregrino+ gratis.';
 
   @override
   String referralRewardGranted(String name) {

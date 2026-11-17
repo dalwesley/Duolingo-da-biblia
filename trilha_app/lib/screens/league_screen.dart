@@ -25,6 +25,7 @@ import '../services/moderation_service.dart';
 import '../services/progress_service.dart';
 import '../services/companion_service.dart';
 import '../services/corner_service.dart';
+import '../services/advent_prize_service.dart';
 import '../services/invite_deep_link_service.dart';
 import '../services/league_service.dart';
 import '../services/remote_config_service.dart';
@@ -32,6 +33,7 @@ import '../services/room_service.dart';
 import '../services/app_update_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/guest_gate.dart';
+import '../utils/juntos_invite_pace.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../utils/content_filter.dart';
@@ -43,6 +45,7 @@ import '../widgets/corner_home_card.dart' show RaceDashes;
 import '../widgets/juntos_chrome.dart';
 import '../widgets/medal_art.dart';
 import '../widgets/juntos_inbox.dart';
+import '../widgets/juntos_invite_sheet.dart';
 import '../widgets/caravan_pilgrim_sheet.dart';
 import '../widgets/accept_invite_sheet.dart';
 import '../widgets/app_sheet.dart';
@@ -151,7 +154,7 @@ class _LeagueScreenState extends State<LeagueScreen>
       ..forward();
     InviteDeepLinkService.instance.addListener(_onPendingInvite);
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      _settle();
+      _settle().then((_) => _maybeInvitePitch());
       if (widget.active) _consumePendingInvite();
     });
   }
@@ -166,7 +169,99 @@ class _LeagueScreenState extends State<LeagueScreen>
       _consumePendingInvite();
       // Recarrega ranking ao abrir a aba — evita lista vazia se o 1º fetch
       // rodou antes do backend estar pronto ou falhou em silêncio.
-      _settle();
+      _settle().then((_) => _maybeInvitePitch());
+    }
+  }
+
+  bool _pitchOpen = false;
+
+  /// Folha de convite (Advento ou indicação), no ritmo de
+  /// [JuntosInvitePace]. O botão abre o compartilhar externo que já existe
+  /// (estação ou Caravana). Só com Companhia e grupos já lidos (para saber
+  /// se a dupla/grupo do Advento já existe), sem convite chegando por link
+  /// e sem outra tela por cima.
+  Future<void> _maybeInvitePitch() async {
+    if (!mounted || !widget.active || _handlingInvite || _pitchOpen) return;
+    if (GuestGate.isGuest(context)) return;
+    final links = InviteDeepLinkService.instance;
+    if (links.pendingCompanionCode != null || links.pendingRoomCode != null) {
+      return;
+    }
+    final companions = context.read<CompanionService>();
+    final rooms = context.read<RoomService>();
+    if (!companions.isLoaded || !rooms.isLoaded) return;
+    final hasPartner = companions.companions.any((c) => !c.awaitingPartner);
+    // Indicação só pelo convite que conta: Companhia (vaga livre ou convite
+    // esperando) ou o grupo em que a pessoa está.
+    final awaiting = companions.companions
+        .where((c) => c.awaitingPartner)
+        .firstOrNull;
+    final companionOpen =
+        context.read<RemoteConfigService>().companionEnabled &&
+        (companions.canAdd || awaiting != null);
+    final room = rooms.activeRoom;
+    final via = companionOpen
+        ? JuntosReferralVia.companion
+        : room != null
+        ? JuntosReferralVia.group
+        : null;
+    final adventDone =
+        hasPartner || (rooms.activeRoom != null && rooms.isFormed);
+    final advent = AdventPrizeService.instance.upcomingRoster();
+    final now = DateTime.now();
+    _pitchOpen = true;
+    try {
+      final kind = await JuntosInvitePace.load(
+        now: now,
+        rosterAt: advent?.rosterAt,
+        adventDone: adventDone,
+        canRefer: via != null,
+      );
+      if (kind == null || !mounted || !widget.active) return;
+      if (!(ModalRoute.of(context)?.isCurrent ?? true)) return;
+      await JuntosInvitePace.markShown(now);
+      if (!mounted) return;
+      final choice = await showJuntosInviteSheet(
+        context,
+        kind: kind,
+        advent: advent,
+        via: via ?? JuntosReferralVia.companion,
+      );
+      if (!mounted) return;
+      switch (choice) {
+        case JuntosInviteChoice.later:
+          await JuntosInvitePace.markDeclined(kind);
+        case JuntosInviteChoice.share when kind == JuntosInviteKind.referral:
+          // A folha de QR tem o Compartilhar (WhatsApp); compartilhar ou
+          // copiar lá marca a indicação como feita.
+          if (via == JuntosReferralVia.group && room != null) {
+            setState(() => _tab = _tabGrupos);
+            await _shareRoomInvite(context, room);
+          } else {
+            setState(() {
+              _tab = _tabCompanhia;
+              _companhiaPane = 0;
+            });
+            if (awaiting != null) {
+              await _openCompanionInvite(context, awaiting);
+            } else {
+              await _createCompanion(context);
+            }
+          }
+        case JuntosInviteChoice.share:
+          await JuntosInvitePace.markActed(kind);
+          if (!mounted) return;
+          final campaign = advent == null
+              ? null
+              : SeasonWalkCatalog.all()
+                    .where((c) => c.id == advent.campaignId)
+                    .firstOrNull;
+          if (campaign != null) {
+            await shareSeasonWalkInvite(context, campaign);
+          }
+      }
+    } finally {
+      _pitchOpen = false;
     }
   }
 

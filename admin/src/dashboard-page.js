@@ -2,6 +2,8 @@
  * Início: o que precisa de atenção hoje — relatos abertos, edições do painel
  * que ainda não voltaram para os arquivos locais, Pioneiro e versão do app. O status do conteúdo por trilha roda sob demanda.
  */
+import { getFunctions, httpsCallable } from 'firebase/functions';
+import { app } from './firebase.js';
 import { loadRemoteConfig, rcValue } from './remote-config.js';
 import {
   COL,
@@ -36,6 +38,121 @@ const REPORT_QUEUES = [
   { col: COL.authorSuggestions, label: 'Autores', tab: 'authors' },
 ];
 
+const moderateUser = httpsCallable(getFunctions(app, 'us-central1'), 'moderateUser');
+const DAY_MS = 24 * 3600 * 1000;
+
+const TIER_LABEL = { none: '—', solo: 'Sozinho', pair: 'Companhia', group: 'Grupo' };
+
+function ago(iso) {
+  if (!iso) return 'nunca';
+  const ms = Date.now() - Date.parse(iso);
+  if (ms < 3600 * 1000) return `há ${Math.max(1, Math.round(ms / 60000))} min`;
+  if (ms < DAY_MS) return `há ${Math.round(ms / 3600000)} h`;
+  return `há ${Math.round(ms / DAY_MS)} dia(s)`;
+}
+
+function dmy(iso) {
+  if (!iso) return '—';
+  return new Date(iso).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' });
+}
+
+/**
+ * Saúde do webhook RevenueCat. O carimbo (`ops/revenuecat`) só existe depois
+ * do deploy que o grava; até lá, sem entregas registradas.
+ */
+function webhookCard(ops) {
+  if (!ops) {
+    return card('Webhook RevenueCat', '<p class="db-lead">Não consegui ler (a função <code>moderateUser</code> precisa do deploy novo).</p>');
+  }
+  const w = ops.webhook || {};
+  const p = ops.plus || {};
+  const okMs = w.lastOkAt ? Date.parse(w.lastOkAt) : 0;
+  const newer = (iso) => iso && Date.parse(iso) > okMs;
+  let tone = 'ok';
+  let verdict = 'Entregando normalmente.';
+  if (newer(w.lastUnauthorizedAt)) {
+    tone = 'bad';
+    verdict = 'Última entrega recusada: o Authorization header do RevenueCat não bate com o segredo.';
+  } else if (newer(w.lastErrorAt)) {
+    tone = 'bad';
+    verdict = `Última entrega falhou ao gravar: ${escapeHtml(w.lastError || 'erro')}.`;
+  } else if (!w.received) {
+    tone = p.total ? 'warn' : '';
+    verdict = 'Nenhuma entrega registrada ainda. Use "Send test event" no RevenueCat para conferir.';
+  } else if (p.viaWebhook && Date.now() - okMs > 35 * DAY_MS) {
+    tone = 'warn';
+    verdict = 'Mais de 35 dias sem evento com assinantes ativos: renovações deveriam ter chegado.';
+  }
+  const body = `
+    <p class="db-lead">${verdict}</p>
+    <ul class="db-list">
+      <li><span>Última entrega aceita</span><strong>${escapeHtml(ago(w.lastOkAt))}${w.lastType ? ` · ${escapeHtml(w.lastType)}` : ''}${w.lastEnv ? ` <small>${escapeHtml(w.lastEnv.toLowerCase())}</small>` : ''}</strong></li>
+      <li><span>Último evento de produção</span><strong>${escapeHtml(ago(w.lastProductionAt))}</strong></li>
+      <li><span>Entregas registradas</span><strong>${w.received || 0}</strong></li>
+      <li><span>Plus ativos</span><strong>${p.total || 0}${p.trial ? ` · ${p.trial} em teste` : ''}</strong></li>
+      ${p.manual ? `<li><span>Ligados à mão (sem RevenueCat)</span><strong>${p.manual}</strong></li>` : ''}
+    </ul>`;
+  return card('Webhook RevenueCat', body, { tone });
+}
+
+/** Advento: quem caminha, provas, dupla/grupo e meses entregues. */
+function adventCard(adv) {
+  if (!adv) {
+    return `<section class="db-card wide"><header><h3>Advento</h3></header><p class="db-lead">Não consegui ler (a função <code>moderateUser</code> precisa do deploy novo).</p></section>`;
+  }
+  const c = adv.config;
+  const people = [...(adv.people || [])].sort((a, b) => b.proven - a.proven || String(a.name).localeCompare(String(b.name), 'pt-BR'));
+  const joined = people.filter((p) => p.joined).length;
+  const proving = people.filter((p) => p.proven > 0).length;
+  const done = people.filter((p) => p.completedAtMs).length;
+  const months = people.reduce((n, p) => n + (p.grantedMonths || 0), 0);
+  const startMs = Date.parse(`${c.startYmd}T03:00:00Z`);
+  const before = Date.now() < startMs;
+  const status = before
+    ? `Começa ${dmy(new Date(startMs).toISOString())} (em ${Math.ceil((startMs - Date.now()) / DAY_MS)} dia(s)). Duplas e grupos contam pela foto de ${dmy(c.rosterAt)} 23:59; até lá a coluna mostra como está agora.`
+    : adv.rosterTaken
+      ? `Foto das duplas e grupos tirada ${dmy(adv.rosterTakenAt)}. Prazo ${dmy(c.deadline)}.`
+      : `Em andamento · prazo ${dmy(c.deadline)}.`;
+  const together = (p) => {
+    const parts = [];
+    for (const g of p.groups || []) {
+      const ok = g.size >= c.groupMin;
+      parts.push(`<span class="rv-pill ${ok ? 'ok' : ''} sm" title="${g.proven} de ${g.size} com prova">Grupo ${escapeHtml(g.name || g.code)} · ${g.size}</span>`);
+    }
+    for (const o of p.pairs || []) {
+      parts.push(`<span class="rv-pill sm" title="${o.proven} cena(s) provada(s)">Companhia: ${escapeHtml(o.name || o.uid.slice(0, 6))}</span>`);
+    }
+    return parts.join(' ') || '<span class="us-muted">sozinho</span>';
+  };
+  const rows = people.map((p) => {
+    const pct = Math.min(100, Math.round((p.proven / c.days) * 100));
+    const prize = p.tier !== 'none'
+      ? `<span class="rv-pill ok sm">${TIER_LABEL[p.tier]} · ${p.months} mês(es)</span>`
+      : `<span class="us-muted" title="Melhor nível possível hoje">até ${TIER_LABEL[p.potential]} · ${c.months[p.potential]} mês(es)</span>`;
+    const rej = p.rejects ? `<span class="rv-pill warn sm" title="Último motivo: ${escapeHtml(p.lastReject || '')}">${p.rejects} recusa(s)</span>` : '';
+    return `<tr>
+      <td>${escapeHtml(p.name || '(sem nome)')}${p.joined ? '' : ' <small class="us-muted">(fora da caminhada)</small>'}<br><code class="us-uid">${escapeHtml(p.uid)}</code></td>
+      <td><div class="db-meter adv-meter" title="${p.proven} de ${c.days}"><span style="width:${pct}%"></span></div><small>${p.proven}/${c.days}${p.completedAtMs ? ' · concluiu' : ''}</small> ${rej}</td>
+      <td>${together(p)}</td>
+      <td>${prize}</td>
+    </tr>`;
+  }).join('');
+  return `
+    <section class="db-card wide${done ? ' ok' : ''}" id="advent-card">
+      <header>
+        <h3>Advento <small class="db-sub">${escapeHtml(c.id)}</small></h3>
+        <span class="db-sub">${joined} na caminhada · ${proving} com prova · ${done} concluíram · ${months} mês(es) entregue(s)</span>
+      </header>
+      <p class="db-lead">${status} Prêmio: sozinho ${c.months.solo}, Companhia ${c.months.pair}, grupo de ${c.groupMin}+ ${c.months.group} mês(es).</p>
+      ${people.length
+        ? `<div class="table-wrap"><table class="data-table">
+            <thead><tr><th>Peregrino</th><th>Cenas provadas</th><th>Junto com</th><th>Prêmio</th></tr></thead>
+            <tbody>${rows}</tbody>
+          </table></div>`
+        : '<p class="ez-hint">Ninguém entrou na caminhada ainda.</p>'}
+    </section>`;
+}
+
 async function safe(promise, fallback = null) {
   try {
     return await promise;
@@ -56,7 +173,8 @@ export async function renderDashboard(root, navigate) {
   root.innerHTML = `<div class="ez-page wide"><div class="ez-skeleton">Carregando…</div></div>`;
   const isAdmin = getRole() === 'admin';
 
-  const [meta, release, reportCounts, editedQ, editedS, deletes, pioneer, rc, trashAll] = await Promise.all([
+  const callData = (input) => moderateUser(input).then((r) => r.data);
+  const [meta, release, reportCounts, editedQ, editedS, deletes, pioneer, rc, trashAll, ops, adv] = await Promise.all([
     safe(getCatalogMeta()),
     safe(getAppRelease()),
     Promise.all(REPORT_QUEUES.map((r) => safe(countWhere(r.col, 'status', 'open'), null))),
@@ -66,6 +184,8 @@ export async function renderDashboard(root, navigate) {
     safe(getDocById(COL.stats, 'pioneer')),
     safe(loadRemoteConfig(), null),
     safe(listTrash(), []),
+    isAdmin ? safe(callData({ action: 'ops' })) : null,
+    isAdmin ? safe(callData({ action: 'advent' })) : null,
   ]);
 
   // Edições do painel agrupadas por trilha.
@@ -156,7 +276,10 @@ export async function renderDashboard(root, navigate) {
         })}
         ${card('Edições do painel', pendingBody, { tone: pendingTotal ? 'warn' : 'ok' })}
         ${card('Pioneiro', pioneerBody)}
+        ${isAdmin ? webhookCard(ops) : ''}
       </div>
+
+      ${isAdmin ? adventCard(adv) : ''}
 
       <section class="db-card wide" id="content-status">
         <header>

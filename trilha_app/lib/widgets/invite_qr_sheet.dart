@@ -13,6 +13,7 @@ import '../services/app_update_service.dart';
 import '../services/companion_service.dart';
 import '../services/invite_deep_link_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/juntos_invite_pace.dart';
 import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
@@ -173,6 +174,7 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
 
   Future<void> _copyCode() async {
     ActHaptics.tap();
+    unawaited(JuntosInvitePace.markShared());
     await Clipboard.setData(ClipboardData(text: widget.code));
     if (!mounted) return;
     showAppToastFor(
@@ -208,6 +210,8 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
           imageFile = XFile(file.path, mimeType: 'image/png');
         }
       }
+      // Convite enviado: a folha de indicação da aba Juntos para.
+      unawaited(JuntosInvitePace.markShared());
       await SharePlus.instance.share(
         ShareParams(
           files: imageFile == null ? null : [imageFile],
@@ -250,13 +254,14 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
     return Stack(
       clipBehavior: Clip.none,
       children: [
-        // Card rico só para o share (Opacity 0 ainda pinta → toImage funciona).
+        // Card rico só para o share. Fica pintado fora da tela: Opacity 0
+        // pularia a pintura e o toImage falharia ('!debugNeedsPaint').
         Positioned(
           left: 0,
           top: 0,
           child: IgnorePointer(
-            child: Opacity(
-              opacity: 0,
+            child: Transform.translate(
+              offset: const Offset(-10000, 0),
               child: SizedBox(
                 width: 360,
                 child: RepaintBoundary(

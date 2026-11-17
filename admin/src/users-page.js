@@ -14,7 +14,7 @@
  */
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import { app } from './firebase.js';
-import { COL, formatDate, getDocById, listDocs, listWhere } from './db.js';
+import { COL, formatDate, getAppRelease, getDocById, listDocs, listWhere } from './db.js';
 import { getRole } from './roles.js';
 import { bindModalDismiss, escapeHtml, showModalElement, showToast } from './ui.js';
 import { openPersonModal } from './person-modal.js';
@@ -22,6 +22,36 @@ import { openPersonModal } from './person-modal.js';
 const moderateUser = httpsCallable(getFunctions(app, 'us-central1'), 'moderateUser');
 
 const GIFT_CODE = /^[A-Z0-9]{8}$/;
+
+/** Builds até aqui perdem a trilha da cena emprestada no cache (A Promessa). */
+const OLD_BUILD_MAX = 39;
+const DAY_MS = 24 * 3600 * 1000;
+
+const FILTERS = [
+  { key: 'all', label: 'Todos' },
+  { key: 'plus', label: 'Plus' },
+  { key: 'trial', label: 'Em teste' },
+  { key: 'active7', label: 'Ativos 7 dias' },
+  { key: 'android', label: 'Android' },
+  { key: 'ios', label: 'iOS' },
+  { key: 'outdated', label: 'Versão desatualizada' },
+  { key: 'old', label: `Build ≤ ${OLD_BUILD_MAX}` },
+];
+
+const TIMELINE_ICON = {
+  account: '🔑',
+  app: '📱',
+  scene: '🎬',
+  trail: '🧭',
+  bible: '📖',
+  invite: '✉️',
+  plus: '⭐',
+  together: '🤝',
+  gift: '🎁',
+  report: '⚑',
+  moderation: '🛡️',
+  season: '🕯️',
+};
 
 const PLATFORM_LABEL = {
   android: 'Android',
@@ -57,6 +87,7 @@ const SORT_COLS = [
   { key: 'platform', label: 'Aparelho' },
   { key: 'appVersion', label: 'Versão' },
   { key: 'plus', label: 'Plus' },
+  { key: 'activity', label: 'Atividade' },
   { key: 'created', label: 'Criado' },
   { key: 'seen', label: 'Último acesso' },
 ];
@@ -82,13 +113,86 @@ function dayLabel(raw) {
   return `${d}/${m}/${y}`;
 }
 
-function plusCell(u) {
-  if (u.plusActive) {
-    return u.plusInTrial
-      ? '<span class="rv-pill ok sm">Plus · teste</span>'
-      : '<span class="rv-pill ok sm">Plus</span>';
+function shortDay(ms) {
+  const d = new Date(ms);
+  return `${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}`;
+}
+
+function expiresMs(u) {
+  const raw = u.plusExpiresAt;
+  if (!raw) return null;
+  const ms = typeof raw?.toMillis === 'function' ? raw.toMillis() : Date.parse(raw);
+  return Number.isNaN(ms) ? null : ms;
+}
+
+/**
+ * Estado do Plus para a lista. O webhook grava teste, data e renovação;
+ * conta ligada pelo script não tem `plusSource` (sem data, "manual").
+ */
+export function plusState(u, now = Date.now()) {
+  if (!u.plusActive) return { kind: 'none', label: 'não', tone: '' };
+  const exp = expiresMs(u);
+  if (u.plusSource !== 'revenuecat' && !exp) {
+    return { kind: 'manual', label: 'Plus · manual', tone: 'plus', title: 'Ligado pelo script, sem dados do RevenueCat' };
   }
-  return '<span class="rv-pill sm">não</span>';
+  if (exp && exp < now) {
+    return { kind: 'stale', label: `Plus · venceu ${shortDay(exp)}`, tone: 'bad', title: 'Data passou e nenhum evento desligou o Plus' };
+  }
+  const until = exp ? ` ${shortDay(exp)}` : '';
+  if (u.plusInTrial) {
+    const left = exp ? Math.max(0, Math.ceil((exp - now) / DAY_MS)) : null;
+    return {
+      kind: 'trial',
+      label: `Teste · até${until}`,
+      tone: 'warn',
+      title: left != null ? `${left} dia(s) de teste restantes` : 'Em teste grátis',
+    };
+  }
+  if (u.plusWillRenew === false) {
+    return { kind: 'canceled', label: `Cancelou · vence${until}`, tone: 'warn', title: 'Não renova' };
+  }
+  return { kind: 'paid', label: exp ? `Plus · renova${until}` : 'Plus', tone: 'ok' };
+}
+
+function plusCell(u) {
+  const st = plusState(u);
+  const title = st.title ? ` title="${escapeHtml(st.title)}"` : '';
+  return `<span class="rv-pill ${st.tone} sm"${title}>${escapeHtml(st.label)}</span>`;
+}
+
+function scenesDone(u) {
+  return Array.isArray(u.completedMissions) ? u.completedMissions.length : 0;
+}
+
+function activityCell(u) {
+  const n = scenesDone(u);
+  const streak = Number(u.streak) || 0;
+  if (!n && !streak) return '<span class="us-muted">nenhuma cena</span>';
+  const last = u.lastMissionSlug ? ` title="Última: ${escapeHtml(u.lastMissionSlug)}"` : '';
+  return `<span${last}>${n} cena${n === 1 ? '' : 's'}${streak ? ` · 🔥${streak}` : ''}</span>`;
+}
+
+function buildOf(u) {
+  const b = Number(String(u.buildNumber || '').trim());
+  if (b) return b;
+  const m = String(u.appVersion || '').match(/\((\d+)\)/);
+  return m ? Number(m[1]) : 0;
+}
+
+/** Marcas que os filtros rápidos usam (uma string por linha). */
+function rowTags(u, latestBuild) {
+  const tags = [];
+  const st = plusState(u);
+  if (st.kind !== 'none') tags.push('plus');
+  if (st.kind === 'trial') tags.push('trial');
+  const seen = dayKey(u.lastSeenDate);
+  if (seen && Date.now() - Date.parse(`${seen}T12:00:00Z`) <= 7 * DAY_MS) tags.push('active7');
+  const pk = platformKey(u);
+  if (pk) tags.push(pk);
+  const b = buildOf(u);
+  if (b && latestBuild && b < latestBuild) tags.push('outdated');
+  if (b && b <= OLD_BUILD_MAX) tags.push('old');
+  return tags.join(' ');
 }
 
 function platformKey(u) {
@@ -111,9 +215,15 @@ function versionLabel(u) {
   return build ? `${v} (${build})` : v;
 }
 
-function versionCell(u) {
+function versionCell(u, latestBuild = 0) {
   const label = versionLabel(u);
-  return label ? `<code class="us-uid">${escapeHtml(label)}</code>` : '—';
+  if (!label) return '—';
+  const b = buildOf(u);
+  const tone = b && b <= OLD_BUILD_MAX ? ' is-old' : b && latestBuild && b < latestBuild ? ' is-outdated' : '';
+  const title = tone === ' is-old'
+    ? ' title="Build antigo: perde cenas emprestadas. Peça para atualizar."'
+    : tone ? ` title="Loja já tem o build ${latestBuild}"` : '';
+  return `<code class="us-uid${tone}"${title}>${escapeHtml(label)}</code>`;
 }
 
 function fmt(v, key, u = null) {
@@ -137,8 +247,12 @@ function sortValue(u, key) {
       return platformKey(u);
     case 'appVersion':
       return versionLabel(u).toLowerCase();
-    case 'plus':
-      return u.plusActive ? (u.plusInTrial ? 1 : 2) : 0;
+    case 'plus': {
+      const order = { none: 0, stale: 1, manual: 2, trial: 3, canceled: 4, paid: 5 };
+      return order[plusState(u).kind] ?? 0;
+    }
+    case 'activity':
+      return scenesDone(u);
     case 'created':
       return dayKey(u.firstOpenDate);
     case 'seen':
@@ -274,7 +388,9 @@ async function openSupportModal({ uid, user: known, onOpenFicha } = {}) {
             <button type="button" class="modal-close" aria-label="Fechar">×</button>
           </header>
           <ul class="db-list">
+            <li><span>Situação do Plus</span><strong>${plusCell(u)}</strong></li>
             ${MAIN_FIELDS.map(([k, label]) => `<li><span>${escapeHtml(label)}</span><strong>${fmt(u[k], k, u)}</strong></li>`).join('')}
+            <li><span>Cenas concluídas</span><strong>${scenesDone(u)}</strong></li>
           </ul>
           <div class="us-actions">
             <p class="ez-hint">Plus vem do webhook RevenueCat. Para teste manual:</p>
@@ -283,6 +399,8 @@ async function openSupportModal({ uid, user: known, onOpenFicha } = {}) {
             <a class="btn btn-ghost btn-sm" target="_blank" rel="noopener" href="https://console.firebase.google.com/project/${escapeHtml(import.meta.env.VITE_FIREBASE_PROJECT_ID || 'trilha-biblia')}/firestore/data/~2Fusers~2F${encodeURIComponent(uid)}">Abrir no Console ↗</a>
             <button type="button" class="btn btn-secondary btn-sm" data-open-ficha>Ficha e moderação</button>
           </div>
+          <h4 class="us-sub">Linha do tempo</h4>
+          <div id="us-timeline"><p class="ez-hint">Carregando…</p></div>
           <h4 class="us-sub">Relatos</h4>
           ${reports.length
             ? `<ul class="db-list">${reports.map((r) => `<li><span>${escapeHtml(r.kind)} · ${escapeHtml(r.reason || r.category || '')} ${r.comment ? `— ${escapeHtml(String(r.comment).slice(0, 120))}` : ''}</span><strong>${escapeHtml(r.status || 'open')} · ${escapeHtml(formatDate(r.createdAt, { time: false }))}</strong></li>`).join('')}</ul>`
@@ -308,9 +426,42 @@ async function openSupportModal({ uid, user: known, onOpenFicha } = {}) {
       close();
       onOpenFicha?.(uid, name);
     });
+    loadTimeline(modal.querySelector('#us-timeline'), uid, () => closed, (other) => {
+      close();
+      openSupportModal({ uid: other, onOpenFicha });
+    });
   } catch (e) {
     close();
     showToast(e.message || String(e), 'error');
+  }
+}
+
+function timelineHtml(events) {
+  if (!events.length) return '<p class="ez-hint">Nada registrado para esta conta.</p>';
+  return `<ol class="us-timeline">
+    ${events.map((e) => {
+      const when = new Date(e.at);
+      const date = Number.isNaN(when.getTime()) ? '' : when.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: '2-digit' });
+      const link = e.uid ? ` <button type="button" class="us-tl-link" data-tl-uid="${escapeHtml(e.uid)}" title="Abrir esta conta">${escapeHtml(e.uid.slice(0, 6))}…</button>` : '';
+      return `<li class="us-tl-${escapeHtml(e.kind)}">
+        <time>${escapeHtml(date)}</time>
+        <span class="us-tl-icon" aria-hidden="true">${TIMELINE_ICON[e.kind] || '•'}</span>
+        <span>${escapeHtml(e.text)}${e.detail ? ` <small>${escapeHtml(e.detail)}</small>` : ''}${link}</span>
+      </li>`;
+    }).join('')}
+  </ol>`;
+}
+
+async function loadTimeline(el, uid, isClosed, openOther) {
+  if (!el) return;
+  try {
+    const { data } = await moderateUser({ action: 'timeline', uid });
+    if (isClosed()) return;
+    el.innerHTML = timelineHtml(data?.events || []);
+    el.querySelectorAll('[data-tl-uid]').forEach((b) => b.addEventListener('click', () => openOther(b.dataset.tlUid)));
+  } catch (e) {
+    if (isClosed()) return;
+    el.innerHTML = `<p class="ez-hint">Linha do tempo indisponível (${escapeHtml(e.message || String(e))}). A função <code>moderateUser</code> precisa do deploy novo.</p>`;
   }
 }
 
@@ -339,11 +490,15 @@ function giftCard(g) {
     </section>`;
 }
 
-function usersTable(users, sort) {
+function usersTable(users, sort, latestBuild, filter) {
   if (!users.length) return '<p class="ez-hint">Nenhuma conta em <code>users</code>.</p>';
-  const plusN = users.filter((u) => u.plusActive).length;
+  const tagged = users.map((u) => ({ u, tags: rowTags(u, latestBuild) }));
+  const count = (k) => (k === 'all' ? users.length : tagged.filter((x) => x.tags.split(' ').includes(k)).length);
   return `
-    <p class="db-lead">${users.length} contas · ${plusN} Plus · clique no cabeçalho para ordenar</p>
+    <div class="us-filters" role="group" aria-label="Filtros rápidos">
+      ${FILTERS.map((f) => `<button type="button" class="ez-chip${filter === f.key ? ' active' : ''}" data-filter-key="${f.key}">${escapeHtml(f.label)} <small>${count(f.key)}</small></button>`).join('')}
+    </div>
+    <p class="db-lead"><span id="us-count">${users.length}</span> contas · clique no cabeçalho para ordenar${latestBuild ? ` · loja no build ${latestBuild}` : ''}</p>
     <div class="table-wrap">
       <table class="data-table" id="us-table">
         <thead>
@@ -353,17 +508,18 @@ function usersTable(users, sort) {
           </tr>
         </thead>
         <tbody>
-          ${users.map((u) => {
+          ${tagged.map(({ u, tags }) => {
             const name = displayName(u);
             const email = u.email || '';
             const hay = `${name} ${email} ${u.id}`.toLowerCase();
             return `
-              <tr data-filter="${escapeHtml(hay)}">
+              <tr data-filter="${escapeHtml(hay)}" data-tags="${tags}">
                 <td>${escapeHtml(name)}<br><code class="us-uid">${escapeHtml(u.id)}</code></td>
                 <td>${email ? escapeHtml(email) : '—'}</td>
                 <td>${platformCell(u)}</td>
-                <td>${versionCell(u)}</td>
+                <td>${versionCell(u, latestBuild)}</td>
                 <td>${plusCell(u)}</td>
+                <td>${activityCell(u)}</td>
                 <td>${escapeHtml(dayLabel(u.firstOpenDate))}</td>
                 <td>${escapeHtml(dayLabel(u.lastSeenDate))}</td>
                 <td class="td-actions">
@@ -385,6 +541,8 @@ export async function renderUsersPage(root) {
   let allUsers = [];
   let sort = { key: 'seen', dir: 'desc' };
   let emailsReady = true;
+  let latestBuild = 0;
+  let filter = 'all';
 
   root.innerHTML = `
     <div class="ez-page wide">
@@ -412,10 +570,15 @@ export async function renderUsersPage(root) {
 
   function applyFilter() {
     const q = (input?.value || '').trim().toLowerCase();
+    let shown = 0;
     listEl.querySelectorAll('#us-table tbody tr').forEach((tr) => {
       const hay = tr.dataset.filter || '';
-      tr.hidden = Boolean(q) && !hay.includes(q);
+      const tags = (tr.dataset.tags || '').split(' ');
+      tr.hidden = (Boolean(q) && !hay.includes(q)) || (filter !== 'all' && !tags.includes(filter));
+      if (!tr.hidden) shown += 1;
     });
+    const countEl = listEl.querySelector('#us-count');
+    if (countEl) countEl.textContent = shown === allUsers.length ? String(shown) : `${shown} de ${allUsers.length}`;
   }
 
   function openFicha(uid, name = '') {
@@ -446,8 +609,15 @@ export async function renderUsersPage(root) {
     const note = emailsReady
       ? ''
       : '<p class="ez-hint">E-mails do login não carregaram. A lista mostra só o que ainda está no perfil público.</p>';
-    listEl.innerHTML = note + usersTable(sorted, sort);
+    listEl.innerHTML = note + usersTable(sorted, sort, latestBuild, filter);
     wireRowActions(listEl);
+    listEl.querySelectorAll('[data-filter-key]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        filter = btn.dataset.filterKey;
+        listEl.querySelectorAll('[data-filter-key]').forEach((b) => b.classList.toggle('active', b === btn));
+        applyFilter();
+      });
+    });
     listEl.querySelectorAll('th[data-sort]').forEach((th) => {
       th.addEventListener('click', () => {
         const key = th.dataset.sort;
@@ -466,10 +636,12 @@ export async function renderUsersPage(root) {
     listEl.innerHTML = '<div class="ez-skeleton">Carregando contas…</div>';
     try {
       // Sem orderBy: users não tem campo `order` — listCollection devolveria [].
-      const [users, reports] = await Promise.all([
+      const [users, reports, release] = await Promise.all([
         listDocs(COL.users),
         listDocs(COL.appReports).catch(() => []),
+        getAppRelease().catch(() => null),
       ]);
+      latestBuild = Number(release?.latestBuild) || 0;
       // Último relato com cada campo — cobre contas sem sync recente do perfil.
       const fromReport = {};
       for (const r of reports) {

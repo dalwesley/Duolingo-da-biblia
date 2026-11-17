@@ -41,6 +41,19 @@ class AdventPrizeService extends ChangeNotifier {
   AdventPrizeState stateFor(String campaignId) =>
       _states[campaignId] ?? AdventPrizeState.empty;
 
+  /// Campanha cuja foto do 1º dia ainda vem (dupla/grupo ainda contam), ou
+  /// null. Para o convite da aba Juntos.
+  AdventPrizeConfig? upcomingRoster([DateTime? now]) {
+    final n = (now ?? DateTime.now()).toUtc();
+    AdventPrizeConfig? best;
+    for (final id in AdventPrizeConfig.defaults.keys) {
+      final cfg = configFor(id);
+      if (cfg == null || cfg.rosterAt.isBefore(n)) continue;
+      if (best == null || cfg.rosterAt.isBefore(best.rosterAt)) best = cfg;
+    }
+    return best;
+  }
+
   /// Campanha com prêmio ainda aberta agora (ou null).
   SeasonWalkCampaign? _openCampaign([DateTime? now]) {
     final n = now ?? DateTime.now();

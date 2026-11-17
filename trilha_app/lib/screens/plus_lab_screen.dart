@@ -10,6 +10,9 @@ import '../services/league_service.dart';
 import '../services/plus_log.dart';
 import '../services/progress_service.dart';
 import '../services/remote_config_service.dart';
+import '../utils/juntos_invite_pace.dart';
+import '../models/advent_prize.dart';
+import '../services/advent_prize_service.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -18,6 +21,7 @@ import '../utils/liturgical_calendar.dart';
 import '../utils/home_support.dart';
 import '../utils/plus_offers.dart';
 import '../utils/season_walk_debug.dart';
+import '../widgets/juntos_invite_sheet.dart';
 import '../widgets/whats_new_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/daily_chest_sheet.dart';
@@ -502,6 +506,38 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                         button('Zerar novidades vistas', () async {
                           await WhatsNew.reset();
                           _toast('Novidades zeradas');
+                        }),
+                      ]),
+                      section('Convite da aba Juntos', [
+                        line(
+                          'Folha que abre na aba Juntos até 2× por semana '
+                          '(2 dias entre uma e outra). Advento até a foto '
+                          'do 1º dia; depois, indicação (abre o convite '
+                          'da Companhia ou do grupo). Para quando a '
+                          'pessoa compartilha o convite da folha (Advento: '
+                          'também com dupla/grupo formado), ou após 3 '
+                          '"Agora não". Aqui os botões só fecham.',
+                        ),
+                        button(
+                          'Abrir convite do Advento',
+                          () => showJuntosInviteSheet(
+                            context,
+                            kind: JuntosInviteKind.advent,
+                            advent:
+                                AdventPrizeService.instance.upcomingRoster() ??
+                                AdventPrizeConfig.defaults.values.first,
+                          ),
+                        ),
+                        button(
+                          'Abrir convite de indicação',
+                          () => showJuntosInviteSheet(
+                            context,
+                            kind: JuntosInviteKind.referral,
+                          ),
+                        ),
+                        button('Zerar convite da Juntos', () async {
+                          await JuntosInvitePace.reset();
+                          _toast('Convite da Juntos zerado');
                         }),
                       ]),
                       section('Postais', [

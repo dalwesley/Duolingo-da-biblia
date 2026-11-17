@@ -565,6 +565,7 @@ exports.submitSiteForm = functions
 // ---- Peregrino+: webhook do RevenueCat (ver revenuecat.js) ---------------
 
 const revenueCat = require('./revenuecat');
+const insights = require('./admin_insights');
 
 // Mesmo valor do "Authorization header" do webhook no RevenueCat.
 // `firebase functions:secrets:set REVENUECAT_WEBHOOK_AUTH`. O
@@ -596,7 +597,13 @@ exports.revenueCatWebhook = functions
       res.status(405).json({ ok: false, error: 'Use POST.' });
       return;
     }
+    // Carimbo para o painel (Hoje › Webhook): nunca derruba a entrega.
+    const stamp = (outcome, event, error) =>
+      insights.recordWebhook(getFirestore(), { outcome, event, error }).catch((e) =>
+        logger.warn('revenuecat: carimbo falhou', { error: e.message }),
+      );
     if (!revenueCat.authorized(req.get('authorization'), secret)) {
+      await stamp('unauthorized');
       res.status(401).json({ ok: false, error: 'Não autorizado.' });
       return;
     }
@@ -604,6 +611,7 @@ exports.revenueCatWebhook = functions
     try {
       const out = await revenueCat.applyEvent(getFirestore(), event);
       await referralFromEvent(getFirestore(), event);
+      await stamp(out ? 'ok' : 'ignored', event);
       if (!out) {
         // Evento que não muda o Plus nem ocupa vaga de Pioneiro.
         res.status(200).json({ ok: true, ignored: true });
@@ -618,6 +626,7 @@ exports.revenueCatWebhook = functions
       res.status(200).json({ ok: true });
     } catch (err) {
       logger.error('revenuecat: falha ao gravar', err);
+      await stamp('error', event, err && err.message);
       res.status(500).json({ ok: false, error: 'Falha ao gravar.' });
     }
   });

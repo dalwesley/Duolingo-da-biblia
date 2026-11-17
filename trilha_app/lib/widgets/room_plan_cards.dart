@@ -173,8 +173,8 @@ class RoomPlanCard extends StatelessWidget {
   /// Pintura do propósito, a mesma do editor: a da estação, ou a da cena
   /// do dia mostrado (sem dia, a da 1ª cena) com a trilha de fallback.
   String? _art(PlanDay? day) {
-    final sw = plan.gen['sw'];
-    if (sw is String && sw.isNotEmpty) {
+    final sw = plan.seasonId;
+    if (sw != null) {
       return SeasonWalkCatalog.artAsset(
         sw.startsWith('advento') ? SeasonWalkKind.advent : SeasonWalkKind.lent,
       );
@@ -676,15 +676,31 @@ class _PlanCover extends StatelessWidget {
                     ActHaptics.tap();
                     onMenu();
                   },
-                  child: const SizedBox(
-                    width: 48,
-                    height: 48,
+                  // Placa escura sob o glifo: sobre a pintura clara o
+                  // "…" sumia. Mesmo tratamento do fechar da folha da
+                  // estação.
+                  child: SizedBox(
+                    width: 52,
+                    height: 52,
                     child: Center(
-                      child: CinematicIcon(
-                        glyph: CinematicGlyph.more,
-                        size: AppMetrics.iconMd,
-                        accent: _ink,
-                        framed: false,
+                      child: Container(
+                        width: 40,
+                        height: 40,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.black.withValues(alpha: 0.45),
+                          border: Border.all(
+                            color: _ink.withValues(alpha: 0.25),
+                          ),
+                        ),
+                        child: const Center(
+                          child: CinematicIcon(
+                            glyph: CinematicGlyph.more,
+                            size: AppMetrics.iconLg,
+                            accent: _ink,
+                            framed: false,
+                          ),
+                        ),
                       ),
                     ),
                   ),

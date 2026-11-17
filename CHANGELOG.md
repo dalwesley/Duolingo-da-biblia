@@ -20,6 +20,9 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 - Trilhas capítulo a capítulo usam a pintura da trilha do livro
 - Novidades da versão: folha com Anan na primeira abertura depois de atualizar (uma vez por versão; quem acabou de instalar não vê). Ajustes › Sobre › Novidades reabre a folha. Itens em `lib/widgets/whats_new_sheet.dart` + `l10n/parts/whats_new.json`
 - Propósito do grupo: o líder abre ou fecha as respostas pelo menu. Abertas (padrão): cada um vê as do grupo depois de responder. Fechadas: cada membro vê só a própria, o líder vê todas
+- Convite na aba Juntos: folha com Anan até 2× por semana (2 dias entre uma e outra). Até a foto do 1º dia do Advento, fala do presente (1/2/3 meses) e o botão abre o compartilhar da estação; depois, convite que vira 1 mês de Plus e o botão abre o convite da Companhia (ou do grupo, para quem já tem dupla), os únicos que contam para o mês; sem convite possível, a folha não aparece. Cada folha para quando a pessoa compartilha (Advento: também com dupla/grupo formado; indicação: também ao compartilhar/copiar um convite de Companhia ou grupo) ou após 3 "Agora não". Testável no Laboratório (`lib/utils/juntos_invite_pace.dart`)
+- Painel: lista de contas com Plus (origem, teste, renovação), aparelho, versão e filtros rápidos (ativos em 7 dias etc.); linha do tempo de cada conta na ficha; Hoje mostra a saúde do webhook RevenueCat e quem caminha o Advento (provas, dupla/grupo, meses)
+- Functions: leituras do painel (`ops`, `advent`, `timeline`) pelo callable `moderateUser` (`functions/admin_insights.js`); o webhook RevenueCat carimba cada entrega em `ops/revenuecat`
 
 ### Changed
 - Grupo só começa com 3 pessoas, em todo o app. Abaixo disso, a aba do grupo mostra o grupo se formando: chamar pessoas ou caminhar em Companhia; propósito, semana e presentes esperam
@@ -28,7 +31,8 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 - Ocorrências da palavra em ordem canônica (neste livro e a primeira em cada livro)
 - Postal: nova composição — pintura em cima, frase e referência embaixo, Anan só quando não fala acima
 - Copy e componentes alinhados ao design language (voz, presença da Caravana, spinners, haptics, CTA, tokens); site e marketing falam cena/Stway/Caravana, com Cormorant + Nunito
-- Versão 1.0.48 (48), iOS 1048
+- Versão 1.0.49 (49), iOS 1049
+- Convite da indicação: "você ganha 1 mês de Peregrino+ grátis"
 
 ### Fixed
 - Advento: cena recusada por chegar fora de ordem ao servidor; dupla formada depois do 1º dia entrava na foto; cena feita pela A Promessa não contava; cena feita sem internet era recusada e apagada (agora espera o começo chegar ao servidor)
@@ -41,6 +45,9 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 - Painel: ficha de suporte fecha durante o carregamento e mostra "conta não encontrada"
 - "Ouvir o original" ficava mudo no Android quando a voz hebraica/grega não estava baixada: agora exige a voz instalada e, se falhar, lê a transliteração
 - Indicação só liga com chave `sk_` do RevenueCat
+- Propósito trocado guardava chaves do anterior (gravação com merge fundia `plan.gen`): um propósito de Gênesis feito depois de um do Advento mostrava a pintura do Advento. Grupo agora grava com update (cada campo inteiro); o que já ficou misturado segue os dias (`RoomPlan.seasonId`)
+- Menu (…) na capa do propósito maior, sobre placa escura
+- Compartilhar da estação: o card rico fica pintado fora da tela (com Opacity 0 o `toImage` falhava)
 
 ### Infra
 - Functions: `onAdventSceneDone` (confere a cena pelos horários do Firestore: dia liberado, mínimo de 60s por cena e entre provas, dentro do prazo) e `adventTick` (a cada 30 min: foto da dupla/grupo do dia 1 e varredura de quem concluiu). Meses entram em `referralRewards.banked` (fora do teto de 12/ano). Config em `campaigns/advento-2026`

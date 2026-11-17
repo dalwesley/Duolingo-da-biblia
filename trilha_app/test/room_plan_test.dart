@@ -109,9 +109,8 @@ void main() {
       final days = RoomPlan.buildDays(
         dates: ['2026-11-28', '2026-11-29', '2026-11-30'],
         scenes: const [PlanScene(slug: 'x', title: 'X')],
-        sceneOn: (d) => d == '2026-11-28'
-            ? null
-            : PlanScene(slug: 'adv-$d', title: d),
+        sceneOn: (d) =>
+            d == '2026-11-28' ? null : PlanScene(slug: 'adv-$d', title: d),
       );
       expect(days[0].scene, isNull);
       expect(days[1].scene!.slug, 'adv-2026-11-29');
@@ -248,6 +247,43 @@ void main() {
     expect(carried.joined, isTrue);
     expect(carried.done, isEmpty);
     expect(carried.answered, isEmpty);
-    expect(plan.progressOf(PlanProgress(planId: 'outro', joined: true)), isNull);
+    expect(
+      plan.progressOf(PlanProgress(planId: 'outro', joined: true)),
+      isNull,
+    );
+  });
+
+  group('RoomPlan.seasonId', () {
+    RoomPlan plan(Map<String, dynamic> gen, String slug) => RoomPlan(
+      id: 'p',
+      title: 't',
+      start: '2026-11-16',
+      end: '2026-11-16',
+      days: [
+        PlanDay(
+          n: 1,
+          date: '2026-11-16',
+          scene: PlanScene(slug: slug, title: 'T'),
+        ),
+      ],
+      gen: gen,
+    );
+
+    test('estação pura', () {
+      expect(plan({'sw': 'advento-2026'}, 'adv-1').seasonId, 'advento-2026');
+    });
+
+    test('trilha com sw velho do merge: vale a trilha', () {
+      final p = plan({
+        'sw': 'advento-2026',
+        'ss': 'gen-01-criador',
+      }, 'gen-01-criador');
+      expect(p.seasonId, isNull);
+    });
+
+    test('estação com ss velho: vale a estação', () {
+      final p = plan({'sw': 'advento-2026', 'ss': 'gen-01-criador'}, 'adv-1');
+      expect(p.seasonId, 'advento-2026');
+    });
   });
 }

@@ -1625,10 +1625,13 @@ class BackendService extends ChangeNotifier {
     if (!isActive || fields.isEmpty) return false;
     final normalized = code.trim().toUpperCase();
     try {
-      await _db.doc('rooms/$normalized').set({
+      // update, não set+merge: o merge funde mapas aninhados e deixava
+      // chaves do propósito anterior (ex.: `plan.gen.sw` do Advento num
+      // propósito de Gênesis). update troca cada campo inteiro.
+      await _db.doc('rooms/$normalized').update({
         for (final e in fields.entries) e.key: e.value ?? FieldValue.delete(),
         'updatedAt': FieldValue.serverTimestamp(),
-      }, SetOptions(merge: true));
+      });
       return true;
     } catch (e) {
       debugPrint('Falha ao atualizar sala: $e');

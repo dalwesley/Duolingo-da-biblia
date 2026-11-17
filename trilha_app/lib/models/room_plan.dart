@@ -172,6 +172,20 @@ class RoomPlan {
   /// `rb`, capítulo inicial `rf`, por dia `rp`, 1ª cena `ss`, pergunta `q`.
   final Map<String, dynamic> gen;
 
+  /// Estação que gera os dias (`gen.sw`), ou null. Propósito gravado por
+  /// cima de outro com merge (até 1.0.49) pode trazer `sw` e `ss` juntos:
+  /// vale o que os dias usam — se a cena da trilha está nos dias, não é
+  /// estação.
+  String? get seasonId {
+    final sw = gen['sw'];
+    if (sw is! String || sw.isEmpty) return null;
+    final ss = gen['ss'];
+    if (ss is String && ss.isNotEmpty && days.any((d) => d.scene?.slug == ss)) {
+      return null;
+    }
+    return sw;
+  }
+
   const RoomPlan({
     required this.id,
     required this.title,

@@ -5962,11 +5962,47 @@ abstract class AppLocalizations {
   /// **'Novidades · {count}'**
   String juntosInboxNews(int count);
 
+  /// No description provided for @juntosInviteAdventBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Juntos, o presente sobe. Quem conclui as cenas ganha Peregrino+:'**
+  String get juntosInviteAdventBody;
+
+  /// No description provided for @juntosInviteAdventTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Chame alguém para o Advento'**
+  String get juntosInviteAdventTitle;
+
   /// No description provided for @juntosInviteCompanion.
   ///
   /// In pt, this message translates to:
   /// **'Chamar um companheiro'**
   String get juntosInviteCompanion;
+
+  /// No description provided for @juntosInviteReferralCap.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cada pessoa que assinar é 1 mês a mais, até 12 meses por ano.'**
+  String get juntosInviteReferralCap;
+
+  /// No description provided for @juntosInviteReferralEyebrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Convite que vira presente'**
+  String get juntosInviteReferralEyebrow;
+
+  /// No description provided for @juntosInviteReferralHow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Vale o convite da Companhia e do grupo.'**
+  String get juntosInviteReferralHow;
+
+  /// No description provided for @juntosInviteReferralTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Convide alguém para caminhar com você'**
+  String get juntosInviteReferralTitle;
 
   /// No description provided for @juntosInviteShort.
   ///
@@ -14190,7 +14226,7 @@ abstract class AppLocalizations {
   /// No description provided for @referralInviteLine.
   ///
   /// In pt, this message translates to:
-  /// **'Se a pessoa assinar o Peregrino+, você ganha 1 mês de Plus.'**
+  /// **'Se a pessoa assinar o Peregrino+, você ganha 1 mês de Peregrino+ grátis.'**
   String get referralInviteLine;
 
   /// No description provided for @referralRewardGranted.

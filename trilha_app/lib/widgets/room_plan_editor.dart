@@ -234,7 +234,7 @@ class _PlanEditorState extends State<_PlanEditor> {
         _perDay = (g['rp'] as num?)?.toInt() ?? 1;
         _readingFrom = (g['ro'] as num?)?.toInt() ?? 0;
       }
-      final sw = g['sw'] as String?;
+      final sw = c.seasonId;
       final season = sw == null ? null : _campaignById(sw);
       final ss = g['ss'] as String?;
       if (season != null) {
@@ -653,7 +653,7 @@ class _PlanEditorState extends State<_PlanEditor> {
         cur != null &&
         cur.start == planYmd(DateTime.now()) &&
         (cur.gen['ss'] != (_season == null ? s?.slug : null) ||
-            cur.gen['sw'] != _season?.id ||
+            cur.seasonId != _season?.id ||
             cur.gen['rb'] != r?.abbrev ||
             (r != null && cur.gen['rf'] != r.from));
     final fresh = _restart || sourceChanged;

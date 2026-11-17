@@ -115,61 +115,8 @@ class _SeasonWalkTogetherCardState extends State<SeasonWalkTogetherCard> {
     });
   }
 
-  Future<void> _invite(SeasonWalkCampaign campaign) async {
-    final l10n = context.l10n;
-    final name = context.read<ProgressService>().realUserName;
-    final start = DateFormat.MMMMd(
-      Localizations.localeOf(context).toLanguageTag(),
-    ).format(campaign.start);
-    final store = !kIsWeb && Platform.isIOS
-        ? AppUpdateService.iosStoreUrl
-        : AppUpdateService.androidStoreUrl;
-    // Campanha com presente: o convite fala do Peregrino+ (e que em dupla
-    // ou grupo vale mais).
-    final prize = AdventPrizeService.instance.configFor(campaign.id);
-    final pitch = l10n.walkTogetherPitch(campaign.length);
-    final text = l10n.walkTogetherShareText(
-      name.isEmpty ? l10n.juntosSomeone : name,
-      campaign.title,
-      prize != null && prize.isOpen(DateTime.now())
-          ? '$pitch\n${l10n.adventPrizeShareLine(campaign.length, prize.maxMonths)}'
-          : pitch,
-      start,
-      store,
-    );
-    final subject = l10n.walkTogetherShareSubject(campaign.title);
-    XFile? art;
-    try {
-      art = await _seasonArtFile(campaign.kind);
-    } catch (e, st) {
-      debugPrint('season share art: $e\n$st');
-    }
-    try {
-      await SharePlus.instance.share(
-        ShareParams(
-          files: art == null ? null : [art],
-          text: text,
-          subject: subject,
-        ),
-      );
-    } catch (e, st) {
-      debugPrint('season share: $e\n$st');
-      await SharePlus.instance.share(ShareParams(text: text, subject: subject));
-    }
-  }
-
-  /// Copia a arte da estação do bundle para um arquivo temporário compartilhável.
-  static Future<XFile> _seasonArtFile(SeasonWalkKind kind) async {
-    final asset = SeasonWalkCatalog.artAsset(kind);
-    final data = await rootBundle.load(asset);
-    final ext = asset.endsWith('.png') ? 'png' : 'jpg';
-    final mime = ext == 'png' ? 'image/png' : 'image/jpeg';
-    final file = File(
-      '${Directory.systemTemp.path}/stway_estacao_${kind.name}.$ext',
-    );
-    await file.writeAsBytes(data.buffer.asUint8List(), flush: true);
-    return XFile(file.path, mimeType: mime, name: 'stway_${kind.name}.$ext');
-  }
+  Future<void> _invite(SeasonWalkCampaign campaign) =>
+      shareSeasonWalkInvite(context, campaign);
 
   @override
   Widget build(BuildContext context) {
@@ -413,4 +360,65 @@ class _SeasonWalkTogetherCardState extends State<SeasonWalkTogetherCard> {
       ),
     );
   }
+}
+
+/// Convite externo da estação (WhatsApp etc.): arte, texto e link da loja.
+/// Também usado pela folha de convite da aba Juntos.
+Future<void> shareSeasonWalkInvite(
+  BuildContext context,
+  SeasonWalkCampaign campaign,
+) async {
+  final l10n = context.l10n;
+  final name = context.read<ProgressService>().realUserName;
+  final start = DateFormat.MMMMd(
+    Localizations.localeOf(context).toLanguageTag(),
+  ).format(campaign.start);
+  final store = !kIsWeb && Platform.isIOS
+      ? AppUpdateService.iosStoreUrl
+      : AppUpdateService.androidStoreUrl;
+  // Campanha com presente: o convite fala do Peregrino+ (e que em dupla
+  // ou grupo vale mais).
+  final prize = AdventPrizeService.instance.configFor(campaign.id);
+  final pitch = l10n.walkTogetherPitch(campaign.length);
+  final text = l10n.walkTogetherShareText(
+    name.isEmpty ? l10n.juntosSomeone : name,
+    campaign.title,
+    prize != null && prize.isOpen(DateTime.now())
+        ? '$pitch\n${l10n.adventPrizeShareLine(campaign.length, prize.maxMonths)}'
+        : pitch,
+    start,
+    store,
+  );
+  final subject = l10n.walkTogetherShareSubject(campaign.title);
+  XFile? art;
+  try {
+    art = await _seasonArtFile(campaign.kind);
+  } catch (e, st) {
+    debugPrint('season share art: $e\n$st');
+  }
+  try {
+    await SharePlus.instance.share(
+      ShareParams(
+        files: art == null ? null : [art],
+        text: text,
+        subject: subject,
+      ),
+    );
+  } catch (e, st) {
+    debugPrint('season share: $e\n$st');
+    await SharePlus.instance.share(ShareParams(text: text, subject: subject));
+  }
+}
+
+/// Copia a arte da estação do bundle para um arquivo temporário compartilhável.
+Future<XFile> _seasonArtFile(SeasonWalkKind kind) async {
+  final asset = SeasonWalkCatalog.artAsset(kind);
+  final data = await rootBundle.load(asset);
+  final ext = asset.endsWith('.png') ? 'png' : 'jpg';
+  final mime = ext == 'png' ? 'image/png' : 'image/jpeg';
+  final file = File(
+    '${Directory.systemTemp.path}/stway_estacao_${kind.name}.$ext',
+  );
+  await file.writeAsBytes(data.buffer.asUint8List(), flush: true);
+  return XFile(file.path, mimeType: mime, name: 'stway_${kind.name}.$ext');
 }

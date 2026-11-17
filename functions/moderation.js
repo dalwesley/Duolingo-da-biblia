@@ -13,6 +13,7 @@
  *   info         dados do Auth (e-mail, login, criada, último acesso)
  *   emails       e-mail do Auth de uma lista de uids (a lista do Suporte;
  *                o perfil público não guarda mais e-mail)
+ *   ops / advent / timeline   leituras do painel (admin_insights.js)
  *   warn         aviso por push (fica no histórico mesmo sem push)
  *   rename       nome neutro no perfil, placares, grupos e companhias
  *   removePhoto  tira a foto do perfil, dos placares e do Auth
@@ -26,6 +27,7 @@
 
 const { FieldValue, Timestamp } = require('firebase-admin/firestore');
 const { rankingRefs } = require('./account');
+const insights = require('./admin_insights');
 
 const ACTIONS = new Set(['info', 'warn', 'rename', 'removePhoto', 'suspend', 'ban', 'reactivate']);
 const SUSPEND_DAYS = new Set([1, 3, 7, 15, 30]);
@@ -148,6 +150,15 @@ async function moderate(deps, caller, input) {
     const uids = uniqueUids(input?.uids);
     if (uids.length > 2000) throw new ModerationError('invalid-argument', 'Lista grande demais.');
     return { emails: await emailsFor(auth, uids) };
+  }
+  if (action === 'ops') return insights.opsStatus(db);
+  if (action === 'advent') {
+    return insights.adventStatus(db, String(input?.campaign || 'advento-2026'));
+  }
+  if (action === 'timeline') {
+    const who = String(input?.uid || '').trim();
+    if (!who || who.length > 128) throw new ModerationError('invalid-argument', 'uid inválido.');
+    return insights.timeline(db, auth, who);
   }
 
   const uid = String(input?.uid || '').trim();
