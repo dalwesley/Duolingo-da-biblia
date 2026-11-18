@@ -32,6 +32,10 @@ const FILTERS = [
   { key: 'plus', label: 'Plus' },
   { key: 'trial', label: 'Em teste' },
   { key: 'active7', label: 'Ativos 7 dias' },
+  { key: 'gone', label: 'Sumiu', title: 'Jogou 3 dias ou mais e não aparece há mais de 7' },
+  { key: 'first', label: 'Parou na 1ª cena', title: 'No máximo 1 cena e conta com mais de 1 dia' },
+  { key: 'advent', label: 'No Advento' },
+  { key: 'moderated', label: 'Suspensos', title: 'Suspensa ou inativa' },
   { key: 'android', label: 'Android' },
   { key: 'ios', label: 'iOS' },
   { key: 'outdated', label: 'Versão desatualizada' },
@@ -88,6 +92,9 @@ const SORT_COLS = [
   { key: 'appVersion', label: 'Versão' },
   { key: 'plus', label: 'Plus' },
   { key: 'activity', label: 'Atividade' },
+  { key: 'days', label: 'Dias ativos' },
+  { key: 'accuracy', label: 'Acerto' },
+  { key: 'social', label: 'Social' },
   { key: 'created', label: 'Criado' },
   { key: 'seen', label: 'Último acesso' },
 ];
@@ -164,6 +171,86 @@ function scenesDone(u) {
   return Array.isArray(u.completedMissions) ? u.completedMissions.length : 0;
 }
 
+/** Dias diferentes em que a pessoa jogou (`playDates`, YYYY-MM-DD). */
+function activeDays(u) {
+  return Array.isArray(u.playDates) ? new Set(u.playDates.map(dayKey).filter(Boolean)).size : 0;
+}
+
+function daysAgo(raw) {
+  const key = dayKey(raw);
+  if (!key) return null;
+  return Math.floor((Date.now() - Date.parse(`${key}T12:00:00Z`)) / DAY_MS);
+}
+
+/** Último dia em que a conta apareceu: perfil, senão o último dia jogado. */
+function lastSeenKey(u) {
+  const seen = dayKey(u.lastSeenDate);
+  if (seen) return seen;
+  const days = Array.isArray(u.playDates) ? u.playDates.map(dayKey).filter(Boolean).sort() : [];
+  return days.at(-1) || dayKey(u.lastPlayedDate);
+}
+
+/** Acerto de toda a vida, em %. null sem respostas. */
+function accuracy(u) {
+  const total = Number(u.lifetimeQuestionsAnswered) || 0;
+  if (!total) return null;
+  return Math.round(((Number(u.lifetimeQuestionsCorrect) || 0) / total) * 100);
+}
+
+function daysCell(u) {
+  const n = activeDays(u);
+  return n ? String(n) : '<span class="us-muted">—</span>';
+}
+
+function accuracyCell(u) {
+  const pct = accuracy(u);
+  if (pct == null) return '<span class="us-muted">—</span>';
+  const tone = pct >= 80 ? 'ok' : pct < 60 ? 'bad' : 'warn';
+  const title = `${Number(u.lifetimeQuestionsCorrect) || 0} de ${Number(u.lifetimeQuestionsAnswered) || 0} respostas`;
+  return `<span class="rv-pill ${tone} sm" title="${escapeHtml(title)}">${pct}%</span>`;
+}
+
+function inAdvent(u) {
+  return Array.isArray(u.joinedWalks) && u.joinedWalks.some((w) => String(w).startsWith('advento'));
+}
+
+/** Grupo (`activeRoomCode`), Companhia (`companionCodes`) e Advento. */
+function socialTags(u) {
+  const out = [];
+  if (u.activeRoomCode) out.push(['Grupo', `Grupo ${u.activeRoomCode}`]);
+  if (Array.isArray(u.companionCodes) && u.companionCodes.length) out.push(['Companhia', `${u.companionCodes.length} código(s) de Companhia`]);
+  if (inAdvent(u)) out.push(['Advento', 'Entrou no Advento']);
+  return out;
+}
+
+function socialCell(u) {
+  const tags = socialTags(u);
+  if (!tags.length) return '<span class="us-muted">—</span>';
+  return `<span class="us-pills">${tags.map(([label, title]) => `<span class="rv-pill sm" title="${escapeHtml(title)}">${escapeHtml(label)}</span>`).join('')}</span>`;
+}
+
+/**
+ * Situação de moderação vinda de `moderation/{uid}` e dos avisos em
+ * `moderation_log`. Preenchida em loadList como `u.mod`.
+ */
+function modState(u) {
+  const m = u.mod;
+  if (!m) return null;
+  const until = m.until?.toMillis?.() ?? (m.until ? Date.parse(m.until) : 0);
+  if (m.state === 'banned') return { kind: 'banned', label: 'Inativa', tone: 'bad' };
+  if (m.state === 'suspended' && (!until || until > Date.now())) {
+    return { kind: 'suspended', label: until ? `Suspensa até ${shortDay(until)}` : 'Suspensa', tone: 'warn' };
+  }
+  if (m.warnings) return { kind: 'warned', label: m.warnings === 1 ? '1 aviso' : `${m.warnings} avisos`, tone: 'warn' };
+  return null;
+}
+
+function nameCell(u) {
+  const st = modState(u);
+  const pill = st ? ` <span class="rv-pill ${st.tone} sm">${escapeHtml(st.label)}</span>` : '';
+  return `${escapeHtml(displayName(u))}${pill}`;
+}
+
 function activityCell(u) {
   const n = scenesDone(u);
   const streak = Number(u.streak) || 0;
@@ -187,6 +274,13 @@ function rowTags(u, latestBuild) {
   if (st.kind === 'trial') tags.push('trial');
   const seen = dayKey(u.lastSeenDate);
   if (seen && Date.now() - Date.parse(`${seen}T12:00:00Z`) <= 7 * DAY_MS) tags.push('active7');
+  const away = daysAgo(lastSeenKey(u));
+  if (activeDays(u) >= 3 && away != null && away > 7) tags.push('gone');
+  const age = daysAgo(u.firstOpenDate);
+  if (scenesDone(u) <= 1 && age != null && age >= 1) tags.push('first');
+  if (inAdvent(u)) tags.push('advent');
+  const mod = modState(u)?.kind;
+  if (mod === 'suspended' || mod === 'banned') tags.push('moderated');
   const pk = platformKey(u);
   if (pk) tags.push(pk);
   const b = buildOf(u);
@@ -207,12 +301,9 @@ function platformCell(u) {
   return `<span class="rv-pill ${tone} sm">${escapeHtml(label)}</span>`;
 }
 
-/** Ex.: `1.4.2 (83)` — perfil do app; build opcional. */
+/** Ex.: `1.4.2` — versão do perfil do app, sem o build. */
 function versionLabel(u) {
-  const v = String(u?.appVersion || '').trim();
-  if (!v) return '';
-  const build = String(u?.buildNumber || '').trim();
-  return build ? `${v} (${build})` : v;
+  return String(u?.appVersion || '').trim();
 }
 
 function versionCell(u, latestBuild = 0) {
@@ -253,6 +344,12 @@ function sortValue(u, key) {
     }
     case 'activity':
       return scenesDone(u);
+    case 'days':
+      return activeDays(u);
+    case 'accuracy':
+      return accuracy(u) ?? '';
+    case 'social':
+      return socialTags(u).length;
     case 'created':
       return dayKey(u.firstOpenDate);
     case 'seen':
@@ -388,7 +485,7 @@ async function openSupportModal({ uid, user: known, onOpenFicha } = {}) {
             ${onOpenFicha ? accountTabsHtml('support') : ''}
             <button type="button" class="modal-close" aria-label="Fechar">×</button>
           </header>
-          <ul class="db-list">
+          <ul class="db-list us-fields">
             <li><span>Situação do Plus</span><strong>${plusCell(u)}</strong></li>
             ${MAIN_FIELDS.map(([k, label]) => `<li><span>${escapeHtml(label)}</span><strong>${fmt(u[k], k, u)}</strong></li>`).join('')}
             <li><span>Cenas concluídas</span><strong>${scenesDone(u)}</strong></li>
@@ -496,7 +593,7 @@ function usersTable(users, sort, latestBuild, filter) {
   const count = (k) => (k === 'all' ? users.length : tagged.filter((x) => x.tags.split(' ').includes(k)).length);
   return `
     <div class="us-filters" role="group" aria-label="Filtros rápidos">
-      ${FILTERS.map((f) => `<button type="button" class="ez-chip${filter === f.key ? ' active' : ''}" data-filter-key="${f.key}">${escapeHtml(f.label)} <small>${count(f.key)}</small></button>`).join('')}
+      ${FILTERS.map((f) => `<button type="button" class="ez-chip${filter === f.key ? ' active' : ''}" data-filter-key="${f.key}"${f.title ? ` title="${escapeHtml(f.title)}"` : ''}>${escapeHtml(f.label)} <small>${count(f.key)}</small></button>`).join('')}
     </div>
     <p class="db-lead"><span id="us-count">${users.length}</span> contas · clique no cabeçalho para ordenar${latestBuild ? ` · loja no build ${latestBuild}` : ''}</p>
     <div class="table-wrap">
@@ -514,12 +611,15 @@ function usersTable(users, sort, latestBuild, filter) {
             const hay = `${name} ${email} ${u.id}`.toLowerCase();
             return `
               <tr data-filter="${escapeHtml(hay)}" data-tags="${tags}">
-                <td>${escapeHtml(name)}<br><code class="us-uid">${escapeHtml(u.id)}</code></td>
+                <td>${nameCell(u)}</td>
                 <td>${email ? escapeHtml(email) : '—'}</td>
                 <td>${platformCell(u)}</td>
                 <td>${versionCell(u, latestBuild)}</td>
                 <td>${plusCell(u)}</td>
                 <td>${activityCell(u)}</td>
+                <td>${daysCell(u)}</td>
+                <td>${accuracyCell(u)}</td>
+                <td>${socialCell(u)}</td>
                 <td>${escapeHtml(dayLabel(u.firstOpenDate))}</td>
                 <td>${escapeHtml(dayLabel(u.lastSeenDate))}</td>
                 <td class="td-actions">
@@ -635,11 +735,20 @@ export async function renderUsersPage(root) {
     listEl.innerHTML = '<div class="ez-skeleton">Carregando contas…</div>';
     try {
       // Sem orderBy: users não tem campo `order` — listCollection devolveria [].
-      const [users, reports, release] = await Promise.all([
+      const [users, reports, release, modStates, modLog] = await Promise.all([
         listDocs(COL.users),
         listDocs(COL.appReports).catch(() => []),
         getAppRelease().catch(() => null),
+        listDocs('moderation').catch(() => []),
+        listDocs('moderation_log').catch(() => []),
       ]);
+      const mods = {};
+      for (const m of modStates) mods[m.id] = { ...m, warnings: 0 };
+      for (const l of modLog) {
+        if (l.action !== 'warn' || !l.uid) continue;
+        mods[l.uid] = mods[l.uid] || { warnings: 0 };
+        mods[l.uid].warnings += 1;
+      }
       latestBuild = Number(release?.latestBuild) || 0;
       // Último relato com cada campo — cobre contas sem sync recente do perfil.
       const fromReport = {};
@@ -681,6 +790,7 @@ export async function renderUsersPage(root) {
           platform: u.platform || rep?.platform || '',
           appVersion: u.appVersion || rep?.appVersion || '',
           buildNumber: u.buildNumber || rep?.buildNumber || '',
+          mod: mods[u.id] || null,
         };
       });
       renderList();
