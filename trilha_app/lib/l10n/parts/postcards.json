@@ -118,16 +118,6 @@
     },
     "description": "Retrospectiva do ano (docs/postais.md)"
   },
-  "yearReviewFirstLast": {
-    "pt": "Do primeiro, {first}, ao mais recente, {last}.",
-    "en": "From the first, {first}, to the latest, {last}.",
-    "es": "Desde la primera, {first}, hasta la más reciente, {last}.",
-    "placeholders": {
-      "first": "String",
-      "last": "String"
-    },
-    "description": "Retrospectiva do ano (docs/postais.md)"
-  },
   "yearReviewBookEyebrow": {
     "pt": "O livro onde você mais esteve",
     "en": "The book you visited most",
@@ -140,21 +130,46 @@
     "es": "Donde más aciertas",
     "description": "Retrospectiva do ano (docs/postais.md)"
   },
-  "yearReviewModeLine": {
-    "pt": "{pct}% de acerto de primeira",
-    "en": "{pct}% right on the first try",
-    "es": "{pct}% de acierto a la primera",
-    "placeholders": {
-      "pct": "int"
-    },
-    "description": "Retrospectiva do ano (docs/postais.md)"
-  },
   "yearReviewEndBody": {
     "pt": "Cada postal é um passo seu com Deus. Que venha {next}!",
     "en": "Every postcard is a step you took with God. Here's to {next}!",
     "es": "Cada postal es un paso tuyo con Dios. ¡Que venga {next}!",
     "placeholders": {
       "next": "String"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPhraseEyebrow": {
+    "pt": "A frase que ficou",
+    "en": "The line that stayed",
+    "es": "La frase que quedó",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewTogetherEyebrow": {
+    "pt": "Você não caminhou sozinho",
+    "en": "You didn't walk alone",
+    "es": "No caminaste solo",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewShareEyebrow": {
+    "pt": "Seu ano em um card",
+    "en": "Your year in one card",
+    "es": "Tu año en una tarjeta",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewShareCta": {
+    "pt": "Compartilhar meu ano",
+    "en": "Share my year",
+    "es": "Compartir mi año",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewShareText": {
+    "pt": "Minha caminhada na Bíblia em {year}, cena a cena, no STWAY: {link}",
+    "en": "My walk through the Bible in {year}, scene by scene, on STWAY: {link}",
+    "es": "Mi camino por la Biblia en {year}, escena a escena, en STWAY: {link}",
+    "placeholders": {
+      "year": "String",
+      "link": "String"
     },
     "description": "Retrospectiva do ano (docs/postais.md)"
   },
@@ -237,5 +252,422 @@
     "en": "Couldn't make the video. Sent the image instead.",
     "es": "No se pudo crear el video. Envié la imagen.",
     "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "yearReviewPostcardsWord": {
+    "pt": "{count, plural, =1{postal no caminho} other{postais no caminho}}",
+    "en": "{count, plural, =1{postcard along the way} other{postcards along the way}}",
+    "es": "{count, plural, =1{postal en el camino} other{postales en el camino}}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewCollectionEyebrow": {
+    "pt": "Sua coleção",
+    "en": "Your collection",
+    "es": "Tu colección",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewCollectionTitle": {
+    "pt": "{count, plural, =1{1 cena virou postal} other{{count} cenas viraram postais}}",
+    "en": "{count, plural, =1{1 scene became a postcard} other{{count} scenes became postcards}}",
+    "es": "{count, plural, =1{1 escena se volvió postal} other{{count} escenas se volvieron postales}}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewFirst": {
+    "pt": "O primeiro",
+    "en": "The first",
+    "es": "La primera",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewLatest": {
+    "pt": "O mais recente",
+    "en": "The latest",
+    "es": "La más reciente",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewChaptersWord": {
+    "pt": "{count, plural, =1{capítulo lido na Bíblia} other{capítulos lidos na Bíblia}}",
+    "en": "{count, plural, =1{Bible chapter read} other{Bible chapters read}}",
+    "es": "{count, plural, =1{capítulo leído en la Biblia} other{capítulos leídos en la Biblia}}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewModeWord": {
+    "pt": "de acerto de primeira",
+    "en": "right on the first try",
+    "es": "de acierto a la primera",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewAnanBook": {
+    "pt": "{book} foi a sua casa este ano.",
+    "en": "{book} was your home this year.",
+    "es": "{book} fue tu casa este año.",
+    "placeholders": {
+      "book": "String"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewAnanMode": {
+    "pt": "É aqui que o seu olhar está mais afiado.",
+    "en": "This is where your eye is sharpest.",
+    "es": "Aquí es donde tu mirada está más afilada.",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewAnanTogether": {
+    "pt": "Caminhar junto deixa o caminho mais leve.",
+    "en": "Walking together makes the road lighter.",
+    "es": "Caminar juntos hace el camino más ligero.",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewTap": {
+    "pt": "Toque para continuar",
+    "en": "Tap to continue",
+    "es": "Toca para continuar",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewAdventWord": {
+    "pt": "de {total} dias do Advento",
+    "en": "of {total} Advent days",
+    "es": "de {total} días de Adviento",
+    "placeholders": {
+      "total": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewSealsWord": {
+    "pt": "{count, plural, =1{selo Fiel no grupo} other{selos Fiel no grupo}}",
+    "en": "{count, plural, =1{Faithful seal in the group} other{Faithful seals in the group}}",
+    "es": "{count, plural, =1{sello Fiel en el grupo} other{sellos Fiel en el grupo}}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewMapEyebrow": {
+    "pt": "Sua Bíblia acesa",
+    "en": "Your Bible, lit up",
+    "es": "Tu Biblia encendida",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewMapTitle": {
+    "pt": "{count, plural, =1{1 livro aceso de 66} other{{count} livros acesos de 66}}",
+    "en": "{count, plural, =1{1 book lit of 66} other{{count} books lit of 66}}",
+    "es": "{count, plural, =1{1 libro encendido de 66} other{{count} libros encendidos de 66}}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewMapPostcard": {
+    "pt": "com postal",
+    "en": "with a postcard",
+    "es": "con postal",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewMapRead": {
+    "pt": "lido na Bíblia",
+    "en": "read in the Bible",
+    "es": "leído en la Biblia",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewAnanMap": {
+    "pt": "Cada luz é um livro que você abriu este ano.",
+    "en": "Each light is a book you opened this year.",
+    "es": "Cada luz es un libro que abriste este año.",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewDaysEyebrow": {
+    "pt": "Seu ano, dia a dia",
+    "en": "Your year, day by day",
+    "es": "Tu año, día a día",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewDaysWord": {
+    "pt": "{count, plural, =1{dia no caminho} other{dias no caminho}}",
+    "en": "{count, plural, =1{day on the way} other{days on the way}}",
+    "es": "{count, plural, =1{día en el camino} other{días en el camino}}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewYearStreak": {
+    "pt": "Maior sequência: {count, plural, =1{1 dia} other{{count} dias seguidos}}",
+    "en": "Longest run: {count, plural, =1{1 day} other{{count} days in a row}}",
+    "es": "Racha más larga: {count, plural, =1{1 día} other{{count} días seguidos}}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewTopMonthLine": {
+    "pt": "Mês mais forte: {month}",
+    "en": "Strongest month: {month}",
+    "es": "Mes más fuerte: {month}",
+    "placeholders": {
+      "month": "String"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewAnanDays": {
+    "pt": "Cada quadradinho aceso foi um dia em que você voltou.",
+    "en": "Every lit square is a day you came back.",
+    "es": "Cada cuadrito encendido fue un día en que volviste.",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewGrowthEyebrow": {
+    "pt": "Você cresceu",
+    "en": "You grew",
+    "es": "Creciste",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewGrowthLine": {
+    "pt": "Acerto de primeira em {mode}: de {from}% para {to}%",
+    "en": "First-try accuracy in {mode}: from {from}% to {to}%",
+    "es": "Acierto a la primera en {mode}: de {from}% a {to}%",
+    "placeholders": {
+      "mode": "String",
+      "from": "int",
+      "to": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewGrowthWord": {
+    "pt": "pontos a mais de acerto",
+    "en": "more points of accuracy",
+    "es": "puntos más de acierto",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewAnanGrowth": {
+    "pt": "Isso não é sorte. É leitura que ficou em você.",
+    "en": "That is not luck. It is reading that stayed with you.",
+    "es": "Eso no es suerte. Es lectura que se quedó en ti.",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewFeatsEyebrow": {
+    "pt": "Marcos do ano",
+    "en": "Milestones of the year",
+    "es": "Hitos del año",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPerfectWord": {
+    "pt": "{count, plural, =1{cena sem errar nada} other{cenas sem errar nada}}",
+    "en": "{count, plural, =1{scene without a single miss} other{scenes without a single miss}}",
+    "es": "{count, plural, =1{escena sin fallar nada} other{escenas sin fallar nada}}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewTrailsWord": {
+    "pt": "{count, plural, =1{trilha completa} other{trilhas completas}}",
+    "en": "{count, plural, =1{trail completed} other{trails completed}}",
+    "es": "{count, plural, =1{sendero completo} other{senderos completos}}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewVersesWord": {
+    "pt": "{count, plural, =1{versículo guardado de cor} other{versículos guardados de cor}}",
+    "en": "{count, plural, =1{verse kept by heart} other{verses kept by heart}}",
+    "es": "{count, plural, =1{versículo guardado de memoria} other{versículos guardados de memoria}}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewAnanFeats": {
+    "pt": "Isso é caminho de quem leva a Palavra a sério.",
+    "en": "That is the path of someone who takes the Word seriously.",
+    "es": "Ese es el camino de quien toma en serio la Palabra.",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewCompanionWord": {
+    "pt": "{count, plural, =1{dia lado a lado com {name}} other{dias lado a lado com {name}}}",
+    "en": "{count, plural, =1{day side by side with {name}} other{days side by side with {name}}}",
+    "es": "{count, plural, =1{día lado a lado con {name}} other{días lado a lado con {name}}}",
+    "placeholders": {
+      "count": "int",
+      "name": "String"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewRecognitionsWord": {
+    "pt": "{count, plural, =1{vez que alguém reconheceu sua caminhada} other{vezes que alguém reconheceu sua caminhada}}",
+    "en": "{count, plural, =1{time someone recognized your walk} other{times someone recognized your walk}}",
+    "es": "{count, plural, =1{vez que alguien reconoció tu camino} other{veces que alguien reconoció tu camino}}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewGroupLine": {
+    "pt": "Caminhando com o grupo {name}",
+    "en": "Walking with the group {name}",
+    "es": "Caminando con el grupo {name}",
+    "placeholders": {
+      "name": "String"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaEyebrow": {
+    "pt": "Quem você foi em {year}",
+    "en": "Who you were in {year}",
+    "es": "Quién fuiste en {year}",
+    "placeholders": {
+      "year": "String"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaGroup": {
+    "pt": "Fiel do grupo",
+    "en": "Faithful in the group",
+    "es": "Fiel del grupo",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaGroupLine": {
+    "pt": "Você fez o caminho com outros e não largou ninguém.",
+    "en": "You walked with others and left no one behind.",
+    "es": "Hiciste el camino con otros y no dejaste a nadie atrás.",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaAdvent": {
+    "pt": "Peregrino do Advento",
+    "en": "Advent pilgrim",
+    "es": "Peregrino de Adviento",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaAdventLine": {
+    "pt": "Você esperou o Natal caminhando, dia após dia.",
+    "en": "You waited for Christmas walking, day after day.",
+    "es": "Esperaste la Navidad caminando, día tras día.",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaReader": {
+    "pt": "Leitor da Palavra",
+    "en": "Reader of the Word",
+    "es": "Lector de la Palabra",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaReaderLine": {
+    "pt": "Você leu capítulo por capítulo, sem pressa.",
+    "en": "You read chapter by chapter, unhurried.",
+    "es": "Leíste capítulo por capítulo, sin prisa.",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaExplorer": {
+    "pt": "Explorador das Escrituras",
+    "en": "Explorer of the Scriptures",
+    "es": "Explorador de las Escrituras",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaExplorerLine": {
+    "pt": "Você atravessou a Bíblia de ponta a ponta.",
+    "en": "You crossed the Bible from end to end.",
+    "es": "Recorriste la Biblia de punta a punta.",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaConstant": {
+    "pt": "Peregrino constante",
+    "en": "Steady pilgrim",
+    "es": "Peregrino constante",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaConstantLine": {
+    "pt": "Você voltou dia após dia. É assim que se caminha.",
+    "en": "You came back day after day. That is how one walks.",
+    "es": "Volviste día tras día. Así se camina.",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaGrower": {
+    "pt": "Aprendiz que cresce",
+    "en": "Growing learner",
+    "es": "Aprendiz que crece",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaGrowerLine": {
+    "pt": "Hoje você entende o que não entendia no começo do ano.",
+    "en": "Today you understand what you did not at the start of the year.",
+    "es": "Hoy entiendes lo que no entendías al comienzo del año.",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaPilgrim": {
+    "pt": "Peregrino a caminho",
+    "en": "Pilgrim on the way",
+    "es": "Peregrino en camino",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaPilgrimLine": {
+    "pt": "Todo caminho começa com os primeiros passos. Os seus foram dados.",
+    "en": "Every path begins with the first steps. Yours are taken.",
+    "es": "Todo camino empieza con los primeros pasos. Los tuyos ya están dados.",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewDaypartDawn": {
+    "pt": "Caminha de madrugada",
+    "en": "Walks before dawn",
+    "es": "Camina de madrugada",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewDaypartMorning": {
+    "pt": "Caminha de manhã",
+    "en": "Walks in the morning",
+    "es": "Camina por la mañana",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewDaypartAfternoon": {
+    "pt": "Caminha à tarde",
+    "en": "Walks in the afternoon",
+    "es": "Camina por la tarde",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewDaypartNight": {
+    "pt": "Caminha à noite",
+    "en": "Walks at night",
+    "es": "Camina por la noche",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewCardDays": {
+    "pt": "dias no caminho",
+    "en": "days on the way",
+    "es": "días en el camino",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewCardPostcards": {
+    "pt": "postais",
+    "en": "postcards",
+    "es": "postales",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewCardStreak": {
+    "pt": "dias seguidos",
+    "en": "days in a row",
+    "es": "días seguidos",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewShareSlide": {
+    "pt": "Compartilhar",
+    "en": "Share",
+    "es": "Compartir",
+    "description": "Retrospectiva do ano: compartilhar o slide da tela"
+  },
+  "yearReviewVideoCta": {
+    "pt": "Compartilhar em vídeo",
+    "en": "Share as a video",
+    "es": "Compartir en video",
+    "description": "Retrospectiva do ano: vídeo (Peregrino+)"
+  },
+  "yearReviewVideoRendering": {
+    "pt": "Montando o vídeo do seu ano…",
+    "en": "Putting together your year video…",
+    "es": "Armando el video de tu año…",
+    "description": "Retrospectiva do ano: vídeo (Peregrino+)"
   }
 }

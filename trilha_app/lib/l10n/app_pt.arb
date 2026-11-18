@@ -5359,8 +5359,24 @@
     }
   },
   "planRevealFaithfulBody": "Cumpriram todos os dias. Cada um ganha o selo.",
+  "planRevealFaithfulCount": "{count, plural, =1{1 pessoa cumpriu todos os dias do propósito.} other{{count} pessoas cumpriram todos os dias do propósito.}}",
+  "@planRevealFaithfulCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "planRevealFaithfulNone": "Desta vez ninguém cumpriu todos os dias. O próximo propósito é uma nova chance.",
   "planRevealFaithfulTitle": "Fiéis no propósito",
+  "planRevealGroupLine": "O grupo cumpriu {pct}% dos dias do propósito.",
+  "@planRevealGroupLine": {
+    "placeholders": {
+      "pct": {
+        "type": "int"
+      }
+    }
+  },
   "planRevealGroupPct": "dos dias do propósito, o grupo cumpriu junto",
   "planRevealYourSeal": "Você ganhou o selo Fiel. Ele fica ao lado do seu nome no grupo.",
   "planSeatAnswerDay": "Dia {n}",
@@ -6563,6 +6579,10 @@
     }
   },
   "roomRevealAgain": "Ver a revelação de novo",
+  "roomRevealAnanHigh": "Que caminhada! O grupo foi firme, junto, do começo ao fim.",
+  "roomRevealAnanLow": "Cada passo conta. Vem aí uma nova chance de caminhar junto.",
+  "roomRevealAnanMid": "Caminhamos juntos. Agora é dar o próximo passo.",
+  "roomRevealAnanSeal": "O selo Fiel é seu! Ele já brilha ao lado do seu nome.",
   "roomRevealConstantBody": "Esteve com a Palavra o maior número de dias.",
   "roomRevealConstantTitle": "Mais constante",
   "roomRevealDone": "Amém",
@@ -6575,15 +6595,37 @@
     }
   },
   "roomRevealFaithfulBody": "Fizeram tudo o que o líder marcou. Cada um ganha o selo.",
+  "roomRevealFaithfulCount": "{count, plural, =1{1 pessoa fez tudo o que o líder marcou.} other{{count} pessoas fizeram tudo o que o líder marcou.}}",
+  "@roomRevealFaithfulCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "roomRevealFaithfulNone": "Desta vez ninguém completou tudo. A próxima semana começa segunda.",
+  "roomRevealFaithfulSeal": "Cada uma leva o selo Fiel para o perfil.",
   "roomRevealFaithfulTitle": "Fiéis na semana",
   "roomRevealGiftCta": "Dar um passe de trilha a alguém",
   "roomRevealGiftHint": "Seu passe do mês libera uma trilha do Peregrino+ inteira para quem você escolher.",
   "roomRevealGiftPickBody": "Escolha a trilha. Depois envie o link para quem você quer premiar.",
   "roomRevealGiftPickTitle": "Qual trilha?",
+  "roomRevealGroupHigh": "Que caminhada!",
+  "roomRevealGroupLine": "O grupo fez {pct}% do que o líder marcou nesta semana.",
+  "@roomRevealGroupLine": {
+    "placeholders": {
+      "pct": {
+        "type": "int"
+      }
+    }
+  },
+  "roomRevealGroupLow": "Cada passo conta",
+  "roomRevealGroupMid": "Caminhamos juntos",
   "roomRevealGroupPct": "do que o líder marcou, o grupo fez junto",
   "roomRevealGrownBody": "Acertou mais nesta semana do que nas próprias semanas anteriores.",
   "roomRevealGrownTitle": "Quem mais cresceu",
+  "roomRevealShareCta": "Mandar o resumo no grupo",
+  "roomRevealTapHint": "Toque para revelar",
   "roomRevealTitle": "A semana do grupo",
   "roomRevealYourSeal": "Você ganhou o selo Fiel na semana. Ele fica ao lado do seu nome no grupo.",
   "roomSealCount": "{count, plural, =1{1 selo Fiel na semana} other{{count} selos Fiel na semana}}",
@@ -6591,6 +6633,38 @@
     "placeholders": {
       "count": {
         "type": "int"
+      }
+    }
+  },
+  "roomShareConstant": "Mais constante: {names}",
+  "@roomShareConstant": {
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "roomShareFaithful": "Fiéis (ganharam o selo): {names}",
+  "@roomShareFaithful": {
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "roomShareFooter": "Caminhamos juntos no STWAY: {link}",
+  "@roomShareFooter": {
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "roomShareGrown": "Quem mais cresceu: {names}",
+  "@roomShareGrown": {
+    "placeholders": {
+      "names": {
+        "type": "String"
       }
     }
   },
@@ -6665,6 +6739,30 @@
     }
   },
   "sealsTitle": "Selos",
+  "seasonCardJoined": "{count} peregrinos já entraram",
+  "@seasonCardJoined": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "seasonCardWalkedToday": "{count} hoje",
+  "@seasonCardWalkedToday": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "seasonCardWalking": "{count} peregrinos caminhando",
+  "@seasonCardWalking": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "seasonDayLine": "Dia {day} · {title}",
   "@seasonDayLine": {
     "placeholders": {
@@ -8011,12 +8109,129 @@
     }
   },
   "widgetWeekdayInitials": "S,T,Q,Q,S,S,D",
+  "yearReviewAdventWord": "de {total} dias do Advento",
+  "@yearReviewAdventWord": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "yearReviewAnanBook": "{book} foi a sua casa este ano.",
+  "@yearReviewAnanBook": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "book": {
+        "type": "String"
+      }
+    }
+  },
+  "yearReviewAnanDays": "Cada quadradinho aceso foi um dia em que você voltou.",
+  "@yearReviewAnanDays": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewAnanFeats": "Isso é caminho de quem leva a Palavra a sério.",
+  "@yearReviewAnanFeats": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewAnanGrowth": "Isso não é sorte. É leitura que ficou em você.",
+  "@yearReviewAnanGrowth": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewAnanMap": "Cada luz é um livro que você abriu este ano.",
+  "@yearReviewAnanMap": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewAnanMode": "É aqui que o seu olhar está mais afiado.",
+  "@yearReviewAnanMode": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewAnanTogether": "Caminhar junto deixa o caminho mais leve.",
+  "@yearReviewAnanTogether": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
   "yearReviewBookEyebrow": "O livro onde você mais esteve",
   "@yearReviewBookEyebrow": {
     "description": "Retrospectiva do ano (docs/postais.md)"
   },
+  "yearReviewCardDays": "dias no caminho",
+  "@yearReviewCardDays": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewCardPostcards": "postais",
+  "@yearReviewCardPostcards": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewCardStreak": "dias seguidos",
+  "@yearReviewCardStreak": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewChaptersWord": "{count, plural, =1{capítulo lido na Bíblia} other{capítulos lidos na Bíblia}}",
+  "@yearReviewChaptersWord": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yearReviewCollectionEyebrow": "Sua coleção",
+  "@yearReviewCollectionEyebrow": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewCollectionTitle": "{count, plural, =1{1 cena virou postal} other{{count} cenas viraram postais}}",
+  "@yearReviewCollectionTitle": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yearReviewCompanionWord": "{count, plural, =1{dia lado a lado com {name}} other{dias lado a lado com {name}}}",
+  "@yearReviewCompanionWord": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "yearReviewDaypartAfternoon": "Caminha à tarde",
+  "@yearReviewDaypartAfternoon": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewDaypartDawn": "Caminha de madrugada",
+  "@yearReviewDaypartDawn": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewDaypartMorning": "Caminha de manhã",
+  "@yearReviewDaypartMorning": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewDaypartNight": "Caminha à noite",
+  "@yearReviewDaypartNight": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
   "yearReviewDays": "em {count, plural, =1{1 dia} other{{count} dias}} de caminhada",
   "@yearReviewDays": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yearReviewDaysEyebrow": "Seu ano, dia a dia",
+  "@yearReviewDaysEyebrow": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewDaysWord": "{count, plural, =1{dia no caminho} other{dias no caminho}}",
+  "@yearReviewDaysWord": {
     "description": "Retrospectiva do ano (docs/postais.md)",
     "placeholders": {
       "count": {
@@ -8037,37 +8252,163 @@
   "@yearReviewEyebrow": {
     "description": "Retrospectiva do ano (docs/postais.md)"
   },
-  "yearReviewFirstLast": "Do primeiro, {first}, ao mais recente, {last}.",
-  "@yearReviewFirstLast": {
+  "yearReviewFeatsEyebrow": "Marcos do ano",
+  "@yearReviewFeatsEyebrow": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewFirst": "O primeiro",
+  "@yearReviewFirst": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewGroupLine": "Caminhando com o grupo {name}",
+  "@yearReviewGroupLine": {
     "description": "Retrospectiva do ano (docs/postais.md)",
     "placeholders": {
-      "first": {
-        "type": "String"
-      },
-      "last": {
+      "name": {
         "type": "String"
       }
     }
+  },
+  "yearReviewGrowthEyebrow": "Você cresceu",
+  "@yearReviewGrowthEyebrow": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewGrowthLine": "Acerto de primeira em {mode}: de {from}% para {to}%",
+  "@yearReviewGrowthLine": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      },
+      "from": {
+        "type": "int"
+      },
+      "to": {
+        "type": "int"
+      }
+    }
+  },
+  "yearReviewGrowthWord": "pontos a mais de acerto",
+  "@yearReviewGrowthWord": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewLatest": "O mais recente",
+  "@yearReviewLatest": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
   },
   "yearReviewLocked": "O resto da sua retrospectiva está no Peregrino+",
   "@yearReviewLocked": {
     "description": "Retrospectiva do ano (docs/postais.md)"
   },
-  "yearReviewModeEyebrow": "Onde você mais acerta",
-  "@yearReviewModeEyebrow": {
+  "yearReviewMapEyebrow": "Sua Bíblia acesa",
+  "@yearReviewMapEyebrow": {
     "description": "Retrospectiva do ano (docs/postais.md)"
   },
-  "yearReviewModeLine": "{pct}% de acerto de primeira",
-  "@yearReviewModeLine": {
+  "yearReviewMapPostcard": "com postal",
+  "@yearReviewMapPostcard": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewMapRead": "lido na Bíblia",
+  "@yearReviewMapRead": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewMapTitle": "{count, plural, =1{1 livro aceso de 66} other{{count} livros acesos de 66}}",
+  "@yearReviewMapTitle": {
     "description": "Retrospectiva do ano (docs/postais.md)",
     "placeholders": {
-      "pct": {
+      "count": {
         "type": "int"
       }
     }
   },
+  "yearReviewModeEyebrow": "Onde você mais acerta",
+  "@yearReviewModeEyebrow": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewModeWord": "de acerto de primeira",
+  "@yearReviewModeWord": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
   "yearReviewOpen": "Ver a retrospectiva",
   "@yearReviewOpen": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPerfectWord": "{count, plural, =1{cena sem errar nada} other{cenas sem errar nada}}",
+  "@yearReviewPerfectWord": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yearReviewPersonaAdvent": "Peregrino do Advento",
+  "@yearReviewPersonaAdvent": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaAdventLine": "Você esperou o Natal caminhando, dia após dia.",
+  "@yearReviewPersonaAdventLine": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaConstant": "Peregrino constante",
+  "@yearReviewPersonaConstant": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaConstantLine": "Você voltou dia após dia. É assim que se caminha.",
+  "@yearReviewPersonaConstantLine": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaExplorer": "Explorador das Escrituras",
+  "@yearReviewPersonaExplorer": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaExplorerLine": "Você atravessou a Bíblia de ponta a ponta.",
+  "@yearReviewPersonaExplorerLine": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaEyebrow": "Quem você foi em {year}",
+  "@yearReviewPersonaEyebrow": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "yearReviewPersonaGroup": "Fiel do grupo",
+  "@yearReviewPersonaGroup": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaGroupLine": "Você fez o caminho com outros e não largou ninguém.",
+  "@yearReviewPersonaGroupLine": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaGrower": "Aprendiz que cresce",
+  "@yearReviewPersonaGrower": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaGrowerLine": "Hoje você entende o que não entendia no começo do ano.",
+  "@yearReviewPersonaGrowerLine": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaPilgrim": "Peregrino a caminho",
+  "@yearReviewPersonaPilgrim": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaPilgrimLine": "Todo caminho começa com os primeiros passos. Os seus foram dados.",
+  "@yearReviewPersonaPilgrimLine": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaReader": "Leitor da Palavra",
+  "@yearReviewPersonaReader": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPersonaReaderLine": "Você leu capítulo por capítulo, sem pressa.",
+  "@yearReviewPersonaReaderLine": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPhraseEyebrow": "A frase que ficou",
+  "@yearReviewPhraseEyebrow": {
     "description": "Retrospectiva do ano (docs/postais.md)"
   },
   "yearReviewPostcards": "{count, plural, =1{1 postal} other{{count} postais}}",
@@ -8079,12 +8420,115 @@
       }
     }
   },
+  "yearReviewPostcardsWord": "{count, plural, =1{postal no caminho} other{postais no caminho}}",
+  "@yearReviewPostcardsWord": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yearReviewRecognitionsWord": "{count, plural, =1{vez que alguém reconheceu sua caminhada} other{vezes que alguém reconheceu sua caminhada}}",
+  "@yearReviewRecognitionsWord": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yearReviewSealsWord": "{count, plural, =1{selo Fiel no grupo} other{selos Fiel no grupo}}",
+  "@yearReviewSealsWord": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yearReviewShareCta": "Compartilhar meu ano",
+  "@yearReviewShareCta": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewShareEyebrow": "Seu ano em um card",
+  "@yearReviewShareEyebrow": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewShareSlide": "Compartilhar",
+  "@yearReviewShareSlide": {
+    "description": "Retrospectiva do ano: compartilhar o slide da tela"
+  },
+  "yearReviewShareText": "Minha caminhada na Bíblia em {year}, cena a cena, no STWAY: {link}",
+  "@yearReviewShareText": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "year": {
+        "type": "String"
+      },
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "yearReviewTap": "Toque para continuar",
+  "@yearReviewTap": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
   "yearReviewTitle": "Sua caminhada em {year}",
   "@yearReviewTitle": {
     "description": "Retrospectiva do ano (docs/postais.md)",
     "placeholders": {
       "year": {
         "type": "String"
+      }
+    }
+  },
+  "yearReviewTogetherEyebrow": "Você não caminhou sozinho",
+  "@yearReviewTogetherEyebrow": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewTopMonthLine": "Mês mais forte: {month}",
+  "@yearReviewTopMonthLine": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "yearReviewTrailsWord": "{count, plural, =1{trilha completa} other{trilhas completas}}",
+  "@yearReviewTrailsWord": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yearReviewVersesWord": "{count, plural, =1{versículo guardado de cor} other{versículos guardados de cor}}",
+  "@yearReviewVersesWord": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yearReviewVideoCta": "Compartilhar em vídeo",
+  "@yearReviewVideoCta": {
+    "description": "Retrospectiva do ano: vídeo (Peregrino+)"
+  },
+  "yearReviewVideoRendering": "Montando o vídeo do seu ano…",
+  "@yearReviewVideoRendering": {
+    "description": "Retrospectiva do ano: vídeo (Peregrino+)"
+  },
+  "yearReviewYearStreak": "Maior sequência: {count, plural, =1{1 dia} other{{count} dias seguidos}}",
+  "@yearReviewYearStreak": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "count": {
+        "type": "int"
       }
     }
   }

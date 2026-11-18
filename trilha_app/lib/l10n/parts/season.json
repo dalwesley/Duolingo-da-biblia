@@ -16,6 +16,30 @@
       "count": "int"
     }
   },
+  "seasonCardWalking": {
+    "pt": "{count} peregrinos caminhando",
+    "en": "{count} pilgrims walking",
+    "es": "{count} peregrinos caminando",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "seasonCardWalkedToday": {
+    "pt": "{count} hoje",
+    "en": "{count} today",
+    "es": "{count} hoy",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "seasonCardJoined": {
+    "pt": "{count} peregrinos já entraram",
+    "en": "{count} pilgrims already joined",
+    "es": "{count} peregrinos ya entraron",
+    "placeholders": {
+      "count": "int"
+    }
+  },
   "seasonEnded": {
     "pt": "Estação encerrada",
     "en": "Season ended",

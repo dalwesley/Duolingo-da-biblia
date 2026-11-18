@@ -206,6 +206,120 @@
     "en": "Earned at your group's week close, in weeks you did everything the leader set.",
     "es": "Ganados en el cierre de tu grupo, en las semanas en que hiciste todo lo que marcó el líder."
   },
+  "roomRevealTapHint": {
+    "pt": "Toque para revelar",
+    "en": "Tap to reveal",
+    "es": "Toca para revelar"
+  },
+  "roomRevealGroupHigh": {
+    "pt": "Que caminhada!",
+    "en": "What a walk!",
+    "es": "¡Qué caminata!"
+  },
+  "roomRevealGroupMid": {
+    "pt": "Caminhamos juntos",
+    "en": "We walked together",
+    "es": "Caminamos juntos"
+  },
+  "roomRevealGroupLow": {
+    "pt": "Cada passo conta",
+    "en": "Every step counts",
+    "es": "Cada paso cuenta"
+  },
+  "roomRevealGroupLine": {
+    "pt": "O grupo fez {pct}% do que o líder marcou nesta semana.",
+    "en": "The group did {pct}% of what the leader set this week.",
+    "es": "El grupo hizo el {pct}% de lo que marcó el líder esta semana.",
+    "placeholders": {
+      "pct": "int"
+    }
+  },
+  "planRevealGroupLine": {
+    "pt": "O grupo cumpriu {pct}% dos dias do propósito.",
+    "en": "The group completed {pct}% of the purpose's days.",
+    "es": "El grupo cumplió el {pct}% de los días del propósito.",
+    "placeholders": {
+      "pct": "int"
+    }
+  },
+  "roomRevealFaithfulCount": {
+    "pt": "{count, plural, =1{1 pessoa fez tudo o que o líder marcou.} other{{count} pessoas fizeram tudo o que o líder marcou.}}",
+    "en": "{count, plural, =1{1 person did everything the leader set.} other{{count} people did everything the leader set.}}",
+    "es": "{count, plural, =1{1 persona hizo todo lo que marcó el líder.} other{{count} personas hicieron todo lo que marcó el líder.}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planRevealFaithfulCount": {
+    "pt": "{count, plural, =1{1 pessoa cumpriu todos os dias do propósito.} other{{count} pessoas cumpriram todos os dias do propósito.}}",
+    "en": "{count, plural, =1{1 person completed every day of the purpose.} other{{count} people completed every day of the purpose.}}",
+    "es": "{count, plural, =1{1 persona cumplió todos los días del propósito.} other{{count} personas cumplieron todos los días del propósito.}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "roomRevealFaithfulSeal": {
+    "pt": "Cada uma leva o selo Fiel para o perfil.",
+    "en": "Each one takes the Faithful seal to their profile.",
+    "es": "Cada una lleva el sello Fiel a su perfil."
+  },
+  "roomRevealAnanSeal": {
+    "pt": "O selo Fiel é seu! Ele já brilha ao lado do seu nome.",
+    "en": "The Faithful seal is yours! It already shines next to your name.",
+    "es": "¡El sello Fiel es tuyo! Ya brilla junto a tu nombre."
+  },
+  "roomRevealAnanHigh": {
+    "pt": "Que caminhada! O grupo foi firme, junto, do começo ao fim.",
+    "en": "What a walk! The group stood firm together, start to finish.",
+    "es": "¡Qué caminata! El grupo fue firme, junto, de principio a fin."
+  },
+  "roomRevealAnanMid": {
+    "pt": "Caminhamos juntos. Agora é dar o próximo passo.",
+    "en": "We walked together. Now let's take the next step.",
+    "es": "Caminamos juntos. Ahora toca dar el siguiente paso."
+  },
+  "roomRevealAnanLow": {
+    "pt": "Cada passo conta. Vem aí uma nova chance de caminhar junto.",
+    "en": "Every step counts. A new chance to walk together is coming.",
+    "es": "Cada paso cuenta. Viene una nueva oportunidad de caminar juntos."
+  },
+  "roomRevealShareCta": {
+    "pt": "Mandar o resumo no grupo",
+    "en": "Send the summary to the group",
+    "es": "Enviar el resumen al grupo"
+  },
+  "roomShareFaithful": {
+    "pt": "Fiéis (ganharam o selo): {names}",
+    "en": "Faithful (earned the seal): {names}",
+    "es": "Fieles (ganaron el sello): {names}",
+    "placeholders": {
+      "names": "String"
+    }
+  },
+  "roomShareConstant": {
+    "pt": "Mais constante: {names}",
+    "en": "Most consistent: {names}",
+    "es": "Más constante: {names}",
+    "placeholders": {
+      "names": "String"
+    }
+  },
+  "roomShareGrown": {
+    "pt": "Quem mais cresceu: {names}",
+    "en": "Grew the most: {names}",
+    "es": "Quien más creció: {names}",
+    "placeholders": {
+      "names": "String"
+    }
+  },
+  "roomShareFooter": {
+    "pt": "Caminhamos juntos no STWAY: {link}",
+    "en": "We walk together on STWAY: {link}",
+    "es": "Caminamos juntos en STWAY: {link}",
+    "placeholders": {
+      "link": "String"
+    }
+  },
   "roomRevealGrownTitle": {
     "pt": "Quem mais cresceu",
     "en": "Grew the most",

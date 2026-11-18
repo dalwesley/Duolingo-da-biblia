@@ -12,6 +12,7 @@ import '../services/progress_service.dart';
 import '../services/remote_config_service.dart';
 import '../utils/juntos_invite_pace.dart';
 import '../models/advent_prize.dart';
+import '../models/room_week.dart';
 import '../services/advent_prize_service.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
@@ -32,9 +33,11 @@ import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'lesson_screen.dart';
 import 'paywall_screen.dart';
+import 'room_reveal_screen.dart';
 import 'support_screen.dart';
 import 'weekly_review_screen.dart';
 import 'year_review_screen.dart';
+import '../data/year_review.dart';
 
 /// Laboratório do Peregrino+ — só em build de desenvolvimento ([kDebugMode]).
 ///
@@ -63,6 +66,34 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
   DateTime _inDays(int n) {
     final now = DateTime.now();
     return DateTime(now.year, now.month, now.day + n);
+  }
+
+  /// Fechamento de mentira (sem [myUid]: não reivindica selo).
+  void _openFakeReveal({required bool plan}) {
+    RoomRevealScreen.open(
+      context,
+      roomName: 'Célula Esperança',
+      isLeader: true,
+      closing: RoomClosing(
+        week: 'lab-${plan ? 'plan' : 'week'}',
+        groupPct: 78,
+        members: 8,
+        faithful: const ['a', 'b', 'c'],
+        constant: const ['d'],
+        grown: const ['e'],
+        names: const {
+          'a': 'Ana',
+          'b': 'Lucas',
+          'c': 'Davi',
+          'd': 'Marta',
+          'e': 'Pedro',
+        },
+        studyTitle: plan ? null : 'Êxodo · O sangue na porta',
+        readingLabel: plan ? null : 'Êxodo 12–14',
+        planTitle: plan ? 'Êxodo em 7 dias' : null,
+        planDays: plan ? 7 : null,
+      ),
+    );
   }
 
   void _toast(String message) {
@@ -549,6 +580,47 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                         button(
                           'Abrir retrospectiva do ano',
                           () => openYearReview(context, force: true),
+                        ),
+                        button(
+                          'Retrospectiva de exemplo (ano cheio)',
+                          () async {
+                            // Os postais são os seus; o resto é um ano cheio.
+                            final real = await YearReview.build(
+                              context.read<ProgressService>(),
+                              DateTime.now().year,
+                              loadBible: false,
+                            );
+                            if (!context.mounted) return;
+                            await Navigator.of(
+                              context,
+                              rootNavigator: true,
+                            ).push(
+                              MaterialPageRoute<void>(
+                                fullscreenDialog: true,
+                                builder: (_) => YearReviewScreen(
+                                  review: YearReview.sample(
+                                    postcards: real.postcards,
+                                  ),
+                                ),
+                              ),
+                            );
+                          },
+                        ),
+                      ]),
+                      section('Grupo', [
+                        line(
+                          'Abre a revelação da semana de um grupo de '
+                          'mentira, como líder: confira o botão "Mandar o '
+                          'resumo no grupo" e o texto do WhatsApp. Não '
+                          'grava selo nem fechamento.',
+                        ),
+                        button(
+                          'Revelação da semana (semanal)',
+                          () => _openFakeReveal(plan: false),
+                        ),
+                        button(
+                          'Revelação do propósito',
+                          () => _openFakeReveal(plan: true),
                         ),
                       ]),
                       section('A Promessa', [

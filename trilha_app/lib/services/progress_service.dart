@@ -476,6 +476,10 @@ class ProgressService extends ChangeNotifier {
   /// ou no período do propósito, e não meses antes.
   Map<String, String> sceneLastDoneOn = {};
 
+  /// Cenas terminadas por hora do dia, por ano ("2026.07" → 12). A
+  /// retrospectiva usa para dizer quando a pessoa costuma caminhar.
+  Map<String, int> sceneHours = {};
+
   /// A cena foi feita em [sinceYmd] ou depois? Sem a última data (feita
   /// antes de existir o campo), vale a da primeira vez.
   bool sceneDoneSince(String slug, String sinceYmd) {
@@ -1339,6 +1343,7 @@ class ProgressService extends ChangeNotifier {
     completedMissions = [];
     missionCompletedOn = {};
     sceneLastDoneOn = {};
+    sceneHours = {};
     trailChosenAt = {};
     trailsLeftAt = {};
     leftMissionSlugs = [];
@@ -3163,6 +3168,9 @@ class ProgressService extends ChangeNotifier {
   Future<void> markSceneDone(Iterable<String> slugs) async {
     final today = _todayKey();
     sceneLastDoneOn = {...sceneLastDoneOn, for (final s in slugs) s: today};
+    final now = DateTime.now();
+    final hourKey = '${now.year}.${now.hour.toString().padLeft(2, '0')}';
+    sceneHours = {...sceneHours, hourKey: (sceneHours[hourKey] ?? 0) + 1};
     await _save();
     notifyListeners();
   }
@@ -3410,6 +3418,7 @@ class ProgressService extends ChangeNotifier {
       'lifetimeQuestionsAnswered': lifetimeQuestionsAnswered,
       'missionCompletedOn': missionCompletedOn,
       'sceneLastDoneOn': sceneLastDoneOn,
+      'sceneHours': sceneHours,
       'trailChosenAt': trailChosenAt,
       'trailsLeftAt': trailsLeftAt,
       'leftMissionSlugs': leftMissionSlugs,
@@ -4202,6 +4211,12 @@ class ProgressService extends ChangeNotifier {
         }
         sceneLastDoneOn = merged;
       }
+      if (data.containsKey('sceneHours')) {
+        sceneHours = _mergeIntMapsMax(
+          sceneHours,
+          _asIntMap(data['sceneHours']),
+        );
+      }
       if (data.containsKey('postcardsOn')) {
         // Como a cena: fica o dia em que o postal foi revelado pela 1ª vez.
         final merged = Map<String, String>.from(postcardsOn);
@@ -4559,6 +4574,7 @@ class ProgressService extends ChangeNotifier {
     lastPlayedDate = null;
     completedMissions = [];
     missionCompletedOn = {};
+    sceneHours = {};
     trailChosenAt = {};
     trailsLeftAt = {};
     leftMissionSlugs = [];

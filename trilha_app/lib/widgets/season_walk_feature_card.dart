@@ -62,7 +62,40 @@ class SeasonWalkFeatureCard extends StatefulWidget {
 }
 
 class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard> {
+  /// Abaixo disso o número soa vazio; a linha some.
+  static const _minPulse = 5;
+
   bool _pressed = false;
+  Future<SeasonWalkPulse?>? _pulse;
+  String? _pulseCampaignId;
+
+  /// Busca o pulso uma vez por estação (contagens agregadas, leitura barata).
+  Future<SeasonWalkPulse?> _pulseFor(String campaignId) {
+    if (_pulseCampaignId != campaignId || _pulse == null) {
+      _pulseCampaignId = campaignId;
+      final fake = SeasonWalkDebug.crowd;
+      _pulse = fake != null
+          ? Future.value(
+              SeasonWalkPulse(
+                walkers: fake,
+                walkedToday: fake ~/ 3,
+                daysTogether: 0,
+              ),
+            )
+          : context.read<BackendService>().fetchSeasonWalkPulse(campaignId);
+    }
+    return _pulse!;
+  }
+
+  String? _pulseLine(SeasonWalkPulse? pulse, {required bool running}) {
+    if (pulse == null || pulse.walkers < _minPulse) return null;
+    final l10n = context.l10n;
+    if (!running) return l10n.seasonCardJoined(pulse.walkers);
+    final walking = l10n.seasonCardWalking(pulse.walkers);
+    return pulse.walkedToday > 0
+        ? '$walking · ${l10n.seasonCardWalkedToday(pulse.walkedToday)}'
+        : walking;
+  }
 
   void _open(SeasonWalkCampaign campaign, DateTime today) {
     ActHaptics.confirm();
@@ -282,6 +315,44 @@ class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard> {
                                   height: 1.35,
                                   color: ink.textSecondary,
                                 ),
+                              ),
+                              FutureBuilder<SeasonWalkPulse?>(
+                                future: _pulseFor(campaign.id),
+                                builder: (context, snap) {
+                                  final line = _pulseLine(
+                                    snap.data,
+                                    running: running,
+                                  );
+                                  if (line == null) {
+                                    return const SizedBox.shrink();
+                                  }
+                                  return Padding(
+                                    padding: const EdgeInsets.only(top: 6),
+                                    child: Row(
+                                      children: [
+                                        CinematicIcon(
+                                          glyph: CinematicGlyph.people,
+                                          size: 14,
+                                          accent: accent,
+                                          framed: false,
+                                        ),
+                                        const SizedBox(width: 6),
+                                        Expanded(
+                                          child: Text(
+                                            line,
+                                            maxLines: 1,
+                                            overflow: TextOverflow.ellipsis,
+                                            style: AppTypography.body(
+                                              size: 12,
+                                              weight: FontWeight.w700,
+                                              color: ink.text,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  );
+                                },
                               ),
                               if (progress != null) ...[
                                 const SizedBox(height: 10),

@@ -12141,6 +12141,12 @@ abstract class AppLocalizations {
   /// **'Cumpriram todos os dias. Cada um ganha o selo.'**
   String get planRevealFaithfulBody;
 
+  /// No description provided for @planRevealFaithfulCount.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 pessoa cumpriu todos os dias do propósito.} other{{count} pessoas cumpriram todos os dias do propósito.}}'**
+  String planRevealFaithfulCount(int count);
+
   /// No description provided for @planRevealFaithfulNone.
   ///
   /// In pt, this message translates to:
@@ -12152,6 +12158,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Fiéis no propósito'**
   String get planRevealFaithfulTitle;
+
+  /// No description provided for @planRevealGroupLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'O grupo cumpriu {pct}% dos dias do propósito.'**
+  String planRevealGroupLine(int pct);
 
   /// No description provided for @planRevealGroupPct.
   ///
@@ -14835,6 +14847,30 @@ abstract class AppLocalizations {
   /// **'Ver a revelação de novo'**
   String get roomRevealAgain;
 
+  /// No description provided for @roomRevealAnanHigh.
+  ///
+  /// In pt, this message translates to:
+  /// **'Que caminhada! O grupo foi firme, junto, do começo ao fim.'**
+  String get roomRevealAnanHigh;
+
+  /// No description provided for @roomRevealAnanLow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cada passo conta. Vem aí uma nova chance de caminhar junto.'**
+  String get roomRevealAnanLow;
+
+  /// No description provided for @roomRevealAnanMid.
+  ///
+  /// In pt, this message translates to:
+  /// **'Caminhamos juntos. Agora é dar o próximo passo.'**
+  String get roomRevealAnanMid;
+
+  /// No description provided for @roomRevealAnanSeal.
+  ///
+  /// In pt, this message translates to:
+  /// **'O selo Fiel é seu! Ele já brilha ao lado do seu nome.'**
+  String get roomRevealAnanSeal;
+
   /// No description provided for @roomRevealConstantBody.
   ///
   /// In pt, this message translates to:
@@ -14865,11 +14901,23 @@ abstract class AppLocalizations {
   /// **'Fizeram tudo o que o líder marcou. Cada um ganha o selo.'**
   String get roomRevealFaithfulBody;
 
+  /// No description provided for @roomRevealFaithfulCount.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 pessoa fez tudo o que o líder marcou.} other{{count} pessoas fizeram tudo o que o líder marcou.}}'**
+  String roomRevealFaithfulCount(int count);
+
   /// No description provided for @roomRevealFaithfulNone.
   ///
   /// In pt, this message translates to:
   /// **'Desta vez ninguém completou tudo. A próxima semana começa segunda.'**
   String get roomRevealFaithfulNone;
+
+  /// No description provided for @roomRevealFaithfulSeal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cada uma leva o selo Fiel para o perfil.'**
+  String get roomRevealFaithfulSeal;
 
   /// No description provided for @roomRevealFaithfulTitle.
   ///
@@ -14901,6 +14949,30 @@ abstract class AppLocalizations {
   /// **'Qual trilha?'**
   String get roomRevealGiftPickTitle;
 
+  /// No description provided for @roomRevealGroupHigh.
+  ///
+  /// In pt, this message translates to:
+  /// **'Que caminhada!'**
+  String get roomRevealGroupHigh;
+
+  /// No description provided for @roomRevealGroupLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'O grupo fez {pct}% do que o líder marcou nesta semana.'**
+  String roomRevealGroupLine(int pct);
+
+  /// No description provided for @roomRevealGroupLow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cada passo conta'**
+  String get roomRevealGroupLow;
+
+  /// No description provided for @roomRevealGroupMid.
+  ///
+  /// In pt, this message translates to:
+  /// **'Caminhamos juntos'**
+  String get roomRevealGroupMid;
+
   /// No description provided for @roomRevealGroupPct.
   ///
   /// In pt, this message translates to:
@@ -14919,6 +14991,18 @@ abstract class AppLocalizations {
   /// **'Quem mais cresceu'**
   String get roomRevealGrownTitle;
 
+  /// No description provided for @roomRevealShareCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mandar o resumo no grupo'**
+  String get roomRevealShareCta;
+
+  /// No description provided for @roomRevealTapHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Toque para revelar'**
+  String get roomRevealTapHint;
+
   /// No description provided for @roomRevealTitle.
   ///
   /// In pt, this message translates to:
@@ -14936,6 +15020,30 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'{count, plural, =1{1 selo Fiel na semana} other{{count} selos Fiel na semana}}'**
   String roomSealCount(int count);
+
+  /// No description provided for @roomShareConstant.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mais constante: {names}'**
+  String roomShareConstant(String names);
+
+  /// No description provided for @roomShareFaithful.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fiéis (ganharam o selo): {names}'**
+  String roomShareFaithful(String names);
+
+  /// No description provided for @roomShareFooter.
+  ///
+  /// In pt, this message translates to:
+  /// **'Caminhamos juntos no STWAY: {link}'**
+  String roomShareFooter(String link);
+
+  /// No description provided for @roomShareGrown.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quem mais cresceu: {names}'**
+  String roomShareGrown(String names);
 
   /// No description provided for @roomStudyFallbackTitle.
   ///
@@ -15020,6 +15128,24 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Selos'**
   String get sealsTitle;
+
+  /// No description provided for @seasonCardJoined.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count} peregrinos já entraram'**
+  String seasonCardJoined(int count);
+
+  /// No description provided for @seasonCardWalkedToday.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count} hoje'**
+  String seasonCardWalkedToday(int count);
+
+  /// No description provided for @seasonCardWalking.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count} peregrinos caminhando'**
+  String seasonCardWalking(int count);
 
   /// No description provided for @seasonDayLine.
   ///
@@ -17970,14 +18096,140 @@ abstract class AppLocalizations {
   /// Retrospectiva do ano (docs/postais.md)
   ///
   /// In pt, this message translates to:
+  /// **'de {total} dias do Advento'**
+  String yearReviewAdventWord(int total);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'{book} foi a sua casa este ano.'**
+  String yearReviewAnanBook(String book);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Cada quadradinho aceso foi um dia em que você voltou.'**
+  String get yearReviewAnanDays;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Isso é caminho de quem leva a Palavra a sério.'**
+  String get yearReviewAnanFeats;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Isso não é sorte. É leitura que ficou em você.'**
+  String get yearReviewAnanGrowth;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Cada luz é um livro que você abriu este ano.'**
+  String get yearReviewAnanMap;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'É aqui que o seu olhar está mais afiado.'**
+  String get yearReviewAnanMode;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Caminhar junto deixa o caminho mais leve.'**
+  String get yearReviewAnanTogether;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
   /// **'O livro onde você mais esteve'**
   String get yearReviewBookEyebrow;
 
   /// Retrospectiva do ano (docs/postais.md)
   ///
   /// In pt, this message translates to:
+  /// **'dias no caminho'**
+  String get yearReviewCardDays;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'postais'**
+  String get yearReviewCardPostcards;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'dias seguidos'**
+  String get yearReviewCardStreak;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{capítulo lido na Bíblia} other{capítulos lidos na Bíblia}}'**
+  String yearReviewChaptersWord(int count);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua coleção'**
+  String get yearReviewCollectionEyebrow;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 cena virou postal} other{{count} cenas viraram postais}}'**
+  String yearReviewCollectionTitle(int count);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{dia lado a lado com {name}} other{dias lado a lado com {name}}}'**
+  String yearReviewCompanionWord(int count, String name);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Caminha à tarde'**
+  String get yearReviewDaypartAfternoon;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Caminha de madrugada'**
+  String get yearReviewDaypartDawn;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Caminha de manhã'**
+  String get yearReviewDaypartMorning;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Caminha à noite'**
+  String get yearReviewDaypartNight;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
   /// **'em {count, plural, =1{1 dia} other{{count} dias}} de caminhada'**
   String yearReviewDays(int count);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu ano, dia a dia'**
+  String get yearReviewDaysEyebrow;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{dia no caminho} other{dias no caminho}}'**
+  String yearReviewDaysWord(int count);
 
   /// Retrospectiva do ano (docs/postais.md)
   ///
@@ -17994,8 +18246,44 @@ abstract class AppLocalizations {
   /// Retrospectiva do ano (docs/postais.md)
   ///
   /// In pt, this message translates to:
-  /// **'Do primeiro, {first}, ao mais recente, {last}.'**
-  String yearReviewFirstLast(String first, String last);
+  /// **'Marcos do ano'**
+  String get yearReviewFeatsEyebrow;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'O primeiro'**
+  String get yearReviewFirst;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Caminhando com o grupo {name}'**
+  String yearReviewGroupLine(String name);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Você cresceu'**
+  String get yearReviewGrowthEyebrow;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Acerto de primeira em {mode}: de {from}% para {to}%'**
+  String yearReviewGrowthLine(String mode, int from, int to);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'pontos a mais de acerto'**
+  String get yearReviewGrowthWord;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'O mais recente'**
+  String get yearReviewLatest;
 
   /// Retrospectiva do ano (docs/postais.md)
   ///
@@ -18006,14 +18294,38 @@ abstract class AppLocalizations {
   /// Retrospectiva do ano (docs/postais.md)
   ///
   /// In pt, this message translates to:
+  /// **'Sua Bíblia acesa'**
+  String get yearReviewMapEyebrow;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'com postal'**
+  String get yearReviewMapPostcard;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'lido na Bíblia'**
+  String get yearReviewMapRead;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 livro aceso de 66} other{{count} livros acesos de 66}}'**
+  String yearReviewMapTitle(int count);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
   /// **'Onde você mais acerta'**
   String get yearReviewModeEyebrow;
 
   /// Retrospectiva do ano (docs/postais.md)
   ///
   /// In pt, this message translates to:
-  /// **'{pct}% de acerto de primeira'**
-  String yearReviewModeLine(int pct);
+  /// **'de acerto de primeira'**
+  String get yearReviewModeWord;
 
   /// Retrospectiva do ano (docs/postais.md)
   ///
@@ -18024,14 +18336,206 @@ abstract class AppLocalizations {
   /// Retrospectiva do ano (docs/postais.md)
   ///
   /// In pt, this message translates to:
+  /// **'{count, plural, =1{cena sem errar nada} other{cenas sem errar nada}}'**
+  String yearReviewPerfectWord(int count);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Peregrino do Advento'**
+  String get yearReviewPersonaAdvent;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Você esperou o Natal caminhando, dia após dia.'**
+  String get yearReviewPersonaAdventLine;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Peregrino constante'**
+  String get yearReviewPersonaConstant;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Você voltou dia após dia. É assim que se caminha.'**
+  String get yearReviewPersonaConstantLine;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Explorador das Escrituras'**
+  String get yearReviewPersonaExplorer;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Você atravessou a Bíblia de ponta a ponta.'**
+  String get yearReviewPersonaExplorerLine;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Quem você foi em {year}'**
+  String yearReviewPersonaEyebrow(String year);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Fiel do grupo'**
+  String get yearReviewPersonaGroup;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Você fez o caminho com outros e não largou ninguém.'**
+  String get yearReviewPersonaGroupLine;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Aprendiz que cresce'**
+  String get yearReviewPersonaGrower;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Hoje você entende o que não entendia no começo do ano.'**
+  String get yearReviewPersonaGrowerLine;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Peregrino a caminho'**
+  String get yearReviewPersonaPilgrim;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Todo caminho começa com os primeiros passos. Os seus foram dados.'**
+  String get yearReviewPersonaPilgrimLine;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Leitor da Palavra'**
+  String get yearReviewPersonaReader;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Você leu capítulo por capítulo, sem pressa.'**
+  String get yearReviewPersonaReaderLine;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'A frase que ficou'**
+  String get yearReviewPhraseEyebrow;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
   /// **'{count, plural, =1{1 postal} other{{count} postais}}'**
   String yearReviewPostcards(int count);
 
   /// Retrospectiva do ano (docs/postais.md)
   ///
   /// In pt, this message translates to:
+  /// **'{count, plural, =1{postal no caminho} other{postais no caminho}}'**
+  String yearReviewPostcardsWord(int count);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{vez que alguém reconheceu sua caminhada} other{vezes que alguém reconheceu sua caminhada}}'**
+  String yearReviewRecognitionsWord(int count);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{selo Fiel no grupo} other{selos Fiel no grupo}}'**
+  String yearReviewSealsWord(int count);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Compartilhar meu ano'**
+  String get yearReviewShareCta;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu ano em um card'**
+  String get yearReviewShareEyebrow;
+
+  /// Retrospectiva do ano: compartilhar o slide da tela
+  ///
+  /// In pt, this message translates to:
+  /// **'Compartilhar'**
+  String get yearReviewShareSlide;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Minha caminhada na Bíblia em {year}, cena a cena, no STWAY: {link}'**
+  String yearReviewShareText(String year, String link);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Toque para continuar'**
+  String get yearReviewTap;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
   /// **'Sua caminhada em {year}'**
   String yearReviewTitle(String year);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Você não caminhou sozinho'**
+  String get yearReviewTogetherEyebrow;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Mês mais forte: {month}'**
+  String yearReviewTopMonthLine(String month);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{trilha completa} other{trilhas completas}}'**
+  String yearReviewTrailsWord(int count);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{versículo guardado de cor} other{versículos guardados de cor}}'**
+  String yearReviewVersesWord(int count);
+
+  /// Retrospectiva do ano: vídeo (Peregrino+)
+  ///
+  /// In pt, this message translates to:
+  /// **'Compartilhar em vídeo'**
+  String get yearReviewVideoCta;
+
+  /// Retrospectiva do ano: vídeo (Peregrino+)
+  ///
+  /// In pt, this message translates to:
+  /// **'Montando o vídeo do seu ano…'**
+  String get yearReviewVideoRendering;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Maior sequência: {count, plural, =1{1 dia} other{{count} dias seguidos}}'**
+  String yearReviewYearStreak(int count);
 }
 
 class _AppLocalizationsDelegate

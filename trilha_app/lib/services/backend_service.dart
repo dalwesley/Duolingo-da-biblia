@@ -874,6 +874,7 @@ class BackendService extends ChangeNotifier {
     'weekAnswerTotal',
     'bibleChapterReadOn',
     'missionCompletedOn',
+    'sceneHours',
     'postcardsOn',
     'postcardRefs',
     'giftedTrails',

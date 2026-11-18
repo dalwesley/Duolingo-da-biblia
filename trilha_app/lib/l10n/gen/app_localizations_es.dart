@@ -7859,11 +7859,27 @@ class AppLocalizationsEs extends AppLocalizations {
       'Cumplieron todos los días. Cada uno gana el sello.';
 
   @override
+  String planRevealFaithfulCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count personas cumplieron todos los días del propósito.',
+      one: '1 persona cumplió todos los días del propósito.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get planRevealFaithfulNone =>
       'Esta vez nadie cumplió todos los días. El próximo propósito es una nueva oportunidad.';
 
   @override
   String get planRevealFaithfulTitle => 'Fieles en el propósito';
+
+  @override
+  String planRevealGroupLine(int pct) {
+    return 'El grupo cumplió el $pct% de los días del propósito.';
+  }
 
   @override
   String get planRevealGroupPct =>
@@ -9595,6 +9611,22 @@ class AppLocalizationsEs extends AppLocalizations {
   String get roomRevealAgain => 'Ver la revelación otra vez';
 
   @override
+  String get roomRevealAnanHigh =>
+      '¡Qué caminata! El grupo fue firme, junto, de principio a fin.';
+
+  @override
+  String get roomRevealAnanLow =>
+      'Cada paso cuenta. Viene una nueva oportunidad de caminar juntos.';
+
+  @override
+  String get roomRevealAnanMid =>
+      'Caminamos juntos. Ahora toca dar el siguiente paso.';
+
+  @override
+  String get roomRevealAnanSeal =>
+      '¡El sello Fiel es tuyo! Ya brilla junto a tu nombre.';
+
+  @override
   String get roomRevealConstantBody =>
       'Estuvo con la Palabra la mayor cantidad de días.';
 
@@ -9614,8 +9646,23 @@ class AppLocalizationsEs extends AppLocalizations {
       'Hicieron todo lo que marcó el líder. Cada uno gana el sello.';
 
   @override
+  String roomRevealFaithfulCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count personas hicieron todo lo que marcó el líder.',
+      one: '1 persona hizo todo lo que marcó el líder.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get roomRevealFaithfulNone =>
       'Esta vez nadie completó todo. La próxima semana empieza el lunes.';
+
+  @override
+  String get roomRevealFaithfulSeal =>
+      'Cada una lleva el sello Fiel a su perfil.';
 
   @override
   String get roomRevealFaithfulTitle => 'Fieles en la semana';
@@ -9635,6 +9682,20 @@ class AppLocalizationsEs extends AppLocalizations {
   String get roomRevealGiftPickTitle => '¿Qué sendero?';
 
   @override
+  String get roomRevealGroupHigh => '¡Qué caminata!';
+
+  @override
+  String roomRevealGroupLine(int pct) {
+    return 'El grupo hizo el $pct% de lo que marcó el líder esta semana.';
+  }
+
+  @override
+  String get roomRevealGroupLow => 'Cada paso cuenta';
+
+  @override
+  String get roomRevealGroupMid => 'Caminamos juntos';
+
+  @override
   String get roomRevealGroupPct =>
       'de lo que marcó el líder, el grupo hizo junto';
 
@@ -9644,6 +9705,12 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get roomRevealGrownTitle => 'Quien más creció';
+
+  @override
+  String get roomRevealShareCta => 'Enviar el resumen al grupo';
+
+  @override
+  String get roomRevealTapHint => 'Toca para revelar';
 
   @override
   String get roomRevealTitle => 'La semana del grupo';
@@ -9661,6 +9728,26 @@ class AppLocalizationsEs extends AppLocalizations {
       one: '1 sello Fiel',
     );
     return '$_temp0';
+  }
+
+  @override
+  String roomShareConstant(String names) {
+    return 'Más constante: $names';
+  }
+
+  @override
+  String roomShareFaithful(String names) {
+    return 'Fieles (ganaron el sello): $names';
+  }
+
+  @override
+  String roomShareFooter(String link) {
+    return 'Caminamos juntos en STWAY: $link';
+  }
+
+  @override
+  String roomShareGrown(String names) {
+    return 'Quien más creció: $names';
   }
 
   @override
@@ -9722,6 +9809,21 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get sealsTitle => 'Sellos';
+
+  @override
+  String seasonCardJoined(int count) {
+    return '$count peregrinos ya entraron';
+  }
+
+  @override
+  String seasonCardWalkedToday(int count) {
+    return '$count hoy';
+  }
+
+  @override
+  String seasonCardWalking(int count) {
+    return '$count peregrinos caminando';
+  }
 
   @override
   String seasonDayLine(int day, String title) {
@@ -11668,7 +11770,96 @@ class AppLocalizationsEs extends AppLocalizations {
   String get widgetWeekdayInitials => 'L,M,X,J,V,S,D';
 
   @override
+  String yearReviewAdventWord(int total) {
+    return 'de $total días de Adviento';
+  }
+
+  @override
+  String yearReviewAnanBook(String book) {
+    return '$book fue tu casa este año.';
+  }
+
+  @override
+  String get yearReviewAnanDays =>
+      'Cada cuadrito encendido fue un día en que volviste.';
+
+  @override
+  String get yearReviewAnanFeats =>
+      'Ese es el camino de quien toma en serio la Palabra.';
+
+  @override
+  String get yearReviewAnanGrowth =>
+      'Eso no es suerte. Es lectura que se quedó en ti.';
+
+  @override
+  String get yearReviewAnanMap => 'Cada luz es un libro que abriste este año.';
+
+  @override
+  String get yearReviewAnanMode => 'Aquí es donde tu mirada está más afilada.';
+
+  @override
+  String get yearReviewAnanTogether =>
+      'Caminar juntos hace el camino más ligero.';
+
+  @override
   String get yearReviewBookEyebrow => 'El libro donde más estuviste';
+
+  @override
+  String get yearReviewCardDays => 'días en el camino';
+
+  @override
+  String get yearReviewCardPostcards => 'postales';
+
+  @override
+  String get yearReviewCardStreak => 'días seguidos';
+
+  @override
+  String yearReviewChaptersWord(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'capítulos leídos en la Biblia',
+      one: 'capítulo leído en la Biblia',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get yearReviewCollectionEyebrow => 'Tu colección';
+
+  @override
+  String yearReviewCollectionTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count escenas se volvieron postales',
+      one: '1 escena se volvió postal',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String yearReviewCompanionWord(int count, String name) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'días lado a lado con $name',
+      one: 'día lado a lado con $name',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get yearReviewDaypartAfternoon => 'Camina por la tarde';
+
+  @override
+  String get yearReviewDaypartDawn => 'Camina de madrugada';
+
+  @override
+  String get yearReviewDaypartMorning => 'Camina por la mañana';
+
+  @override
+  String get yearReviewDaypartNight => 'Camina por la noche';
 
   @override
   String yearReviewDays(int count) {
@@ -11682,6 +11873,20 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get yearReviewDaysEyebrow => 'Tu año, día a día';
+
+  @override
+  String yearReviewDaysWord(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'días en el camino',
+      one: 'día en el camino',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String yearReviewEndBody(String next) {
     return 'Cada postal es un paso tuyo con Dios. ¡Que venga $next!';
   }
@@ -11690,24 +11895,130 @@ class AppLocalizationsEs extends AppLocalizations {
   String get yearReviewEyebrow => 'Resumen del año';
 
   @override
-  String yearReviewFirstLast(String first, String last) {
-    return 'Desde la primera, $first, hasta la más reciente, $last.';
+  String get yearReviewFeatsEyebrow => 'Hitos del año';
+
+  @override
+  String get yearReviewFirst => 'La primera';
+
+  @override
+  String yearReviewGroupLine(String name) {
+    return 'Caminando con el grupo $name';
   }
+
+  @override
+  String get yearReviewGrowthEyebrow => 'Creciste';
+
+  @override
+  String yearReviewGrowthLine(String mode, int from, int to) {
+    return 'Acierto a la primera en $mode: de $from% a $to%';
+  }
+
+  @override
+  String get yearReviewGrowthWord => 'puntos más de acierto';
+
+  @override
+  String get yearReviewLatest => 'La más reciente';
 
   @override
   String get yearReviewLocked =>
       'El resto de tu resumen del año está en Peregrino+';
 
   @override
-  String get yearReviewModeEyebrow => 'Donde más aciertas';
+  String get yearReviewMapEyebrow => 'Tu Biblia encendida';
 
   @override
-  String yearReviewModeLine(int pct) {
-    return '$pct% de acierto a la primera';
+  String get yearReviewMapPostcard => 'con postal';
+
+  @override
+  String get yearReviewMapRead => 'leído en la Biblia';
+
+  @override
+  String yearReviewMapTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count libros encendidos de 66',
+      one: '1 libro encendido de 66',
+    );
+    return '$_temp0';
   }
 
   @override
+  String get yearReviewModeEyebrow => 'Donde más aciertas';
+
+  @override
+  String get yearReviewModeWord => 'de acierto a la primera';
+
+  @override
   String get yearReviewOpen => 'Ver el resumen del año';
+
+  @override
+  String yearReviewPerfectWord(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'escenas sin fallar nada',
+      one: 'escena sin fallar nada',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get yearReviewPersonaAdvent => 'Peregrino de Adviento';
+
+  @override
+  String get yearReviewPersonaAdventLine =>
+      'Esperaste la Navidad caminando, día tras día.';
+
+  @override
+  String get yearReviewPersonaConstant => 'Peregrino constante';
+
+  @override
+  String get yearReviewPersonaConstantLine =>
+      'Volviste día tras día. Así se camina.';
+
+  @override
+  String get yearReviewPersonaExplorer => 'Explorador de las Escrituras';
+
+  @override
+  String get yearReviewPersonaExplorerLine =>
+      'Recorriste la Biblia de punta a punta.';
+
+  @override
+  String yearReviewPersonaEyebrow(String year) {
+    return 'Quién fuiste en $year';
+  }
+
+  @override
+  String get yearReviewPersonaGroup => 'Fiel del grupo';
+
+  @override
+  String get yearReviewPersonaGroupLine =>
+      'Hiciste el camino con otros y no dejaste a nadie atrás.';
+
+  @override
+  String get yearReviewPersonaGrower => 'Aprendiz que crece';
+
+  @override
+  String get yearReviewPersonaGrowerLine =>
+      'Hoy entiendes lo que no entendías al comienzo del año.';
+
+  @override
+  String get yearReviewPersonaPilgrim => 'Peregrino en camino';
+
+  @override
+  String get yearReviewPersonaPilgrimLine =>
+      'Todo camino empieza con los primeros pasos. Los tuyos ya están dados.';
+
+  @override
+  String get yearReviewPersonaReader => 'Lector de la Palabra';
+
+  @override
+  String get yearReviewPersonaReaderLine =>
+      'Leíste capítulo por capítulo, sin prisa.';
+
+  @override
+  String get yearReviewPhraseEyebrow => 'La frase que quedó';
 
   @override
   String yearReviewPostcards(int count) {
@@ -11721,7 +12032,104 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String yearReviewPostcardsWord(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'postales en el camino',
+      one: 'postal en el camino',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String yearReviewRecognitionsWord(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'veces que alguien reconoció tu camino',
+      one: 'vez que alguien reconoció tu camino',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String yearReviewSealsWord(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'sellos Fiel en el grupo',
+      one: 'sello Fiel en el grupo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get yearReviewShareCta => 'Compartir mi año';
+
+  @override
+  String get yearReviewShareEyebrow => 'Tu año en una tarjeta';
+
+  @override
+  String get yearReviewShareSlide => 'Compartir';
+
+  @override
+  String yearReviewShareText(String year, String link) {
+    return 'Mi camino por la Biblia en $year, escena a escena, en STWAY: $link';
+  }
+
+  @override
+  String get yearReviewTap => 'Toca para continuar';
+
+  @override
   String yearReviewTitle(String year) {
     return 'Tu camino en $year';
+  }
+
+  @override
+  String get yearReviewTogetherEyebrow => 'No caminaste solo';
+
+  @override
+  String yearReviewTopMonthLine(String month) {
+    return 'Mes más fuerte: $month';
+  }
+
+  @override
+  String yearReviewTrailsWord(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'senderos completos',
+      one: 'sendero completo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String yearReviewVersesWord(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'versículos guardados de memoria',
+      one: 'versículo guardado de memoria',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get yearReviewVideoCta => 'Compartir en video';
+
+  @override
+  String get yearReviewVideoRendering => 'Armando el video de tu año…';
+
+  @override
+  String yearReviewYearStreak(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count días seguidos',
+      one: '1 día',
+    );
+    return 'Racha más larga: $_temp0';
   }
 }

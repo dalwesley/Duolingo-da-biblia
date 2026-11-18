@@ -763,10 +763,34 @@ class PostcardVideo {
     ValueChanged<double>? onProgress,
   }) async {
     if (art != null) await PostcardShareCard.warmBackdrop(art);
-    final path = '${Directory.systemTemp.path}/stway_postal.mp4';
-    final w = (PostcardShareCard.size.width * _ratio).round();
-    final h = (PostcardShareCard.size.height * _ratio).round();
-    const frames = fps * seconds;
+    return renderFrames(
+      boundaryKey: boundaryKey,
+      t: t,
+      size: PostcardShareCard.size,
+      seconds: seconds,
+      holdSeconds: 1,
+      fileName: 'stway_postal.mp4',
+      onProgress: onProgress,
+    );
+  }
+
+  /// Anda [t] de 0 a 1 em [seconds] − [holdSeconds], segura o quadro final
+  /// no resto, captura cada quadro do widget em [boundaryKey] (do tamanho
+  /// [size]) e grava o MP4 em [fileName]. Devolve o caminho.
+  static Future<String?> renderFrames({
+    required GlobalKey boundaryKey,
+    required ValueNotifier<double> t,
+    required Size size,
+    required int seconds,
+    required String fileName,
+    int holdSeconds = 1,
+    ValueChanged<double>? onProgress,
+  }) async {
+    final path = '${Directory.systemTemp.path}/$fileName';
+    final w = (size.width * _ratio).round();
+    final h = (size.height * _ratio).round();
+    final frames = fps * seconds;
+    final moving = fps * (seconds - holdSeconds);
     await _channel.invokeMethod<void>('start', {
       'path': path,
       'width': w,
@@ -782,9 +806,8 @@ class PostcardVideo {
       Uint8List? last;
       var lastT = -1.0;
       for (var i = 0; i < frames; i++) {
-        // A chegada dura 5 s; o último segundo segura o quadro final, que
-        // vai de novo sem redesenhar.
-        final at = (i / (fps * 5)).clamp(0.0, 1.0);
+        // O fim segura o quadro final, que vai de novo sem redesenhar.
+        final at = (i / moving).clamp(0.0, 1.0);
         var bytes = last;
         if (bytes == null || at != lastT) {
           t.value = at;
