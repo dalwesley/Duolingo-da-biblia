@@ -132,6 +132,24 @@ function revenueCatClient(secretKey, fetchImpl = fetch) {
       if (!res.ok) throw new Error(`revenuecat grant ${res.status}`);
       return endMs;
     },
+    /** Plus promocional por [days] dias (painel: teste manual). */
+    async grantDays(uid, days, now = Date.now()) {
+      const url = `${base}${encodeURIComponent(uid)}/entitlements/${ENTITLEMENT_ID}/promotional`;
+      const endMs = now + days * 86_400_000;
+      const res = await fetchImpl(url, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({ end_time_ms: endMs }),
+      });
+      if (!res.ok) throw new Error(`revenuecat grant ${res.status}`);
+      return endMs;
+    },
+    /** Tira todo Plus promocional (o pago pela loja fica). */
+    async revokePromotional(uid) {
+      const url = `${base}${encodeURIComponent(uid)}/entitlements/${ENTITLEMENT_ID}/revoke_promotionals`;
+      const res = await fetchImpl(url, { method: 'POST', headers });
+      if (!res.ok) throw new Error(`revenuecat revoke ${res.status}`);
+    },
   };
 }
 

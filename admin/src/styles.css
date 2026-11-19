@@ -6983,6 +6983,9 @@ html.theme-dark .card:hover { box-shadow: var(--shadow-sm); border-color: rgba(2
 
 .us-actions { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; margin: var(--space-3) 0; }
 .us-actions .ez-hint { width: 100%; margin: 0; }
+.us-actions .us-plus-reason { flex: 1 1 14rem; min-width: 10rem; }
+/* O modal de suporte é longo (campos, linha do tempo, relatos): rola. */
+.qs-modal.us-modal { overflow-y: auto; }
 .us-sub { margin: var(--space-4) 0 var(--space-2); font-size: var(--text-md); }
 .us-raw { max-height: 320px; overflow: auto; font-size: var(--text-xs); background: var(--surface-2); padding: var(--space-3); border-radius: var(--radius-sm); }
 .us-uid { font-size: var(--text-xs); color: var(--muted); word-break: break-all; }

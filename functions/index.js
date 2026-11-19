@@ -811,14 +811,21 @@ const moderation = require('./moderation');
 /** Painel admin: ver e moderar uma conta (ver moderation.js). */
 exports.moderateUser = functions
   .region('us-central1')
-  .runWith({ timeoutSeconds: 120, memory: '256MB' })
+  .runWith({ secrets: [revenueCatSecretKey], timeoutSeconds: 120, memory: '256MB' })
   .https.onCall(async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'Entre no painel.');
     }
     try {
       return await moderation.moderate(
-        { db: getFirestore(), auth: getAuth(), messaging: getMessaging(), fcmTokenOf, logger },
+        {
+          db: getFirestore(),
+          auth: getAuth(),
+          messaging: getMessaging(),
+          fcmTokenOf,
+          logger,
+          revenueCat: referralRc(),
+        },
         { uid: context.auth.uid, email: context.auth.token?.email },
         data || {},
       );
