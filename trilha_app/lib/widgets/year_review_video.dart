@@ -170,6 +170,12 @@ class YearVideoFrame extends StatelessWidget {
     final l10n = context?.l10n;
     String w(String Function() f) => l10n == null ? '' : f();
     return [
+      if (r.booksFinished.isNotEmpty)
+        (
+          r.booksFinished.length,
+          w(() => l10n!.yearReviewBooksFinishedWord(r.booksFinished.length)),
+          '',
+        ),
       if (r.chapters > 0)
         (r.chapters, w(() => l10n!.yearReviewChaptersWord(r.chapters)), ''),
       if (r.perfectScenes > 0)

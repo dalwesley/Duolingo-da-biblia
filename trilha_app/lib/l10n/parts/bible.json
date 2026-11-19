@@ -1046,5 +1046,50 @@
       "gloss": "String",
       "count": "int"
     }
+  },
+  "bibleBookFinished": {
+    "pt": "Concluído",
+    "en": "Finished",
+    "es": "Concluido",
+    "description": "Selo do livro concluído"
+  },
+  "bibleBookFinishedOn": {
+    "pt": "Concluído em {date}",
+    "en": "Finished on {date}",
+    "es": "Concluido el {date}",
+    "placeholders": {
+      "date": "String"
+    },
+    "description": "Selo do livro concluído"
+  },
+  "bookFinishedEyebrow": {
+    "pt": "Livro concluído",
+    "en": "Book finished",
+    "es": "Libro concluido",
+    "description": "Selo do livro concluído"
+  },
+  "bookFinishedTitle": {
+    "pt": "Você concluiu {book}",
+    "en": "You finished {book}",
+    "es": "Terminaste {book}",
+    "placeholders": {
+      "book": "String"
+    },
+    "description": "Selo do livro concluído"
+  },
+  "bookFinishedBody": {
+    "pt": "Capítulo por capítulo, até o fim. O selo fica na sua Bíblia com a data de hoje.",
+    "en": "Chapter by chapter, to the end. The seal stays in your Bible with today’s date.",
+    "es": "Capítulo a capítulo, hasta el final. El sello queda en tu Biblia con la fecha de hoy.",
+    "description": "Selo do livro concluído"
+  },
+  "profileBooksFinished": {
+    "pt": "{count, plural, =1{livro concluído} other{livros concluídos}}",
+    "en": "{count, plural, =1{book finished} other{books finished}}",
+    "es": "{count, plural, =1{libro concluido} other{libros concluidos}}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Selo do livro concluído"
   }
 }

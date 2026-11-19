@@ -12,6 +12,7 @@ import '../l10n/app_language.dart';
 import '../services/analytics_service.dart';
 import '../services/app_update_service.dart';
 import '../models/walk_companion.dart';
+import '../services/backend_service.dart';
 import '../services/companion_service.dart';
 import '../services/progress_service.dart';
 import '../services/recognition_service.dart';
@@ -41,10 +42,18 @@ Future<void> openYearReview(
 }) async {
   final progress = context.read<ProgressService>();
   final y = year ?? DateTime.now().year;
+  final together = _togetherFrom(context, y);
+  BackendService? backend;
+  try {
+    backend = context.read<BackendService>();
+  } catch (_) {}
+  final standing = await _standingFor(backend, y);
+  if (!context.mounted) return;
   final review = await YearReview.build(
     progress,
     y,
-    together: _togetherFrom(context, y),
+    together: together,
+    standing: standing,
   );
   if (!context.mounted) return;
   if (!force && !review.worthShowing) return;
@@ -54,6 +63,25 @@ Future<void> openYearReview(
       builder: (_) => YearReviewScreen(review: review),
     ),
   );
+}
+
+/// Melhor mês do ano na Caravana (contagens no servidor, em paralelo).
+/// Sem rede ou demorando, a retrospectiva abre sem esse slide.
+Future<YearStanding?> _standingFor(BackendService? backend, int year) async {
+  if (backend == null || !backend.isActive) return null;
+  final now = DateTime.now();
+  final last = year < now.year ? 12 : now.month;
+  try {
+    final months = await Future.wait([
+      for (var m = 1; m <= last; m++)
+        backend
+            .fetchMonthStanding('$year-${m.toString().padLeft(2, '0')}')
+            .then((v) => (m, v)),
+    ]).timeout(const Duration(seconds: 6));
+    return YearStanding.best({for (final (m, v) in months) m: ?v});
+  } catch (_) {
+    return null;
+  }
 }
 
 /// Companhia, grupo e reconhecimentos que já estão carregados no app.
@@ -297,6 +325,7 @@ class _YearReviewScreenState extends State<YearReviewScreen>
           _Page('mode', gold, _mode),
         if (r.phrase != null) _Page('phrase', blue, _phrase),
         if (r.hasTogether) _Page('together', gold, _together),
+        if (r.standing != null) _Page('caravan', blue, _standing),
         _Page('persona', gold, _persona, climax: true),
       ],
       _Page('end', gold, _end),
@@ -560,16 +589,24 @@ class _YearReviewScreenState extends State<YearReviewScreen>
         const SizedBox(height: AppSpace.sm),
         _rise(
           0.6,
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          Wrap(
+            alignment: WrapAlignment.center,
+            spacing: AppSpace.lg,
+            runSpacing: AppSpace.xs,
             children: [
-              const _Swatch(strong: true),
-              const SizedBox(width: 6),
-              _Small(l10n.yearReviewMapPostcard),
-              const SizedBox(width: AppSpace.lg),
-              const _Swatch(strong: false),
-              const SizedBox(width: 6),
-              _Small(l10n.yearReviewMapRead),
+              _Legend(
+                swatch: const _Swatch(strong: true),
+                label: l10n.yearReviewMapPostcard,
+              ),
+              _Legend(
+                swatch: const _Swatch(strong: false),
+                label: l10n.yearReviewMapRead,
+              ),
+              if (r.booksFinished.isNotEmpty)
+                _Legend(
+                  swatch: const _Swatch(strong: true, done: true),
+                  label: l10n.yearReviewMapFinished,
+                ),
             ],
           ),
         ),
@@ -630,6 +667,12 @@ class _YearReviewScreenState extends State<YearReviewScreen>
     final l10n = context.l10n;
     final r = _r;
     final tiles = [
+      if (r.booksFinished.isNotEmpty)
+        (
+          CinematicGlyph.star,
+          r.booksFinished.length,
+          l10n.yearReviewBooksFinishedWord(r.booksFinished.length),
+        ),
       if (r.chapters > 0)
         (
           CinematicGlyph.book,
@@ -677,9 +720,15 @@ class _YearReviewScreenState extends State<YearReviewScreen>
             ),
           ),
         ],
-        if (r.trailsDone.isNotEmpty) ...[
+        if (r.booksFinished.isNotEmpty || r.trailsDone.isNotEmpty) ...[
           const SizedBox(height: AppSpace.sm),
-          _rise(0.62, _Line(r.trailsDone.take(3).join(' · '), faint: true)),
+          _rise(
+            0.62,
+            _Line(
+              [...r.booksFinished, ...r.trailsDone].take(4).join(' · '),
+              faint: true,
+            ),
+          ),
         ],
         const SizedBox(height: AppSpace.lg),
         _rise(0.7, _AnanSays(l10n.yearReviewAnanFeats)),
@@ -726,6 +775,37 @@ class _YearReviewScreenState extends State<YearReviewScreen>
         ),
         const SizedBox(height: AppSpace.lg),
         _rise(0.72, _AnanSays(l10n.yearReviewAnanGrowth)),
+      ],
+    );
+  }
+
+  Widget _standing(BuildContext context) {
+    final l10n = context.l10n;
+    final st = _r.standing!;
+    final month = DateFormat.MMMM(
+      l10n.localeName,
+    ).format(DateTime(_r.year, st.month));
+    return RevealCentered(
+      scroll: true,
+      children: [
+        _hero(const _Emblem(glyph: CinematicGlyph.podium)),
+        const SizedBox(height: AppSpace.lg),
+        _rise(
+          0.15,
+          SectionLabel(
+            l10n.yearReviewStandingEyebrow,
+            color: AppRoles.presence,
+          ),
+        ),
+        const SizedBox(height: AppSpace.sm),
+        _rise(0.24, _Big(l10n.yearReviewStandingTop(st.topPct), size: 72)),
+        const SizedBox(height: AppSpace.xs),
+        _rise(
+          0.34,
+          _Line(l10n.yearReviewStandingLine(month, st.topPct, st.total)),
+        ),
+        const SizedBox(height: AppSpace.lg),
+        _rise(0.5, _AnanSays(l10n.yearReviewAnanStanding)),
       ],
     );
   }
@@ -1240,7 +1320,8 @@ class BibleMapGrid extends StatelessWidget {
   }
 
   Widget _cell(int i, int level, Color ink) {
-    final strong = level == 2;
+    final done = level >= 3;
+    final strong = level >= 2;
     final soft = level == 1;
     return AnimatedContainer(
       duration: const Duration(milliseconds: 260),
@@ -1254,14 +1335,16 @@ class BibleMapGrid extends StatelessWidget {
             : soft
             ? AppRoles.reward.withValues(alpha: 0.18)
             : ink.withValues(alpha: i < 39 ? 0.06 : 0.09),
-        border: soft
+        border: done
+            ? Border.all(color: Colors.white, width: cell * 0.08)
+            : soft
             ? Border.all(color: AppRoles.reward.withValues(alpha: 0.9))
             : null,
         boxShadow: strong
             ? [
                 BoxShadow(
-                  color: AppRoles.reward.withValues(alpha: 0.5),
-                  blurRadius: cell * 0.4,
+                  color: AppRoles.reward.withValues(alpha: done ? 0.85 : 0.5),
+                  blurRadius: cell * (done ? 0.7 : 0.4),
                 ),
               ]
             : null,
@@ -1443,8 +1526,9 @@ class _Brand extends StatelessWidget {
 /// Amostra da legenda do mapa.
 class _Swatch extends StatelessWidget {
   final bool strong;
+  final bool done;
 
-  const _Swatch({required this.strong});
+  const _Swatch({required this.strong, this.done = false});
 
   @override
   Widget build(BuildContext context) => Container(
@@ -1453,8 +1537,25 @@ class _Swatch extends StatelessWidget {
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(3),
       color: strong ? AppRoles.reward : AppRoles.reward.withValues(alpha: 0.18),
-      border: strong ? null : Border.all(color: AppRoles.reward),
+      border: done
+          ? Border.all(color: Colors.white, width: 2)
+          : strong
+          ? null
+          : Border.all(color: AppRoles.reward),
     ),
+  );
+}
+
+class _Legend extends StatelessWidget {
+  final Widget swatch;
+  final String label;
+
+  const _Legend({required this.swatch, required this.label});
+
+  @override
+  Widget build(BuildContext context) => Row(
+    mainAxisSize: MainAxisSize.min,
+    children: [swatch, const SizedBox(width: 6), _Small(label)],
   );
 }
 

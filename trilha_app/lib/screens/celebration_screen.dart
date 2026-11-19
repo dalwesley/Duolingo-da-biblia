@@ -29,6 +29,8 @@ import '../utils/day_phase.dart';
 import '../utils/difficulty_trails.dart';
 import '../utils/mascot_messages.dart';
 import '../models/trail.dart';
+import '../services/bible_service.dart';
+import '../widgets/book_finished_sheet.dart';
 import '../utils/plus_access.dart';
 import '../utils/trail_progress.dart';
 import '../utils/tomorrow_hook.dart';
@@ -832,6 +834,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     if (complete) {
       await progress.markTrailModeCleared(widget.trailSlug, current.id);
       if (mounted) setState(() => _trailComplete = true);
+      await _sealBookOfChapterTrail(progress, trail);
     }
 
     // Sugere próximo modo só após concluir a trilha neste modo.
@@ -845,6 +848,33 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       _nextMode = next;
       _nextMeta = meta;
     });
+  }
+
+  /// Trilha capítulo a capítulo (`<livro>-cap`) terminada: o livro ganha o
+  /// selo de concluído, com a festa curta se for novidade.
+  Future<void> _sealBookOfChapterTrail(
+    ProgressService progress,
+    Trail trail,
+  ) async {
+    if (!trail.slug.endsWith('-cap')) return;
+    final ref = [for (final m in trail.modules) ...m.missions]
+        .map((m) => m.hookRef?.trim() ?? '')
+        .firstWhere((r) => r.isNotEmpty, orElse: () => '');
+    if (ref.isEmpty) return;
+    try {
+      final bible = BibleService.instance;
+      final at = await bible.resolve(ref);
+      final books = await bible.books();
+      if (at == null || at.bookIndex < 0 || at.bookIndex >= books.length) {
+        return;
+      }
+      final book = books[at.bookIndex];
+      if (!await progress.markBookFinished(book.abbrev)) return;
+      if (!mounted) return;
+      await showBookFinishedSheet(context, bookName: book.name);
+    } catch (e) {
+      debugPrint('Selo do livro (trilha ${trail.slug}) falhou: $e');
+    }
   }
 
   Future<void> _acceptNextMode({required bool replayThisStep}) async {

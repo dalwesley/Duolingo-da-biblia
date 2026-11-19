@@ -228,6 +228,14 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get bibleBookFinished => 'Concluído';
+
+  @override
+  String bibleBookFinishedOn(String date) {
+    return 'Concluído em $date';
+  }
+
+  @override
   String bibleBookReadSemantics(String book, int read, int total) {
     return '$book, $read de $total capítulos lidos';
   }
@@ -561,6 +569,18 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get bibleVerseStudyDetail =>
       'Originais, Strong, concordância e referências';
+
+  @override
+  String get bookFinishedBody =>
+      'Capítulo por capítulo, até o fim. O selo fica na sua Bíblia com a data de hoje.';
+
+  @override
+  String get bookFinishedEyebrow => 'Livro concluído';
+
+  @override
+  String bookFinishedTitle(String book) {
+    return 'Você concluiu $book';
+  }
 
   @override
   String get canonEvangelhosBlurb => 'Mateus a João — a vida de Jesus';
@@ -8371,6 +8391,17 @@ class AppLocalizationsPt extends AppLocalizations {
   String get profileAccuracyToStrengthen => 'A reforçar';
 
   @override
+  String profileBooksFinished(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'livros concluídos',
+      one: 'livro concluído',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String profileDaysOnTop(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -11769,11 +11800,26 @@ class AppLocalizationsPt extends AppLocalizations {
   String get yearReviewAnanMode => 'É aqui que o seu olhar está mais afiado.';
 
   @override
+  String get yearReviewAnanStanding =>
+      'Não é sobre vencer ninguém. É sobre não parar.';
+
+  @override
   String get yearReviewAnanTogether =>
       'Caminhar junto deixa o caminho mais leve.';
 
   @override
   String get yearReviewBookEyebrow => 'O livro onde você mais esteve';
+
+  @override
+  String yearReviewBooksFinishedWord(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'livros concluídos',
+      one: 'livro concluído',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get yearReviewCardDays => 'dias no caminho';
@@ -11896,6 +11942,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get yearReviewMapEyebrow => 'Sua Bíblia acesa';
+
+  @override
+  String get yearReviewMapFinished => 'concluído';
 
   @override
   String get yearReviewMapPostcard => 'com postal';
@@ -12047,6 +12096,19 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String yearReviewShareText(String year, String link) {
     return 'Minha caminhada na Bíblia em $year, cena a cena, no STWAY: $link';
+  }
+
+  @override
+  String get yearReviewStandingEyebrow => 'Na Caravana';
+
+  @override
+  String yearReviewStandingLine(String month, int pct, int total) {
+    return 'Em $month, você ficou entre os $pct% que mais caminharam, de $total peregrinos.';
+  }
+
+  @override
+  String yearReviewStandingTop(int pct) {
+    return 'Top $pct%';
   }
 
   @override

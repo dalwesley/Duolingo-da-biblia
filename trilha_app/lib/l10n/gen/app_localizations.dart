@@ -400,6 +400,18 @@ abstract class AppLocalizations {
   /// **'Livro {number}'**
   String bibleBookFallback(int number);
 
+  /// Selo do livro concluído
+  ///
+  /// In pt, this message translates to:
+  /// **'Concluído'**
+  String get bibleBookFinished;
+
+  /// Selo do livro concluído
+  ///
+  /// In pt, this message translates to:
+  /// **'Concluído em {date}'**
+  String bibleBookFinishedOn(String date);
+
   /// No description provided for @bibleBookReadSemantics.
   ///
   /// In pt, this message translates to:
@@ -939,6 +951,24 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Originais, Strong, concordância e referências'**
   String get bibleVerseStudyDetail;
+
+  /// Selo do livro concluído
+  ///
+  /// In pt, this message translates to:
+  /// **'Capítulo por capítulo, até o fim. O selo fica na sua Bíblia com a data de hoje.'**
+  String get bookFinishedBody;
+
+  /// Selo do livro concluído
+  ///
+  /// In pt, this message translates to:
+  /// **'Livro concluído'**
+  String get bookFinishedEyebrow;
+
+  /// Selo do livro concluído
+  ///
+  /// In pt, this message translates to:
+  /// **'Você concluiu {book}'**
+  String bookFinishedTitle(String book);
 
   /// No description provided for @canonEvangelhosBlurb.
   ///
@@ -12933,6 +12963,12 @@ abstract class AppLocalizations {
   /// **'A reforçar'**
   String get profileAccuracyToStrengthen;
 
+  /// Selo do livro concluído
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{livro concluído} other{livros concluídos}}'**
+  String profileBooksFinished(int count);
+
   /// No description provided for @profileDaysOnTop.
   ///
   /// In pt, this message translates to:
@@ -18138,6 +18174,12 @@ abstract class AppLocalizations {
   /// Retrospectiva do ano (docs/postais.md)
   ///
   /// In pt, this message translates to:
+  /// **'Não é sobre vencer ninguém. É sobre não parar.'**
+  String get yearReviewAnanStanding;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
   /// **'Caminhar junto deixa o caminho mais leve.'**
   String get yearReviewAnanTogether;
 
@@ -18146,6 +18188,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'O livro onde você mais esteve'**
   String get yearReviewBookEyebrow;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{livro concluído} other{livros concluídos}}'**
+  String yearReviewBooksFinishedWord(int count);
 
   /// Retrospectiva do ano (docs/postais.md)
   ///
@@ -18296,6 +18344,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Sua Bíblia acesa'**
   String get yearReviewMapEyebrow;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'concluído'**
+  String get yearReviewMapFinished;
 
   /// Retrospectiva do ano (docs/postais.md)
   ///
@@ -18482,6 +18536,24 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Minha caminhada na Bíblia em {year}, cena a cena, no STWAY: {link}'**
   String yearReviewShareText(String year, String link);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Na Caravana'**
+  String get yearReviewStandingEyebrow;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Em {month}, você ficou entre os {pct}% que mais caminharam, de {total} peregrinos.'**
+  String yearReviewStandingLine(String month, int pct, int total);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Top {pct}%'**
+  String yearReviewStandingTop(int pct);
 
   /// Retrospectiva do ano (docs/postais.md)
   ///

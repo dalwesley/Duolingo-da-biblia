@@ -67,6 +67,10 @@ class CaravanPilgrimProfile {
   final List<String> completedMissions;
   final Map<String, List<String>> clearedTrailModes;
   final List<String> readBibleChapters;
+
+  /// Livros com o selo de concluído (abreviações), lidos ou pela trilha
+  /// capítulo a capítulo.
+  final List<String> booksFinished;
   final List<String> perfectMissions;
   final int sharedVerseCount;
   final int memoryMasteredCount;
@@ -118,6 +122,7 @@ class CaravanPilgrimProfile {
     this.completedMissions = const [],
     this.clearedTrailModes = const {},
     this.readBibleChapters = const [],
+    this.booksFinished = const [],
     this.perfectMissions = const [],
     this.sharedVerseCount = 0,
     this.memoryMasteredCount = 0,
@@ -205,6 +210,7 @@ class CaravanPilgrimProfile {
         ),
       ),
       readBibleChapters: List<String>.from(progress.readBibleChapters),
+      booksFinished: progress.booksFinishedOn.keys.toList(),
       perfectMissions: List<String>.from(progress.perfectMissions),
       sharedVerseCount: progress.sharedVerseCount,
       memoryMasteredCount: progress.memoryMastered.length,
@@ -264,6 +270,7 @@ class CaravanPilgrimProfile {
       completedMissions: _asStringList(data['completedMissions']),
       clearedTrailModes: _asStringListMap(data['clearedTrailModes']),
       readBibleChapters: _asStringList(data['readBibleChapters']),
+      booksFinished: _asStringMap(data['booksFinishedOn']).keys.toList(),
       perfectMissions: _asStringList(data['perfectMissions']),
       sharedVerseCount:
           _asInt(data['sharedVerseCount']) ??
@@ -364,6 +371,7 @@ class CaravanPilgrimProfile {
           (byBook[parts.first.toLowerCase()] ?? 0) + 1;
     }
 
+    final sealed = {for (final b in booksFinished) b.toLowerCase()};
     final completeBooks = <String>[];
     final completeNt = <String>[];
     for (var i = 0; i < bibleBooks.length; i++) {
@@ -371,7 +379,7 @@ class CaravanPilgrimProfile {
       final abbrev = book.abbrev.toLowerCase();
       final total = book.chapters.length;
       final read = byBook[abbrev] ?? 0;
-      if (total > 0 && read >= total) {
+      if ((total > 0 && read >= total) || sealed.contains(abbrev)) {
         completeBooks.add(abbrev);
         if (i >= BibleService.oldTestamentCount) {
           completeNt.add(abbrev);
@@ -406,6 +414,7 @@ class CaravanPilgrimProfile {
       completedMissions: completedMissions,
       clearedTrailModes: clearedTrailModes,
       readBibleChapters: readBibleChapters,
+      booksFinished: booksFinished,
       perfectMissions: perfectMissions,
       sharedVerseCount: sharedVerseCount,
       memoryMasteredCount: memoryMasteredCount,

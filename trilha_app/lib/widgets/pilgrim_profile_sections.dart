@@ -1317,6 +1317,10 @@ class _ScriptureChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SoftBadge(text: name, accent: AppRoles.success);
+    return SoftBadge(
+      text: name,
+      glyph: CinematicGlyph.star,
+      accent: AppRoles.reward,
+    );
   }
 }

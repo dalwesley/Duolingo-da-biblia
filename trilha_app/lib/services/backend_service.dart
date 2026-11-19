@@ -2538,6 +2538,24 @@ class BackendService extends ChangeNotifier {
     }
   }
 
+  /// Posição na Caravana do mês [month] ("YYYY-MM"): quantos somaram mais
+  /// passos que eu e quantos caminharam. `null` sem rede ou sem eu no mês.
+  Future<({int ahead, int total})?> fetchMonthStanding(String month) async {
+    if (!isActive) return null;
+    try {
+      final players = _db.collection('monthlyLeagues/$month/players');
+      final mine = await players.doc(_uid).get();
+      final xp = (mine.data()?['xp'] as num?)?.toInt() ?? 0;
+      if (!mine.exists || xp <= 0) return null;
+      final ahead = await players.where('xp', isGreaterThan: xp).count().get();
+      final total = await players.where('xp', isGreaterThan: 0).count().get();
+      return (ahead: ahead.count ?? 0, total: total.count ?? 0);
+    } catch (e) {
+      debugPrint('Posição na Caravana ($month) falhou: $e');
+      return null;
+    }
+  }
+
   // ---- Companhia (pares de caminhada) ------------------------------------
 
   String _yesterdayKey() {

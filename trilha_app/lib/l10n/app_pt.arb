@@ -150,6 +150,19 @@
       }
     }
   },
+  "bibleBookFinished": "Concluído",
+  "@bibleBookFinished": {
+    "description": "Selo do livro concluído"
+  },
+  "bibleBookFinishedOn": "Concluído em {date}",
+  "@bibleBookFinishedOn": {
+    "description": "Selo do livro concluído",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "bibleBookReadSemantics": "{book}, {read} de {total} capítulos lidos",
   "@bibleBookReadSemantics": {
     "placeholders": {
@@ -404,6 +417,23 @@
   },
   "bibleVerseStudy": "Estudar este versículo",
   "bibleVerseStudyDetail": "Originais, Strong, concordância e referências",
+  "bookFinishedBody": "Capítulo por capítulo, até o fim. O selo fica na sua Bíblia com a data de hoje.",
+  "@bookFinishedBody": {
+    "description": "Selo do livro concluído"
+  },
+  "bookFinishedEyebrow": "Livro concluído",
+  "@bookFinishedEyebrow": {
+    "description": "Selo do livro concluído"
+  },
+  "bookFinishedTitle": "Você concluiu {book}",
+  "@bookFinishedTitle": {
+    "description": "Selo do livro concluído",
+    "placeholders": {
+      "book": {
+        "type": "String"
+      }
+    }
+  },
   "canonEvangelhosBlurb": "Mateus a João — a vida de Jesus",
   "canonEvangelhosTitle": "Evangelhos",
   "canonGeraisBlurb": "Hebreus a Judas",
@@ -5824,6 +5854,15 @@
   "profileAccuracyNoAnswers": "Sem respostas ainda",
   "profileAccuracyStrongest": "Ponto forte",
   "profileAccuracyToStrengthen": "A reforçar",
+  "profileBooksFinished": "{count, plural, =1{livro concluído} other{livros concluídos}}",
+  "@profileBooksFinished": {
+    "description": "Selo do livro concluído",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "profileDaysOnTop": "{count, plural, =1{1 dia no topo} other{{count} dias no topo}}",
   "@profileDaysOnTop": {
     "placeholders": {
@@ -8147,6 +8186,10 @@
   "@yearReviewAnanMode": {
     "description": "Retrospectiva do ano (docs/postais.md)"
   },
+  "yearReviewAnanStanding": "Não é sobre vencer ninguém. É sobre não parar.",
+  "@yearReviewAnanStanding": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
   "yearReviewAnanTogether": "Caminhar junto deixa o caminho mais leve.",
   "@yearReviewAnanTogether": {
     "description": "Retrospectiva do ano (docs/postais.md)"
@@ -8154,6 +8197,15 @@
   "yearReviewBookEyebrow": "O livro onde você mais esteve",
   "@yearReviewBookEyebrow": {
     "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewBooksFinishedWord": "{count, plural, =1{livro concluído} other{livros concluídos}}",
+  "@yearReviewBooksFinishedWord": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "yearReviewCardDays": "dias no caminho",
   "@yearReviewCardDays": {
@@ -8302,6 +8354,10 @@
   },
   "yearReviewMapEyebrow": "Sua Bíblia acesa",
   "@yearReviewMapEyebrow": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewMapFinished": "concluído",
+  "@yearReviewMapFinished": {
     "description": "Retrospectiva do ano (docs/postais.md)"
   },
   "yearReviewMapPostcard": "com postal",
@@ -8468,6 +8524,34 @@
       },
       "link": {
         "type": "String"
+      }
+    }
+  },
+  "yearReviewStandingEyebrow": "Na Caravana",
+  "@yearReviewStandingEyebrow": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewStandingLine": "Em {month}, você ficou entre os {pct}% que mais caminharam, de {total} peregrinos.",
+  "@yearReviewStandingLine": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "month": {
+        "type": "String"
+      },
+      "pct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "yearReviewStandingTop": "Top {pct}%",
+  "@yearReviewStandingTop": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "pct": {
+        "type": "int"
       }
     }
   },

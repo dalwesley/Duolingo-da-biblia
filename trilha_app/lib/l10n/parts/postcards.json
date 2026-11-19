@@ -669,5 +669,52 @@
     "en": "Putting together your year video…",
     "es": "Armando el video de tu año…",
     "description": "Retrospectiva do ano: vídeo (Peregrino+)"
+  },
+  "yearReviewBooksFinishedWord": {
+    "pt": "{count, plural, =1{livro concluído} other{livros concluídos}}",
+    "en": "{count, plural, =1{book finished} other{books finished}}",
+    "es": "{count, plural, =1{libro concluido} other{libros concluidos}}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewMapFinished": {
+    "pt": "concluído",
+    "en": "finished",
+    "es": "concluido",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewStandingEyebrow": {
+    "pt": "Na Caravana",
+    "en": "In the Caravan",
+    "es": "En la Caravana",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewStandingTop": {
+    "pt": "Top {pct}%",
+    "en": "Top {pct}%",
+    "es": "Top {pct}%",
+    "placeholders": {
+      "pct": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewStandingLine": {
+    "pt": "Em {month}, você ficou entre os {pct}% que mais caminharam, de {total} peregrinos.",
+    "en": "In {month}, you were among the top {pct}% who walked the most, out of {total} pilgrims.",
+    "es": "En {month}, estuviste entre el {pct}% que más caminó, de {total} peregrinos.",
+    "placeholders": {
+      "month": "String",
+      "pct": "int",
+      "total": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewAnanStanding": {
+    "pt": "Não é sobre vencer ninguém. É sobre não parar.",
+    "en": "It is not about beating anyone. It is about not stopping.",
+    "es": "No se trata de ganarle a nadie. Se trata de no parar.",
+    "description": "Retrospectiva do ano (docs/postais.md)"
   }
 }

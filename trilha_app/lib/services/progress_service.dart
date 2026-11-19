@@ -344,7 +344,8 @@ class ProgressService extends ChangeNotifier {
   }
 
   /// Teto de capítulos com data guardada (os mais antigos saem).
-  static const bibleChapterReadOnCap = 400;
+  /// A Bíblia tem 1189 capítulos: cabe a leitura inteira, com o dia.
+  static const bibleChapterReadOnCap = 1200;
 
   /// Capítulos [from]..[to] de [bookAbbrev] lidos a partir de [sinceYmd].
   int chaptersReadSince(String bookAbbrev, int from, int to, String sinceYmd) {
@@ -555,6 +556,58 @@ class ProgressService extends ChangeNotifier {
   /// Postais da caminhada: dia (YYYY-MM-DD) em que cada cena revelou o seu
   /// postal. Não some ao trocar de modo nem ao sair da trilha.
   Map<String, String> postcardsOn = {};
+
+  /// Livros concluídos: abreviação ("rt") → dia (YYYY-MM-DD) em que fechou.
+  /// Conta ler todos os capítulos no leitor ou terminar a trilha capítulo a
+  /// capítulo do livro, o que vier primeiro. Dia vazio = concluído antes do
+  /// campo existir, sem data conhecida.
+  Map<String, String> booksFinishedOn = {};
+
+  bool isBookFinished(String abbrev) =>
+      booksFinishedOn.containsKey(abbrev.toLowerCase());
+
+  /// Marca o livro como concluído hoje. `true` quando é novidade.
+  Future<bool> markBookFinished(String abbrev, {String? day}) async {
+    final key = abbrev.trim().toLowerCase();
+    if (key.isEmpty || booksFinishedOn.containsKey(key)) return false;
+    booksFinishedOn = {...booksFinishedOn, key: day ?? _todayKey()};
+    await _save();
+    notifyListeners();
+    return true;
+  }
+
+  /// Todos os capítulos 1..[chapters] de [abbrev] já foram lidos no leitor.
+  bool allChaptersRead(String abbrev, int chapters) {
+    if (chapters <= 0) return false;
+    final read = readBibleChapters.toSet();
+    for (var c = 1; c <= chapters; c++) {
+      if (!read.contains(bibleChapterKey(abbrev, c))) return false;
+    }
+    return true;
+  }
+
+  /// Livros lidos inteiros antes do selo existir ganham o selo sem festa.
+  /// A data é a do último capítulo com dia guardado, ou vazia.
+  Future<void> backfillFinishedBooks(
+    Iterable<({String abbrev, int chapters})> books,
+  ) async {
+    final add = <String, String>{};
+    for (final b in books) {
+      final key = b.abbrev.toLowerCase();
+      if (booksFinishedOn.containsKey(key)) continue;
+      if (!allChaptersRead(key, b.chapters)) continue;
+      var last = '';
+      for (var c = 1; c <= b.chapters; c++) {
+        final d = bibleChapterReadOn[bibleChapterKey(key, c)] ?? '';
+        if (d.compareTo(last) > 0) last = d;
+      }
+      add[key] = last;
+    }
+    if (add.isEmpty) return;
+    booksFinishedOn = {...booksFinishedOn, ...add};
+    await _save();
+    notifyListeners();
+  }
 
   /// Referência bíblica de cada postal ("Rute 1:16"), para marcar a Bíblia.
   Map<String, String> postcardRefs = {};
@@ -1349,6 +1402,7 @@ class ProgressService extends ChangeNotifier {
     leftMissionSlugs = [];
     trailChoicesSeedV = 0;
     postcardsOn = {};
+    booksFinishedOn = {};
     postcardRefs = {};
     giftedTrails = {};
     answerCorrect = {};
@@ -1725,10 +1779,14 @@ class ProgressService extends ChangeNotifier {
   /// Registra a leitura de um capítulo da Bíblia (missão diária "Palavra viva").
   /// [attentive] false (concluído rápido demais, sem ouvir): conta para a
   /// missão e o histórico, mas não para a leitura da semana do grupo.
-  Future<void> recordBibleReading(
+  ///
+  /// Com [bookChapters] (total de capítulos do livro), devolve `true` quando
+  /// este capítulo fechou o livro inteiro (selo do livro concluído).
+  Future<bool> recordBibleReading(
     String bookAbbrev,
     int chapter, {
     bool attentive = true,
+    int? bookChapters,
   }) async {
     final key = bibleChapterKey(bookAbbrev, chapter);
     if (!readBibleChapters.contains(key)) {
@@ -1749,6 +1807,12 @@ class ProgressService extends ChangeNotifier {
     lastBibleReadDate = today;
     await _bumpQuest('read');
     await _bumpQuest('seasonal');
+    if (bookChapters != null &&
+        !isBookFinished(bookAbbrev) &&
+        allChaptersRead(bookAbbrev, bookChapters)) {
+      return markBookFinished(bookAbbrev);
+    }
+    return false;
   }
 
   /// Guarda onde a leitura parou — a aba Bíblia abre o "Continuar" aqui.
@@ -3424,6 +3488,7 @@ class ProgressService extends ChangeNotifier {
       'leftMissionSlugs': leftMissionSlugs,
       'trailChoicesSeedV': trailChoicesSeedV,
       'postcardsOn': postcardsOn,
+      'booksFinishedOn': booksFinishedOn,
       'postcardRefs': postcardRefs,
       'giftedTrails': giftedTrails,
       'answerCorrect': answerCorrect,
@@ -4228,6 +4293,19 @@ class ProgressService extends ChangeNotifier {
         }
         postcardsOn = merged;
       }
+      if (data.containsKey('booksFinishedOn')) {
+        // Fica a data conhecida mais antiga (vazia só se não houver outra).
+        final merged = Map<String, String>.from(booksFinishedOn);
+        for (final e in _asStringMap(data['booksFinishedOn']).entries) {
+          final cur = merged[e.key];
+          if (cur == null ||
+              cur.isEmpty ||
+              (e.value.isNotEmpty && e.value.compareTo(cur) < 0)) {
+            merged[e.key] = e.value;
+          }
+        }
+        booksFinishedOn = merged;
+      }
       if (data.containsKey('postcardRefs')) {
         postcardRefs = {..._asStringMap(data['postcardRefs']), ...postcardRefs};
       }
@@ -4580,6 +4658,7 @@ class ProgressService extends ChangeNotifier {
     leftMissionSlugs = [];
     trailChoicesSeedV = 0;
     postcardsOn = {};
+    booksFinishedOn = {};
     postcardRefs = {};
     answerCorrect = {};
     answerTotal = {};
