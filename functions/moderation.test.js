@@ -151,3 +151,33 @@ test('excluir conta não é ação de moderação', async () => {
   );
   assert.equal(auth.calls.length, 0);
 });
+
+test('Plus manual: promocional no RevenueCat, espelho no doc e histórico', async () => {
+  const db = fakeDb(seed);
+  const calls = [];
+  const revenueCat = {
+    async grantDays(uid, days) { calls.push(['grant', uid, days]); return Date.UTC(2027, 0, 1); },
+    async revokePromotional(uid) { calls.push(['revoke', uid]); },
+  };
+  const d = { ...deps(db, fakeAuth()), revenueCat };
+  await assert.rejects(M.moderate(d, admin, { uid: 'u1', action: 'plusOn', reason: '' }), { code: 'invalid-argument' });
+  await assert.rejects(M.moderate(d, admin, { uid: 'u1', action: 'plusOn', days: 5, reason: 'teste' }), { code: 'invalid-argument' });
+
+  // Vale para a própria conta (teste no aparelho do admin).
+  await M.moderate(d, admin, { uid: 'adm', action: 'plusOn', days: 30, reason: 'teste' });
+  assert.deepEqual(calls[0], ['grant', 'adm', 30]);
+  assert.equal(db.docs.get('users/adm').plusActive, true);
+  assert.equal(db.docs.get('users/adm').plusExpiresAt, '2027-01-01T00:00:00.000Z');
+
+  await M.moderate(d, admin, { uid: 'adm', action: 'plusOff', reason: 'fim do teste' });
+  assert.deepEqual(calls[1], ['revoke', 'adm']);
+  assert.equal(db.docs.get('users/adm').plusActive, false);
+  assert.deepEqual(db.log.map((l) => l.action), ['plusOn', 'plusOff']);
+});
+
+test('Plus manual sem chave do RevenueCat ainda grava o espelho e avisa', async () => {
+  const db = fakeDb(seed);
+  const { details } = await M.moderate(deps(db, fakeAuth()), admin, { uid: 'u1', action: 'plusOn', days: 7, reason: 'teste' });
+  assert.equal(details.revenueCat, false);
+  assert.equal(db.docs.get('users/u1').plusActive, true);
+});

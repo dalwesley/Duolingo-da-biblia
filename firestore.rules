@@ -50,6 +50,28 @@ service cloud.firestore {
       return exists(userPath());
     }
 
+    // Acenos prontos da Companhia (app_*.arb: companionPreset*,
+    // companionDelayLostHeadline). Mudou o texto no app? Mude aqui também,
+    // senão o aceno pronto de quem não é Plus é recusado.
+    function companionNudgePresets() {
+      return [
+        'Ainda tem lugar ao meu lado', 'Dá pra retomar — tô aqui',
+        'Dei meu passo hoje. Vem?', 'Senti sua falta na trilha',
+        'Tô te esperando pra limpar a trilha', 'Tô te esperando na trilha',
+        'Já dei meu passo — falta o seu', 'Vamos caminhar juntos hoje',
+        "There's still room by my side", "We can pick it up — I'm here",
+        'I took my step today. Coming?', 'I missed you on the trail',
+        "I'm waiting for you to clear the trail",
+        "I'm waiting for you on the trail",
+        'I already took my step — yours is next', "Let's walk together today",
+        'Todavía hay lugar a mi lado', 'Se puede retomar — estoy aquí',
+        'Di mi paso hoy. ¿Vienes?', 'Te eché de menos en la ruta',
+        'Te estoy esperando para limpiar la ruta',
+        'Te estoy esperando en la ruta', 'Ya di mi paso — falta el tuyo',
+        'Vamos a caminar juntos hoy'
+      ];
+    }
+
     function userData() {
       return get(userPath()).data;
     }
@@ -267,6 +289,13 @@ service cloud.firestore {
             || !('monthlyMonth' in userData())
             || userData().monthlyMonth == null
             || userData().monthlyMonth == month);
+    }
+
+    // Etapa do mês da Caravana: cenas de cada um no mês, contadas pelo
+    // servidor (functions/caravan.js). Todos leem para somar; ninguém grava.
+    match /caravanScenes/{month}/walkers/{uid} {
+      allow read: if isSignedIn();
+      allow write: if false;
     }
 
     // Caminhada coletiva da temporada: cada peregrino escreve só a própria
@@ -498,11 +527,19 @@ service cloud.firestore {
               == resource.data.get('guestJoinedAt', null)
             || (resource.data.get('guestJoinedAt', null) == null
                 && request.resource.data.guestJoinedAt == request.time))
-        // Aceno: texto curto (pronto ou escrito no Peregrino+). O push
-        // passa pelo filtro na function onCompanionNudge.
+        // Aceno: texto curto. Pronto (lista fixa, pt/en/es) para todos;
+        // escrito só no Peregrino+ (plusActive, do webhook). Mexer em outro
+        // campo com o aceno de ontem no doc não conta como aceno novo. O
+        // push passa pelo filtro na function onCompanionNudge.
         && (!('nudgeMessage' in request.resource.data)
             || (request.resource.data.nudgeMessage is string
-                && request.resource.data.nudgeMessage.size() <= 140));
+                && request.resource.data.nudgeMessage.size() <= 140
+                && (request.resource.data.nudgeMessage
+                      == resource.data.get('nudgeMessage', null)
+                    || request.resource.data.nudgeMessage
+                      in companionNudgePresets()
+                    || (userExists()
+                        && userData().get('plusActive', false) == true))));
       allow delete: if isSignedIn()
         && resource.data.hostId == request.auth.uid;
     }

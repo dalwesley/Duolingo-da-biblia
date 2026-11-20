@@ -9,7 +9,9 @@
  * A coluna vem do login, via `moderateUser` action `emails`. O que sobrou no
  * perfil público entra só se o login não devolver e-mail.
  *
- * Só leitura. Mudar Plus continua no script (o campo é do webhook RevenueCat):
+ * Só leitura, menos o Plus manual: o admin dá ou tira Plus no modal de
+ * Suporte (`moderateUser` plusOn/plusOff: promocional no RevenueCat + espelho
+ * em `users/{uid}`). O script continua para lote:
  *   node scripts/set_plus_active.mjs --uids UID --on --apply
  */
 import { getFunctions, httpsCallable } from 'firebase/functions';
@@ -411,7 +413,7 @@ async function openSupportModal({ uid, user: known, onOpenFicha } = {}) {
 
   modal.innerHTML = `
     <div class="modal-backdrop qs-backdrop">
-      <div class="modal-card card qs-modal" role="dialog" aria-modal="true">
+      <div class="modal-card card qs-modal us-modal" role="dialog" aria-modal="true">
         <header class="qs-head">
           <div>
             <p class="simple-kicker">Suporte</p>
@@ -443,7 +445,7 @@ async function openSupportModal({ uid, user: known, onOpenFicha } = {}) {
       if (!u) {
         modal.innerHTML = `
           <div class="modal-backdrop qs-backdrop">
-            <div class="modal-card card qs-modal" role="dialog" aria-modal="true">
+            <div class="modal-card card qs-modal us-modal" role="dialog" aria-modal="true">
               <header class="qs-head">
                 <div>
                   <p class="simple-kicker">Suporte</p>
@@ -475,10 +477,10 @@ async function openSupportModal({ uid, user: known, onOpenFicha } = {}) {
     );
     modal.innerHTML = `
       <div class="modal-backdrop qs-backdrop">
-        <div class="modal-card card qs-modal" role="dialog" aria-modal="true">
+        <div class="modal-card card qs-modal us-modal" role="dialog" aria-modal="true">
           <header class="qs-head">
             <div>
-              <p class="simple-kicker">Suporte · só leitura</p>
+              <p class="simple-kicker">Suporte</p>
               <h2>${escapeHtml(name)}</h2>
               <p class="pm-sub"><code>${escapeHtml(uid)}</code> ${copyBtn(uid, 'Copiar uid')}</p>
             </div>
@@ -491,9 +493,18 @@ async function openSupportModal({ uid, user: known, onOpenFicha } = {}) {
             <li><span>Cenas concluídas</span><strong>${scenesDone(u)}</strong></li>
           </ul>
           <div class="us-actions">
-            <p class="ez-hint">Plus vem do webhook RevenueCat. Para teste manual:</p>
-            ${copyBtn(`node scripts/set_plus_active.mjs --uids ${uid} --on --apply`, 'Comando: ligar Plus')}
-            ${copyBtn(`node scripts/set_plus_active.mjs --uids ${uid} --off --apply`, 'Comando: desligar Plus')}
+            ${getRole() === 'admin'
+              ? `<p class="ez-hint">Plus de cortesia ou teste: abre o Plus no aparelho (promocional no RevenueCat) e fica no histórico. Tirar não mexe em assinatura paga.</p>
+            <select data-plus-days aria-label="Prazo do Plus">
+              <option value="7">7 dias</option>
+              <option value="30" selected>30 dias</option>
+              <option value="90">90 dias</option>
+              <option value="365">1 ano</option>
+            </select>
+            <input class="us-plus-reason" data-plus-reason placeholder="Motivo (ex.: teste no Redmi)" maxlength="200" />
+            <button type="button" class="btn btn-primary btn-sm" data-plus="on">Dar Plus</button>
+            <button type="button" class="btn btn-ghost btn-sm" data-plus="off">Tirar Plus</button>`
+              : '<p class="ez-hint">Plus vem do webhook RevenueCat. Só admin dá ou tira Plus manual.</p>'}
             <a class="btn btn-ghost btn-sm" target="_blank" rel="noopener" href="https://console.firebase.google.com/project/${escapeHtml(import.meta.env.VITE_FIREBASE_PROJECT_ID || 'trilha-biblia')}/firestore/data/~2Fusers~2F${encodeURIComponent(uid)}">Abrir no Console ↗</a>
           </div>
           <h4 class="us-sub">Linha do tempo</h4>
@@ -516,6 +527,35 @@ async function openSupportModal({ uid, user: known, onOpenFicha } = {}) {
           showToast('Copiado');
         } catch {
           showToast(btn.dataset.copy, 'info');
+        }
+      });
+    });
+    modal.querySelectorAll('[data-plus]').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const on = btn.dataset.plus === 'on';
+        const reason = modal.querySelector('[data-plus-reason]')?.value.trim() || '';
+        if (reason.length < 3) {
+          showToast('Escreva o motivo (fica no histórico).', 'error');
+          modal.querySelector('[data-plus-reason]')?.focus();
+          return;
+        }
+        const days = Number(modal.querySelector('[data-plus-days]')?.value || 30);
+        if (!on && !confirm(`Tirar o Plus manual de ${name}?`)) return;
+        modal.querySelectorAll('[data-plus]').forEach((b) => { b.disabled = true; });
+        try {
+          const { data } = await moderateUser({ uid, action: on ? 'plusOn' : 'plusOff', days, reason });
+          const rc = data?.details?.revenueCat;
+          showToast(
+            rc
+              ? (on ? `Plus ligado por ${days} dias` : 'Plus manual desligado')
+              : `Gravado no banco, mas o RevenueCat falhou: ${data?.details?.revenueCatError || '?'}`,
+            rc ? 'success' : 'error',
+          );
+          close();
+          openSupportModal({ uid, onOpenFicha });
+        } catch (e) {
+          showToast(e.message || String(e), 'error');
+          modal.querySelectorAll('[data-plus]').forEach((b) => { b.disabled = false; });
         }
       });
     });
@@ -601,7 +641,6 @@ function usersTable(users, sort, latestBuild, filter) {
         <thead>
           <tr>
             ${SORT_COLS.map((c) => sortTh(c, sort)).join('')}
-            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -610,8 +649,8 @@ function usersTable(users, sort, latestBuild, filter) {
             const email = u.email || '';
             const hay = `${name} ${email} ${u.id}`.toLowerCase();
             return `
-              <tr data-filter="${escapeHtml(hay)}" data-tags="${tags}">
-                <td>${nameCell(u)}</td>
+              <tr class="us-row" tabindex="0" title="Abrir conta" data-abrir="${escapeHtml(u.id)}" data-abrir-name="${escapeHtml(name)}" data-filter="${escapeHtml(hay)}" data-tags="${tags}">
+                <td class="us-name">${nameCell(u)}</td>
                 <td>${email ? escapeHtml(email) : '—'}</td>
                 <td>${platformCell(u)}</td>
                 <td>${versionCell(u, latestBuild)}</td>
@@ -622,9 +661,6 @@ function usersTable(users, sort, latestBuild, filter) {
                 <td>${socialCell(u)}</td>
                 <td>${escapeHtml(dayLabel(u.firstOpenDate))}</td>
                 <td>${escapeHtml(dayLabel(u.lastSeenDate))}</td>
-                <td class="td-actions">
-                  <button type="button" class="btn btn-secondary btn-sm" data-abrir="${escapeHtml(u.id)}" data-abrir-name="${escapeHtml(name)}">Abrir</button>
-                </td>
               </tr>`;
           }).join('')}
         </tbody>
@@ -648,7 +684,7 @@ export async function renderUsersPage(root) {
       <header class="ez-hero">
         <div>
           <h1>Suporte</h1>
-          <p class="ez-lead">Abrir mostra conta e Plus; a aba Moderação fica na mesma folha. Busque por e-mail, uid ou código de passe.</p>
+          <p class="ez-lead">Clique numa conta para ver conta e Plus; a aba Moderação fica na mesma folha. Busque por e-mail, uid ou código de passe.</p>
         </div>
       </header>
       <form class="ez-toolbar" id="us-form">
@@ -695,8 +731,17 @@ export async function renderUsersPage(root) {
   }
 
   function wireRowActions(el) {
-    el.querySelectorAll('[data-abrir]').forEach((btn) => {
-      btn.addEventListener('click', () => openAbrir(btn.dataset.abrir, btn.dataset.abrirName));
+    el.querySelectorAll('[data-abrir]').forEach((row) => {
+      const open = () => openAbrir(row.dataset.abrir, row.dataset.abrirName);
+      row.addEventListener('click', (e) => {
+        if (e.target.closest('a, button, input')) return;
+        open();
+      });
+      row.addEventListener('keydown', (e) => {
+        if (e.target !== row || (e.key !== 'Enter' && e.key !== ' ')) return;
+        e.preventDefault();
+        open();
+      });
     });
     el.querySelectorAll('[data-ficha]').forEach((btn) => {
       btn.addEventListener('click', () => openFicha(btn.dataset.ficha, btn.dataset.fichaName));
@@ -824,11 +869,8 @@ export async function renderUsersPage(root) {
         out.innerHTML = `
           <p class="db-lead">${users.length} contas com este e-mail</p>
           <ul class="db-list">${users.map((u) => `
-            <li>
-              <span>${escapeHtml(displayName(u))} <code>${escapeHtml(u.id)}</code></span>
-              <strong>
-                <button type="button" class="btn btn-secondary btn-sm" data-abrir="${escapeHtml(u.id)}" data-abrir-name="${escapeHtml(displayName(u))}">Abrir</button>
-              </strong>
+            <li class="us-row" tabindex="0" title="Abrir conta" data-abrir="${escapeHtml(u.id)}" data-abrir-name="${escapeHtml(displayName(u))}">
+              <span><span class="us-name">${escapeHtml(displayName(u))}</span> <code>${escapeHtml(u.id)}</code></span>
             </li>`).join('')}</ul>`;
         wireRowActions(out);
         return;

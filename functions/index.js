@@ -811,14 +811,21 @@ const moderation = require('./moderation');
 /** Painel admin: ver e moderar uma conta (ver moderation.js). */
 exports.moderateUser = functions
   .region('us-central1')
-  .runWith({ timeoutSeconds: 120, memory: '256MB' })
+  .runWith({ secrets: [revenueCatSecretKey], timeoutSeconds: 120, memory: '256MB' })
   .https.onCall(async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'Entre no painel.');
     }
     try {
       return await moderation.moderate(
-        { db: getFirestore(), auth: getAuth(), messaging: getMessaging(), fcmTokenOf, logger },
+        {
+          db: getFirestore(),
+          auth: getAuth(),
+          messaging: getMessaging(),
+          fcmTokenOf,
+          logger,
+          revenueCat: referralRc(),
+        },
         { uid: context.auth.uid, email: context.auth.token?.email },
         data || {},
       );
@@ -837,4 +844,29 @@ exports.liftSuspensions = functions.pubsub
   .onRun(async () => {
     const lifted = await moderation.liftExpired({ db: getFirestore(), auth: getAuth(), logger });
     if (lifted) logger.info('moderação: suspensões encerradas', { lifted });
+  });
+
+// ---- Etapa do mês da Caravana (ver caravan.js) ----------------------------
+
+const caravan = require('./caravan');
+
+/** Progresso salvo: recontar as cenas do mês que mudou (meta coletiva). */
+exports.onProgressScenes = functions.firestore
+  .document('users/{uid}/private/{docId}')
+  .onWrite(async (change, context) => {
+    if (context.params.docId !== 'data') return;
+    const before = change.before.exists ? change.before.data() : {};
+    const after = change.after.exists ? change.after.data() : {};
+    const months = caravan.changedMonths(
+      before.missionCompletedOn,
+      after.missionCompletedOn,
+    );
+    if (months.length === 0) return;
+    await caravan.writeMonths(
+      getFirestore(),
+      context.params.uid,
+      after.missionCompletedOn,
+      months,
+      FieldValue,
+    );
   });

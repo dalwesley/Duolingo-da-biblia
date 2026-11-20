@@ -155,6 +155,9 @@ async function moderate(deps, caller, input) {
   if (action === 'advent') {
     return insights.adventStatus(db, String(input?.campaign || 'advento-2026'));
   }
+  if (action === 'plusOn' || action === 'plusOff') {
+    return setPlus(deps, caller, input, action === 'plusOn');
+  }
   if (action === 'timeline') {
     const who = String(input?.uid || '').trim();
     if (!who || who.length > 128) throw new ModerationError('invalid-argument', 'uid inválido.');
@@ -284,6 +287,67 @@ async function moderate(deps, caller, input) {
   }
 
   logger.info('moderação', { uid, action, by: caller.uid });
+  return { ok: true, details };
+}
+
+const PLUS_DAYS = new Set([7, 30, 90, 365]);
+
+/**
+ * Plus manual (teste, cortesia): promocional no RevenueCat, que é o que
+ * abre o Plus no aparelho, e o espelho em `users/{uid}` (selo para os
+ * outros, regras do servidor). Desligar tira só o promocional: assinatura
+ * paga pela loja continua. Vale para a própria conta e para a equipe.
+ */
+async function setPlus(deps, caller, input, on) {
+  const { db, revenueCat, logger } = deps;
+  const uid = String(input?.uid || '').trim();
+  if (!uid || uid.length > 128) throw new ModerationError('invalid-argument', 'uid inválido.');
+  const reason = String(input?.reason || '').trim().slice(0, 500);
+  if (reason.length < 3) throw new ModerationError('invalid-argument', 'Escreva o motivo (fica no histórico).');
+  const days = Number(input?.days || 30);
+  if (on && !PLUS_DAYS.has(days)) throw new ModerationError('invalid-argument', 'Prazo inválido.');
+
+  const details = { days: on ? days : null };
+  let endMs = null;
+  if (revenueCat) {
+    try {
+      if (on) endMs = await revenueCat.grantDays(uid, days);
+      else await revenueCat.revokePromotional(uid);
+      details.revenueCat = true;
+    } catch (e) {
+      details.revenueCat = false;
+      details.revenueCatError = e.message;
+    }
+  } else {
+    details.revenueCat = false;
+    details.revenueCatError = 'chave REVENUECAT_SECRET_KEY ausente';
+  }
+
+  await db.doc(`users/${uid}`).set(
+    on
+      ? {
+          plusActive: true,
+          plusInTrial: false,
+          plusExpiresAt: new Date(endMs || Date.now() + days * 86_400_000).toISOString(),
+          plusManual: true,
+        }
+      : {
+          plusActive: false,
+          plusExpiresAt: FieldValue.delete(),
+          plusManual: FieldValue.delete(),
+        },
+    { merge: true },
+  );
+  await db.collection(LOG).add({
+    uid,
+    action: on ? 'plusOn' : 'plusOff',
+    reason,
+    details,
+    by: caller.uid,
+    byEmail: caller.email || null,
+    at: FieldValue.serverTimestamp(),
+  });
+  logger.info('plus manual', { uid, on, by: caller.uid, rc: details.revenueCat });
   return { ok: true, details };
 }
 
