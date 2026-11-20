@@ -10284,10 +10284,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get seasonWalkAdvento2026Day26Insight =>
-      'Those who hunger will be filled';
+      'The promised King is born small';
 
   @override
-  String get seasonWalkAdvento2026Day26Title => 'Hunger for justice';
+  String get seasonWalkAdvento2026Day26Title => 'Little Bethlehem';
 
   @override
   String get seasonWalkAdvento2026Subtitle =>

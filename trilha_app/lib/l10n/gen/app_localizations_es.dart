@@ -10331,10 +10331,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get seasonWalkAdvento2026Day26Insight =>
-      'Quien tiene hambre será saciado';
+      'El Rey prometido nace pequeño';
 
   @override
-  String get seasonWalkAdvento2026Day26Title => 'Hambre de justicia';
+  String get seasonWalkAdvento2026Day26Title => 'La pequeña Belén';
 
   @override
   String get seasonWalkAdvento2026Subtitle =>

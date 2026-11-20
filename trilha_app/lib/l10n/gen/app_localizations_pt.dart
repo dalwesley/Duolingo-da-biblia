@@ -10303,10 +10303,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String get seasonWalkAdvento2026Day25Title => 'Alegria';
 
   @override
-  String get seasonWalkAdvento2026Day26Insight => 'Quem tem fome será farto';
+  String get seasonWalkAdvento2026Day26Insight =>
+      'O Rei prometido nasce pequeno';
 
   @override
-  String get seasonWalkAdvento2026Day26Title => 'Fome de justiça';
+  String get seasonWalkAdvento2026Day26Title => 'A pequena Belém';
 
   @override
   String get seasonWalkAdvento2026Subtitle =>

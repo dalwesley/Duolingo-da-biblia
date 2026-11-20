@@ -12,31 +12,35 @@ void main() {
       SeasonWalkRoutes.instance.debugSet({});
       final c = SeasonWalkCatalog.advent(DateTime(2026, 11, 29));
       expect(c.days.length, 26);
-      expect(c.dayAt(26)!.missionSlug, 'sm-05-fome-e-sede-de-justica');
+      expect(c.dayAt(26)!.missionSlug, 'mq-04-belem');
     });
 
-    test('troca o dia 26 com título e frase do idioma, sem mexer nos outros', () {
-      SeasonWalkRoutes.instance.debugSet({
-        'advento-2026': {
-          26: const SeasonDayOverride(
-            missionSlug: 'mq-04-belem',
-            trailSlug: 'miqueias',
-            title: {'pt': 'A pequena Belém', 'en': 'Little Bethlehem'},
-            insight: {'pt': 'De ti sairá o Rei'},
-          ),
-        },
-      });
-      final c = SeasonWalkCatalog.advent(DateTime(2026, 11, 29));
-      final d26 = c.dayAt(26)!;
-      expect(d26.missionSlug, 'mq-04-belem');
-      expect(d26.trailSlug, 'miqueias');
-      expect(d26.index, 26);
-      expect(d26.insight, 'De ti sairá o Rei');
-      expect(c.dayAt(25)!.missionSlug, 'fp-01-alegria');
-      // Outro ano não pega a troca deste.
-      final next = SeasonWalkCatalog.advent(DateTime(2027, 11, 28));
-      expect(next.dayAt(26)!.missionSlug, 'sm-05-fome-e-sede-de-justica');
-    });
+    test(
+      'troca o dia 22 com título e frase do idioma, sem mexer nos outros',
+      () {
+        SeasonWalkRoutes.instance.debugSet({
+          'advento-2026': {
+            22: const SeasonDayOverride(
+              missionSlug: 'mtc-02-os-magos-e-a',
+              trailSlug: 'mateus-cap',
+              title: {'pt': 'Os magos e a estrela', 'en': 'The magi'},
+              insight: {'pt': 'Vieram adorar o Rei'},
+            ),
+          },
+        });
+        final c = SeasonWalkCatalog.advent(DateTime(2026, 11, 29));
+        final d22 = c.dayAt(22)!;
+        expect(d22.missionSlug, 'mtc-02-os-magos-e-a');
+        expect(d22.trailSlug, 'mateus-cap');
+        expect(d22.index, 22);
+        expect(d22.insight, 'Vieram adorar o Rei');
+        expect(c.dayAt(21)!.missionSlug, 'evg-07-ceia');
+        expect(c.dayAt(26)!.missionSlug, 'mq-04-belem');
+        // Outro ano não pega a troca deste.
+        final next = SeasonWalkCatalog.advent(DateTime(2027, 11, 28));
+        expect(next.dayAt(22)!.missionSlug, 'evg-08-cruz');
+      },
+    );
 
     test('lê o mapa do banco e descarta o que não serve', () {
       final days = SeasonWalkRoutes.parseDays(

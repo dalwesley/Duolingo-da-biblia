@@ -30,6 +30,7 @@ class SeasonWalkCatalog {
       'oracao' => 'Oração',
       'salmos' => 'Salmos',
       'filipenses' => 'Filipenses',
+      'miqueias' => 'Miqueias',
       _ => slug,
     };
   }
@@ -142,6 +143,7 @@ class SeasonWalkCatalog {
   static const _or = 'oracao';
   static const _sl = 'salmos';
   static const _fp = 'filipenses';
+  static const _mq = 'miqueias';
 
   static List<SeasonWalkDay> _adventDays(AppLocalizations l) => [
     _day(
@@ -319,10 +321,12 @@ class SeasonWalkCatalog {
       l.seasonWalkAdvento2026Day25Title,
       l.seasonWalkAdvento2026Day25Insight,
     ),
+    // Véspera de Natal: Belém, de onde sai o Rei (Mq 5:2). Até a 1.0.49
+    // era Fome de justiça; o servidor do prêmio conta o número do dia.
     _day(
       26,
-      'sm-05-fome-e-sede-de-justica',
-      _sm,
+      'mq-04-belem',
+      _mq,
       l.seasonWalkAdvento2026Day26Title,
       l.seasonWalkAdvento2026Day26Insight,
     ),

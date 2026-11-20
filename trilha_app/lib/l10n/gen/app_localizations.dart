@@ -15852,13 +15852,13 @@ abstract class AppLocalizations {
   /// No description provided for @seasonWalkAdvento2026Day26Insight.
   ///
   /// In pt, this message translates to:
-  /// **'Quem tem fome será farto'**
+  /// **'O Rei prometido nasce pequeno'**
   String get seasonWalkAdvento2026Day26Insight;
 
   /// No description provided for @seasonWalkAdvento2026Day26Title.
   ///
   /// In pt, this message translates to:
-  /// **'Fome de justiça'**
+  /// **'A pequena Belém'**
   String get seasonWalkAdvento2026Day26Title;
 
   /// No description provided for @seasonWalkAdvento2026Subtitle.
