@@ -8,18 +8,25 @@
   <meta name="theme-color" content="#040910" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Doar — Stway" />
-  <meta property="og:description" content="Ajude essa jornada a continuar. Um passo por dia na Palavra." />
+  <meta property="og:description" content="Ajude essa jornada a continuar. Um passo. Uma jornada. Uma comunidade." />
+  <meta property="og:image" content="https://stway.com.br/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Stway" />
   <meta property="og:url" content="https://stway.com.br/doar" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="canonical" href="https://stway.com.br/doar" />
   <link rel="icon" href="/icon-192.png" />
+  <link rel="apple-touch-icon" href="/icon-192.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,500&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css?v=lang1" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,500&family=Nunito:wght@400;600;700;800&family=Exo+2:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css?v=folha12" />
+  <script>document.documentElement.classList.add('js');if(/[?&]folha=/.test(location.search)&&window.parent!==window)document.documentElement.classList.add('is-folha');</script>
 </head>
-<body>
-  <div class="cosmos" aria-hidden="true"></div>
+<body class="page-cine">
+  <canvas class="cosmos" aria-hidden="true"></canvas>
   <div class="film" aria-hidden="true">
     <div class="grain"></div>
     <div class="vignette"></div>
@@ -28,56 +35,97 @@
     <div class="wrap">
       <a class="brand" href="/">
         <img src="/icon-192.png" alt="" width="34" height="34" />
-        Stway
+        <span class="brand-name wordmark" aria-label="Stway"><span aria-hidden="true">ST</span><span aria-hidden="true">W</span><svg class="wm-a" viewBox="0 0 100 100" aria-hidden="true"><path d="M10 90 L50 12 L90 90" /></svg><span aria-hidden="true">Y</span></span>
       </a>
-      <nav class="nav" aria-label="Seções">
-        <a class="quiet" href="/#palco">O palco</a>
-        <a class="quiet" href="/#profundidades">Profundidades</a>
-        <a class="quiet" href="/#jornada">Trilha</a>
-        <a class="quiet" href="/#contato">Fale conosco</a>
-        <a class="quiet" href="/planos">Planos</a>
-        <a class="quiet" href="/sobre">Sobre</a>
-        <a class="quiet is-on" href="/doar" aria-current="page">Doar</a>
-        <span class="store-actions">
-          <a class="btn btn-gold btn-sm" href="https://play.google.com/store/apps/details?id=com.trilha.trilha_app&amp;pcampaignid=web_share" target="_blank" rel="noopener">Baixar o app Android</a>
-          <button type="button" class="btn btn-soon btn-sm" data-ios-waitlist>Baixe para iOS</button>
-        </span>
-      </nav>
+      <div class="head-actions">
+        <a class="btn btn-gold btn-sm head-store" href="https://play.google.com/store/apps/details?id=com.trilha.trilha_app&amp;pcampaignid=web_share" target="_blank" rel="noopener"><span class="l-long">Baixar o app Android</span><span class="l-short">Android</span></a>
+        <button type="button" class="btn btn-soon btn-sm head-store" data-ios-waitlist><span class="l-long">Baixe para iOS</span><span class="l-short">iOS</span></button>
+        <button type="button" class="burger" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><i></i><i></i></button>
+      </div>
     </div>
   </header>
-  <main class="wrap page">
-    <div class="doar">
-      <div class="doar-copy">
-        <h1>Ajude essa jornada a continuar.</h1>
-        <div class="prose">
-          <p>O Stway nasceu com um propósito simples: ajudar mais pessoas a criar o hábito de ler, estudar e conhecer a Bíblia — um passo por dia.</p>
-          <p>Sua contribuição nos ajuda a manter o Stway funcionando e a continuar avançando: novas trilhas, novos estudos, mais conteúdo e mais traduções para que essa jornada possa alcançar ainda mais pessoas.</p>
-          <p>Você não está pagando para desbloquear o Stway. Está ajudando a mantê-lo acessível para quem vier depois de você.</p>
-          <p>Contribua com qualquer valor. Cada contribuição ajuda o próximo passo a acontecer.</p>
-          <p class="doar-sign">Stway — um passo por dia na Palavra.</p>
-          <p class="doar-fine">A contribuição é voluntária e não desbloqueia cenas, traduções ou recursos exclusivos no aplicativo.</p>
+  <main id="conteudo" class="cine-page">
+    <section class="ph" data-anan="Obrigado por pensar em ajudar. De verdade!">
+      <div class="ph-bg" aria-hidden="true"><img src="/advento/img/dia-04.webp" alt="" /></div>
+      <div class="ph-shade" aria-hidden="true"></div>
+      <div class="wrap ph-layout">
+        <div class="ph-copy">
+          <p class="kicker">Doar</p>
+          <h1 class="display">Ajude essa jornada<br><em>a continuar.</em></h1>
+          <p class="ph-lead">O Stway nasceu com um propósito simples: ajudar mais pessoas a criar o hábito de ler, estudar e conhecer a Bíblia — um passo por dia.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold btn-sheen" href="#pix">Contribuir via Pix</a>
+            <a class="btn btn-ghost" href="/manifesto#dizimo">Como usamos o dinheiro</a>
+          </div>
         </div>
+        <figure class="ph-frame">
+          <img src="/advento/img/dia-04.webp" alt="Um caminhante na estrada que sobe para a cidade" width="374" height="314" />
+          <figcaption>“Até aqui nos ajudou o Senhor.”<cite>1 Samuel 7:12</cite></figcaption>
+        </figure>
       </div>
-      <aside class="doar-side" aria-label="Pix">
-        <div class="pix-qr is-empty" id="pix-qr">QR Code</div>
-        <section class="pix" aria-labelledby="pix-title">
-          <h2 id="pix-title">Faça parte do próximo passo</h2>
-          <p class="pix-lead">Escaneie o QR Code ou copie a chave PIX.</p>
-          <p class="pix-lead">Qualquer valor ajuda.</p>
+    </section>
+
+    <section class="dn-why" aria-label="O que a contribuição sustenta" data-anan="Cada valor vira trilha, estudo e tradução.">
+      <div class="wrap">
+        <div class="dn-why-head reveal">
+          <p class="kicker">O que sua contribuição sustenta</p>
+          <h2 class="display display-sm">Você não paga para entrar.<br><em>Ajuda a manter a porta aberta.</em></h2>
+        </div>
+        <ol class="dn-cards">
+          <li class="reveal" style="--i:0">
+            <span class="dn-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19c4-1 6-5 8-9s4-6 8-6" /><circle cx="4" cy="19" r="1.6" /><circle cx="20" cy="4" r="1.6" /></svg></span>
+            <h3>Novas trilhas e estudos</h3>
+            <p>Mais livros da Bíblia, mais cenas, mais caminhos para a vida.</p>
+          </li>
+          <li class="reveal" style="--i:1">
+            <span class="dn-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h9M8.5 4v2M6 6c0 4 3 7 6 8M11 6c-1 4-4 7-7 8" /><path d="M13 20l4-9 4 9M14.5 17h5" /></svg></span>
+            <h3>Mais traduções</h3>
+            <p>O Stway em inglês e espanhol, para a jornada chegar mais longe.</p>
+          </li>
+          <li class="reveal" style="--i:2">
+            <span class="dn-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12" /><path d="M9 21v-7h6v7" /></svg></span>
+            <h3>O app aberto</h3>
+            <p>Servidores, lojas e manutenção — para quem vier depois de você.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="dn-pix" id="pix" aria-labelledby="pix-title" data-anan="Escaneie o QR ou copie a chave. Qualquer valor ajuda!" data-anan-cheer>
+      <div class="dn-pix-glow" aria-hidden="true"></div>
+      <div class="wrap dn-pix-layout">
+        <div class="dn-qr-wrap reveal">
+          <div class="pix-qr is-empty" id="pix-qr">QR Code</div>
+          <span class="dn-scan" aria-hidden="true"></span>
+        </div>
+        <div class="pix reveal">
+          <p class="kicker">Pix</p>
+          <h2 class="display display-sm" id="pix-title">Faça parte do<br><em>próximo passo.</em></h2>
+          <p class="pix-lead">Escaneie o QR Code ou copie a chave PIX. Contribua com qualquer valor.</p>
           <p class="pix-payee" id="pix-payee"></p>
           <p class="pix-code" id="pix-code"></p>
           <button class="btn btn-gold pix-copy" id="pix-copy" type="button" disabled>Copiar chave PIX</button>
           <p class="pix-note" id="pix-status" role="status"></p>
-        </section>
-      </aside>
-    </div>
+          <p class="doar-fine">A contribuição é voluntária e não desbloqueia cenas, traduções ou recursos exclusivos no aplicativo. Doações mantêm o app; o dízimo de 10% sai do Peregrino+ e é outra conta.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="coda" aria-label="Encerramento">
+      <div class="coda-lamp" aria-hidden="true"></div>
+      <blockquote class="wrap reveal">
+        <p>Cada um contribua segundo propôs no seu coração; não com tristeza ou por necessidade; porque Deus ama ao que dá com alegria.</p>
+        <footer>2 Coríntios 9:7</footer>
+      </blockquote>
+      <p class="mf-sign reveal">Stway — um passo. Uma jornada. Uma comunidade.</p>
+    </section>
   </main>
   <footer class="site-footer site-footer-full">
     <div class="wrap footer-grid">
       <div class="footer-brand">
         <a class="brand" href="/">
           <img src="/icon-192.png" alt="" width="34" height="34" loading="lazy" />
-          Stway
+          <span class="brand-name wordmark" aria-label="Stway"><span aria-hidden="true">ST</span><span aria-hidden="true">W</span><svg class="wm-a" viewBox="0 0 100 100" aria-hidden="true"><path d="M10 90 L50 12 L90 90" /></svg><span aria-hidden="true">Y</span></span>
         </a>
         <p class="footer-mission">Feito para despertar o amor pelas Escrituras e o hábito de lê-las — um passo por dia, o texto no centro.</p>
         <blockquote class="footer-verse">
@@ -88,14 +136,18 @@
 
       <nav class="footer-col" aria-label="O app">
         <h2>O app</h2>
-        <a href="/#palco">Os seis gestos</a>
-        <a href="/#profundidades">Três profundidades</a>
-        <a href="/#strong">Hebraico e grego (Strong)</a>
-        <a href="/#jornada">A trilha</a>
-        <a href="/#app">Um dia no Stway</a>
+        <a href="/palco">Os seis gestos</a>
+        <a href="/profundidades">Três profundidades</a>
+        <a href="/strong">Hebraico e grego (Strong)</a>
+        <a href="/trilhas">A trilha</a>
+        <a href="/por-dentro">Por dentro do app</a>
+        <a href="/juntos">Juntos</a>
+        <a href="/postais">Postais</a>
+        <a href="/advento">Advento 2026</a>
+        <a href="/manifesto">Manifesto</a>
         <a href="/planos">Planos</a>
         <a href="/sobre">Sobre</a>
-        <a href="/doar" aria-current="page">Doar</a>
+        <a href="/doar">Doar</a>
       </nav>
 
       <nav class="footer-col" aria-label="Participe">
@@ -169,6 +221,10 @@
       });
     }
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js" defer></script>
+  <script src="/main.js?v=folha1" defer></script>
+  <script src="/nav.js?v=folha1" defer></script>
   <script src="/ios-waitlist.js?v=2" defer></script>
+  <script src="/folha.js?v=2" defer></script>
 </body>
 </html>

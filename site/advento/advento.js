@@ -1,3 +1,5 @@
+// Escopo próprio: main.js também roda nesta página e já declara nomes globais (root, ...).
+{
 // Advento 2026: calendário com postais velados até o dia de cada cena.
 // Dados: marketing/advento-2026/dias.json (regerar se mudar o roteiro).
 const START = [2026, 10, 29]; // 29/11/2026 (mês 0-based)
@@ -39,3 +41,4 @@ for (let w = 0; w < 4; w++) {
   html += "</ul>";
 }
 root.innerHTML = html;
+}

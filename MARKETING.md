@@ -12,7 +12,8 @@ Fonte de verdade da língua (UI + texto): [`trilha_app/docs/design_language.md`]
 
 | Uso | Texto |
 |-----|--------|
-| **Slogan** | A Bíblia, cena a cena |
+| **Slogan** (marca: assinatura, posts, fecho de página) | um passo. uma jornada. uma comunidade. |
+| **Descritor** (o que o app faz: loja, topo do site) | A Bíblia, cena a cena |
 | **Frase-mãe** | Enquanto outros te fazem jogar a Bíblia, o Stway te põe nela — cena a cena. |
 | **O que somos** | Cenas curtas para criar o hábito de ler e estudar a Bíblia |
 | **Sensação** | Duolingo no loop · ler e estudar a Palavra de verdade |

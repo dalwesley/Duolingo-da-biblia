@@ -3,7 +3,7 @@
 (function hideDonateWhenFromApp() {
   if (new URLSearchParams(location.search).get('src') !== 'app') return;
   document
-    .querySelectorAll('a[href^="/doar"], a[href^="/planos"], .sb-doar, header .nav')
+    .querySelectorAll('a[href^="/doar"], a[href^="/planos"], .sb-doar, header .head-actions')
     .forEach((el) => el.remove());
 })();
 
@@ -85,4 +85,24 @@
   document.querySelectorAll('.sb-cascade .reveal').forEach((el, i) => {
     el.style.transitionDelay = `${i * 0.08}s`;
   });
+})();
+
+
+/* Manifesto — a folha sempre cabe inteira na tela (sem cortar no cabeçalho). */
+(function fitLetter() {
+  const paper = document.querySelector('.mfp-paper');
+  const pin = paper?.closest('.pin');
+  if (!paper || !pin) return;
+  const verse = pin.querySelector('.mfp-verse');
+  function fit() {
+    paper.style.setProperty('--fit', '1');
+    const header = 68;
+    const verseH = verse && getComputedStyle(verse).display !== 'none' ? verse.offsetHeight + 22 : 0;
+    const room = window.innerHeight - header - verseH - 36;
+    const need = paper.offsetHeight;
+    paper.style.setProperty('--fit', String(Math.min(1, room / need).toFixed(3)));
+  }
+  fit();
+  window.addEventListener('resize', fit);
+  document.fonts?.ready.then(fit);
 })();
