@@ -11,12 +11,12 @@ void main() {
     expect(line, contains('12h 24min'));
     expect(line, contains('sequência de 2 dias'));
     expect(line, contains('cena hoje'));
-    expect(line, isNot(contains('Faltam')));
+    expect(line, startsWith('Faltam 12h 24min'));
     expect(line, isNot(contains('postos')));
   });
 
   test('hero risk line without freeze stays plain', () {
     final line = DustCopy.heroRiskLine(countdown: '40min', hasFreeze: false);
-    expect(line, '40min para a sequência cair. Faça a cena hoje.');
+    expect(line, 'Faltam 40min para a sequência cair. Faça a cena hoje.');
   });
 }

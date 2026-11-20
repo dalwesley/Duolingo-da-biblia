@@ -90,6 +90,10 @@ void main() {
     expect(filledStyle!.height, runStyle!.height);
     // Lacuna preenchida em ouro — seleção clara some no texto do verso.
     expect(filledStyle!.color, AppRoles.action);
-    expect(filledStyle!.decoration, isNull);
+    // Sem sublinhado: o estilo do verso fixa TextDecoration.none.
+    expect(
+      filledStyle!.decoration ?? TextDecoration.none,
+      TextDecoration.none,
+    );
   });
 }

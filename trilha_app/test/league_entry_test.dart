@@ -35,7 +35,7 @@ void main() {
       expect(pills.map((p) => p.label), ['Vice', 'Caminhou hoje']);
     });
 
-    test('activitySummary shows ativo hoje when both are today', () {
+    test('activitySummary shows walked and here when both are today', () {
       final today = DateTime.now().toIso8601String().substring(0, 10);
       final entry = LeagueEntry(
         name: 'João',
@@ -43,7 +43,7 @@ void main() {
         lastWalkDate: today,
         lastSeenDate: today,
       );
-      expect(entry.activitySummary, 'Ativo hoje');
+      expect(entry.activitySummary, 'Caminhou · por aqui');
       expect(entry.isOnlineToday, isTrue);
     });
 
@@ -68,9 +68,9 @@ void main() {
     });
 
     test('onlineCountLabel', () {
-      expect(LeagueService.onlineCountLabel(0), '0 estudando');
-      expect(LeagueService.onlineCountLabel(1), '1 estudando');
-      expect(LeagueService.onlineCountLabel(3), '3 estudando');
+      expect(LeagueService.onlineCountLabel(0), '0 por aqui');
+      expect(LeagueService.onlineCountLabel(1), '1 por aqui');
+      expect(LeagueService.onlineCountLabel(3), '3 por aqui');
     });
   });
 }

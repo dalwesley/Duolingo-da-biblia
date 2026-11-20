@@ -76,7 +76,8 @@ void main() {
     expect(hook.pull, contains('pergunta'));
     expect(hook.hookRef, 'Gênesis 3:1–5');
     expect(hook.trailSlug, 'genesis-1-11');
-    expect(hook.promiseLine, 'A cena espera você.');
+    // Sem eco nem trilha nova: o encontro de amanhã na hora do lembrete.
+    expect(hook.promiseLine(reminderHour: 8), 'Te vejo amanhã às 8h');
     expect(hook.cardLine, 'Amanhã: A serpente no jardim');
   });
 
@@ -204,7 +205,7 @@ void main() {
     expect(hook.kicker, 'Hoje você viu');
     expect(hook.trailer, contains('história acabou'));
     expect(hook.trailer, isNot(contains('semente')));
-    expect(hook.promiseLine, 'Amanhã: Consequências');
+    expect(hook.promiseLine(reminderHour: 8), 'Amanhã: Consequências');
   });
 
   test('celebration after recomeco stays on recomeco, not ansiedade', () {

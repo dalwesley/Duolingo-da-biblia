@@ -5,6 +5,7 @@ import 'package:trilha_app/models/difficulty.dart';
 import 'package:trilha_app/models/trail.dart';
 import 'package:trilha_app/models/trail_catalog.dart';
 import 'package:trilha_app/theme/app_theme.dart';
+import 'package:trilha_app/utils/difficulty_visuals.dart';
 import 'package:trilha_app/widgets/journey_path.dart';
 import 'package:trilha_app/widgets/mode_emblem.dart';
 
@@ -54,7 +55,7 @@ void main() {
     expect(find.bySemanticsLabel('Interpretação bloqueada'), findsOneWidget);
   });
 
-  testWidgets('completed journey station shows the mode emblem', (
+  testWidgets('completed journey station takes the sealed mode color', (
     tester,
   ) async {
     final trail = Trail(
@@ -112,8 +113,14 @@ void main() {
       ),
     );
 
-    expect(find.byKey(const ValueKey('mode-emblem-semente')), findsWidgets);
-    expect(find.byType(ModeEmblem), findsWidgets);
+    // Desde a 1.0.36 a estação não carrega mais o selo: o modo selado
+    // tinge o card e a linha de status diz qual foi.
+    final card = tester.widget<JourneyStationCard>(
+      find.byType(JourneyStationCard),
+    );
+    expect(card.chrome, DifficultyVisuals.accentFor(TrailDifficulty.semente));
+    expect(find.text('Observação concluída'), findsOneWidget);
+    expect(find.byType(ModeEmblem), findsNothing);
   });
 
   testWidgets('sealed observation card points to Compreensão', (tester) async {
@@ -173,7 +180,14 @@ void main() {
       ),
     );
 
-    expect(find.byKey(const ValueKey('mode-emblem-caminhada')), findsWidgets);
+    final card = tester.widget<JourneyStationCard>(
+      find.byType(JourneyStationCard),
+    );
+    expect(
+      card.chrome,
+      DifficultyVisuals.accentFor(TrailDifficulty.caminhada),
+    );
+    expect(find.text('Compreensão à frente'), findsOneWidget);
   });
 
   testWidgets('current journey station names the active mode', (tester) async {
@@ -235,7 +249,8 @@ void main() {
     expect(find.text('Modo Observação'), findsOneWidget);
     expect(find.text('Faltam 16 cenas'), findsOneWidget);
     expect(find.text('Agora'), findsOneWidget);
-    expect(find.text('Entrar'), findsOneWidget);
+    // O card inteiro é o toque; não há mais botão "Entrar".
+    expect(find.text('Entrar'), findsNothing);
     expect(find.text('você está aqui'), findsNothing);
   });
 

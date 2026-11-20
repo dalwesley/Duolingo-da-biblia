@@ -1,9 +1,13 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:intl/date_symbol_data_local.dart';
 import 'package:trilha_app/models/caravan_pilgrim_profile.dart';
 import 'package:trilha_app/models/caravan_profile_prefs.dart';
 import 'package:trilha_app/models/recognition.dart';
 
 void main() {
+  // No app, os delegates de localização carregam os dados de data.
+  setUpAll(() => initializeDateFormatting());
+
   group('Recognition', () {
     test('doc id is one tap per person, kind and subject', () {
       expect(
@@ -67,7 +71,7 @@ void main() {
         kind: RecognitionKind.walk,
         subjectKey: '2026-09-22',
       );
-      expect(walk.headline, 'Ana reconheceu a sua cena');
+      expect(walk.headline, 'Ana reconheceu sua cena');
       expect(walk.subjectLabel, 'Cena de 22 set');
 
       const medal = Recognition(

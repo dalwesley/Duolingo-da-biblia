@@ -4,14 +4,16 @@ import 'package:trilha_app/data/entry_trails.dart';
 import 'package:trilha_app/theme/app_theme.dart';
 import 'package:trilha_app/widgets/character_seals_strip.dart';
 
+import 'helpers/l10n.dart';
+
 void main() {
   testWidgets('gallery never uses a question mark on locked seals', (
     tester,
   ) async {
     await tester.pumpWidget(
-      MaterialApp(
+      l10nApp(
         theme: AppTheme.dark,
-        home: const Scaffold(
+        const Scaffold(
           body: SingleChildScrollView(
             child: CharacterSealsStrip(completed: []),
           ),
@@ -25,9 +27,9 @@ void main() {
 
   testWidgets('unlocked seal shows the name', (tester) async {
     await tester.pumpWidget(
-      MaterialApp(
+      l10nApp(
         theme: AppTheme.dark,
-        home: const Scaffold(
+        const Scaffold(
           body: SingleChildScrollView(
             child: CharacterSealsStrip(completed: ['gen-03-imagem']),
           ),
@@ -42,9 +44,9 @@ void main() {
     tester,
   ) async {
     await tester.pumpWidget(
-      MaterialApp(
+      l10nApp(
         theme: AppTheme.dark,
-        home: const Scaffold(
+        const Scaffold(
           body: SingleChildScrollView(
             child: CharacterSealsStrip(completed: ['gen12-01-chamado']),
           ),
@@ -58,9 +60,9 @@ void main() {
 
   testWidgets('sheet shares the encounter instead of Guardar', (tester) async {
     await tester.pumpWidget(
-      MaterialApp(
+      l10nApp(
         theme: AppTheme.dark,
-        home: Builder(
+        Builder(
           builder: (context) {
             return Scaffold(
               body: TextButton(

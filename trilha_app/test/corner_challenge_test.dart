@@ -1,8 +1,12 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:intl/date_symbol_data_local.dart';
 import 'package:trilha_app/models/corner_challenge.dart';
 import 'package:trilha_app/models/trail.dart';
 
 void main() {
+  // No app, GlobalMaterialLocalizations carrega os símbolos de data; aqui não.
+  setUpAll(() => initializeDateFormatting());
+
   final catalog = [_trail()];
 
   group('CornerMatch.propose', () {

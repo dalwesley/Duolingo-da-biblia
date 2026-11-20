@@ -411,11 +411,20 @@ void main() {
           ],
         ),
       ], max: 8);
-      expect(acts.first.type, ExerciseType.trueFalse);
-      expect(acts[1].type, ExerciseType.tap);
+      // O Toque com o trecho vira lacuna no palco e conta como o Completar
+      // da sessão (uma lacuna só), então 'p' fica de fora. Ordem do contrato:
+      // V/F → ordenar → escolha → lacuna → 2ª escolha → conectar.
+      expect(acts.map(SessionComposer.exerciseSlot).toList(), [
+        ExerciseType.trueFalse,
+        ExerciseType.order,
+        ExerciseType.choice,
+        ExerciseType.complete,
+        ExerciseType.choice,
+        ExerciseType.connect,
+      ]);
+      expect(acts.map((e) => e.id).toList(), ['v', 'o', 'c1', 't', 'c2', 'n']);
       expect(acts.where((e) => e.type == ExerciseType.choice).length, 2);
-      expect(acts.map((e) => e.id).contains('c2'), isTrue);
-      expect(acts.length, 7);
+      expect(acts.map((e) => e.id).contains('p'), isFalse);
     });
 
     test('arrangeActs caps choice at 40% and VF at 2', () {

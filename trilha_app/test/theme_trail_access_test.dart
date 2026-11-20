@@ -71,8 +71,12 @@ void main() {
   });
 
   test('temáticos são Plus desde a 1ª cena', () {
-    final themes = _trail(TrailRealm.novoTestamento.id, categoryId: 'panorama');
-    expect(themes.journey, TrailJourney.panorama);
+    // Panorama virou coleção da Bíblia (grátis); Personagens segue tema Plus.
+    final themes = _trail(
+      TrailRealm.novoTestamento.id,
+      categoryId: 'personagens',
+    );
+    expect(themes.journey, TrailJourney.personagens);
     expect(PlusAccess.trailIsPlus(themes), isTrue);
     expect(PlusAccess.missionNeedsPlus(themes, 'm1'), isTrue);
     expect(PlusAccess.missionNeedsPlus(themes, 'm2'), isTrue);

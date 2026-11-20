@@ -31,13 +31,16 @@ void main() {
     );
   });
 
-  test('free bible shelf is the two testaments side by side', () {
+  test('free bible shelf is the two testaments plus Panorama', () {
+    // Panorama (pontos altos de cada livro) é coleção da Bíblia desde 1.0.47.
     expect(TrailJourney.forShelf(TrailShelf.biblia), [
       TrailJourney.antigoTestamento,
       TrailJourney.novoTestamento,
+      TrailJourney.panorama,
     ]);
     expect(TrailJourney.antigoTestamento.requiresPlus, isFalse);
     expect(TrailJourney.novoTestamento.requiresPlus, isFalse);
+    expect(TrailJourney.panorama.requiresPlus, isFalse);
   });
 
   test('themes and the other plus shelves keep their card order', () {
@@ -45,7 +48,6 @@ void main() {
       TrailJourney.pazNoDia,
       TrailJourney.conhecerADeus,
       TrailJourney.entenderABiblia,
-      TrailJourney.panorama,
       TrailJourney.personagens,
       TrailJourney.promessaCumprimento,
       TrailJourney.temasBiblicos,
@@ -67,7 +69,6 @@ void main() {
     expect(TrailJourney.conhecerADeus.requiresPlus, isFalse);
     expect(TrailJourney.entenderABiblia.requiresPlus, isFalse);
     for (final journey in [
-      TrailJourney.panorama,
       TrailJourney.personagens,
       TrailJourney.promessaCumprimento,
       TrailJourney.temasBiblicos,

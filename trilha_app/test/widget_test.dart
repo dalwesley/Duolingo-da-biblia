@@ -6,6 +6,9 @@ void main() {
   testWidgets('App loads splash screen', (tester) async {
     await tester.pumpWidget(const TrilhaApp());
     expect(find.byType(StwayWordmark), findsOneWidget);
-    expect(find.textContaining('Bíblia'), findsWidgets);
+    // O slogan "A Bíblia, cena a cena" saiu da splash; hoje ela mostra a
+    // marca, o lema e o "preparando" (traduzido conforme o aparelho).
+    expect(find.byType(StwayTagline), findsOneWidget);
+    expect(find.textContaining('UMA JORNADA'), findsOneWidget);
   });
 }

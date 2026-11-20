@@ -57,8 +57,8 @@ void main() {
     );
     final goldBorder = (gold.border as Border).top.color;
     final coralBorder = (coral.border as Border).top.color;
-    expect(goldBorder, AppColors.accent.withValues(alpha: 0.70));
-    expect(coralBorder, AppColors.coral.withValues(alpha: 0.70));
+    expect(goldBorder, AppColors.accent.withValues(alpha: 0.78));
+    expect(coralBorder, AppColors.coral.withValues(alpha: 0.78));
     expect(goldBorder, isNot(coralBorder));
   });
 }
