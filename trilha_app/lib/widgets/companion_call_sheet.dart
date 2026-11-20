@@ -17,6 +17,7 @@ import 'room_panels.dart' show CaravanInviteRow;
 import 'ui_primitives.dart';
 import 'user_avatar.dart';
 import 'user_moderation_sheet.dart';
+import 'profile_section.dart';
 
 /// Chamar alguém da Caravana para o convite aberto [code] — a mesma lista
 /// do Grupos, com uma vaga só: chamar outra pessoa troca o chamado.
@@ -191,9 +192,9 @@ class CompanionIncomingInviteCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final from = invite.fromName.trim().split(' ').first;
-    return GlassCard(
-      glow: 0.7,
-      tint: AppRoles.presence,
+    return ProfilePanel(
+      accent: AppRoles.presence,
+      lit: true,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [

@@ -41,6 +41,9 @@ class CloudPlayer {
   /// Passos no começo de hoje (`null` = sem passo hoje).
   final int? dayStartSteps;
 
+  /// Peregrino+ ativo (`users/{uid}.plusActive`, do webhook).
+  final bool plus;
+
   const CloudPlayer({
     required this.uid,
     required this.name,
@@ -51,6 +54,58 @@ class CloudPlayer {
     this.portraitStyle = PortraitStyle.photo,
     this.weekSteps = 0,
     this.dayStartSteps,
+    this.plus = false,
+  });
+
+  CloudPlayer withPlus(bool value) => CloudPlayer(
+    uid: uid,
+    name: name,
+    steps: steps,
+    lastWalkDate: lastWalkDate,
+    lastSeenDate: lastSeenDate,
+    photoUrl: photoUrl,
+    portraitStyle: portraitStyle,
+    weekSteps: weekSteps,
+    dayStartSteps: dayStartSteps,
+    plus: value,
+  );
+}
+
+/// O trecho da Caravana do mês que o cartão precisa (ver
+/// [BackendService.fetchCaravanWindow]). Listas sem o próprio usuário.
+class CaravanWindow {
+  /// Quantos do topo vêm numa leitura — cobre a Caravana pequena inteira.
+  static const topFetch = 8;
+
+  /// Vizinhos buscados de cada lado (o cartão escolhe quantos mostrar).
+  static const neighborFetch = 3;
+
+  /// Quem passou por aqui hoje (para os rostos do cartão).
+  static const onlineFetch = 12;
+
+  /// Topo, do 1º para baixo.
+  final List<CloudPlayer> top;
+
+  /// Logo acima de mim, do mais perto para o mais longe.
+  final List<CloudPlayer> above;
+
+  /// Logo abaixo (ou empatado), do mais perto para o mais longe.
+  final List<CloudPlayer> below;
+
+  /// Quantos têm mais passos que eu.
+  final int ahead;
+
+  /// Quantos estão na Caravana do mês (com o próprio usuário).
+  final int total;
+  final List<CloudPlayer> online;
+
+  const CaravanWindow({
+    required this.top,
+    required this.above,
+    required this.below,
+    required this.ahead,
+    required this.total,
+    required this.online,
   });
 }
 
@@ -907,6 +962,10 @@ class BackendService extends ChangeNotifier {
     final settings = full['settings'];
     if (settings is Map && settings['portraitStyle'] != null) {
       public['portraitStyle'] = settings['portraitStyle'];
+    }
+    // Capa do perfil: os outros veem a pintura escolhida ('' = automática).
+    if (settings is Map && settings.containsKey('coverScene')) {
+      public['coverScene'] = settings['coverScene'] ?? '';
     }
     return (public: public, private: private);
   }
@@ -2416,13 +2475,14 @@ class BackendService extends ChangeNotifier {
   }
 
   List<CloudPlayer> _mapCloudPlayers(
-    List<QueryDocumentSnapshot<Map<String, dynamic>>> docs,
-  ) {
+    List<QueryDocumentSnapshot<Map<String, dynamic>>> docs, {
+    bool keepSelf = false,
+  }) {
     final week = LeagueService.weekKey();
     final today = _todayKey();
     return [
       for (final d in docs)
-        if (d.id != _uid)
+        if (keepSelf || d.id != _uid)
           CloudPlayer(
             uid: d.id,
             name: ProgressService.displayName(d.data()['name'] as String?),
@@ -2535,6 +2595,178 @@ class BackendService extends ChangeNotifier {
     } catch (e) {
       debugPrint('Falha ao buscar ranking do mês: $e');
       return const [];
+    }
+  }
+
+  /// Quem tem Peregrino+ entre [uids] (`users/{uid}.plusActive`, que só o
+  /// webhook grava). Lê só quem aparece na tela, de 30 em 30.
+  Future<Set<String>> _plusAmong(Iterable<String> uids) async {
+    final ids = uids.where((u) => u.isNotEmpty).toSet().toList();
+    final out = <String>{};
+    for (var i = 0; i < ids.length; i += 30) {
+      final chunk = ids.sublist(i, min(i + 30, ids.length));
+      final snap = await _db
+          .collection('users')
+          .where(FieldPath.documentId, whereIn: chunk)
+          .get();
+      for (final d in snap.docs) {
+        if (d.data()['plusActive'] == true) out.add(d.id);
+      }
+    }
+    return out;
+  }
+
+  List<CloudPlayer> _markPlus(List<CloudPlayer> players, Set<String> plus) => [
+    for (final p in players) plus.contains(p.uid) ? p.withPlus(true) : p,
+  ];
+
+  /// Peregrino+ do próprio usuário (para a linha "você").
+  bool myPlus = false;
+
+  /// O trecho da Caravana que o cartão mostra, sem baixar todo mundo: o
+  /// topo, quem está logo acima e logo abaixo de [mySteps], quantos estão
+  /// à frente e quem passou por aqui hoje. Exclui o próprio usuário.
+  Future<CaravanWindow?> fetchCaravanWindow({required int mySteps}) async {
+    if (!isActive) return null;
+    final month = LeagueService.monthKey();
+    final players = _db.collection('monthlyLeagues/$month/players');
+    try {
+      final results = await Future.wait([
+        players
+            .orderBy('xp', descending: true)
+            .limit(CaravanWindow.topFetch + 1)
+            .get(),
+        players.where('xp', isGreaterThan: mySteps).count().get(),
+        players.count().get(),
+        players
+            .where('lastSeenDate', isEqualTo: _todayKey())
+            .limit(CaravanWindow.onlineFetch)
+            .get(),
+      ]);
+      final top = _mapCloudPlayers(
+        (results[0] as QuerySnapshot<Map<String, dynamic>>).docs,
+      ).take(CaravanWindow.topFetch).toList();
+      final ahead = (results[1] as AggregateQuerySnapshot).count ?? 0;
+      final total = (results[2] as AggregateQuerySnapshot).count ?? 0;
+      final online = _mapCloudPlayers(
+        (results[3] as QuerySnapshot<Map<String, dynamic>>).docs,
+      );
+
+      var above = const <CloudPlayer>[];
+      var below = const <CloudPlayer>[];
+      // Fora do topo baixado: busca os vizinhos pelos passos.
+      if (ahead >= CaravanWindow.topFetch - 1) {
+        final near = await Future.wait([
+          players
+              .where('xp', isGreaterThan: mySteps)
+              .orderBy('xp')
+              .limit(CaravanWindow.neighborFetch)
+              .get(),
+          players
+              .where('xp', isLessThanOrEqualTo: mySteps)
+              .orderBy('xp', descending: true)
+              .limit(CaravanWindow.neighborFetch + 1)
+              .get(),
+        ]);
+        above = _mapCloudPlayers(near[0].docs);
+        below = _mapCloudPlayers(near[1].docs);
+      }
+      // O selo + só de quem aparece no cartão (e de mim).
+      final plus = await _plusAmong([
+        ...top.take(CaravanWindow.topFetch).map((p) => p.uid),
+        ...above.map((p) => p.uid),
+        ...below.map((p) => p.uid),
+        ?_uid,
+      ]).catchError((_) => <String>{});
+      myPlus = plus.contains(_uid);
+      return CaravanWindow(
+        top: _markPlus(top, plus),
+        above: _markPlus(above, plus),
+        below: _markPlus(below, plus),
+        ahead: ahead,
+        total: total,
+        online: online,
+      );
+    } catch (e) {
+      debugPrint('Trecho da Caravana falhou: $e');
+      return null;
+    }
+  }
+
+  /// Uma página da Caravana inteira, do primeiro para baixo. [after] é o
+  /// cursor da página anterior. Inclui o próprio usuário (a tela marca).
+  Future<({List<CloudPlayer> players, Object? cursor})> fetchCaravanPage({
+    Object? after,
+    int limit = 20,
+  }) async {
+    if (!isActive) return (players: const <CloudPlayer>[], cursor: null);
+    final month = LeagueService.monthKey();
+    Query<Map<String, dynamic>> query = _db
+        .collection('monthlyLeagues/$month/players')
+        .orderBy('xp', descending: true);
+    if (after is DocumentSnapshot) query = query.startAfterDocument(after);
+    final snap = await query
+        .limit(limit)
+        .get()
+        .timeout(const Duration(seconds: 10));
+    final players = _mapCloudPlayers(snap.docs, keepSelf: true);
+    final plus = await _plusAmong(
+      players.map((p) => p.uid),
+    ).catchError((_) => <String>{});
+    return (
+      players: _markPlus(players, plus),
+      cursor: snap.docs.length < limit ? null : snap.docs.last,
+    );
+  }
+
+  /// Meta coletiva do mês: cenas que a caravana somou e quantas pessoas
+  /// caminharam no mês passado (a meta escala com elas).
+  /// [month] ("YYYY-MM") padrão = o mês corrente.
+  Future<({int scenes, int lastMonthWalkers})?> fetchCaravanGoal({
+    String? month,
+  }) async {
+    if (!isActive) return null;
+    month ??= LeagueService.monthKey();
+    final prevKey = LeagueService.previousMonthKey(month);
+    try {
+      final results = await Future.wait([
+        // Cenas contadas pelo servidor a partir do progresso de cada um
+        // (functions/caravan.js) — exatas, para toda versão do app.
+        _db
+            .collection('caravanScenes/$month/walkers')
+            .aggregate(sum('scenes'))
+            .get(),
+        _db
+            .collection('monthlyLeagues/$prevKey/players')
+            .where('xp', isGreaterThan: 0)
+            .count()
+            .get(),
+      ]);
+      return (
+        scenes: (results[0].getSum('scenes') ?? 0).round(),
+        lastMonthWalkers: results[1].count ?? 0,
+      );
+    } catch (e) {
+      debugPrint('Meta da Caravana falhou: $e');
+      return null;
+    }
+  }
+
+  /// Posição na Caravana do mês [month] ("YYYY-MM"): quantos somaram mais
+  /// passos que eu e quantos caminharam. `null` sem rede ou sem eu no mês.
+  Future<({int ahead, int total})?> fetchMonthStanding(String month) async {
+    if (!isActive) return null;
+    try {
+      final players = _db.collection('monthlyLeagues/$month/players');
+      final mine = await players.doc(_uid).get();
+      final xp = (mine.data()?['xp'] as num?)?.toInt() ?? 0;
+      if (!mine.exists || xp <= 0) return null;
+      final ahead = await players.where('xp', isGreaterThan: xp).count().get();
+      final total = await players.where('xp', isGreaterThan: 0).count().get();
+      return (ahead: ahead.count ?? 0, total: total.count ?? 0);
+    } catch (e) {
+      debugPrint('Posição na Caravana ($month) falhou: $e');
+      return null;
     }
   }
 

@@ -310,7 +310,7 @@ class _MistakeRow extends StatelessWidget {
               mistake.difficulty.labelPt,
             ),
             _chip(
-              _gestureGlyph(mistake.gesture),
+              gestureGlyphOf(mistake.gesture),
               a.sectionLabel,
               mistake.gesture.labelPt,
             ),
@@ -394,7 +394,7 @@ class _MistakeRow extends StatelessWidget {
   }
 }
 
-CinematicGlyph _gestureGlyph(ExerciseType type) => switch (type) {
+CinematicGlyph gestureGlyphOf(ExerciseType type) => switch (type) {
   ExerciseType.trueFalse => CinematicGlyph.scales,
   ExerciseType.tap || ExerciseType.findInText => CinematicGlyph.tap,
   ExerciseType.order => CinematicGlyph.stack,

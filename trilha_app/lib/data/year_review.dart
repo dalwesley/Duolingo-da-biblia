@@ -14,6 +14,39 @@ enum YearPersona { group, advent, reader, explorer, constant, grower, pilgrim }
 /// Hora do dia em que a pessoa mais caminhou.
 enum YearDaypart { dawn, morning, afternoon, night }
 
+/// Melhor mês na Caravana: entre os [topPct]% que mais caminharam.
+class YearStanding {
+  final int month;
+  final int topPct;
+  final int total;
+
+  const YearStanding({
+    required this.month,
+    required this.topPct,
+    required this.total,
+  });
+
+  /// Mínimo de peregrinos no mês para a comparação valer.
+  static const minTotal = 10;
+
+  /// Só vira slide quando é motivo de orgulho.
+  static const maxPct = 50;
+
+  /// Escolhe o melhor mês; `null` quando nenhum vale ou nenhum orgulha.
+  static YearStanding? best(Map<int, ({int ahead, int total})> months) {
+    YearStanding? top;
+    for (final e in months.entries) {
+      final total = e.value.total;
+      if (total < minTotal) continue;
+      final pct = ((e.value.ahead + 1) * 100 / total).ceil().clamp(1, 100);
+      if (top == null || pct < top.topPct) {
+        top = YearStanding(month: e.key, topPct: pct, total: total);
+      }
+    }
+    return top == null || top.topPct > maxPct ? null : top;
+  }
+}
+
 /// Outros que caminharam junto (lido dos serviços ao abrir).
 class YearTogether {
   final String? companionName;
@@ -74,8 +107,15 @@ class YearReview {
   /// Abreviações dos 66 livros (ordem canônica). Vazio = Bíblia não carregou.
   final List<String> bookLabels;
 
-  /// Livros acesos no ano: índice canônico → 2 com postal, 1 só com leitura.
+  /// Livros acesos no ano: índice canônico → 3 concluído no ano, 2 com
+  /// postal, 1 só com leitura.
   final Map<int, int> litBooks;
+
+  /// Livros concluídos no ano (nomes, na ordem em que fecharam).
+  final List<String> booksFinished;
+
+  /// Melhor mês na Caravana (só quando orgulha).
+  final YearStanding? standing;
 
   /// Dias (YYYY-MM-DD) do ano com alguma caminhada (cena, leitura, Advento).
   final Set<String> walkedDays;
@@ -121,6 +161,8 @@ class YearReview {
     this.adventLength = 0,
     this.bookLabels = const [],
     this.litBooks = const {},
+    this.booksFinished = const [],
+    this.standing,
     this.walkedDays = const {},
     this.yearStreak = 0,
     this.growth,
@@ -147,7 +189,10 @@ class YearReview {
 
   /// Há conquistas para o slide de marcos.
   bool get hasFeats =>
-      perfectScenes > 0 || trailsDone.isNotEmpty || versesKept > 0;
+      perfectScenes > 0 ||
+      trailsDone.isNotEmpty ||
+      versesKept > 0 ||
+      booksFinished.isNotEmpty;
 
   /// Retrospectiva só abre com pelo menos isto de postais no ano.
   static const minPostcards = 3;
@@ -158,6 +203,7 @@ class YearReview {
     ProgressService progress,
     int year, {
     YearTogether together = const YearTogether(),
+    YearStanding? standing,
     bool loadBible = true,
   }) async {
     final trails = await TrailRepository().getTrails();
@@ -241,6 +287,7 @@ class YearReview {
     // Mapa da Bíblia: livros com postal (forte) ou com capítulo lido.
     final labels = <String>[];
     final lit = <int, int>{};
+    final finished = <(String, String)>[];
     if (loadBible) {
       try {
         final bible = BibleService.instance;
@@ -265,10 +312,19 @@ class YearReview {
                 : byBook[c.book] = (await bible.resolve(ref))?.bookIndex;
             if (idx != null && idx >= 0 && idx < 66) lit[idx] = 2;
           }
+          for (final e in progress.booksFinishedOn.entries) {
+            if (!e.value.startsWith(prefix)) continue;
+            final i = byAbbrev[e.key];
+            if (i == null) continue;
+            lit[i] = 3;
+            finished.add((e.value, list[i].name));
+          }
+          finished.sort((a, b) => a.$1.compareTo(b.$1));
         }
       } catch (_) {
         labels.clear();
         lit.clear();
+        finished.clear();
       }
     }
 
@@ -338,6 +394,8 @@ class YearReview {
       adventLength: adventLength,
       bookLabels: labels,
       litBooks: lit,
+      booksFinished: [for (final f in finished) f.$2],
+      standing: standing,
       walkedDays: walked,
       yearStreak: streak,
       growth: growth,
@@ -460,19 +518,21 @@ class YearReview {
       litBooks: const {
         0: 2,
         1: 2,
-        7: 2,
         8: 1,
         18: 1,
         19: 1,
         22: 1,
         32: 2,
         39: 1,
-        40: 2,
         41: 1,
         42: 2,
         43: 1,
         44: 1,
+        7: 3,
+        40: 3,
       },
+      booksFinished: const ['Rute', 'Marcos'],
+      standing: const YearStanding(month: 10, topPct: 12, total: 340),
       walkedDays: days,
       yearStreak: longestRun(days),
       growth: const ReadingGrowth(

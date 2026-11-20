@@ -32,7 +32,6 @@ import '../utils/appearance.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/whats_new_sheet.dart';
-import '../widgets/relic_panel.dart';
 import '../widgets/app_report_sheet.dart';
 import '../widgets/app_sheet.dart';
 import '../widgets/shell_tab_scope.dart';
@@ -53,6 +52,7 @@ import '../widgets/reset_progress_sheet.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/user_avatar.dart';
+import '../widgets/profile_section.dart';
 import 'login_screen.dart';
 import 'paywall_screen.dart';
 import 'onboarding_screen.dart';
@@ -117,7 +117,8 @@ class _SettingsScreenState extends State<SettingsScreen>
   String? _versionLabel;
   bool _checkingUpdate = false;
 
-  /// 0 = Preferências (o que se ajusta), 1 = Conta e sobre.
+  /// 0 = Conta, 1 = Preferências (o que se ajusta), 2 = Sobre.
+  /// Abre em Conta, a primeira aba.
   int _tab = 0;
   final _scroll = ScrollController();
   final _sectionKeys = {
@@ -284,9 +285,11 @@ class _SettingsScreenState extends State<SettingsScreen>
                 children: [
                   _reveal(0, _tabs()),
                   const SizedBox(height: AppSpace.lg),
-                  ..._tab == 0
-                      ? _preferencesTab(progress, a)
-                      : _accountAboutTab(progress, sync, a),
+                  ...switch (_tab) {
+                    0 => _accountTab(progress, sync, a),
+                    2 => _aboutTab(a, a),
+                    _ => _preferencesTab(progress, a),
+                  },
                 ],
               ),
             ),
@@ -324,14 +327,20 @@ class _SettingsScreenState extends State<SettingsScreen>
       },
       items: [
         (
+          label: context.l10n.settingsTabAccount,
+          glyph: CinematicGlyph.shield,
+          mark: null,
+          alert: false,
+        ),
+        (
           label: context.l10n.settingsTabPreferences,
           glyph: CinematicGlyph.tune,
           mark: null,
           alert: false,
         ),
         (
-          label: context.l10n.settingsTabAccountAbout,
-          glyph: CinematicGlyph.shield,
+          label: context.l10n.settingsTabAbout,
+          glyph: CinematicGlyph.path,
           mark: null,
           alert: false,
         ),
@@ -349,6 +358,8 @@ class _SettingsScreenState extends State<SettingsScreen>
         2,
         _groupedCard(
           a,
+          accent: AppRoles.streak,
+          glyph: CinematicGlyph.flame,
           title: context.l10n.settingsRhythmTitle,
           subtitle: context.l10n.settingsRhythmSubtitle,
           children: [
@@ -420,7 +431,8 @@ class _SettingsScreenState extends State<SettingsScreen>
 
   /// Conta e sobre: quem você é e seus dados; o que apaga, à parte; o
   /// Stway em poucas linhas, versão e termos no pé.
-  List<Widget> _accountAboutTab(
+  /// Conta: quem você é, o Plus, backup, bloqueios e apagar dados.
+  List<Widget> _accountTab(
     ProgressService progress,
     SyncService sync,
     AppearanceStyle a,
@@ -437,10 +449,13 @@ class _SettingsScreenState extends State<SettingsScreen>
       ),
       const SizedBox(height: AppSpace.md),
       _reveal(3, _dangerCard(a, progress)),
-      const SizedBox(height: AppSpace.xl),
-      _reveal(4, _aboutBlock(a)),
-      _reveal(5, _footer(a)),
     ];
+  }
+
+  /// Sobre: o Stway, o manifesto, novidades e créditos; termos e versão
+  /// no rodapé.
+  List<Widget> _aboutTab(AppearanceStyle ink, AppearanceStyle a) {
+    return [_reveal(1, _aboutBlock(ink)), _reveal(2, _footer(a))];
   }
 
   /// Lembrete e sons: só os interruptores. Ligar o lembrete abre a
@@ -449,6 +464,8 @@ class _SettingsScreenState extends State<SettingsScreen>
     final on = progress.settings.notifications;
     return _groupedCard(
       a,
+      accent: AppRoles.lamp,
+      glyph: CinematicGlyph.bell,
       title: context.l10n.settingsRemindersTitle,
       children: [
         _toggle(
@@ -576,6 +593,8 @@ class _SettingsScreenState extends State<SettingsScreen>
     final lang = progress.settings.language;
     return _groupedCard(
       a,
+      accent: AppRoles.navBible,
+      glyph: CinematicGlyph.sun,
       title: context.l10n.settingsAppearanceTitle,
       children: [
         _navRow(
@@ -737,15 +756,17 @@ class _SettingsScreenState extends State<SettingsScreen>
     final sub = context.watch<SubscriptionService>();
     final promoUntil = sub.isPeregrinoPlus ? null : sub.launchFreeUntil;
     final signedIn = backend.isSignedIn;
-    return GlassCard(
-      glow: 0.6,
-      tint: a.chrome,
+    return ProfilePanel(
+      accent: AppRoles.reward,
+      lit: true,
       padding: const EdgeInsets.fromLTRB(18, 18, 18, 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          CardHeader(
-            label: context.l10n.settingsAccount,
+          ProfileSectionHeader(
+            accent: AppRoles.reward,
+            glyph: CinematicGlyph.shield,
+            title: context.l10n.settingsAccount,
             trailing: SoftBadge(
               text: signedIn
                   ? context.l10n.settingsInCloud
@@ -1037,39 +1058,37 @@ class _SettingsScreenState extends State<SettingsScreen>
     );
   }
 
-  /// Título do card — traço neutro, como nos cards do perfil.
-  Widget _cardTitle(String title) {
-    return Semantics(
-      header: true,
-      child: RelicChapter(title: title, divided: false),
-    );
-  }
-
   Widget _groupedCard(
     AppearanceStyle a, {
     required String title,
     required List<Widget> children,
+    required Color accent,
+    required CinematicGlyph glyph,
     String? subtitle,
   }) {
-    return GlassCard(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          _cardTitle(title),
-          if (subtitle != null) ...[
-            const SizedBox(height: AppSpace.sm),
-            Text(
-              subtitle,
-              style: AppTypography.body(
-                size: 13,
-                height: 1.4,
-                color: a.textSecondary,
+    return Semantics(
+      container: true,
+      child: ProfileSection(
+        accent: accent,
+        glyph: glyph,
+        title: title,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            if (subtitle != null) ...[
+              Text(
+                subtitle,
+                style: AppTypography.body(
+                  size: 13,
+                  height: 1.4,
+                  color: a.textSecondary,
+                ),
               ),
-            ),
+              const SizedBox(height: AppSpace.md),
+            ],
+            ...children,
           ],
-          const SizedBox(height: AppSpace.lg),
-          ...children,
-        ],
+        ),
       ),
     );
   }
@@ -1111,7 +1130,9 @@ class _SettingsScreenState extends State<SettingsScreen>
     final last = sync.lastSyncAt;
     return _groupedCard(
       a,
-      title: context.l10n.settingsAccount,
+      accent: AppRoles.presence,
+      glyph: CinematicGlyph.cosmos,
+      title: context.l10n.settingsDataTitle,
       children: [
         _navRow(
           a,
@@ -1155,6 +1176,8 @@ class _SettingsScreenState extends State<SettingsScreen>
     final backend = context.watch<BackendService>();
     return _groupedCard(
       a,
+      accent: AppRoles.risk,
+      glyph: CinematicGlyph.shield,
       title: context.l10n.settingsDangerTitle,
       subtitle: context.l10n.settingsDangerSubtitle,
       children: [
@@ -1338,7 +1361,8 @@ class _SettingsScreenState extends State<SettingsScreen>
     );
   }
 
-  /// Sobre: conhecer o Stway, rever a introdução e créditos; doação no fim.
+  /// Sobre: conhecer o Stway e o manifesto, rever a introdução e créditos;
+  /// doação no fim.
   /// Versão e termos ficam no rodapé ([_footer]).
   Widget _aboutBlock(AppearanceStyle a) {
     final credits = [
@@ -1348,6 +1372,8 @@ class _SettingsScreenState extends State<SettingsScreen>
     ];
     return _groupedCard(
       a,
+      accent: AppRoles.navTrails,
+      glyph: CinematicGlyph.path,
       title: context.l10n.settingsAboutTitle,
       subtitle: context.l10n.settingsAboutSubtitle,
       children: [
@@ -1358,6 +1384,15 @@ class _SettingsScreenState extends State<SettingsScreen>
           glyph: CinematicGlyph.path,
           accent: AppRoles.areaChristianLife,
           onTap: openAboutPage,
+        ),
+        const _SettingsDivider(compact: true),
+        _navRow(
+          a,
+          context.l10n.settingsManifesto,
+          context.l10n.settingsManifestoSubtitle,
+          glyph: CinematicGlyph.heart,
+          accent: AppRoles.reward,
+          onTap: () => openSitePage(manifestoPageUrl),
         ),
         const _SettingsDivider(compact: true),
         _navRow(
@@ -1439,9 +1474,6 @@ class _SettingsScreenState extends State<SettingsScreen>
       weight: FontWeight.w700,
       color: a.textSecondary,
     );
-    final versionLine = _checkingUpdate
-        ? l10n.settingsCheckingUpdate
-        : '${l10n.settingsVersion} ${_versionLabel ?? '…'} · ${l10n.settingsCheck}';
     Widget link(String label, VoidCallback? onTap) => Semantics(
       button: true,
       child: InkWell(
@@ -1470,7 +1502,26 @@ class _SettingsScreenState extends State<SettingsScreen>
               link(l10n.legalPrivacy, () => openSitePage(privacyPageUrl)),
             ],
           ),
-          link(versionLine, _checkingUpdate ? null : _checkForUpdates),
+          const SizedBox(height: AppSpace.md),
+          // Botão de verdade (não link): procurar atualização precisa ser
+          // achado de relance. A versão fica embaixo, só leitura.
+          OutlineCta(
+            label: _checkingUpdate
+                ? l10n.settingsCheckingUpdate
+                : l10n.settingsCheckUpdate,
+            leading: CinematicGlyph.refresh,
+            expanded: false,
+            padding: const EdgeInsets.symmetric(
+              vertical: 12,
+              horizontal: AppSpace.lg,
+            ),
+            onTap: _checkingUpdate ? null : _checkForUpdates,
+          ),
+          const SizedBox(height: AppSpace.sm),
+          Text(
+            '${l10n.settingsVersion} ${_versionLabel ?? '…'}',
+            style: AppTypography.body(size: 12, color: a.textFaint),
+          ),
         ],
       ),
     );

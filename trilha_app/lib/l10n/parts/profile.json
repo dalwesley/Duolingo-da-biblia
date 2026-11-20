@@ -1010,5 +1010,80 @@
     "pt": "Trilhas",
     "en": "Trails",
     "es": "Rutas"
+  },
+  "profileBestStreak": {
+    "pt": "{count, plural, =1{Melhor sequência: 1 dia} other{Melhor sequência: {count} dias}}",
+    "en": "{count, plural, =1{Best streak: 1 day} other{Best streak: {count} days}}",
+    "es": "{count, plural, =1{Mejor racha: 1 día} other{Mejor racha: {count} días}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "profileMonthWalked": {
+    "pt": "{count, plural, =0{Nenhum dia no mês} =1{1 dia no mês} other{{count} dias no mês}}",
+    "en": "{count, plural, =0{No days this month} =1{1 day this month} other{{count} days this month}}",
+    "es": "{count, plural, =0{Ningún día en el mes} =1{1 día en el mes} other{{count} días en el mes}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "vaultSeeAll": {
+    "pt": "Ver coleção completa",
+    "en": "See full collection",
+    "es": "Ver colección completa"
+  },
+  "studyFirstTry": {
+    "pt": "de primeira",
+    "en": "first try",
+    "es": "a la primera"
+  },
+  "studyAnswersOf": {
+    "pt": "{correct} de {total} respostas",
+    "en": "{correct} of {total} answers",
+    "es": "{correct} de {total} respuestas",
+    "placeholders": {
+      "correct": "int",
+      "total": "int"
+    }
+  },
+  "studyDepthTitle": {
+    "pt": "Profundidade",
+    "en": "Depth",
+    "es": "Profundidad"
+  },
+  "studyDepthToExplore": {
+    "pt": "a explorar",
+    "en": "to explore",
+    "es": "por explorar"
+  },
+  "studyWeeksTitle": {
+    "pt": "Últimas semanas",
+    "en": "Last weeks",
+    "es": "Últimas semanas"
+  },
+  "studyGesturesTitle": {
+    "pt": "Seus gestos",
+    "en": "Your gestures",
+    "es": "Tus gestos"
+  },
+  "wordStatChapters": {
+    "pt": "Capítulos",
+    "en": "Chapters",
+    "es": "Capítulos"
+  },
+  "wordStatBooks": {
+    "pt": "Livros",
+    "en": "Books",
+    "es": "Libros"
+  },
+  "wordStatFavorites": {
+    "pt": "Favoritos",
+    "en": "Favorites",
+    "es": "Favoritos"
+  },
+  "wordStatNotes": {
+    "pt": "Anotações",
+    "en": "Notes",
+    "es": "Notas"
   }
 }

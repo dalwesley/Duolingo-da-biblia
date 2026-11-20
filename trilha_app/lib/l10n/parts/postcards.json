@@ -669,5 +669,89 @@
     "en": "Putting together your year video…",
     "es": "Armando el video de tu año…",
     "description": "Retrospectiva do ano: vídeo (Peregrino+)"
+  },
+  "yearReviewBooksFinishedWord": {
+    "pt": "{count, plural, =1{livro concluído} other{livros concluídos}}",
+    "en": "{count, plural, =1{book finished} other{books finished}}",
+    "es": "{count, plural, =1{libro concluido} other{libros concluidos}}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewMapFinished": {
+    "pt": "concluído",
+    "en": "finished",
+    "es": "concluido",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewStandingEyebrow": {
+    "pt": "Na Caravana",
+    "en": "In the Caravan",
+    "es": "En la Caravana",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewStandingTop": {
+    "pt": "Top {pct}%",
+    "en": "Top {pct}%",
+    "es": "Top {pct}%",
+    "placeholders": {
+      "pct": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewStandingLine": {
+    "pt": "Em {month}, você ficou entre os {pct}% que mais caminharam, de {total} peregrinos.",
+    "en": "In {month}, you were among the top {pct}% who walked the most, out of {total} pilgrims.",
+    "es": "En {month}, estuviste entre el {pct}% que más caminó, de {total} peregrinos.",
+    "placeholders": {
+      "month": "String",
+      "pct": "int",
+      "total": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewAnanStanding": {
+    "pt": "Não é sobre vencer ninguém. É sobre não parar.",
+    "en": "It is not about beating anyone. It is about not stopping.",
+    "es": "No se trata de ganarle a nadie. Se trata de no parar.",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "profileCoverChange": {
+    "pt": "Trocar capa",
+    "en": "Change cover",
+    "es": "Cambiar portada"
+  },
+  "profileCoverTitle": {
+    "pt": "Capa do perfil",
+    "en": "Profile cover",
+    "es": "Portada del perfil"
+  },
+  "profileCoverBody": {
+    "pt": "Escolha a pintura de uma cena que você já fez. Quem abrir seu perfil vê esta capa.",
+    "en": "Pick the painting of a scene you've done. Anyone who opens your profile sees this cover.",
+    "es": "Elige la pintura de una escena que ya hiciste. Quien abra tu perfil verá esta portada."
+  },
+  "profileCoverLatest": {
+    "pt": "Mais recente",
+    "en": "Most recent",
+    "es": "Más reciente"
+  },
+  "profileCoverEmpty": {
+    "pt": "Faça sua primeira cena para ganhar uma pintura de capa.",
+    "en": "Finish your first scene to earn a cover painting.",
+    "es": "Haz tu primera escena para ganar una pintura de portada."
+  },
+  "paywallPerkYearReviewTitle": {
+    "pt": "Seu ano inteiro",
+    "en": "Your whole year",
+    "es": "Tu año entero",
+    "description": "Benefício Plus: retrospectiva do ano"
+  },
+  "paywallPerkYearReviewBody": {
+    "pt": "A retrospectiva completa: a Bíblia que você acendeu, seus marcos, seu perfil do ano e o vídeo para compartilhar.",
+    "en": "The full year in review: the Bible you lit up, your milestones, your year profile and a video to share.",
+    "es": "El resumen completo: la Biblia que encendiste, tus hitos, tu perfil del año y el video para compartir.",
+    "description": "Benefício Plus, texto"
   }
 }

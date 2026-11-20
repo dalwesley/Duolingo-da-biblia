@@ -17,9 +17,9 @@ import '../utils/content_filter.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
-import 'immersive_background.dart';
 import 'ui_primitives.dart';
 import 'user_avatar.dart';
+import 'profile_section.dart';
 
 /// Peças do Propósito do grupo: o card do dia (herói), o pulso do grupo,
 /// as respostas à pergunta do dia e o acompanhamento do líder.
@@ -116,10 +116,9 @@ class RoomPlanCard extends StatelessWidget {
       PlanPhase.active => _active(context, a, cover: art != null),
       PlanPhase.ended => _ended(context, a, cover: art != null),
     };
-    return GlassCard(
-      tint: quiet ? AppRoles.presence : a.place,
-      glow: quiet ? 0.3 : 0.75,
-      elevated: !quiet,
+    return ProfilePanel(
+      accent: quiet ? AppRoles.presence : a.place,
+      lit: !quiet,
       padding: art != null
           ? const EdgeInsets.all(AppSpace.sm)
           : AppMetrics.cardPadding.copyWith(top: AppSpace.sm, right: 6),
@@ -1146,7 +1145,8 @@ class RoomPlanAnswersCard extends StatelessWidget {
         onTap: onAnswer,
       ),
     );
-    return GlassCard(
+    return ProfilePanel(
+      accent: AppRoles.lamp,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -1376,8 +1376,8 @@ class RoomPlanInviteCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    return GlassCard(
-      tint: AppRoles.reward,
+    return ProfilePanel(
+      accent: AppRoles.reward,
       onTap: onTap,
       child: Row(
         children: [

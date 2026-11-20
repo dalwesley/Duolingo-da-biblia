@@ -132,72 +132,221 @@ class LivingSeedCard extends StatelessWidget {
   Widget _profile(BuildContext context, SpiritualGrowth growth) {
     final a = Appearance.of(context);
     final accent = _accent(growth, a);
+    final ink = a.ink(accent);
     final next = growth.nextStage;
     final daysLeft = growth.daysToNext;
+    final lit = growth.streak > 0;
+    final still = MediaQuery.disableAnimationsOf(context);
+
+    String? footer;
+    Color footerColor = a.text;
+    if (growth.mood == SeedMood.atRisk) {
+      footer = growth.subtitle;
+      footerColor = AppRoles.risk;
+    } else if (next != null) {
+      footer = daysLeft == 0
+          ? context.l10n.growthNextMilestone(next.label)
+          : context.l10n.growthNextIn(next.label, daysLeft);
+    }
 
     return RelicPanel(
       accent: accent,
+      glow: lit ? 0.8 : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          RelicChapter(
-            title: growth.title,
-            whisper: context.l10n.growthWhisper,
-            accent: accent,
-            trailing: Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Text(
-                  '${growth.streak}',
-                  style: AppTypography.display(
-                    size: 24,
-                    weight: FontWeight.w900,
-                    color: accent,
-                    height: 1,
-                  ).copyWith(fontFeatures: const [FontFeature.liningFigures()]),
+          Row(
+            children: [
+              _StageOrb(glyph: _glyph(growth.stage), accent: accent, lit: lit),
+              const SizedBox(width: AppSpace.lg),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.baseline,
+                      textBaseline: TextBaseline.alphabetic,
+                      children: [
+                        TweenAnimationBuilder<double>(
+                          tween: Tween(begin: still ? 1 : 0, end: 1),
+                          duration: const Duration(milliseconds: 900),
+                          curve: Curves.easeOutCubic,
+                          builder: (context, t, _) => Text(
+                            '${(growth.streak * t).round()}',
+                            style:
+                                AppTypography.display(
+                                  size: 46,
+                                  weight: FontWeight.w900,
+                                  color: ink,
+                                  height: 1,
+                                ).copyWith(
+                                  fontFeatures: const [
+                                    FontFeature.tabularFigures(),
+                                  ],
+                                ),
+                          ),
+                        ),
+                        const SizedBox(width: 6),
+                        Flexible(
+                          child: Text(
+                            context.l10n.growthDayUnit(growth.streak).trim(),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: AppTypography.body(
+                              size: 15,
+                              weight: FontWeight.w800,
+                              color: a.textSecondary,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      context.l10n.profileStatStreak,
+                      style: AppTypography.label(
+                        size: 11,
+                        letterSpacing: 0.6,
+                        color: a.textFaint,
+                      ),
+                    ),
+                    const SizedBox(height: AppSpace.sm),
+                    _StagePill(text: growth.title, accent: ink),
+                  ],
                 ),
-                Text(
-                  context.l10n.growthDayUnit(growth.streak).trim(),
-                  style: AppTypography.label(size: 10, color: a.textFaint),
-                ),
-              ],
-            ),
-          ),
-          const SizedBox(height: 16),
-          _StageTrack(current: growth.stage, accent: accent, glyphFor: _glyph),
-          const SizedBox(height: 14),
-          if (growth.mood == SeedMood.atRisk)
-            Text(
-              growth.subtitle,
-              style: AppTypography.body(
-                size: 13,
-                weight: FontWeight.w700,
-                color: AppRoles.risk,
               ),
-            )
-          else if (next != null) ...[
+            ],
+          ),
+          const SizedBox(height: AppSpace.lg),
+          _StageTrack(current: growth.stage, accent: accent, glyphFor: _glyph),
+          if (footer != null) ...[
+            const SizedBox(height: AppSpace.md),
             Text(
-              daysLeft == 0
-                  ? context.l10n.growthNextMilestone(next.label)
-                  : context.l10n.growthNextIn(next.label, daysLeft),
+              footer,
               style: AppTypography.body(
                 size: 13,
                 weight: FontWeight.w800,
-                color: a.text,
+                color: footerColor,
               ),
             ),
-            const SizedBox(height: 8),
-            RelicProgress(value: growth.progressToNext, accent: accent),
-          ] else
-            Text(
-              growth.subtitle,
-              style: AppTypography.body(
-                size: 13,
-                weight: FontWeight.w700,
-                color: accent,
-              ),
-            ),
+            if (next != null && growth.mood != SeedMood.atRisk) ...[
+              const SizedBox(height: 8),
+              RelicProgress(value: growth.progressToNext, accent: accent),
+            ],
+          ],
         ],
+      ),
+    );
+  }
+}
+
+/// Estágio atual grande, com brilho que respira.
+class _StageOrb extends StatefulWidget {
+  final CinematicGlyph glyph;
+  final Color accent;
+  final bool lit;
+
+  const _StageOrb({
+    required this.glyph,
+    required this.accent,
+    required this.lit,
+  });
+
+  @override
+  State<_StageOrb> createState() => _StageOrbState();
+}
+
+class _StageOrbState extends State<_StageOrb>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _breath = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 2400),
+  );
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (!widget.lit || MediaQuery.disableAnimationsOf(context)) {
+      _breath.stop();
+    } else if (!_breath.isAnimating) {
+      _breath.repeat(reverse: true);
+    }
+  }
+
+  @override
+  void dispose() {
+    _breath.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    const size = 88.0;
+    final accent = widget.accent;
+    return SizedBox(
+      width: size,
+      height: size,
+      child: AnimatedBuilder(
+        animation: _breath,
+        builder: (context, child) {
+          final t = Curves.easeInOut.transform(_breath.value);
+          return Stack(
+            alignment: Alignment.center,
+            children: [
+              if (widget.lit)
+                Container(
+                  width: size,
+                  height: size,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    gradient: RadialGradient(
+                      colors: [
+                        accent.withValues(alpha: 0.35 + 0.2 * t),
+                        accent.withValues(alpha: 0),
+                      ],
+                    ),
+                  ),
+                ),
+              Transform.scale(scale: 1 + 0.04 * t, child: child),
+            ],
+          );
+        },
+        child: RelicDisc(
+          glyph: widget.glyph,
+          accent: accent,
+          size: 64,
+          lit: widget.lit,
+        ),
+      ),
+    );
+  }
+}
+
+class _StagePill extends StatelessWidget {
+  final String text;
+  final Color accent;
+
+  const _StagePill({required this.text, required this.accent});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(AppRadii.pill),
+        color: accent.withValues(alpha: 0.16),
+        border: Border.all(color: accent.withValues(alpha: 0.55)),
+      ),
+      child: Text(
+        text,
+        maxLines: 1,
+        overflow: TextOverflow.ellipsis,
+        style: AppTypography.title(
+          size: 14,
+          weight: FontWeight.w900,
+          color: accent,
+          height: 1.1,
+        ),
       ),
     );
   }
@@ -220,7 +369,7 @@ class _StageTrack extends StatelessWidget {
     final stages = GrowthStage.values;
     final currentIndex = stages.indexOf(current);
 
-    const currentSize = 48.0;
+    const currentSize = 40.0;
     const restSize = 30.0;
 
     return Row(
@@ -230,12 +379,26 @@ class _StageTrack extends StatelessWidget {
           if (i > 0)
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.only(top: currentSize / 2 - 1),
+                padding: const EdgeInsets.only(top: currentSize / 2 - 2),
                 child: Container(
-                  height: 2,
-                  color: i <= currentIndex
-                      ? accent.withValues(alpha: 0.7)
-                      : a.cardBorder,
+                  height: 4,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(2),
+                    color: i <= currentIndex ? null : a.cardBorder,
+                    gradient: i <= currentIndex
+                        ? LinearGradient(
+                            colors: [accent.withValues(alpha: 0.55), accent],
+                          )
+                        : null,
+                    boxShadow: i <= currentIndex
+                        ? [
+                            BoxShadow(
+                              color: accent.withValues(alpha: 0.45),
+                              blurRadius: 6,
+                            ),
+                          ]
+                        : null,
+                  ),
                 ),
               ),
             ),
@@ -297,13 +460,13 @@ class _StageNode extends StatelessWidget {
           style: AppTypography.label(
             size: 10,
             letterSpacing: 0.2,
-            weight: current ? FontWeight.w800 : FontWeight.w600,
-            color: current ? a.text : a.textFaint,
+            weight: current ? FontWeight.w900 : FontWeight.w600,
+            color: current
+                ? a.ink(accent)
+                : reached
+                ? a.textSecondary
+                : a.textFaint,
           ),
-        ),
-        Text(
-          stage.shortHint,
-          style: AppTypography.label(size: 10, color: a.textFaint),
         ),
       ],
     );

@@ -67,6 +67,10 @@ class CaravanPilgrimProfile {
   final List<String> completedMissions;
   final Map<String, List<String>> clearedTrailModes;
   final List<String> readBibleChapters;
+
+  /// Livros com o selo de concluído (abreviações), lidos ou pela trilha
+  /// capítulo a capítulo.
+  final List<String> booksFinished;
   final List<String> perfectMissions;
   final int sharedVerseCount;
   final int memoryMasteredCount;
@@ -107,6 +111,9 @@ class CaravanPilgrimProfile {
   /// Testou o app antes do lançamento (`desbravador`, só o servidor marca).
   final bool desbravador;
 
+  /// Cena escolhida para a capa do perfil (null = a mais recente).
+  final String? coverScene;
+
   const CaravanPilgrimProfile({
     this.uid,
     required this.name,
@@ -118,6 +125,7 @@ class CaravanPilgrimProfile {
     this.completedMissions = const [],
     this.clearedTrailModes = const {},
     this.readBibleChapters = const [],
+    this.booksFinished = const [],
     this.perfectMissions = const [],
     this.sharedVerseCount = 0,
     this.memoryMasteredCount = 0,
@@ -146,6 +154,7 @@ class CaravanPilgrimProfile {
     this.pilgrim = false,
     this.pioneer = false,
     this.desbravador = false,
+    this.coverScene,
   });
 
   int get missionsCompleted => completedMissions.length;
@@ -205,6 +214,7 @@ class CaravanPilgrimProfile {
         ),
       ),
       readBibleChapters: List<String>.from(progress.readBibleChapters),
+      booksFinished: progress.booksFinishedOn.keys.toList(),
       perfectMissions: List<String>.from(progress.perfectMissions),
       sharedVerseCount: progress.sharedVerseCount,
       memoryMasteredCount: progress.memoryMastered.length,
@@ -218,6 +228,7 @@ class CaravanPilgrimProfile {
       lastMissionCompletedDate: progress.lastMissionCompletedDate,
       prefs: progress.caravanProfilePrefs,
       desbravador: progress.desbravador,
+      coverScene: progress.settings.coverScene,
     );
   }
 
@@ -264,6 +275,7 @@ class CaravanPilgrimProfile {
       completedMissions: _asStringList(data['completedMissions']),
       clearedTrailModes: _asStringListMap(data['clearedTrailModes']),
       readBibleChapters: _asStringList(data['readBibleChapters']),
+      booksFinished: _asStringMap(data['booksFinishedOn']).keys.toList(),
       perfectMissions: _asStringList(data['perfectMissions']),
       sharedVerseCount:
           _asInt(data['sharedVerseCount']) ??
@@ -287,6 +299,11 @@ class CaravanPilgrimProfile {
           data['plusActive'] == true &&
           PlusAccess.isPioneerProduct(data['plusProductId'] as String?),
       desbravador: data['desbravador'] == true,
+      coverScene:
+          (data['coverScene'] is String &&
+              (data['coverScene'] as String).trim().isNotEmpty)
+          ? (data['coverScene'] as String).trim()
+          : null,
     );
   }
 
@@ -364,6 +381,7 @@ class CaravanPilgrimProfile {
           (byBook[parts.first.toLowerCase()] ?? 0) + 1;
     }
 
+    final sealed = {for (final b in booksFinished) b.toLowerCase()};
     final completeBooks = <String>[];
     final completeNt = <String>[];
     for (var i = 0; i < bibleBooks.length; i++) {
@@ -371,7 +389,7 @@ class CaravanPilgrimProfile {
       final abbrev = book.abbrev.toLowerCase();
       final total = book.chapters.length;
       final read = byBook[abbrev] ?? 0;
-      if (total > 0 && read >= total) {
+      if ((total > 0 && read >= total) || sealed.contains(abbrev)) {
         completeBooks.add(abbrev);
         if (i >= BibleService.oldTestamentCount) {
           completeNt.add(abbrev);
@@ -406,6 +424,7 @@ class CaravanPilgrimProfile {
       completedMissions: completedMissions,
       clearedTrailModes: clearedTrailModes,
       readBibleChapters: readBibleChapters,
+      booksFinished: booksFinished,
       perfectMissions: perfectMissions,
       sharedVerseCount: sharedVerseCount,
       memoryMasteredCount: memoryMasteredCount,
@@ -434,6 +453,7 @@ class CaravanPilgrimProfile {
       pilgrim: pilgrim,
       pioneer: pioneer,
       desbravador: desbravador,
+      coverScene: coverScene,
     );
   }
 

@@ -1,24 +1,22 @@
-import 'dart:math' as math;
 import 'dart:ui' show ImageFilter;
-
+import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import '../services/progress_service.dart';
 import 'package:intl/intl.dart';
 
 import '../l10n/app_language.dart';
-import '../l10n/l10n_global.dart';
 import '../models/caravan_profile_prefs.dart';
+import '../l10n/l10n_global.dart';
 import '../theme/app_theme.dart';
 import '../utils/layout_utils.dart';
 import '../utils/appearance.dart';
 import '../utils/spiritual_growth.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
-import 'home_player_header.dart' show PulseStat;
-import 'immersive_background.dart';
-import 'pilgrim_profile_sections.dart';
+import 'pilgrim_profile_cover.dart';
 import 'profile_privacy.dart';
-import 'relic_panel.dart';
+import 'profile_section.dart';
+import 'streak_calendar.dart';
 import 'streak_week.dart';
 import 'top_bar.dart';
 import 'ui_primitives.dart';
@@ -55,6 +53,17 @@ class ProfileHero extends StatelessWidget {
   final int streak;
   final int missions;
   final int postcards;
+  final int steps;
+  final int? accuracyPercent;
+  final int accuracyCorrect;
+  final int accuracyTotal;
+
+  /// Posição no ranking do mês (0 = fora).
+  final int rank;
+
+  /// Cena da capa (escolhida ou a mais recente).
+  final String? coverScene;
+  final VoidCallback? onChangeCover;
 
   /// A barra já está presa acima do scroll (perfil com voltar).
   final bool chromePinned;
@@ -77,6 +86,13 @@ class ProfileHero extends StatelessWidget {
     required this.streak,
     required this.missions,
     required this.postcards,
+    this.steps = 0,
+    this.accuracyPercent,
+    this.accuracyCorrect = 0,
+    this.accuracyTotal = 0,
+    this.rank = 0,
+    this.coverScene,
+    this.onChangeCover,
     this.chromePinned = false,
   });
 
@@ -119,21 +135,62 @@ class ProfileHero extends StatelessWidget {
             child: Column(
               children: [
                 const SizedBox(height: AppSpace.afterTopBar),
-                _ProfileIdentityCard(
+                PilgrimProfileTop(
                   name: displayName,
                   photoUrl: photoUrl,
                   seed: seed,
                   style: style,
                   onEditPortrait: onEditPortrait,
+                  coverScene: coverScene,
+                  onChangeCover: onChangeCover,
+                  rank: rank,
                   epithet: epithet,
-                  epithetColor: epithetColor,
                   sinceLabel: sinceLabel,
                   supporter: supporter,
                   pilgrim: pilgrim,
                   pioneer: pioneer,
-                  streak: streak,
-                  missions: missions,
-                  postcards: postcards,
+                  stats: [
+                    PilgrimStat(
+                      glyph: CinematicGlyph.flame,
+                      tone: AppRoles.streak,
+                      value: streak,
+                      label: l10n.profileStatStreak,
+                      caption: streak > 0
+                          ? SpiritualGrowth.fromStreak(streak).title
+                          : null,
+                    ),
+                    PilgrimStat(
+                      glyph: CinematicGlyph.sneaker,
+                      tone: AppRoles.lamp,
+                      value: steps,
+                      label: l10n.pilgrimStatSteps,
+                    ),
+                    PilgrimStat(
+                      glyph: CinematicGlyph.scroll,
+                      tone: AppRoles.navTrails,
+                      value: missions,
+                      label: l10n.pilgrimStatScenes,
+                    ),
+                    if (accuracyPercent != null && accuracyTotal > 0)
+                      PilgrimStat(
+                        glyph: CinematicGlyph.target,
+                        tone: AppRoles.success,
+                        value: accuracyPercent!,
+                        suffix: '%',
+                        label: l10n.pilgrimAccuracyTitle,
+                        caption: l10n.pilgrimCorrectRatio(
+                          accuracyCorrect,
+                          accuracyTotal,
+                        ),
+                      )
+                    else
+                      PilgrimStat(
+                        glyph: CinematicGlyph.gem,
+                        tone: AppColors.clay,
+                        value: postcards,
+                        label: l10n.postcardsTitle,
+                      ),
+                  ],
                 ),
               ],
             ),
@@ -174,265 +231,6 @@ class ProfileHeroBar extends StatelessWidget {
         onTrailingTap: onSettings,
         trailingGlyph: CinematicGlyph.tune,
       ),
-    );
-  }
-}
-
-/// Retrato à esquerda, nome e título ao lado, números embaixo — um cartão
-/// baixo. O olho da caravana fica nos outros cards, não aqui.
-class _ProfileIdentityCard extends StatelessWidget {
-  final String name;
-  final String? photoUrl;
-  final String? seed;
-  final PortraitStyle style;
-  final VoidCallback? onEditPortrait;
-  final String? epithet;
-  final Color? epithetColor;
-  final String? sinceLabel;
-  final bool supporter;
-  final bool pilgrim;
-  final bool pioneer;
-  final int streak;
-  final int missions;
-  final int postcards;
-
-  const _ProfileIdentityCard({
-    required this.name,
-    this.photoUrl,
-    this.seed,
-    this.style = PortraitStyle.photo,
-    this.onEditPortrait,
-    this.epithet,
-    this.epithetColor,
-    this.sinceLabel,
-    this.supporter = false,
-    this.pilgrim = false,
-    this.pioneer = false,
-    required this.streak,
-    required this.missions,
-    required this.postcards,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final l10n = context.l10n;
-    final epithetText = (epithet ?? '').trim();
-    final sinceText = (sinceLabel ?? '').trim();
-
-    return RelicPanel(
-      elevated: true,
-      accent: AppRoles.presence,
-      glow: 0.6,
-      padding: const EdgeInsets.fromLTRB(
-        AppSpace.lg,
-        AppSpace.lg,
-        AppSpace.lg,
-        AppSpace.md,
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Row(
-            children: [
-              UserAvatar(
-                name: name,
-                photoUrl: photoUrl,
-                seed: seed,
-                style: style,
-                radius: AppMetrics.avatarXl,
-                borderColor: AppRoles.presence,
-                editable: onEditPortrait != null,
-                onTap: onEditPortrait,
-              ),
-              const SizedBox(width: AppSpace.lg),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      name,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.display(
-                        size: 24,
-                        height: 1.05,
-                        color: a.text,
-                      ),
-                    ),
-                    // Selos quebram linha abaixo do nome — dois selos
-                    // lado a lado não cabem com o nome em telas estreitas.
-                    if (pioneer || pilgrim || supporter) ...[
-                      const SizedBox(height: AppSpace.sm),
-                      Wrap(
-                        spacing: AppSpace.sm,
-                        runSpacing: AppSpace.xs,
-                        children: [
-                          if (pioneer || pilgrim)
-                            SoftBadge(
-                              text: pioneer
-                                  ? l10n.pioneerBadge
-                                  : l10n.pilgrimBadge,
-                              glyph: CinematicGlyph.plus,
-                              accent: AppRoles.reward,
-                            ),
-                          if (supporter)
-                            SoftBadge(
-                              text: l10n.supporterBadge,
-                              glyph: CinematicGlyph.gift,
-                              accent: AppRoles.reward,
-                            ),
-                        ],
-                      ),
-                    ],
-                    if (epithetText.isNotEmpty) ...[
-                      const SizedBox(height: AppSpace.xs),
-                      Text(
-                        epithetText,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: AppTypography.body(
-                          size: 14,
-                          weight: FontWeight.w800,
-                          color: epithetColor ?? a.textSecondary,
-                        ),
-                      ),
-                    ],
-                    if (sinceText.isNotEmpty) ...[
-                      const SizedBox(height: AppSpace.xs),
-                      Text(
-                        sinceText,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: AppTypography.body(
-                          size: 13,
-                          weight: FontWeight.w600,
-                          color: a.textFaint,
-                        ),
-                      ),
-                    ],
-                  ],
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: AppSpace.md),
-          const RelicHairline(),
-          const SizedBox(height: AppSpace.md),
-          _HeroStats(streak: streak, missions: missions, postcards: postcards),
-        ],
-      ),
-    );
-  }
-}
-
-class _HeroStats extends StatelessWidget {
-  final int streak;
-  final int missions;
-  final int postcards;
-
-  const _HeroStats({
-    required this.streak,
-    required this.missions,
-    required this.postcards,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final l10n = context.l10n;
-    // Quem sou em três números: a sequência (cor dela), as cenas (tom de
-    // Explorar, onde elas moram) e os postais (rosa do papel pintado).
-    final items = <(String, String, CinematicGlyph, Color, Color)>[
-      (
-        pilgrimFormatCount(streak),
-        l10n.profileStatStreak,
-        CinematicGlyph.flame,
-        AppRoles.streak,
-        AppRoles.streak,
-      ),
-      (
-        pilgrimFormatCount(missions),
-        l10n.pilgrimStatScenes,
-        CinematicGlyph.scroll,
-        AppRoles.navTrails,
-        a.text,
-      ),
-      (
-        pilgrimFormatCount(postcards),
-        l10n.postcardsTitle,
-        CinematicGlyph.gem,
-        AppColors.clay,
-        AppColors.clay,
-      ),
-    ];
-    return Row(
-      children: [
-        for (var i = 0; i < items.length; i++) ...[
-          if (i > 0) const SizedBox(width: AppSpace.sm),
-          Expanded(
-            child: Semantics(
-              label: '${items[i].$1} ${items[i].$2}',
-              excludeSemantics: true,
-              child: Container(
-                padding: const EdgeInsets.symmetric(
-                  vertical: AppSpace.sm,
-                  horizontal: 6,
-                ),
-                // Cada número no seu tom: o wash sobe do pé do card, como
-                // luz do próprio objeto, e o filete acende na mesma cor.
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(AppRadii.md),
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      a.ink(items[i].$4).withValues(alpha: 0.10),
-                      a.ink(items[i].$4).withValues(alpha: 0.26),
-                    ],
-                  ),
-                  border: Border.all(
-                    color: a.ink(items[i].$4).withValues(alpha: 0.6),
-                    width: 1.2,
-                  ),
-                ),
-                child: Column(
-                  children: [
-                    CinematicIcon(
-                      glyph: items[i].$3,
-                      size: AppMetrics.iconLg,
-                      accent: items[i].$4,
-                    ),
-                    const SizedBox(height: 4),
-                    FittedBox(
-                      fit: BoxFit.scaleDown,
-                      child: Text(
-                        items[i].$1,
-                        style: AppTypography.display(
-                          size: 20,
-                          weight: FontWeight.w900,
-                          color: items[i].$5,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      items[i].$2,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.body(
-                        size: 12,
-                        weight: FontWeight.w700,
-                        color: a.textSecondary,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        ],
-      ],
     );
   }
 }
@@ -506,8 +304,7 @@ class _ConstancyCardState extends State<ConstancyCard> {
     final played = widget.playDates.toSet();
     final now = DateTime.now();
     final today = DateTime(now.year, now.month, now.day);
-    // Colunas = semanas (segunda→domingo, como no resto do app); a última
-    // termina nesta semana.
+    // Colunas = semanas (segunda→domingo); a última termina nesta semana.
     final monday = today.subtract(Duration(days: today.weekday - 1));
     final start = monday.subtract(
       const Duration(days: 7 * (ConstancyCard.weeks - 1)),
@@ -520,176 +317,26 @@ class _ConstancyCardState extends State<ConstancyCard> {
         perWeek[i ~/ 7]++;
       }
     }
-    final goal = widget.goal;
-    final streak = widget.streak;
-    final ratio = goal <= 0 ? 0.0 : (streak / goal).clamp(0.0, 1.0);
-    final done = streak >= goal && goal > 0;
-    final growth = SpiritualGrowth.fromStreak(streak);
-    final atRisk = widget.atRisk;
-    final freezeUsed = widget.freezeUsed;
-    final showFreeze = freezeUsed || widget.freezeAvailable;
-
-    return GlassCard(
-      tint: AppRoles.streak,
-      glow: 0.45,
-      // Em risco, a mesma borda de alerta da Home.
-      borderColor: atRisk ? AppRoles.risk : null,
+    return ProfileSection(
+      // Em risco, a moldura acende no tom de alerta da Home.
+      accent: widget.atRisk ? AppRoles.risk : AppRoles.streak,
+      glyph: CinematicGlyph.flame,
+      title: l10n.pilgrimStreak,
+      trailing: PrivacyEye(
+        sections: const {CaravanProfileSection.presence},
+        label: l10n.pilgrimStreak,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Row(
-            children: [
-              Semantics(
-                label: l10n.profileStreakOf(streak, goal),
-                excludeSemantics: true,
-                child: SizedBox(
-                  width: 76,
-                  height: 76,
-                  child: CustomPaint(
-                    painter: _RingPainter(
-                      ratio: ratio,
-                      track: a.cardBorder,
-                      done: done,
-                    ),
-                    child: Center(
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Text(
-                            '$streak',
-                            style: AppTypography.display(
-                              size: 24,
-                              weight: FontWeight.w900,
-                              height: 1,
-                              color: a.text,
-                            ),
-                          ),
-                          Text(
-                            l10n.profileStreakOfGoal(goal),
-                            style: AppTypography.body(
-                              size: 11,
-                              weight: FontWeight.w700,
-                              color: a.textSecondary,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(width: AppSpace.lg),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Row(
-                            children: [
-                              Flexible(
-                                child: Text(
-                                  l10n.pilgrimStreak,
-                                  maxLines: 1,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: AppTypography.title(
-                                    size: 16,
-                                    color: a.text,
-                                  ),
-                                ),
-                              ),
-                              if (streak > 0) ...[
-                                const SizedBox(width: 8),
-                                SoftBadge(
-                                  text: SpiritualGrowth.fromStreak(
-                                    streak,
-                                  ).title,
-                                  accent: AppRoles.streak,
-                                  textColor: AppRoles.streak,
-                                  bordered: false,
-                                ),
-                              ],
-                            ],
-                          ),
-                        ),
-                        PrivacyEye(
-                          sections: const {CaravanProfileSection.presence},
-                          label: l10n.pilgrimStreak,
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      done
-                          ? l10n.profileStreakGoalDone(goal)
-                          : streak == 0
-                          ? l10n.profileStreakStart
-                          : l10n.profileStreakRemaining(goal - streak, goal),
-                      style: AppTypography.body(
-                        size: 13,
-                        height: 1.35,
-                        weight: FontWeight.w600,
-                        color: a.textSecondary,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
+          StreakFlameCalendar(
+            showEye: false,
+            streak: widget.streak,
+            goal: widget.goal,
+            atRisk: widget.atRisk,
+            freezeAvailable: widget.freezeAvailable,
+            freezeUsed: widget.freezeUsed,
           ),
-          // Pulso igual ao da Home: "2 dias em risco" e o gelo.
-          if (atRisk || showFreeze) ...[
-            const SizedBox(height: AppSpace.md),
-            MergeSemantics(
-              child: Row(
-                children: [
-                  if (atRisk)
-                    PulseStat(
-                      glyph: CinematicGlyph.flame,
-                      accent: AppRoles.streak,
-                      value: l10n.commonDays(streak),
-                      hint: l10n.homeStatAtRisk,
-                      hintColor: AppRoles.risk,
-                    ),
-                  const Spacer(),
-                  if (showFreeze)
-                    PulseStat(
-                      glyph: CinematicGlyph.frost,
-                      accent: freezeUsed ? a.textFaint : a.chrome,
-                      value: '1',
-                      hint: freezeUsed
-                          ? l10n.homeStatFreezeUsed
-                          : l10n.homeStatFreeze,
-                    ),
-                ],
-              ),
-            ),
-          ],
-          const SizedBox(height: AppSpace.lg),
-          _WeekHeader(start: monday, played: played),
-          const SizedBox(height: AppSpace.md),
-          // O mesmo componente da Home: azul = estudou, cristal = gelo.
-          const StreakWeek(),
-          // Próximo marco da sequência (Semente → Fruto), antes um card só.
-          if (growth.nextStage case final next?) ...[
-            const SizedBox(height: AppSpace.lg),
-            Text(
-              growth.daysToNext == 0
-                  ? l10n.growthNextMilestone(next.label)
-                  : l10n.growthNextIn(next.label, growth.daysToNext),
-              style: AppTypography.body(
-                size: 13,
-                weight: FontWeight.w800,
-                color: a.text,
-              ),
-            ),
-            const SizedBox(height: 8),
-            RelicProgress(
-              value: growth.progressToNext,
-              accent: AppRoles.streak,
-            ),
-          ],
           if (widget.quests case final quests?) ...[
             const SizedBox(height: AppSpace.lg),
             const ListDivider(),
@@ -794,42 +441,6 @@ class _ConstancyCardState extends State<ConstancyCard> {
               ),
             ],
           ],
-        ],
-      ),
-    );
-  }
-}
-
-/// "ESTA SEMANA · 2 de 7 dias" — os dias moram no [StreakWeek] logo abaixo.
-class _WeekHeader extends StatelessWidget {
-  final DateTime start;
-  final Set<String> played;
-
-  const _WeekHeader({required this.start, required this.played});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final l10n = context.l10n;
-    final count = [
-      for (var i = 0; i < 7; i++) start.add(Duration(days: i)),
-    ].where((d) => played.contains(ConstancyCard._key(d))).length;
-    return Semantics(
-      label: l10n.profileThisWeekSemantics(count),
-      excludeSemantics: true,
-      child: Row(
-        children: [
-          SectionLabel(l10n.profileThisWeek),
-          const Spacer(),
-          Text(
-            l10n.profileOfSevenDays(count),
-            style: AppTypography.body(
-              size: 12,
-              weight: FontWeight.w700,
-              // Presença, como as bolinhas — não a cor da sequência.
-              color: count > 0 ? AppRoles.presence : a.textFaint,
-            ),
-          ),
         ],
       ),
     );
@@ -1048,13 +659,16 @@ class _WeekBar extends StatelessWidget {
         ClipRect(
           child: days == 0
               ? const SizedBox(height: 22)
-              : AnimatedBuilder(
-                  animation: wave,
-                  builder: (context, _) => CustomPaint(
-                    size: const Size(double.infinity, 22),
-                    painter: _WickFlamePainter(
-                      days: days,
-                      phase: wave.value * 2 * math.pi + index * 1.3,
+              // Camada própria: a chama em loop não repinta o card todo.
+              : RepaintBoundary(
+                  child: AnimatedBuilder(
+                    animation: wave,
+                    builder: (context, _) => CustomPaint(
+                      size: const Size(double.infinity, 22),
+                      painter: _WickFlamePainter(
+                        days: days,
+                        phase: wave.value * 2 * math.pi + index * 1.3,
+                      ),
                     ),
                   ),
                 ),
@@ -1363,42 +977,4 @@ class _WickFlamePainter extends CustomPainter {
   @override
   bool shouldRepaint(covariant _WickFlamePainter old) =>
       old.days != days || old.phase != phase;
-}
-
-class _RingPainter extends CustomPainter {
-  final double ratio;
-  final Color track;
-  final bool done;
-
-  _RingPainter({required this.ratio, required this.track, required this.done});
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final c = size.center(Offset.zero);
-    final r = size.shortestSide / 2 - 4;
-    canvas.drawCircle(
-      c,
-      r,
-      Paint()
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 6
-        ..color = track,
-    );
-    if (ratio <= 0) return;
-    canvas.drawArc(
-      Rect.fromCircle(center: c, radius: r),
-      -math.pi / 2,
-      math.pi * 2 * ratio,
-      false,
-      Paint()
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 6
-        ..strokeCap = StrokeCap.round
-        ..color = done ? AppRoles.reward : AppRoles.streak,
-    );
-  }
-
-  @override
-  bool shouldRepaint(covariant _RingPainter old) =>
-      old.ratio != ratio || old.track != track || old.done != done;
 }

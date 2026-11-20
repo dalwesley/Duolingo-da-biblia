@@ -1,0 +1,223 @@
+{
+  "caravanYouRank": {
+    "pt": "Você está em {rank}º de {total}",
+    "en": "You're #{rank} of {total}",
+    "es": "Estás en el {rank}.º de {total}",
+    "placeholders": {
+      "rank": "int",
+      "total": "int"
+    }
+  },
+  "caravanNextToPass": {
+    "pt": "{steps, plural, =1{1 passo até {name}} other{{steps} passos até {name}}}",
+    "en": "{steps, plural, =1{1 step to {name}} other{{steps} steps to {name}}}",
+    "es": "{steps, plural, =1{1 paso hasta {name}} other{{steps} pasos hasta {name}}}",
+    "placeholders": {
+      "steps": "int",
+      "name": "String"
+    }
+  },
+  "caravanLeading": {
+    "pt": "Você vai na frente da caravana",
+    "en": "You're leading the caravan",
+    "es": "Vas al frente de la caravana"
+  },
+  "caravanSeeAll": {
+    "pt": "Ver a caravana toda",
+    "en": "See the whole caravan",
+    "es": "Ver toda la caravana"
+  },
+  "caravanWholeTitle": {
+    "pt": "A caravana do mês",
+    "en": "This month's caravan",
+    "es": "La caravana del mes"
+  },
+  "caravanWholeEnd": {
+    "pt": "Fim da caravana",
+    "en": "End of the caravan",
+    "es": "Fin de la caravana"
+  },
+  "caravanGoalTitle": {
+    "pt": "Etapa de {month}",
+    "en": "{month} stage",
+    "es": "Etapa de {month}",
+    "placeholders": {
+      "month": "String"
+    }
+  },
+  "caravanGoalClaim": {
+    "pt": "Revelar o postal",
+    "en": "Reveal the postcard",
+    "es": "Revelar la postal"
+  },
+  "caravanPostcardTitle": {
+    "pt": "Caravana de {month}",
+    "en": "{month} caravan",
+    "es": "Caravana de {month}",
+    "placeholders": {
+      "month": "String"
+    }
+  },
+  "caravanPostcardInsight": {
+    "pt": "Ninguém caminha sozinho: a caravana fez {count} cenas juntos.",
+    "en": "No one walks alone: the caravan walked {count} scenes together.",
+    "es": "Nadie camina solo: la caravana hizo {count} escenas juntos.",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "caravanPostcardArrived": {
+    "pt": "Até aqui nos ajudou o Senhor",
+    "en": "Thus far the Lord has helped us",
+    "es": "Hasta aquí nos ayudó el Señor"
+  },
+  "caravanPostcardsSection": {
+    "pt": "Caravana",
+    "en": "Caravan",
+    "es": "Caravana"
+  },
+  "caravanStop1": {
+    "pt": "1º pouso",
+    "en": "1st rest",
+    "es": "1.er descanso"
+  },
+  "caravanStop2": {
+    "pt": "2º pouso",
+    "en": "2nd rest",
+    "es": "2.º descanso"
+  },
+  "caravanArrival": {
+    "pt": "Chegada",
+    "en": "Arrival",
+    "es": "Llegada"
+  },
+  "caravanStopToast": {
+    "pt": "{stop}! Um pedaço do postal apareceu.",
+    "en": "{stop}! Part of the postcard appeared.",
+    "es": "¡{stop}! Apareció una parte de la postal.",
+    "placeholders": {
+      "stop": "String"
+    }
+  },
+  "caravanClaimedAnan": {
+    "pt": "Até aqui nos ajudou o Senhor.",
+    "en": "Thus far the Lord has helped us.",
+    "es": "Hasta aquí nos ayudó el Señor."
+  },
+  "caravanAlbumOnTheWay": {
+    "pt": "A caminho",
+    "en": "On the way",
+    "es": "En camino"
+  },
+  "caravanGoalHeadline": {
+    "pt": "Juntos até o postal de {month}",
+    "en": "Together to the {month} postcard",
+    "es": "Juntos hasta la postal de {month}",
+    "placeholders": {
+      "month": "String"
+    }
+  },
+  "caravanAnanStart": {
+    "pt": "A etapa começou! Cada cena sua acende um pedaço do caminho.",
+    "en": "The stage has begun! Every scene you walk lights up part of the road.",
+    "es": "¡La etapa empezó! Cada escena tuya ilumina un tramo del camino."
+  },
+  "caravanAnanNeedYou": {
+    "pt": "{count, plural, =1{Mais 1 cena e o postal de {month} também é seu.} other{Mais {count} cenas e o postal de {month} também é seu.}}",
+    "en": "{count, plural, =1{1 more scene and the {month} postcard is yours too.} other{{count} more scenes and the {month} postcard is yours too.}}",
+    "es": "{count, plural, =1{1 escena más y la postal de {month} también es tuya.} other{{count} escenas más y la postal de {month} también es tuya.}}",
+    "placeholders": {
+      "count": "int",
+      "month": "String"
+    }
+  },
+  "caravanAnanArrivedNeed": {
+    "pt": "{count, plural, =1{Chegamos! Mais 1 cena sua e o postal é seu.} other{Chegamos! Mais {count} cenas suas e o postal é seu.}}",
+    "en": "{count, plural, =1{We made it! 1 more scene and the postcard is yours.} other{We made it! {count} more scenes and the postcard is yours.}}",
+    "es": "{count, plural, =1{¡Llegamos! 1 escena más y la postal es tuya.} other{¡Llegamos! {count} escenas más y la postal es tuya.}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "caravanAnanArrived": {
+    "pt": "Chegamos! O postal de {month} é seu.",
+    "en": "We made it! The {month} postcard is yours.",
+    "es": "¡Llegamos! La postal de {month} es tuya.",
+    "placeholders": {
+      "month": "String"
+    }
+  },
+  "caravanHereToday": {
+    "pt": "{count, plural, =1{1 passou hoje} other{{count} passaram hoje}}",
+    "en": "{count, plural, =1{1 here today} other{{count} here today}}",
+    "es": "{count, plural, =1{1 pasó hoy} other{{count} pasaron hoy}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "caravanGoalCount": {
+    "pt": "{done} de {goal} cenas · {mine, plural, =0{nenhuma sua ainda} =1{1 é sua} other{{mine} são suas}}",
+    "en": "{done} of {goal} scenes · {mine, plural, =0{none of yours yet} =1{1 is yours} other{{mine} are yours}}",
+    "es": "{done} de {goal} escenas · {mine, plural, =0{ninguna tuya aún} =1{1 es tuya} other{{mine} son tuyas}}",
+    "placeholders": {
+      "done": "int",
+      "goal": "int",
+      "mine": "int"
+    }
+  },
+  "caravanSeePostcard": {
+    "pt": "Ver o postal",
+    "en": "See the postcard",
+    "es": "Ver la postal"
+  },
+  "caravanAnanStalled": {
+    "pt": "{days, plural, =1{A caravana parou ontem.} other{A caravana está parada há {days} dias.}} Uma cena sua põe todo mundo em marcha de novo.",
+    "en": "{days, plural, =1{The caravan stopped yesterday.} other{The caravan has been resting for {days} days.}} One scene of yours gets everyone moving again.",
+    "es": "{days, plural, =1{La caravana paró ayer.} other{La caravana está parada hace {days} días.}} Una escena tuya pone a todos en marcha otra vez.",
+    "placeholders": {
+      "days": "int"
+    }
+  },
+  "caravanAnanFast": {
+    "pt": "Que passo! Nesse ritmo, chegamos no dia {day}, bem antes do fim do mês.",
+    "en": "What a pace! At this rate we arrive on day {day}, well before the month ends.",
+    "es": "¡Qué paso! A este ritmo llegamos el día {day}, mucho antes de fin de mes.",
+    "placeholders": {
+      "day": "int"
+    }
+  },
+  "caravanAnanFinal": {
+    "pt": "{days, plural, =1{Último dia!} other{Últimos {days} dias!}} {left, plural, =1{Falta 1 cena} other{Faltam {left} cenas}} para a chegada — vamos juntos.",
+    "en": "{days, plural, =1{Last day!} other{Last {days} days!}} {left, plural, =1{1 scene} other{{left} scenes}} to the arrival — let's go together.",
+    "es": "{days, plural, =1{¡Último día!} other{¡Últimos {days} días!}} {left, plural, =1{Falta 1 escena} other{Faltan {left} escenas}} para la llegada — vamos juntos.",
+    "placeholders": {
+      "days": "int",
+      "left": "int"
+    }
+  },
+  "caravanAnanSaying1": {
+    "pt": "Ninguém caminha sozinho por aqui.",
+    "en": "No one walks alone around here.",
+    "es": "Aquí nadie camina solo."
+  },
+  "caravanAnanSaying2": {
+    "pt": "Um passo de cada vez também é caminho.",
+    "en": "One step at a time is still a road.",
+    "es": "Un paso a la vez también es camino."
+  },
+  "caravanAnanSaying3": {
+    "pt": "Eu vou na frente — é só seguir a nuvem.",
+    "en": "I'll lead the way — just follow the cloud.",
+    "es": "Yo voy adelante — solo sigue la nube."
+  },
+  "caravanAnanSaying4": {
+    "pt": "Cada cena sua é um pedaço do caminho de todos.",
+    "en": "Every scene of yours is part of everyone's road.",
+    "es": "Cada escena tuya es parte del camino de todos."
+  },
+  "caravanAnanSaying5": {
+    "pt": "Quem caminha junto chega mais longe.",
+    "en": "Those who walk together go farther.",
+    "es": "Quien camina acompañado llega más lejos."
+  }
+}

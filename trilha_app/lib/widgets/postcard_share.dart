@@ -556,10 +556,7 @@ Future<PostcardShareKind?> showPostcardShareSheet(
 
 /// Fluxo completo: escolhe imagem ou vídeo, monta o card fora da tela e
 /// compartilha. Usado no palco do postal e no carrossel da placa Hoje.
-Future<void> sharePostcardFlow(
-  BuildContext context,
-  Postcard postcard,
-) async {
+Future<void> sharePostcardFlow(BuildContext context, Postcard postcard) async {
   final plus = context.read<SubscriptionService>().plusFeaturesOpen;
   final kind = await showPostcardShareSheet(context, plus: plus);
   if (kind == null || !context.mounted) return;
@@ -601,11 +598,8 @@ Future<void> sharePostcardFlow(
         key: shareKey,
         child: ValueListenableBuilder<double>(
           valueListenable: t,
-          builder: (_, value, _) => PostcardShareCard(
-            postcard: postcard,
-            info: info,
-            t: value,
-          ),
+          builder: (_, value, _) =>
+              PostcardShareCard(postcard: postcard, info: info, t: value),
         ),
       ),
     ),
@@ -627,10 +621,7 @@ Future<void> sharePostcardFlow(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    const CloudMascot(
-                      face: CloudFace.carregando,
-                      size: 96,
-                    ),
+                    const CloudMascot(face: CloudFace.carregando, size: 96),
                     const SizedBox(height: AppSpace.lg),
                     Text(
                       ctx.l10n.postcardShareRendering,

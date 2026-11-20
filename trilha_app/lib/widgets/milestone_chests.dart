@@ -219,7 +219,10 @@ class _ChestOpenSheet extends StatelessWidget {
 
 /// Missões da semana sem moldura: dentro de "Esta semana" no Perfil.
 class WeeklyQuestsList extends StatelessWidget {
-  const WeeklyQuestsList({super.key});
+  /// false quando o quadro já tem título e contagem no cabeçalho.
+  final bool showHeader;
+
+  const WeeklyQuestsList({super.key, this.showHeader = true});
 
   @override
   Widget build(BuildContext context) {
@@ -228,23 +231,25 @@ class WeeklyQuestsList extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Row(
-          children: [
-            Expanded(child: SectionLabel(context.l10n.questWeeklyTitle)),
-            Text(
-              context.l10n.questCountOf(
-                progress.weeklyQuestsCompleted,
-                WeeklyQuestDefs.all.length,
+        if (showHeader) ...[
+          Row(
+            children: [
+              Expanded(child: SectionLabel(context.l10n.questWeeklyTitle)),
+              Text(
+                context.l10n.questCountOf(
+                  progress.weeklyQuestsCompleted,
+                  WeeklyQuestDefs.all.length,
+                ),
+                style: AppTypography.label(
+                  size: 10,
+                  letterSpacing: 1.1,
+                  color: a.textFaint,
+                ),
               ),
-              style: AppTypography.label(
-                size: 10,
-                letterSpacing: 1.1,
-                color: a.textFaint,
-              ),
-            ),
-          ],
-        ),
-        const SizedBox(height: AppSpace.md),
+            ],
+          ),
+          const SizedBox(height: AppSpace.md),
+        ],
         for (var i = 0; i < WeeklyQuestDefs.all.length; i++) ...[
           if (i > 0) const SizedBox(height: AppSpace.md),
           WeeklyQuestRow(quest: WeeklyQuestDefs.all[i], progress: progress),

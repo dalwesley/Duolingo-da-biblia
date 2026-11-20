@@ -512,7 +512,8 @@ class SessionComposer {
     return !q.options.any((o) => isVerseFragmentOption(o.text, passage));
   }
 
-  /// Ordena atos: V/F → toque → escolha → ordenar → completar → conectar.
+  /// Ordena atos: toque → V/F → ordenar → escolha → completar → conectar
+  /// (toque com a resposta no trecho vira o Completar da cena).
   /// Permite 2º Escolher no meio (≤ 40%). V/F no máx. 2. Sem o mesmo gesto 4× seguidas.
   static List<Exercise> arrangeActs(List<Exercise> raw, {int max = 6}) {
     final playable = raw

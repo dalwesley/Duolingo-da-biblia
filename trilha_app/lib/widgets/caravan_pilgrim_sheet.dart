@@ -16,8 +16,11 @@ import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'corner_profile_cta.dart';
-import 'living_seed_card.dart';
-import 'pilgrim_identity_card.dart';
+import 'pilgrim_profile_cover.dart';
+import 'profile_hero.dart' show ProfileHero;
+import 'recognition_actions.dart';
+import '../services/progress_service.dart';
+import '../utils/spiritual_growth.dart';
 import 'pilgrim_profile_sections.dart';
 import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
@@ -236,41 +239,128 @@ class _VisitorProfileMirror extends StatelessWidget {
     final identityVisible =
         showRanking || showPresence || showAccuracy || showLeader;
 
+    final l10n = context.l10n;
+    final growth = SpiritualGrowth.fromStreak(profile.streak);
+    final viewerDone = context
+        .read<ProgressService>()
+        .completedMissions
+        .toSet();
+    final showLastScene = _visible(CaravanProfileSection.lastMission);
+    final showTrails = _visible(CaravanProfileSection.trails);
+    final chosen = profile.coverScene;
+    final cover = showLastScene || showTrails
+        ? ((chosen != null && profile.completedMissions.contains(chosen)
+                  ? chosen
+                  : null) ??
+              profile.lastMissionSlug ??
+              (profile.completedMissions.isEmpty
+                  ? null
+                  : profile.completedMissions.last))
+        : null;
+
+    final epithetParts = <String>[
+      if (showRanking && rank > 0)
+        rank <= 3 ? pilgrimRankEpithet(rank) : l10n.pilgrimRank(rank),
+      if (showLeader && profile.daysAsCaravanLeader > 0)
+        l10n.profileDaysOnTop(profile.daysAsCaravanLeader),
+    ];
+    final walkDate = recognizableWalkDate(profile);
+    final accuracy = profile.accuracyPercent;
+
+    final stats = <PilgrimStat>[
+      if (showPresence)
+        PilgrimStat(
+          glyph: CinematicGlyph.flame,
+          tone: AppRoles.streak,
+          value: profile.streak,
+          label: l10n.profileStatStreak,
+          caption: profile.streak > 0 ? growth.title : null,
+        ),
+      if (showRanking)
+        PilgrimStat(
+          glyph: CinematicGlyph.sneaker,
+          tone: AppRoles.lamp,
+          value: profile.steps,
+          label: l10n.pilgrimStatSteps,
+        ),
+      if (showRanking)
+        PilgrimStat(
+          glyph: CinematicGlyph.scroll,
+          tone: AppRoles.navTrails,
+          value: profile.missionsCompleted,
+          label: l10n.pilgrimStatScenes,
+        ),
+      if (showAccuracy &&
+          accuracy != null &&
+          profile.lifetimeQuestionsAnswered > 0)
+        PilgrimStat(
+          glyph: CinematicGlyph.target,
+          tone: AppRoles.success,
+          value: accuracy,
+          suffix: '%',
+          label: l10n.pilgrimAccuracyTitle,
+          caption: l10n.pilgrimCorrectRatio(
+            profile.lifetimeQuestionsCorrect,
+            profile.lifetimeQuestionsAnswered,
+          ),
+        ),
+    ];
+
+    // Postais: a cena mais recente primeiro.
+    final scenes = <({String slug, String? day})>[];
+    if (showTrails) {
+      final seen = <String>{};
+      final last = profile.lastMissionSlug;
+      if (last != null && seen.add(last)) {
+        scenes.add((slug: last, day: profile.lastMissionCompletedDate));
+      }
+      for (final slug in profile.completedMissions.reversed) {
+        if (seen.add(slug)) scenes.add((slug: slug, day: null));
+      }
+    }
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        PilgrimIdentityCard(
-          name: profile.name,
-          supporter: profile.supporter,
-          pilgrim: profile.pilgrim,
-          pioneer: profile.pioneer,
+        PilgrimProfileTop(
+          name: ProgressService.isPlaceholderUserName(profile.name)
+              ? l10n.pilgrimFallbackName
+              : profile.name.trim(),
           photoUrl: profile.photoUrl ?? entry.photoUrl,
           seed: profile.uid ?? entry.uid ?? profile.name,
           style: entry.portraitStyle,
-          steps: profile.steps,
-          missions: profile.missionsCompleted,
-          showMissions: showRanking,
-          accuracyPercent: profile.accuracyPercent,
-          accuracyCorrect: profile.lifetimeQuestionsCorrect,
-          accuracyTotal: profile.lifetimeQuestionsAnswered,
-          rank: rank,
-          leaderDays: profile.daysAsCaravanLeader,
-          showSteps: showRanking,
-          showRank: showRanking,
-          showLeaderDays: showLeader,
-          showAccuracy: showAccuracy,
-          showWeek: showPresence,
-          playedOnDate: (day) => pilgrimPlayedOnDate(
-            day: day,
-            playDates: profile.playDates,
-            walkedToday: entry.walkedToday,
-          ),
-          recognizeWalkToUid: profile.uid,
-          recognizeWalkDate: recognizableWalkDate(profile),
+          coverScene: cover,
+          stats: stats,
+          coverVeiled: cover != null && !viewerDone.contains(cover),
+          rank: showRanking ? rank : 0,
+          epithet: epithetParts.isEmpty ? null : epithetParts.join(' · '),
+          sinceLabel: profile.firstOpenDate == null
+              ? null
+              : ProfileHero.sinceFrom(profile.firstOpenDate),
+          supporter: profile.supporter,
+          pilgrim: profile.pilgrim,
+          pioneer: profile.pioneer,
+          coverAction: profile.uid != null && walkDate != null
+              ? RecognizeHeartButton(
+                  toUid: profile.uid,
+                  kind: RecognitionKind.walk,
+                  subjectKey: walkDate,
+                  padding: EdgeInsets.zero,
+                )
+              : null,
         ),
         if (showPresence) ...[
           const SizedBox(height: AppSpace.section),
-          LivingSeedCard(streak: profile.streak),
+          PilgrimConstancyCard(
+            streak: profile.streak,
+            playDates: profile.playDates,
+            walk: entry.walkedToday
+                ? l10n.commonToday
+                : pilgrimFormatShort(profile.lastWalkDate),
+            online: pilgrimFormatOnline(profile.lastSeenDate),
+            walkedToday: entry.walkedToday,
+            showStreak: profile.streak > 0,
+          ),
         ],
         if (showLater || !identityVisible) ...[
           const SizedBox(height: AppSpace.section),
@@ -286,6 +376,13 @@ class _VisitorProfileMirror extends StatelessWidget {
             },
             includeStreakMilestones: false,
             suppressEmptyState: identityVisible,
+            visitorPostcards: scenes.isEmpty
+                ? null
+                : PilgrimPostcardStrip(
+                    scenes: scenes,
+                    viewerDone: viewerDone,
+                    showHeader: false,
+                  ),
           ),
         ],
       ],

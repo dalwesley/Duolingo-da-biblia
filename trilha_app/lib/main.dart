@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'l10n/app_language.dart';
+import 'data/season_walk_routes.dart';
 import 'l10n/bible_intro_overlay.dart';
 import 'l10n/content_overlay.dart';
 import 'l10n/l10n_global.dart';
@@ -49,6 +50,7 @@ void main() {
   unawaited(HomeWidgetService.init());
   unawaited(InviteDeepLinkService.instance.init());
   unawaited(ContentCatalogService.instance.ensureLoaded());
+  unawaited(SeasonWalkRoutes.instance.loadCache());
   unawaited(ContentOverlay.instance.ensureLoaded());
   unawaited(BibleIntroOverlay.instance.ensureLoaded());
   unawaited(QuestionOverlay.instance.ensureLoaded());

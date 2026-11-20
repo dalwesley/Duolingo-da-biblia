@@ -249,6 +249,8 @@ class _PaywallScreenState extends State<PaywallScreen> {
                       ],
                     ),
                   ),
+                  const SizedBox(height: AppSpace.lg),
+                  _Tithe(paid: paid),
                   if (offer) ...[
                     const SizedBox(height: AppSpace.xl),
                     if (promoDate != null) ...[
@@ -366,6 +368,76 @@ class _PaywallScreenState extends State<PaywallScreen> {
 }
 
 /// Lembra o que não é vendido — as linhas que o Stway não cruza.
+/// O dízimo do Stway: 10% da receita líquida do Peregrino+ para missões e
+/// tradução da Bíblia. O detalhe e o relatório ficam no manifesto (site).
+class _Tithe extends StatelessWidget {
+  final bool paid;
+
+  const _Tithe({required this.paid});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    return Semantics(
+      button: true,
+      label:
+          '${paid ? l10n.paywallTithePaid : l10n.paywallTitheOffer} '
+          '${l10n.paywallTitheLink}',
+      excludeSemantics: true,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(AppRadii.lg),
+        onTap: () => openSitePage(manifestoPageUrl),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(
+            horizontal: AppSpace.md,
+            vertical: AppSpace.sm,
+          ),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const CinematicIcon(
+                glyph: CinematicGlyph.heart,
+                size: 22,
+                accent: AppRoles.reward,
+                framed: false,
+              ),
+              const SizedBox(width: AppSpace.md),
+              Expanded(
+                child: Text.rich(
+                  TextSpan(
+                    children: [
+                      TextSpan(
+                        text: paid
+                            ? l10n.paywallTithePaid
+                            : l10n.paywallTitheOffer,
+                      ),
+                      const TextSpan(text: ' '),
+                      TextSpan(
+                        text: l10n.paywallTitheLink,
+                        style: const TextStyle(
+                          color: AppRoles.reward,
+                          decoration: TextDecoration.underline,
+                          decorationColor: AppRoles.reward,
+                        ),
+                      ),
+                    ],
+                  ),
+                  style: AppTypography.body(
+                    size: 13,
+                    height: 1.45,
+                    color: a.textSecondary,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _FreeForever extends StatelessWidget {
   const _FreeForever();
 

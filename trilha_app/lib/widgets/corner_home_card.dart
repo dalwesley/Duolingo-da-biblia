@@ -594,7 +594,18 @@ class _WaitingMarkState extends State<_WaitingMark>
     _flip = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 2200),
-    )..repeat();
+    );
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Com movimento reduzido a ampulheta não gira: sem loop à toa.
+    if (MediaQuery.disableAnimationsOf(context)) {
+      _flip.stop();
+    } else if (!_flip.isAnimating) {
+      _flip.repeat();
+    }
   }
 
   @override
@@ -787,66 +798,70 @@ class _RaceMarkState extends State<RaceMark>
     final a = Appearance.of(context);
     final boost = widget.lit ? 1.0 : 0.0;
     final tone = widget.lit ? widget.litTone : a.chrome;
-    return SizedBox(
-      width: 46,
-      height: 46,
-      child: Stack(
-        clipBehavior: Clip.none,
-        alignment: Alignment.center,
-        children: [
-          FadeTransition(
-            opacity: _glow,
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(
-                    color: tone.withValues(alpha: widget.lit ? 0.8 : 0.45),
-                    blurRadius: 16,
-                  ),
-                ],
-              ),
-              child: const SizedBox.square(dimension: 46),
-            ),
-          ),
-          AnimatedBuilder(
-            animation: _pulse,
-            builder: (context, _) {
-              final t = AppMotion.move.transform(_pulse.value);
-              return Container(
-                width: 46,
-                height: 46,
+    // Camada própria: a respiração em loop (sombra borrada + ícone) não
+    // repinta o card inteiro a cada quadro.
+    return RepaintBoundary(
+      child: SizedBox(
+        width: 46,
+        height: 46,
+        child: Stack(
+          clipBehavior: Clip.none,
+          alignment: Alignment.center,
+          children: [
+            FadeTransition(
+              opacity: _glow,
+              child: DecoratedBox(
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Color.lerp(
-                    a.insetFill,
-                    tone,
-                    0.16 + 0.1 * t + 0.2 * boost,
-                  ),
-                  border: Border.all(
-                    color: tone.withValues(alpha: 0.72 + 0.28 * t),
-                    width: 1.4,
-                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: tone.withValues(alpha: widget.lit ? 0.8 : 0.45),
+                      blurRadius: 16,
+                    ),
+                  ],
                 ),
-                child: widget.glyph == null
-                    ? CustomPaint(
-                        painter: _FinishFlagPainter(
-                          wave: _pulse.value,
-                          color: tone,
+                child: const SizedBox.square(dimension: 46),
+              ),
+            ),
+            AnimatedBuilder(
+              animation: _pulse,
+              builder: (context, _) {
+                final t = AppMotion.move.transform(_pulse.value);
+                return Container(
+                  width: 46,
+                  height: 46,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color.lerp(
+                      a.insetFill,
+                      tone,
+                      0.16 + 0.1 * t + 0.2 * boost,
+                    ),
+                    border: Border.all(
+                      color: tone.withValues(alpha: 0.72 + 0.28 * t),
+                      width: 1.4,
+                    ),
+                  ),
+                  child: widget.glyph == null
+                      ? CustomPaint(
+                          painter: _FinishFlagPainter(
+                            wave: _pulse.value,
+                            color: tone,
+                          ),
+                        )
+                      : Center(
+                          child: CinematicIcon(
+                            glyph: widget.glyph!,
+                            size: AppMetrics.iconMd,
+                            accent: tone,
+                            framed: false,
+                          ),
                         ),
-                      )
-                    : Center(
-                        child: CinematicIcon(
-                          glyph: widget.glyph!,
-                          size: AppMetrics.iconMd,
-                          accent: tone,
-                          framed: false,
-                        ),
-                      ),
-              );
-            },
-          ),
-        ],
+                );
+              },
+            ),
+          ],
+        ),
       ),
     );
   }

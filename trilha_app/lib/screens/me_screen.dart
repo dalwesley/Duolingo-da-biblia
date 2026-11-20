@@ -21,16 +21,19 @@ import '../widgets/bible_note_tag.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/milestone_chests.dart';
-import '../widgets/near_rewards_card.dart';
 import '../widgets/pilgrim_identity_card.dart';
 import '../widgets/pilgrim_profile_sections.dart';
 import '../widgets/profile_plus_cards.dart';
 import '../widgets/room_pilot_cards.dart';
 import '../widgets/profile_privacy.dart';
 import '../widgets/portrait_picker_sheet.dart';
+import '../widgets/pilgrim_profile_cover.dart';
 import '../widgets/profile_hero.dart';
+import '../models/daily_quest.dart';
+import '../widgets/profile_section.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/top_bar.dart';
+import '../widgets/trail_gift.dart';
 import '../widgets/ui_primitives.dart';
 import 'bible_screen.dart';
 import 'paywall_screen.dart';
@@ -125,6 +128,24 @@ class _MeScreenState extends State<MeScreen> {
 
   void _openCaravanPrivacySettings() => openSettings(context);
 
+  /// Capa: a escolhida (se ainda é uma cena feita) ou a mais recente.
+  static String? _coverScene(ProgressService p) {
+    final chosen = p.settings.coverScene;
+    if (chosen != null && p.completedMissions.contains(chosen)) return chosen;
+    final recent = _recentScenes(p);
+    return recent.isEmpty ? null : recent.first.slug;
+  }
+
+  /// Cenas feitas com o dia do postal (ou da conclusão), a mais nova
+  /// primeiro: a primeira vira a capa do perfil.
+  static List<({String slug, String? day})> _recentScenes(ProgressService p) {
+    final days = <String, String>{...p.missionCompletedOn, ...p.postcardsOn};
+    final list = [
+      for (final e in days.entries) (slug: e.key, day: e.value as String?),
+    ]..sort((a, b) => (b.day ?? '').compareTo(a.day ?? ''));
+    return list;
+  }
+
   /// Volta à trilha (home) — o perfil é aberto por cima do shell.
   void _backToTrail() =>
       Navigator.of(context).popUntil((route) => route.isFirst);
@@ -200,6 +221,26 @@ class _MeScreenState extends State<MeScreen> {
             ...progress.missionCompletedOn.keys,
             ...progress.postcardsOn.keys,
           }.length,
+          steps: progress.steps,
+          accuracyPercent: accuracy,
+          accuracyCorrect:
+              profile?.lifetimeQuestionsCorrect ??
+              progress.lifetimeQuestionsCorrect,
+          accuracyTotal:
+              profile?.lifetimeQuestionsAnswered ??
+              progress.lifetimeQuestionsAnswered,
+          rank: _overallRank,
+          coverScene: _coverScene(progress),
+          onChangeCover: () => showProfileCoverPicker(
+            context,
+            scenes: [for (final s in _recentScenes(progress)) s.slug],
+            current: progress.settings.coverScene,
+            onPick: (slug) => progress.updateSettings(
+              slug == null
+                  ? progress.settings.copyWith(clearCoverScene: true)
+                  : progress.settings.copyWith(coverScene: slug),
+            ),
+          ),
         )
       else
         pad(
@@ -242,18 +283,36 @@ class _MeScreenState extends State<MeScreen> {
               builder: (_) => const PaywallScreen(source: 'profile_trend'),
             ),
           ),
-          quests: progress.hasOpenWeeklyQuests
-              ? const WeeklyQuestsList()
-              : null,
           atRisk: progress.isStreakAtRisk,
           freezeAvailable: progress.streakFreezeAvailable,
           freezeUsed: progress.streakFreezeUsedThisWeek,
         ),
       ),
-      // Quase lá: medalha, selo ou álbum a poucos passos (some se nada).
-      pad(const NearRewardsCard()),
+      // Tarefas da semana: quadro próprio, logo depois da sequência.
+      if (progress.hasOpenWeeklyQuests) ...[
+        const SizedBox(height: AppSpace.section),
+        pad(
+          ProfileSection(
+            accent: AppRoles.lamp,
+            glyph: CinematicGlyph.calendar,
+            title: context.l10n.questWeeklyTitle,
+            trailing: Text(
+              context.l10n.questCountOf(
+                progress.weeklyQuestsCompleted,
+                WeeklyQuestDefs.all.length,
+              ),
+              style: AppTypography.title(
+                size: 13,
+                weight: FontWeight.w900,
+                color: AppRoles.lamp,
+              ),
+            ),
+            child: const WeeklyQuestsList(showHeader: false),
+          ),
+        ),
+      ],
       if (progress.groupSealWeeks.isNotEmpty) ...[
-        const SizedBox(height: AppSpace.md),
+        const SizedBox(height: AppSpace.section),
         pad(GroupSealsCard(count: progress.groupSealWeeks.length)),
       ],
     ];
@@ -302,10 +361,31 @@ class _MeScreenState extends State<MeScreen> {
       const SizedBox(height: AppSpace.section),
       // Meu estudo: evolução, acerto e erros (todos); gesto e reforço (Plus).
       pad(ProfileAccuracyCard(plusOpen: plusOpen)),
-      const SizedBox(height: AppSpace.md),
+      const SizedBox(height: AppSpace.section),
       // Na Palavra numa linha; favoritos, anotações e compartilhados abrem
       // numa folha.
       pad(const _NaPalavraLine()),
+      const SizedBox(height: AppSpace.section),
+      // Passe de trilha recebido por link: quem instalou depois cola a
+      // mensagem ou digita o código.
+      pad(
+        ProfileSection(
+          accent: AppRoles.reward,
+          glyph: CinematicGlyph.gift,
+          title: context.l10n.trailGiftProfileTitle,
+          caption: context.l10n.trailGiftProfileCaption,
+          trailing: CinematicIcon(
+            glyph: CinematicGlyph.chevron,
+            size: 14,
+            accent: Appearance.of(context).textSecondary,
+            framed: false,
+          ),
+          onTap: () {
+            ActHaptics.tap();
+            enterTrailGiftCode(context);
+          },
+        ),
+      ),
     ]);
 
     // Só no próprio perfil os cards mostram o olho de privacidade.
@@ -389,59 +469,103 @@ class _MeScreenState extends State<MeScreen> {
   }
 }
 
-/// Na Palavra numa linha: as contagens e um toque para abrir a folha.
+/// Na Palavra: quatro números da relação com o texto (capítulos lidos,
+/// livros concluídos, favoritos, anotações); o toque abre a folha.
 class _NaPalavraLine extends StatelessWidget {
   const _NaPalavraLine();
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     final l10n = context.l10n;
     final progress = context.watch<ProgressService>();
-    final favorites = progress.parseBookmarks().length;
-    final notes = progress.parseNotes().length;
-    final shared = progress.sharedVerses.length;
-    final parts = [
-      if (favorites > 0) l10n.profileWordFavorites(favorites),
-      if (notes > 0) l10n.profileWordNotes(notes),
-      if (shared > 0) l10n.profileWordShared(shared),
+    final stats = [
+      (
+        CinematicGlyph.book,
+        progress.readBibleChapters.length,
+        l10n.wordStatChapters,
+      ),
+      (
+        CinematicGlyph.library,
+        progress.booksFinishedOn.length,
+        l10n.wordStatBooks,
+      ),
+      (
+        CinematicGlyph.bookmark,
+        progress.parseBookmarks().length,
+        l10n.wordStatFavorites,
+      ),
+      (CinematicGlyph.pencil, progress.parseNotes().length, l10n.wordStatNotes),
     ];
-    return GlassCard(
-      padding: AppMetrics.cardPaddingCompact,
+    const accent = AppRoles.navBible;
+    final a = Appearance.of(context);
+    return ProfileSection(
+      accent: accent,
+      glyph: CinematicGlyph.book,
+      title: l10n.profileInTheWord,
+      trailing: CinematicIcon(
+        glyph: CinematicGlyph.chevron,
+        size: 14,
+        accent: a.textSecondary,
+        framed: false,
+      ),
       onTap: () {
         ActHaptics.tap();
         showAppSheet<void>(context, builder: (_) => const _NaPalavraSheet());
       },
       child: Row(
         children: [
-          CinematicIcon(
-            glyph: CinematicGlyph.book,
-            size: AppMetrics.leadingIcon,
-            accent: AppRoles.presence,
-          ),
-          const SizedBox(width: AppSpace.md),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  l10n.profileInTheWord,
-                  style: AppTypography.title(size: 15, color: a.text),
+          for (final (i, (glyph, value, label)) in stats.indexed) ...[
+            if (i > 0) const SizedBox(width: AppSpace.sm),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.symmetric(vertical: AppSpace.sm),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(AppRadii.md),
+                  color: a.insetFill,
+                  border: Border.all(
+                    color: accent.withValues(alpha: value > 0 ? 0.35 : 0.12),
+                  ),
                 ),
-                const SizedBox(height: 2),
-                Text(
-                  parts.isEmpty
-                      ? l10n.profileInTheWordWhisper
-                      : parts.join(' · '),
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTypography.body(size: 12, color: a.textSecondary),
+                child: Column(
+                  children: [
+                    CinematicIcon(
+                      glyph: glyph,
+                      size: 18,
+                      accent: value > 0 ? a.ink(accent) : a.textFaint,
+                      framed: false,
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      '$value',
+                      style:
+                          AppTypography.title(
+                            size: 20,
+                            weight: FontWeight.w900,
+                            height: 1,
+                            color: value > 0 ? a.text : a.textFaint,
+                          ).copyWith(
+                            fontFeatures: const [FontFeature.liningFigures()],
+                          ),
+                    ),
+                    const SizedBox(height: 3),
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        label.toUpperCase(),
+                        maxLines: 1,
+                        style: AppTypography.label(
+                          size: 9,
+                          letterSpacing: 0.8,
+                          weight: FontWeight.w900,
+                          color: a.textSecondary,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-              ],
+              ),
             ),
-          ),
-          const SizedBox(width: AppSpace.sm),
-          ListChevron(color: a.textSecondary),
+          ],
         ],
       ),
     );

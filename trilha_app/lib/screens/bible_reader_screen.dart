@@ -14,6 +14,7 @@ import '../services/tts_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/bible_reading_theme.dart';
+import '../widgets/book_finished_sheet.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/app_sheet.dart';
 import '../widgets/cloud_mascot.dart';
@@ -322,12 +323,17 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
       listened: TtsService.instance.sequenceKey == _chapterKey,
     );
     ActHaptics.success();
-    await progress.recordBibleReading(
+    final finished = await progress.recordBibleReading(
       book.abbrev,
       chapter,
       attentive: attentive,
+      bookChapters: book.chapters.length,
     );
     if (!mounted) return;
+    if (finished) {
+      await showBookFinishedSheet(context, bookName: book.name);
+      if (!mounted) return;
+    }
     // Rápido demais e é da leitura do grupo: avisa que não contou lá.
     final reading = context.read<RoomService>().currentReading;
     if (!attentive &&

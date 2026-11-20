@@ -55,6 +55,9 @@ class AppSettings {
   /// "O que te traz aqui?" do onboarding. `null` = ainda não respondeu.
   final UserIntent? intent;
 
+  /// Cena cuja pintura é a capa do perfil. `null` = a mais recente.
+  final String? coverScene;
+
   const AppSettings({
     this.sound = true,
     this.notifications = true,
@@ -68,6 +71,7 @@ class AppSettings {
     this.portraitStyle = PortraitStyle.photo,
     this.language = AppLanguage.device,
     this.intent,
+    this.coverScene,
   });
 
   /// Compat: true quando o visual preferido é noturno.
@@ -87,6 +91,8 @@ class AppSettings {
     AppLanguage? language,
     UserIntent? intent,
     bool clearIntent = false,
+    String? coverScene,
+    bool clearCoverScene = false,
   }) {
     return AppSettings(
       sound: sound ?? this.sound,
@@ -101,6 +107,7 @@ class AppSettings {
       portraitStyle: portraitStyle ?? this.portraitStyle,
       language: language ?? this.language,
       intent: clearIntent ? null : (intent ?? this.intent),
+      coverScene: clearCoverScene ? null : (coverScene ?? this.coverScene),
     );
   }
 }
@@ -131,6 +138,7 @@ class ProgressService extends ChangeNotifier {
   static const _keyBibleReadingNight = 'bibleReadingNight';
   static const _keyPortraitStyle = 'portraitStyle';
   static const _keyIntent = 'intent';
+  static const _keyCoverScene = 'coverScene';
 
   /// Legado — migrado para [_keyFontScale].
   static const _keyBibleFontScale = 'bibleFontScale';
@@ -344,7 +352,8 @@ class ProgressService extends ChangeNotifier {
   }
 
   /// Teto de capítulos com data guardada (os mais antigos saem).
-  static const bibleChapterReadOnCap = 400;
+  /// A Bíblia tem 1189 capítulos: cabe a leitura inteira, com o dia.
+  static const bibleChapterReadOnCap = 1200;
 
   /// Capítulos [from]..[to] de [bookAbbrev] lidos a partir de [sinceYmd].
   int chaptersReadSince(String bookAbbrev, int from, int to, String sinceYmd) {
@@ -555,6 +564,62 @@ class ProgressService extends ChangeNotifier {
   /// Postais da caminhada: dia (YYYY-MM-DD) em que cada cena revelou o seu
   /// postal. Não some ao trocar de modo nem ao sair da trilha.
   Map<String, String> postcardsOn = {};
+
+  /// Postais da Caravana: mês (YYYY-MM) → dia em que a pessoa guardou o
+  /// postal da meta coletiva daquele mês.
+  Map<String, String> caravanPostcards = {};
+
+  /// Livros concluídos: abreviação ("rt") → dia (YYYY-MM-DD) em que fechou.
+  /// Conta ler todos os capítulos no leitor ou terminar a trilha capítulo a
+  /// capítulo do livro, o que vier primeiro. Dia vazio = concluído antes do
+  /// campo existir, sem data conhecida.
+  Map<String, String> booksFinishedOn = {};
+
+  bool isBookFinished(String abbrev) =>
+      booksFinishedOn.containsKey(abbrev.toLowerCase());
+
+  /// Marca o livro como concluído hoje. `true` quando é novidade.
+  Future<bool> markBookFinished(String abbrev, {String? day}) async {
+    final key = abbrev.trim().toLowerCase();
+    if (key.isEmpty || booksFinishedOn.containsKey(key)) return false;
+    booksFinishedOn = {...booksFinishedOn, key: day ?? _todayKey()};
+    await _save();
+    notifyListeners();
+    return true;
+  }
+
+  /// Todos os capítulos 1..[chapters] de [abbrev] já foram lidos no leitor.
+  bool allChaptersRead(String abbrev, int chapters) {
+    if (chapters <= 0) return false;
+    final read = readBibleChapters.toSet();
+    for (var c = 1; c <= chapters; c++) {
+      if (!read.contains(bibleChapterKey(abbrev, c))) return false;
+    }
+    return true;
+  }
+
+  /// Livros lidos inteiros antes do selo existir ganham o selo sem festa.
+  /// A data é a do último capítulo com dia guardado, ou vazia.
+  Future<void> backfillFinishedBooks(
+    Iterable<({String abbrev, int chapters})> books,
+  ) async {
+    final add = <String, String>{};
+    for (final b in books) {
+      final key = b.abbrev.toLowerCase();
+      if (booksFinishedOn.containsKey(key)) continue;
+      if (!allChaptersRead(key, b.chapters)) continue;
+      var last = '';
+      for (var c = 1; c <= b.chapters; c++) {
+        final d = bibleChapterReadOn[bibleChapterKey(key, c)] ?? '';
+        if (d.compareTo(last) > 0) last = d;
+      }
+      add[key] = last;
+    }
+    if (add.isEmpty) return;
+    booksFinishedOn = {...booksFinishedOn, ...add};
+    await _save();
+    notifyListeners();
+  }
 
   /// Referência bíblica de cada postal ("Rute 1:16"), para marcar a Bíblia.
   Map<String, String> postcardRefs = {};
@@ -1033,6 +1098,24 @@ class ProgressService extends ChangeNotifier {
   int get currentWeekScenes =>
       weeklyWeek == _weekMondayKey() ? weeklyScenes : 0;
 
+  /// Cenas novas concluídas neste mês (pela data de conclusão de cada
+  /// cena). Alimenta a meta coletiva da Caravana.
+  int get currentMonthScenes => monthScenesIn(_monthKey());
+
+  /// Cenas novas concluídas no mês [month] ("YYYY-MM").
+  int monthScenesIn(String month) {
+    final prefix = '$month-';
+    return missionCompletedOn.values.where((d) => d.startsWith(prefix)).length;
+  }
+
+  /// Guarda o postal da Caravana do mês [month] (uma vez).
+  Future<void> saveCaravanPostcard(String month) async {
+    if (caravanPostcards.containsKey(month)) return;
+    caravanPostcards = {...caravanPostcards, month: _todayKey()};
+    await _save();
+    notifyListeners();
+  }
+
   Future<void> load() async {
     // Progresso vive no Firebase após o login. Cold start usa defaults em memória.
     // Splash + onboarding + aparência: gates/prefs de aparelho.
@@ -1112,6 +1195,7 @@ class ProgressService extends ChangeNotifier {
       ),
       language: AppLanguageX.fromStorage(prefs.getString(_keyLanguage)),
       intent: UserIntentX.tryParse(prefs.getString(_keyIntent)),
+      coverScene: _nonEmpty(prefs.getString(_keyCoverScene)),
     );
   }
 
@@ -1138,6 +1222,11 @@ class ProgressService extends ChangeNotifier {
     }
     await prefs.setString(_keyPortraitStyle, settings.portraitStyle.storageKey);
     await prefs.setString(_keyLanguage, settings.language.storageKey);
+    if (settings.coverScene == null) {
+      await prefs.remove(_keyCoverScene);
+    } else {
+      await prefs.setString(_keyCoverScene, settings.coverScene!);
+    }
     if (settings.intent == null) {
       await prefs.remove(_keyIntent);
     } else {
@@ -1349,6 +1438,8 @@ class ProgressService extends ChangeNotifier {
     leftMissionSlugs = [];
     trailChoicesSeedV = 0;
     postcardsOn = {};
+    caravanPostcards = {};
+    booksFinishedOn = {};
     postcardRefs = {};
     giftedTrails = {};
     answerCorrect = {};
@@ -1725,10 +1816,14 @@ class ProgressService extends ChangeNotifier {
   /// Registra a leitura de um capítulo da Bíblia (missão diária "Palavra viva").
   /// [attentive] false (concluído rápido demais, sem ouvir): conta para a
   /// missão e o histórico, mas não para a leitura da semana do grupo.
-  Future<void> recordBibleReading(
+  ///
+  /// Com [bookChapters] (total de capítulos do livro), devolve `true` quando
+  /// este capítulo fechou o livro inteiro (selo do livro concluído).
+  Future<bool> recordBibleReading(
     String bookAbbrev,
     int chapter, {
     bool attentive = true,
+    int? bookChapters,
   }) async {
     final key = bibleChapterKey(bookAbbrev, chapter);
     if (!readBibleChapters.contains(key)) {
@@ -1749,6 +1844,12 @@ class ProgressService extends ChangeNotifier {
     lastBibleReadDate = today;
     await _bumpQuest('read');
     await _bumpQuest('seasonal');
+    if (bookChapters != null &&
+        !isBookFinished(bookAbbrev) &&
+        allChaptersRead(bookAbbrev, bookChapters)) {
+      return markBookFinished(bookAbbrev);
+    }
+    return false;
   }
 
   /// Guarda onde a leitura parou — a aba Bíblia abre o "Continuar" aqui.
@@ -1934,14 +2035,42 @@ class ProgressService extends ChangeNotifier {
   static String bibleBookmarkKey(String bookAbbrev, int chapter, int verse) =>
       '${bookAbbrev.toLowerCase()}:$chapter:$verse';
 
-  bool hasReadBibleChapter(String bookAbbrev, int chapter) =>
-      readBibleChapters.contains(bibleChapterKey(bookAbbrev, chapter));
+  bool hasReadBibleChapter(String bookAbbrev, int chapter) {
+    _syncReadIndex();
+    return _readIndexSet.contains(bibleChapterKey(bookAbbrev, chapter));
+  }
 
   int readChaptersInBook(String bookAbbrev) {
-    final prefix = '${bookAbbrev.toLowerCase()}:';
-    return readBibleChapters
-        .where((k) => k.startsWith(prefix) && k.split(':').length == 2)
-        .length;
+    _syncReadIndex();
+    return _readIndexPerBook[bookAbbrev.toLowerCase()] ?? 0;
+  }
+
+  // Índice de [readBibleChapters] para as grades/listas da Bíblia (que
+  // perguntam por capítulo e por livro dezenas de vezes por build). A lista
+  // é sempre trocada por outra ao mudar; refaz quando a referência ou o
+  // tamanho mudam.
+  List<String>? _readIndexSource;
+  int _readIndexLength = -1;
+  Set<String> _readIndexSet = const {};
+  Map<String, int> _readIndexPerBook = const {};
+
+  void _syncReadIndex() {
+    final src = readBibleChapters;
+    if (identical(src, _readIndexSource) && src.length == _readIndexLength) {
+      return;
+    }
+    _readIndexSource = src;
+    _readIndexLength = src.length;
+    _readIndexSet = src.toSet();
+    final perBook = <String, int>{};
+    for (final k in src) {
+      // Só "livro:capítulo" (exatamente um ':').
+      final colon = k.indexOf(':');
+      if (colon < 0 || k.indexOf(':', colon + 1) >= 0) continue;
+      final book = k.substring(0, colon);
+      perBook[book] = (perBook[book] ?? 0) + 1;
+    }
+    _readIndexPerBook = perBook;
   }
 
   bool isVerseBookmarked(String bookAbbrev, int chapter, int verse) =>
@@ -3424,6 +3553,8 @@ class ProgressService extends ChangeNotifier {
       'leftMissionSlugs': leftMissionSlugs,
       'trailChoicesSeedV': trailChoicesSeedV,
       'postcardsOn': postcardsOn,
+      'caravanPostcards': caravanPostcards,
+      'booksFinishedOn': booksFinishedOn,
       'postcardRefs': postcardRefs,
       'giftedTrails': giftedTrails,
       'answerCorrect': answerCorrect,
@@ -3459,8 +3590,15 @@ class ProgressService extends ChangeNotifier {
         // Sempre grava ('' = limpo): omitir a chave fazia o merge
         // devolver o motivo antigo; null some no Firestore.
         'intent': settings.intent?.storageKey ?? '',
+        // '' = capa automática (a cena mais recente).
+        'coverScene': settings.coverScene ?? '',
       },
     };
+  }
+
+  static String? _nonEmpty(String? v) {
+    final t = v?.trim();
+    return t == null || t.isEmpty ? null : t;
   }
 
   static List<String> _asStringList(dynamic v) => [
@@ -4228,6 +4366,25 @@ class ProgressService extends ChangeNotifier {
         }
         postcardsOn = merged;
       }
+      if (data.containsKey('caravanPostcards')) {
+        caravanPostcards = {
+          ..._asStringMap(data['caravanPostcards']),
+          ...caravanPostcards,
+        };
+      }
+      if (data.containsKey('booksFinishedOn')) {
+        // Fica a data conhecida mais antiga (vazia só se não houver outra).
+        final merged = Map<String, String>.from(booksFinishedOn);
+        for (final e in _asStringMap(data['booksFinishedOn']).entries) {
+          final cur = merged[e.key];
+          if (cur == null ||
+              cur.isEmpty ||
+              (e.value.isNotEmpty && e.value.compareTo(cur) < 0)) {
+            merged[e.key] = e.value;
+          }
+        }
+        booksFinishedOn = merged;
+      }
       if (data.containsKey('postcardRefs')) {
         postcardRefs = {..._asStringMap(data['postcardRefs']), ...postcardRefs};
       }
@@ -4402,6 +4559,9 @@ class ProgressService extends ChangeNotifier {
           intent: s.containsKey('intent')
               ? UserIntentX.tryParse(s['intent'] as String?)
               : settings.intent,
+          coverScene: s.containsKey('coverScene')
+              ? _nonEmpty(s['coverScene'] as String?)
+              : settings.coverScene,
         );
       }
     }
@@ -4580,6 +4740,8 @@ class ProgressService extends ChangeNotifier {
     leftMissionSlugs = [];
     trailChoicesSeedV = 0;
     postcardsOn = {};
+    caravanPostcards = {};
+    booksFinishedOn = {};
     postcardRefs = {};
     answerCorrect = {};
     answerTotal = {};

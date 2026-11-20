@@ -4,6 +4,7 @@ import '../l10n/l10n_global.dart';
 import '../models/season_walk.dart';
 import '../utils/liturgical_calendar.dart';
 import '../utils/season_walk_debug.dart';
+import 'season_walk_routes.dart';
 
 /// Playlists da Caminhada — só temporadas litúrgicas. Missões já no cânon.
 class SeasonWalkCatalog {
@@ -56,7 +57,11 @@ class SeasonWalkCatalog {
       title: l.medalAdventVaultTitle('${start.year}'),
       subtitle: l.seasonWalkAdvento2026Subtitle,
       start: DateTime(start.year, start.month, start.day),
-      days: _adventDays(l),
+      // O banco pode trocar a cena de um dia (campaigns/{id}.route).
+      days: SeasonWalkRoutes.instance.apply(
+        'advento-${start.year}',
+        _adventDays(l),
+      ),
     );
   }
 

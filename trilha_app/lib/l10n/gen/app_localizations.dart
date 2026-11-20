@@ -400,6 +400,18 @@ abstract class AppLocalizations {
   /// **'Livro {number}'**
   String bibleBookFallback(int number);
 
+  /// Selo do livro concluído
+  ///
+  /// In pt, this message translates to:
+  /// **'Concluído'**
+  String get bibleBookFinished;
+
+  /// Selo do livro concluído
+  ///
+  /// In pt, this message translates to:
+  /// **'Concluído em {date}'**
+  String bibleBookFinishedOn(String date);
+
   /// No description provided for @bibleBookReadSemantics.
   ///
   /// In pt, this message translates to:
@@ -940,6 +952,24 @@ abstract class AppLocalizations {
   /// **'Originais, Strong, concordância e referências'**
   String get bibleVerseStudyDetail;
 
+  /// Selo do livro concluído
+  ///
+  /// In pt, this message translates to:
+  /// **'Capítulo por capítulo, até o fim. O selo fica na sua Bíblia com a data de hoje.'**
+  String get bookFinishedBody;
+
+  /// Selo do livro concluído
+  ///
+  /// In pt, this message translates to:
+  /// **'Livro concluído'**
+  String get bookFinishedEyebrow;
+
+  /// Selo do livro concluído
+  ///
+  /// In pt, this message translates to:
+  /// **'Você concluiu {book}'**
+  String bookFinishedTitle(String book);
+
   /// No description provided for @canonEvangelhosBlurb.
   ///
   /// In pt, this message translates to:
@@ -1059,6 +1089,210 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Profetas menores'**
   String get canonProfetasMenoresTitle;
+
+  /// No description provided for @caravanAlbumOnTheWay.
+  ///
+  /// In pt, this message translates to:
+  /// **'A caminho'**
+  String get caravanAlbumOnTheWay;
+
+  /// No description provided for @caravanAnanArrived.
+  ///
+  /// In pt, this message translates to:
+  /// **'Chegamos! O postal de {month} é seu.'**
+  String caravanAnanArrived(String month);
+
+  /// No description provided for @caravanAnanArrivedNeed.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{Chegamos! Mais 1 cena sua e o postal é seu.} other{Chegamos! Mais {count} cenas suas e o postal é seu.}}'**
+  String caravanAnanArrivedNeed(int count);
+
+  /// No description provided for @caravanAnanFast.
+  ///
+  /// In pt, this message translates to:
+  /// **'Que passo! Nesse ritmo, chegamos no dia {day}, bem antes do fim do mês.'**
+  String caravanAnanFast(int day);
+
+  /// No description provided for @caravanAnanFinal.
+  ///
+  /// In pt, this message translates to:
+  /// **'{days, plural, =1{Último dia!} other{Últimos {days} dias!}} {left, plural, =1{Falta 1 cena} other{Faltam {left} cenas}} para a chegada — vamos juntos.'**
+  String caravanAnanFinal(int days, int left);
+
+  /// No description provided for @caravanAnanNeedYou.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{Mais 1 cena e o postal de {month} também é seu.} other{Mais {count} cenas e o postal de {month} também é seu.}}'**
+  String caravanAnanNeedYou(int count, String month);
+
+  /// No description provided for @caravanAnanSaying1.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ninguém caminha sozinho por aqui.'**
+  String get caravanAnanSaying1;
+
+  /// No description provided for @caravanAnanSaying2.
+  ///
+  /// In pt, this message translates to:
+  /// **'Um passo de cada vez também é caminho.'**
+  String get caravanAnanSaying2;
+
+  /// No description provided for @caravanAnanSaying3.
+  ///
+  /// In pt, this message translates to:
+  /// **'Eu vou na frente — é só seguir a nuvem.'**
+  String get caravanAnanSaying3;
+
+  /// No description provided for @caravanAnanSaying4.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cada cena sua é um pedaço do caminho de todos.'**
+  String get caravanAnanSaying4;
+
+  /// No description provided for @caravanAnanSaying5.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quem caminha junto chega mais longe.'**
+  String get caravanAnanSaying5;
+
+  /// No description provided for @caravanAnanStalled.
+  ///
+  /// In pt, this message translates to:
+  /// **'{days, plural, =1{A caravana parou ontem.} other{A caravana está parada há {days} dias.}} Uma cena sua põe todo mundo em marcha de novo.'**
+  String caravanAnanStalled(int days);
+
+  /// No description provided for @caravanAnanStart.
+  ///
+  /// In pt, this message translates to:
+  /// **'A etapa começou! Cada cena sua acende um pedaço do caminho.'**
+  String get caravanAnanStart;
+
+  /// No description provided for @caravanArrival.
+  ///
+  /// In pt, this message translates to:
+  /// **'Chegada'**
+  String get caravanArrival;
+
+  /// No description provided for @caravanClaimedAnan.
+  ///
+  /// In pt, this message translates to:
+  /// **'Até aqui nos ajudou o Senhor.'**
+  String get caravanClaimedAnan;
+
+  /// No description provided for @caravanGoalClaim.
+  ///
+  /// In pt, this message translates to:
+  /// **'Revelar o postal'**
+  String get caravanGoalClaim;
+
+  /// No description provided for @caravanGoalCount.
+  ///
+  /// In pt, this message translates to:
+  /// **'{done} de {goal} cenas · {mine, plural, =0{nenhuma sua ainda} =1{1 é sua} other{{mine} são suas}}'**
+  String caravanGoalCount(int done, int goal, int mine);
+
+  /// No description provided for @caravanGoalHeadline.
+  ///
+  /// In pt, this message translates to:
+  /// **'Juntos até o postal de {month}'**
+  String caravanGoalHeadline(String month);
+
+  /// No description provided for @caravanGoalTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Etapa de {month}'**
+  String caravanGoalTitle(String month);
+
+  /// No description provided for @caravanHereToday.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 passou hoje} other{{count} passaram hoje}}'**
+  String caravanHereToday(int count);
+
+  /// No description provided for @caravanLeading.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você vai na frente da caravana'**
+  String get caravanLeading;
+
+  /// No description provided for @caravanNextToPass.
+  ///
+  /// In pt, this message translates to:
+  /// **'{steps, plural, =1{1 passo até {name}} other{{steps} passos até {name}}}'**
+  String caravanNextToPass(int steps, String name);
+
+  /// No description provided for @caravanPostcardArrived.
+  ///
+  /// In pt, this message translates to:
+  /// **'Até aqui nos ajudou o Senhor'**
+  String get caravanPostcardArrived;
+
+  /// No description provided for @caravanPostcardInsight.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ninguém caminha sozinho: a caravana fez {count} cenas juntos.'**
+  String caravanPostcardInsight(int count);
+
+  /// No description provided for @caravanPostcardTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Caravana de {month}'**
+  String caravanPostcardTitle(String month);
+
+  /// No description provided for @caravanPostcardsSection.
+  ///
+  /// In pt, this message translates to:
+  /// **'Caravana'**
+  String get caravanPostcardsSection;
+
+  /// No description provided for @caravanSeeAll.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver a caravana toda'**
+  String get caravanSeeAll;
+
+  /// No description provided for @caravanSeePostcard.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver o postal'**
+  String get caravanSeePostcard;
+
+  /// No description provided for @caravanStop1.
+  ///
+  /// In pt, this message translates to:
+  /// **'1º pouso'**
+  String get caravanStop1;
+
+  /// No description provided for @caravanStop2.
+  ///
+  /// In pt, this message translates to:
+  /// **'2º pouso'**
+  String get caravanStop2;
+
+  /// No description provided for @caravanStopToast.
+  ///
+  /// In pt, this message translates to:
+  /// **'{stop}! Um pedaço do postal apareceu.'**
+  String caravanStopToast(String stop);
+
+  /// No description provided for @caravanWholeEnd.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fim da caravana'**
+  String get caravanWholeEnd;
+
+  /// No description provided for @caravanWholeTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'A caravana do mês'**
+  String get caravanWholeTitle;
+
+  /// No description provided for @caravanYouRank.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você está em {rank}º de {total}'**
+  String caravanYouRank(int rank, int total);
 
   /// No description provided for @categoryApocalipseBlurb.
   ///
@@ -5731,7 +5965,7 @@ abstract class AppLocalizations {
   /// No description provided for @juntosCaravanMonthBody.
   ///
   /// In pt, this message translates to:
-  /// **'Cada cena nova soma passos. A seta verde mostra quem subiu hoje. Zera todo dia 1 — quem chegou agora também pode liderar.'**
+  /// **'Cada cena nova soma passos. Todo dia 1 começa do zero.'**
   String get juntosCaravanMonthBody;
 
   /// No description provided for @juntosCaravanMonthCloses.
@@ -10629,6 +10863,18 @@ abstract class AppLocalizations {
   /// **'Trilhas por tema'**
   String get paywallPerkThemesTitle;
 
+  /// Benefício Plus, texto
+  ///
+  /// In pt, this message translates to:
+  /// **'A retrospectiva completa: a Bíblia que você acendeu, seus marcos, seu perfil do ano e o vídeo para compartilhar.'**
+  String get paywallPerkYearReviewBody;
+
+  /// Benefício Plus: retrospectiva do ano
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu ano inteiro'**
+  String get paywallPerkYearReviewTitle;
+
   /// No description provided for @paywallPitch.
   ///
   /// In pt, this message translates to:
@@ -10820,6 +11066,24 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Tudo do Peregrino+ liberado, sem pagar nada.'**
   String get paywallTimelineTodayBody;
+
+  /// Paywall: dízimo do Stway (manifesto)
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver o manifesto'**
+  String get paywallTitheLink;
+
+  /// Paywall: dízimo do Stway (manifesto)
+  ///
+  /// In pt, this message translates to:
+  /// **'10% da receita líquida do Peregrino+ vai para missões e tradução da Bíblia.'**
+  String get paywallTitheOffer;
+
+  /// Paywall: dízimo do Stway (manifesto)
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua assinatura também sustenta o campo: 10% da receita líquida vai para missões e tradução da Bíblia.'**
+  String get paywallTithePaid;
 
   /// Name of the supporter subscription
   ///
@@ -12933,6 +13197,48 @@ abstract class AppLocalizations {
   /// **'A reforçar'**
   String get profileAccuracyToStrengthen;
 
+  /// No description provided for @profileBestStreak.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{Melhor sequência: 1 dia} other{Melhor sequência: {count} dias}}'**
+  String profileBestStreak(int count);
+
+  /// Selo do livro concluído
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{livro concluído} other{livros concluídos}}'**
+  String profileBooksFinished(int count);
+
+  /// No description provided for @profileCoverBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolha a pintura de uma cena que você já fez. Quem abrir seu perfil vê esta capa.'**
+  String get profileCoverBody;
+
+  /// No description provided for @profileCoverChange.
+  ///
+  /// In pt, this message translates to:
+  /// **'Trocar capa'**
+  String get profileCoverChange;
+
+  /// No description provided for @profileCoverEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'Faça sua primeira cena para ganhar uma pintura de capa.'**
+  String get profileCoverEmpty;
+
+  /// No description provided for @profileCoverLatest.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mais recente'**
+  String get profileCoverLatest;
+
+  /// No description provided for @profileCoverTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Capa do perfil'**
+  String get profileCoverTitle;
+
   /// No description provided for @profileDaysOnTop.
   ///
   /// In pt, this message translates to:
@@ -12998,6 +13304,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'{rank}º no ranking do mês'**
   String profileMonthRank(int rank);
+
+  /// No description provided for @profileMonthWalked.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =0{Nenhum dia no mês} =1{1 dia no mês} other{{count} dias no mês}}'**
+  String profileMonthWalked(int count);
 
   /// No description provided for @profileNearAlbum.
   ///
@@ -15711,11 +16023,11 @@ abstract class AppLocalizations {
   /// **'{count, plural, =0{Ninguém bloqueado} =1{1 pessoa} other{{count} pessoas}}'**
   String settingsBlockedPeopleSubtitle(int count);
 
-  /// No description provided for @settingsCheck.
+  /// No description provided for @settingsCheckUpdate.
   ///
   /// In pt, this message translates to:
-  /// **'Verificar'**
-  String get settingsCheck;
+  /// **'Procurar atualização'**
+  String get settingsCheckUpdate;
 
   /// No description provided for @settingsCheckingUpdate.
   ///
@@ -15758,6 +16070,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Apagar dados'**
   String get settingsDangerTitle;
+
+  /// No description provided for @settingsDataTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seus dados'**
+  String get settingsDataTitle;
 
   /// No description provided for @settingsDays.
   ///
@@ -15878,6 +16196,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Último · {date}'**
   String settingsLastShort(String date);
+
+  /// No description provided for @settingsManifesto.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nosso manifesto'**
+  String get settingsManifesto;
+
+  /// No description provided for @settingsManifestoSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'No que cremos e o dízimo do Stway'**
+  String get settingsManifestoSubtitle;
 
   /// No description provided for @settingsManualBackup.
   ///
@@ -16113,11 +16443,17 @@ abstract class AppLocalizations {
   /// **'Ajude a continuar'**
   String get settingsSupport;
 
-  /// No description provided for @settingsTabAccountAbout.
+  /// No description provided for @settingsTabAbout.
   ///
   /// In pt, this message translates to:
-  /// **'Conta e sobre'**
-  String get settingsTabAccountAbout;
+  /// **'Sobre'**
+  String get settingsTabAbout;
+
+  /// No description provided for @settingsTabAccount.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conta'**
+  String get settingsTabAccount;
 
   /// No description provided for @settingsTabPreferences.
   ///
@@ -16490,6 +16826,42 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Terminação gramatical, não um verbete de dicionário.'**
   String get strongNoteSuffix;
+
+  /// No description provided for @studyAnswersOf.
+  ///
+  /// In pt, this message translates to:
+  /// **'{correct} de {total} respostas'**
+  String studyAnswersOf(int correct, int total);
+
+  /// No description provided for @studyDepthTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Profundidade'**
+  String get studyDepthTitle;
+
+  /// No description provided for @studyDepthToExplore.
+  ///
+  /// In pt, this message translates to:
+  /// **'a explorar'**
+  String get studyDepthToExplore;
+
+  /// No description provided for @studyFirstTry.
+  ///
+  /// In pt, this message translates to:
+  /// **'de primeira'**
+  String get studyFirstTry;
+
+  /// No description provided for @studyGesturesTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seus gestos'**
+  String get studyGesturesTitle;
+
+  /// No description provided for @studyWeeksTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Últimas semanas'**
+  String get studyWeeksTitle;
 
   /// No description provided for @suggestionAuthorEmail.
   ///
@@ -16922,6 +17294,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'{name} te deu uma trilha'**
   String trailGiftPickTitle(String name);
+
+  /// Perfil: entrada para resgatar passe de trilha por código
+  ///
+  /// In pt, this message translates to:
+  /// **'Cole o link ou digite o código de 8 letras'**
+  String get trailGiftProfileCaption;
+
+  /// Perfil: entrada para resgatar passe de trilha por código
+  ///
+  /// In pt, this message translates to:
+  /// **'Recebeu um passe de trilha?'**
+  String get trailGiftProfileTitle;
 
   /// No description provided for @trailGiftReceivedBody.
   ///
@@ -17384,6 +17768,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Não foi possível abrir a loja. Tente de novo.'**
   String get updateStoreOpenFailed;
+
+  /// No description provided for @vaultSeeAll.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver coleção completa'**
+  String get vaultSeeAll;
 
   /// No description provided for @verseStudyAttribution.
   ///
@@ -18093,6 +18483,30 @@ abstract class AppLocalizations {
   /// **'S,T,Q,Q,S,S,D'**
   String get widgetWeekdayInitials;
 
+  /// No description provided for @wordStatBooks.
+  ///
+  /// In pt, this message translates to:
+  /// **'Livros'**
+  String get wordStatBooks;
+
+  /// No description provided for @wordStatChapters.
+  ///
+  /// In pt, this message translates to:
+  /// **'Capítulos'**
+  String get wordStatChapters;
+
+  /// No description provided for @wordStatFavorites.
+  ///
+  /// In pt, this message translates to:
+  /// **'Favoritos'**
+  String get wordStatFavorites;
+
+  /// No description provided for @wordStatNotes.
+  ///
+  /// In pt, this message translates to:
+  /// **'Anotações'**
+  String get wordStatNotes;
+
   /// Retrospectiva do ano (docs/postais.md)
   ///
   /// In pt, this message translates to:
@@ -18138,6 +18552,12 @@ abstract class AppLocalizations {
   /// Retrospectiva do ano (docs/postais.md)
   ///
   /// In pt, this message translates to:
+  /// **'Não é sobre vencer ninguém. É sobre não parar.'**
+  String get yearReviewAnanStanding;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
   /// **'Caminhar junto deixa o caminho mais leve.'**
   String get yearReviewAnanTogether;
 
@@ -18146,6 +18566,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'O livro onde você mais esteve'**
   String get yearReviewBookEyebrow;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{livro concluído} other{livros concluídos}}'**
+  String yearReviewBooksFinishedWord(int count);
 
   /// Retrospectiva do ano (docs/postais.md)
   ///
@@ -18296,6 +18722,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Sua Bíblia acesa'**
   String get yearReviewMapEyebrow;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'concluído'**
+  String get yearReviewMapFinished;
 
   /// Retrospectiva do ano (docs/postais.md)
   ///
@@ -18482,6 +18914,24 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Minha caminhada na Bíblia em {year}, cena a cena, no STWAY: {link}'**
   String yearReviewShareText(String year, String link);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Na Caravana'**
+  String get yearReviewStandingEyebrow;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Em {month}, você ficou entre os {pct}% que mais caminharam, de {total} peregrinos.'**
+  String yearReviewStandingLine(String month, int pct, int total);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Top {pct}%'**
+  String yearReviewStandingTop(int pct);
 
   /// Retrospectiva do ano (docs/postais.md)
   ///

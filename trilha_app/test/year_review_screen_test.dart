@@ -78,7 +78,7 @@ void main() {
     tester,
   ) async {
     await pump(tester, plus: true);
-    expect(await walkAll(tester), 12);
+    expect(await walkAll(tester), 13);
     expect(tester.takeException(), isNull);
     expect(find.text('Compartilhar meu ano'), findsOneWidget);
     expect(find.text('O livro onde você mais esteve: Êxodo'), findsOneWidget);
@@ -138,6 +138,44 @@ void main() {
   });
 
   group('cálculos do ano', () {
+    test('Caravana: melhor mês com gente suficiente e só quando orgulha', () {
+      expect(
+        YearStanding.best({
+          3: (ahead: 0, total: 5),
+          5: (ahead: 9, total: 100),
+          9: (ahead: 30, total: 200),
+        })?.month,
+        5,
+      );
+      expect(YearStanding.best({5: (ahead: 9, total: 100)})?.topPct, 10);
+      expect(YearStanding.best({5: (ahead: 80, total: 100)}), isNull);
+      expect(YearStanding.best({5: (ahead: 0, total: 9)}), isNull);
+    });
+
+    test('livro concluído: último capítulo fecha o livro uma vez só', () async {
+      final p = ProgressService();
+      expect(await p.recordBibleReading('rt', 1, bookChapters: 4), isFalse);
+      await p.recordBibleReading('rt', 2, bookChapters: 4);
+      await p.recordBibleReading('rt', 4, bookChapters: 4);
+      expect(await p.recordBibleReading('rt', 3, bookChapters: 4), isTrue);
+      expect(p.isBookFinished('Rt'), isTrue);
+      expect(p.booksFinishedOn['rt'], isNotEmpty);
+      expect(await p.recordBibleReading('rt', 3, bookChapters: 4), isFalse);
+      expect(await p.markBookFinished('rt'), isFalse);
+    });
+
+    test('selo retroativo para livro já lido inteiro, sem repetir', () async {
+      final p = ProgressService()
+        ..readBibleChapters = ['jn:1', 'jn:2', 'jn:3', 'jn:4', 'ob:1'];
+      p.bibleChapterReadOn = {'jn:3': '2026-05-02', 'jn:4': '2026-05-09'};
+      await p.backfillFinishedBooks([
+        (abbrev: 'Jn', chapters: 4),
+        (abbrev: 'Ob', chapters: 1),
+        (abbrev: 'Mq', chapters: 7),
+      ]);
+      expect(p.booksFinishedOn, {'jn': '2026-05-09', 'ob': ''});
+    });
+
     test('maior sequência conta só dias seguidos', () {
       expect(
         YearReview.longestRun({

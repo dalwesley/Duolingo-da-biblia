@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:provider/provider.dart';
 
 import '../data/trail_repository.dart';
 import '../data/entry_trails.dart';
@@ -10,6 +11,7 @@ import '../l10n/l10n_global.dart';
 import '../models/caravan_profile_prefs.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/pilgrim_medals.dart';
+import '../models/trail.dart';
 import '../widgets/pilgrim_medal_vault_panel.dart';
 import '../services/backend_service.dart';
 import '../services/bible_service.dart';
@@ -20,12 +22,15 @@ import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'character_seals_strip.dart';
 import 'living_seed_card.dart';
-import 'juntos_chrome.dart';
+import 'near_rewards_card.dart';
+import 'pilgrim_profile_cover.dart' show PilgrimPostcardStrip;
+import 'pilgrim_vault.dart';
 import 'postcard_album.dart';
 import 'relic_panel.dart';
 import 'streak_week.dart';
 import 'ui_primitives.dart';
 import 'profile_privacy.dart';
+import 'profile_section.dart';
 
 String pilgrimFormatCount(int n) =>
     NumberFormat.decimalPattern(L10n.current.localeName).format(n);
@@ -140,17 +145,21 @@ Future<CaravanPilgrimProfile> loadEnrichedVisitorProfile({
   }
 }
 
-/// Selos e medalhas no mesmo cofre: uma tampa dourada, duas gavetas. No
-/// perfil próprio, uma terceira: os postais (privados, sem olho).
+/// Selos e medalhas no mesmo cofre — e, no perfil próprio, os postais e o
+/// "Quase lá" de cada gaveta. O baú em si mora em [PilgrimVault].
 class PilgrimChest extends StatefulWidget {
   final Widget seals;
   final Widget medals;
   final Widget? postcards;
+  final CaravanPilgrimProfile profile;
+  final bool isOwner;
 
   const PilgrimChest({
     super.key,
     required this.seals,
     required this.medals,
+    required this.profile,
+    required this.isOwner,
     this.postcards,
   });
 
@@ -159,73 +168,132 @@ class PilgrimChest extends StatefulWidget {
 }
 
 class _PilgrimChestState extends State<PilgrimChest> {
-  var _tab = 0;
+  late final Future<List<Trail>> _trails = TrailRepository().getTrails();
+
+  Widget _withNear(NearKind kind, Widget child) => widget.isOwner
+      ? Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            NearRewardsCard(kind: kind),
+            child,
+          ],
+        )
+      : child;
+
+  /// Vitrine no perfil: o conteúdo e, no pé, a linha fina do "Quase lá".
+  Widget? _slimNear(NearKind kind, Widget child) => widget.isOwner
+      ? Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            child,
+            NearRewardsCard(kind: kind, slim: true),
+          ],
+        )
+      : null;
+
+  /// Vitrine dos postais no perfil: uma fileira com os mais novos e a
+  /// linha do "Quase lá".
+  Widget _postcardsPreview(BuildContext context) {
+    final profile = widget.profile;
+    final List<({String slug, String? day})> scenes;
+    if (widget.isOwner) {
+      final p = context.read<ProgressService>();
+      final days = <String, String>{...p.missionCompletedOn, ...p.postcardsOn};
+      scenes = [
+        for (final e in days.entries) (slug: e.key, day: e.value as String?),
+      ]..sort((x, y) => (y.day ?? '').compareTo(x.day ?? ''));
+    } else {
+      scenes = [
+        for (final slug in profile.completedMissions.reversed)
+          (slug: slug, day: null),
+      ];
+    }
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        PilgrimPostcardStrip(
+          scenes: scenes,
+          showHeader: false,
+          max: 8,
+          viewerDone: widget.isOwner
+              ? null
+              : context.read<ProgressService>().completedMissions.toSet(),
+          onRedo: widget.isOwner
+              ? (slug) =>
+                    Navigator.of(context).pushNamed('/lesson', arguments: slug)
+              : null,
+        ),
+        if (widget.isOwner)
+          const NearRewardsCard(kind: NearKind.postcards, slim: true),
+      ],
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     final l10n = context.l10n;
+    final profile = widget.profile;
     final postcards = widget.postcards;
-    // No perfil próprio os postais vêm primeiro: é a parte mais visual da
-    // coleção. No perfil de outro peregrino, só medalhas e selos.
-    final tabs =
-        <
-          ({
-            String label,
-            Widget child,
-            Set<CaravanProfileSection>? eye,
-            String eyeLabel,
-          })
-        >[
-          if (postcards != null)
-            (
-              label: l10n.postcardsTitle,
-              child: postcards,
-              eye: null,
-              eyeLabel: '',
+    final postcardCount = postcards == null
+        ? null
+        : widget.isOwner
+        ? context.select(
+            (ProgressService p) =>
+                {...p.missionCompletedOn.keys, ...p.postcardsOn.keys}.length,
+          )
+        : profile.completedMissions.length;
+    final sealCount = CharacterSeals.unlocked(profile.completedMissions).length;
+
+    return FutureBuilder<List<Trail>>(
+      future: _trails,
+      builder: (context, snap) {
+        final trails = snap.data;
+        final medalCount = trails == null
+            ? null
+            : PilgrimMedals.unlockedCount(
+                profile,
+                trails,
+                ctx: PilgrimMedalEvalContext.fromProfile(profile),
+              );
+        return PilgrimVault(
+          title: l10n.pilgrimCollections,
+          seeAllLabel: l10n.vaultSeeAll,
+          drawers: [
+            // No perfil próprio os postais vêm primeiro: é a parte mais
+            // visual da coleção.
+            if (postcards != null)
+              VaultDrawer(
+                label: l10n.postcardsTitle,
+                glyph: CinematicGlyph.mail,
+                count: postcardCount,
+                preview: _postcardsPreview(context),
+                child: _withNear(NearKind.postcards, postcards),
+              ),
+            VaultDrawer(
+              label: l10n.medalVaultTitle,
+              glyph: CinematicGlyph.trophy,
+              count: medalCount,
+              preview: _slimNear(NearKind.medals, widget.medals),
+              child: _withNear(NearKind.medals, widget.medals),
+              eye: PrivacyEye(
+                sections: const {CaravanProfileSection.medals},
+                label: l10n.medalVaultTitle,
+              ),
             ),
-          (
-            label: l10n.medalVaultTitle,
-            child: widget.medals,
-            eye: const {CaravanProfileSection.medals},
-            eyeLabel: l10n.medalVaultTitle,
-          ),
-          (
-            label: l10n.sealsTitle,
-            child: widget.seals,
-            eye: const {CaravanProfileSection.trails},
-            eyeLabel: l10n.pilgrimSealsAndTrails,
-          ),
-        ];
-    final tab = _tab.clamp(0, tabs.length - 1);
-    final current = tabs[tab];
-    return RelicPanel(
-      accent: AppRoles.reward,
-      glow: 0.7,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          RelicChapter(
-            title: l10n.pilgrimCollections,
-            accent: AppRoles.reward,
-            divided: false,
-            action: current.eye == null
-                ? null
-                : PrivacyEye(sections: current.eye!, label: current.eyeLabel),
-          ),
-          const SizedBox(height: AppSpace.md),
-          AppSegmentedTabs(
-            index: tab,
-            accent: AppRoles.reward,
-            onChanged: (i) => setState(() => _tab = i),
-            items: [
-              for (final t in tabs)
-                (label: t.label, glyph: null, mark: null, alert: false),
-            ],
-          ),
-          const SizedBox(height: AppSpace.lg),
-          current.child,
-        ],
-      ),
+            VaultDrawer(
+              label: l10n.sealsTitle,
+              glyph: CinematicGlyph.seal,
+              count: sealCount,
+              preview: _slimNear(NearKind.seals, widget.seals),
+              child: _withNear(NearKind.seals, widget.seals),
+              eye: PrivacyEye(
+                sections: const {CaravanProfileSection.trails},
+                label: l10n.pilgrimSealsAndTrails,
+              ),
+            ),
+          ],
+        );
+      },
     );
   }
 }
@@ -255,6 +323,9 @@ class PilgrimProfileDetailSections extends StatelessWidget {
   /// CTA do estado vazio das medalhas (só dono).
   final VoidCallback? onStartWalking;
 
+  /// Postais de quem é visitado: entram no cofre, ao lado das medalhas.
+  final Widget? visitorPostcards;
+
   const PilgrimProfileDetailSections({
     super.key,
     required this.profile,
@@ -268,6 +339,7 @@ class PilgrimProfileDetailSections extends StatelessWidget {
     this.collectionsFirst = false,
     this.showOwnerPrivacyBanner = true,
     this.onStartWalking,
+    this.visitorPostcards,
   });
 
   bool _show(CaravanProfileSection section) =>
@@ -280,7 +352,7 @@ class PilgrimProfileDetailSections extends StatelessWidget {
 
     void add(Widget w) {
       if (sections.isNotEmpty) {
-        sections.add(const SizedBox(height: AppSpace.md));
+        sections.add(const SizedBox(height: AppSpace.section));
       }
       sections.add(w);
     }
@@ -309,13 +381,18 @@ class PilgrimProfileDetailSections extends StatelessWidget {
           PilgrimChest(
             seals: seals,
             medals: medals,
-            postcards: isOwner ? const PostcardAlbum() : null,
+            profile: profile,
+            isOwner: isOwner,
+            postcards: isOwner ? const PostcardAlbum() : visitorPostcards,
           ),
         );
-      } else if (showSeals) {
-        add(seals);
-      } else if (showMedals) {
-        add(medals);
+      } else {
+        if (!isOwner && visitorPostcards != null) add(visitorPostcards!);
+        if (showSeals) {
+          add(seals);
+        } else if (showMedals) {
+          add(medals);
+        }
       }
 
       if (collectionsFirst && _show(CaravanProfileSection.bible)) {
@@ -350,14 +427,14 @@ class PilgrimProfileDetailSections extends StatelessWidget {
       final featured = profile.featuredTrail;
       if (featured == null) {
         add(
-          RelicPanel(
-            child: RelicChapter(
-              title: L10n.current.pilgrimTrail,
-              whisper: L10n.current.pilgrimNoTrailYet,
-              action: PrivacyEye(
-                sections: const {CaravanProfileSection.trails},
-                label: L10n.current.pilgrimSealsAndTrails,
-              ),
+          ProfileSection(
+            accent: AppRoles.navTrails,
+            glyph: CinematicGlyph.path,
+            title: L10n.current.pilgrimTrail,
+            caption: L10n.current.pilgrimNoTrailYet,
+            trailing: PrivacyEye(
+              sections: const {CaravanProfileSection.trails},
+              label: L10n.current.pilgrimSealsAndTrails,
             ),
           ),
         );
@@ -429,11 +506,11 @@ class PilgrimProfileDetailSections extends StatelessWidget {
 
     if (!isOwner && sections.isEmpty && !suppressEmptyState) {
       add(
-        RelicPanel(
-          child: RelicChapter(
-            title: L10n.current.pilgrimPrivateTitle,
-            whisper: L10n.current.pilgrimPrivateBody,
-          ),
+        ProfileSection(
+          accent: AppRoles.chrome,
+          glyph: CinematicGlyph.lock,
+          title: L10n.current.pilgrimPrivateTitle,
+          caption: L10n.current.pilgrimPrivateBody,
         ),
       );
     }
@@ -453,35 +530,37 @@ class PilgrimProfileDetailSections extends StatelessWidget {
         : books == 0
         ? l10n.pilgrimChaptersWordMedal(chapters)
         : l10n.pilgrimChaptersBooks(chapters, books);
-    return RelicPanel(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          RelicChapter(
-            title: l10n.pilgrimScriptures,
-            whisper: subtitle,
-            action: PrivacyEye(
-              sections: const {CaravanProfileSection.bible},
-              label: l10n.pilgrimScriptures,
-            ),
-          ),
-          if (chapters > 0 && profile.completeBookNames.isNotEmpty) ...[
-            const SizedBox(height: 14),
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
+    final hasBooks = chapters > 0 && profile.completeBookNames.isNotEmpty;
+    return ProfileSection(
+      accent: AppRoles.navBible,
+      glyph: CinematicGlyph.book,
+      title: l10n.pilgrimScriptures,
+      caption: subtitle,
+      trailing: PrivacyEye(
+        sections: const {CaravanProfileSection.bible},
+        label: l10n.pilgrimScriptures,
+      ),
+      child: !hasBooks
+          ? null
+          : Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                for (final name in profile.completeBookNames.take(8))
-                  _ScriptureChip(name: name),
-                if (profile.completeBookNames.length > 8)
-                  _ScriptureChip(
-                    name: '+${profile.completeBookNames.length - 8}',
+                ...[
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [
+                      for (final name in profile.completeBookNames.take(8))
+                        _ScriptureChip(name: name),
+                      if (profile.completeBookNames.length > 8)
+                        _ScriptureChip(
+                          name: '+${profile.completeBookNames.length - 8}',
+                        ),
+                    ],
                   ),
+                ],
               ],
             ),
-          ],
-        ],
-      ),
     );
   }
 }
@@ -506,19 +585,18 @@ class PilgrimScenePoster extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final quote = insight?.trim();
-    return RelicPanel(
+    return ProfileSection(
+      accent: AppColors.clay,
+      glyph: CinematicGlyph.scroll,
+      title: context.l10n.profileSectionLastScene,
+      caption: trail,
+      trailing: PrivacyEye(
+        sections: const {CaravanProfileSection.lastMission},
+        label: context.l10n.profileSectionLastScene,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          RelicChapter(
-            title: context.l10n.profileSectionLastScene,
-            whisper: trail,
-            action: PrivacyEye(
-              sections: const {CaravanProfileSection.lastMission},
-              label: context.l10n.profileSectionLastScene,
-            ),
-          ),
-          const SizedBox(height: 12),
           Text(
             title,
             maxLines: 2,
@@ -765,41 +843,11 @@ class PilgrimLeadershipMonument extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RelicPanel(
-      elevated: true,
-      child: Row(
-        children: [
-          const RelicDisc(
-            glyph: CinematicGlyph.crown,
-            accent: AppRoles.reward,
-            size: 52,
-          ),
-          const SizedBox(width: 14),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  context.l10n.profileDaysOnTop(days),
-                  style: AppTypography.display(
-                    size: 20,
-                    weight: FontWeight.w900,
-                    color: Appearance.of(context).text,
-                  ),
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  context.l10n.pilgrimLedOverall,
-                  style: AppTypography.body(
-                    size: 13,
-                    color: Appearance.of(context).textSecondary,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
+    return ProfileSection(
+      accent: AppRoles.reward,
+      glyph: CinematicGlyph.crown,
+      title: context.l10n.profileDaysOnTop(days),
+      caption: context.l10n.pilgrimLedOverall,
     );
   }
 }
@@ -830,33 +878,26 @@ class PilgrimTrailPath extends StatelessWidget {
 
     return Padding(
       padding: EdgeInsets.only(bottom: compact ? 10 : 0),
-      child: RelicPanel(
-        accent: accent,
-        glow: compact ? null : 0.45,
-        padding: compact
-            ? AppMetrics.cardPaddingCompact
-            : AppMetrics.cardPadding,
+      child: ProfileSection(
+        accent: complete ? AppRoles.reward : AppRoles.navTrails,
+        glyph: CinematicGlyph.path,
+        title: compact
+            ? l10n.pilgrimTrail
+            : rest.isNotEmpty
+            ? (owner ? l10n.pilgrimYourTrails : l10n.pilgrimTrails)
+            : (owner ? l10n.pilgrimYourTrail : l10n.pilgrimTrail),
+        caption: rest.isEmpty
+            ? subtitle
+            : l10n.pilgrimTrailsInProgress(
+                rest.length + (trail.isComplete ? 0 : 1),
+              ),
+        trailing: PrivacyEye(
+          sections: const {CaravanProfileSection.trails},
+          label: l10n.pilgrimSealsAndTrails,
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            RelicChapter(
-              title: compact
-                  ? l10n.pilgrimTrail
-                  : rest.isNotEmpty
-                  ? (owner ? l10n.pilgrimYourTrails : l10n.pilgrimTrails)
-                  : (owner ? l10n.pilgrimYourTrail : l10n.pilgrimTrail),
-              whisper: rest.isEmpty
-                  ? subtitle
-                  : l10n.pilgrimTrailsInProgress(
-                      rest.length + (trail.isComplete ? 0 : 1),
-                    ),
-              accent: accent,
-              action: PrivacyEye(
-                sections: const {CaravanProfileSection.trails},
-                label: l10n.pilgrimSealsAndTrails,
-              ),
-            ),
-            const SizedBox(height: 10),
             Text(
               trail.title,
               maxLines: 1,
@@ -1197,19 +1238,16 @@ class PilgrimConstancyCard extends StatelessWidget {
     final a = Appearance.of(context);
     final played = playDates.toSet();
 
-    return RelicPanel(
+    return ProfileSection(
       accent: AppRoles.streak,
+      glyph: CinematicGlyph.flame,
+      title: context.l10n.pilgrimStreak,
+      caption: showStreak
+          ? context.l10n.pilgrimStreakOngoing
+          : context.l10n.pilgrimLastStudyDay,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          RelicChapter(
-            title: context.l10n.pilgrimStreak,
-            accent: AppRoles.streak,
-            whisper: showStreak
-                ? context.l10n.pilgrimStreakOngoing
-                : context.l10n.pilgrimLastStudyDay,
-          ),
-          const SizedBox(height: 14),
           Row(
             children: [
               RelicDisc(
@@ -1317,6 +1355,10 @@ class _ScriptureChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SoftBadge(text: name, accent: AppRoles.success);
+    return SoftBadge(
+      text: name,
+      glyph: CinematicGlyph.star,
+      accent: AppRoles.reward,
+    );
   }
 }

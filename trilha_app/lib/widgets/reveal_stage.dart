@@ -26,31 +26,40 @@ class RevealStage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RepaintBoundary(
-      child: AnimatedBuilder(
-        animation: rays,
-        builder: (_, _) => CustomPaint(
-          painter: _RevealStagePainter(
-            turn: rays.value,
-            color: color,
-            focus: focus,
+    // Brilho parado e raios pintados uma vez só; o giro é só transformação
+    // de camada (o gradiente dos raios é radial em volta do foco, então
+    // girar a camada inteira dá o mesmo quadro que girar o canvas).
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        RepaintBoundary(
+          child: CustomPaint(
+            painter: _RevealGlowPainter(color: color, focus: focus),
           ),
         ),
-      ),
+        AnimatedBuilder(
+          animation: rays,
+          builder: (_, child) => Transform.rotate(
+            angle: rays.value * 2 * math.pi,
+            alignment: Alignment(focus.dx * 2 - 1, focus.dy * 2 - 1),
+            child: child,
+          ),
+          child: RepaintBoundary(
+            child: CustomPaint(
+              painter: _RevealRaysPainter(color: color, focus: focus),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
 
-class _RevealStagePainter extends CustomPainter {
-  final double turn;
+class _RevealGlowPainter extends CustomPainter {
   final Color color;
   final Offset focus;
 
-  _RevealStagePainter({
-    required this.turn,
-    required this.color,
-    required this.focus,
-  });
+  _RevealGlowPainter({required this.color, required this.focus});
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -69,6 +78,23 @@ class _RevealStagePainter extends CustomPainter {
           stops: const [0, 0.45, 1],
         ).createShader(Rect.fromCircle(center: center, radius: reach * 0.6)),
     );
+  }
+
+  @override
+  bool shouldRepaint(_RevealGlowPainter old) =>
+      old.color != color || old.focus != focus;
+}
+
+class _RevealRaysPainter extends CustomPainter {
+  final Color color;
+  final Offset focus;
+
+  _RevealRaysPainter({required this.color, required this.focus});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final center = Offset(size.width * focus.dx, size.height * focus.dy);
+    final reach = size.longestSide;
     // Raios: cunhas finas que somem para fora.
     const count = 14;
     final rayPaint = Paint()
@@ -77,7 +103,6 @@ class _RevealStagePainter extends CustomPainter {
       ).createShader(Rect.fromCircle(center: center, radius: reach * 0.75));
     canvas.save();
     canvas.translate(center.dx, center.dy);
-    canvas.rotate(turn * 2 * math.pi);
     for (var i = 0; i < count; i++) {
       final a = i * 2 * math.pi / count;
       const half = math.pi / count * 0.38;
@@ -92,8 +117,8 @@ class _RevealStagePainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(_RevealStagePainter old) =>
-      old.turn != turn || old.color != color || old.focus != focus;
+  bool shouldRepaint(_RevealRaysPainter old) =>
+      old.color != color || old.focus != focus;
 }
 
 /// Barrinhas de progresso das etapas (como stories) e o fechar.

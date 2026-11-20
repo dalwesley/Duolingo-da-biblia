@@ -355,10 +355,10 @@
     "en": "Checking for updates…",
     "es": "Buscando actualización…"
   },
-  "settingsCheck": {
-    "pt": "Verificar",
-    "en": "Check",
-    "es": "Verificar"
+  "settingsCheckUpdate": {
+    "pt": "Procurar atualização",
+    "en": "Check for updates",
+    "es": "Buscar actualización"
   },
   "settingsReplayIntro": {
     "pt": "Rever introdução",
@@ -384,6 +384,16 @@
     "pt": "Nome, missão, visão e valores",
     "en": "Name, mission, vision, and values",
     "es": "Nombre, misión, visión y valores"
+  },
+  "settingsManifesto": {
+    "pt": "Nosso manifesto",
+    "en": "Our manifesto",
+    "es": "Nuestro manifiesto"
+  },
+  "settingsManifestoSubtitle": {
+    "pt": "No que cremos e o dízimo do Stway",
+    "en": "What we believe and Stway's tithe",
+    "es": "En qué creemos y el diezmo de Stway"
   },
   "settingsSupport": {
     "pt": "Ajude a continuar",
@@ -570,10 +580,15 @@
     "en": "Preferences",
     "es": "Preferencias"
   },
-  "settingsTabAccountAbout": {
-    "pt": "Conta e sobre",
-    "en": "Account & about",
-    "es": "Cuenta e info"
+  "settingsTabAccount": {
+    "pt": "Conta",
+    "en": "Account",
+    "es": "Cuenta"
+  },
+  "settingsTabAbout": {
+    "pt": "Sobre",
+    "en": "About",
+    "es": "Acerca"
   },
   "settingsThemeSheetTitle": {
     "pt": "Como você quer ver o app?",
@@ -612,5 +627,28 @@
     "pt": "Em que língua a gente conversa?",
     "en": "Which language should we speak?",
     "es": "¿En qué idioma hablamos?"
+  },
+  "settingsDataTitle": {
+    "pt": "Seus dados",
+    "en": "Your data",
+    "es": "Tus datos"
+  },
+  "paywallTitheOffer": {
+    "pt": "10% da receita líquida do Peregrino+ vai para missões e tradução da Bíblia.",
+    "en": "10% of Peregrino+ net revenue goes to missions and Bible translation.",
+    "es": "El 10% de los ingresos netos de Peregrino+ va a misiones y traducción de la Biblia.",
+    "description": "Paywall: dízimo do Stway (manifesto)"
+  },
+  "paywallTithePaid": {
+    "pt": "Sua assinatura também sustenta o campo: 10% da receita líquida vai para missões e tradução da Bíblia.",
+    "en": "Your subscription also supports the field: 10% of net revenue goes to missions and Bible translation.",
+    "es": "Tu suscripción también sostiene el campo: el 10% de los ingresos netos va a misiones y traducción de la Biblia.",
+    "description": "Paywall: dízimo do Stway (manifesto)"
+  },
+  "paywallTitheLink": {
+    "pt": "Ver o manifesto",
+    "en": "Read the manifesto",
+    "es": "Ver el manifiesto",
+    "description": "Paywall: dízimo do Stway (manifesto)"
   }
 }

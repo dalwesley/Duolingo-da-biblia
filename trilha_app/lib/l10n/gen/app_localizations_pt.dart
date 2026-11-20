@@ -228,6 +228,14 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get bibleBookFinished => 'Concluído';
+
+  @override
+  String bibleBookFinishedOn(String date) {
+    return 'Concluído em $date';
+  }
+
+  @override
   String bibleBookReadSemantics(String book, int read, int total) {
     return '$book, $read de $total capítulos lidos';
   }
@@ -563,6 +571,18 @@ class AppLocalizationsPt extends AppLocalizations {
       'Originais, Strong, concordância e referências';
 
   @override
+  String get bookFinishedBody =>
+      'Capítulo por capítulo, até o fim. O selo fica na sua Bíblia com a data de hoje.';
+
+  @override
+  String get bookFinishedEyebrow => 'Livro concluído';
+
+  @override
+  String bookFinishedTitle(String book) {
+    return 'Você concluiu $book';
+  }
+
+  @override
   String get canonEvangelhosBlurb => 'Mateus a João — a vida de Jesus';
 
   @override
@@ -621,6 +641,189 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get canonProfetasMenoresTitle => 'Profetas menores';
+
+  @override
+  String get caravanAlbumOnTheWay => 'A caminho';
+
+  @override
+  String caravanAnanArrived(String month) {
+    return 'Chegamos! O postal de $month é seu.';
+  }
+
+  @override
+  String caravanAnanArrivedNeed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Chegamos! Mais $count cenas suas e o postal é seu.',
+      one: 'Chegamos! Mais 1 cena sua e o postal é seu.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String caravanAnanFast(int day) {
+    return 'Que passo! Nesse ritmo, chegamos no dia $day, bem antes do fim do mês.';
+  }
+
+  @override
+  String caravanAnanFinal(int days, int left) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Últimos $days dias!',
+      one: 'Último dia!',
+    );
+    String _temp1 = intl.Intl.pluralLogic(
+      left,
+      locale: localeName,
+      other: 'Faltam $left cenas',
+      one: 'Falta 1 cena',
+    );
+    return '$_temp0 $_temp1 para a chegada — vamos juntos.';
+  }
+
+  @override
+  String caravanAnanNeedYou(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mais $count cenas e o postal de $month também é seu.',
+      one: 'Mais 1 cena e o postal de $month também é seu.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get caravanAnanSaying1 => 'Ninguém caminha sozinho por aqui.';
+
+  @override
+  String get caravanAnanSaying2 => 'Um passo de cada vez também é caminho.';
+
+  @override
+  String get caravanAnanSaying3 => 'Eu vou na frente — é só seguir a nuvem.';
+
+  @override
+  String get caravanAnanSaying4 =>
+      'Cada cena sua é um pedaço do caminho de todos.';
+
+  @override
+  String get caravanAnanSaying5 => 'Quem caminha junto chega mais longe.';
+
+  @override
+  String caravanAnanStalled(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'A caravana está parada há $days dias.',
+      one: 'A caravana parou ontem.',
+    );
+    return '$_temp0 Uma cena sua põe todo mundo em marcha de novo.';
+  }
+
+  @override
+  String get caravanAnanStart =>
+      'A etapa começou! Cada cena sua acende um pedaço do caminho.';
+
+  @override
+  String get caravanArrival => 'Chegada';
+
+  @override
+  String get caravanClaimedAnan => 'Até aqui nos ajudou o Senhor.';
+
+  @override
+  String get caravanGoalClaim => 'Revelar o postal';
+
+  @override
+  String caravanGoalCount(int done, int goal, int mine) {
+    String _temp0 = intl.Intl.pluralLogic(
+      mine,
+      locale: localeName,
+      other: '$mine são suas',
+      one: '1 é sua',
+      zero: 'nenhuma sua ainda',
+    );
+    return '$done de $goal cenas · $_temp0';
+  }
+
+  @override
+  String caravanGoalHeadline(String month) {
+    return 'Juntos até o postal de $month';
+  }
+
+  @override
+  String caravanGoalTitle(String month) {
+    return 'Etapa de $month';
+  }
+
+  @override
+  String caravanHereToday(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count passaram hoje',
+      one: '1 passou hoje',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get caravanLeading => 'Você vai na frente da caravana';
+
+  @override
+  String caravanNextToPass(int steps, String name) {
+    String _temp0 = intl.Intl.pluralLogic(
+      steps,
+      locale: localeName,
+      other: '$steps passos até $name',
+      one: '1 passo até $name',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get caravanPostcardArrived => 'Até aqui nos ajudou o Senhor';
+
+  @override
+  String caravanPostcardInsight(int count) {
+    return 'Ninguém caminha sozinho: a caravana fez $count cenas juntos.';
+  }
+
+  @override
+  String caravanPostcardTitle(String month) {
+    return 'Caravana de $month';
+  }
+
+  @override
+  String get caravanPostcardsSection => 'Caravana';
+
+  @override
+  String get caravanSeeAll => 'Ver a caravana toda';
+
+  @override
+  String get caravanSeePostcard => 'Ver o postal';
+
+  @override
+  String get caravanStop1 => '1º pouso';
+
+  @override
+  String get caravanStop2 => '2º pouso';
+
+  @override
+  String caravanStopToast(String stop) {
+    return '$stop! Um pedaço do postal apareceu.';
+  }
+
+  @override
+  String get caravanWholeEnd => 'Fim da caravana';
+
+  @override
+  String get caravanWholeTitle => 'A caravana do mês';
+
+  @override
+  String caravanYouRank(int rank, int total) {
+    return 'Você está em $rankº de $total';
+  }
 
   @override
   String get categoryApocalipseBlurb =>
@@ -3616,7 +3819,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get juntosCaravanMonthBody =>
-      'Cada cena nova soma passos. A seta verde mostra quem subiu hoje. Zera todo dia 1 — quem chegou agora também pode liderar.';
+      'Cada cena nova soma passos. Todo dia 1 começa do zero.';
 
   @override
   String get juntosCaravanMonthCloses => 'Fecha em';
@@ -6742,6 +6945,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get paywallPerkThemesTitle => 'Trilhas por tema';
 
   @override
+  String get paywallPerkYearReviewBody =>
+      'A retrospectiva completa: a Bíblia que você acendeu, seus marcos, seu perfil do ano e o vídeo para compartilhar.';
+
+  @override
+  String get paywallPerkYearReviewTitle => 'Seu ano inteiro';
+
+  @override
   String get paywallPitch =>
       'Seu apoio mantém o Stway grátis para quem não pode pagar.\nE você ainda ganha os benefícios abaixo.';
 
@@ -6878,6 +7088,17 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get paywallTimelineTodayBody =>
       'Tudo do Peregrino+ liberado, sem pagar nada.';
+
+  @override
+  String get paywallTitheLink => 'Ver o manifesto';
+
+  @override
+  String get paywallTitheOffer =>
+      '10% da receita líquida do Peregrino+ vai para missões e tradução da Bíblia.';
+
+  @override
+  String get paywallTithePaid =>
+      'Sua assinatura também sustenta o campo: 10% da receita líquida vai para missões e tradução da Bíblia.';
 
   @override
   String get paywallTitle => 'Peregrino+';
@@ -8371,6 +8592,45 @@ class AppLocalizationsPt extends AppLocalizations {
   String get profileAccuracyToStrengthen => 'A reforçar';
 
   @override
+  String profileBestStreak(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Melhor sequência: $count dias',
+      one: 'Melhor sequência: 1 dia',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String profileBooksFinished(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'livros concluídos',
+      one: 'livro concluído',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get profileCoverBody =>
+      'Escolha a pintura de uma cena que você já fez. Quem abrir seu perfil vê esta capa.';
+
+  @override
+  String get profileCoverChange => 'Trocar capa';
+
+  @override
+  String get profileCoverEmpty =>
+      'Faça sua primeira cena para ganhar uma pintura de capa.';
+
+  @override
+  String get profileCoverLatest => 'Mais recente';
+
+  @override
+  String get profileCoverTitle => 'Capa do perfil';
+
+  @override
   String profileDaysOnTop(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8419,6 +8679,18 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String profileMonthRank(int rank) {
     return '$rankº no ranking do mês';
+  }
+
+  @override
+  String profileMonthWalked(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dias no mês',
+      one: '1 dia no mês',
+      zero: 'Nenhum dia no mês',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -10147,7 +10419,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get settingsCheck => 'Verificar';
+  String get settingsCheckUpdate => 'Procurar atualização';
 
   @override
   String get settingsCheckingUpdate => 'Procurando atualização…';
@@ -10170,6 +10442,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get settingsDangerTitle => 'Apagar dados';
+
+  @override
+  String get settingsDataTitle => 'Seus dados';
 
   @override
   String settingsDays(int count) {
@@ -10247,6 +10522,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String settingsLastShort(String date) {
     return 'Último · $date';
   }
+
+  @override
+  String get settingsManifesto => 'Nosso manifesto';
+
+  @override
+  String get settingsManifestoSubtitle => 'No que cremos e o dízimo do Stway';
 
   @override
   String get settingsManualBackup => 'Backup manual';
@@ -10401,7 +10682,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get settingsSupport => 'Ajude a continuar';
 
   @override
-  String get settingsTabAccountAbout => 'Conta e sobre';
+  String get settingsTabAbout => 'Sobre';
+
+  @override
+  String get settingsTabAccount => 'Conta';
 
   @override
   String get settingsTabPreferences => 'Preferências';
@@ -10671,6 +10955,26 @@ class AppLocalizationsPt extends AppLocalizations {
       'Terminação gramatical, não um verbete de dicionário.';
 
   @override
+  String studyAnswersOf(int correct, int total) {
+    return '$correct de $total respostas';
+  }
+
+  @override
+  String get studyDepthTitle => 'Profundidade';
+
+  @override
+  String get studyDepthToExplore => 'a explorar';
+
+  @override
+  String get studyFirstTry => 'de primeira';
+
+  @override
+  String get studyGesturesTitle => 'Seus gestos';
+
+  @override
+  String get studyWeeksTitle => 'Últimas semanas';
+
+  @override
   String get suggestionAuthorEmail => 'E-mail';
 
   @override
@@ -10925,6 +11229,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String trailGiftPickTitle(String name) {
     return '$name te deu uma trilha';
   }
+
+  @override
+  String get trailGiftProfileCaption =>
+      'Cole o link ou digite o código de 8 letras';
+
+  @override
+  String get trailGiftProfileTitle => 'Recebeu um passe de trilha?';
 
   @override
   String trailGiftReceivedBody(String name) {
@@ -11247,6 +11558,9 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get updateStoreOpenFailed =>
       'Não foi possível abrir a loja. Tente de novo.';
+
+  @override
+  String get vaultSeeAll => 'Ver coleção completa';
 
   @override
   String get verseStudyAttribution =>
@@ -11740,6 +12054,18 @@ class AppLocalizationsPt extends AppLocalizations {
   String get widgetWeekdayInitials => 'S,T,Q,Q,S,S,D';
 
   @override
+  String get wordStatBooks => 'Livros';
+
+  @override
+  String get wordStatChapters => 'Capítulos';
+
+  @override
+  String get wordStatFavorites => 'Favoritos';
+
+  @override
+  String get wordStatNotes => 'Anotações';
+
+  @override
   String yearReviewAdventWord(int total) {
     return 'de $total dias do Advento';
   }
@@ -11769,11 +12095,26 @@ class AppLocalizationsPt extends AppLocalizations {
   String get yearReviewAnanMode => 'É aqui que o seu olhar está mais afiado.';
 
   @override
+  String get yearReviewAnanStanding =>
+      'Não é sobre vencer ninguém. É sobre não parar.';
+
+  @override
   String get yearReviewAnanTogether =>
       'Caminhar junto deixa o caminho mais leve.';
 
   @override
   String get yearReviewBookEyebrow => 'O livro onde você mais esteve';
+
+  @override
+  String yearReviewBooksFinishedWord(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'livros concluídos',
+      one: 'livro concluído',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get yearReviewCardDays => 'dias no caminho';
@@ -11896,6 +12237,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get yearReviewMapEyebrow => 'Sua Bíblia acesa';
+
+  @override
+  String get yearReviewMapFinished => 'concluído';
 
   @override
   String get yearReviewMapPostcard => 'com postal';
@@ -12047,6 +12391,19 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String yearReviewShareText(String year, String link) {
     return 'Minha caminhada na Bíblia em $year, cena a cena, no STWAY: $link';
+  }
+
+  @override
+  String get yearReviewStandingEyebrow => 'Na Caravana';
+
+  @override
+  String yearReviewStandingLine(String month, int pct, int total) {
+    return 'Em $month, você ficou entre os $pct% que mais caminharam, de $total peregrinos.';
+  }
+
+  @override
+  String yearReviewStandingTop(int pct) {
+    return 'Top $pct%';
   }
 
   @override

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../data/season_walk_catalog.dart';
 import '../l10n/app_language.dart';
+import '../services/remote_config_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
@@ -14,6 +15,7 @@ enum PlusPerk {
   manyTrails,
   themeTrails,
   postcards,
+  yearReview,
   giftTrail,
   season,
   readingPlans,
@@ -25,16 +27,27 @@ enum PlusPerk {
   /// 2026 é de todos): a lista mostra só o que o Plus abre de fato.
   static bool get seasonIsPlus => !SeasonWalkCatalog.current().isGift;
 
+  /// Retrospectiva no Plus só quando ela já abriu (Remote Config
+  /// `year_review_from`): não se vende o que ainda não dá para ver.
+  static bool get yearReviewIsOpen =>
+      RemoteConfigService.instance.yearReviewOpen;
+
+  static bool _now(PlusPerk p) => switch (p) {
+    PlusPerk.season => seasonIsPlus,
+    PlusPerk.yearReview => yearReviewIsOpen,
+    _ => true,
+  };
+
   /// Todos os que valem agora.
   static List<PlusPerk> get available => [
     for (final p in values)
-      if (p != PlusPerk.season || seasonIsPlus) p,
+      if (_now(p)) p,
   ];
 
   /// Destaques que valem agora.
   static List<PlusPerk> get availableHighlights => [
     for (final p in highlights)
-      if (p != PlusPerk.season || seasonIsPlus) p,
+      if (_now(p)) p,
   ];
 
   /// Os que abrem as listas curtas (ofertas, aviso, perfil).
@@ -42,6 +55,7 @@ enum PlusPerk {
     PlusPerk.manyTrails,
     PlusPerk.themeTrails,
     PlusPerk.postcards,
+    PlusPerk.yearReview,
     PlusPerk.giftTrail,
     PlusPerk.season,
     PlusPerk.readingPlans,
@@ -56,6 +70,7 @@ enum PlusPerk {
     PlusPerk.badge => CinematicGlyph.gift,
     PlusPerk.recognition => CinematicGlyph.heart,
     PlusPerk.postcards => CinematicGlyph.share,
+    PlusPerk.yearReview => CinematicGlyph.star,
     PlusPerk.giftTrail => CinematicGlyph.people,
   };
 
@@ -68,6 +83,7 @@ enum PlusPerk {
     PlusPerk.badge => l10n.paywallPerkBadgeTitle,
     PlusPerk.recognition => l10n.paywallPerkRecognitionTitle,
     PlusPerk.postcards => l10n.paywallPerkPostcardsTitle,
+    PlusPerk.yearReview => l10n.paywallPerkYearReviewTitle,
     PlusPerk.giftTrail => l10n.paywallPerkGiftTitle,
   };
 
@@ -80,6 +96,7 @@ enum PlusPerk {
     PlusPerk.badge => l10n.paywallPerkBadgeBody,
     PlusPerk.recognition => l10n.paywallPerkRecognitionBody,
     PlusPerk.postcards => l10n.paywallPerkPostcardsBody,
+    PlusPerk.yearReview => l10n.paywallPerkYearReviewBody,
     PlusPerk.giftTrail => l10n.paywallPerkGiftBody,
   };
 }

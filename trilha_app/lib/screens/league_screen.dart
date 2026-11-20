@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../data/season_walk_catalog.dart';
 import '../services/content_catalog_service.dart';
 import 'season_walk_screen.dart';
@@ -37,6 +38,8 @@ import '../utils/juntos_invite_pace.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../utils/content_filter.dart';
+import '../widgets/juntos_stage.dart';
+import '../widgets/profile_section.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/anan_speech.dart';
 import '../widgets/corner_board.dart';
@@ -46,6 +49,8 @@ import '../widgets/juntos_chrome.dart';
 import '../widgets/medal_art.dart';
 import '../widgets/juntos_inbox.dart';
 import '../widgets/juntos_invite_sheet.dart';
+import '../widgets/caravan_goal_card.dart';
+import '../widgets/postcard.dart' show showPostcardReveal;
 import '../widgets/caravan_pilgrim_sheet.dart';
 import '../widgets/accept_invite_sheet.dart';
 import '../widgets/app_sheet.dart';
@@ -59,7 +64,6 @@ import '../widgets/companion_invite_confirm_sheet.dart';
 import '../widgets/companion_nudge_sheet.dart';
 import '../widgets/hero_card_atmosphere.dart';
 import '../widgets/icon_well.dart';
-import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
 import '../widgets/shell_tab_scope.dart';
 import '../widgets/cloud_mascot.dart';
@@ -135,6 +139,33 @@ class _LeagueScreenState extends State<LeagueScreen>
   static const _tabCaravana = 1;
   static const _tabGrupos = 2;
 
+  /// O trecho da Caravana (ver [CaravanWindow]), já como [LeagueEntry].
+  ({
+    List<LeagueEntry> top,
+    List<LeagueEntry> above,
+    List<LeagueEntry> below,
+    List<LeagueEntry> online,
+    int ahead,
+    int total,
+  })?
+  _window;
+
+  /// Meta coletiva do mês: cenas somadas e quem caminhou no mês passado.
+  ({int scenes, int lastMonthWalkers})? _goal;
+
+  static LeagueEntry _entryOf(CloudPlayer p) => LeagueEntry(
+    uid: p.uid,
+    name: p.name,
+    steps: p.steps,
+    lastWalkDate: p.lastWalkDate,
+    lastSeenDate: p.lastSeenDate,
+    photoUrl: p.photoUrl,
+    portraitStyle: p.portraitStyle,
+    weekSteps: p.weekSteps,
+    dayStartSteps: p.dayStartSteps,
+    plus: p.plus,
+  );
+
   int _tab = _tabCaravana;
   int _companhiaPane = 0; // 0 = amizade, 1 = desafio
   bool _handlingInvite = false;
@@ -154,7 +185,7 @@ class _LeagueScreenState extends State<LeagueScreen>
       ..forward();
     InviteDeepLinkService.instance.addListener(_onPendingInvite);
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      _settle().then((_) => _maybeInvitePitch());
+      _settle().then((_) => _afterSettle());
       if (widget.active) _consumePendingInvite();
     });
   }
@@ -169,11 +200,69 @@ class _LeagueScreenState extends State<LeagueScreen>
       _consumePendingInvite();
       // Recarrega ranking ao abrir a aba — evita lista vazia se o 1º fetch
       // rodou antes do backend estar pronto ou falhou em silêncio.
-      _settle().then((_) => _maybeInvitePitch());
+      _settle().then((_) => _afterSettle());
     }
   }
 
   bool _pitchOpen = false;
+
+  /// Depois de carregar: primeiro o postal do mês que fechou (se houver),
+  /// senão o convite.
+  Future<void> _afterSettle() async {
+    if (await _maybeRevealLastMonth()) return;
+    await _maybeInvitePitch();
+  }
+
+  /// Meses já conferidos nesta sessão (não repete a leitura).
+  static final _lastMonthChecked = <String>{};
+  static const _keyCaravanMissed = 'caravanGoalMissedMonth';
+
+  /// O mês virou com a meta batida: na próxima visita à Caravana, quem fez
+  /// [LeagueService.goalMinScenes] cenas no mês que fechou ganha a
+  /// revelação do postal (sem prazo). `true` quando revelou.
+  Future<bool> _maybeRevealLastMonth() async {
+    if (!mounted || !widget.active || _tab != _tabCaravana) return false;
+    if (GuestGate.isGuest(context)) return false;
+    final progress = context.read<ProgressService>();
+    final backend = context.read<BackendService>();
+    final prev = LeagueService.previousMonthKey(LeagueService.monthKey());
+    if (progress.caravanPostcards.containsKey(prev)) return false;
+    final mine = progress.monthScenesIn(prev);
+    if (mine < LeagueService.goalMinScenes) return false;
+    if (!_lastMonthChecked.add(prev)) return false;
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      if (prefs.getString(_keyCaravanMissed) == prev) return false;
+      final goal = await backend
+          .fetchCaravanGoal(month: prev)
+          .timeout(const Duration(seconds: 10));
+      if (goal == null) {
+        _lastMonthChecked.remove(prev); // sem rede: tenta na próxima
+        return false;
+      }
+      final done = math.max(goal.scenes, mine);
+      if (done < LeagueService.monthSceneGoal(goal.lastMonthWalkers)) {
+        await prefs.setString(_keyCaravanMissed, prev);
+        return false;
+      }
+      if (!mounted || !widget.active) {
+        _lastMonthChecked.remove(prev);
+        return false;
+      }
+      await progress.saveCaravanPostcard(prev);
+      if (!mounted) return true;
+      await showPostcardReveal(
+        context,
+        CaravanPostcards.of(context, prev, scenes: done),
+        eyebrow: context.l10n.caravanPostcardArrived,
+      );
+      return true;
+    } catch (e) {
+      _lastMonthChecked.remove(prev);
+      debugPrint('Postal da Caravana do mês passado falhou: $e');
+      return false;
+    }
+  }
 
   /// Folha de convite (Advento ou indicação), no ritmo de
   /// [JuntosInvitePace]. O botão abre o compartilhar externo que já existe
@@ -396,25 +485,35 @@ class _LeagueScreenState extends State<LeagueScreen>
         return;
       }
 
-      final overallPlayers = await backend.fetchMonthlyPlayers().timeout(
-        const Duration(seconds: 12),
-      );
+      final loaded = await Future.wait([
+        backend.fetchCaravanWindow(mySteps: progress.currentMonthSteps),
+        backend.fetchCaravanGoal(),
+      ]).timeout(const Duration(seconds: 12));
+      final window = loaded[0] as CaravanWindow?;
+      final goal = loaded[1] as ({int scenes, int lastMonthWalkers})?;
+      if (window == null) throw Exception('Trecho da Caravana vazio');
 
       if (!mounted) return;
       setState(() {
+        _window = (
+          top: [for (final p in window.top) _entryOf(p)],
+          above: [for (final p in window.above) _entryOf(p)],
+          below: [for (final p in window.below) _entryOf(p)],
+          online: [for (final p in window.online) _entryOf(p)],
+          ahead: window.ahead,
+          total: window.total,
+        );
+        if (goal != null) _goal = goal;
+        // Todos que o trecho trouxe — para convites e para "quem é real".
+        final seen = <String>{};
         _loadedOverallPlayers = [
-          for (final p in overallPlayers)
-            LeagueEntry(
-              uid: p.uid,
-              name: p.name,
-              steps: p.steps,
-              lastWalkDate: p.lastWalkDate,
-              lastSeenDate: p.lastSeenDate,
-              photoUrl: p.photoUrl,
-              portraitStyle: p.portraitStyle,
-              weekSteps: p.weekSteps,
-              dayStartSteps: p.dayStartSteps,
-            ),
+          for (final p in [
+            ...window.top,
+            ...window.above,
+            ...window.below,
+            ...window.online,
+          ])
+            if (seen.add(p.uid)) _entryOf(p),
         ];
         _playersLoading = false;
         _playersLoadedOnce = true;
@@ -691,40 +790,61 @@ class _LeagueScreenState extends State<LeagueScreen>
     final today = DateTime.now().toIso8601String().substring(0, 10);
     context.select((BackendService b) => (b.uid, b.userPhotoUrl));
     final backend = context.read<BackendService>();
-    final walk = SeasonWalkCatalog.current();
+    // A caminhada da estação (Advento) vive na Home, não aqui: a Caravana
+    // fica com a etapa do mês e o ranking.
     final children = <Widget>[
-      // Caminhada coletiva da temporada: a caravana inteira no mesmo roteiro.
-      if (SeasonWalkTogetherCard.visibleOn(walk, DateTime.now())) ...[
-        _reveal(1, const SeasonWalkTogetherCard()),
-        const SizedBox(height: AppSpace.md),
-      ],
       _reveal(1, const _CaravanStageCard()),
       const SizedBox(height: AppSpace.md),
+      // A etapa do mês: 2º cartão, logo depois do cabeçalho do ranking.
+      if (_goal case final goal? when !GuestGate.isGuest(context)) ...[
+        _reveal(
+          1,
+          CaravanGoalCard(
+            scenes: goal.scenes,
+            goal: LeagueService.monthSceneGoal(goal.lastMonthWalkers),
+            myScenes: progress.currentMonthScenes,
+          ),
+        ),
+        const SizedBox(height: AppSpace.md),
+      ],
     ];
 
-    final entries = league.monthStandings(
-      userName: progress.publicUserName,
-      userMonthSteps: progress.currentMonthSteps,
-      userWeekSteps: progress.currentWeekSteps,
-      userDayStartSteps: progress.monthStartOfToday,
-      userUid: backend.uid,
-      userLastWalkDate: progress.lastPlayedDate,
-      userLastSeenDate: today,
-      userPhotoUrl: backend.userPhotoUrl,
-      userPortraitStyle: progress.settings.portraitStyle,
-      realPlayers: _overallPlayers,
+    final me = LeagueEntry(
+      uid: backend.uid,
+      name: progress.publicUserName,
+      steps: progress.currentMonthSteps,
+      isUser: true,
+      lastWalkDate: progress.lastPlayedDate,
+      lastSeenDate: today,
+      photoUrl: backend.userPhotoUrl,
+      portraitStyle: progress.settings.portraitStyle,
+      weekSteps: progress.currentWeekSteps,
+      dayStartSteps: progress.monthStartOfToday,
+      plus: backend.myPlus,
     );
-    final userRank = league.userRank(entries);
-    if (userRank == 1 &&
-        LeagueService.fieldIsCompetitive(_overallPlayers.length)) {
+    final w = _window;
+    final rows = w == null
+        ? const <({LeagueEntry? entry, int rank})>[]
+        : LeagueService.caravanWindow(
+            me: me,
+            top: _withoutBlocked(w.top),
+            above: _withoutBlocked(w.above),
+            below: _withoutBlocked(w.below),
+            ahead: w.ahead,
+            total: w.total,
+            reach: LeagueService.reachSteps(
+              monthSteps: progress.currentMonthSteps,
+              monthScenes: progress.currentMonthScenes,
+            ),
+          );
+    final peers = math.max(0, (w?.total ?? 0) - 1);
+    final overallCompetitive = LeagueService.fieldIsCompetitive(peers);
+    final userRank = w == null ? 0 : w.ahead + 1;
+    if (userRank == 1 && overallCompetitive) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         progress.recordLeaderDay();
       });
     }
-
-    final overallCompetitive = LeagueService.fieldIsCompetitive(
-      _overallPlayers.length,
-    );
 
     if (GuestGate.isGuest(context) &&
         context.read<BackendService>().isFirebaseReady) {
@@ -745,13 +865,21 @@ class _LeagueScreenState extends State<LeagueScreen>
 
     if (!overallCompetitive && !_playersLoading) {
       children.add(_reveal(2, const _CaravanEmptyCard()));
-    } else if (entries.isNotEmpty) {
+    } else if (rows.isNotEmpty) {
       children.add(
         _reveal(
           2,
           _LeaderboardBoard(
-            entries: entries,
+            rows: rows,
+            myRank: userRank,
+            total: w?.total ?? rows.length,
+            online: _withoutBlocked(w?.online ?? const []),
+            me: me,
             onOpenOwnProfile: widget.onOpenOwnProfile,
+            onSeeAll:
+                (w?.total ?? 0) > rows.where((r) => r.entry != null).length
+                ? () => _openWholeCaravan(context, me)
+                : null,
           ),
         ),
       );
@@ -794,11 +922,29 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (pane == 0 && !rc.companionEnabled) pane = 1;
     if (pane == 1 && !rc.challengeEnabled) pane = 0;
 
+    final me = (
+      name: progress.userName,
+      photo: backend.userPhotoUrl,
+      seed: backend.uid ?? progress.userName,
+      style: progress.settings.portraitStyle,
+      cover: profileCoverSceneOf(progress),
+    );
+    final desafioEmpty =
+        backend.isActive &&
+        !(corners.loading && corners.mine.isEmpty) &&
+        CornerScoreboard.of(corners.mine, backend.uid ?? '').isEmpty;
+
     Widget? stageBody;
     if (pane == 0 && companions.isLoaded && companions.companions.isEmpty) {
-      stageBody = const _AmizadeExplainer();
+      stageBody = _CompanionEmptyStage(
+        me: me,
+        loading: companions.loading,
+        onInvite: () => _createCompanion(context),
+      );
     } else if (pane == 1) {
-      stageBody = const _DesafioExplainer();
+      stageBody = desafioEmpty
+          ? _DesafioEmptyStage(me: me, onPick: () => _openCornerPick(context))
+          : const _DesafioExplainer();
     }
 
     final list = <Widget>[
@@ -828,7 +974,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     ];
 
     if (pane == 1) {
-      list.addAll(_desafioPane(context));
+      list.addAll(_desafioPane(context, pickInStage: desafioEmpty));
       return list;
     }
 
@@ -1013,19 +1159,23 @@ class _LeagueScreenState extends State<LeagueScreen>
   }
 
   /// Desafio sob Companhia — mesmo padrão da Amizade: stage → cards → CTA.
-  List<Widget> _desafioPane(BuildContext context) {
+  List<Widget> _desafioPane(BuildContext context, {bool pickInStage = false}) {
     return [
       CornerBoard(
+        showEmpty: false,
         onOpenMission: widget.onOpenMission ?? (_) {},
         onOpenCaravana: () => setState(() => _tab = _tabCaravana),
       ),
-      const SizedBox(height: AppSpace.md),
-      CopperCta(
-        label: CornerCopy.boardPickCta,
-        leading: CinematicGlyph.flag,
-        trailing: null,
-        onTap: () => _openCornerPick(context),
-      ),
+      // Vazio: a ação já mora no palco acima.
+      if (!pickInStage) ...[
+        const SizedBox(height: AppSpace.md),
+        CopperCta(
+          label: CornerCopy.boardPickCta,
+          leading: CinematicGlyph.flag,
+          trailing: null,
+          onTap: () => _openCornerPick(context),
+        ),
+      ],
     ];
   }
 
@@ -1559,7 +1709,8 @@ class _LeagueScreenState extends State<LeagueScreen>
       const SizedBox(height: AppSpace.lg),
       _reveal(
         2,
-        GlassCard(
+        ProfilePanel(
+          accent: AppRoles.lamp,
           padding: AppMetrics.cardPadding,
           child: RoomMembersList(
             members: _seatedMembers(members, room.ownerId),
@@ -2019,6 +2170,18 @@ class _LeagueScreenState extends State<LeagueScreen>
     final goal = int.tryParse(trimmed);
     if (goal == null) return;
     await context.read<RoomService>().setWeeklyGoal(goal);
+  }
+
+  Future<void> _openWholeCaravan(BuildContext context, LeagueEntry me) {
+    ActHaptics.light();
+    return Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => _WholeCaravanScreen(
+          me: me,
+          onOpenOwnProfile: widget.onOpenOwnProfile,
+        ),
+      ),
+    );
   }
 
   List<LeagueEntry> _caravanPeople(String? myUid) {
@@ -2719,7 +2882,7 @@ class _CompanhiaStageCard extends StatelessWidget {
       accent: tone,
       // Solto na tela (sem card em volta), igual à Bíblia; dentro do card
       // fica o poço translúcido.
-      fill: hasBody ? null : Appearance.of(context).cardFill,
+      fill: Appearance.of(context).cardFill,
       onChanged: (i) {
         ActHaptics.tap();
         onPaneChanged(i);
@@ -2744,17 +2907,14 @@ class _CompanhiaStageCard extends StatelessWidget {
     // empurrava a companhia para baixo da dobra. O card volta quando há
     // explicação embaixo (sem companhia ou no Desafio).
     if (!hasBody) return tabs;
-    return GlassCard(
-      tint: tone,
-      glow: 0.32,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          tabs,
-          const SizedBox(height: AppSpace.lg),
-          body!,
-        ],
-      ),
+    // A explicação é um quadro do Perfil logo abaixo da troca.
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        tabs,
+        const SizedBox(height: AppSpace.md),
+        body!,
+      ],
     );
   }
 }
@@ -2795,16 +2955,18 @@ class _CaravanStageCard extends StatelessWidget {
     final weekScenes = context.select(
       (ProgressService p) => p.currentWeekScenes,
     );
-    return GlassCard(
-      tint: AppRoles.navTogether,
-      glow: 0.55,
+    // Sem pintura: a capa do cartão da etapa logo abaixo já é a imagem.
+    // Aqui o protagonista é o relógio do mês.
+    return ProfilePanel(
+      accent: tone,
+      lit: true,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
             l10n.juntosCaravanMonthTitle,
             textAlign: TextAlign.center,
-            style: AppTypography.display(size: 22, color: a.text),
+            style: AppTypography.display(size: 26, color: a.text),
           ),
           const SizedBox(height: 4),
           Text(
@@ -2818,13 +2980,13 @@ class _CaravanStageCard extends StatelessWidget {
               color: a.textSecondary,
             ),
           ),
-          const SizedBox(height: AppSpace.md),
+          const SizedBox(height: AppSpace.lg),
           SeasonCountdown(
+            large: true,
             opens: _monthClosesAt(),
             color: a.onDark ? tone : a.ink(tone),
             muted: a.textSecondary,
             accent: tone,
-            large: true,
             centered: true,
             blink: blink,
             label: l10n.juntosCaravanMonthCloses,
@@ -2968,7 +3130,14 @@ class _ExplainerSteps extends StatelessWidget {
   final List<(CinematicGlyph, String)> steps;
   final Color accent;
 
-  const _ExplainerSteps({required this.steps, this.accent = AppRoles.presence});
+  /// Uma cor por passo (acesos todos); sem ela, só o do meio acende.
+  final List<Color>? colors;
+
+  const _ExplainerSteps({
+    required this.steps,
+    this.accent = AppRoles.presence,
+    this.colors,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -3003,12 +3172,12 @@ class _ExplainerSteps extends StatelessWidget {
                       children: [
                         IconWell(
                           size: well,
-                          accent: i == mid ? accent : a.place,
-                          glowing: i == mid,
+                          accent: colors?[i] ?? (i == mid ? accent : a.place),
+                          glowing: colors != null || i == mid,
                           child: CinematicIcon(
                             glyph: steps[i].$1,
                             size: AppMetrics.iconMd,
-                            accent: i == mid ? accent : a.place,
+                            accent: colors?[i] ?? (i == mid ? accent : a.place),
                             framed: false,
                           ),
                         ),
@@ -3020,7 +3189,9 @@ class _ExplainerSteps extends StatelessWidget {
                             size: 12,
                             height: 1.3,
                             weight: FontWeight.w700,
-                            color: i == mid ? a.textSecondary : a.textFaint,
+                            color: colors != null || i == mid
+                                ? a.textSecondary
+                                : a.textFaint,
                           ),
                         ),
                       ],
@@ -3035,39 +3206,248 @@ class _ExplainerSteps extends StatelessWidget {
   }
 }
 
-class _AmizadeExplainer extends StatelessWidget {
-  const _AmizadeExplainer();
+typedef _Me = ({
+  String name,
+  String? photo,
+  String seed,
+  PortraitStyle style,
+  String? cover,
+});
+
+String _firstName(BuildContext context, String name) =>
+    name.trim().isEmpty ? context.l10n.commonYou : name.trim().split(' ').first;
+
+/// Sem companhia: o palco pintado com a sua capa — você de um lado, o lugar
+/// vazio do outro e o fio apagado com o Anan esperando no meio.
+class _CompanionEmptyStage extends StatelessWidget {
+  final _Me me;
+  final bool loading;
+  final VoidCallback onInvite;
+
+  const _CompanionEmptyStage({
+    required this.me,
+    required this.loading,
+    required this.onInvite,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = context.l10n;
+    final a = Appearance.of(context);
+    return PaintedStage(
+      accent: AppRoles.presence,
+      sceneSlug: me.cover,
+      chipGlyph: CinematicGlyph.link,
+      chipLabel: l10n.juntosCompanionEmptyTitle,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const SizedBox(height: AppSpace.lg),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _BondMember(
+                name: _firstName(context, me.name),
+                walked: false,
+                highlight: false,
+                isUser: true,
+                photoUrl: me.photo,
+                seed: me.seed,
+                style: me.style,
+              ),
+              const Expanded(child: _WaitingThread(face: CloudFace.triste)),
+              const _EmptySeat(),
+            ],
+          ),
+          const SizedBox(height: AppSpace.lg),
+          Text(
+            l10n.juntosCompanionExplainerTitle,
+            textAlign: TextAlign.center,
+            style: AppTypography.display(size: 26, color: a.text, height: 1.1),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            l10n.juntosCompanionExplainerBody,
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 13,
+              height: 1.45,
+              color: a.textSecondary,
+            ),
+          ),
+          const SizedBox(height: AppSpace.lg),
+          StageSteps(
+            steps: [
+              (
+                CinematicGlyph.path,
+                l10n.juntosCompanionStep1,
+                AppRoles.presence,
+              ),
+              (
+                CinematicGlyph.flame,
+                l10n.juntosCompanionStep2,
+                AppRoles.streak,
+              ),
+              (CinematicGlyph.lamp, l10n.juntosCompanionStep3, AppRoles.lamp),
+            ],
+          ),
+          const SizedBox(height: AppSpace.lg),
+          if (loading)
+            const AppSpinner()
+          else
+            CopperCta(
+              label: l10n.juntosInviteCompanion,
+              onTap: onInvite,
+              leading: CinematicGlyph.people,
+              trailing: null,
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Sem desafio: o mesmo palco — você contra o "?" e a bandeira de domingo
+/// com o prêmio no meio do fio.
+class _DesafioEmptyStage extends StatelessWidget {
+  final _Me me;
+  final VoidCallback onPick;
+
+  const _DesafioEmptyStage({required this.me, required this.onPick});
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = context.l10n;
+    final a = Appearance.of(context);
+    return PaintedStage(
+      accent: AppRoles.navTrails,
+      sceneSlug: me.cover,
+      chipGlyph: CinematicGlyph.flag,
+      chipLabel: CornerCopy.boardEmptyTitle,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const SizedBox(height: AppSpace.lg),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _BondMember(
+                name: _firstName(context, me.name),
+                walked: false,
+                highlight: false,
+                isUser: true,
+                photoUrl: me.photo,
+                seed: me.seed,
+                style: me.style,
+              ),
+              const Expanded(child: _FinishFlag()),
+              const _EmptySeat(),
+            ],
+          ),
+          const SizedBox(height: AppSpace.lg),
+          Text(
+            l10n.juntosChallengeExplainerTitle,
+            textAlign: TextAlign.center,
+            style: AppTypography.display(size: 26, color: a.text, height: 1.1),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            l10n.juntosChallengeExplainerBody(CornerCopy.reward),
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 13,
+              height: 1.45,
+              color: a.textSecondary,
+            ),
+          ),
+          const SizedBox(height: AppSpace.lg),
+          StageSteps(
+            steps: [
+              (
+                CinematicGlyph.path,
+                l10n.juntosChallengeStep1,
+                AppRoles.presence,
+              ),
+              (
+                CinematicGlyph.calendar,
+                l10n.juntosChallengeStep2,
+                AppRoles.navTrails,
+              ),
+              (CinematicGlyph.rise, l10n.juntosChallengeStep3, AppRoles.reward),
+            ],
+          ),
+          const SizedBox(height: AppSpace.lg),
+          CopperCta(
+            label: CornerCopy.boardPickCta,
+            leading: CinematicGlyph.flag,
+            trailing: null,
+            onTap: onPick,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Bandeira de chegada no meio do fio, com o prêmio embaixo.
+class _FinishFlag extends StatelessWidget {
+  const _FinishFlag();
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Text(
-          context.l10n.juntosCompanionExplainerTitle,
-          textAlign: TextAlign.center,
-          style: AppTypography.display(size: 24, color: a.text),
-        ),
-        const SizedBox(height: AppSpace.sm),
-        Text(
-          context.l10n.juntosCompanionExplainerBody,
-          textAlign: TextAlign.center,
-          style: AppTypography.body(
-            size: 13,
-            height: 1.45,
-            color: a.textSecondary,
+    final gold = a.onDark ? AppRoles.reward : a.ink(AppRoles.reward);
+    return SizedBox(
+      height: 76,
+      child: Stack(
+        alignment: Alignment.center,
+        children: [
+          const BondThread(state: BondState.none, color: AppRoles.navTrails),
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                width: 46,
+                height: 46,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  gradient: RadialGradient(
+                    colors: [
+                      AppRoles.reward.withValues(alpha: 0.45),
+                      AppRoles.reward.withValues(alpha: 0.12),
+                    ],
+                  ),
+                  border: Border.all(
+                    color: AppRoles.reward.withValues(alpha: 0.8),
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppRoles.reward.withValues(alpha: 0.45),
+                      blurRadius: 16,
+                    ),
+                  ],
+                ),
+                alignment: Alignment.center,
+                child: CinematicIcon(
+                  glyph: CinematicGlyph.flag,
+                  size: 20,
+                  accent: a.onDark ? Colors.white : gold,
+                  framed: false,
+                ),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                CornerCopy.reward,
+                style: AppTypography.label(
+                  size: 11,
+                  weight: FontWeight.w800,
+                  color: gold,
+                ),
+              ),
+            ],
           ),
-        ),
-        const SizedBox(height: AppSpace.lg),
-        _ExplainerSteps(
-          steps: [
-            (CinematicGlyph.path, context.l10n.juntosCompanionStep1),
-            (CinematicGlyph.flame, context.l10n.juntosCompanionStep2),
-            (CinematicGlyph.lamp, context.l10n.juntosCompanionStep3),
-          ],
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
@@ -3077,35 +3457,73 @@ class _DesafioExplainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Text(
-          context.l10n.juntosChallengeExplainerTitle,
-          textAlign: TextAlign.center,
-          style: AppTypography.display(size: 24, color: a.text),
-        ),
-        const SizedBox(height: AppSpace.sm),
-        Text(
-          context.l10n.juntosChallengeExplainerBody(CornerCopy.reward),
-          textAlign: TextAlign.center,
-          style: AppTypography.body(
-            size: 13,
-            height: 1.45,
-            color: a.textSecondary,
-          ),
-        ),
-        const SizedBox(height: AppSpace.lg),
-        _ExplainerSteps(
-          accent: AppRoles.presence,
-          steps: [
-            (CinematicGlyph.path, context.l10n.juntosChallengeStep1),
-            (CinematicGlyph.calendar, context.l10n.juntosChallengeStep2),
-            (CinematicGlyph.rise, context.l10n.juntosChallengeStep3),
-          ],
-        ),
+    return _ExplainerSection(
+      accent: AppRoles.navTrails,
+      glyph: CinematicGlyph.flag,
+      title: context.l10n.juntosChallengeExplainerTitle,
+      body: context.l10n.juntosChallengeExplainerBody(CornerCopy.reward),
+      face: CloudFace.feliz,
+      steps: [
+        (CinematicGlyph.path, context.l10n.juntosChallengeStep1),
+        (CinematicGlyph.calendar, context.l10n.juntosChallengeStep2),
+        (CinematicGlyph.rise, context.l10n.juntosChallengeStep3),
       ],
+      colors: const [AppRoles.presence, AppRoles.navTrails, AppRoles.reward],
+    );
+  }
+}
+
+/// Quadro de explicação na língua do Perfil: cabeçalho com disco e serifa,
+/// o Anan ao lado da frase e os três passos acesos, cada um na sua cor.
+class _ExplainerSection extends StatelessWidget {
+  final Color accent;
+  final CinematicGlyph glyph;
+  final String title;
+  final String body;
+  final CloudFace face;
+  final List<(CinematicGlyph, String)> steps;
+  final List<Color> colors;
+
+  const _ExplainerSection({
+    required this.accent,
+    required this.glyph,
+    required this.title,
+    required this.body,
+    required this.face,
+    required this.steps,
+    required this.colors,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ProfileSection(
+      accent: accent,
+      glyph: glyph,
+      title: title,
+      lit: true,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              CloudMascot(face: face, size: 64),
+              const SizedBox(width: AppSpace.md),
+              Expanded(
+                child: Text(
+                  body,
+                  style: AppTypography.body(
+                    size: 13,
+                    height: 1.45,
+                    color: Appearance.of(context).textSecondary,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: AppSpace.lg),
+          _ExplainerSteps(steps: steps, accent: accent, colors: colors),
+        ],
+      ),
     );
   }
 }
@@ -3125,7 +3543,8 @@ class _RoomsOfflineCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     // EmptyState já traz o próprio respiro — o card não soma padding.
-    return GlassCard(
+    return ProfilePanel(
+      accent: AppRoles.risk,
       padding: EdgeInsets.zero,
       child: EmptyState(
         mark: CloudMascot(
@@ -3180,15 +3599,15 @@ class _RoomsEmptyState extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return GlassCard(
-      glow: 0.7,
+    final cover = context.select(profileCoverSceneOf);
+    return PaintedStage(
+      accent: AppRoles.lamp,
+      sceneSlug: cover,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Center(child: SectionLabel(context.l10n.juntosRoomsEmptyEyebrow)),
-          const SizedBox(height: AppSpace.lg),
-          const _CircleOfSeats(),
-          const SizedBox(height: AppSpace.lg),
+          // Sem selo nem roda: a pintura respira sozinha em cima.
+          SizedBox(height: cover == null ? AppSpace.sm : 120),
           Text(
             context.l10n.juntosRoomsEmptyTitle,
             textAlign: TextAlign.center,
@@ -3211,21 +3630,21 @@ class _RoomsEmptyState extends StatelessWidget {
                 glyph: CinematicGlyph.book,
                 label: context.l10n.juntosRoomBenefitStudy,
                 detail: context.l10n.juntosRoomBenefitStudyDetail,
-                color: a.textSecondary,
+                color: AppRoles.navBible,
               ),
               const SizedBox(width: 8),
               _RoomBenefit(
                 glyph: CinematicGlyph.people,
                 label: context.l10n.juntosRoomBenefitList,
                 detail: context.l10n.juntosRoomBenefitListDetail,
-                color: a.textSecondary,
+                color: AppRoles.presence,
               ),
               const SizedBox(width: 8),
               _RoomBenefit(
                 glyph: CinematicGlyph.bell,
                 label: context.l10n.juntosRoomBenefitWave,
                 detail: context.l10n.juntosRoomBenefitWaveDetail,
-                color: a.textSecondary,
+                color: AppRoles.lamp,
               ),
             ],
           ),
@@ -3257,70 +3676,6 @@ class _RoomsEmptyState extends StatelessWidget {
   }
 }
 
-/// Roda de lugares em volta do Anan — o grupo antes de ter gente.
-class _CircleOfSeats extends StatelessWidget {
-  const _CircleOfSeats();
-
-  @override
-  Widget build(BuildContext context) {
-    const size = 140.0;
-    const seat = 22.0;
-    const n = 6;
-    final a = Appearance.of(context);
-    return Center(
-      child: SizedBox(
-        width: size,
-        height: size,
-        child: Stack(
-          children: [
-            Positioned.fill(
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  gradient: RadialGradient(
-                    colors: [
-                      a.place.withValues(alpha: 0.18),
-                      Colors.transparent,
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            const Center(child: CloudMascot(face: CloudFace.triste, size: 76)),
-            for (var i = 0; i < n; i++)
-              Positioned(
-                left:
-                    size / 2 +
-                    (size / 2 - seat / 2) *
-                        math.cos(2 * math.pi * i / n - math.pi / 2) -
-                    seat / 2,
-                top:
-                    size / 2 +
-                    (size / 2 - seat / 2) *
-                        math.sin(2 * math.pi * i / n - math.pi / 2) -
-                    seat / 2,
-                child: Container(
-                  width: seat,
-                  height: seat,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    // O primeiro lugar é você — a mesma marca de "você" das listas.
-                    color: i == 0
-                        ? a.selected.withValues(alpha: 0.85)
-                        : a.insetFill,
-                    border: Border.all(
-                      color: i == 0 ? a.selected : a.cardBorder,
-                    ),
-                  ),
-                ),
-              ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
 class _RoomBenefit extends StatelessWidget {
   final CinematicGlyph glyph;
   final String label;
@@ -3337,24 +3692,55 @@ class _RoomBenefit extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    // Ficha de vidro acesa na cor do benefício, como os passos do palco.
     return Expanded(
-      child: InsetPanel(
-        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 10),
+      child: Container(
+        padding: const EdgeInsets.fromLTRB(6, 10, 6, 10),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(AppRadii.md),
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              color.withValues(alpha: 0.16),
+              color.withValues(alpha: 0.04),
+            ],
+          ),
+          border: Border.all(color: color.withValues(alpha: 0.35)),
+        ),
         child: Column(
           children: [
-            CinematicIcon(
-              glyph: glyph,
-              size: AppMetrics.iconMd,
-              accent: a.place,
-              framed: false,
+            Container(
+              width: 30,
+              height: 30,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: color.withValues(alpha: 0.2),
+                border: Border.all(color: color.withValues(alpha: 0.7)),
+                boxShadow: [
+                  BoxShadow(
+                    color: color.withValues(alpha: 0.35),
+                    blurRadius: 10,
+                  ),
+                ],
+              ),
+              alignment: Alignment.center,
+              child: CinematicIcon(
+                glyph: glyph,
+                size: 15,
+                accent: a.onDark
+                    ? Color.lerp(color, Colors.white, 0.2)!
+                    : a.ink(color),
+                framed: false,
+              ),
             ),
-            const SizedBox(height: 5),
+            const SizedBox(height: 6),
             Text(
               label,
               textAlign: TextAlign.center,
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              style: AppTypography.label(letterSpacing: 0, color: color),
+              style: AppTypography.label(letterSpacing: 0, color: a.text),
             ),
             const SizedBox(height: 2),
             Text(
@@ -3376,8 +3762,6 @@ class _RoomBenefit extends StatelessWidget {
   }
 }
 
-/// Topo do herói do grupo: nome, tipo (Família, Célula…) e o menu de quem
-/// conduz (trocar estudo, editar, meta, liderança).
 class _RoomTitle extends StatelessWidget {
   final StudyRoom room;
   final bool isOwner;
@@ -3535,10 +3919,9 @@ class _RoomHearth extends StatelessWidget {
         !claimed && walkedToday && total > 0 && (goalReached || halfway);
     final bonus = RemoteConfigService.instance.roomChestBonusSteps;
 
-    return GlassCard(
-      tint: ready ? AppRoles.presence : null,
-      glow: 0.35 + 0.6 * (total == 0 ? 0 : lit / total),
-      elevated: ready,
+    return ProfilePanel(
+      accent: (ready ? AppRoles.presence : null) ?? AppRoles.lamp,
+      lit: ready,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -3555,13 +3938,13 @@ class _RoomHearth extends StatelessWidget {
                 ? AppRoles.risk
                 : urgent <= 3
                 ? AppRoles.reward
-                : AppRoles.navTogether,
+                : AppRoles.lamp,
             muted: a.textSecondary,
             accent: urgent <= 1
                 ? AppRoles.risk
                 : urgent <= 3
                 ? AppRoles.reward
-                : AppRoles.navTogether,
+                : AppRoles.lamp,
             large: true,
             centered: true,
             // Esperar o começo não é urgência: sem piscar.
@@ -3717,109 +4100,317 @@ class _TextInputDialogState extends State<_TextInputDialog> {
 }
 
 class _LeaderboardBoard extends StatelessWidget {
-  final List<LeagueEntry> entries;
+  /// O trecho ([LeagueService.caravanWindow]): `entry == null` = `···`.
+  final List<({LeagueEntry? entry, int rank})> rows;
+  final int myRank;
+  final int total;
+
+  /// Quem passou por aqui hoje (sem o próprio usuário).
+  final List<LeagueEntry> online;
+  final LeagueEntry me;
   final VoidCallback? onOpenOwnProfile;
 
-  const _LeaderboardBoard({required this.entries, this.onOpenOwnProfile});
+  /// Abre a Caravana inteira; `null` quando o cartão já mostra todos.
+  final VoidCallback? onSeeAll;
+
+  const _LeaderboardBoard({
+    required this.rows,
+    required this.myRank,
+    required this.total,
+    required this.online,
+    required this.me,
+    this.onOpenOwnProfile,
+    this.onSeeAll,
+  });
 
   @override
   Widget build(BuildContext context) {
-    final list = entries;
     final a = Appearance.of(context);
-    final online = LeagueService.onlineNow(list);
-    final upToday = LeagueService.placesUpToday(list);
-    final countLabel = LeagueService.onlineCountLabel(online.length);
+    final l10n = context.l10n;
+    final people = [
+      for (final r in rows)
+        if (r.entry != null) r.entry!,
+    ];
+    final upToday = LeagueService.placesUpToday(people);
+    final next = LeagueService.nextToPass(rows);
+    final onlineNow = [
+      if (me.isOnlineToday) (entry: me, rank: myRank),
+      for (final p in online)
+        (
+          entry: p,
+          rank: rows
+              .firstWhere(
+                (r) => r.entry?.uid == p.uid,
+                orElse: () => (entry: null, rank: 0),
+              )
+              .rank,
+        ),
+    ];
+    final countLabel = l10n.caravanHereToday(onlineNow.length);
 
-    final onlineChip = Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        if (online.isNotEmpty) ...[
-          _AvatarCluster(
-            people: [
-              for (final p in online.take(5))
-                (
-                  name: p.entry.name,
-                  isUser: p.entry.isUser,
-                  live: true,
-                  photoUrl: p.entry.photoUrl,
-                  seed: p.entry.uid ?? p.entry.name,
-                  style: p.entry.portraitStyle,
-                ),
-            ],
-            radius: AppMetrics.avatarSm,
-          ),
-          const SizedBox(width: 8),
-        ] else ...[
-          Container(
-            width: 8,
-            height: 8,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: AppRoles.presence.withValues(alpha: 0.35),
+    final header = Padding(
+      padding: const EdgeInsets.fromLTRB(10, 0, 4, 6),
+      child: Row(
+        children: [
+          Expanded(
+            child: Text(
+              l10n.caravanYouRank(myRank, total),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.title(size: 14, color: a.text),
             ),
           ),
-          const SizedBox(width: 6),
-        ],
-        Text(
-          countLabel,
-          style: AppTypography.label(
-            size: 10,
-            letterSpacing: 0,
-            color: online.isEmpty ? a.textFaint : AppRoles.presence,
-          ),
-        ),
-      ],
-    );
-
-    final rows = <Widget>[
-      if (online.isEmpty)
-        Padding(
-          padding: const EdgeInsets.fromLTRB(14, 0, 10, 8),
-          child: onlineChip,
-        )
-      else
-        Padding(
-          padding: const EdgeInsets.fromLTRB(8, 0, 4, 6),
-          child: Align(
-            alignment: Alignment.centerLeft,
-            child: Semantics(
+          if (onlineNow.isNotEmpty)
+            Semantics(
               button: true,
-              label: context.l10n.juntosOnlineSemantics(countLabel),
+              label: l10n.juntosOnlineSemantics(countLabel),
               child: Material(
                 color: Colors.transparent,
                 child: InkWell(
                   onTap: () => _showCaravanOnlineSheet(
                     context,
-                    people: online,
+                    people: onlineNow,
                     onOpenOwnProfile: onOpenOwnProfile,
                   ),
                   borderRadius: BorderRadius.circular(AppRadii.pill),
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(6, 4, 8, 4),
-                    child: onlineChip,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        _AvatarCluster(
+                          people: [
+                            for (final p in onlineNow.take(4))
+                              (
+                                name: p.entry.name,
+                                isUser: p.entry.isUser,
+                                live: true,
+                                photoUrl: p.entry.photoUrl,
+                                seed: p.entry.uid ?? p.entry.name,
+                                style: p.entry.portraitStyle,
+                              ),
+                          ],
+                          radius: AppMetrics.avatarSm,
+                        ),
+                        const SizedBox(width: 6),
+                        Text(
+                          countLabel,
+                          style: AppTypography.label(
+                            size: 10,
+                            letterSpacing: 0,
+                            color: AppRoles.presence,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-        ),
-    ];
+        ],
+      ),
+    );
 
-    for (var i = 0; i < list.length; i++) {
-      rows.add(
+    final children = <Widget>[header];
+    var person = 0;
+    for (var i = 0; i < rows.length; i++) {
+      final r = rows[i];
+      final entry = r.entry;
+      if (entry == null) {
+        children.add(const _WindowGap());
+        continue;
+      }
+      final nextRow = i + 1 < rows.length ? rows[i + 1].entry : null;
+      children.add(
         _StandingRow(
-          entry: list[i],
-          rank: i + 1,
-          placesUpToday: upToday[i],
-          showDivider: i < list.length - 1 && !list[i + 1].isUser,
+          entry: entry,
+          rank: r.rank,
+          placesUpToday: upToday[person++],
+          showDivider: nextRow != null && !nextRow.isUser && !entry.isUser,
+          chase: entry.isUser
+              ? (next == null
+                    ? (myRank == 1 && total > 1 ? l10n.caravanLeading : null)
+                    // Só o primeiro nome: a frase cabe numa linha.
+                    : l10n.caravanNextToPass(
+                        next.steps,
+                        next.who.name.trim().split(RegExp(r'\s+')).first,
+                      ))
+              : null,
           onOpenOwnProfile: onOpenOwnProfile,
         ),
       );
     }
+    if (onSeeAll != null) {
+      children.addAll([
+        const SizedBox(height: 4),
+        GhostCta(
+          label: l10n.caravanSeeAll,
+          leading: CinematicGlyph.people,
+          expanded: true,
+          onTap: onSeeAll,
+        ),
+      ]);
+    }
 
-    return GlassCard(
+    return ProfilePanel(
+      accent: AppRoles.navTogether,
       padding: const EdgeInsets.fromLTRB(6, 12, 6, 8),
-      child: Column(children: rows),
+      child: Column(children: children),
+    );
+  }
+}
+
+/// `···` entre o pódio e o seu trecho.
+class _WindowGap extends StatelessWidget {
+  const _WindowGap();
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 2),
+      child: Center(
+        child: Text(
+          '···',
+          style: AppTypography.title(
+            size: 18,
+            weight: FontWeight.w900,
+            color: a.textFaint,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// A Caravana inteira, de 20 em 20 (a sua linha aparece no lugar dela).
+class _WholeCaravanScreen extends StatefulWidget {
+  final LeagueEntry me;
+  final VoidCallback? onOpenOwnProfile;
+
+  const _WholeCaravanScreen({required this.me, this.onOpenOwnProfile});
+
+  @override
+  State<_WholeCaravanScreen> createState() => _WholeCaravanScreenState();
+}
+
+class _WholeCaravanScreenState extends State<_WholeCaravanScreen> {
+  final _people = <LeagueEntry>[];
+  final _scroll = ScrollController();
+  Object? _cursor;
+  bool _loading = false;
+  bool _done = false;
+  String? _error;
+
+  @override
+  void initState() {
+    super.initState();
+    _scroll.addListener(() {
+      if (_scroll.position.extentAfter < 400) _more();
+    });
+    _more();
+  }
+
+  @override
+  void dispose() {
+    _scroll.dispose();
+    super.dispose();
+  }
+
+  Future<void> _more() async {
+    if (_loading || _done) return;
+    setState(() {
+      _loading = true;
+      _error = null;
+    });
+    try {
+      final page = await context.read<BackendService>().fetchCaravanPage(
+        after: _cursor,
+      );
+      if (!mounted) return;
+      final myUid = widget.me.uid;
+      final blocked = ModerationService.instance;
+      setState(() {
+        for (final p in page.players) {
+          if (blocked.isBlocked(p.uid)) continue;
+          _people.add(
+            p.uid == myUid ? widget.me : _LeagueScreenState._entryOf(p),
+          );
+        }
+        _cursor = page.cursor;
+        _done = page.cursor == null;
+        _loading = false;
+      });
+    } catch (e) {
+      debugPrint('Página da Caravana falhou: $e');
+      if (!mounted) return;
+      setState(() {
+        _loading = false;
+        _error = context.l10n.juntosCaravanLoadError;
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final up = LeagueService.placesUpToday(_people);
+    return Scaffold(
+      backgroundColor: a.stageFill,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        foregroundColor: a.text,
+        title: Text(
+          l10n.caravanWholeTitle,
+          style: AppTypography.title(size: 17, color: a.text),
+        ),
+      ),
+      body: Column(
+        children: [
+          Expanded(
+            child: ListView.builder(
+              controller: _scroll,
+              padding: const EdgeInsets.fromLTRB(10, 6, 10, 24),
+              itemCount: _people.length + 1,
+              itemBuilder: (context, i) {
+                if (i < _people.length) {
+                  return _StandingRow(
+                    entry: _people[i],
+                    rank: i + 1,
+                    placesUpToday: up[i],
+                    showDivider: i < _people.length - 1,
+                    onOpenOwnProfile: widget.onOpenOwnProfile,
+                  );
+                }
+                if (_error != null) {
+                  return InlineNotice(
+                    message: _error!,
+                    busy: _loading,
+                    onRetry: _more,
+                  );
+                }
+                if (_done) {
+                  return Padding(
+                    padding: const EdgeInsets.all(AppSpace.lg),
+                    child: Center(
+                      child: Text(
+                        l10n.caravanWholeEnd,
+                        style: AppTypography.label(color: a.textFaint),
+                      ),
+                    ),
+                  );
+                }
+                return const Padding(
+                  padding: EdgeInsets.all(AppSpace.lg),
+                  child: AppSpinner(),
+                );
+              },
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
@@ -3919,8 +4510,10 @@ class _OnlineSheetRow extends StatelessWidget {
           decoration: _youRowDecoration(entry.isUser, a),
           child: Row(
             children: [
-              _RankMark(rank: rank),
-              const SizedBox(width: 10),
+              if (rank > 0) ...[
+                _RankMark(rank: rank),
+                const SizedBox(width: 10),
+              ],
               UserAvatar(
                 name: entry.name,
                 radius: AppMetrics.avatarMd,
@@ -3980,12 +4573,17 @@ class _StandingRow extends StatelessWidget {
   final bool showDivider;
   final VoidCallback? onOpenOwnProfile;
 
+  /// Na sua linha: quanto falta para passar quem está logo acima. Vai no
+  /// lugar das medalhas.
+  final String? chase;
+
   const _StandingRow({
     required this.entry,
     required this.rank,
     this.placesUpToday = 0,
     this.showDivider = false,
     this.onOpenOwnProfile,
+    this.chase,
   });
 
   Color _stepsTone(AppearanceStyle a, Color? medal) => medal ?? a.text;
@@ -4049,14 +4647,18 @@ class _StandingRow extends StatelessWidget {
           ],
         ),
         const SizedBox(width: 10),
-        UserAvatar(
-          name: entry.name,
-          radius: AppMetrics.avatarMd,
-          // Presença vence a medalha: o anel diz "estudou hoje".
-          borderColor: live ? AppRoles.presence : medal,
-          photoUrl: entry.photoUrl,
-          seed: entry.uid ?? entry.name,
-          style: entry.portraitStyle,
+        _MarkedAvatar(
+          crown: rank == 1,
+          plus: entry.plus,
+          child: UserAvatar(
+            name: entry.name,
+            radius: 17,
+            // Presença vence a medalha: o anel diz "estudou hoje".
+            borderColor: live ? AppRoles.presence : medal,
+            photoUrl: entry.photoUrl,
+            seed: entry.uid ?? entry.name,
+            style: entry.portraitStyle,
+          ),
         ),
         const SizedBox(width: 12),
         Expanded(
@@ -4069,10 +4671,25 @@ class _StandingRow extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
                 style: AppTypography.title(size: 14, color: a.text),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 4),
-                child: _StandingMedalLine(entry: entry),
-              ),
+              if (chase != null)
+                Padding(
+                  padding: const EdgeInsets.only(top: 2),
+                  child: Text(
+                    chase!,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.body(
+                      size: 12,
+                      weight: FontWeight.w700,
+                      color: AppRoles.success,
+                    ),
+                  ),
+                )
+              else
+                Padding(
+                  padding: const EdgeInsets.only(top: 3),
+                  child: _StandingMedalLine(entry: entry),
+                ),
             ],
           ),
         ),
@@ -4084,7 +4701,7 @@ class _StandingRow extends StatelessWidget {
             Text(
               '${entry.steps}',
               style: AppTypography.title(
-                size: 18,
+                size: 16,
                 weight: FontWeight.w900,
                 color: stepsTone,
               ),
@@ -4106,8 +4723,8 @@ class _StandingRow extends StatelessWidget {
     final row = Column(
       children: [
         Container(
-          margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
-          padding: const EdgeInsets.fromLTRB(8, 12, 10, 12),
+          margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 1),
+          padding: const EdgeInsets.fromLTRB(8, 7, 10, 7),
           decoration: entry.isUser
               ? _youRowDecoration(true, a)
               : BoxDecoration(
@@ -4133,6 +4750,72 @@ class _StandingRow extends StatelessWidget {
         borderRadius: BorderRadius.circular(AppRadii.md),
         child: row,
       ),
+    );
+  }
+}
+
+/// Avatar da Caravana com as marcas: coroa em cima para quem lidera o mês
+/// (a coroa é de liderança) e o selo + do Peregrino+ no canto, pequeno —
+/// mostra quem apoia sem pesar mais que a posição.
+class _MarkedAvatar extends StatelessWidget {
+  final Widget child;
+  final bool crown;
+  final bool plus;
+
+  const _MarkedAvatar({
+    required this.child,
+    this.crown = false,
+    this.plus = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    if (!crown && !plus) return child;
+    final a = Appearance.of(context);
+    return Stack(
+      clipBehavior: Clip.none,
+      alignment: Alignment.center,
+      children: [
+        child,
+        if (crown)
+          Positioned(
+            top: -13,
+            child: Transform.rotate(
+              angle: -0.18,
+              child: CinematicIcon(
+                glyph: CinematicGlyph.crown,
+                size: 18,
+                accent: AppColors.medalGold,
+                framed: false,
+              ),
+            ),
+          ),
+        if (plus)
+          Positioned(
+            right: -3,
+            bottom: -3,
+            child: Semantics(
+              label: context.l10n.pilgrimBadge,
+              child: Container(
+                width: 17,
+                height: 17,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: AppRoles.reward,
+                  border: Border.all(color: a.cardFill, width: 1.5),
+                ),
+                child: const Center(
+                  child: CinematicIcon(
+                    glyph: CinematicGlyph.plus,
+                    size: 11,
+                    accent: AppColors.inkOnAccent,
+                    framed: false,
+                  ),
+                ),
+              ),
+            ),
+          ),
+      ],
     );
   }
 }
@@ -4192,8 +4875,8 @@ class _MedalStack extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const size = 24.0;
-    const overlap = 16.0;
+    const size = 18.0;
+    const overlap = 12.0;
     final extraSlot = extra != null ? 1 : 0;
     final count = glyphs.length + extraSlot;
     if (count == 0) return const SizedBox.shrink();
@@ -4237,16 +4920,16 @@ class _MedalDisc extends StatelessWidget {
   Widget build(BuildContext context) {
     // A medalha do app em miniatura; "+N" vai gravado num disco de ouro.
     if (overlay == null) {
-      return MedalArt(metal: accent, size: 24, glyph: glyph);
+      return MedalArt(metal: accent, size: 18, glyph: glyph);
     }
     return Stack(
       alignment: Alignment.center,
       children: [
-        const MedalArt(metal: AppColors.accent, size: 24),
+        const MedalArt(metal: AppColors.accent, size: 18),
         Text(
           overlay!,
           style: AppTypography.label(
-            size: 9,
+            size: 8,
             letterSpacing: 0,
             weight: FontWeight.w900,
             color: AppColors.inkOnAccent,
@@ -4387,10 +5070,9 @@ class _GuestJuntosCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = context.l10n;
     // Convite: borda e luz douradas (ação), o recado na fala do Anan.
-    return GlassCard(
-      tint: AppRoles.reward,
-      glow: 0.7,
-      borderColor: AppRoles.reward.withValues(alpha: 0.85),
+    return ProfilePanel(
+      accent: AppRoles.reward,
+      lit: true,
       padding: const EdgeInsets.fromLTRB(
         AppSpace.lg,
         AppSpace.xl,
@@ -4454,7 +5136,8 @@ class _CompanionsOfflineCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // EmptyState já traz o próprio respiro — o card não soma padding.
-    return GlassCard(
+    return ProfilePanel(
+      accent: AppRoles.risk,
       padding: EdgeInsets.zero,
       child: EmptyState(
         mark: CloudMascot(
@@ -4493,29 +5176,12 @@ class _CompanionsEmpty extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Mesmo vazio do Desafio: o Anan triste (ninguém ainda) no card.
+    // O vazio (Anan triste + frase) já mora no quadro de explicação acima;
+    // aqui ficam só as ações.
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        GlassCard(
-          padding: EdgeInsets.zero,
-          child: EmptyState(
-            mark: const CloudMascot(face: CloudFace.triste, size: 96),
-            title: context.l10n.juntosCompanionEmptyTitle,
-            body: context.l10n.juntosCompanionEmptyBody,
-          ),
-        ),
-        const SizedBox(height: AppSpace.md),
-        if (loading)
-          const AppSpinner()
-        else ...[
-          CopperCta(
-            label: context.l10n.juntosInviteCompanion,
-            onTap: onInvite,
-            leading: CinematicGlyph.people,
-            trailing: null,
-          ),
-          const SizedBox(height: AppSpace.sm),
+        if (!loading) ...[
           GhostCta(
             label: context.l10n.juntosCallFromCaravan,
             leading: CinematicGlyph.people,
@@ -4598,11 +5264,12 @@ class _CompanionCard extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        GlassCard(
-          tint: AppRoles.presence,
-          glow: both ? 0.5 : 0.32,
-          // Sua vez: a borda chama, como o risco da Home.
-          borderColor: yourTurn ? AppRoles.presence : null,
+        ProfilePanel(
+          // Os dois caminharam: o palco acende em verde. Sua vez: a moldura
+          // chama mais forte, como o risco da Home.
+          accent: both ? AppRoles.success : AppRoles.presence,
+          lit: both || yourTurn,
+          padding: AppMetrics.cardPadding,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -4628,7 +5295,8 @@ class _CompanionCard extends StatelessWidget {
           ),
         ),
         const SizedBox(height: AppSpace.md),
-        GlassCard(
+        ProfilePanel(
+          accent: both ? AppRoles.success : AppRoles.lamp,
           // Rodapé com TextCta (sair) — ele já traz o próprio respiro.
           padding: AppMetrics.cardPadding.copyWith(bottom: AppSpace.xs),
           child: Column(
@@ -4918,7 +5586,9 @@ class _OpenInviteStage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        GlassCard(
+        ProfilePanel(
+          accent: AppRoles.lamp,
+          padding: AppMetrics.cardPadding,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
@@ -5492,7 +6162,8 @@ class _CaravanEmptyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // EmptyState já traz o próprio respiro — o card não soma padding.
-    return GlassCard(
+    return ProfilePanel(
+      accent: AppRoles.navTogether,
       padding: EdgeInsets.zero,
       child: EmptyState(
         title: context.l10n.juntosCaravanEmptyTitle,

@@ -9,8 +9,9 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
-import 'immersive_background.dart';
 import 'ui_primitives.dart';
+import 'immersive_background.dart';
+import 'profile_section.dart';
 
 /// Leitura da Bíblia da semana do grupo: o que o líder marcou e quanto a
 /// pessoa já leu (capítulos lidos nesta semana).
@@ -38,7 +39,8 @@ class RoomReadingCard extends StatelessWidget {
     if (r == null) {
       // Sem leitura: só o líder vê o convite para marcar.
       if (!isLeader) return const SizedBox.shrink();
-      return GlassCard(
+      return ProfilePanel(
+        accent: AppRoles.lamp,
         onTap: onPick,
         child: Row(
           children: [
@@ -71,8 +73,8 @@ class RoomReadingCard extends StatelessWidget {
     }
     final complete = done >= r.chapters;
     // O card inteiro abre a leitura; "Trocar" (líder) tem toque próprio.
-    return GlassCard(
-      tint: complete ? AppRoles.presence : null,
+    return ProfilePanel(
+      accent: (complete ? AppRoles.presence : null) ?? AppRoles.lamp,
       onTap: onOpen,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -530,9 +532,9 @@ class RoomClosingBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    return GlassCard(
-      tint: AppRoles.reward,
-      glow: 0.6,
+    return ProfilePanel(
+      accent: AppRoles.reward,
+      lit: true,
       onTap: onOpen,
       child: Row(
         children: [
@@ -576,8 +578,8 @@ class GroupSealsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    return GlassCard(
-      tint: AppRoles.reward,
+    return ProfilePanel(
+      accent: AppRoles.reward,
       child: Row(
         children: [
           CinematicIcon(

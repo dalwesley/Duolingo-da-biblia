@@ -13,6 +13,10 @@ import 'ui_primitives.dart';
 /// `?src=app`: a página esconde os links de doação (regra das lojas).
 const aboutPageUrl = 'https://stway.com.br/sobre/?src=app';
 
+/// Manifesto no site (no que cremos + o dízimo do Stway e o relatório).
+/// `?src=app`: sem links de doação nem planos, como a página Sobre.
+const manifestoPageUrl = 'https://stway.com.br/manifesto/?src=app';
+
 /// Página de doação no site. O pagamento fica fora do app.
 
 /// Termos de uso e política de privacidade (aceitos no login).

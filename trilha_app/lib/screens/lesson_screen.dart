@@ -2353,10 +2353,7 @@ class _InsightPanelState extends State<_InsightPanel> {
           const SizedBox(height: 4),
           Text(
             _shareNudge(l10n),
-            style: AppTypography.body(
-              size: 15,
-              color: AnanSpeechBubble.ink,
-            ),
+            style: AppTypography.body(size: 15, color: AnanSpeechBubble.ink),
           ),
         ],
       ),
@@ -2364,9 +2361,7 @@ class _InsightPanelState extends State<_InsightPanel> {
   }
 
   Future<void> _shareInsight() async {
-    AnalyticsService.instance.logEvent('today_share', {
-      'source': 'scene_end',
-    });
+    AnalyticsService.instance.logEvent('today_share', {'source': 'scene_end'});
     await shareTodayCard(
       context,
       insight: widget.text,
@@ -2527,10 +2522,7 @@ class _InsightPanelState extends State<_InsightPanel> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            if (anan != null) ...[
-              anan,
-              const SizedBox(height: AppSpace.md),
-            ],
+            if (anan != null) ...[anan, const SizedBox(height: AppSpace.md)],
             Expanded(child: carousel),
             const SizedBox(height: AppSpace.md),
             ...actions,

@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../data/season_walk_routes.dart';
 import '../data/trail_repository.dart';
 import '../l10n/app_language.dart';
 import '../data/season_walk_catalog.dart';
@@ -295,6 +296,12 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     final backend = _backendRef;
     if (backend == null || !backend.isActive) return;
     NotificationService.instance.emitRemoteToken();
+    // Roteiro da Caminhada: o banco pode trocar a cena de um dia.
+    unawaited(
+      SeasonWalkRoutes.instance.refresh([
+        for (final c in SeasonWalkCatalog.all()) c.id,
+      ]),
+    );
     // Passe aberto antes do login (ou na partida a frio) espera a conta.
     unawaited(_redeemTrailGiftIfPending());
   }

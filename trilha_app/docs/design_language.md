@@ -300,7 +300,8 @@ como nome de coisa: não é área, não é progresso salvo, não é assinatura.
 | Lembrar quem já está (companhia, grupo) | **acenar / aceno** ("Acenar para Ana") | chamar, animar |
 | Trazer alguém novo (convite) | **chamar** ("Chamar pessoas", "Chamar um companheiro") | — |
 | Lembrete do app no horário | **lembrar** ("Lembrar às 20h") | chamar |
-| Slogan | **A Bíblia, cena a cena** | — |
+| Slogan (marca) | **um passo. uma jornada. uma comunidade.** | um passo por dia na Palavra |
+| Descritor (o que o app faz) | **A Bíblia, cena a cena** | — |
 | Recompensa | **medalha**; **selo** só para selos de personagem | conquista, conquistar, emblema, moeda |
 | Pintura da cena guardada ao concluir | **postal** ("Revelar o postal", "Seus postais"); o verso é a nota da pessoa | selo, figurinha, card, carta |
 | Trilha do Plus que quem assina libera para alguém (1 por mês) | **passe de trilha**; ação "Libere esta trilha para alguém", botão **Compartilhar o passe**; slogan "Sua assinatura libera alguém"; "de presente" só como descrição ("Uma trilha de presente") | cupom, vale, convite (o convite é da companhia) |

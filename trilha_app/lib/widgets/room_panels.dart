@@ -35,6 +35,7 @@ import 'immersive_background.dart';
 import 'user_avatar.dart';
 import 'ui_primitives.dart';
 import 'user_moderation_sheet.dart';
+import 'profile_section.dart';
 
 /// Peças da aba Grupos: estudo da semana, quem precisa de um chamado e as
 /// sheets do líder (tipo/nome, escolher estudo, menu, passar liderança).
@@ -95,10 +96,9 @@ class RoomStudyCard extends StatelessWidget {
     // O card inteiro abre o estudo. Quem já fez quem vê é o líder (na
     // Semana do grupo); aqui fica a trilha e a cena.
     final head = header;
-    return GlassCard(
-      tint: meDone ? AppRoles.presence : a.place,
-      glow: meDone ? 0.3 : 0.75,
-      elevated: !meDone,
+    return ProfilePanel(
+      accent: meDone ? AppRoles.presence : a.place,
+      lit: !meDone,
       padding: cardPaddingFor(head),
       onTap: onOpen,
       child: Column(
@@ -301,9 +301,8 @@ class _EmptyStage extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final head = header;
-    return GlassCard(
-      glow: isLeader ? 0.55 : null,
-      tint: isLeader ? a.place : null,
+    return ProfilePanel(
+      accent: (isLeader ? a.place : null) ?? AppRoles.lamp,
       padding: RoomStudyCard.cardPaddingFor(head),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -2420,9 +2419,9 @@ class RoomIncomingInviteCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final from = _firstName(invite.fromName);
-    return GlassCard(
-      glow: 0.7,
-      tint: a.place,
+    return ProfilePanel(
+      accent: a.place,
+      lit: true,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [

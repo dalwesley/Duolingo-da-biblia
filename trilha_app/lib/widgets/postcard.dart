@@ -664,6 +664,14 @@ Future<void> showPostcardDetail(
   ),
 );
 
+/// Revelar um postal novo (o da Caravana do mês que fechou): o palco com
+/// "Revelar", o carimbo e o som. [eyebrow] no lugar de "Postal novo".
+Future<void> showPostcardReveal(
+  BuildContext context,
+  Postcard postcard, {
+  String? eyebrow,
+}) => _pushStage(context, _RevealStage(postcard: postcard, eyebrow: eyebrow));
+
 Future<void> _pushStage(BuildContext context, Widget stage) {
   return Navigator.of(context, rootNavigator: true).push<void>(
     PageRouteBuilder<void>(
@@ -923,7 +931,11 @@ class _RevealStageState extends State<_RevealStage>
                                 opacity: _started && !done ? 0.4 : 1,
                                 child: widget.revisit
                                     ? CopperCta(
-                                        label: l10n.postcardRedo,
+                                        // Sem cena para refazer (postal da
+                                        // Caravana): só fecha.
+                                        label: widget.onRedo == null
+                                            ? l10n.commonClose
+                                            : l10n.postcardRedo,
                                         onTap: () {
                                           _close();
                                           widget.onRedo?.call();

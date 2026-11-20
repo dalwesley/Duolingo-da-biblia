@@ -300,10 +300,11 @@ class _OnboardingScreenState extends State<OnboardingScreen>
       duration: _durationFor(_Beat.origin),
     )..addListener(_onSceneTick);
 
+    // Loop começa em didChangeDependencies (respeita movimento reduzido).
     _breath = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 7600),
-    )..repeat();
+    );
 
     _world = AnimationController(
       vsync: this,
@@ -351,6 +352,18 @@ class _OnboardingScreenState extends State<OnboardingScreen>
         _nameController.text = name.split(' ').first;
       }
     });
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Com movimento reduzido o fôlego fica parado: sem isso o fundo
+    // (trilha em tela cheia) repintava a cada quadro sem mudar nada.
+    if (MediaQuery.disableAnimationsOf(context)) {
+      _breath.stop();
+    } else if (!_breath.isAnimating) {
+      _breath.repeat();
+    }
   }
 
   @override

@@ -180,7 +180,18 @@ class _FrozenDayOrbState extends State<_FrozenDayOrb>
     _pulse = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 5200),
-    )..repeat();
+    );
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Movimento reduzido: orbe parado, sem loop à toa.
+    if (MediaQuery.disableAnimationsOf(context)) {
+      _pulse.stop();
+    } else if (!_pulse.isAnimating) {
+      _pulse.repeat();
+    }
   }
 
   @override

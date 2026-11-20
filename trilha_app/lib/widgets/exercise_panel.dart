@@ -222,10 +222,21 @@ class _ExercisePanelState extends State<ExercisePanel>
     }
     if (widget.showFeedback || widget.selected != null) {
       _pulse.stop();
-    } else if (TickerMode.valuesOf(context).enabled && !_pulse.isAnimating) {
+    } else if (TickerMode.valuesOf(context).enabled &&
+        _usesPulse(widget.exercise) &&
+        !_pulse.isAnimating) {
       _pulse.repeat(reverse: true);
     }
   }
+
+  /// Só os palcos de lacuna/ponte ([_clozePalco], [_BridgePassages]) leem o
+  /// pulso; nos outros atos o loop só gastava quadro.
+  static bool _usesPulse(Exercise ex) => switch (ex.type) {
+    ExerciseType.complete || ExerciseType.connect => true,
+    ExerciseType.tap =>
+      ex.usesCompletePalco || ex.passageA != null || ex.passageB != null,
+    _ => false,
+  };
 
   void _resetLocal({bool keepOrder = false}) {
     _confirming = false;
@@ -249,9 +260,8 @@ class _ExercisePanelState extends State<ExercisePanel>
         widget.exercise.matchRight,
       )..shuffle();
     }
-    _pulse
-      ..stop()
-      ..repeat(reverse: true);
+    _pulse.stop();
+    if (_usesPulse(widget.exercise)) _pulse.repeat(reverse: true);
   }
 
   @override

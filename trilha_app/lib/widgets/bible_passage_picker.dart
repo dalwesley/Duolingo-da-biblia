@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import '../data/bible_canonical_groups.dart';
 import '../l10n/app_language.dart';
@@ -284,6 +285,8 @@ class BibleBookList extends StatelessWidget {
           _BookRow(
             book: books[indices[n]],
             read: progress.readChaptersInBook(books[indices[n]].abbrev),
+            finishedOn: progress
+                .booksFinishedOn[books[indices[n]].abbrev.toLowerCase()],
             selected: indices[n] == selectedIndex,
             onTap: () {
               ActHaptics.tap();
@@ -408,9 +411,13 @@ class _BookRow extends StatelessWidget {
   final bool selected;
   final VoidCallback onTap;
 
+  /// Dia em que o livro foi concluído ('' = sem data); null = não concluído.
+  final String? finishedOn;
+
   const _BookRow({
     required this.book,
     required this.read,
+    this.finishedOn,
     required this.selected,
     required this.onTap,
   });
@@ -419,8 +426,19 @@ class _BookRow extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final total = book.chapters.length;
-    final done = total > 0 && read >= total;
-    final detail = read == 0
+    final sealed = finishedOn != null;
+    final done = sealed || (total > 0 && read >= total);
+    final finishedDay = DateTime.tryParse(finishedOn ?? '');
+    final detail = sealed
+        ? (finishedDay == null
+              ? context.l10n.bibleBookFinished
+              : context.l10n.bibleBookFinishedOn(
+                  DateFormat(
+                    'd MMM y',
+                    context.l10n.localeName,
+                  ).format(finishedDay).replaceAll('.', ''),
+                ))
+        : read == 0
         ? context.l10n.bibleChapterCountShort(total)
         : context.l10n.bibleReadOf(read, total);
     final abbrev = book.abbrev.toUpperCase();
@@ -478,10 +496,14 @@ class _BookRow extends StatelessWidget {
                           ),
                           const SizedBox(width: AppSpace.sm),
                           if (done) ...[
-                            const CinematicIcon(
-                              glyph: CinematicGlyph.check,
+                            CinematicIcon(
+                              glyph: sealed
+                                  ? CinematicGlyph.star
+                                  : CinematicGlyph.check,
                               size: AppMetrics.chipIcon,
-                              accent: AppRoles.success,
+                              accent: sealed
+                                  ? AppRoles.reward
+                                  : AppRoles.success,
                               framed: false,
                             ),
                             const SizedBox(width: AppSpace.xs),
@@ -490,7 +512,14 @@ class _BookRow extends StatelessWidget {
                             detail,
                             style: AppTypography.body(
                               size: 12,
-                              color: read == 0 ? a.textFaint : a.textSecondary,
+                              weight: sealed
+                                  ? FontWeight.w700
+                                  : FontWeight.w600,
+                              color: sealed
+                                  ? AppRoles.reward
+                                  : read == 0
+                                  ? a.textFaint
+                                  : a.textSecondary,
                             ),
                           ),
                           const SizedBox(width: AppSpace.xs),
@@ -500,9 +529,13 @@ class _BookRow extends StatelessWidget {
                       // Capítulos lidos do livro — trilho fino, quase sumido.
                       const SizedBox(height: 6),
                       AppProgressBar(
-                        value: total == 0 ? 0 : read / total,
+                        value: sealed
+                            ? 1
+                            : total == 0
+                            ? 0
+                            : read / total,
                         height: 3,
-                        color: AppRoles.presence,
+                        color: sealed ? AppRoles.reward : AppRoles.presence,
                       ),
                     ],
                   ),

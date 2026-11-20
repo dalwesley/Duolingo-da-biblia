@@ -450,8 +450,18 @@ const _irregularVerbForms = <String, String>{
 /// Palavras frequentes que parecem raiz+desinência mas não são verbo
 /// (esta≠estar, como≠comer, para≠parar, casa≠casar).
 const _notVerbForms = {
-  'este', 'esta', 'estes', 'estas', 'como', 'para', 'pela', 'pelo',
-  'pelas', 'pelos', 'casa', 'casas',
+  'este',
+  'esta',
+  'estes',
+  'estas',
+  'como',
+  'para',
+  'pela',
+  'pelo',
+  'pelas',
+  'pelos',
+  'casa',
+  'casas',
 };
 
 String? _verbFamily(String folded) => _irregularVerbForms[folded];

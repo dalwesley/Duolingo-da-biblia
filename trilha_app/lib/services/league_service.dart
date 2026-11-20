@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -37,6 +39,12 @@ class LeagueMetaPill {
   });
 }
 
+/// Ritmo da etapa do mês da Caravana ([LeagueService.goalPace]).
+enum GoalPace { starting, onTrack, behind, reached }
+
+/// O momento da etapa, para a fala do Anan ([LeagueService.goalMood]).
+enum GoalMood { starting, stalled, fast, finalStretch, steady }
+
 class LeagueEntry {
   final String? uid;
   final String name;
@@ -57,6 +65,9 @@ class LeagueEntry {
   /// Passos do mês no começo de hoje (`null` = sem passo hoje = [steps]).
   final int? dayStartSteps;
 
+  /// Peregrino+ ativo: selo + no avatar.
+  final bool plus;
+
   const LeagueEntry({
     this.uid,
     required this.name,
@@ -68,6 +79,7 @@ class LeagueEntry {
     this.portraitStyle = PortraitStyle.photo,
     this.weekSteps = 0,
     this.dayStartSteps,
+    this.plus = false,
   });
 
   int get stepsAtDayStart => dayStartSteps ?? steps;
@@ -238,9 +250,13 @@ class LeagueService extends ChangeNotifier {
   static List<int> placesUpToday(List<LeagueEntry> sorted) {
     final before = [...sorted]
       ..sort((a, b) => _compareBy(a, b, (e) => e.stepsAtDayStart));
+    // Só quem andou hoje sobe: empate em 0 (ordem do servidor ≠ ordem por
+    // nome) não pode virar seta.
     return [
       for (var i = 0; i < sorted.length; i++)
-        (before.indexOf(sorted[i]) - i).clamp(0, sorted.length),
+        sorted[i].steps <= sorted[i].stepsAtDayStart
+            ? 0
+            : (before.indexOf(sorted[i]) - i).clamp(0, sorted.length),
     ];
   }
 
@@ -282,6 +298,14 @@ class LeagueService extends ChangeNotifier {
   static String monthKey([DateTime? now]) {
     final d = now ?? DateTime.now();
     return '${d.year}-${d.month.toString().padLeft(2, '0')}';
+  }
+
+  /// Mês anterior a [month] ("YYYY-MM").
+  static String previousMonthKey(String month) {
+    final parts = month.split('-');
+    final y = int.parse(parts[0]);
+    final m = int.parse(parts[1]);
+    return monthKey(DateTime(y, m - 1, 1));
   }
 
   /// Dias restantes até a semana fechar (domingo inclui hoje).
@@ -454,6 +478,219 @@ class LeagueService extends ChangeNotifier {
 
   int userRank(List<LeagueEntry> entries) =>
       entries.indexWhere((e) => e.isUser) + 1;
+
+  /// Meta coletiva: cenas por pessoa que caminhou no mês passado.
+  static const goalScenesPerWalker = 12;
+
+  /// Meta mínima (caravana pequena ou mês sem histórico).
+  static const goalFloor = 60;
+
+  /// Cenas novas próprias no mês para guardar o postal da Caravana.
+  static const goalMinScenes = 3;
+
+  /// Marcos da meta: cada um revela um pedaço do postal.
+  static const goalMilestones = [0.25, 0.5, 1.0];
+
+  /// Meta de cenas do mês, arredondada para dezenas.
+  static int monthSceneGoal(int lastMonthWalkers) {
+    final raw = lastMonthWalkers * goalScenesPerWalker;
+    return math.max(goalFloor, (raw / 10).ceil() * 10);
+  }
+
+  /// Ritmo da etapa: começando (primeiros 2 dias, pouco dado), no ritmo
+  /// (chega antes do fim do mês, [arrivalDay] = dia previsto), atrasada
+  /// ([perDay] = cenas por dia até o fim) ou vencida. Puro, testável.
+  static ({GoalPace pace, int arrivalDay, int perDay, int left}) goalPace({
+    required int done,
+    required int goal,
+    DateTime? now,
+  }) {
+    final n = now ?? DateTime.now();
+    final start = DateTime(n.year, n.month, 1);
+    final end = DateTime(n.year, n.month + 1, 1);
+    final left = math.max(0, goal - done);
+    if (left == 0) {
+      return (pace: GoalPace.reached, arrivalDay: 0, perDay: 0, left: 0);
+    }
+    final daysLeft = math.max(1.0, end.difference(n).inMinutes / 1440);
+    final perDay = (left / daysLeft).ceil();
+    final elapsed = n.difference(start).inMinutes / 1440;
+    if (elapsed < 2) {
+      return (
+        pace: GoalPace.starting,
+        arrivalDay: 0,
+        perDay: perDay,
+        left: left,
+      );
+    }
+    final rate = done / elapsed;
+    if (rate <= 0) {
+      return (pace: GoalPace.behind, arrivalDay: 0, perDay: perDay, left: left);
+    }
+    final eta = n.add(Duration(minutes: (left / rate * 1440).ceil()));
+    if (!eta.isBefore(end)) {
+      return (pace: GoalPace.behind, arrivalDay: 0, perDay: perDay, left: left);
+    }
+    return (
+      pace: GoalPace.onTrack,
+      arrivalDay: eta.day,
+      perDay: perDay,
+      left: left,
+    );
+  }
+
+  /// Dias sem a caravana avançar para o Anan dizer que ela parou.
+  static const stalledDays = 2;
+
+  /// Chegada prevista com tantos dias de folga = "rápida".
+  static const fastLeadDays = 5;
+
+  /// Últimos dias do mês = reta final.
+  static const finalDays = 3;
+
+  /// O momento da etapa para a fala do Anan (antes da chegada). Ordem:
+  /// início, reta final, parada, rápida, senão o passo comum. Puro.
+  /// [daysSinceAdvance] = dias desde a última vez que a soma subiu.
+  static ({GoalMood mood, int days, int left, int arrivalDay}) goalMood({
+    required int done,
+    required int goal,
+    required int daysSinceAdvance,
+    DateTime? now,
+  }) {
+    final n = now ?? DateTime.now();
+    final pace = goalPace(done: done, goal: goal, now: n);
+    final lastDay = DateTime(n.year, n.month + 1, 0).day;
+    final daysLeft = lastDay - n.day + 1;
+    GoalMood mood;
+    var days = 0;
+    if (pace.pace == GoalPace.reached) {
+      mood = GoalMood.steady;
+    } else if (pace.pace == GoalPace.starting) {
+      mood = GoalMood.starting;
+    } else if (daysLeft <= finalDays) {
+      mood = GoalMood.finalStretch;
+      days = daysLeft;
+    } else if (daysSinceAdvance >= stalledDays) {
+      mood = GoalMood.stalled;
+      days = daysSinceAdvance;
+    } else if (pace.pace == GoalPace.onTrack &&
+        lastDay - pace.arrivalDay >= fastLeadDays) {
+      mood = GoalMood.fast;
+    } else {
+      mood = GoalMood.steady;
+    }
+    return (
+      mood: mood,
+      days: days,
+      left: pace.left,
+      arrivalDay: pace.arrivalDay,
+    );
+  }
+
+  /// Índice do último pouso alcançado em [goalMilestones] (-1 = nenhum).
+  static int goalStop({required int scenes, required int goal}) {
+    if (goal <= 0) return -1;
+    final f = scenes / goal;
+    var stop = -1;
+    for (var i = 0; i < goalMilestones.length; i++) {
+      if (f >= goalMilestones[i]) stop = i;
+    }
+    return stop;
+  }
+
+  /// Quanto do postal aparece: o último marco atingido (0 antes do 1º).
+  static double goalReveal({required int scenes, required int goal}) {
+    if (goal <= 0) return 0;
+    final f = scenes / goal;
+    var shown = 0.0;
+    for (final m in goalMilestones) {
+      if (f >= m) shown = m;
+    }
+    return shown;
+  }
+
+  /// Caravana até este tamanho aparece inteira no cartão.
+  static const windowShowAll = 8;
+
+  /// Pódio sempre visível acima do trecho.
+  static const windowPodium = 3;
+
+  /// Vizinhos acima: "alcançáveis" em até tantas cenas.
+  static const reachScenes = 3;
+
+  /// Passos por cena quando ainda não há média própria no mês.
+  static const fallbackSceneSteps = 60;
+
+  /// Passos que [reachScenes] cenas rendem para quem tem [monthSteps] em
+  /// [monthScenes] cenas no mês.
+  static int reachSteps({required int monthSteps, required int monthScenes}) {
+    final perScene = monthScenes > 0 && monthSteps > 0
+        ? (monthSteps / monthScenes).round()
+        : fallbackSceneSteps;
+    return reachScenes * perScene.clamp(20, 200);
+  }
+
+  /// O trecho do cartão: pódio, `···` (linha `null`) e você com os vizinhos
+  /// — sempre umas 8 linhas, com 10 ou 10 mil pessoas. Puro, testável.
+  ///
+  /// [top] vem do 1º para baixo, [above]/[below] do mais perto para o mais
+  /// longe; nenhuma lista traz [me]. [ahead] = quantos têm mais passos que
+  /// [me]; [total] conta [me].
+  static List<({LeagueEntry? entry, int rank})> caravanWindow({
+    required LeagueEntry me,
+    required List<LeagueEntry> top,
+    required List<LeagueEntry> above,
+    required List<LeagueEntry> below,
+    required int ahead,
+    required int total,
+    required int reach,
+  }) {
+    final myRank = ahead + 1;
+    // Caravana pequena ou eu perto do topo: uma lista só, sem buraco.
+    if (total <= windowShowAll || myRank <= windowShowAll - 1) {
+      final sorted = [...top, me]..sort(_compareEntries);
+      final upTo = total <= windowShowAll
+          ? sorted.length
+          : math.max(windowPodium + 2, sorted.indexOf(me) + 2);
+      return [
+        for (var i = 0; i < math.min(upTo, sorted.length); i++)
+          (entry: sorted[i], rank: i + 1),
+      ];
+    }
+
+    // Acima: só quem dá para alcançar (no máximo 2); o mais perto sempre.
+    final reachable = [
+      for (final p in above.take(2))
+        if (p.steps - me.steps <= reach) p,
+    ];
+    final shownAbove = reachable.isEmpty ? above.take(1).toList() : reachable;
+    final rows = <({LeagueEntry? entry, int rank})>[
+      for (var i = 0; i < math.min(windowPodium, top.length); i++)
+        (entry: top[i], rank: i + 1),
+    ];
+    final firstAboveRank = myRank - shownAbove.length;
+    if (firstAboveRank > windowPodium + 1) rows.add((entry: null, rank: 0));
+    for (var i = shownAbove.length - 1; i >= 0; i--) {
+      final rank = myRank - 1 - i;
+      if (rank > windowPodium) rows.add((entry: shownAbove[i], rank: rank));
+    }
+    rows.add((entry: me, rank: myRank));
+    if (below.isNotEmpty) rows.add((entry: below.first, rank: myRank + 1));
+    return rows;
+  }
+
+  /// Quem passar primeiro: o vizinho logo acima em [rows] e quantos passos
+  /// faltam (pelo menos 1 — empate não passa). `null` se você lidera.
+  static ({LeagueEntry who, int steps})? nextToPass(
+    List<({LeagueEntry? entry, int rank})> rows,
+  ) {
+    final i = rows.indexWhere((r) => r.entry?.isUser ?? false);
+    if (i <= 0) return null;
+    final me = rows[i].entry!;
+    final next = rows[i - 1].entry;
+    if (next == null) return null;
+    return (who: next, steps: math.max(1, next.steps - me.steps + 1));
+  }
 
   static int _compareEntries(LeagueEntry a, LeagueEntry b) =>
       _compareBy(a, b, (e) => e.steps);

@@ -13,6 +13,7 @@ import 'cinematic_icon.dart';
 import 'cloud_mascot.dart';
 import 'corner_home_card.dart';
 import 'immersive_background.dart';
+import 'profile_section.dart';
 import 'ui_primitives.dart';
 
 /// Retângulo do desafio: o que é, quanto resta, os dois no fio e a cena.
@@ -119,10 +120,15 @@ class CornerBoard extends StatelessWidget {
   @Deprecated('Ignored — the empty state always renders.')
   final bool hideEmptyChrome;
 
+  /// Falso: sem desafio nenhum não desenha nada — o quadro de explicação
+  /// acima já diz "Nenhum desafio ainda".
+  final bool showEmpty;
+
   const CornerBoard({
     super.key,
     required this.onOpenMission,
     required this.onOpenCaravana,
+    this.showEmpty = true,
     @Deprecated('Ignored — the empty state always renders.')
     this.hideEmptyChrome = false,
   });
@@ -145,7 +151,7 @@ class CornerBoard extends StatelessWidget {
 
     final board = CornerScoreboard.of(corners.mine, uid);
     if (board.isEmpty) {
-      return const _BoardEmptyCard();
+      return showEmpty ? const _BoardEmptyCard() : const SizedBox.shrink();
     }
 
     final a = Appearance.of(context);
@@ -185,7 +191,8 @@ class _BoardEmptyCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GlassCard(
+    return ProfilePanel(
+      accent: AppRoles.navTrails,
       padding: EdgeInsets.zero,
       child: EmptyState(
         mark: const CloudMascot(face: CloudFace.triste, size: 96),
@@ -261,7 +268,9 @@ class _ClosedArchiveState extends State<_ClosedArchive> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        GlassCard(
+        ProfilePanel(
+          accent: AppRoles.reward,
+          padding: AppMetrics.cardPadding,
           child: Row(
             children: [
               _FilterCell(
@@ -411,7 +420,8 @@ class _ClosedList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GlassCard(
+    return ProfilePanel(
+      accent: AppRoles.reward,
       padding: EdgeInsets.zero,
       child: Column(
         children: [

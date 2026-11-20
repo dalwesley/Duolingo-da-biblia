@@ -9,13 +9,16 @@ import '../l10n/app_language.dart';
 import '../models/trail.dart';
 import '../services/content_catalog_service.dart';
 import '../screens/year_review_screen.dart';
+import '../services/league_service.dart';
 import '../services/progress_service.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../services/remote_config_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'cloud_mascot.dart';
+import 'caravan_goal_card.dart';
 import 'postcard.dart';
 import 'ui_primitives.dart';
 
@@ -55,7 +58,7 @@ class _PostcardAlbumState extends State<PostcardAlbum> {
   /// Última lista mostrada: o recarregar não pisca o spinner.
   List<Trail>? _last;
 
-  static const _thumb = 104.0;
+  static const _thumb = 88.0;
 
   /// Dia do postal. Cena feita antes dos postais entra já revelada, com o
   /// dia em que foi feita.
@@ -86,8 +89,11 @@ class _PostcardAlbumState extends State<PostcardAlbum> {
   Widget build(BuildContext context) {
     // Reconstrói quando entra postal ou cena nova.
     context.select(
-      (ProgressService p) =>
-          (p.postcardsOn.length, p.missionCompletedOn.length),
+      (ProgressService p) => (
+        p.postcardsOn.length,
+        p.missionCompletedOn.length,
+        p.caravanPostcards.length,
+      ),
     );
     final progress = context.read<ProgressService>();
     final l10n = context.l10n;
@@ -135,6 +141,13 @@ class _PostcardAlbumState extends State<PostcardAlbum> {
         final review =
             RemoteConfigService.instance.yearReviewOpen &&
             inYear >= YearReview.minPostcards;
+        // Marcos da Caravana: o do mês a caminho (se a pessoa caminhou) e
+        // os guardados, mais recente primeiro.
+        final thisMonth = LeagueService.monthKey();
+        final caravanMonths = {
+          if (progress.currentMonthScenes > 0) thisMonth,
+          ...progress.caravanPostcards.keys,
+        }.toList()..sort((x, y) => y.compareTo(x));
         return Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -142,27 +155,99 @@ class _PostcardAlbumState extends State<PostcardAlbum> {
               _YearReviewDoor(year: year),
               const SizedBox(height: AppSpace.lg),
             ],
+            if (caravanMonths.isNotEmpty) ...[
+              Text(
+                l10n.caravanPostcardsSection,
+                style: AppTypography.title(size: 14, color: a.text),
+              ),
+              const SizedBox(height: AppSpace.sm),
+              SizedBox(
+                height: height + 8,
+                child: ListView.separated(
+                  scrollDirection: Axis.horizontal,
+                  clipBehavior: Clip.none,
+                  itemCount: caravanMonths.length,
+                  separatorBuilder: (_, _) => const SizedBox(width: 10),
+                  itemBuilder: (context, i) {
+                    final month = caravanMonths[i];
+                    final saved = progress.caravanPostcards[month];
+                    if (saved == null) {
+                      // A etapa deste mês: o marco a caminho, revelado até
+                      // o último pouso que a pessoa viu na Caravana.
+                      return Padding(
+                        padding: const EdgeInsets.only(top: 4),
+                        child: _CaravanOnTheWay(month: month, width: _thumb),
+                      );
+                    }
+                    final card = CaravanPostcards.of(
+                      context,
+                      month,
+                      on: DateTime.tryParse(saved),
+                    );
+                    return Padding(
+                      padding: const EdgeInsets.only(top: 4),
+                      child: GestureDetector(
+                        onTap: () {
+                          ActHaptics.tap();
+                          showPostcardDetail(context, card);
+                        },
+                        child: PostcardView(
+                          postcard: card,
+                          width: _thumb,
+                          mini: true,
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
+              const SizedBox(height: AppSpace.lg),
+            ],
             for (final album in albums) ...[
-              Row(
-                children: [
-                  Expanded(
-                    child: Text(
-                      album.trail.localizedTitle,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.title(size: 16, color: a.text),
-                    ),
-                  ),
-                  Text(
-                    l10n.postcardsCount(
-                      album.missions
-                          .where((m) => _dayOf(progress, m.slug) != null)
-                          .length,
-                      album.missions.length,
-                    ),
-                    style: AppTypography.label(color: AppRoles.reward),
-                  ),
-                ],
+              Builder(
+                builder: (context) {
+                  final got = album.missions
+                      .where((m) => _dayOf(progress, m.slug) != null)
+                      .length;
+                  final total = album.missions.length;
+                  return Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Text(
+                              album.trail.localizedTitle,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: AppTypography.title(
+                                size: 14,
+                                color: a.text,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            l10n.postcardsCount(got, total),
+                            style: AppTypography.label(color: AppRoles.reward),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 6),
+                      // Álbum enchendo: quanto da trilha já virou postal.
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(2),
+                        child: LinearProgressIndicator(
+                          value: total == 0 ? 0 : got / total,
+                          minHeight: 3,
+                          backgroundColor: a.progressTrack,
+                          valueColor: const AlwaysStoppedAnimation(
+                            AppRoles.reward,
+                          ),
+                        ),
+                      ),
+                    ],
+                  );
+                },
               ),
               const SizedBox(height: AppSpace.sm),
               SizedBox(
@@ -182,14 +267,19 @@ class _PostcardAlbumState extends State<PostcardAlbum> {
                       mini: true,
                       reveal: day == null ? 0 : 1,
                     );
+                    // Postais soltos, levemente inclinados — não uma grade.
                     return Padding(
                       padding: const EdgeInsets.only(top: 4),
-                      child: day == null
-                          ? view
-                          : GestureDetector(
-                              onTap: () => _open(card),
-                              child: view,
-                            ),
+                      child: Transform.rotate(
+                        angle: (i.isEven ? -1 : 1) * 0.025,
+                        // Vaga ainda não ganha: recua, os ganhos brilham.
+                        child: day == null
+                            ? Opacity(opacity: 0.45, child: view)
+                            : GestureDetector(
+                                onTap: () => _open(card),
+                                child: view,
+                              ),
+                      ),
                     );
                   },
                 ),
@@ -259,6 +349,68 @@ class _YearReviewDoor extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// O marco do mês ainda a caminho: revelado até o último pouso visto na
+/// Caravana, com a etiqueta "A caminho".
+class _CaravanOnTheWay extends StatelessWidget {
+  final String month;
+  final double width;
+
+  const _CaravanOnTheWay({required this.month, required this.width});
+
+  Future<double> _reveal() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final seen = prefs.getInt('caravanStopSeen_$month') ?? -1;
+      return seen < 0 ? 0 : LeagueService.goalMilestones[seen];
+    } catch (_) {
+      return 0;
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final card = CaravanPostcards.of(context, month);
+    return FutureBuilder<double>(
+      future: _reveal(),
+      builder: (context, snap) => Stack(
+        clipBehavior: Clip.none,
+        children: [
+          PostcardView(
+            postcard: card,
+            width: width,
+            mini: true,
+            reveal: snap.data ?? 0,
+            postmark: 0,
+          ),
+          Positioned(
+            left: 0,
+            right: 0,
+            // Em cima da pintura: o rodapé do postal fica legível.
+            top: 10,
+            child: Center(
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                decoration: BoxDecoration(
+                  color: AppRoles.navTogether,
+                  borderRadius: BorderRadius.circular(AppRadii.pill),
+                ),
+                child: Text(
+                  context.l10n.caravanAlbumOnTheWay,
+                  style: AppTypography.label(
+                    size: 9,
+                    letterSpacing: 0.3,
+                    color: AppColors.textOnDark,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

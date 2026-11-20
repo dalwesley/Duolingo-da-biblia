@@ -165,6 +165,12 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
       _reloadScheduled = false;
       _loadFailed = false;
     });
+    // Quem já tinha lido livros inteiros ganha o selo (sem festa).
+    unawaited(
+      context.read<ProgressService>().backfillFinishedBooks([
+        for (final b in books) (abbrev: b.abbrev, chapters: b.chapters.length),
+      ]),
+    );
     if (_searching && _searchCtrl.text.trim().length >= 2) {
       _scheduleSearch(_searchCtrl.text);
     }
