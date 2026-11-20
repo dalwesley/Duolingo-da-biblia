@@ -28,6 +28,9 @@ class StwayLogo extends StatelessWidget {
         'assets/icon/app_icon.png',
         width: size,
         height: size,
+        // O PNG tem 1024 px (fonte do ícone do launcher): decodifica só o
+        // tamanho da tela, não 4 MB de RGBA por uso.
+        cacheWidth: (size * MediaQuery.devicePixelRatioOf(context)).ceil(),
         fit: BoxFit.cover,
         filterQuality: FilterQuality.high,
       ),
