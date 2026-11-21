@@ -17,6 +17,7 @@ import '../models/daily_quest.dart';
 import '../models/pilgrim_medals.dart';
 import '../models/room_plan.dart';
 import '../utils/dust_copy.dart';
+import '../utils/quiet_error.dart';
 import 'analytics_service.dart';
 import 'progress_service.dart';
 
@@ -753,14 +754,18 @@ class NotificationService {
           priority: 0,
         ),
       );
-    } catch (_) {}
+    } catch (e, st) {
+      quietError(e, st, 'notify:trial-ending');
+    }
   }
 
   Future<void> cancelTrialEndingReminder() async {
     if (!_available) return;
     try {
       await _plugin.cancel(_idTrialEnding);
-    } catch (_) {}
+    } catch (e, st) {
+      quietError(e, st, 'notify:trial-ending-cancel');
+    }
   }
 
   /// Propósito do grupo: 7h no dia que abre e 19h se o dia de hoje ainda
@@ -778,7 +783,9 @@ class NotificationService {
     for (var i = 0; i < _planSlots; i++) {
       try {
         await _plugin.cancel(_idPlanBase + i);
-      } catch (_) {}
+      } catch (e, st) {
+        quietError(e, st, 'notify:plan-cancel');
+      }
     }
     if (plan == null || !enabled) return;
     final l = L10n.current;

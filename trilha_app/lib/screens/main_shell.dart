@@ -44,6 +44,7 @@ import '../widgets/trail_gift.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/set_piece.dart';
 import '../services/content_catalog_service.dart';
+import '../utils/quiet_error.dart';
 import 'bible_screen.dart';
 import 'home_screen.dart';
 import 'league_screen.dart';
@@ -688,7 +689,9 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       final trailSlug = await _repo.getTrailSlugForMission(missionSlug);
       if (trailSlug == null || trailSlug.isEmpty) return;
       await ContentCatalogService.instance.ensureTrailBank(trailSlug);
-    } catch (_) {}
+    } catch (e, st) {
+      quietError(e, st, 'content:prefetch-bank', report: false);
+    }
   }
 
   void _openProfile() => openMeProfile(context);

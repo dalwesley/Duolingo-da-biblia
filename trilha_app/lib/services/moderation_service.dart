@@ -5,6 +5,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../utils/quiet_error.dart';
 import 'backend_service.dart';
 
 /// Motivo de uma denúncia. O id vai para o Firestore e para o painel admin.
@@ -161,14 +162,18 @@ class ModerationService extends ChangeNotifier {
       if (data is! Map || _boundUid != uid) return;
       _blocked = {for (final e in data.entries) '${e.key}': '${e.value}'};
       notifyListeners();
-    } catch (_) {}
+    } catch (e, st) {
+      quietError(e, st, 'moderation:load-cache');
+    }
   }
 
   Future<void> _saveCache(String uid) async {
     try {
       final prefs = await SharedPreferences.getInstance();
       await prefs.setString('$_cacheKey.$uid', jsonEncode(_blocked));
-    } catch (_) {}
+    } catch (e, st) {
+      quietError(e, st, 'moderation:save-cache');
+    }
   }
 
   static String _clip(String value, int max) {

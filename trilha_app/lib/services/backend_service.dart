@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:async';
 import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -19,6 +20,7 @@ import '../models/trail_gift.dart';
 import '../models/companion_invite.dart';
 import '../models/walk_companion.dart';
 import '../models/portrait_style.dart';
+import '../utils/quiet_error.dart';
 import '../utils/plus_access.dart';
 import '../utils/test_device.dart';
 import 'analytics_service.dart';
@@ -946,6 +948,11 @@ class BackendService extends ChangeNotifier {
     'activeRoomCode',
     'claimedReferralRewards',
     'firstOpenAtMs',
+    // Só o próprio aparelho usa; no público pesavam (lista por cena).
+    // A regra ainda não recusa estes no público: a 1.0.49 os grava lá.
+    'rankedScenes',
+    'sceneLastDoneOn',
+    'listStamps',
   };
 
   /// Separa o payload: privado vai para [_privatePath]; o público ganha
@@ -974,8 +981,38 @@ class BackendService extends ChangeNotifier {
   /// público apaga as cópias antigas desses campos. Dado pessoal nunca vai
   /// para o público (qualquer peregrino lê esse doc; a regra recusa): se o
   /// privado falhar, ele espera o próximo save.
+  /// Avisa uma vez por sessão quando o doc chega perto do limite do
+  /// Firestore (1 MiB): depois disso todo save falharia calado.
+  static bool _sizeWarned = false;
+
+  static void _warnIfLarge(
+    Map<String, dynamic> pub,
+    Map<String, dynamic> priv,
+  ) {
+    if (_sizeWarned) return;
+    int bytes(Map<String, dynamic> m) =>
+        utf8.encode(jsonEncode(m, toEncodable: (_) => null)).length;
+    try {
+      final p = bytes(pub);
+      final q = bytes(priv);
+      if (p < 300 * 1024 && q < 600 * 1024) return;
+      _sizeWarned = true;
+      quietError(
+        StateError(
+          'doc do usuário grande: público ${p ~/ 1024} KB, '
+          'privado ${q ~/ 1024} KB',
+        ),
+        StackTrace.current,
+        'sync:doc-size',
+      );
+    } catch (_) {
+      // Medir é só aviso.
+    }
+  }
+
   Future<void> _writeUserDocs(Map<String, dynamic> full) async {
     final split = splitPayload(full);
+    _warnIfLarge(split.public, split.private);
     // giftedTrails não sobe no private: a regra trava o campo (legado) e
     // o mapa vivo mora em users/{uid}/giftedTrails/{slug} no resgate.
     final private = Map<String, dynamic>.from(split.private)
@@ -1465,7 +1502,9 @@ class BackendService extends ChangeNotifier {
             'missions=${progress.completedMissions.length}',
           );
         }
-      } catch (_) {}
+      } catch (e2, st2) {
+        quietError(e2, st2, 'sync:hydrate-restore-local');
+      }
       _restoreCloudReadyAfterFailure(progress);
       return hydrateFailed;
     }

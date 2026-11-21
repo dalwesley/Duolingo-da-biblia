@@ -23,6 +23,7 @@ import '../utils/tomorrow_hook.dart';
 import '../utils/trail_progress.dart';
 import '../models/portrait_style.dart';
 import '../models/user_intent.dart';
+import '../utils/quiet_error.dart';
 import 'bible_reading_plan_service.dart';
 import 'bible_service.dart';
 import 'remote_config_service.dart';
@@ -373,6 +374,35 @@ class ProgressService extends ChangeNotifier {
 
   /// Favoritos ("abbrev:capítulo:versículo", ex.: "gn:1:1").
   List<String> bibleBookmarks = [];
+
+  /// Quando cada lista que se apaga item a item mudou aqui por último (ms):
+  /// `mistakes` (erros + marcações), `bookmarks`, `used`. Ao juntar com a
+  /// nuvem vale a lista inteira do lado mais novo — somar devolvia o erro
+  /// resolvido ou o favorito tirado em outro aparelho.
+  Map<String, int> listStamps = {};
+
+  void _stampList(String key) {
+    listStamps = {...listStamps, key: DateTime.now().millisecondsSinceEpoch};
+  }
+
+  /// Lista da nuvem ou daqui, pelo carimbo mais novo. Nuvem sem carimbo
+  /// (app antigo) soma como antes; aqui sem carimbo e nuvem com: vale a
+  /// nuvem (este aparelho só tinha cópia velha).
+  List<String> _newerList(
+    String key,
+    List<String> local,
+    List<String> cloud,
+    Map<String, int> cloudStamps,
+  ) {
+    final cloudTs = cloudStamps[key];
+    final localTs = listStamps[key];
+    if (cloudTs == null) return _unionStringLists(local, cloud);
+    if (localTs == null || cloudTs > localTs) {
+      listStamps = {...listStamps, key: cloudTs};
+      return cloud;
+    }
+    return local;
+  }
 
   /// Anotações por versículo (mesma chave dos favoritos), com lápides.
   Map<String, BibleNote> bibleNotes = {};
@@ -846,7 +876,9 @@ class ProgressService extends ChangeNotifier {
       final data = jsonDecode(raw);
       if (data is Map<String, dynamic>) return data;
       if (data is Map) return Map<String, dynamic>.from(data);
-    } catch (_) {}
+    } catch (e, st) {
+      quietError(e, st, 'sync:local-cache');
+    }
     return null;
   }
 
@@ -1268,7 +1300,9 @@ class ProgressService extends ChangeNotifier {
       try {
         final decoded = jsonDecode(diffRaw) as Map<String, dynamic>;
         diffs = decoded.map((k, v) => MapEntry(k, v.toString()));
-      } catch (_) {}
+      } catch (e, st) {
+        quietError(e, st, 'progress:load-difficulty');
+      }
     }
 
     Map<String, List<String>> clearedModes = {};
@@ -1281,7 +1315,9 @@ class ProgressService extends ChangeNotifier {
             for (final e in (v as List? ?? const [])) e.toString(),
           ]),
         );
-      } catch (_) {}
+      } catch (e, st) {
+        quietError(e, st, 'progress:load-cleared-modes');
+      }
     }
 
     Map<String, int> questProgress = {};
@@ -1290,7 +1326,9 @@ class ProgressService extends ChangeNotifier {
       try {
         final decoded = jsonDecode(qp) as Map<String, dynamic>;
         questProgress = decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
-      } catch (_) {}
+      } catch (e, st) {
+        quietError(e, st, 'progress:load-quests');
+      }
     }
 
     Map<String, int> weeklyProgress = {};
@@ -1299,7 +1337,9 @@ class ProgressService extends ChangeNotifier {
       try {
         final decoded = jsonDecode(wp) as Map<String, dynamic>;
         weeklyProgress = decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
-      } catch (_) {}
+      } catch (e, st) {
+        quietError(e, st, 'progress:load-weekly');
+      }
     }
 
     Map<String, int> memScores = {};
@@ -1308,7 +1348,9 @@ class ProgressService extends ChangeNotifier {
       try {
         final decoded = jsonDecode(memRaw) as Map<String, dynamic>;
         memScores = decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
-      } catch (_) {}
+      } catch (e, st) {
+        quietError(e, st, 'progress:load-memory');
+      }
     }
 
     Map<String, String> reflections = {};
@@ -1317,7 +1359,9 @@ class ProgressService extends ChangeNotifier {
       try {
         final decoded = jsonDecode(reflRaw) as Map<String, dynamic>;
         reflections = decoded.map((k, v) => MapEntry(k, v.toString()));
-      } catch (_) {}
+      } catch (e, st) {
+        quietError(e, st, 'progress:load-reflections');
+      }
     }
 
     return {
@@ -1481,6 +1525,7 @@ class ProgressService extends ChangeNotifier {
     usedQuestionIds = [];
     mistakeQuestionIds = [];
     mistakeAnswers = {};
+    listStamps = {};
     playDates = [];
     frozenDates = [];
     repairedDates = [];
@@ -2092,11 +2137,13 @@ class ProgressService extends ChangeNotifier {
         for (final k in bibleBookmarks)
           if (k != key) k,
       ];
+      _stampList('bookmarks');
       await _save();
       notifyListeners();
       return false;
     }
     bibleBookmarks = [key, ...bibleBookmarks];
+    _stampList('bookmarks');
     await _bumpQuest('bookmark');
     await _save();
     notifyListeners();
@@ -2119,17 +2166,26 @@ class ProgressService extends ChangeNotifier {
     final key = bibleBookmarkKey(bookAbbrev, chapter, verse);
     final trimmed = text.trim();
     if (tag == null && trimmed.isEmpty && bibleNotes[key] == null) return;
+    final now = DateTime.now().millisecondsSinceEpoch;
+    // Lápide velha já cumpriu o papel (os aparelhos sincronizaram): sai,
+    // para o doc privado não crescer sem fim.
+    final keepTombsSince = now - noteTombstoneDays * 86400000;
     bibleNotes = {
-      ...bibleNotes,
+      for (final e in bibleNotes.entries)
+        if (!e.value.deleted || e.value.updatedAtMs >= keepTombsSince)
+          e.key: e.value,
       key: BibleNote(
         tag: tag,
         text: tag == null ? '' : trimmed,
-        updatedAtMs: DateTime.now().millisecondsSinceEpoch,
+        updatedAtMs: now,
       ),
     };
     await _save();
     notifyListeners();
   }
+
+  /// Dias que a lápide de uma anotação apagada fica guardada.
+  static const noteTombstoneDays = 120;
 
   /// Anotações vivas, mais recentes primeiro.
   List<({String abbrev, int chapter, int verse, BibleNote note})> parseNotes() {
@@ -2878,6 +2934,7 @@ class ProgressService extends ChangeNotifier {
     usedQuestionIds = next.length > 400
         ? next.sublist(next.length - 400)
         : next;
+    _stampList('used');
     await _save();
   }
 
@@ -2907,7 +2964,10 @@ class ProgressService extends ChangeNotifier {
       mistakeAnswers = {...mistakeAnswers, questionId: text};
       changed = true;
     }
-    if (changed) _schedulePersist();
+    if (changed) {
+      _stampList('mistakes');
+      _schedulePersist();
+    }
   }
 
   /// Acerto de primeira por modo e gesto — base de Minha caminhada.
@@ -2984,6 +3044,7 @@ class ProgressService extends ChangeNotifier {
     if (mistakeAnswers.containsKey(questionId)) {
       mistakeAnswers = {...mistakeAnswers}..remove(questionId);
     }
+    _stampList('mistakes');
     _schedulePersist();
   }
 
@@ -3557,6 +3618,7 @@ class ProgressService extends ChangeNotifier {
       'trailsLeftAt': trailsLeftAt,
       'leftMissionSlugs': leftMissionSlugs,
       'progressEpoch': progressEpoch,
+      'listStamps': listStamps,
       'trailChoicesSeedV': trailChoicesSeedV,
       'postcardsOn': postcardsOn,
       'caravanPostcards': caravanPostcards,
@@ -3765,6 +3827,7 @@ class ProgressService extends ChangeNotifier {
 
   Future<void> _applyFromCloudData(Map<String, dynamic> data) async {
     final version = (data['version'] as num?)?.toInt() ?? 1;
+    final cloudStamps = _asIntMap(data['listStamps']);
 
     // Marca do servidor: só liga. O cache local (sem o campo) não desliga.
     if (data['desbravador'] == true && !desbravador) {
@@ -4121,9 +4184,11 @@ class ProgressService extends ChangeNotifier {
         bibleChapterReadOn = merged;
       }
       if (data.containsKey('bibleBookmarks')) {
-        bibleBookmarks = _unionStringLists(
+        bibleBookmarks = _newerList(
+          'bookmarks',
           bibleBookmarks,
           _asStringList(data['bibleBookmarks']),
+          cloudStamps,
         );
       }
       if (data.containsKey('bibleNotes')) {
@@ -4258,22 +4323,30 @@ class ProgressService extends ChangeNotifier {
         );
       }
       if (data.containsKey('usedQuestionIds')) {
-        usedQuestionIds = _unionStringLists(
+        usedQuestionIds = _newerList(
+          'used',
           usedQuestionIds,
           _asStringList(data['usedQuestionIds']),
+          cloudStamps,
         );
       }
       if (data.containsKey('mistakeQuestionIds')) {
-        mistakeQuestionIds = _unionStringLists(
+        final localWins =
+            cloudStamps['mistakes'] != null &&
+            listStamps['mistakes'] != null &&
+            listStamps['mistakes']! >= cloudStamps['mistakes']!;
+        mistakeQuestionIds = _newerList(
+          'mistakes',
           mistakeQuestionIds,
           _asStringList(data['mistakeQuestionIds']),
+          cloudStamps,
         );
-      }
-      if (data.containsKey('mistakeAnswers')) {
-        mistakeAnswers = {
-          ...mistakeAnswers,
-          ..._asStringMap(data['mistakeAnswers']),
-        };
+        if (!localWins && data.containsKey('mistakeAnswers')) {
+          mistakeAnswers = {
+            ...mistakeAnswers,
+            ..._asStringMap(data['mistakeAnswers']),
+          };
+        }
       }
       if (mistakeAnswers.keys.any((id) => !mistakeQuestionIds.contains(id))) {
         mistakeAnswers = {
@@ -4827,6 +4900,7 @@ class ProgressService extends ChangeNotifier {
     usedQuestionIds = [];
     mistakeQuestionIds = [];
     mistakeAnswers = {};
+    listStamps = {};
     playDates = [];
     frozenDates = [];
     repairedDates = [];

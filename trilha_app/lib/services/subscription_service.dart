@@ -11,6 +11,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../l10n/l10n_global.dart';
 import '../utils/home_support.dart';
 import '../utils/plus_access.dart';
+import '../utils/quiet_error.dart';
 import 'analytics_service.dart';
 import 'notification_service.dart';
 import 'plus_log.dart';
@@ -661,7 +662,9 @@ class SubscriptionService extends ChangeNotifier {
     try {
       final prefs = await SharedPreferences.getInstance();
       await prefs.remove(_cachePrefsKey);
-    } catch (_) {}
+    } catch (e, st) {
+      quietError(e, st, 'plus:entitlement-cache-clear');
+    }
   }
 
   Future<void> _restoreEntitlementCache() async {
@@ -725,7 +728,9 @@ class SubscriptionService extends ChangeNotifier {
         'ended=${_lastPlusEndedAt?.toIso8601String() ?? ''}',
         'uid=${_boundUid ?? _historyUid ?? ''}',
       ]);
-    } catch (_) {}
+    } catch (e, st) {
+      quietError(e, st, 'plus:history-save');
+    }
   }
 
   Future<void> _restorePlusHistory() async {
@@ -745,7 +750,9 @@ class SubscriptionService extends ChangeNotifier {
         }
       }
       if (_lastPlusEndedAt != null) notifyListeners();
-    } catch (_) {}
+    } catch (e, st) {
+      quietError(e, st, 'plus:history-load');
+    }
   }
 
   Future<void> _loadOfferings() async {
@@ -821,7 +828,9 @@ class SubscriptionService extends ChangeNotifier {
     try {
       final prefs = await SharedPreferences.getInstance();
       await prefs.setString(_keyPendingPurchase, productId);
-    } catch (_) {}
+    } catch (e, st) {
+      quietError(e, st, 'plus:pending-purchase-save');
+    }
   }
 
   Future<void> _closePendingPurchase() async {
@@ -834,7 +843,9 @@ class SubscriptionService extends ChangeNotifier {
         stage: 'success_pending',
         productId: product,
       );
-    } catch (_) {}
+    } catch (e, st) {
+      quietError(e, st, 'plus:pending-purchase-log');
+    }
   }
 
   void _onCustomerInfo(CustomerInfo info) {

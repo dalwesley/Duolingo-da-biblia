@@ -20,6 +20,7 @@ const { getCredentialPathAsync } = require('firebase-tools/lib/defaultCredential
 
 const PROJECT_ID = process.env.PROJECT_ID || 'trilha-biblia';
 const APPLY = process.argv.includes('--apply');
+const MOVED = process.argv.includes('--moved');
 
 // Mesma lista de BackendService.privateKeys (trilha_app/lib/services/backend_service.dart).
 export const PRIVATE_KEYS = [
@@ -32,6 +33,9 @@ export const PRIVATE_KEYS = [
   'bibleNotes', 'sharedVerses', 'lifeChallengesDone', 'settings', 'bibleReadingPlan',
   'companionCodes', 'activeRoomCode', 'claimedReferralRewards', 'firstOpenAtMs',
 ];
+// Saíram do público na 1.0.50; a regra só os recusa quando a 1.0.49 sair de
+// uso. Rode com --moved para limpá-los também.
+export const MOVED_KEYS = ['rankedScenes', 'sceneLastDoneOn', 'listStamps'];
 
 async function getDb() {
   const account = getGlobalDefaultAccount();
@@ -55,7 +59,7 @@ async function main() {
     const v = d.appVersion || '?';
     versions.set(v, (versions.get(v) || 0) + 1);
     if ((d.lastSeenDate || '') >= since) recentVersions.set(v, (recentVersions.get(v) || 0) + 1);
-    const leaked = PRIVATE_KEYS.filter((k) => k in d);
+    const leaked = [...PRIVATE_KEYS, ...(MOVED ? MOVED_KEYS : [])].filter((k) => k in d);
     if (leaked.length) {
       dirty.push({ ref: doc.ref, leaked, data: d });
       for (const k of leaked) keyCount.set(k, (keyCount.get(k) || 0) + 1);

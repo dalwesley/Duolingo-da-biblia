@@ -103,4 +103,56 @@ void main() {
       expect(p.steps, 50);
     });
   });
+
+  group('listas que se apagam item a item', () {
+    test('erro resolvido aqui não volta da nuvem mais velha', () async {
+      final p = ProgressService();
+      await p.recordMistake('q1', answer: 'a');
+      await p.recordMistake('q2', answer: 'b');
+      final cloudTs = p.listStamps['mistakes']! - 1000;
+      await p.clearMistake('q1');
+      await p.applyFromCloud({
+        'version': 2,
+        'mistakeQuestionIds': ['q1', 'q2'],
+        'mistakeAnswers': {'q1': 'a', 'q2': 'b'},
+        'listStamps': {'mistakes': cloudTs},
+      });
+      expect(p.mistakeQuestionIds, ['q2']);
+      expect(p.mistakeAnswers.keys, ['q2']);
+    });
+
+    test('resolvido em outro aparelho (nuvem mais nova) some aqui', () async {
+      final p = ProgressService();
+      await p.recordMistake('q1');
+      await p.recordMistake('q2');
+      final newer = p.listStamps['mistakes']! + 5000;
+      await p.applyFromCloud({
+        'version': 2,
+        'mistakeQuestionIds': ['q2'],
+        'listStamps': {'mistakes': newer},
+      });
+      expect(p.mistakeQuestionIds, ['q2']);
+      expect(p.listStamps['mistakes'], newer);
+    });
+
+    test('aparelho sem carimbo fica com a lista da nuvem', () async {
+      final p = ProgressService()..bibleBookmarks = ['gn:1:1', 'jo:3:16'];
+      await p.applyFromCloud({
+        'version': 2,
+        'bibleBookmarks': ['jo:3:16'],
+        'listStamps': {'bookmarks': 10},
+      });
+      expect(p.bibleBookmarks, ['jo:3:16']);
+    });
+
+    test('nuvem de app antigo (sem carimbo) soma como antes', () async {
+      final p = ProgressService();
+      await p.toggleBibleBookmark('gn', 1, 1);
+      await p.applyFromCloud({
+        'version': 2,
+        'bibleBookmarks': ['jo:3:16'],
+      });
+      expect(p.bibleBookmarks.toSet(), {'gn:1:1', 'jo:3:16'});
+    });
+  });
 }

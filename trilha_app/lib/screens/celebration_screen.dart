@@ -60,6 +60,7 @@ import 'trail_map_screen.dart';
 import '../widgets/one_trail_sheet.dart';
 import 'support_screen.dart';
 import '../services/advent_prize_service.dart';
+import '../utils/quiet_error.dart';
 
 class CelebrationScreen extends StatefulWidget {
   final String missionSlug;
@@ -364,7 +365,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     _leaving = true;
     try {
       await _offerRetentionPrompts();
-    } catch (_) {}
+    } catch (e, st) {
+      quietError(e, st, 'scene:retention-prompts');
+    }
     if (!mounted) return;
     if (toMap) {
       final canon = EntryTrails.continuesTo[widget.missionSlug];
@@ -401,7 +404,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     _leaving = true;
     try {
       await _askReminderOnce();
-    } catch (_) {}
+    } catch (e, st) {
+      quietError(e, st, 'scene:ask-reminder');
+    }
     if (!mounted) return;
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(builder: (_) => LessonScreen(missionSlug: slug)),
@@ -631,7 +636,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                         : line.monitorMessage;
                   });
                 }
-              } catch (_) {}
+              } catch (e, st) {
+                quietError(e, st, 'scene:complete-medals');
+              }
             }
             AnalyticsService.instance.logLessonComplete(
               missionSlug: widget.missionSlug,
