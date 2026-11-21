@@ -989,7 +989,11 @@ class _SettingsScreenState extends State<SettingsScreen>
       }
       return;
     }
-    await progress.applyFromCloud(parsed);
+    // Backup importado é escolha da pessoa: vale mesmo de antes de um reset.
+    await progress.applyFromCloud({
+      ...parsed,
+      'progressEpoch': progress.progressEpoch,
+    });
     await league.applyFromCloud(parsed);
     // Visitante guarda no espelho dele; com conta, no da conta.
     progress.bindCacheUid(backend.uid ?? ProgressService.guestCacheUid);

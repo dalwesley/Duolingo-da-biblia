@@ -38,6 +38,10 @@ const ACTIVATE = new Set([
   'PRODUCT_CHANGE',
   'UNCANCELLATION',
   'SUBSCRIPTION_EXTENDED',
+  // Reembolso desfeito: o acesso volta.
+  'REFUND_REVERSED',
+  // Loja fora do ar: o RevenueCat concede o acesso por um tempo curto.
+  'TEMPORARY_ENTITLEMENT_GRANT',
 ]);
 // Pausa (Play) é agendada para o fim do período: o acesso vai até lá,
 // e a loja manda EXPIRATION quando a pausa começar de fato.
@@ -49,8 +53,13 @@ const DEACTIVATE = new Set(['EXPIRATION']);
  * Pura para testar: recebe o `event` do webhook e devolve {uid, fields}.
  * Não conhece SKU/preço: decide pelo entitlement, não pelo produto.
  */
-function plusStateFromEvent(event) {
+function plusStateFromEvent(event, { allowSandbox = false } = {}) {
   if (!event || typeof event !== 'object') return null;
+  // Compra de teste (licença do Play, TestFlight) não liga Plus de
+  // verdade no banco de produção (passe de trilha, aceno, regras).
+  if (!allowSandbox && String(event.environment || '') === 'SANDBOX') {
+    return null;
+  }
   const type = String(event.type || '');
   // TRANSFER: quem recebe é o destino — a origem pode ser anônima.
   let uid = String(event.app_user_id || '').trim();
@@ -347,12 +356,50 @@ async function claimPioneerSlot(db, slot) {
 }
 
 /**
+ * TRANSFER costuma vir sem entitlement nem data de fim: pergunta ao
+ * RevenueCat se o destino tem Plus agora (senão ficava sem Plus no
+ * servidor até a próxima renovação, que pode levar um ano). Sem resposta,
+ * devolve o estado como veio: a origem desliga mesmo assim e o destino
+ * liga na próxima renovação ou no "Restaurar compras".
+ */
+async function withTransferLookup(state, event, rc) {
+  if (
+    !rc ||
+    !state ||
+    state.fields ||
+    String((event && event.type) || '') !== 'TRANSFER' ||
+    !state.uid ||
+    state.uid.startsWith('$RCAnonymousID')
+  ) {
+    return state;
+  }
+  try {
+    const info = await rc.plusInfo(state.uid);
+    if (!info.active) return state;
+    return {
+      ...state,
+      fields: {
+        plusActive: true,
+        plusWillRenew: info.willRenew,
+        plusInTrial: info.inTrial,
+        plusProductId: info.productId,
+        plusExpiresAt: info.expiresAt,
+        plusSource: 'revenuecat',
+      },
+    };
+  } catch (_) {
+    return state;
+  }
+}
+
+/**
  * Aplica um evento já conferido. Devolve null se o evento não muda nada;
  * senão o resumo para o log.
  */
-async function applyEvent(db, event) {
-  const state = plusStateFromEvent(event);
+async function applyEvent(db, event, { rc = null, allowSandbox = false } = {}) {
+  let state = plusStateFromEvent(event, { allowSandbox });
   const slot = pioneerSlotFromEvent(event);
+  state = await withTransferLookup(state, event, rc);
   if (!state && !slot) return null;
   let skipped = null;
   if (state && state.fields) {
@@ -377,6 +424,7 @@ async function applyEvent(db, event) {
 
 module.exports = {
   applyEvent,
+  withTransferLookup,
   TOMBSTONES,
   plusStateFromEvent,
   pioneerSlotFromEvent,

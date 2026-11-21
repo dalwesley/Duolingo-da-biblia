@@ -609,7 +609,11 @@ exports.revenueCatWebhook = functions
     }
     const event = req.body && req.body.event;
     try {
-      const out = await revenueCat.applyEvent(getFirestore(), event);
+      const out = await revenueCat.applyEvent(getFirestore(), event, {
+        rc: referralRc(),
+        // Teste com compra de mentira: ligue só enquanto testa.
+        allowSandbox: process.env.REVENUECAT_ALLOW_SANDBOX === '1',
+      });
       await referralFromEvent(getFirestore(), event);
       await stamp(out ? 'ok' : 'ignored', event);
       if (!out) {
@@ -844,6 +848,8 @@ exports.liftSuspensions = functions.pubsub
   .onRun(async () => {
     const lifted = await moderation.liftExpired({ db: getFirestore(), auth: getAuth(), logger });
     if (lifted) logger.info('moderação: suspensões encerradas', { lifted });
+    // Plus dado no painel que venceu sai do doc (selo, passe, aceno).
+    await moderation.expireManualPlus({ db: getFirestore(), logger });
   });
 
 // ---- Etapa do mês da Caravana (ver caravan.js) ----------------------------

@@ -380,6 +380,37 @@ async function liftExpired({ db, auth, logger }) {
   return lifted;
 }
 
+/**
+ * Plus manual (painel) vencido sai do doc: o promocional do RevenueCat já
+ * acaba sozinho, mas o espelho em users/{uid} (selo, passe, aceno) ficava
+ * ligado para sempre se o RevenueCat tivesse falhado na hora de dar.
+ * Quem assinou de verdade depois também tem `plusExpiresAt` do webhook:
+ * só sai quando a assinatura vence (o webhook também desliga nessa hora).
+ */
+async function expireManualPlus({ db, logger }, nowMs = Date.now()) {
+  const snap = await db.collection('users').where('plusManual', '==', true).get();
+  let expired = 0;
+  for (const d of snap.docs) {
+    const at = Date.parse(String(d.get('plusExpiresAt') || ''));
+    if (Number.isNaN(at) || at > nowMs) continue;
+    await d.ref.update({
+      plusActive: false,
+      plusManual: FieldValue.delete(),
+    });
+    await db.collection(LOG).add({
+      uid: d.id,
+      action: 'plusExpired',
+      reason: 'Fim do Plus manual',
+      details: { expiresAt: d.get('plusExpiresAt') },
+      by: 'sistema',
+      at: FieldValue.serverTimestamp(),
+    });
+    expired += 1;
+  }
+  if (expired) logger.info('plus manual vencido', { expired });
+  return expired;
+}
+
 /** Timestamps viram ISO para o cliente (só o nível de cima; o doc é raso). */
 function serialize(obj) {
   return Object.fromEntries(
@@ -387,4 +418,4 @@ function serialize(obj) {
   );
 }
 
-module.exports = { moderate, liftExpired, ModerationError, neutralName };
+module.exports = { moderate, liftExpired, expireManualPlus, ModerationError, neutralName };

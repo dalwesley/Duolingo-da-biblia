@@ -181,3 +181,46 @@ test('Plus manual sem chave do RevenueCat ainda grava o espelho e avisa', async 
   assert.equal(details.revenueCat, false);
   assert.equal(db.docs.get('users/u1').plusActive, true);
 });
+
+test('Plus manual vencido sai do doc; o que ainda vale fica', async () => {
+  const past = new Date(Date.now() - 3600_000).toISOString();
+  const future = new Date(Date.now() + 86_400_000).toISOString();
+  const docs = {
+    'users/a': { plusManual: true, plusActive: true, plusExpiresAt: past },
+    'users/b': { plusManual: true, plusActive: true, plusExpiresAt: future },
+  };
+  const log = [];
+  const ref = (path) => ({
+    path,
+    async update(patch) {
+      const cur = { ...docs[path] };
+      for (const [k, v] of Object.entries(patch)) {
+        if (v && v.constructor && v.constructor.name === 'DeleteTransform') delete cur[k];
+        else if (typeof v === 'object' && v !== null && !Array.isArray(v) && String(v).includes('delete')) delete cur[k];
+        else cur[k] = v;
+      }
+      docs[path] = cur;
+    },
+  });
+  const db = {
+    collection: (name) =>
+      name === 'users'
+        ? {
+            where: () => ({
+              async get() {
+                return {
+                  docs: Object.entries(docs)
+                    .filter(([, d]) => d.plusManual === true)
+                    .map(([p, d]) => ({ id: p.split('/')[1], ref: ref(p), get: (k) => d[k] })),
+                };
+              },
+            }),
+          }
+        : { async add(x) { log.push(x); } },
+  };
+  const n = await M.expireManualPlus({ db, logger });
+  assert.equal(n, 1);
+  assert.equal(docs['users/a'].plusActive, false);
+  assert.equal(docs['users/b'].plusActive, true);
+  assert.equal(log[0].action, 'plusExpired');
+});

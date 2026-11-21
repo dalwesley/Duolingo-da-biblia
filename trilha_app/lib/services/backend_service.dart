@@ -982,9 +982,12 @@ class BackendService extends ChangeNotifier {
       ..remove('giftedTrails');
     var privateOk = false;
     try {
+      // mergeFields: cada campo do payload troca inteiro (um item apagado
+      // dentro de um mapa some na nuvem também); os outros campos do doc
+      // (token de push, listas de espera) ficam.
       await _db
           .doc(_privatePath)
-          .set(private, SetOptions(merge: true))
+          .set(private, SetOptions(mergeFields: private.keys.toList()))
           .timeout(const Duration(seconds: 12));
       privateOk = true;
     } catch (e) {
@@ -999,7 +1002,7 @@ class BackendService extends ChangeNotifier {
         : split.public;
     await _db
         .doc('users/$_uid')
-        .set(public, SetOptions(merge: true))
+        .set(public, SetOptions(mergeFields: public.keys.toList()))
         .timeout(const Duration(seconds: 12));
   }
 

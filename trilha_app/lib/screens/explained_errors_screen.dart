@@ -52,34 +52,45 @@ class _ExplainedErrorsScreenState extends State<ExplainedErrorsScreen> {
     final progress = context.read<ProgressService>();
     final ids = progress.mistakeQuestionIds;
     // Carrega só os bancos das trilhas dos erros guardados (teto: 6).
-    final trails = await TrailRepository().getTrails();
-    final bankSlugs = <String>{};
-    for (final id in ids.reversed) {
-      if (bankSlugs.length >= 6) break;
-      for (final t in trails) {
-        if (id.startsWith('${t.slug}-')) {
-          bankSlugs.add(t.slug);
-          break;
-        }
-      }
-    }
-    for (final slug in bankSlugs) {
-      await ContentCatalogService.instance.ensureTrailBank(slug);
-    }
+    // Sem rede, mostra o que já está no aparelho em vez de girar sempre.
+    var trails = <Trail>[];
     var items = explainMistakes(
       mistakeIds: ids,
       byId: QuestionBank.instance.byId,
       answers: progress.mistakeAnswers,
     );
-    // Ids antigos podem não começar pelo slug da trilha: se nada
-    // resolveu, carrega o banco inteiro uma vez antes de desistir.
-    if (items.isEmpty && ids.isNotEmpty) {
-      await ContentCatalogService.instance.getBankQuestions();
+    try {
+      trails = await TrailRepository().getTrails();
+      final bankSlugs = <String>{};
+      for (final id in ids.reversed) {
+        if (bankSlugs.length >= 6) break;
+        for (final t in trails) {
+          if (id.startsWith('${t.slug}-')) {
+            bankSlugs.add(t.slug);
+            break;
+          }
+        }
+      }
+      for (final slug in bankSlugs) {
+        await ContentCatalogService.instance.ensureTrailBank(slug);
+      }
       items = explainMistakes(
         mistakeIds: ids,
         byId: QuestionBank.instance.byId,
         answers: progress.mistakeAnswers,
       );
+      // Ids antigos podem não começar pelo slug da trilha: se nada
+      // resolveu, carrega o banco inteiro uma vez antes de desistir.
+      if (items.isEmpty && ids.isNotEmpty) {
+        await ContentCatalogService.instance.getBankQuestions();
+        items = explainMistakes(
+          mistakeIds: ids,
+          byId: QuestionBank.instance.byId,
+          answers: progress.mistakeAnswers,
+        );
+      }
+    } catch (e) {
+      debugPrint('Erros explicados: carga incompleta $e');
     }
     if (!mounted) return;
     setState(() {

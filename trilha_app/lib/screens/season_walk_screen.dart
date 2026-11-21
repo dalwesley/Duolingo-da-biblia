@@ -553,29 +553,35 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
     }
     setState(() => _loading = true);
     final slugs = {for (final d in _days) d.trailSlug};
-    for (final slug in slugs) {
-      await ContentCatalogService.instance.ensureTrailBank(slug);
-    }
     final ids = <String>[];
-    for (final day in _days) {
-      if (ids.length >= 3) break;
-      final pool = await QuestionBank.instance.listForMission(
-        difficulty:
-            TrailDifficulty.fromId(
-              progress.difficultyForTrail(day.trailSlug),
-            ) ??
-            TrailDifficulty.semente,
-        moduleTitle: null,
-        section: day.missionSlug,
-        trailSlug: day.trailSlug,
-      );
-      if (pool.isEmpty) continue;
-      final id = SeasonWalkAccess.pickReviewActId(
-        poolIds: pool.map((q) => q.id),
-        mistakeIds: progress.mistakeQuestionIds,
-        usedIds: progress.usedQuestionIds,
-      );
-      if (id != null) ids.add(id);
+    // Sem rede, a revisão sai com o que já está no aparelho (ou avisa que
+    // não há perguntas) em vez de girar para sempre.
+    try {
+      for (final slug in slugs) {
+        await ContentCatalogService.instance.ensureTrailBank(slug);
+      }
+      for (final day in _days) {
+        if (ids.length >= 3) break;
+        final pool = await QuestionBank.instance.listForMission(
+          difficulty:
+              TrailDifficulty.fromId(
+                progress.difficultyForTrail(day.trailSlug),
+              ) ??
+              TrailDifficulty.semente,
+          moduleTitle: null,
+          section: day.missionSlug,
+          trailSlug: day.trailSlug,
+        );
+        if (pool.isEmpty) continue;
+        final id = SeasonWalkAccess.pickReviewActId(
+          poolIds: pool.map((q) => q.id),
+          mistakeIds: progress.mistakeQuestionIds,
+          usedIds: progress.usedQuestionIds,
+        );
+        if (id != null) ids.add(id);
+      }
+    } catch (e) {
+      debugPrint('Revisão da Caminhada: carga incompleta $e');
     }
     if (!mounted) return;
     setState(() => _loading = false);

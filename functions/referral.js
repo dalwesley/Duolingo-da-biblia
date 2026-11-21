@@ -111,9 +111,34 @@ function revenueCatClient(secretKey, fetchImpl = fetch) {
     Authorization: `Bearer ${secretKey}`,
     'Content-Type': 'application/json',
   };
+  // Sem resposta em 8 s, desiste: o webhook não pode esperar até cair.
+  const wait = () => AbortSignal.timeout(8000);
   return {
+    /** Plus agora no destino: ativo, teste, produto, fim, renovação. */
+    async plusInfo(uid, now = Date.now()) {
+      const res = await fetchImpl(base + encodeURIComponent(uid), {
+        headers,
+        signal: wait(),
+      });
+      if (!res.ok) throw new Error(`revenuecat get ${res.status}`);
+      const body = await res.json();
+      const sub = body?.subscriber || {};
+      const ent = sub.entitlements?.[ENTITLEMENT_ID];
+      if (!ent) return { active: false };
+      const expiresMs = ent.expires_date == null ? null : Date.parse(ent.expires_date);
+      const active = expiresMs == null || expiresMs > now;
+      const product = String(ent.product_identifier || '');
+      const subInfo = sub.subscriptions?.[product] || {};
+      return {
+        active,
+        productId: product || null,
+        expiresAt: expiresMs == null ? null : new Date(expiresMs).toISOString(),
+        inTrial: String(subInfo.period_type || '') === 'trial',
+        willRenew: subInfo.unsubscribe_detected_at == null && expiresMs != null,
+      };
+    },
     async hasPlus(uid, now = Date.now()) {
-      const res = await fetchImpl(base + encodeURIComponent(uid), { headers });
+      const res = await fetchImpl(base + encodeURIComponent(uid), { headers, signal: wait() });
       if (!res.ok) throw new Error(`revenuecat get ${res.status}`);
       const body = await res.json();
       const ent = body?.subscriber?.entitlements?.[ENTITLEMENT_ID];
@@ -128,6 +153,7 @@ function revenueCatClient(secretKey, fetchImpl = fetch) {
         method: 'POST',
         headers,
         body: JSON.stringify({ end_time_ms: endMs }),
+        signal: wait(),
       });
       if (!res.ok) throw new Error(`revenuecat grant ${res.status}`);
       return endMs;
@@ -140,6 +166,7 @@ function revenueCatClient(secretKey, fetchImpl = fetch) {
         method: 'POST',
         headers,
         body: JSON.stringify({ end_time_ms: endMs }),
+        signal: wait(),
       });
       if (!res.ok) throw new Error(`revenuecat grant ${res.status}`);
       return endMs;
@@ -147,7 +174,7 @@ function revenueCatClient(secretKey, fetchImpl = fetch) {
     /** Tira todo Plus promocional (o pago pela loja fica). */
     async revokePromotional(uid) {
       const url = `${base}${encodeURIComponent(uid)}/entitlements/${ENTITLEMENT_ID}/revoke_promotionals`;
-      const res = await fetchImpl(url, { method: 'POST', headers });
+      const res = await fetchImpl(url, { method: 'POST', headers, signal: wait() });
       if (!res.ok) throw new Error(`revenuecat revoke ${res.status}`);
     },
   };

@@ -39,20 +39,26 @@ class _PracticeScreenState extends State<PracticeScreen> {
 
   Future<void> _build() async {
     final progress = context.read<ProgressService>();
-    await QuestionBank.instance.ensureLoaded();
     final ids = progress.mistakeQuestionIds.reversed.take(6).toList();
-    final missing = ids.where((id) => QuestionBank.instance.byId(id) == null);
-    if (missing.isNotEmpty) {
-      final trails = await TrailRepository().getTrails();
-      final slugs = <String>{};
-      for (final id in missing) {
-        for (final t in trails) {
-          if (id.startsWith('${t.slug}-')) slugs.add(t.slug);
+    // Sem rede, segue com o que já está no aparelho: a tela não fica
+    // girando para sempre.
+    try {
+      await QuestionBank.instance.ensureLoaded();
+      final missing = ids.where((id) => QuestionBank.instance.byId(id) == null);
+      if (missing.isNotEmpty) {
+        final trails = await TrailRepository().getTrails();
+        final slugs = <String>{};
+        for (final id in missing) {
+          for (final t in trails) {
+            if (id.startsWith('${t.slug}-')) slugs.add(t.slug);
+          }
+        }
+        for (final slug in slugs) {
+          await ContentCatalogService.instance.ensureTrailBank(slug);
         }
       }
-      for (final slug in slugs) {
-        await ContentCatalogService.instance.ensureTrailBank(slug);
-      }
+    } catch (e) {
+      debugPrint('Prática dos erros: carga incompleta $e');
     }
     final questions = <Question>[];
     for (final id in ids) {

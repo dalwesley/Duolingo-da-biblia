@@ -812,6 +812,31 @@ class SubscriptionService extends ChangeNotifier {
     return null;
   }
 
+  static const _keyPendingPurchase = 'plus_pending_purchase';
+
+  /// Boleto/PIX: a compra fecha horas depois, pelo listener. Guarda o
+  /// produto para contar a conversão quando o Plus chegar (antes sumia
+  /// das métricas: o `success` só existia no caminho síncrono).
+  Future<void> _markPendingPurchase(String productId) async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString(_keyPendingPurchase, productId);
+    } catch (_) {}
+  }
+
+  Future<void> _closePendingPurchase() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final product = prefs.getString(_keyPendingPurchase);
+      if (product == null) return;
+      await prefs.remove(_keyPendingPurchase);
+      await AnalyticsService.instance.logPurchase(
+        stage: 'success_pending',
+        productId: product,
+      );
+    } catch (_) {}
+  }
+
   void _onCustomerInfo(CustomerInfo info) {
     final entitlement = info.entitlements.active[_entitlementId];
     final wasPlus = isPeregrinoPlus;
@@ -828,6 +853,7 @@ class SubscriptionService extends ChangeNotifier {
     if (wasPlus != isPeregrinoPlus && availablePackages.isNotEmpty) {
       unawaited(_loadTrialEligibility());
     }
+    if (!wasPlus && isPeregrinoPlus) unawaited(_closePendingPurchase());
     plusProductId = entitlement?.productIdentifier;
     plusExpiresAt = DateTime.tryParse(entitlement?.expirationDate ?? '');
     plusWillRenew = entitlement?.willRenew ?? false;
@@ -924,6 +950,7 @@ class SubscriptionService extends ChangeNotifier {
         // Boleto/PIX no Play: a compra fecha depois, pelo listener. Dizer
         // "falhou" levava a pagar de novo.
         track('pending');
+        unawaited(_markPendingPurchase(productId));
         lastError = L10n.current.paywallPurchasePending;
         PlusLog.log('compra', '$productId pagamento pendente');
       } else if (code == PurchasesErrorCode.productAlreadyPurchasedError) {

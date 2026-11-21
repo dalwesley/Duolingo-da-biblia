@@ -510,6 +510,11 @@ class ProgressService extends ChangeNotifier {
   /// volta até a pessoa refazer cada uma.
   List<String> leftMissionSlugs = [];
 
+  /// Marca do último "zerar progresso" (ms). Dado da nuvem ou do cache com
+  /// marca mais antiga é de antes do reset e não volta; marca mais nova
+  /// (outro aparelho zerou) zera este antes de juntar.
+  int progressEpoch = 0;
+
   /// Versão da semente de Minhas trilhas já aplicada. A 1ª perdia as
   /// trilhas antigas quando uma escolha nova chegava antes dela.
   int trailChoicesSeedV = 0;
@@ -3551,6 +3556,7 @@ class ProgressService extends ChangeNotifier {
       'trailChosenAt': trailChosenAt,
       'trailsLeftAt': trailsLeftAt,
       'leftMissionSlugs': leftMissionSlugs,
+      'progressEpoch': progressEpoch,
       'trailChoicesSeedV': trailChoicesSeedV,
       'postcardsOn': postcardsOn,
       'caravanPostcards': caravanPostcards,
@@ -3699,6 +3705,65 @@ class ProgressService extends ChangeNotifier {
 
   /// Aplica documento da nuvem (v1 parcial ou v2 completo) na memória da sessão.
   Future<void> applyFromCloud(Map<String, dynamic> data) async {
+    final cloudEpoch = (data['progressEpoch'] as num?)?.toInt() ?? 0;
+    if (cloudEpoch < progressEpoch) {
+      debugPrint('applyFromCloud: dado de antes do reset, ignorado');
+      return;
+    }
+    if (cloudEpoch > progressEpoch) {
+      // Outro aparelho zerou depois: este zera e fica com o que veio.
+      await resetProgress(epoch: cloudEpoch);
+    }
+    // Lápides: cena ou trilha que este aparelho deixou não volta pela
+    // nuvem (ela só some lá no próximo save). O que já estava aqui fica.
+    final before = (
+      completedOn: missionCompletedOn.keys.toSet(),
+      lastDone: sceneLastDoneOn.keys.toSet(),
+      postcards: postcardsOn.keys.toSet(),
+      refs: postcardRefs.keys.toSet(),
+      reflections: missionReflections.keys.toSet(),
+      perfect: perfectMissions.toSet(),
+      borrowed: borrowedMissions.toSet(),
+      cleared: clearedTrailModes.keys.toSet(),
+      difficulty: trailDifficulties.keys.toSet(),
+      pinned: pinnedTrailDifficulties.keys.toSet(),
+      answers: trailAnswerTotal.keys.toSet(),
+    );
+    await _applyFromCloudData(data);
+    final left = leftMissionSlugs.toSet();
+    final leftTrails = trailsLeftAt.keys.toSet();
+    if (left.isEmpty && leftTrails.isEmpty) return;
+    Map<String, V> keep<V>(
+      Map<String, V> m,
+      Set<String> tomb,
+      Set<String> had,
+    ) => {
+      for (final e in m.entries)
+        if (!tomb.contains(e.key) || had.contains(e.key)) e.key: e.value,
+    };
+    List<String> keepList(List<String> l, Set<String> had) => [
+      for (final s in l)
+        if (!left.contains(s) || had.contains(s)) s,
+    ];
+    missionCompletedOn = keep(missionCompletedOn, left, before.completedOn);
+    sceneLastDoneOn = keep(sceneLastDoneOn, left, before.lastDone);
+    postcardsOn = keep(postcardsOn, left, before.postcards);
+    postcardRefs = keep(postcardRefs, left, before.refs);
+    missionReflections = keep(missionReflections, left, before.reflections);
+    perfectMissions = keepList(perfectMissions, before.perfect);
+    borrowedMissions = keepList(borrowedMissions, before.borrowed);
+    clearedTrailModes = keep(clearedTrailModes, leftTrails, before.cleared);
+    trailDifficulties = keep(trailDifficulties, leftTrails, before.difficulty);
+    pinnedTrailDifficulties = keep(
+      pinnedTrailDifficulties,
+      leftTrails,
+      before.pinned,
+    );
+    trailAnswerCorrect = keep(trailAnswerCorrect, leftTrails, before.answers);
+    trailAnswerTotal = keep(trailAnswerTotal, leftTrails, before.answers);
+  }
+
+  Future<void> _applyFromCloudData(Map<String, dynamic> data) async {
     final version = (data['version'] as num?)?.toInt() ?? 1;
 
     // Marca do servidor: só liga. O cache local (sem o campo) não desliga.
@@ -4727,7 +4792,10 @@ class ProgressService extends ChangeNotifier {
     notifyListeners();
   }
 
-  Future<void> resetProgress() async {
+  /// [epoch]: marca de outro aparelho que zerou (ver [progressEpoch]).
+  Future<void> resetProgress({int? epoch}) async {
+    progressEpoch = epoch ?? DateTime.now().millisecondsSinceEpoch;
+    sceneLastDoneOn = {};
     steps = 0;
     streak = 0;
     bestStreak = 0;

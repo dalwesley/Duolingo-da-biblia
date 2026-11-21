@@ -422,3 +422,65 @@ test('pausa agendada mantém ativo até vencer, sem renovar', () => {
   assert.equal(r.fields.plusActive, true);
   assert.equal(r.fields.plusWillRenew, false);
 });
+
+test('compra de teste (sandbox) não liga Plus, a não ser liberada', () => {
+  const ev = {
+    type: 'INITIAL_PURCHASE',
+    environment: 'SANDBOX',
+    app_user_id: 'u1',
+    entitlement_ids: [RC.ENTITLEMENT_ID],
+    product_id: 'plus_monthly',
+    expiration_at_ms: future,
+  };
+  assert.equal(RC.plusStateFromEvent(ev), null);
+  assert.equal(RC.plusStateFromEvent(ev, { allowSandbox: true }).fields.plusActive, true);
+});
+
+test('reembolso desfeito e acesso temporário ligam o Plus', () => {
+  for (const type of ['REFUND_REVERSED', 'TEMPORARY_ENTITLEMENT_GRANT']) {
+    const out = RC.plusStateFromEvent({
+      type,
+      app_user_id: 'u1',
+      entitlement_ids: [RC.ENTITLEMENT_ID],
+      product_id: 'plus_monthly',
+      expiration_at_ms: future,
+    });
+    assert.equal(out.fields.plusActive, true, type);
+  }
+});
+
+test('transferência sem data: pergunta ao RevenueCat e liga o destino', async () => {
+  const ev = {
+    type: 'TRANSFER',
+    transferred_from: ['orig'],
+    transferred_to: ['dest'],
+    app_user_id: 'dest',
+  };
+  const base = RC.plusStateFromEvent(ev);
+  assert.equal(base.fields, null); // sem perguntar, ninguém liga
+  const asked = [];
+  const rc = {
+    async plusInfo(uid) {
+      asked.push(uid);
+      return { active: true, willRenew: true, inTrial: false, productId: 'plus_annual', expiresAt: iso(future) };
+    },
+  };
+  const out = await RC.withTransferLookup(base, ev, rc);
+  assert.deepEqual(asked, ['dest']);
+  assert.equal(out.fields.plusActive, true);
+  assert.equal(out.fields.plusProductId, 'plus_annual');
+  assert.equal(out.also[0].uid, 'orig'); // a origem continua desligando
+
+  const off = await RC.withTransferLookup(base, ev, { plusInfo: async () => ({ active: false }) });
+  assert.equal(off.fields, null);
+  const down = await RC.withTransferLookup(base, ev, {
+    plusInfo: async () => {
+      throw new Error('fora do ar');
+    },
+  });
+  assert.equal(down.fields, null);
+  // Outros eventos não perguntam.
+  const buy = RC.plusStateFromEvent({ type: 'EXPIRATION', app_user_id: 'u', entitlement_ids: [RC.ENTITLEMENT_ID] });
+  assert.equal(await RC.withTransferLookup(buy, { type: 'EXPIRATION' }, rc), buy);
+  assert.equal(asked.length, 1);
+});
