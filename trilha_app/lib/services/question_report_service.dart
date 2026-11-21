@@ -29,33 +29,39 @@ class QuestionReportService {
 
     final comment = draft.comment.trim();
     try {
-      await _db.collection(collection).add({
-        'questionId': draft.questionId,
-        'questionText': _clip(draft.questionText, 500),
-        if (draft.verseRef != null && draft.verseRef!.isNotEmpty)
-          'verseRef': draft.verseRef,
-        'selectedOptionId': draft.selectedOptionId,
-        if (draft.selectedOptionText != null)
-          'selectedOptionText': _clip(draft.selectedOptionText!, 300),
-        'correctOptionId': draft.correctOptionId,
-        if (draft.correctOptionText != null)
-          'correctOptionText': _clip(draft.correctOptionText!, 300),
-        'userWasCorrect': draft.userWasCorrect,
-        'missionSlug': draft.missionSlug,
-        if (draft.trailSlug != null) 'trailSlug': draft.trailSlug,
-        if (draft.difficulty != null) 'difficulty': draft.difficulty,
-        'practiceMode': draft.practiceMode,
-        'category': draft.category.id,
-        'comment': _clip(comment, 800),
-        'uid': uid,
-        if (backend.userEmail != null) 'email': backend.userEmail,
-        if (backend.userDisplayName != null)
-          'displayName': backend.userDisplayName,
-        'status': 'open',
-        // Reserva para discussões futuras na trilha.
-        'discussionEligible': true,
-        'createdAt': FieldValue.serverTimestamp(),
-      });
+      // Sem rede, o Firestore guarda e envia quando a conexão voltar: não
+      // prende a folha esperando o servidor.
+      await _db
+          .collection(collection)
+          .doc()
+          .set({
+            'questionId': draft.questionId,
+            'questionText': _clip(draft.questionText, 500),
+            if (draft.verseRef != null && draft.verseRef!.isNotEmpty)
+              'verseRef': draft.verseRef,
+            'selectedOptionId': draft.selectedOptionId,
+            if (draft.selectedOptionText != null)
+              'selectedOptionText': _clip(draft.selectedOptionText!, 300),
+            'correctOptionId': draft.correctOptionId,
+            if (draft.correctOptionText != null)
+              'correctOptionText': _clip(draft.correctOptionText!, 300),
+            'userWasCorrect': draft.userWasCorrect,
+            'missionSlug': draft.missionSlug,
+            if (draft.trailSlug != null) 'trailSlug': draft.trailSlug,
+            if (draft.difficulty != null) 'difficulty': draft.difficulty,
+            'practiceMode': draft.practiceMode,
+            'category': draft.category.id,
+            'comment': _clip(comment, 800),
+            'uid': uid,
+            if (backend.userEmail != null) 'email': backend.userEmail,
+            if (backend.userDisplayName != null)
+              'displayName': backend.userDisplayName,
+            'status': 'open',
+            // Reserva para discussões futuras na trilha.
+            'discussionEligible': true,
+            'createdAt': FieldValue.serverTimestamp(),
+          })
+          .timeout(const Duration(seconds: 8), onTimeout: () {});
       return true;
     } catch (e) {
       debugPrint('QuestionReportService submit failed: $e');

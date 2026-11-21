@@ -34,21 +34,28 @@ class AppReportService {
 
     try {
       final info = await PackageInfo.fromPlatform();
-      await _db.collection(collection).add({
-        'category': category.id,
-        'comment': _clip(comment, 800),
-        'appVersion': info.version,
-        'buildNumber': info.buildNumber,
-        'platform': kIsWeb ? 'web' : Platform.operatingSystem,
-        if (!kIsWeb) 'osVersion': _clip(Platform.operatingSystemVersion, 120),
-        'locale': locale,
-        'uid': uid,
-        if (backend.userEmail != null) 'email': backend.userEmail,
-        if (backend.userDisplayName != null)
-          'displayName': backend.userDisplayName,
-        'status': 'open',
-        'createdAt': FieldValue.serverTimestamp(),
-      });
+      // Sem rede, o Firestore guarda e envia quando a conexão voltar: não
+      // prende a folha esperando o servidor.
+      await _db
+          .collection(collection)
+          .doc()
+          .set({
+            'category': category.id,
+            'comment': _clip(comment, 800),
+            'appVersion': info.version,
+            'buildNumber': info.buildNumber,
+            'platform': kIsWeb ? 'web' : Platform.operatingSystem,
+            if (!kIsWeb)
+              'osVersion': _clip(Platform.operatingSystemVersion, 120),
+            'locale': locale,
+            'uid': uid,
+            if (backend.userEmail != null) 'email': backend.userEmail,
+            if (backend.userDisplayName != null)
+              'displayName': backend.userDisplayName,
+            'status': 'open',
+            'createdAt': FieldValue.serverTimestamp(),
+          })
+          .timeout(const Duration(seconds: 8), onTimeout: () {});
       return true;
     } catch (e) {
       debugPrint('AppReportService submit failed: $e');

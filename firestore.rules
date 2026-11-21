@@ -76,6 +76,24 @@ service cloud.firestore {
       return get(userPath()).data;
     }
 
+    // Campos pessoais: moram em users/{uid}/private/data (lista igual a
+    // BackendService.privateKeys). Nunca no perfil público.
+    function privateUserKeys() {
+      return [
+        'email', 'fcmToken', 'fcmTokenUpdatedAt', 'authProvider',
+        'missionReflections', 'mistakeQuestionIds', 'mistakeAnswers',
+        'usedQuestionIds', 'answerCorrect', 'answerTotal',
+        'trailAnswerCorrect', 'trailAnswerTotal', 'domainAnswerCorrect',
+        'domainAnswerTotal', 'weekAnswerCorrect', 'weekAnswerTotal',
+        'bibleChapterReadOn', 'missionCompletedOn', 'sceneHours',
+        'postcardsOn', 'postcardRefs', 'borrowedMissions',
+        'weeklyReviewsDone', 'memoryScores', 'bibleBookmarks', 'bibleNotes',
+        'sharedVerses', 'lifeChallengesDone', 'settings', 'bibleReadingPlan',
+        'companionCodes', 'activeRoomCode', 'claimedReferralRewards',
+        'firstOpenAtMs'
+      ];
+    }
+
     function userTotalSteps() {
       return userExists()
         ? (('steps' in userData() && nonNegNum(userData().steps))
@@ -142,9 +160,17 @@ service cloud.firestore {
     // Progresso: qualquer autenticado lê (ranking geral precisa de nome/passos
     // dos outros). Escrita só do dono.
     match /users/{uid} {
-      allow read: if isSignedIn();
+      // Um perfil por vez (quem abre o perfil de alguém). Listar a coleção
+      // só em consulta curta (selo Plus de quem está na tela) ou no painel.
+      allow get: if isSignedIn();
+      allow list: if isAdmin()
+        || (isSignedIn()
+            && request.query.limit != null
+            && request.query.limit <= 30);
       allow write: if isSignedIn()
         && request.auth.uid == uid
+        // Dado pessoal nunca no público (o app grava no private/data).
+        && !request.resource.data.keys().hasAny(privateUserKeys())
         && (!('steps' in request.resource.data) || nonNegInt(request.resource.data.steps))
         && (!('xp' in request.resource.data) || nonNegInt(request.resource.data.xp))
         && (!('weeklySteps' in request.resource.data) || nonNegInt(request.resource.data.weeklySteps))
@@ -385,7 +411,10 @@ service cloud.firestore {
           || resource.data.get('memberCount', 99) >= 3;
       }
 
-      allow read: if isSignedIn();
+      // Abrir um grupo exige o código (convite, link ou QR); ninguém lista
+      // os grupos para descobrir códigos e entrar sem ser chamado.
+      allow get: if isSignedIn();
+      allow list: if isAdmin();
       // Grupo do piloto (`pilot`) só nasce de quem o admin marcou como
       // líder do piloto (users/{uid}.groupsPilot).
       allow create: if isSignedIn()
@@ -970,7 +999,11 @@ service cloud.firestore {
     }
     match /content_meta/{id} {
       allow read: if true;
-      allow write: if isContentEditor();
+      // Trava do 1º admin e aviso de versão do app: só admin. Editor que
+      // apagasse a trava criaria um admin novo; o aviso força atualização.
+      allow write: if isContentEditor()
+        && !(id in ['bootstrap_locked', 'app_release']);
+      allow write: if isAdmin();
     }
 
     // Relatos de erro em perguntas (usuários autenticados criam; editores revisam).

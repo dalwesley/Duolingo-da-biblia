@@ -971,8 +971,9 @@ class BackendService extends ChangeNotifier {
   }
 
   /// Grava o progresso: primeiro o privado; só depois de ele dar certo o
-  /// público apaga as cópias antigas desses campos. Se o privado falhar
-  /// (regra ainda não publicada), o público segue como antes — nada se perde.
+  /// público apaga as cópias antigas desses campos. Dado pessoal nunca vai
+  /// para o público (qualquer peregrino lê esse doc; a regra recusa): se o
+  /// privado falhar, ele espera o próximo save.
   Future<void> _writeUserDocs(Map<String, dynamic> full) async {
     final split = splitPayload(full);
     // giftedTrails não sobe no private: a regra trava o campo (legado) e
@@ -989,9 +990,13 @@ class BackendService extends ChangeNotifier {
     } catch (e) {
       _authLog('save private FAILED uid=$_uid: $e');
     }
+    // Dado pessoal nunca cai no público (qualquer peregrino lê esse doc;
+    // a regra recusa). Sem o privado, ele espera o próximo save.
+    // Sem o privado, as cópias antigas ficam onde estão (nada se perde) e
+    // o pessoal espera o próximo save.
     final public = privateOk
         ? {...split.public, for (final k in privateKeys) k: FieldValue.delete()}
-        : {...split.public, ...private};
+        : split.public;
     await _db
         .doc('users/$_uid')
         .set(public, SetOptions(merge: true))
@@ -2608,6 +2613,8 @@ class BackendService extends ChangeNotifier {
       final snap = await _db
           .collection('users')
           .where(FieldPath.documentId, whereIn: chunk)
+          // A regra só deixa listar `users` em consulta curta (≤ 30).
+          .limit(chunk.length)
           .get();
       for (final d in snap.docs) {
         if (d.data()['plusActive'] == true) out.add(d.id);

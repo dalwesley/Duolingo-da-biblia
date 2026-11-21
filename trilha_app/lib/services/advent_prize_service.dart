@@ -83,6 +83,7 @@ class AdventPrizeService extends ChangeNotifier {
       return;
     }
     await _loadConfig(campaignId);
+    await retryPending(campaignId);
     try {
       final base = 'seasonWalks/$campaignId';
       final results = await Future.wait([
@@ -148,8 +149,13 @@ class AdventPrizeService extends ChangeNotifier {
     if (day == null || stateFor(campaign.id).provenDays.contains(day)) return;
     final ref = _scene(campaign.id, uid, day);
     try {
-      final snap = await ref.get();
-      if (snap.exists) return; // já começou (vale o começo antigo) ou terminou
+      // Sem rede e sem cache, a leitura falha: grava o começo assim mesmo
+      // (sobe quando a conexão voltar; se já existia, a regra recusa).
+      DocumentSnapshot<Map<String, dynamic>>? snap;
+      try {
+        snap = await ref.get();
+      } catch (_) {}
+      if (snap?.exists ?? false) return; // já começou ou terminou
       await ref.set({
         'uid': uid,
         'day': day,
@@ -180,8 +186,12 @@ class AdventPrizeService extends ChangeNotifier {
       } catch (_) {
         snap = await ref.get(const GetOptions(source: Source.cache));
       }
-      if (snap.data()?['state'] != 'start') return;
-      if (snap.metadata.hasPendingWrites) return;
+      if (snap.data()?['state'] != 'start' || snap.metadata.hasPendingWrites) {
+        // Cena feita sem internet: o começo ainda não chegou. Guarda o dia
+        // e fecha depois ([retryPending]), quando o começo estiver lá.
+        await _addPending(campaign.id, uid, day);
+        return;
+      }
       await ref.update({
         'state': 'done',
         'doneAt': FieldValue.serverTimestamp(),
@@ -195,6 +205,67 @@ class AdventPrizeService extends ChangeNotifier {
       await Future<void>.delayed(wait);
       await refresh(campaign.id);
     }
+  }
+
+  static String _pendingKey(String campaignId, String uid) =>
+      'advent_pending_${campaignId}_$uid';
+
+  /// Folga sobre o mínimo do servidor (60 s entre começo e fim): o relógio
+  /// do `at` é o do servidor, mas o aparelho lê com atraso.
+  static const _pendingMinAge = Duration(seconds: 75);
+
+  Future<void> _addPending(String campaignId, String uid, int day) async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final key = _pendingKey(campaignId, uid);
+      final days = {...?prefs.getStringList(key), '$day'};
+      await prefs.setStringList(key, days.toList());
+    } catch (_) {}
+  }
+
+  /// Fecha as cenas do Advento feitas sem internet. Começo já no servidor
+  /// há mais de um minuto: marca o fim (o servidor confere como sempre).
+  /// Começo ainda a caminho: espera a próxima vez. Dia já provado ou
+  /// cena sumida: sai da lista.
+  Future<void> retryPending(String campaignId) async {
+    final uid = _uid;
+    if (uid == null) return;
+    final List<String> days;
+    final SharedPreferences prefs;
+    try {
+      prefs = await SharedPreferences.getInstance();
+      days = prefs.getStringList(_pendingKey(campaignId, uid)) ?? const [];
+    } catch (_) {
+      return;
+    }
+    if (days.isEmpty) return;
+    final keep = <String>[];
+    for (final raw in days) {
+      final day = int.tryParse(raw);
+      if (day == null) continue;
+      try {
+        final snap = await _scene(campaignId, uid, day)
+            .get(const GetOptions(source: Source.server))
+            .timeout(const Duration(seconds: 10));
+        final data = snap.data();
+        if (data == null || data['state'] != 'start') continue;
+        final at = data['at'];
+        final started = at is Timestamp ? at.toDate() : null;
+        if (started == null ||
+            DateTime.now().difference(started) < _pendingMinAge) {
+          keep.add(raw);
+          continue;
+        }
+        await _scene(campaignId, uid, day)
+            .update({'state': 'done', 'doneAt': FieldValue.serverTimestamp()})
+            .timeout(const Duration(seconds: 10));
+      } catch (_) {
+        keep.add(raw); // sem rede: tenta de novo depois
+      }
+    }
+    try {
+      await prefs.setStringList(_pendingKey(campaignId, uid), keep);
+    } catch (_) {}
   }
 
   static String _seenKey(String campaignId, String uid) =>

@@ -538,6 +538,8 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       _syncReminders();
       // Outro aparelho pode ter avançado na nuvem enquanto este ficou aberto.
       unawaited(_syncCloudOnResume());
+      // Se a 1ª busca de configuração falhou (sem rede), tenta de novo.
+      unawaited(RemoteConfigService.instance.init());
       unawaited(_checkReferralReward());
     }
   }

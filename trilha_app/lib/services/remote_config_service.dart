@@ -29,9 +29,11 @@ class RemoteConfigService extends ChangeNotifier {
     _keyPlusLaunchFreeUntil: '',
     _keyPioneerUntil: '',
     _keyPioneerReserved: 0,
-    _keyGroupsEnabled: false,
-    _keyCompanionEnabled: false,
-    _keyChallengeEnabled: false,
+    // Os três estão abertos em produção: sem rede e sem cache no 1º uso,
+    // o padrão não pode mostrar "em breve" para o que já existe.
+    _keyGroupsEnabled: true,
+    _keyCompanionEnabled: true,
+    _keyChallengeEnabled: true,
     _keyYearReviewFrom: '',
   };
 
@@ -67,18 +69,25 @@ class RemoteConfigService extends ChangeNotifier {
       );
       await rc.setDefaults(_defaults);
       _rc = rc;
+      // Ouve antes de buscar: se o 1º fetch falhar (sem rede), a
+      // atualização em tempo real ainda chega quando a conexão voltar.
+      await _updates?.cancel();
+      _updates = rc.onConfigUpdated.listen(
+        (_) async {
+          await rc.activate();
+          _logPlusKeys('atualizado');
+          notifyListeners();
+        },
+        onError: (Object e) => debugPrint('Remote Config (tempo real): $e'),
+      );
       await rc.fetchAndActivate();
       _logPlusKeys('carregado');
       notifyListeners();
-      await _updates?.cancel();
-      _updates = rc.onConfigUpdated.listen((_) async {
-        await rc.activate();
-        _logPlusKeys('atualizado');
-        notifyListeners();
-      });
     } catch (e) {
       debugPrint('RemoteConfigService.init falhou: $e');
       PlusLog.log('config', 'Remote Config falhou, valendo os padrões: $e');
+      // Próximo init() tenta de novo (antes ficava preso nesta falha).
+      _initFuture = null;
     }
   }
 

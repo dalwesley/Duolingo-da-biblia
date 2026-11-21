@@ -12,6 +12,10 @@ import 'progress_service.dart';
 
 /// Desafio na aba Juntos (sob Companhia) — duas pessoas, a mesma cena, até domingo.
 /// Um desafio aberto por pessoa.
+/// Sem rede, a escrita fica na fila do Firestore e sobe depois; a tela não
+/// espera o servidor para seguir.
+const _writeWait = Duration(seconds: 8);
+
 class CornerService extends ChangeNotifier {
   CornerService(this.backend);
 
@@ -187,23 +191,25 @@ class CornerService extends ChangeNotifier {
     try {
       final ref = FirebaseFirestore.instance.collection('corners').doc();
       final weekStart = cornerWeekStart();
-      await ref.set({
-        'challengerId': uid,
-        'challengerName': myName,
-        'challengerPhotoUrl': ?backend.userPhotoUrl,
-        'opponentId': opponentId,
-        'opponentName': opponentName,
-        'opponentPhotoUrl': ?opponentPhotoUrl,
-        'participantIds': [uid, opponentId],
-        'trailSlug': proposal.trailSlug,
-        'trailTitle': proposal.trailTitle,
-        'missionSlug': proposal.missionSlug,
-        'missionTitle': proposal.missionTitle,
-        'moduleTitle': proposal.moduleTitle,
-        'weekStart': weekStart,
-        'status': CornerStatus.pending.name,
-        'createdAt': FieldValue.serverTimestamp(),
-      });
+      await ref
+          .set({
+            'challengerId': uid,
+            'challengerName': myName,
+            'challengerPhotoUrl': ?backend.userPhotoUrl,
+            'opponentId': opponentId,
+            'opponentName': opponentName,
+            'opponentPhotoUrl': ?opponentPhotoUrl,
+            'participantIds': [uid, opponentId],
+            'trailSlug': proposal.trailSlug,
+            'trailTitle': proposal.trailTitle,
+            'missionSlug': proposal.missionSlug,
+            'missionTitle': proposal.missionTitle,
+            'moduleTitle': proposal.moduleTitle,
+            'weekStart': weekStart,
+            'status': CornerStatus.pending.name,
+            'createdAt': FieldValue.serverTimestamp(),
+          })
+          .timeout(_writeWait, onTimeout: () {});
       final created = CornerChallenge(
         id: ref.id,
         challengerId: uid,
@@ -326,11 +332,14 @@ class CornerService extends ChangeNotifier {
     final uid = _uid;
     if (!backend.isActive || uid == null) return false;
     try {
-      await FirebaseFirestore.instance.doc('corners/$id').set({
-        'status': status.name,
-        'updatedAt': FieldValue.serverTimestamp(),
-        ...extra,
-      }, SetOptions(merge: true));
+      await FirebaseFirestore.instance
+          .doc('corners/$id')
+          .set({
+            'status': status.name,
+            'updatedAt': FieldValue.serverTimestamp(),
+            ...extra,
+          }, SetOptions(merge: true))
+          .timeout(_writeWait, onTimeout: () {});
       mine = [
         for (final c in mine)
           if (c.id == id)
@@ -460,10 +469,13 @@ class CornerService extends ChangeNotifier {
       }
       final asChallenger = c.iAmChallenger(uid);
       try {
-        await FirebaseFirestore.instance.doc('corners/${c.id}').set({
-          asChallenger ? 'challengerDays' : 'opponentDays': days,
-          'updatedAt': FieldValue.serverTimestamp(),
-        }, SetOptions(merge: true));
+        await FirebaseFirestore.instance
+            .doc('corners/${c.id}')
+            .set({
+              asChallenger ? 'challengerDays' : 'opponentDays': days,
+              'updatedAt': FieldValue.serverTimestamp(),
+            }, SetOptions(merge: true))
+            .timeout(_writeWait, onTimeout: () {});
         next.add(
           asChallenger
               ? c.copyWith(challengerDays: days)
