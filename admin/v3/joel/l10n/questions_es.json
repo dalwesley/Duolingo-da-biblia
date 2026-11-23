@@ -1,0 +1,1347 @@
+{
+ "joel-sem-jl-03-gafanhoto-01": {
+  "question": "En Joel 1:4, lo que dejó la langosta lo comió la langosta migratoria.",
+  "feedbackCorrect": "La cadena sigue de la langosta a la migratoria, sin interrupción.",
+  "feedbackWrong": {
+   "false": "Relee con atención la secuencia del medio de Joel 1:4."
+  },
+  "hint": "Sigue la cadena a partir del segundo devorador.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-sem-jl-03-gafanhoto-02": {
+  "question": "En Joel 1:1, toca a quién fue dirigida la palabra del Señor.",
+  "feedbackCorrect": "Joel es quien recibe la palabra que abre el libro.",
+  "feedbackWrong": {
+   "a": "Eso es lo que fue dirigido, no la persona que lo recibió.",
+   "c": "Petuel es el padre de quien recibe la palabra, no el destinatario."
+  },
+  "hint": "Busca un nombre de persona al final del versículo."
+ },
+ "joel-sem-jl-03-gafanhoto-03": {
+  "question": "Según Joel 1:3, ¿qué debe hacer el pueblo con lo que pasó?",
+  "feedbackCorrect": "La memoria debe atravesar las generaciones sin perderse.",
+  "feedbackWrong": {
+   "a": "Los ancianos oyen en 1:2, pero contar es para los hijos.",
+   "b": "El texto manda contarlo, no olvidar lo que pasó.",
+   "c": "El texto manda transmitirlo, no guardarlo en secreto."
+  },
+  "hint": "Mira la cadena de personas mencionada en el versículo.",
+  "options": {
+   "a": "Contarlo solo a los ancianos de la tierra",
+   "b": "Olvidarlo antes de la próxima cosecha",
+   "c": "Guardarlo en secreto dentro de la familia",
+   "d": "Contarlo a los hijos, de generación en generación"
+  }
+ },
+ "joel-sem-jl-03-gafanhoto-04": {
+  "question": "Arma Joel 1:4 en el orden del texto.",
+  "feedbackCorrect": "Oruga, langosta y migratoria se suceden comiendo lo que queda.",
+  "feedbackWrong": {
+   "default": "Empieza por lo que dejó la oruga, al inicio del versículo."
+  },
+  "hint": "El versículo empieza por el primer devorador."
+ },
+ "joel-sem-jl-03-gafanhoto-05": {
+  "question": "En Joel 1:7, ¿qué se secó, además de la vid destruida?",
+  "feedbackCorrect": "La vid destruida y la higuera seca muestran la cosecha perdida.",
+  "feedbackWrong": {
+   "b": "Viña remite a la vid ya citada, no a la segunda planta.",
+   "c": "La planta nombrada junto a la vid es otra, frutal."
+  },
+  "hint": "Lee las dos plantas nombradas al inicio del versículo."
+ },
+ "joel-sem-jl-03-gafanhoto-06": {
+  "question": "¿Qué comunica Joel 1:4 que se relaciona con este contexto?",
+  "feedbackCorrect": "Un devorador tras otro, hasta que la pérdida se completa en la tierra.",
+  "feedbackWrong": {
+   "a": "Aquí no se guarda nada; cada resto lo come el siguiente.",
+   "c": "El versículo describe pérdida, no una nueva siembra que empieza."
+  },
+  "hint": "Mira qué pasa con cada resto que queda.",
+  "options": {
+   "a": "Cosecha que se guarda",
+   "b": "Pérdida que se completa",
+   "c": "Siembra que vuelve a empezar"
+  }
+ },
+ "joel-cam-jl-03-gafanhoto-01": {
+  "question": "En Joel 1:2–3, la memoria de lo que pasó debe ir de los padres a los hijos y a las generaciones siguientes.",
+  "feedbackCorrect": "Oír en 1:2 se vuelve contar en 1:3, generación tras generación.",
+  "feedbackWrong": {
+   "false": "Relee 1:3 y la cadena de hijos hasta la próxima generación."
+  },
+  "hint": "Une el llamado a oír con el llamado a contar.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-cam-jl-03-gafanhoto-02": {
+  "question": "En Joel 1:4, toca la palabra que marca lo que cada devorador pasa al siguiente.",
+  "feedbackCorrect": "Cada sobra que queda se vuelve comida del devorador siguiente.",
+  "feedbackWrong": {
+   "a": "Eso nombra a quien devora, no lo que pasa al siguiente.",
+   "b": "Comer es la acción de todos, no lo que pasa de uno a otro."
+  },
+  "hint": "Busca el verbo que une un devorador con el siguiente."
+ },
+ "joel-cam-jl-03-gafanhoto-03": {
+  "question": "¿Cómo describe Joel 1:4 el avance de la pérdida en la tierra?",
+  "feedbackCorrect": "La sobra de uno es el alimento del siguiente, hasta vaciarlo todo.",
+  "feedbackWrong": {
+   "a": "La cadena sigue por varios devoradores seguidos.",
+   "b": "Aquí nada vuelve a crecer entre un devorador y otro.",
+   "d": "No se describe una disputa, sino una sucesión de devoradores."
+  },
+  "hint": "Sigue el resto que queda en cada etapa.",
+  "options": {
+   "a": "La pérdida se detiene en el primer insecto",
+   "b": "La cosecha vuelve entre un insecto y otro",
+   "c": "Cada devorador come el resto del anterior",
+   "d": "Los devoradores se disputan la misma hoja"
+  }
+ },
+ "joel-cam-jl-03-gafanhoto-04": {
+  "question": "¿Cómo avanza el inicio de Joel 1:2–4?",
+  "feedbackCorrect": "Primero oír, luego contar, y después se describe la pérdida.",
+  "feedbackWrong": {
+   "default": "Empieza por el llamado a los ancianos, al inicio de 1:2."
+  },
+  "hint": "Oír viene antes de contar a las generaciones.",
+  "options": {
+   "a": "Los ancianos son llamados a oír",
+   "b": "Los padres cuentan el hecho a los hijos",
+   "c": "La pérdida devora lo que queda"
+  }
+ },
+ "joel-cam-jl-03-gafanhoto-05": {
+  "question": "En Joel 1:6, ¿con los dientes de quién se comparan los del invasor?",
+  "feedbackCorrect": "La comparación muestra una fuerza devoradora contra la tierra.",
+  "feedbackWrong": {
+   "b": "Ese animal no aparece en la comparación del versículo.",
+   "c": "La leona aparece en las muelas, no en los dientes citados antes."
+  },
+  "hint": "Distingue dientes y muelas en la misma frase."
+ },
+ "joel-cam-jl-03-gafanhoto-06": {
+  "question": "¿Qué une Joel 1:4 con Éxodo 10:15?",
+  "feedbackCorrect": "En los dos textos, las langostas consumen el verdor de la tierra.",
+  "feedbackWrong": {
+   "a": "En los dos textos los insectos no perdonan ninguna planta.",
+   "c": "En los dos relatos la tierra es devorada, no protegida."
+  },
+  "hint": "Compara el efecto de los insectos sobre las plantas.",
+  "options": {
+   "a": "Insectos que perdonan la tierra",
+   "b": "Langostas que devoran la tierra",
+   "c": "Cosecha protegida de la plaga"
+  }
+ },
+ "joel-pro-jl-03-gafanhoto-01": {
+  "question": "En Joel 1:1–4, la plaga se presenta como un asunto sin relación con la palabra del Señor.",
+  "feedbackCorrect": "El libro abre uniendo todo a la palabra del Señor dada a Joel.",
+  "feedbackWrong": {
+   "true": "Relee la primera frase del libro, antes de la plaga descrita."
+  },
+  "hint": "Empieza por la frase que abre todo el libro.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-pro-jl-03-gafanhoto-02": {
+  "question": "En Joel 1:6, toca el fragmento que muestra la fuerza devoradora del invasor.",
+  "feedbackCorrect": "Los dientes de león retratan una fuerza que devora sin piedad.",
+  "feedbackWrong": {
+   "a": "Eso nombra el blanco atacado, no la fuerza del invasor.",
+   "c": "Eso nombra a quien vino, no la fuerza devoradora comparada."
+  },
+  "hint": "Busca la comparación con un animal fuerte."
+ },
+ "joel-pro-jl-03-gafanhoto-03": {
+  "question": "¿Qué lectura sostiene Joel 1:4 sobre el juicio descrito en el pasaje?",
+  "feedbackCorrect": "La pérdida avanza en cadena y llama al pueblo a escuchar a Dios.",
+  "feedbackWrong": {
+   "a": "El texto no nombra ni describe ningún pueblo de hoy.",
+   "b": "El libro abre con la palabra del Señor dirigida a Joel.",
+   "d": "El texto llama a todo el pueblo a escuchar, sin aislar a un culpable."
+  },
+  "hint": "Mira el efecto acumulado de la cadena de devoradores.",
+  "options": {
+   "a": "Nombra un país actual específico",
+   "b": "Ocurre lejos de la palabra de Dios",
+   "c": "Llega como una pérdida que se completa",
+   "d": "Prueba el pecado de una sola persona"
+  }
+ },
+ "joel-pro-jl-03-gafanhoto-04": {
+  "question": "¿Qué secuencia revela el sentido del inicio de Joel?",
+  "feedbackCorrect": "La palabra viene primero y da sentido al llamado y a la pérdida.",
+  "feedbackWrong": {
+   "default": "Empieza por la palabra que abre el libro, en 1:1."
+  },
+  "hint": "Sigue de 1:1 al llamado y luego a la plaga.",
+  "options": {
+   "a": "La palabra del Señor llega a Joel",
+   "b": "El pueblo es llamado a oír y contar",
+   "c": "La pérdida llama la atención hacia Dios"
+  }
+ },
+ "joel-pro-jl-03-gafanhoto-05": {
+  "question": "En Joel 1:5, ¿quién es llamado a despertar y llorar por el vino quitado?",
+  "feedbackCorrect": "Hasta quien vivía para beber es llamado a despertar y lamentarse.",
+  "feedbackWrong": {
+   "a": "Los habitantes oyen en 1:2; aquí el llamado es más directo.",
+   "c": "Los ancianos son llamados a oír en 1:2, no en este clamor."
+  },
+  "hint": "Lee el primer llamado directo del versículo."
+ },
+ "joel-pro-jl-03-gafanhoto-06": {
+  "question": "¿Qué une Joel 1:3 con Salmos 78:4?",
+  "feedbackCorrect": "En los dos textos, la generación actual cuenta a la que viene.",
+  "feedbackWrong": {
+   "b": "Los dos textos mandan hablar, no callar acerca de Dios.",
+   "c": "El Salmo dice no ocultarlo a los hijos, sino anunciarlo."
+  },
+  "hint": "Mira qué destino recibe la memoria en los dos pasajes.",
+  "options": {
+   "a": "Contar a los que vienen después",
+   "b": "Guardar silencio entre generaciones",
+   "c": "Ocultar el hecho a los hijos"
+  }
+ },
+ "joel-sem-jl-04-coracao-01": {
+  "question": "En Joel 2:13, Joel manda rasgar las vestiduras y no el corazón.",
+  "feedbackCorrect": "La orden del texto es lo contrario de un gesto solo externo.",
+  "feedbackWrong": {
+   "true": "Relee el inicio de 2:13 y el orden entre corazón y vestiduras."
+  },
+  "hint": "Mira cuál de los dos va primero en la orden.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-sem-jl-04-coracao-02": {
+  "question": "En Joel 2:12, toca de dónde debe venir el regreso a Dios.",
+  "feedbackCorrect": "El regreso pedido nace del interior, de todo el corazón.",
+  "feedbackWrong": {
+   "a": "El llanto acompaña el regreso, pero la fuente citada es más honda.",
+   "c": "El ayuno acompaña el regreso, pero no es la fuente interior citada."
+  },
+  "hint": "Busca la parte interior de la persona que se menciona."
+ },
+ "joel-sem-jl-04-coracao-03": {
+  "question": "Según Joel 2:15, ¿qué debe ocurrir en Sion?",
+  "feedbackCorrect": "La trompeta y el ayuno solemne convocan a todo el pueblo en Sion.",
+  "feedbackWrong": {
+   "a": "El pueblo es convocado a reunirse, no a callar por días.",
+   "c": "Aquí la asamblea se convoca, no se cierra al pueblo.",
+   "d": "Es tiempo de ayuno solemne, no de fiesta de cosecha."
+  },
+  "hint": "Lee los dos primeros llamados del versículo.",
+  "options": {
+   "a": "Silenciar al pueblo por siete días",
+   "b": "Tocar trompeta y proclamar ayuno",
+   "c": "Cerrar las puertas de la asamblea",
+   "d": "Celebrar la cosecha con una larga fiesta"
+  }
+ },
+ "joel-sem-jl-04-coracao-04": {
+  "question": "Arma Joel 2:13 en el orden del texto.",
+  "feedbackCorrect": "Corazón rasgado, volver al Señor y el motivo en su carácter.",
+  "feedbackWrong": {
+   "default": "Empieza por lo que se debe rasgar, al inicio del versículo."
+  },
+  "hint": "El versículo empieza por el gesto interior pedido."
+ },
+ "joel-sem-jl-04-coracao-05": {
+  "question": "En Joel 2:10, ¿qué hace la tierra delante de él?",
+  "feedbackCorrect": "La tierra que tiembla y los cielos sacudidos marcan la llegada del Día.",
+  "feedbackWrong": {
+   "a": "Nada florece en este versículo de señales del Día.",
+   "b": "La escena es de sacudida y oscuridad, no de brillo."
+  },
+  "hint": "Lee la primera reacción de la tierra que se menciona."
+ },
+ "joel-sem-jl-04-coracao-06": {
+  "question": "¿Qué comunica Joel 2:13 que se relaciona con este contexto?",
+  "feedbackCorrect": "Dios no se conforma con un gesto externo sin un regreso interior.",
+  "feedbackWrong": {
+   "a": "El texto invierte ese orden y pide primero lo interior.",
+   "c": "El versículo dice justamente que las vestiduras no bastan."
+  },
+  "hint": "Mira qué se pide en lugar del gesto visible.",
+  "options": {
+   "a": "Apariencia en vez de corazón",
+   "b": "Corazón en vez de apariencia",
+   "c": "Rasgar las vestiduras basta"
+  }
+ },
+ "joel-cam-jl-04-coracao-01": {
+  "question": "En Joel 2:12, el regreso pedido incluye ayuno, llanto y lamento junto con todo el corazón.",
+  "feedbackCorrect": "Corazón entero y señales de luto van juntos en el llamado.",
+  "feedbackWrong": {
+   "false": "Relee el final de 2:12, con ayuno, llanto y lamento."
+  },
+  "hint": "Lee el versículo hasta el final, sin detenerte a la mitad.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-cam-jl-04-coracao-02": {
+  "question": "En Joel 2:13, toca la palabrita que separa lo interior de lo exterior.",
+  "feedbackCorrect": "Se afirma lo interior y se rechaza el gesto solo externo.",
+  "feedbackWrong": {
+   "a": "Las vestiduras son el gesto rechazado, no la palabrita que separa.",
+   "b": "El corazón es lo que se pide, no la palabrita que separa."
+  },
+  "hint": "Busca la palabrita corta entre el pedido y las vestiduras."
+ },
+ "joel-cam-jl-04-coracao-03": {
+  "question": "¿Cómo sostiene el carácter de Dios en Joel 2:13 el llamado a volver?",
+  "feedbackCorrect": "Volver tiene sentido porque Dios es paciente y lleno de bondad.",
+  "feedbackWrong": {
+   "b": "El texto destaca una bondad activa, no la indiferencia de Dios.",
+   "c": "Él es lento para la ira, no rápido para castigar al pueblo.",
+   "d": "Él llama al pueblo hacia sí; aquí no se muestra distante."
+  },
+  "hint": "Lee cómo se describe a Dios en la segunda mitad del versículo.",
+  "options": {
+   "a": "Su paciencia y bondad abren lugar para volver",
+   "b": "Su indiferencia deja al pueblo sin motivo",
+   "c": "Su prisa por castigar le cierra la puerta",
+   "d": "Su distancia vuelve inútil cualquier regreso"
+  }
+ },
+ "joel-cam-jl-04-coracao-04": {
+  "question": "¿Cómo avanza el llamado en Joel 2:11–15?",
+  "feedbackCorrect": "Del anuncio del Día, el texto pasa al llamado y a la reunión.",
+  "feedbackWrong": {
+   "default": "Empieza por el anuncio del Día, antes del llamado a volver."
+  },
+  "hint": "El Día anunciado viene antes de la respuesta del pueblo.",
+  "options": {
+   "a": "Se anuncia el Día del Señor",
+   "b": "Dios llama a volver de corazón",
+   "c": "El pueblo se reúne en ayuno solemne"
+  }
+ },
+ "joel-cam-jl-04-coracao-05": {
+  "question": "En Joel 2:14, ¿qué puede dejar Dios tras de sí al volverse?",
+  "feedbackCorrect": "La esperanza de Joel 2:14 incluye una bendición que Dios deja.",
+  "feedbackWrong": {
+   "b": "La cosecha puede venir de la bendición, pero no es la palabra del versículo.",
+   "c": "La lluvia es un don de otro pasaje, no la palabra usada aquí."
+  },
+  "hint": "Lee la esperanza expresada con quién sabe, en el versículo."
+ },
+ "joel-cam-jl-04-coracao-06": {
+  "question": "¿Qué une Joel 2:13 con Salmos 51:17?",
+  "feedbackCorrect": "En los dos textos, Dios valora el corazón quebrantado y sincero.",
+  "feedbackWrong": {
+   "a": "Los dos textos se niegan a cambiar lo interior por lo exterior.",
+   "c": "Joel pide el corazón, no la ropa como prueba del regreso."
+  },
+  "hint": "Compara lo que Dios no desprecia en el Salmo.",
+  "options": {
+   "a": "El gesto externo sustituye al corazón",
+   "b": "El corazón quebrantado agrada a Dios",
+   "c": "La ropa rasgada impresiona a Dios"
+  }
+ },
+ "joel-pro-jl-04-coracao-01": {
+  "question": "Joel 2:13 enseña que el ayuno externo, por sí solo, garantiza que Dios cambiará la situación.",
+  "feedbackCorrect": "Sin un corazón vuelto a Dios, el gesto externo no garantiza nada.",
+  "feedbackWrong": {
+   "true": "Relee el contraste entre corazón y vestiduras al inicio."
+  },
+  "hint": "Mira qué pide el texto antes de cualquier gesto.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-pro-jl-04-coracao-02": {
+  "question": "En Joel 2:13, toca el fragmento que describe la bondad de Dios.",
+  "feedbackCorrect": "Aquí la grandeza de Dios se mide por la bondad que tiene.",
+  "feedbackWrong": {
+   "a": "Eso habla de la ira contenida, no de la bondad nombrada al final.",
+   "c": "Las vestiduras son el gesto externo, no la descripción de Dios."
+  },
+  "hint": "Busca la última cualidad atribuida a Dios."
+ },
+ "joel-pro-jl-04-coracao-03": {
+  "question": "¿Qué lectura sostiene Joel 2:13 sobre volver a Dios?",
+  "feedbackCorrect": "Volver de corazón tiene sentido por su carácter misericordioso.",
+  "feedbackWrong": {
+   "a": "El texto pide el corazón y rechaza el gesto solo externo.",
+   "b": "Joel 2:14 dice quién sabe, sin prometer bendición automática.",
+   "c": "El Día se llama terrible en 2:11; así que Dios sí se aíra."
+  },
+  "hint": "Une lo que se pide al pueblo con quién es Dios.",
+  "options": {
+   "a": "Los ritos externos bastan sin el corazón",
+   "b": "El arrepentimiento compra una bendición segura",
+   "c": "Dios nunca se aíra ante el pecado",
+   "d": "El regreso sincero se apoya en quién es Dios"
+  }
+ },
+ "joel-pro-jl-04-coracao-04": {
+  "question": "¿Qué secuencia revela la lógica del llamado en Joel 2?",
+  "feedbackCorrect": "El anuncio del Día lleva al llamado, sostenido por el carácter de Dios.",
+  "feedbackWrong": {
+   "default": "Empieza por el Día anunciado, antes de cualquier respuesta."
+  },
+  "hint": "Sigue de 2:11 al llamado y al motivo en 2:13.",
+  "options": {
+   "a": "Dios anuncia un Día terrible",
+   "b": "Dios llama a rasgar el corazón",
+   "c": "Dios se muestra lento para la ira"
+  }
+ },
+ "joel-pro-jl-04-coracao-05": {
+  "question": "En Joel 2:11, el Día del Señor es grande y ¿qué más?",
+  "feedbackCorrect": "Grande y terrible: así califica el propio texto al Día.",
+  "feedbackWrong": {
+   "a": "El Día se anuncia como presente y pesado, no lejano.",
+   "c": "El texto pregunta quién podrá soportarlo, sin llamarlo así."
+  },
+  "hint": "Lee el segundo adjetivo que se le da al Día."
+ },
+ "joel-pro-jl-04-coracao-06": {
+  "question": "¿Qué une Joel 2:13 con Salmos 34:18?",
+  "feedbackCorrect": "Quien rasga su corazón encuentra a un Señor que está cerca.",
+  "feedbackWrong": {
+   "a": "El Salmo dice que el Señor está cerca, no lejos de quien sufre.",
+   "c": "Los dos textos valoran el corazón quebrantado delante de Dios."
+  },
+  "hint": "Mira la cercanía de Dios en el otro pasaje.",
+  "options": {
+   "a": "Señor lejos de quien llora",
+   "b": "Señor cerca del quebrantado",
+   "c": "Corazón entero sin quebranto"
+  }
+ },
+ "joel-sem-jl-05-anos-01": {
+  "question": "En Joel 2:25, Dios promete restituir los años que comieron la langosta y otros devoradores.",
+  "feedbackCorrect": "La promesa devuelve justamente los años que la plaga consumió.",
+  "feedbackWrong": {
+   "false": "Relee el inicio de 2:25 y el objeto de la promesa de Dios."
+  },
+  "hint": "Mira qué promete Dios devolver al pueblo.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-sem-jl-05-anos-02": {
+  "question": "En Joel 2:24, toca aquello de lo que se llenarán las eras.",
+  "feedbackCorrect": "Las eras llenas de trigo marcan el regreso de la abundancia.",
+  "feedbackWrong": {
+   "b": "El vino rebosa en los lagares; aquí no llena las eras.",
+   "c": "El aceite también es de los lagares, no de las eras en este versículo."
+  },
+  "hint": "Distingue lo que va a las eras y a los lagares."
+ },
+ "joel-sem-jl-05-anos-03": {
+  "question": "Según Joel 2:22, ¿qué pasará con los pastos y los árboles?",
+  "feedbackCorrect": "La vida vuelve al campo, de los pastos a los árboles frutales.",
+  "feedbackWrong": {
+   "b": "El texto anuncia pastos que reverdecen, no que se secan del todo.",
+   "c": "Hasta el desierto vuelve a tener pasto verde en este anuncio.",
+   "d": "La higuera y la vid producirán en abundancia, dice el versículo."
+  },
+  "hint": "Lee lo que pasa con los pastos justo al inicio.",
+  "options": {
+   "a": "Los pastos reverdecerán y los árboles darán fruto",
+   "b": "Los pastos se secarán del todo",
+   "c": "El desierto quedará sin vida",
+   "d": "Los árboles perderán sus frutos"
+  }
+ },
+ "joel-sem-jl-05-anos-04": {
+  "question": "Arma Joel 2:26 en el orden del texto.",
+  "feedbackCorrect": "Comer, alabar y nunca más ser avergonzado, en ese orden.",
+  "feedbackWrong": {
+   "default": "Empieza por comer en abundancia, al inicio del versículo."
+  },
+  "hint": "El versículo empieza por la mesa llena del pueblo."
+ },
+ "joel-sem-jl-05-anos-05": {
+  "question": "En Joel 2:23, ¿qué le dará Dios al pueblo en justa medida?",
+  "feedbackCorrect": "El agua que el campo perdió vuelve como regalo de Dios.",
+  "feedbackWrong": {
+   "b": "La cosecha es un resultado posterior, no el don nombrado aquí.",
+   "c": "El don nombrado tiene que ver con agua para la tierra seca."
+  },
+  "hint": "Piensa en lo que la tierra seca más espera recibir."
+ },
+ "joel-sem-jl-05-anos-06": {
+  "question": "¿Qué comunica Joel 2:25 que se relaciona con este contexto?",
+  "feedbackCorrect": "Dios devuelve al pueblo los años que comió la plaga.",
+  "feedbackWrong": {
+   "a": "La promesa es de restitución, no de pérdida definitiva.",
+   "b": "Quien habla al final de este versículo es Dios, restituyendo."
+  },
+  "hint": "Mira el verbo que Dios usa sobre los años.",
+  "options": {
+   "a": "Años perdidos para siempre",
+   "b": "La plaga tiene la última palabra",
+   "c": "Dios devuelve los años perdidos"
+  }
+ },
+ "joel-cam-jl-05-anos-01": {
+  "question": "En Joel 2:22–24, la vida vuelve al campo sin ninguna acción de Dios.",
+  "feedbackCorrect": "Es Dios quien da la lluvia y hace que el campo vuelva a producir.",
+  "feedbackWrong": {
+   "true": "Relee 2:23 y mira quién da la lluvia al pueblo."
+  },
+  "hint": "Busca quién actúa como sujeto en 2:23.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-cam-jl-05-anos-02": {
+  "question": "En Joel 2:28, toca la palabra que marca lo que viene después de la restauración.",
+  "feedbackCorrect": "Después de restituir, Dios promete algo aún mayor al pueblo.",
+  "feedbackWrong": {
+   "a": "\"sobre\" muestra sobre quién, no el orden de los hechos.",
+   "b": "\"toda\" muestra el alcance, no el orden de los hechos."
+  },
+  "hint": "Busca la palabra de tiempo al inicio del versículo."
+ },
+ "joel-cam-jl-05-anos-03": {
+  "question": "¿Cómo se relaciona Joel 2:26 con la promesa de Joel 2:25?",
+  "feedbackCorrect": "Comer y saciarse desembocan en alabar el nombre del Señor.",
+  "feedbackWrong": {
+   "a": "En 2:27 Dios se muestra presente en medio del pueblo.",
+   "b": "El propio versículo siguiente incluye alabanza al Señor.",
+   "c": "El texto dice que el pueblo nunca será avergonzado."
+  },
+  "hint": "Mira adónde lleva la abundancia de 2:26.",
+  "options": {
+   "a": "La abundancia borra la presencia de Dios",
+   "b": "La restitución hace innecesaria la alabanza",
+   "c": "La alabanza se cambia por vergüenza futura",
+   "d": "La restitución termina en alabanza, no solo abundancia"
+  }
+ },
+ "joel-cam-jl-05-anos-04": {
+  "question": "¿Cómo avanza la restauración en Joel 2:22–24?",
+  "feedbackCorrect": "Del pasto verde a la lluvia, el texto llega a las eras llenas.",
+  "feedbackWrong": {
+   "default": "Empieza por los pastos, citados en el primer versículo."
+  },
+  "hint": "Sigue el orden de los tres versículos seguidos.",
+  "options": {
+   "a": "Los pastos reverdecen",
+   "b": "La lluvia cae en justa medida",
+   "c": "Se llenan eras y lagares"
+  }
+ },
+ "joel-cam-jl-05-anos-05": {
+  "question": "En Joel 2:22, ¿qué harán los pastos del desierto?",
+  "feedbackCorrect": "Hasta el desierto vuelve a tener pasto verde por la acción de Dios.",
+  "feedbackWrong": {
+   "a": "Secarse describe el tiempo de la plaga, no esta promesa.",
+   "c": "Los pastos reaparecen verdes; aquí no desaparecen."
+  },
+  "hint": "Lee el futuro prometido para los pastos."
+ },
+ "joel-cam-jl-05-anos-06": {
+  "question": "¿Qué une Joel 2:25 con Salmos 126:5?",
+  "feedbackCorrect": "Al tiempo de pérdida y llanto le sigue una cosecha con júbilo.",
+  "feedbackWrong": {
+   "a": "El Salmo promete júbilo después de las lágrimas sembradas.",
+   "b": "Los dos textos terminan en cosecha y abundancia para el pueblo."
+  },
+  "hint": "Compara el final de quien pasó por la pérdida.",
+  "options": {
+   "a": "Llanto que nunca termina",
+   "b": "Pérdida sin ninguna cosecha",
+   "c": "Lágrimas que se vuelven cosecha alegre"
+  }
+ },
+ "joel-pro-jl-05-anos-01": {
+  "question": "Joel 2:25 llama a la plaga gran ejército enviado por Dios, y no azar fuera de su gobierno.",
+  "feedbackCorrect": "La plaga se describe como ejército de Dios mismo, enviado por él.",
+  "feedbackWrong": {
+   "false": "Relee el final de 2:25 y cómo nombra Dios a la plaga."
+  },
+  "hint": "Mira el nombre que Dios da a la plaga al final del versículo.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-pro-jl-05-anos-02": {
+  "question": "En Joel 2:27, toca el fragmento que muestra dónde está Dios respecto al pueblo.",
+  "feedbackCorrect": "Dios se da a conocer presente, en medio de su pueblo.",
+  "feedbackWrong": {
+   "a": "Eso niega a otro dios; no muestra el lugar de su presencia.",
+   "b": "Eso dice quién es Dios, no dónde se hace presente."
+  },
+  "hint": "Busca la expresión de lugar con Israel."
+ },
+ "joel-pro-jl-05-anos-03": {
+  "question": "¿Qué lectura sostiene Joel 2:26–27 sobre la restauración prometida?",
+  "feedbackCorrect": "Restituir los años lleva al pueblo a alabar y conocer a su Dios.",
+  "feedbackWrong": {
+   "a": "El texto sigue hacia cosechas futuras, sin revertir el tiempo.",
+   "b": "En 2:26 el pueblo alaba el nombre del Señor al saciarse.",
+   "d": "La promesa es para el pueblo del texto y lleva a la alabanza, no a riqueza segura."
+  },
+  "hint": "Une abundancia, alabanza y presencia en los tres versículos.",
+  "options": {
+   "a": "El tiempo retrocede y borra el pasado",
+   "b": "El pueblo restaurado ya no alaba a Dios",
+   "c": "Dios restaura y se da a conocer al pueblo",
+   "d": "Garantiza riqueza a cualquier lector de hoy"
+  }
+ },
+ "joel-pro-jl-05-anos-04": {
+  "question": "¿Qué secuencia revela el sentido de la restauración en Joel 2?",
+  "feedbackCorrect": "De la pérdida a la restitución, el camino termina en conocer a Dios.",
+  "feedbackWrong": {
+   "default": "Empieza por los años consumidos, antes de la promesa."
+  },
+  "hint": "Sigue de 2:25 a la alabanza y al saber de 2:27.",
+  "options": {
+   "a": "La plaga consume los años",
+   "b": "Dios restituye los años perdidos",
+   "c": "El pueblo alaba y conoce a su Dios"
+  }
+ },
+ "joel-pro-jl-05-anos-05": {
+  "question": "En Joel 2:26, ¿qué hará el pueblo después de saciarse?",
+  "feedbackCorrect": "La mesa llena se transforma en alabanza al nombre del Señor.",
+  "feedbackWrong": {
+   "a": "Se niega que el pueblo sea avergonzado; aquí viene la alabanza.",
+   "c": "Quien se sacia reconoce a Dios, no lo borra de su memoria."
+  },
+  "hint": "Lee el verbo que acompaña al saciarse."
+ },
+ "joel-pro-jl-05-anos-06": {
+  "question": "¿Qué une Joel 2:27 con Éxodo 29:45?",
+  "feedbackCorrect": "En los dos textos, Dios se muestra presente en medio del pueblo.",
+  "feedbackWrong": {
+   "b": "Éxodo dice que Dios habitará en medio de ellos, no lejos.",
+   "c": "Conocer a Dios en medio es el centro de los dos pasajes."
+  },
+  "hint": "Mira dónde está Dios en los dos pasajes.",
+  "options": {
+   "a": "Dios habita con su pueblo",
+   "b": "Dios se aleja de Israel",
+   "c": "El pueblo prescinde de su presencia"
+  }
+ },
+ "joel-sem-joel-joel-01-gafanhotos-e-juizo-01": {
+  "question": "En Joel 2:26, el pueblo comerá en abundancia y alabará el nombre del Señor.",
+  "feedbackCorrect": "El texto une la abundancia a la alabanza al nombre del Señor, su Dios.",
+  "feedbackWrong": {
+   "false": "Relee Joel 2:26 y mira la abundancia seguida de alabanza al Señor."
+  },
+  "hint": "Lee la primera parte del versículo.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-sem-joel-joel-01-gafanhotos-e-juizo-02": {
+  "question": "En Joel 1:6, toca quién vino contra la tierra de Dios.",
+  "feedbackCorrect": "Una nación poderosa e innumerable es la que sube contra la tierra.",
+  "feedbackWrong": {
+   "a": "El león compara los dientes del invasor; no nombra a quien vino.",
+   "b": "La tierra es el blanco atacado, no quien vino contra ella."
+  },
+  "hint": "Busca quién subió contra la tierra."
+ },
+ "joel-sem-joel-joel-01-gafanhotos-e-juizo-03": {
+  "question": "Según Joel 2:31, ¿qué ocurre antes del gran Día del Señor?",
+  "feedbackCorrect": "El sol y la luna cambian antes de que venga el grande y terrible Día.",
+  "feedbackWrong": {
+   "b": "La salida de la plaga no es la señal que anuncia el versículo.",
+   "c": "Los siervos reciben el Espíritu en 2:29, no en esta señal.",
+   "d": "Volver a sembrar no es la señal citada en este versículo."
+  },
+  "hint": "Mira los dos astros citados en el versículo.",
+  "options": {
+   "a": "El sol se vuelve tinieblas y la luna, sangre",
+   "b": "Las langostas dejan la tierra",
+   "c": "El Espíritu se derrama sobre los siervos",
+   "d": "El pueblo vuelve a sembrar la tierra"
+  }
+ },
+ "joel-sem-joel-joel-01-gafanhotos-e-juizo-04": {
+  "question": "Arma Joel 2:28 en el orden del texto.",
+  "feedbackCorrect": "Primero el derramamiento, luego hijos que profetizan y ancianos que sueñan.",
+  "feedbackWrong": {
+   "default": "Empieza por el derramamiento sobre toda carne, al inicio del versículo."
+  },
+  "hint": "El versículo empieza con la acción de Dios."
+ },
+ "joel-sem-joel-joel-01-gafanhotos-e-juizo-05": {
+  "question": "En Joel 2:30, ¿qué mostrará Dios en el cielo y en la tierra?",
+  "feedbackCorrect": "Dios anuncia señales extraordinarias en el cielo y también en la tierra.",
+  "feedbackWrong": {
+   "b": "El texto habla de lo que Dios mostrará, no de castigos nombrados así.",
+   "c": "Ejército nombra la plaga en 2:25, no lo que Dios muestra aquí."
+  },
+  "hint": "Lee el primer verbo y lo que viene justo después."
+ },
+ "joel-sem-joel-joel-01-gafanhotos-e-juizo-06": {
+  "question": "¿Qué comunica Joel 1:6 que se relaciona con este contexto?",
+  "feedbackCorrect": "La fuerza invasora devora la tierra como la plaga devora la cosecha.",
+  "feedbackWrong": {
+   "a": "Quien viene contra la tierra la devora, no la protege.",
+   "c": "El versículo habla de invasión, no de cosecha guardada."
+  },
+  "hint": "Mira el efecto de quien vino contra la tierra.",
+  "options": {
+   "a": "Ejército que protege la tierra",
+   "b": "Invasión que devora la tierra",
+   "c": "Cosecha guardada en abundancia"
+  }
+ },
+ "joel-cam-joel-joel-01-gafanhotos-e-juizo-01": {
+  "question": "En Joel 2:25–26, la restauración prometida termina en comer, sin alabanza a Dios.",
+  "feedbackCorrect": "La abundancia no termina en sí misma, pues el pueblo alaba al Señor.",
+  "feedbackWrong": {
+   "true": "Relee la mitad de 2:26, donde comer va junto con alabar."
+  },
+  "hint": "No te detengas en la primera parte del versículo.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-cam-joel-joel-01-gafanhotos-e-juizo-02": {
+  "question": "En Joel 2:28, toca la palabra que marca el tiempo de la promesa del Espíritu.",
+  "feedbackCorrect": "La promesa se sitúa en un tiempo posterior a lo anterior.",
+  "feedbackWrong": {
+   "b": "\"toda\" indica el alcance, no el momento de la promesa.",
+   "c": "\"sobre\" indica sobre quién, no el momento de la promesa."
+  },
+  "hint": "Busca la palabra de tiempo justo al inicio."
+ },
+ "joel-cam-joel-joel-01-gafanhotos-e-juizo-03": {
+  "question": "¿Cómo se relaciona Joel 2:27 con la promesa de Joel 2:26?",
+  "feedbackCorrect": "A la abundancia le sigue saber que Dios está en medio del pueblo.",
+  "feedbackWrong": {
+   "a": "Dios se muestra presente en medio de Israel, no ausente.",
+   "b": "El texto dice que el pueblo nunca será avergonzado.",
+   "d": "El texto acerca al pueblo a Dios, no lo aleja de él."
+  },
+  "hint": "Lee el inicio del versículo que sigue al de la abundancia.",
+  "options": {
+   "a": "La abundancia prueba que Dios dejó a Israel",
+   "b": "La alabanza se cambia por la vergüenza del pueblo",
+   "c": "Tras la abundancia, el pueblo sabrá que Dios está con él",
+   "d": "Tras la abundancia, el pueblo ya no necesita a Dios"
+  }
+ },
+ "joel-cam-joel-joel-01-gafanhotos-e-juizo-04": {
+  "question": "¿Cómo avanza la promesa en Joel 2:25–27?",
+  "feedbackCorrect": "De los años perdidos, el texto pasa a la abundancia y a la presencia de Dios.",
+  "feedbackWrong": {
+   "default": "Empieza por los años consumidos, citados en el primer versículo."
+  },
+  "hint": "Sigue el orden de los tres versículos seguidos.",
+  "options": {
+   "a": "Años consumidos por la plaga",
+   "b": "Comer en abundancia y alabar",
+   "c": "Saber que Dios está en medio"
+  }
+ },
+ "joel-cam-joel-joel-01-gafanhotos-e-juizo-05": {
+  "question": "En Joel 2:27, ¿cómo nunca será el pueblo de Dios, según la promesa?",
+  "feedbackCorrect": "La presencia de Dios en medio del pueblo aleja la vergüenza.",
+  "feedbackWrong": {
+   "b": "Dios afirma estar en medio de Israel, no haber abandonado al pueblo.",
+   "c": "El pueblo sabrá quién es Dios; no quedará sin memoria de él."
+  },
+  "hint": "Lee la última afirmación del versículo."
+ },
+ "joel-cam-joel-joel-01-gafanhotos-e-juizo-06": {
+  "question": "¿Qué une Joel 2:28 con Hechos 2:17?",
+  "feedbackCorrect": "Pedro cita a Joel para hablar del Espíritu derramado en Pentecostés.",
+  "feedbackWrong": {
+   "a": "Joel habla de toda carne, no de un grupo restringido.",
+   "c": "En los dos textos el centro es el Espíritu derramado por Dios."
+  },
+  "hint": "Compara quién recibe en los dos pasajes.",
+  "options": {
+   "a": "Espíritu solo para sacerdotes",
+   "b": "Espíritu derramado sobre todos",
+   "c": "Señales sin el Espíritu"
+  }
+ },
+ "joel-pro-joel-joel-01-gafanhotos-e-juizo-01": {
+  "question": "Joel 2:30–31 presenta señales en el cielo antes del grande y terrible Día del Señor.",
+  "feedbackCorrect": "Las señales se colocan antes de la venida del gran Día.",
+  "feedbackWrong": {
+   "false": "Relee el final de 2:31 y el orden entre las señales y el Día."
+  },
+  "hint": "Fíjate en la palabra que marca lo que viene primero.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-pro-joel-joel-01-gafanhotos-e-juizo-02": {
+  "question": "En Joel 2:29, toca un grupo que también recibe el Espíritu.",
+  "feedbackCorrect": "Hasta quienes servían reciben el Espíritu prometido por Dios.",
+  "feedbackWrong": {
+   "a": "Eso marca el tiempo, no un grupo que recibe el Espíritu.",
+   "b": "El Espíritu es lo que se derrama, no un grupo de personas."
+  },
+  "hint": "Busca personas, no el don ni el tiempo."
+ },
+ "joel-pro-joel-joel-01-gafanhotos-e-juizo-03": {
+  "question": "¿Qué lectura sostiene Joel 2:28 sobre quién recibe el Espíritu?",
+  "feedbackCorrect": "La lista mezcla edades y sexos para mostrar un alcance amplio.",
+  "feedbackWrong": {
+   "b": "Entran hijos, hijas, ancianos y jóvenes, no solo profetas.",
+   "c": "Las hijas se nombran junto con los hijos en el versículo.",
+   "d": "El texto abre la promesa mucho más allá de los líderes."
+  },
+  "hint": "Mira la variedad de personas nombradas en el versículo.",
+  "options": {
+   "a": "Alcanza a hijos, hijas, ancianos y jóvenes",
+   "b": "Solo los profetas de oficio reciben el Espíritu",
+   "c": "Solo los hombres adultos reciben el Espíritu",
+   "d": "Solo los líderes del pueblo reciben el Espíritu"
+  }
+ },
+ "joel-pro-joel-joel-01-gafanhotos-e-juizo-04": {
+  "question": "¿Qué secuencia revela el camino de la restauración en Joel?",
+  "feedbackCorrect": "La pérdida no cierra la historia: Dios restituye y derrama el Espíritu.",
+  "feedbackWrong": {
+   "default": "Empieza por la pérdida de los años, antes de cualquier promesa."
+  },
+  "hint": "Sigue el movimiento de Joel 2:25 a 2:28.",
+  "options": {
+   "a": "La plaga consume los años de la tierra",
+   "b": "Dios promete restituir los años",
+   "c": "Dios derrama el Espíritu sobre todos"
+  }
+ },
+ "joel-pro-joel-joel-01-gafanhotos-e-juizo-05": {
+  "question": "En Joel 2:31, ¿cómo se llama el Día del Señor que viene?",
+  "feedbackCorrect": "El Día es grande e inspira temor, según el propio texto.",
+  "feedbackWrong": {
+   "a": "El texto califica el Día por su peso, no por su distancia.",
+   "c": "Esperado no es la palabra que el versículo usa para el Día."
+  },
+  "hint": "Lee los dos adjetivos que se dan al Día."
+ },
+ "joel-pro-joel-joel-01-gafanhotos-e-juizo-06": {
+  "question": "¿Qué une Joel 2:28 con Isaías 44:3?",
+  "feedbackCorrect": "En los dos textos es Dios quien toma la iniciativa de derramar.",
+  "feedbackWrong": {
+   "b": "Los dos textos hablan de derramar, no de retener el don.",
+   "c": "El Espíritu es don de Dios, no algo que produce el pueblo."
+  },
+  "hint": "Mira quién actúa del mismo modo en los dos pasajes.",
+  "options": {
+   "a": "Dios derrama su Espíritu",
+   "b": "Dios retiene su Espíritu",
+   "c": "El pueblo produce el Espíritu"
+  }
+ },
+ "joel-sem-joel-joel-02-derramarei-o-meu-esp-01": {
+  "question": "En Joel 2:28, Dios derramará su Espíritu solo sobre los ancianos.",
+  "feedbackCorrect": "El alcance anunciado es toda carne, no un solo grupo de edad.",
+  "feedbackWrong": {
+   "true": "Relee sobre quién se derrama el Espíritu al inicio del versículo."
+  },
+  "hint": "Mira el alcance dicho justo después del verbo derramar.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-sem-joel-joel-02-derramarei-o-meu-esp-02": {
+  "question": "En Joel 2:28, toca sobre quién derramará Dios su Espíritu.",
+  "feedbackCorrect": "La promesa abarca a todas las personas, sin recortar grupos.",
+  "feedbackWrong": {
+   "a": "Los hijos forman parte del alcance, pero la frase mayor va antes.",
+   "c": "Los ancianos sueñan dentro de la promesa, pero el alcance es mayor."
+  },
+  "hint": "Busca la expresión más amplia del versículo."
+ },
+ "joel-sem-joel-joel-02-derramarei-o-meu-esp-03": {
+  "question": "Según Joel 2:29, ¿quién más recibirá el Espíritu en aquellos días?",
+  "feedbackCorrect": "Quienes servían, muchas veces olvidados, también son incluidos.",
+  "feedbackWrong": {
+   "a": "Los hijos aparecen en 2:28; aquí se añaden otros.",
+   "b": "Los profetas antiguos no son lo que añade este versículo.",
+   "c": "El versículo no limita el don a los habitantes de un lugar."
+  },
+  "hint": "Lee a quién se añade con la palabra también.",
+  "options": {
+   "a": "Solo los hijos mayores",
+   "b": "Solo los profetas antiguos",
+   "c": "Solo los habitantes de Sion",
+   "d": "Los siervos y las siervas"
+  }
+ },
+ "joel-sem-joel-joel-02-derramarei-o-meu-esp-04": {
+  "question": "Arma Joel 2:28 en el orden del texto.",
+  "feedbackCorrect": "Derramamiento, hijos que profetizan y jóvenes con visiones, en ese orden.",
+  "feedbackWrong": {
+   "default": "Empieza por el derramamiento, que abre la promesa del versículo."
+  },
+  "hint": "El versículo abre con la acción de Dios."
+ },
+ "joel-sem-joel-joel-02-derramarei-o-meu-esp-05": {
+  "question": "En Joel 2:28, ¿qué tendrán los jóvenes, según la promesa?",
+  "feedbackCorrect": "A los jóvenes les tocan visiones, dentro de la misma promesa amplia.",
+  "feedbackWrong": {
+   "a": "Aquí la promesa no habla de cargos para los jóvenes.",
+   "b": "Soñar se dice de los ancianos; a los jóvenes les toca otra palabra."
+  },
+  "hint": "Compara lo que toca a los ancianos y a los jóvenes."
+ },
+ "joel-sem-joel-joel-02-derramarei-o-meu-esp-06": {
+  "question": "¿Qué comunica Joel 2:28 que se relaciona con este contexto?",
+  "feedbackCorrect": "La promesa alcanza a gente común, de edades y condiciones variadas.",
+  "feedbackWrong": {
+   "a": "Hijos e hijas profetizarán, dice el propio versículo.",
+   "c": "Ni siquiera se nombran reyes; el alcance es mucho mayor."
+  },
+  "hint": "Mira la amplitud de quienes son alcanzados.",
+  "options": {
+   "a": "Espíritu sin profecía",
+   "b": "Espíritu para toda carne",
+   "c": "Espíritu solo para reyes"
+  }
+ },
+ "joel-cam-joel-joel-02-derramarei-o-meu-esp-01": {
+  "question": "En Joel 2:28–29, los siervos y las siervas quedan fuera del derramamiento del Espíritu.",
+  "feedbackCorrect": "La palabra también incluye a siervos y siervas en la misma promesa.",
+  "feedbackWrong": {
+   "true": "Relee 2:29, donde se añaden siervos y siervas."
+  },
+  "hint": "Presta atención a quién añade el segundo versículo.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-cam-joel-joel-02-derramarei-o-meu-esp-02": {
+  "question": "En Joel 2:29, toca la palabra que añade siervos y siervas a la promesa.",
+  "feedbackCorrect": "La promesa se ensancha e incluye a quienes antes no contaban.",
+  "feedbackWrong": {
+   "a": "\"sobre\" indica sobre quién, no lo que se añade a la promesa.",
+   "b": "\"naqueles\" marca el tiempo, no la suma de personas."
+  },
+  "hint": "Busca la palabra que suma gente nueva a la lista."
+ },
+ "joel-cam-joel-joel-02-derramarei-o-meu-esp-03": {
+  "question": "¿Cómo se relaciona Joel 2:29 con Joel 2:28?",
+  "feedbackCorrect": "El segundo versículo amplía la lista e incluye a los siervos.",
+  "feedbackWrong": {
+   "a": "La lista crece en 2:29; el alcance no disminuye.",
+   "b": "La promesa sigue y se amplía en el versículo siguiente.",
+   "c": "El Espíritu sigue en el centro; las señales vienen en 2:30."
+  },
+  "hint": "Mira qué cambia en la lista de personas entre los versículos.",
+  "options": {
+   "a": "Limita la promesa a un grupo menor",
+   "b": "Cierra la promesa antes de las señales",
+   "c": "Cambia el Espíritu por señales en el cielo",
+   "d": "Amplía la promesa a quienes servían"
+  }
+ },
+ "joel-cam-joel-joel-02-derramarei-o-meu-esp-04": {
+  "question": "¿Cómo avanza la promesa en Joel 2:28–29?",
+  "feedbackCorrect": "Del anuncio del después, el texto llega a los siervos incluidos.",
+  "feedbackWrong": {
+   "default": "Empieza por el anuncio que abre 2:28, antes de la lista."
+  },
+  "hint": "Sigue el orden en que se nombra a las personas.",
+  "options": {
+   "a": "Dios anuncia un tiempo después",
+   "b": "El Espíritu sobre toda carne",
+   "c": "Siervos y siervas incluidos"
+  }
+ },
+ "joel-cam-joel-joel-02-derramarei-o-meu-esp-05": {
+  "question": "En Joel 2:29, ¿sobre los siervos y sobre quién más derramará Dios el Espíritu?",
+  "feedbackCorrect": "Las siervas se nombran junto a los siervos, en el mismo derramamiento.",
+  "feedbackWrong": {
+   "a": "Las hijas aparecen en 2:28; aquí la pareja es con los siervos.",
+   "c": "Los jóvenes aparecen en 2:28; aquí acompaña a los siervos otro grupo."
+  },
+  "hint": "Lee la pareja que el versículo forma con los siervos."
+ },
+ "joel-cam-joel-joel-02-derramarei-o-meu-esp-06": {
+  "question": "¿Qué une Joel 2:28 con Números 11:29?",
+  "feedbackCorrect": "Moisés desea que todo el pueblo reciba el Espíritu de Dios.",
+  "feedbackWrong": {
+   "a": "En los dos textos, profetizar viene del Espíritu que Dios da.",
+   "c": "Moisés desea justo lo contrario de un don restringido."
+  },
+  "hint": "Mira el deseo que expresa Moisés en el otro pasaje.",
+  "options": {
+   "a": "Profecía sin el Espíritu",
+   "b": "Espíritu más allá de un líder",
+   "c": "Espíritu restringido a Moisés"
+  }
+ },
+ "joel-pro-joel-joel-02-derramarei-o-meu-esp-01": {
+  "question": "Joel 2:28–31 une el derramamiento del Espíritu a señales que vienen antes del Día del Señor.",
+  "feedbackCorrect": "El Espíritu derramado y las señales aparecen en la misma secuencia.",
+  "feedbackWrong": {
+   "false": "Lee de 2:28 a 2:31 seguido y mira las señales antes del Día."
+  },
+  "hint": "Lee los cuatro versículos como una sola secuencia.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-pro-joel-joel-02-derramarei-o-meu-esp-02": {
+  "question": "En Joel 2:30, toca lo que Dios mostrará en el cielo y en la tierra.",
+  "feedbackCorrect": "Señales extraordinarias acompañan la promesa del Espíritu.",
+  "feedbackWrong": {
+   "a": "El fuego es una de las señales listadas, no el nombre de todas.",
+   "c": "La sangre es una de las señales listadas, no el nombre de todas."
+  },
+  "hint": "Busca la palabra que resume todas las señales."
+ },
+ "joel-pro-joel-joel-02-derramarei-o-meu-esp-03": {
+  "question": "¿Qué lectura sostiene Joel 2:28 sobre el alcance del Espíritu?",
+  "feedbackCorrect": "Jóvenes y ancianos, hijos e hijas aparecen en la misma promesa.",
+  "feedbackWrong": {
+   "a": "Los siervos de 2:29 muestran que gobernar no es condición.",
+   "b": "La lista va mucho más allá de los profetas de oficio.",
+   "c": "Los jóvenes y las hijas desmienten un don solo para ancianos."
+  },
+  "hint": "Compara la lista completa de personas del pasaje.",
+  "options": {
+   "a": "Dios da el don solo a quien gobierna",
+   "b": "Dios restringe el don a profetas de oficio",
+   "c": "Dios limita el don a hombres ancianos",
+   "d": "Dios incluye edades y condiciones distintas"
+  }
+ },
+ "joel-pro-joel-joel-02-derramarei-o-meu-esp-04": {
+  "question": "¿Qué secuencia revela el camino de la promesa del Espíritu en la Biblia?",
+  "feedbackCorrect": "Joel promete, Pedro lo reconoce en Hechos y la promesa se amplía.",
+  "feedbackWrong": {
+   "default": "Empieza por la promesa en Joel, antes de Pentecostés."
+  },
+  "hint": "Sigue el orden entre Antiguo y Nuevo Testamento.",
+  "options": {
+   "a": "Dios promete derramar el Espíritu",
+   "b": "Pedro reconoce a Joel en Pentecostés",
+   "c": "La promesa alcanza a los que Dios llama"
+  }
+ },
+ "joel-pro-joel-joel-02-derramarei-o-meu-esp-05": {
+  "question": "En Joel 2:31, ¿en qué se convertirá la luna antes del Día del Señor?",
+  "feedbackCorrect": "La luna en sangre es una de las señales antes del gran Día.",
+  "feedbackWrong": {
+   "b": "Las tinieblas son lo que pasa con el sol, no con la luna.",
+   "c": "El texto no habla de más luz, sino de un cambio en la luna."
+  },
+  "hint": "No confundas lo que pasa con el sol y con la luna."
+ },
+ "joel-pro-joel-joel-02-derramarei-o-meu-esp-06": {
+  "question": "¿Qué une Joel 2:28 con Hechos 2:17?",
+  "feedbackCorrect": "En Pentecostés, Pedro lee el suceso con las palabras de Joel.",
+  "feedbackWrong": {
+   "a": "Hechos repite la promesa sobre toda carne, sin restringirla.",
+   "c": "Pedro presenta Pentecostés con la profecía de Joel."
+  },
+  "hint": "Mira cómo explica Pedro Pentecostés en Hechos.",
+  "options": {
+   "a": "Espíritu dado solo a los apóstoles",
+   "b": "Pedro cita a Joel en Pentecostés",
+   "c": "Una promesa sin cumplimiento citado"
+  }
+ },
+ "joel-sem-joel-joel-03-desafio-joel-01": {
+  "question": "En Joel 1:4, lo que dejó la langosta se lo comió la oruga.",
+  "feedbackCorrect": "El orden es inverso, pues la oruga viene antes que la langosta.",
+  "feedbackWrong": {
+   "true": "Relee el inicio de la cadena y quién come primero."
+  },
+  "hint": "Mira quién aparece primero en la cadena del versículo.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-sem-joel-joel-03-desafio-joel-02": {
+  "question": "En Joel 2:13, toca lo que Dios manda rasgar.",
+  "feedbackCorrect": "Es el interior, y no la ropa, lo que Dios quiere ver rasgado.",
+  "feedbackWrong": {
+   "b": "Las vestiduras son justo lo que no debe ser el centro aquí.",
+   "c": "Dios es quien recibe el regreso, no lo que se rasga."
+  },
+  "hint": "Busca la parte interior de la persona, al inicio."
+ },
+ "joel-sem-joel-joel-03-desafio-joel-03": {
+  "question": "Según Joel 2:25, ¿qué promete Dios restituir al pueblo?",
+  "feedbackCorrect": "Los años devorados por los insectos son el objeto de la promesa.",
+  "feedbackWrong": {
+   "a": "Las generaciones aparecen en Joel 1:3, no como algo devuelto.",
+   "b": "La trompeta aparece en 2:15, convocando, no siendo devuelta.",
+   "c": "Las vestiduras son del llamado de 2:13, no de esta promesa."
+  },
+  "hint": "Lee el objeto directo de la promesa de Dios.",
+  "options": {
+   "a": "Los nombres de las generaciones pasadas",
+   "b": "Las trompetas tocadas en Sion",
+   "c": "Las vestiduras rasgadas en el ayuno",
+   "d": "Los años consumidos por la plaga"
+  }
+ },
+ "joel-sem-joel-joel-03-desafio-joel-04": {
+  "question": "Arma Joel 1:4 en el orden del texto.",
+  "feedbackCorrect": "La cadena avanza de la oruga a la migratoria, comiendo cada resto.",
+  "feedbackWrong": {
+   "default": "Empieza por el resto que dejó la oruga."
+  },
+  "hint": "El primer eslabón de la cadena abre el versículo."
+ },
+ "joel-sem-joel-joel-03-desafio-joel-05": {
+  "question": "En Joel 2:28, ¿qué harán vuestros hijos e hijas?",
+  "feedbackCorrect": "Hijos e hijas hablarán movidos por el Espíritu derramado.",
+  "feedbackWrong": {
+   "b": "Aquí el texto no usa ese verbo para hijos e hijas.",
+   "c": "Soñar toca a los ancianos, dentro de la misma promesa amplia."
+  },
+  "hint": "Compara la parte de hijos e hijas con la de los ancianos."
+ },
+ "joel-sem-joel-joel-03-desafio-joel-06": {
+  "question": "¿Qué comunica Joel 1:4 que se relaciona con este contexto?",
+  "feedbackCorrect": "Un devorador tras otro vacía la tierra, sin dejar resto.",
+  "feedbackWrong": {
+   "a": "El versículo describe pérdida continua, no una nueva siembra.",
+   "c": "No se guarda ningún resto; cada sobra se la come el siguiente."
+  },
+  "hint": "Sigue el resto que queda en cada etapa.",
+  "options": {
+   "a": "Siembra que vuelve a empezar",
+   "b": "Pérdida que se completa",
+   "c": "Cosecha que se guarda"
+  }
+ },
+ "joel-sem-joel-joel-03-desafio-joel-07": {
+  "question": "En Joel 2:26, toca cómo comerá el pueblo tras la restauración.",
+  "feedbackCorrect": "La mesa restaurada es abundante, después de años de escasez.",
+  "feedbackWrong": {
+   "b": "Eso nombra a Dios, no el modo de comer del pueblo.",
+   "c": "Eso es lo que alaba el pueblo, no el modo de comer citado."
+  },
+  "hint": "Busca la expresión unida al verbo comer."
+ },
+ "joel-sem-joel-joel-03-desafio-joel-08": {
+  "question": "Arma Joel 2:13 en el orden del texto.",
+  "feedbackCorrect": "Corazón rasgado, regreso a Dios y el motivo en quién es él.",
+  "feedbackWrong": {
+   "default": "Empieza por lo que se debe rasgar, justo al inicio."
+  },
+  "hint": "El llamado interior abre todo el versículo."
+ },
+ "joel-cam-joel-joel-03-desafio-joel-01": {
+  "question": "En Joel 2:12–13, Dios pide primero las vestiduras rasgadas y solo después el corazón vuelto a él.",
+  "feedbackCorrect": "El corazón va primero y las vestiduras no sustituyen el regreso.",
+  "feedbackWrong": {
+   "true": "Relee el orden directo al inicio de Joel 2:13."
+  },
+  "hint": "Mira la prioridad que se da en la primera frase.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-cam-joel-joel-03-desafio-joel-02": {
+  "question": "En Joel 2:28, toca la palabra que marca el tiempo posterior de la promesa.",
+  "feedbackCorrect": "La promesa del Espíritu viene después de la restauración anunciada.",
+  "feedbackWrong": {
+   "a": "\"toda\" indica el alcance, no el momento de la promesa.",
+   "c": "\"sobre\" indica sobre quién, no el momento de la promesa."
+  },
+  "hint": "Busca la palabra de tiempo justo al inicio."
+ },
+ "joel-cam-joel-joel-03-desafio-joel-03": {
+  "question": "¿Cómo explica Joel 2:13 por qué el pueblo puede volver a Dios?",
+  "feedbackCorrect": "Dios es paciente y bondadoso; por eso volver tiene sentido.",
+  "feedbackWrong": {
+   "a": "La bondad activa es lo opuesto a la indiferencia en este texto.",
+   "c": "Él llama al pueblo hacia sí y se muestra muy presente.",
+   "d": "Él es lento para la ira, no rápido para cerrar puertas."
+  },
+  "hint": "Lee las cualidades de Dios en la segunda mitad.",
+  "options": {
+   "a": "Su indiferencia hace innecesario el corazón",
+   "b": "Su paciencia y bondad abren el regreso",
+   "c": "Su distancia vuelve inútil el regreso",
+   "d": "Su prisa por castigar cierra el regreso"
+  }
+ },
+ "joel-cam-joel-joel-03-desafio-joel-04": {
+  "question": "¿Cómo avanza el hilo de Joel de la pérdida a la promesa?",
+  "feedbackCorrect": "De la pérdida descrita, el libro pasa al llamado y a la restitución.",
+  "feedbackWrong": {
+   "default": "Empieza por la pérdida de Joel 1, antes del llamado."
+  },
+  "hint": "Sigue el orden de los grandes momentos del libro.",
+  "options": {
+   "a": "La plaga devora la tierra en cadena",
+   "b": "Dios llama al pueblo al corazón",
+   "c": "Dios promete restituir los años"
+  }
+ },
+ "joel-cam-joel-joel-03-desafio-joel-05": {
+  "question": "En Joel 1:6, ¿cómo se describe la nación que vino contra la tierra?",
+  "feedbackCorrect": "Poderosa e innumerable: así se presenta al invasor.",
+  "feedbackWrong": {
+   "a": "El texto dice lo contrario sobre el tamaño de esa fuerza.",
+   "b": "La fuerza arrasa la tierra; no pasa sin dejar huella."
+  },
+  "hint": "Lee los dos adjetivos dados a la nación invasora."
+ },
+ "joel-cam-joel-joel-03-desafio-joel-06": {
+  "question": "¿Qué une Joel 2:13 con Salmos 51:17?",
+  "feedbackCorrect": "Dios no desprecia el corazón quebrantado y contrito.",
+  "feedbackWrong": {
+   "a": "Joel pide el corazón, no la ropa como prueba del regreso.",
+   "c": "Los dos textos se niegan a cambiar lo interior por lo exterior."
+  },
+  "hint": "Mira lo que Dios no desprecia en el Salmo citado.",
+  "options": {
+   "a": "La ropa rasgada impresiona a Dios",
+   "b": "El corazón quebrantado agrada a Dios",
+   "c": "El gesto externo sustituye lo interior"
+  }
+ },
+ "joel-cam-joel-joel-03-desafio-joel-07": {
+  "question": "En Joel 1:3, toca el destino final de la memoria que se debe contar.",
+  "feedbackCorrect": "La memoria pasa por los hijos y llega a la generación siguiente.",
+  "feedbackWrong": {
+   "a": "Eso es el llamado a contar, no el destino final de la memoria.",
+   "c": "Los hijos son un eslabón de la cadena, no el destino final."
+  },
+  "hint": "Busca el final de la cadena de transmisión."
+ },
+ "joel-cam-joel-joel-03-desafio-joel-08": {
+  "question": "¿Cómo se encadenan los pasos de Joel 1:2–3?",
+  "feedbackCorrect": "Oír, contar a los hijos y transmitirlo, en ese orden.",
+  "feedbackWrong": {
+   "default": "Empieza por el llamado a oír, dirigido a los ancianos."
+  },
+  "hint": "Oír viene antes de contar y transmitir.",
+  "options": {
+   "a": "Los ancianos oyen lo que pasó",
+   "b": "Los padres cuentan el hecho a los hijos",
+   "c": "Los hijos lo transmiten a la generación siguiente"
+  }
+ },
+ "joel-pro-joel-joel-03-desafio-joel-01": {
+  "question": "En Joel 2:29, los siervos y las siervas también reciben el Espíritu derramado por Dios.",
+  "feedbackCorrect": "Incluir a los siervos es parte de la misma promesa amplia.",
+  "feedbackWrong": {
+   "false": "Relee 2:29 y a quién añade la palabra también."
+  },
+  "hint": "Mira a quién incluye el segundo versículo de la promesa.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "joel-pro-joel-joel-03-desafio-joel-02": {
+  "question": "En Joel 2:25, toca cómo llama Dios a la plaga que consumió los años.",
+  "feedbackCorrect": "La plaga se presenta bajo el gobierno y el envío de Dios.",
+  "feedbackWrong": {
+   "b": "Los años son lo que se consumió, no el nombre de la plaga.",
+   "c": "Eso dice el blanco del envío, no el nombre de la plaga."
+  },
+  "hint": "Busca el nombre que Dios da a quien devoró."
+ },
+ "joel-pro-joel-joel-03-desafio-joel-03": {
+  "question": "¿Qué lectura reúne bien la pérdida, el llamado y la promesa de Joel?",
+  "feedbackCorrect": "Joel une juicio, regreso sincero, restauración y Espíritu.",
+  "feedbackWrong": {
+   "b": "Hijos, siervos y siervas desmienten un don restringido.",
+   "c": "Se pide el corazón en lugar del gesto solo externo.",
+   "d": "La promesa lleva a la alabanza, no a riqueza garantizada."
+  },
+  "hint": "Une Joel 1, el llamado de 2:13 y las promesas.",
+  "options": {
+   "a": "El juicio llama al corazón y Dios restaura",
+   "b": "El Espíritu queda solo con los líderes",
+   "c": "El rito externo basta sin el corazón",
+   "d": "La restitución garantiza riqueza automática"
+  }
+ },
+ "joel-pro-joel-joel-03-desafio-joel-04": {
+  "question": "¿Qué secuencia revela el camino del libro de Joel?",
+  "feedbackCorrect": "De la pérdida al corazón que vuelve, el libro llega al Espíritu para todos.",
+  "feedbackWrong": {
+   "default": "Empieza por la pérdida que abre el libro de Joel."
+  },
+  "hint": "Sigue de la plaga al llamado y a la mayor promesa.",
+  "options": {
+   "a": "La pérdida revela la gravedad del juicio",
+   "b": "El corazón se vuelve a Dios",
+   "c": "El Espíritu se derrama sobre todos"
+  }
+ },
+ "joel-pro-joel-joel-03-desafio-joel-05": {
+  "question": "En Joel 2:11, ¿quién podrá hacer qué ante el Día del Señor?",
+  "feedbackCorrect": "La pregunta del texto muestra el peso insoportable de aquel Día.",
+  "feedbackWrong": {
+   "a": "El texto no habla de escapar, sino de soportar el Día.",
+   "c": "Ignorar es lo opuesto a la atención que Joel pide al pueblo."
+  },
+  "hint": "Lee la pregunta que cierra todo el versículo."
+ },
+ "joel-pro-joel-joel-03-desafio-joel-06": {
+  "question": "¿Qué une Joel 2:28 con Hechos 2:17?",
+  "feedbackCorrect": "Pedro explica Pentecostés con las palabras del profeta Joel.",
+  "feedbackWrong": {
+   "a": "Hechos presenta el suceso como palabra de Joel cumplida allí.",
+   "b": "La cita repite el alcance sobre toda carne, sin recortes."
+  },
+  "hint": "Mira cómo introduce Pedro la cita en Hechos.",
+  "options": {
+   "a": "Promesa sin palabra profética",
+   "b": "Espíritu solo para apóstoles",
+   "c": "Pedro cita a Joel en Pentecostés"
+  }
+ },
+ "joel-pro-joel-joel-03-desafio-joel-07": {
+  "question": "En Joel 2:27, toca la promesa final hecha al pueblo de Dios.",
+  "feedbackCorrect": "La presencia de Dios en medio aleja la vergüenza de su pueblo.",
+  "feedbackWrong": {
+   "b": "Eso muestra dónde está Dios, no la promesa final citada.",
+   "c": "Eso afirma quién es Dios, no la promesa final al pueblo."
+  },
+  "hint": "Lee la última afirmación sobre el pueblo."
+ },
+ "joel-pro-joel-joel-03-desafio-joel-08": {
+  "question": "¿Qué secuencia revela el alcance de la promesa del Espíritu?",
+  "feedbackCorrect": "Del alcance total, el texto llega a siervos y siervas incluidos.",
+  "feedbackWrong": {
+   "default": "Empieza por el alcance más amplio, dicho en 2:28."
+  },
+  "hint": "Sigue de 2:28 hasta lo que se añade en 2:29.",
+  "options": {
+   "a": "El Espíritu sobre toda carne",
+   "b": "Hijos e hijas profetizan",
+   "c": "Siervos y siervas también reciben"
+  }
+ }
+}
