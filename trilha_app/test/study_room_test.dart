@@ -72,4 +72,23 @@ void main() {
     const never = RoomMember(uid: 'u', name: 'A', steps: 0);
     expect(never.daysSinceWalk(), isNull);
   });
+
+  test('closed room keeps its data and reports who closed it', () {
+    final room = StudyRoom.fromMap('ABC123', {
+      'name': 'Célula',
+      'ownerId': 'lead',
+      'ownerName': 'Ana',
+      'closedAt': DateTime(2026, 11, 20, 19),
+      'closedBy': 'lead',
+      'closedByName': 'Ana Souza',
+    });
+    expect(room.isClosed, isTrue);
+    expect(room.closedBy, 'lead');
+    expect(room.closedByName, 'Ana Souza');
+    expect(room.name, 'Célula');
+    expect(room.copyWith(name: 'Nova').isClosed, isTrue);
+
+    final open = StudyRoom.fromMap('ABC123', {'name': 'X', 'ownerId': 'l'});
+    expect(open.isClosed, isFalse);
+  });
 }

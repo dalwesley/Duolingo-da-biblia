@@ -178,25 +178,20 @@
     "en": "Couldn't finish that. Try again.",
     "es": "No se pudo completar. Inténtalo de nuevo."
   },
-  "cornerDifferentTrail": {
-    "pt": "Vocês não estão na mesma trilha.",
-    "en": "You're not on the same trail.",
-    "es": "No están en la misma ruta."
-  },
-  "cornerDifferentScene": {
-    "pt": "Vocês não estão na mesma cena.",
-    "en": "You're not on the same scene.",
-    "es": "No están en la misma escena."
+  "cornerDifferentMode": {
+    "pt": "Vocês não estão no mesmo modo.",
+    "en": "You're not in the same mode.",
+    "es": "No están en el mismo modo."
   },
   "cornerNoCorner": {
-    "pt": "Nenhuma cena em comum para o desafio.",
-    "en": "No scene in common for the challenge.",
-    "es": "Ninguna escena en común para el desafío."
+    "pt": "Nenhuma trilha em andamento para o desafio.",
+    "en": "No trail in progress for the challenge.",
+    "es": "Ninguna ruta en curso para el desafío."
   },
   "cornerSameStretch": {
-    "pt": "A mesma cena até domingo. +{count} passos para cada um que chegar.",
-    "en": "Same scene by Sunday. +{count} steps for each one who arrives.",
-    "es": "La misma escena hasta el domingo. +{count} pasos para cada uno que llegue.",
+    "pt": "Cada um na sua próxima cena até domingo. +{count} passos para cada um que chegar.",
+    "en": "Each on your own next scene by Sunday. +{count} steps for each one who arrives.",
+    "es": "Cada uno en su próxima escena hasta el domingo. +{count} pasos para cada uno que llegue.",
     "placeholders": {
       "count": "int"
     }
@@ -210,14 +205,14 @@
     }
   },
   "cornerIncomingFromAnon": {
-    "pt": "Alguém te chamou para esta cena.",
-    "en": "Someone invited you to this scene.",
-    "es": "Alguien te invitó a esta escena."
+    "pt": "Alguém te chamou para um desafio.",
+    "en": "Someone invited you to a challenge.",
+    "es": "Alguien te invitó a un desafío."
   },
   "cornerIncomingFrom": {
-    "pt": "{name} te chamou para esta cena.",
-    "en": "{name} invited you to this scene.",
-    "es": "{name} te invitó a esta escena.",
+    "pt": "{name} te chamou para um desafio.",
+    "en": "{name} invited you to a challenge.",
+    "es": "{name} te invitó a un desafío.",
     "placeholders": {
       "name": "String"
     }
@@ -352,9 +347,9 @@
     "es": "Ningún desafío aún"
   },
   "cornerBoardEmptyBody": {
-    "pt": "Escolha alguém da caravana na mesma cena e chame para o desafio. Quem chega até domingo ganha +{count} passos.",
-    "en": "Pick someone from the caravan on the same scene and invite them to the challenge. Whoever arrives by Sunday gets +{count} steps.",
-    "es": "Elige a alguien de la caravana en la misma escena e invítalo al desafío. Quien llegue hasta el domingo gana +{count} pasos.",
+    "pt": "Escolha alguém da caravana no mesmo modo e chame para o desafio. Cada um faz a próxima cena da sua trilha; quem chega até domingo ganha +{count} passos.",
+    "en": "Pick someone from the caravan in the same mode and invite them to the challenge. Each of you does the next scene of your own trail; whoever arrives by Sunday gets +{count} steps.",
+    "es": "Elige a alguien de la caravana en el mismo modo e invítalo al desafío. Cada uno hace la próxima escena de su ruta; quien llegue hasta el domingo gana +{count} pasos.",
     "placeholders": {
       "count": "int"
     }
@@ -370,9 +365,9 @@
     "es": "¿A quién vas a desafiar?"
   },
   "cornerPickSubtitle": {
-    "pt": "Só dá para desafiar quem está na mesma cena que você.",
-    "en": "You can only challenge someone on the same scene as you.",
-    "es": "Solo puedes desafiar a quien está en la misma escena que tú."
+    "pt": "Só dá para desafiar quem está no mesmo modo que você. Cada um faz a sua próxima cena.",
+    "en": "You can only challenge someone in the same mode as you. Each of you does your own next scene.",
+    "es": "Solo puedes desafiar a quien está en el mismo modo que tú. Cada uno hace su próxima escena."
   },
   "cornerPickEmpty": {
     "pt": "Ninguém na caravana ainda.",

@@ -158,7 +158,8 @@ class CornerBoard extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        if (board.open.isEmpty) ...[
+        // Sem [showEmpty] o palco acima já diz que não há desafio aberto.
+        if (board.open.isEmpty && showEmpty) ...[
           Text(
             CornerCopy.boardIdle,
             style: AppTypography.body(size: 14, color: a.textSecondary),
@@ -169,7 +170,7 @@ class CornerBoard extends StatelessWidget {
             if (i > 0) const SizedBox(height: AppSpace.md),
             CornerHomeCard(
               challenge: board.open[i],
-              onWalk: () => onOpenMission(board.open[i].missionSlug),
+              onWalk: () => onOpenMission(board.open[i].missionSlugOf(uid)),
               actionsBelow: true,
             ),
           ],
@@ -472,7 +473,7 @@ class _ClosedRow extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  result.challenge.missionTitle,
+                  result.challenge.missionTitleOf(uid),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: AppTypography.title(size: 14, color: a.text),

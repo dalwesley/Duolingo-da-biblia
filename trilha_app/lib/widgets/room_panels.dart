@@ -2188,6 +2188,7 @@ enum RoomMenuAction {
   transfer,
   plan,
   endPlan,
+  revealPlan,
   answersPrivacy,
   leave,
   close,
@@ -2202,6 +2203,7 @@ Future<RoomMenuAction?> showRoomMenu(
   required bool hasStudy,
   required bool canTransfer,
   RoomMenuPlan plan = RoomMenuPlan.none,
+  bool planClosed = false,
   bool isLeader = true,
 }) {
   // Grupo se formando (menos de 3): sem propósito, semana nem meta.
@@ -2290,6 +2292,14 @@ Future<RoomMenuAction?> showRoomMenu(
                   ctx.l10n.planMenuEnd,
                   CinematicGlyph.stop,
                 ),
+              // Propósito chegou ao fim: o que o líder procura é fechar e
+              // revelar — nunca deixar só "Encerrar o grupo" no menu.
+              if (formed && plan == RoomMenuPlan.ended && !planClosed)
+                item(
+                  RoomMenuAction.revealPlan,
+                  ctx.l10n.planCloseReveal,
+                  CinematicGlyph.flag,
+                ),
               if (formed && hasStudy && plan == RoomMenuPlan.none)
                 item(
                   RoomMenuAction.clearStudy,
@@ -2311,13 +2321,19 @@ Future<RoomMenuAction?> showRoomMenu(
               CinematicGlyph.door,
               danger: true,
             ),
-            if (isLeader)
+            // Encerrar o grupo fica isolado no fim, com outro ícone: não é
+            // "encerrar o propósito".
+            if (isLeader) ...[
+              const SizedBox(height: AppSpace.md),
+              const ListDivider(),
+              const SizedBox(height: AppSpace.sm),
               item(
                 RoomMenuAction.close,
                 ctx.l10n.groupMenuClose,
-                CinematicGlyph.stop,
+                CinematicGlyph.lock,
                 danger: true,
               ),
+            ],
           ],
         ),
       );

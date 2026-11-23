@@ -220,6 +220,28 @@
       }
     }
   },
+  "bibleCompareCopiedAll": "Comparação copiada",
+  "bibleCompareCopyAll": "Copiar tudo",
+  "bibleCompareGreek": "Grego",
+  "bibleCompareHebrew": "Hebraico",
+  "bibleCompareLoading": "Buscando este versículo em cada versão…",
+  "bibleCompareMissing": "Esta versão não traz este versículo.",
+  "bibleCompareNextVerse": "Próximo versículo",
+  "bibleCompareOriginalMissing": "O original deste versículo ainda não está no app.",
+  "bibleComparePrevVerse": "Versículo anterior",
+  "bibleCompareReading": "em leitura",
+  "bibleCompareStudyCta": "Estudar palavra por palavra",
+  "bibleCompareVerseOf": "Versículo {verse} de {total}",
+  "@bibleCompareVerseOf": {
+    "placeholders": {
+      "verse": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "bibleDonate": "Doar",
   "bibleHeroContinueReading": "Continuar leitura",
   "bibleHeroFreshBlurb": "Jesus, a Palavra que se fez carne — um bom começo.",
@@ -235,6 +257,14 @@
   },
   "bibleIntroWhen": "Quando",
   "bibleIntroWho": "Quem",
+  "bibleListenVoiceMissing": "Seu aparelho não tem a voz em {language}. Instale nas configurações de voz (texto para fala) do aparelho para ouvir esta versão.",
+  "@bibleListenVoiceMissing": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
   "bibleLoadError": "Não foi possível abrir a Bíblia.",
   "bibleNewTestament": "Novo Testamento",
   "bibleNoteDelete": "Apagar anotação",
@@ -313,8 +343,11 @@
   },
   "bibleReaderPaper": "Papel",
   "bibleReaderPrevChapter": "Capítulo anterior",
+  "bibleReaderPreviewRef": "Salmos 119:105",
+  "bibleReaderPreviewVerse": "A tua palavra é lâmpada para os meus pés e luz para o meu caminho.",
   "bibleReaderReadTag": "lido",
   "bibleReaderSettings": "Ajustes de leitura",
+  "bibleReaderSoonTag": "em breve",
   "bibleReaderStop": "Parar",
   "bibleReaderSubtitle": "Capítulo {chapter} · {translation}",
   "@bibleReaderSubtitle": {
@@ -388,6 +421,8 @@
     }
   },
   "bibleTranslationSoonTitle": "Tradução em breve",
+  "bibleVerseCompare": "Comparar versões",
+  "bibleVerseCompareDetail": "Português, inglês, espanhol e o original",
   "bibleVerseCopied": "Versículo copiado",
   "bibleVerseCopy": "Copiar",
   "bibleVerseCount": "{count, plural, =1{1 versículo} other{{count} versículos}}",
@@ -417,6 +452,9 @@
   },
   "bibleVerseStudy": "Estudar este versículo",
   "bibleVerseStudyDetail": "Originais, Strong, concordância e referências",
+  "bibleVoiceEnglish": "inglês",
+  "bibleVoicePortuguese": "português",
+  "bibleVoiceSpanish": "espanhol",
   "bookFinishedBody": "Capítulo por capítulo, até o fim. O selo fica na sua Bíblia com a data de hoje.",
   "@bookFinishedBody": {
     "description": "Selo do livro concluído"
@@ -1126,7 +1164,7 @@
   },
   "cornerActionFailed": "Não foi possível concluir. Tente de novo.",
   "cornerArrivedMark": "Chegou",
-  "cornerBoardEmptyBody": "Escolha alguém da caravana na mesma cena e chame para o desafio. Quem chega até domingo ganha +{count} passos.",
+  "cornerBoardEmptyBody": "Escolha alguém da caravana no mesmo modo e chame para o desafio. Cada um faz a próxima cena da sua trilha; quem chega até domingo ganha +{count} passos.",
   "@cornerBoardEmptyBody": {
     "placeholders": {
       "count": {
@@ -1172,11 +1210,10 @@
       }
     }
   },
-  "cornerDifferentScene": "Vocês não estão na mesma cena.",
-  "cornerDifferentTrail": "Vocês não estão na mesma trilha.",
+  "cornerDifferentMode": "Vocês não estão no mesmo modo.",
   "cornerHoldAccept": "Segure para aceitar",
   "cornerHoldInvite": "Segure para chamar",
-  "cornerIncomingFrom": "{name} te chamou para esta cena.",
+  "cornerIncomingFrom": "{name} te chamou para um desafio.",
   "@cornerIncomingFrom": {
     "placeholders": {
       "name": {
@@ -1184,7 +1221,7 @@
       }
     }
   },
-  "cornerIncomingFromAnon": "Alguém te chamou para esta cena.",
+  "cornerIncomingFromAnon": "Alguém te chamou para um desafio.",
   "cornerIncomingTitle": "Convite de desafio",
   "cornerInviteTitle": "Desafio: {mission}",
   "@cornerInviteTitle": {
@@ -1197,7 +1234,7 @@
   "cornerKicker": "Desafio",
   "cornerLeftMark": "Saiu",
   "cornerNeedsCloud": "Entre com Google para chamar alguém.",
-  "cornerNoCorner": "Nenhuma cena em comum para o desafio.",
+  "cornerNoCorner": "Nenhuma trilha em andamento para o desafio.",
   "cornerNoneHeadline": "Ninguém chegou desta vez",
   "cornerNoneLine": "O desafio fechou no domingo.",
   "cornerOnTheWay": "A caminho",
@@ -1205,7 +1242,7 @@
   "cornerOtherPersonLower": "a outra pessoa",
   "cornerPickCta": "Desafiar",
   "cornerPickEmpty": "Ninguém na caravana ainda.",
-  "cornerPickSubtitle": "Só dá para desafiar quem está na mesma cena que você.",
+  "cornerPickSubtitle": "Só dá para desafiar quem está no mesmo modo que você. Cada um faz a sua próxima cena.",
   "cornerPickTitle": "Quem você vai desafiar?",
   "cornerRecordArrived": "{count, plural, =1{1 completa} other{{count} completas}}",
   "@cornerRecordArrived": {
@@ -1275,7 +1312,7 @@
       }
     }
   },
-  "cornerSameStretch": "A mesma cena até domingo. +{count} passos para cada um que chegar.",
+  "cornerSameStretch": "Cada um na sua próxima cena até domingo. +{count} passos para cada um que chegar.",
   "@cornerSameStretch": {
     "placeholders": {
       "count": {
@@ -2551,7 +2588,7 @@
   },
   "juntosCaravanSignInLive": "Entre com Google para ver a caravana ao vivo.",
   "juntosCaravanTimeout": "A caravana demorou para responder. Puxe para atualizar.",
-  "juntosChallengeExplainerBody": "Mesma cena, até domingo. Quem chegar ganha {reward} — se os dois chegarem, os dois ganham.",
+  "juntosChallengeExplainerBody": "Mesmo modo, cada um na sua próxima cena, até domingo. Quem chegar ganha {reward} — se os dois chegarem, os dois ganham.",
   "@juntosChallengeExplainerBody": {
     "placeholders": {
       "reward": {
@@ -2560,7 +2597,7 @@
     }
   },
   "juntosChallengeExplainerTitle": "Quem chega até domingo?",
-  "juntosChallengeStep1": "Mesma\ncena",
+  "juntosChallengeStep1": "Mesmo\nmodo",
   "juntosChallengeStep2": "Chegar até\ndomingo",
   "juntosChallengeStep3": "+10 passos\nna chegada",
   "juntosChoose": "Escolher",
@@ -2574,7 +2611,7 @@
     }
   },
   "juntosCloseConfirm": "Encerrar",
-  "juntosCloseRoomBody": "O grupo some para todos e o código deixa de funcionar. Não dá para desfazer.",
+  "juntosCloseRoomBody": "O grupo fica inativo para todos: o código para de funcionar e ninguém registra mais nada. Membros, propósito e respostas continuam guardados, e você pode reabrir depois.",
   "juntosCloseRoomTitle": "Encerrar o grupo?",
   "juntosCompanionEmptyBody": "Chame alguém para caminhar com você. No dia em que os dois estudam, o fio acende e a sequência cresce.",
   "juntosCompanionEmptyTitle": "Nenhuma companhia ainda",
@@ -6696,8 +6733,45 @@
   "roomCloseWeekConfirmTitle": "Fechar a semana agora?",
   "roomCloseWeekFailed": "Não foi possível fechar a semana. Tente de novo.",
   "roomCloseWeekHint": "Faça na reunião: o grupo vê junto quem foi fiel na semana.",
+  "roomClosedNotice": "O grupo «{room}» foi encerrado por {name} em {date}.",
+  "@roomClosedNotice": {
+    "placeholders": {
+      "room": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "roomClosedNoticeAnon": "O grupo «{room}» foi encerrado pelo líder em {date}.",
+  "@roomClosedNoticeAnon": {
+    "placeholders": {
+      "room": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "roomClosedNoticeMine": "Você encerrou o grupo «{room}» em {date}. Tudo continua guardado.",
+  "@roomClosedNoticeMine": {
+    "placeholders": {
+      "room": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "roomClosingBannerBody": "Veja como o grupo foi e quem ganhou o selo.",
   "roomClosingBannerTitle": "A semana do grupo foi fechada",
+  "roomErrorClosedJoin": "Este grupo foi encerrado pelo líder.",
   "roomErrorCreate": "Não foi possível criar o grupo. Tente de novo.",
   "roomErrorCreateFirst": "Crie o grupo antes de chamar alguém.",
   "roomErrorFull": "Este grupo já tem {limit} pessoas.",
@@ -6815,6 +6889,8 @@
       }
     }
   },
+  "roomReopen": "Reabrir o grupo",
+  "roomReopenFailed": "Não deu para reabrir o grupo. Tente de novo.",
   "roomRevealAgain": "Ver a revelação de novo",
   "roomRevealAnanHigh": "Que caminhada! O grupo foi firme, junto, do começo ao fim.",
   "roomRevealAnanLow": "Cada passo conta. Vem aí uma nova chance de caminhar junto.",
@@ -7288,6 +7364,8 @@
   "settingsPlusTeaser": "Trilhas da estação, planos de leitura e revisão da semana",
   "settingsProgressInCloud": "Progresso na nuvem",
   "settingsProgressRestored": "Progresso restaurado.",
+  "settingsRateApp": "Avaliar o STWAY",
+  "settingsRateAppSubtitle": "Deixe sua nota na loja",
   "settingsReminderAt": "Às {hour}h · toque para mudar",
   "@settingsReminderAt": {
     "placeholders": {
@@ -7420,6 +7498,11 @@
     }
   },
   "splashPreparing": "Preparando sua jornada…",
+  "storeRatingBody": "Sua avaliação na loja ajuda outras pessoas a acharem o caminho. Leva menos de um minuto.",
+  "storeRatingCta": "Avaliar na loja",
+  "storeRatingEyebrow": "Avaliar",
+  "storeRatingOpenFailed": "Não deu para abrir a loja agora.",
+  "storeRatingTitle": "Que tal avaliar o STWAY?",
   "streakDayEmpty": "sem cena",
   "streakDayFrozen": "protegido pelo gelo",
   "streakDayRepaired": "recuperado",
@@ -7988,6 +8071,39 @@
     "placeholders": {
       "roman": {
         "type": "String"
+      }
+    }
+  },
+  "ttsNoVoices": "Nenhuma voz em {language} instalada. Instale nas configurações de texto para fala do aparelho.",
+  "@ttsNoVoices": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "ttsSectionVoice": "Voz da leitura",
+  "ttsSpeedFast": "Rápido",
+  "ttsSpeedNormal": "Normal",
+  "ttsSpeedSlow": "Devagar",
+  "ttsTest": "Testar voz",
+  "ttsTestStop": "Parar",
+  "ttsVoiceAuto": "Automática",
+  "ttsVoiceFemale": "feminina",
+  "ttsVoiceHint": "Vozes instaladas neste aparelho para {language}.",
+  "@ttsVoiceHint": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "ttsVoiceMale": "masculina",
+  "ttsVoiceNumbered": "Voz {number}",
+  "@ttsVoiceNumbered": {
+    "placeholders": {
+      "number": {
+        "type": "int"
       }
     }
   },

@@ -66,6 +66,9 @@ class CaravanPilgrimProfile {
   final String? lastSeenDate;
   final List<String> completedMissions;
   final Map<String, List<String>> clearedTrailModes;
+
+  /// Modo gravado por trilha (`trailDifficulties` no doc público).
+  final Map<String, String> trailModes;
   final List<String> readBibleChapters;
 
   /// Livros com o selo de concluído (abreviações), lidos ou pela trilha
@@ -124,6 +127,7 @@ class CaravanPilgrimProfile {
     this.lastSeenDate,
     this.completedMissions = const [],
     this.clearedTrailModes = const {},
+    this.trailModes = const {},
     this.readBibleChapters = const [],
     this.booksFinished = const [],
     this.perfectMissions = const [],
@@ -213,6 +217,7 @@ class CaravanPilgrimProfile {
           (k, v) => MapEntry(k, List<String>.from(v)),
         ),
       ),
+      trailModes: Map<String, String>.from(progress.trailDifficulties),
       readBibleChapters: List<String>.from(progress.readBibleChapters),
       booksFinished: progress.booksFinishedOn.keys.toList(),
       perfectMissions: List<String>.from(progress.perfectMissions),
@@ -274,6 +279,7 @@ class CaravanPilgrimProfile {
       lastSeenDate: _asDateKey(data['lastSeenDate']),
       completedMissions: _asStringList(data['completedMissions']),
       clearedTrailModes: _asStringListMap(data['clearedTrailModes']),
+      trailModes: _asStringMap(data['trailDifficulties']),
       readBibleChapters: _asStringList(data['readBibleChapters']),
       booksFinished: _asStringMap(data['booksFinishedOn']).keys.toList(),
       perfectMissions: _asStringList(data['perfectMissions']),
@@ -423,6 +429,7 @@ class CaravanPilgrimProfile {
       lastSeenDate: lastSeenDate,
       completedMissions: completedMissions,
       clearedTrailModes: clearedTrailModes,
+      trailModes: trailModes,
       readBibleChapters: readBibleChapters,
       booksFinished: booksFinished,
       perfectMissions: perfectMissions,

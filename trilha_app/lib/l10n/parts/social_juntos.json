@@ -225,9 +225,9 @@
     "es": "¿Cerrar el grupo?"
   },
   "juntosCloseRoomBody": {
-    "pt": "O grupo some para todos e o código deixa de funcionar. Não dá para desfazer.",
-    "en": "The group disappears for everyone and the code stops working. This can't be undone.",
-    "es": "El grupo desaparece para todos y el código deja de funcionar. No se puede deshacer."
+    "pt": "O grupo fica inativo para todos: o código para de funcionar e ninguém registra mais nada. Membros, propósito e respostas continuam guardados, e você pode reabrir depois.",
+    "en": "The group becomes inactive for everyone: the code stops working and nothing else is recorded. Members, purpose and answers stay saved, and you can reopen it later.",
+    "es": "El grupo queda inactivo para todos: el código deja de funcionar y no se registra nada más. Miembros, propósito y respuestas quedan guardados, y puedes reabrirlo después."
   },
   "juntosCloseConfirm": {
     "pt": "Encerrar",
@@ -358,17 +358,17 @@
     "es": "¿Quién llega antes del domingo?"
   },
   "juntosChallengeExplainerBody": {
-    "pt": "Mesma cena, até domingo. Quem chegar ganha {reward} — se os dois chegarem, os dois ganham.",
-    "en": "Same scene, by Sunday. Whoever gets there earns {reward} — if you both do, you both earn it.",
-    "es": "Misma escena, hasta el domingo. Quien llegue gana {reward} — si los dos llegan, los dos ganan.",
+    "pt": "Mesmo modo, cada um na sua próxima cena, até domingo. Quem chegar ganha {reward} — se os dois chegarem, os dois ganham.",
+    "en": "Same mode, each on your own next scene, by Sunday. Whoever gets there earns {reward} — if you both do, you both earn it.",
+    "es": "Mismo modo, cada uno en su próxima escena, hasta el domingo. Quien llegue gana {reward} — si los dos llegan, los dos ganan.",
     "placeholders": {
       "reward": "String"
     }
   },
   "juntosChallengeStep1": {
-    "pt": "Mesma\ncena",
-    "en": "Same\nscene",
-    "es": "Misma\nescena"
+    "pt": "Mesmo\nmodo",
+    "en": "Same\nmode",
+    "es": "Mismo\nmodo"
   },
   "juntosChallengeStep2": {
     "pt": "Chegar até\ndomingo",
@@ -754,5 +754,48 @@
     "placeholders": {
       "name": "String"
     }
+  },
+  "roomClosedNotice": {
+    "pt": "O grupo «{room}» foi encerrado por {name} em {date}.",
+    "en": "The group “{room}” was closed by {name} on {date}.",
+    "es": "El grupo «{room}» fue cerrado por {name} el {date}.",
+    "placeholders": {
+      "room": "String",
+      "name": "String",
+      "date": "String"
+    }
+  },
+  "roomClosedNoticeAnon": {
+    "pt": "O grupo «{room}» foi encerrado pelo líder em {date}.",
+    "en": "The group “{room}” was closed by the leader on {date}.",
+    "es": "El grupo «{room}» fue cerrado por el líder el {date}.",
+    "placeholders": {
+      "room": "String",
+      "date": "String"
+    }
+  },
+  "roomClosedNoticeMine": {
+    "pt": "Você encerrou o grupo «{room}» em {date}. Tudo continua guardado.",
+    "en": "You closed the group “{room}” on {date}. Everything is still saved.",
+    "es": "Cerraste el grupo «{room}» el {date}. Todo sigue guardado.",
+    "placeholders": {
+      "room": "String",
+      "date": "String"
+    }
+  },
+  "roomReopen": {
+    "pt": "Reabrir o grupo",
+    "en": "Reopen the group",
+    "es": "Reabrir el grupo"
+  },
+  "roomReopenFailed": {
+    "pt": "Não deu para reabrir o grupo. Tente de novo.",
+    "en": "Couldn't reopen the group. Try again.",
+    "es": "No se pudo reabrir el grupo. Inténtalo de nuevo."
+  },
+  "roomErrorClosedJoin": {
+    "pt": "Este grupo foi encerrado pelo líder.",
+    "en": "This group was closed by the leader.",
+    "es": "Este grupo fue cerrado por el líder."
   }
 }

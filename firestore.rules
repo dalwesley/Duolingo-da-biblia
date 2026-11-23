@@ -402,6 +402,13 @@ service cloud.firestore {
         return exists(/databases/$(database)/documents/rooms/$(code)/members/$(uid));
       }
 
+      // Grupo ativo: existe e o líder não encerrou (`closedAt`). Encerrado,
+      // nada novo entra (membro, resposta, chamado); tudo fica guardado.
+      function roomOpen() {
+        return existsAfter(/databases/$(database)/documents/rooms/$(code))
+          && !('closedAt' in getAfter(/databases/$(database)/documents/rooms/$(code)).data);
+      }
+
       // Grupo de verdade só com 3 pessoas: propósito, estudo e leitura só
       // começam ou mudam com `memberCount` >= 3 (a function conta; sala
       // antiga sem contagem passa até o backfill). Tirar sempre pode.
@@ -422,8 +429,15 @@ service cloud.firestore {
         && request.resource.data.ownerId == request.auth.uid
         && (request.resource.data.get('pilot', false) == false
             || get(/databases/$(database)/documents/users/$(request.auth.uid)).data.get('groupsPilot', false) == true);
-      allow delete: if isSignedIn()
-        && resource.data.ownerId == request.auth.uid;
+      // Grupo não se apaga pelo app: o líder encerra (closedAt) e pode
+      // reabrir. Só o admin (ou a exclusão de conta, no servidor) apaga.
+      // Exceção: o app desfaz a criação se o líder não entrou como membro
+      // (até 5 minutos depois de criar).
+      allow delete: if isAdmin()
+        || (isSignedIn()
+            && resource.data.ownerId == request.auth.uid
+            && resource.data.createdAt is timestamp
+            && request.time < resource.data.createdAt + duration.value(5, 'm'));
       // Só o líder edita. Passar a liderança exige que o novo líder já esteja
       // na lista do grupo. `pilot` não muda depois de criado.
       allow update: if isSignedIn()
@@ -434,6 +448,15 @@ service cloud.firestore {
             || isRoomMember(request.resource.data.ownerId))
         && request.resource.data.get('memberCount', -1)
             == resource.data.get('memberCount', -1)
+        // Encerrar: closedAt com a hora do servidor, assinado pelo líder.
+        // Encerrado, só dá para reabrir (tirar os campos de encerramento).
+        && (!('closedAt' in request.resource.data)
+            || 'closedAt' in resource.data
+            || (request.resource.data.closedAt == request.time
+                && request.resource.data.closedBy == request.auth.uid))
+        && (!('closedAt' in resource.data)
+            || request.resource.data.diff(resource.data).affectedKeys()
+                .hasOnly(['closedAt', 'closedBy', 'closedByName', 'updatedAt']))
         && formedOrSame('plan')
         && formedOrSame('study')
         && formedOrSame('reading')
@@ -482,6 +505,7 @@ service cloud.firestore {
         allow create, update: if isSignedIn()
           && request.auth.uid == uid
           && isRoomMember(uid)
+          && roomOpen()
           && request.resource.data.uid == uid
           && request.resource.data.text is string
           && request.resource.data.text.size() > 0
@@ -499,6 +523,7 @@ service cloud.firestore {
         allow create, update: if isSignedIn()
           && toUid != request.auth.uid
           && !blockedBy(toUid)
+          && roomOpen()
           && isRoomMember(request.auth.uid)
           && isRoomMember(toUid)
           && request.resource.data.fromId == request.auth.uid
@@ -514,8 +539,11 @@ service cloud.firestore {
         // O placar da célula é o do próprio membro. Não espelha users/{uid}:
         // esse get() recusava a criação do grupo quando o weeklySteps local
         // ainda não era o número gravado no perfil (int vs float, ou 0 na nuvem).
+        // Só em grupo ativo: grupo encerrado ou que não existe mais não
+        // recebe presença (antes o app seguia gravando num grupo sumido).
         allow create, update: if isSignedIn()
           && request.auth.uid == uid
+          && roomOpen()
           && (!('xp' in request.resource.data) || nonNegNum(request.resource.data.xp))
           && (!('steps' in request.resource.data) || nonNegNum(request.resource.data.steps))
           && (('xp' in request.resource.data) || ('steps' in request.resource.data))

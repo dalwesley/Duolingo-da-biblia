@@ -210,6 +210,12 @@ class StudyRoom {
   /// responder. As rules garantem as duas coisas.
   final bool answersPrivate;
 
+  /// Grupo encerrado pelo líder: fica no banco (nada é apagado), mas não
+  /// abre nem recebe registro até o líder reabrir.
+  final DateTime? closedAt;
+  final String? closedBy;
+  final String? closedByName;
+
   const StudyRoom({
     required this.code,
     required this.name,
@@ -223,7 +229,12 @@ class StudyRoom {
     this.pilot = false,
     this.plan,
     this.answersPrivate = false,
+    this.closedAt,
+    this.closedBy,
+    this.closedByName,
   });
+
+  bool get isClosed => closedAt != null;
 
   bool isOwner(String? uid) => uid != null && uid == ownerId;
 
@@ -263,21 +274,24 @@ class StudyRoom {
       pilot: pilot,
       plan: clearPlan ? null : (plan ?? this.plan),
       answersPrivate: answersPrivate ?? this.answersPrivate,
+      closedAt: closedAt,
+      closedBy: closedBy,
+      closedByName: closedByName,
     );
   }
 
-  factory StudyRoom.fromMap(String code, Map<String, dynamic> data) {
-    DateTime? createdAt;
-    final raw = data['createdAt'];
-    if (raw is DateTime) {
-      createdAt = raw;
-    } else {
-      try {
-        createdAt = (raw as dynamic)?.toDate() as DateTime?;
-      } catch (_) {
-        createdAt = null;
-      }
+  static DateTime? _asDate(Object? raw) {
+    if (raw is DateTime) return raw;
+    if (raw is String) return DateTime.tryParse(raw);
+    try {
+      return (raw as dynamic)?.toDate() as DateTime?;
+    } catch (_) {
+      return null;
     }
+  }
+
+  factory StudyRoom.fromMap(String code, Map<String, dynamic> data) {
+    final createdAt = _asDate(data['createdAt']);
     return StudyRoom(
       code: code,
       name: (data['name'] as String?)?.trim().isNotEmpty == true
@@ -295,6 +309,9 @@ class StudyRoom {
       pilot: data['pilot'] == true,
       plan: RoomPlan.fromMap(data['plan']),
       answersPrivate: data['answersPrivate'] == true,
+      closedAt: _asDate(data['closedAt']),
+      closedBy: data['closedBy'] as String?,
+      closedByName: data['closedByName'] as String?,
     );
   }
 }

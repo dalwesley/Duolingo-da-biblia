@@ -10,7 +10,8 @@ import 'backend_service.dart';
 import 'moderation_service.dart';
 import 'progress_service.dart';
 
-/// Desafio na aba Juntos (sob Companhia) — duas pessoas, a mesma cena, até domingo.
+/// Desafio na aba Juntos (sob Companhia) — duas pessoas no mesmo modo, cada
+/// uma na próxima cena da própria trilha, até domingo.
 /// Um desafio aberto por pessoa.
 /// Sem rede, a escrita fica na fila do Firestore e sobe depois; a tela não
 /// espera o servidor para seguir.
@@ -205,6 +206,12 @@ class CornerService extends ChangeNotifier {
             'missionSlug': proposal.missionSlug,
             'missionTitle': proposal.missionTitle,
             'moduleTitle': proposal.moduleTitle,
+            'mode': proposal.mode,
+            'opponentTrailSlug': proposal.theirs.trailSlug,
+            'opponentTrailTitle': proposal.theirs.trailTitle,
+            'opponentMissionSlug': proposal.theirs.missionSlug,
+            'opponentMissionTitle': proposal.theirs.missionTitle,
+            'opponentModuleTitle': proposal.theirs.moduleTitle,
             'weekStart': weekStart,
             'status': CornerStatus.pending.name,
             'createdAt': FieldValue.serverTimestamp(),
@@ -221,6 +228,12 @@ class CornerService extends ChangeNotifier {
         missionSlug: proposal.missionSlug,
         missionTitle: proposal.missionTitle,
         moduleTitle: proposal.moduleTitle,
+        mode: proposal.mode,
+        opponentTrailSlug: proposal.theirs.trailSlug,
+        opponentTrailTitle: proposal.theirs.trailTitle,
+        opponentMissionSlug: proposal.theirs.missionSlug,
+        opponentMissionTitle: proposal.theirs.missionTitle,
+        opponentModuleTitle: proposal.theirs.moduleTitle,
         weekStart: weekStart,
         status: CornerStatus.pending,
         challengerPhotoUrl: backend.userPhotoUrl,
@@ -232,6 +245,10 @@ class CornerService extends ChangeNotifier {
         AnalyticsService.instance.logEvent('corner_propose', {
           'trail_slug': proposal.trailSlug,
           'mission_slug': proposal.missionSlug,
+          'mode': proposal.mode,
+          'same_trail': proposal.mine.trailSlug == proposal.theirs.trailSlug
+              ? 1
+              : 0,
         }),
       );
       return created;
@@ -413,31 +430,19 @@ class CornerService extends ChangeNotifier {
       mine = [
         for (final c in mine)
           if (c.id == match.id)
-            CornerChallenge(
-              id: c.id,
-              challengerId: c.challengerId,
-              challengerName: c.challengerName,
-              opponentId: c.opponentId,
-              opponentName: c.opponentName,
-              trailSlug: c.trailSlug,
-              trailTitle: c.trailTitle,
-              missionSlug: c.missionSlug,
-              missionTitle: c.missionTitle,
-              moduleTitle: c.moduleTitle,
-              weekStart: c.weekStart,
-              status: nextStatus,
-              challengerDoneAt: iAmChallenger ? now : c.challengerDoneAt,
-              opponentDoneAt: iAmChallenger ? c.opponentDoneAt : now,
-              challengerCorrect: iAmChallenger ? correct : c.challengerCorrect,
-              challengerTotal: iAmChallenger ? total : c.challengerTotal,
-              opponentCorrect: iAmChallenger ? c.opponentCorrect : correct,
-              opponentTotal: iAmChallenger ? c.opponentTotal : total,
-              challengerPhotoUrl: c.challengerPhotoUrl,
-              opponentPhotoUrl: c.opponentPhotoUrl,
-              withdrawnBy: c.withdrawnBy,
-              challengerDays: c.challengerDays,
-              opponentDays: c.opponentDays,
-            )
+            iAmChallenger
+                ? c.copyWith(
+                    status: nextStatus,
+                    challengerDoneAt: now,
+                    challengerCorrect: correct,
+                    challengerTotal: total,
+                  )
+                : c.copyWith(
+                    status: nextStatus,
+                    opponentDoneAt: now,
+                    opponentCorrect: correct,
+                    opponentTotal: total,
+                  )
           else
             c,
       ];
@@ -505,6 +510,12 @@ class CornerService extends ChangeNotifier {
       missionSlug: (d['missionSlug'] as String?) ?? '',
       missionTitle: (d['missionTitle'] as String?) ?? '',
       moduleTitle: (d['moduleTitle'] as String?) ?? '',
+      mode: (d['mode'] as String?) ?? '',
+      opponentTrailSlug: d['opponentTrailSlug'] as String?,
+      opponentTrailTitle: d['opponentTrailTitle'] as String?,
+      opponentMissionSlug: d['opponentMissionSlug'] as String?,
+      opponentMissionTitle: d['opponentMissionTitle'] as String?,
+      opponentModuleTitle: d['opponentModuleTitle'] as String?,
       weekStart: (d['weekStart'] as String?) ?? '',
       status: _statusOf(d['status'] as String?),
       challengerDoneAt: _asStamp(d['challengerDoneAt']),

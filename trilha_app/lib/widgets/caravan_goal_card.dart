@@ -327,133 +327,163 @@ class _CaravanGoalCardState extends State<CaravanGoalCard> {
 
     final canClaim = pace.pace == GoalPace.reached && need <= 0 && !claimed;
     // A capa: a pintura do postal, embaçada no começo e cada vez mais
-    // nítida conforme a caravana anda — o convite é ver o resto.
-    final cover = SizedBox(
-      height: 220,
-      child: Stack(
-        fit: StackFit.expand,
-        children: [
-          // ClipRect: o desfoque da pintura não vaza para baixo da capa.
-          // A pintura para 3px antes do pé (já cor cheia do degradê): a
-          // emenda cai em meio pixel e a pintura aparecia ali como linha.
-          Positioned.fill(
-            bottom: 3,
-            child: ClipRect(
-              child: TweenAnimationBuilder<double>(
-                tween: Tween(begin: fromR, end: claimed ? 1 : reveal),
-                duration: reduced
-                    ? Duration.zero
-                    : const Duration(milliseconds: 1600),
-                curve: const Interval(0.45, 1, curve: Curves.easeOut),
-                builder: (context, r, child) {
-                  final sigma = 14.0 * (1 - r);
-                  return ImageFiltered(
-                    imageFilter: ui.ImageFilter.blur(
-                      sigmaX: sigma,
-                      sigmaY: sigma,
-                      tileMode: TileMode.decal,
+    // nítida conforme a caravana anda — o convite é ver o resto. Na
+    // proporção da pintura (~2.4:1), com título e contagem no céu (canto
+    // de cima) — a paisagem do pé fica à mostra.
+    final cover = Column(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        AspectRatio(
+          aspectRatio: 2.4,
+          child: Stack(
+            fit: StackFit.expand,
+            children: [
+              // ClipRect: o desfoque da pintura não vaza para baixo da capa.
+              // A pintura para 3px antes do pé (já cor cheia do degradê): a
+              // emenda cai em meio pixel e a pintura aparecia ali como linha.
+              Positioned.fill(
+                bottom: 3,
+                child: ClipRect(
+                  child: TweenAnimationBuilder<double>(
+                    tween: Tween(begin: fromR, end: claimed ? 1 : reveal),
+                    duration: reduced
+                        ? Duration.zero
+                        : const Duration(milliseconds: 1600),
+                    curve: const Interval(0.45, 1, curve: Curves.easeOut),
+                    builder: (context, r, child) {
+                      final sigma = 14.0 * (1 - r);
+                      return ImageFiltered(
+                        imageFilter: ui.ImageFilter.blur(
+                          sigmaX: sigma,
+                          sigmaY: sigma,
+                          tileMode: TileMode.decal,
+                        ),
+                        child: child,
+                      );
+                    },
+                    child: Image.asset(
+                      CaravanPostcards.artOf(month),
+                      fit: BoxFit.cover,
+                      cacheWidth: 720,
                     ),
-                    child: child,
-                  );
-                },
-                child: Image.asset(
-                  CaravanPostcards.artOf(month),
-                  fit: BoxFit.cover,
-                  cacheWidth: 720,
-                ),
-              ),
-            ),
-          ),
-          // Pé da pintura afunda no cartão (como no Advento): capa e corpo
-          // viram uma peça só, e o título fica sobre o escuro.
-          DecoratedBox(
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  fill.withValues(alpha: 0),
-                  fill.withValues(alpha: 0.6),
-                  fill,
-                ],
-                // Cheio antes do fim: a borda da pintura desfocada não
-                // vira uma linha na emenda.
-                stops: const [0.3, 0.66, 0.9],
-              ),
-            ),
-          ),
-          Positioned(
-            left: 18,
-            right: 18,
-            bottom: 0,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Container(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 10,
-                    vertical: 5,
-                  ),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(999),
-                    color: a.onDark
-                        ? Colors.black.withValues(alpha: 0.35)
-                        : Colors.white.withValues(alpha: 0.75),
-                    border: Border.all(color: tone.withValues(alpha: 0.6)),
-                  ),
-                  child: SectionLabel(
-                    l10n.caravanGoalTitle(name),
-                    size: 10,
-                    color: a.onDark ? tone : a.ink(tone),
-                    maxLines: 1,
                   ),
                 ),
-                const SizedBox(height: AppSpace.sm),
-                Text(
-                  l10n.caravanGoalHeadline(name),
-                  style:
-                      AppTypography.display(
-                        size: 28,
-                        height: 1.05,
-                        color: a.text,
-                      ).copyWith(
-                        shadows: [
-                          Shadow(
-                            color: tone.withValues(
-                              alpha: a.onDark ? 0.55 : 0.2,
-                            ),
-                            blurRadius: 24,
-                          ),
-                        ],
+              ),
+              // Pé da pintura afunda no cartão (como no Advento): capa e corpo
+              // viram uma peça só.
+              DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      fill.withValues(alpha: 0),
+                      fill.withValues(alpha: 0.6),
+                      fill,
+                    ],
+                    // Cheio antes do fim: a borda da pintura desfocada não
+                    // vira uma linha na emenda.
+                    stops: const [0.55, 0.82, 0.97],
+                  ),
+                ),
+              ),
+              // Véu no canto de cima à esquerda: o título mora no céu da
+              // pintura e precisa ler em qualquer mês e tema.
+              DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.centerRight,
+                    colors: [
+                      fill.withValues(alpha: 0.7),
+                      fill.withValues(alpha: 0),
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 18,
+                right: 18,
+                top: 14,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 5,
                       ),
-                ),
-                const SizedBox(height: 4),
-                TweenAnimationBuilder<double>(
-                  tween: Tween(begin: fromP * goal, end: done.toDouble()),
-                  duration: AppMotion.scene,
-                  curve: AppMotion.enter,
-                  builder: (context, v, _) => Text(
-                    l10n.caravanGoalCount(
-                      math.min(v.round(), goal),
-                      goal,
-                      myScenes,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(999),
+                        color: a.onDark
+                            ? Colors.black.withValues(alpha: 0.35)
+                            : Colors.white.withValues(alpha: 0.75),
+                        border: Border.all(color: tone.withValues(alpha: 0.6)),
+                      ),
+                      child: SectionLabel(
+                        l10n.caravanGoalTitle(name),
+                        size: 10,
+                        color: a.onDark ? tone : a.ink(tone),
+                        maxLines: 1,
+                      ),
                     ),
-                    style: AppTypography.display(
-                      size: 17,
-                      weight: FontWeight.w500,
-                      fontStyle: FontStyle.italic,
-                      color: a.onDark
-                          ? Color.lerp(tone, Colors.white, 0.55)!
-                          : a.ink(tone),
+                    const SizedBox(height: AppSpace.sm),
+                    // Uma linha só, encolhendo se faltar largura: com
+                    // a contagem também no céu, duas linhas não cabem.
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        l10n.caravanGoalHeadline(name),
+                        maxLines: 1,
+                        softWrap: false,
+                        style:
+                            AppTypography.display(
+                              size: 26,
+                              height: 1.05,
+                              color: a.text,
+                            ).copyWith(
+                              shadows: [
+                                Shadow(
+                                  color: tone.withValues(
+                                    alpha: a.onDark ? 0.55 : 0.2,
+                                  ),
+                                  blurRadius: 24,
+                                ),
+                              ],
+                            ),
+                      ),
                     ),
-                  ),
+                    const SizedBox(height: 4),
+                    TweenAnimationBuilder<double>(
+                      tween: Tween(begin: fromP * goal, end: done.toDouble()),
+                      duration: AppMotion.scene,
+                      curve: AppMotion.enter,
+                      builder: (context, v, _) => Text(
+                        l10n.caravanGoalCount(
+                          math.min(v.round(), goal),
+                          goal,
+                          myScenes,
+                        ),
+                        style: AppTypography.display(
+                          size: 17,
+                          weight: FontWeight.w500,
+                          fontStyle: FontStyle.italic,
+                          color: a.onDark
+                              ? Color.lerp(tone, Colors.white, 0.55)!
+                              : a.ink(tone),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
-        ],
-      ),
+        ),
+      ],
     );
 
     return ProfilePanel(

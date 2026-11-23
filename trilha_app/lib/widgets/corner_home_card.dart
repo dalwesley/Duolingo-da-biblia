@@ -56,7 +56,7 @@ class CornerHomeCard extends StatelessWidget {
         challenge.status == CornerStatus.pending &&
         challenge.iAmChallenger(uid);
     final canWalk =
-        challenge.opensFor(uid, challenge.missionSlug) && onWalk != null;
+        challenge.opensFor(uid, challenge.missionSlugOf(uid)) && onWalk != null;
     final settled =
         challenge.isClosed || (!challenge.isThisWeek && !incoming && !waiting);
     final live = challenge.status == CornerStatus.active;
@@ -91,7 +91,7 @@ class CornerHomeCard extends StatelessWidget {
         peerName: theirName,
         peerPhoto: challenge.peerPhoto(uid),
         caption: CornerCopy.burstAccepted,
-        kicker: challenge.missionTitle,
+        kicker: challenge.missionTitleOf(uid),
       );
       if (await corners.accept(challenge.id) && context.mounted) {
         onSettled?.call();
@@ -221,7 +221,7 @@ class CornerHomeCard extends StatelessWidget {
           ),
           const SizedBox(height: AppSpace.lg),
           Text(
-            challenge.missionTitle,
+            challenge.missionTitleOf(uid),
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             style: AppTypography.display(size: 24, color: a.text),

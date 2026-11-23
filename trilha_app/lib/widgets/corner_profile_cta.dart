@@ -55,8 +55,10 @@ class CornerProfileCta extends StatelessWidget {
             catalog: catalog,
             myCompleted: progress.completedMissions,
             myClearedModes: progress.clearedTrailModes,
+            myTrailModes: progress.trailDifficulties,
             theirCompleted: profile.completedMissions,
             theirClearedModes: profile.clearedTrailModes,
+            theirTrailModes: profile.trailModes,
           );
 
     String? blocked;
@@ -71,8 +73,10 @@ class CornerProfileCta extends StatelessWidget {
                   catalog: catalog,
                   myCompleted: progress.completedMissions,
                   myClearedModes: progress.clearedTrailModes,
+                  myTrailModes: progress.trailDifficulties,
                   theirCompleted: profile.completedMissions,
                   theirClearedModes: profile.clearedTrailModes,
+                  theirTrailModes: profile.trailModes,
                 ) ??
                 CornerCopy.noCorner;
     }
@@ -84,6 +88,7 @@ class CornerProfileCta extends StatelessWidget {
                 catalog: catalog,
                 myCompleted: progress.completedMissions,
                 myClearedModes: progress.clearedTrailModes,
+                myTrailModes: progress.trailDifficulties,
               )
             : null);
 
@@ -266,7 +271,7 @@ class _StatusCard extends StatelessWidget {
                           peerName: challenge.peerName(myUid),
                           peerPhoto: challenge.peerPhoto(myUid),
                           caption: CornerCopy.burstAccepted,
-                          kicker: challenge.missionTitle,
+                          kicker: challenge.missionTitleOf(myUid),
                         );
                         await onAccept();
                       },

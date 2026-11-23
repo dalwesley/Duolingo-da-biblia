@@ -278,6 +278,45 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get bibleCompareCopiedAll => 'Comparação copiada';
+
+  @override
+  String get bibleCompareCopyAll => 'Copiar tudo';
+
+  @override
+  String get bibleCompareGreek => 'Grego';
+
+  @override
+  String get bibleCompareHebrew => 'Hebraico';
+
+  @override
+  String get bibleCompareLoading => 'Buscando este versículo em cada versão…';
+
+  @override
+  String get bibleCompareMissing => 'Esta versão não traz este versículo.';
+
+  @override
+  String get bibleCompareNextVerse => 'Próximo versículo';
+
+  @override
+  String get bibleCompareOriginalMissing =>
+      'O original deste versículo ainda não está no app.';
+
+  @override
+  String get bibleComparePrevVerse => 'Versículo anterior';
+
+  @override
+  String get bibleCompareReading => 'em leitura';
+
+  @override
+  String get bibleCompareStudyCta => 'Estudar palavra por palavra';
+
+  @override
+  String bibleCompareVerseOf(int verse, int total) {
+    return 'Versículo $verse de $total';
+  }
+
+  @override
   String get bibleDonate => 'Doar';
 
   @override
@@ -303,6 +342,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get bibleIntroWho => 'Quem';
+
+  @override
+  String bibleListenVoiceMissing(String language) {
+    return 'Seu aparelho não tem a voz em $language. Instale nas configurações de voz (texto para fala) do aparelho para ouvir esta versão.';
+  }
 
   @override
   String get bibleLoadError => 'Não foi possível abrir a Bíblia.';
@@ -417,10 +461,20 @@ class AppLocalizationsPt extends AppLocalizations {
   String get bibleReaderPrevChapter => 'Capítulo anterior';
 
   @override
+  String get bibleReaderPreviewRef => 'Salmos 119:105';
+
+  @override
+  String get bibleReaderPreviewVerse =>
+      'A tua palavra é lâmpada para os meus pés e luz para o meu caminho.';
+
+  @override
   String get bibleReaderReadTag => 'lido';
 
   @override
   String get bibleReaderSettings => 'Ajustes de leitura';
+
+  @override
+  String get bibleReaderSoonTag => 'em breve';
 
   @override
   String get bibleReaderStop => 'Parar';
@@ -523,6 +577,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get bibleTranslationSoonTitle => 'Tradução em breve';
 
   @override
+  String get bibleVerseCompare => 'Comparar versões';
+
+  @override
+  String get bibleVerseCompareDetail =>
+      'Português, inglês, espanhol e o original';
+
+  @override
   String get bibleVerseCopied => 'Versículo copiado';
 
   @override
@@ -569,6 +630,15 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get bibleVerseStudyDetail =>
       'Originais, Strong, concordância e referências';
+
+  @override
+  String get bibleVoiceEnglish => 'inglês';
+
+  @override
+  String get bibleVoicePortuguese => 'português';
+
+  @override
+  String get bibleVoiceSpanish => 'espanhol';
 
   @override
   String get bookFinishedBody =>
@@ -1653,7 +1723,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String cornerBoardEmptyBody(int count) {
-    return 'Escolha alguém da caravana na mesma cena e chame para o desafio. Quem chega até domingo ganha +$count passos.';
+    return 'Escolha alguém da caravana no mesmo modo e chame para o desafio. Cada um faz a próxima cena da sua trilha; quem chega até domingo ganha +$count passos.';
   }
 
   @override
@@ -1722,10 +1792,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get cornerDifferentScene => 'Vocês não estão na mesma cena.';
-
-  @override
-  String get cornerDifferentTrail => 'Vocês não estão na mesma trilha.';
+  String get cornerDifferentMode => 'Vocês não estão no mesmo modo.';
 
   @override
   String get cornerHoldAccept => 'Segure para aceitar';
@@ -1735,11 +1802,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String cornerIncomingFrom(String name) {
-    return '$name te chamou para esta cena.';
+    return '$name te chamou para um desafio.';
   }
 
   @override
-  String get cornerIncomingFromAnon => 'Alguém te chamou para esta cena.';
+  String get cornerIncomingFromAnon => 'Alguém te chamou para um desafio.';
 
   @override
   String get cornerIncomingTitle => 'Convite de desafio';
@@ -1759,7 +1826,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get cornerNeedsCloud => 'Entre com Google para chamar alguém.';
 
   @override
-  String get cornerNoCorner => 'Nenhuma cena em comum para o desafio.';
+  String get cornerNoCorner => 'Nenhuma trilha em andamento para o desafio.';
 
   @override
   String get cornerNoneHeadline => 'Ninguém chegou desta vez';
@@ -1784,7 +1851,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get cornerPickSubtitle =>
-      'Só dá para desafiar quem está na mesma cena que você.';
+      'Só dá para desafiar quem está no mesmo modo que você. Cada um faz a sua próxima cena.';
 
   @override
   String get cornerPickTitle => 'Quem você vai desafiar?';
@@ -1846,7 +1913,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String cornerSameStretch(int count) {
-    return 'A mesma cena até domingo. +$count passos para cada um que chegar.';
+    return 'Cada um na sua próxima cena até domingo. +$count passos para cada um que chegar.';
   }
 
   @override
@@ -3856,14 +3923,14 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String juntosChallengeExplainerBody(String reward) {
-    return 'Mesma cena, até domingo. Quem chegar ganha $reward — se os dois chegarem, os dois ganham.';
+    return 'Mesmo modo, cada um na sua próxima cena, até domingo. Quem chegar ganha $reward — se os dois chegarem, os dois ganham.';
   }
 
   @override
   String get juntosChallengeExplainerTitle => 'Quem chega até domingo?';
 
   @override
-  String get juntosChallengeStep1 => 'Mesma\ncena';
+  String get juntosChallengeStep1 => 'Mesmo\nmodo';
 
   @override
   String get juntosChallengeStep2 => 'Chegar até\ndomingo';
@@ -3884,7 +3951,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get juntosCloseRoomBody =>
-      'O grupo some para todos e o código deixa de funcionar. Não dá para desfazer.';
+      'O grupo fica inativo para todos: o código para de funcionar e ninguém registra mais nada. Membros, propósito e respostas continuam guardados, e você pode reabrir depois.';
 
   @override
   String get juntosCloseRoomTitle => 'Encerrar o grupo?';
@@ -9674,11 +9741,29 @@ class AppLocalizationsPt extends AppLocalizations {
       'Faça na reunião: o grupo vê junto quem foi fiel na semana.';
 
   @override
+  String roomClosedNotice(String room, String name, String date) {
+    return 'O grupo «$room» foi encerrado por $name em $date.';
+  }
+
+  @override
+  String roomClosedNoticeAnon(String room, String date) {
+    return 'O grupo «$room» foi encerrado pelo líder em $date.';
+  }
+
+  @override
+  String roomClosedNoticeMine(String room, String date) {
+    return 'Você encerrou o grupo «$room» em $date. Tudo continua guardado.';
+  }
+
+  @override
   String get roomClosingBannerBody =>
       'Veja como o grupo foi e quem ganhou o selo.';
 
   @override
   String get roomClosingBannerTitle => 'A semana do grupo foi fechada';
+
+  @override
+  String get roomErrorClosedJoin => 'Este grupo foi encerrado pelo líder.';
 
   @override
   String get roomErrorCreate =>
@@ -9856,6 +9941,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String roomReadingTooFast(int minutes) {
     return 'Capítulo marcado. Para contar na leitura do grupo, leia com calma (uns $minutes min) ou ouça o áudio, e conclua de novo.';
   }
+
+  @override
+  String get roomReopen => 'Reabrir o grupo';
+
+  @override
+  String get roomReopenFailed => 'Não deu para reabrir o grupo. Tente de novo.';
 
   @override
   String get roomRevealAgain => 'Ver a revelação de novo';
@@ -10572,6 +10663,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get settingsProgressRestored => 'Progresso restaurado.';
 
   @override
+  String get settingsRateApp => 'Avaliar o STWAY';
+
+  @override
+  String get settingsRateAppSubtitle => 'Deixe sua nota na loja';
+
+  @override
   String settingsReminderAt(int hour) {
     return 'Às ${hour}h · toque para mudar';
   }
@@ -10796,6 +10893,22 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get splashPreparing => 'Preparando sua jornada…';
+
+  @override
+  String get storeRatingBody =>
+      'Sua avaliação na loja ajuda outras pessoas a acharem o caminho. Leva menos de um minuto.';
+
+  @override
+  String get storeRatingCta => 'Avaliar na loja';
+
+  @override
+  String get storeRatingEyebrow => 'Avaliar';
+
+  @override
+  String get storeRatingOpenFailed => 'Não deu para abrir a loja agora.';
+
+  @override
+  String get storeRatingTitle => 'Que tal avaliar o STWAY?';
 
   @override
   String get streakDayEmpty => 'sem cena';
@@ -11523,6 +11636,48 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String trailsTrailNumber(String roman) {
     return 'Trilha $roman';
+  }
+
+  @override
+  String ttsNoVoices(String language) {
+    return 'Nenhuma voz em $language instalada. Instale nas configurações de texto para fala do aparelho.';
+  }
+
+  @override
+  String get ttsSectionVoice => 'Voz da leitura';
+
+  @override
+  String get ttsSpeedFast => 'Rápido';
+
+  @override
+  String get ttsSpeedNormal => 'Normal';
+
+  @override
+  String get ttsSpeedSlow => 'Devagar';
+
+  @override
+  String get ttsTest => 'Testar voz';
+
+  @override
+  String get ttsTestStop => 'Parar';
+
+  @override
+  String get ttsVoiceAuto => 'Automática';
+
+  @override
+  String get ttsVoiceFemale => 'feminina';
+
+  @override
+  String ttsVoiceHint(String language) {
+    return 'Vozes instaladas neste aparelho para $language.';
+  }
+
+  @override
+  String get ttsVoiceMale => 'masculina';
+
+  @override
+  String ttsVoiceNumbered(int number) {
+    return 'Voz $number';
   }
 
   @override

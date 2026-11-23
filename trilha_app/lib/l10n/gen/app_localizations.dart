@@ -448,6 +448,78 @@ abstract class AppLocalizations {
   /// **'{read} de {total} lidos'**
   String bibleChaptersReadOf(int read, int total);
 
+  /// No description provided for @bibleCompareCopiedAll.
+  ///
+  /// In pt, this message translates to:
+  /// **'Comparação copiada'**
+  String get bibleCompareCopiedAll;
+
+  /// No description provided for @bibleCompareCopyAll.
+  ///
+  /// In pt, this message translates to:
+  /// **'Copiar tudo'**
+  String get bibleCompareCopyAll;
+
+  /// No description provided for @bibleCompareGreek.
+  ///
+  /// In pt, this message translates to:
+  /// **'Grego'**
+  String get bibleCompareGreek;
+
+  /// No description provided for @bibleCompareHebrew.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hebraico'**
+  String get bibleCompareHebrew;
+
+  /// No description provided for @bibleCompareLoading.
+  ///
+  /// In pt, this message translates to:
+  /// **'Buscando este versículo em cada versão…'**
+  String get bibleCompareLoading;
+
+  /// No description provided for @bibleCompareMissing.
+  ///
+  /// In pt, this message translates to:
+  /// **'Esta versão não traz este versículo.'**
+  String get bibleCompareMissing;
+
+  /// No description provided for @bibleCompareNextVerse.
+  ///
+  /// In pt, this message translates to:
+  /// **'Próximo versículo'**
+  String get bibleCompareNextVerse;
+
+  /// No description provided for @bibleCompareOriginalMissing.
+  ///
+  /// In pt, this message translates to:
+  /// **'O original deste versículo ainda não está no app.'**
+  String get bibleCompareOriginalMissing;
+
+  /// No description provided for @bibleComparePrevVerse.
+  ///
+  /// In pt, this message translates to:
+  /// **'Versículo anterior'**
+  String get bibleComparePrevVerse;
+
+  /// No description provided for @bibleCompareReading.
+  ///
+  /// In pt, this message translates to:
+  /// **'em leitura'**
+  String get bibleCompareReading;
+
+  /// No description provided for @bibleCompareStudyCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Estudar palavra por palavra'**
+  String get bibleCompareStudyCta;
+
+  /// No description provided for @bibleCompareVerseOf.
+  ///
+  /// In pt, this message translates to:
+  /// **'Versículo {verse} de {total}'**
+  String bibleCompareVerseOf(int verse, int total);
+
   /// No description provided for @bibleDonate.
   ///
   /// In pt, this message translates to:
@@ -495,6 +567,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Quem'**
   String get bibleIntroWho;
+
+  /// No description provided for @bibleListenVoiceMissing.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu aparelho não tem a voz em {language}. Instale nas configurações de voz (texto para fala) do aparelho para ouvir esta versão.'**
+  String bibleListenVoiceMissing(String language);
 
   /// No description provided for @bibleLoadError.
   ///
@@ -700,6 +778,18 @@ abstract class AppLocalizations {
   /// **'Capítulo anterior'**
   String get bibleReaderPrevChapter;
 
+  /// No description provided for @bibleReaderPreviewRef.
+  ///
+  /// In pt, this message translates to:
+  /// **'Salmos 119:105'**
+  String get bibleReaderPreviewRef;
+
+  /// No description provided for @bibleReaderPreviewVerse.
+  ///
+  /// In pt, this message translates to:
+  /// **'A tua palavra é lâmpada para os meus pés e luz para o meu caminho.'**
+  String get bibleReaderPreviewVerse;
+
   /// No description provided for @bibleReaderReadTag.
   ///
   /// In pt, this message translates to:
@@ -711,6 +801,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Ajustes de leitura'**
   String get bibleReaderSettings;
+
+  /// No description provided for @bibleReaderSoonTag.
+  ///
+  /// In pt, this message translates to:
+  /// **'em breve'**
+  String get bibleReaderSoonTag;
 
   /// No description provided for @bibleReaderStop.
   ///
@@ -880,6 +976,18 @@ abstract class AppLocalizations {
   /// **'Tradução em breve'**
   String get bibleTranslationSoonTitle;
 
+  /// No description provided for @bibleVerseCompare.
+  ///
+  /// In pt, this message translates to:
+  /// **'Comparar versões'**
+  String get bibleVerseCompare;
+
+  /// No description provided for @bibleVerseCompareDetail.
+  ///
+  /// In pt, this message translates to:
+  /// **'Português, inglês, espanhol e o original'**
+  String get bibleVerseCompareDetail;
+
   /// No description provided for @bibleVerseCopied.
   ///
   /// In pt, this message translates to:
@@ -951,6 +1059,24 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Originais, Strong, concordância e referências'**
   String get bibleVerseStudyDetail;
+
+  /// No description provided for @bibleVoiceEnglish.
+  ///
+  /// In pt, this message translates to:
+  /// **'inglês'**
+  String get bibleVoiceEnglish;
+
+  /// No description provided for @bibleVoicePortuguese.
+  ///
+  /// In pt, this message translates to:
+  /// **'português'**
+  String get bibleVoicePortuguese;
+
+  /// No description provided for @bibleVoiceSpanish.
+  ///
+  /// In pt, this message translates to:
+  /// **'espanhol'**
+  String get bibleVoiceSpanish;
 
   /// Selo do livro concluído
   ///
@@ -2587,7 +2713,7 @@ abstract class AppLocalizations {
   /// No description provided for @cornerBoardEmptyBody.
   ///
   /// In pt, this message translates to:
-  /// **'Escolha alguém da caravana na mesma cena e chame para o desafio. Quem chega até domingo ganha +{count} passos.'**
+  /// **'Escolha alguém da caravana no mesmo modo e chame para o desafio. Cada um faz a próxima cena da sua trilha; quem chega até domingo ganha +{count} passos.'**
   String cornerBoardEmptyBody(int count);
 
   /// No description provided for @cornerBoardEmptyTitle.
@@ -2692,17 +2818,11 @@ abstract class AppLocalizations {
   /// **'{name} não aceitou desta vez.'**
   String cornerDeclinedBy(String name);
 
-  /// No description provided for @cornerDifferentScene.
+  /// No description provided for @cornerDifferentMode.
   ///
   /// In pt, this message translates to:
-  /// **'Vocês não estão na mesma cena.'**
-  String get cornerDifferentScene;
-
-  /// No description provided for @cornerDifferentTrail.
-  ///
-  /// In pt, this message translates to:
-  /// **'Vocês não estão na mesma trilha.'**
-  String get cornerDifferentTrail;
+  /// **'Vocês não estão no mesmo modo.'**
+  String get cornerDifferentMode;
 
   /// No description provided for @cornerHoldAccept.
   ///
@@ -2719,13 +2839,13 @@ abstract class AppLocalizations {
   /// No description provided for @cornerIncomingFrom.
   ///
   /// In pt, this message translates to:
-  /// **'{name} te chamou para esta cena.'**
+  /// **'{name} te chamou para um desafio.'**
   String cornerIncomingFrom(String name);
 
   /// No description provided for @cornerIncomingFromAnon.
   ///
   /// In pt, this message translates to:
-  /// **'Alguém te chamou para esta cena.'**
+  /// **'Alguém te chamou para um desafio.'**
   String get cornerIncomingFromAnon;
 
   /// No description provided for @cornerIncomingTitle.
@@ -2761,7 +2881,7 @@ abstract class AppLocalizations {
   /// No description provided for @cornerNoCorner.
   ///
   /// In pt, this message translates to:
-  /// **'Nenhuma cena em comum para o desafio.'**
+  /// **'Nenhuma trilha em andamento para o desafio.'**
   String get cornerNoCorner;
 
   /// No description provided for @cornerNoneHeadline.
@@ -2809,7 +2929,7 @@ abstract class AppLocalizations {
   /// No description provided for @cornerPickSubtitle.
   ///
   /// In pt, this message translates to:
-  /// **'Só dá para desafiar quem está na mesma cena que você.'**
+  /// **'Só dá para desafiar quem está no mesmo modo que você. Cada um faz a sua próxima cena.'**
   String get cornerPickSubtitle;
 
   /// No description provided for @cornerPickTitle.
@@ -2875,7 +2995,7 @@ abstract class AppLocalizations {
   /// No description provided for @cornerSameStretch.
   ///
   /// In pt, this message translates to:
-  /// **'A mesma cena até domingo. +{count} passos para cada um que chegar.'**
+  /// **'Cada um na sua próxima cena até domingo. +{count} passos para cada um que chegar.'**
   String cornerSameStretch(int count);
 
   /// No description provided for @cornerSendFailed.
@@ -6013,7 +6133,7 @@ abstract class AppLocalizations {
   /// No description provided for @juntosChallengeExplainerBody.
   ///
   /// In pt, this message translates to:
-  /// **'Mesma cena, até domingo. Quem chegar ganha {reward} — se os dois chegarem, os dois ganham.'**
+  /// **'Mesmo modo, cada um na sua próxima cena, até domingo. Quem chegar ganha {reward} — se os dois chegarem, os dois ganham.'**
   String juntosChallengeExplainerBody(String reward);
 
   /// No description provided for @juntosChallengeExplainerTitle.
@@ -6025,7 +6145,7 @@ abstract class AppLocalizations {
   /// No description provided for @juntosChallengeStep1.
   ///
   /// In pt, this message translates to:
-  /// **'Mesma\ncena'**
+  /// **'Mesmo\nmodo'**
   String get juntosChallengeStep1;
 
   /// No description provided for @juntosChallengeStep2.
@@ -6061,7 +6181,7 @@ abstract class AppLocalizations {
   /// No description provided for @juntosCloseRoomBody.
   ///
   /// In pt, this message translates to:
-  /// **'O grupo some para todos e o código deixa de funcionar. Não dá para desfazer.'**
+  /// **'O grupo fica inativo para todos: o código para de funcionar e ninguém registra mais nada. Membros, propósito e respostas continuam guardados, e você pode reabrir depois.'**
   String get juntosCloseRoomBody;
 
   /// No description provided for @juntosCloseRoomTitle.
@@ -14853,6 +14973,24 @@ abstract class AppLocalizations {
   /// **'Faça na reunião: o grupo vê junto quem foi fiel na semana.'**
   String get roomCloseWeekHint;
 
+  /// No description provided for @roomClosedNotice.
+  ///
+  /// In pt, this message translates to:
+  /// **'O grupo «{room}» foi encerrado por {name} em {date}.'**
+  String roomClosedNotice(String room, String name, String date);
+
+  /// No description provided for @roomClosedNoticeAnon.
+  ///
+  /// In pt, this message translates to:
+  /// **'O grupo «{room}» foi encerrado pelo líder em {date}.'**
+  String roomClosedNoticeAnon(String room, String date);
+
+  /// No description provided for @roomClosedNoticeMine.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você encerrou o grupo «{room}» em {date}. Tudo continua guardado.'**
+  String roomClosedNoticeMine(String room, String date);
+
   /// No description provided for @roomClosingBannerBody.
   ///
   /// In pt, this message translates to:
@@ -14864,6 +15002,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'A semana do grupo foi fechada'**
   String get roomClosingBannerTitle;
+
+  /// No description provided for @roomErrorClosedJoin.
+  ///
+  /// In pt, this message translates to:
+  /// **'Este grupo foi encerrado pelo líder.'**
+  String get roomErrorClosedJoin;
 
   /// No description provided for @roomErrorCreate.
   ///
@@ -15152,6 +15296,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Capítulo marcado. Para contar na leitura do grupo, leia com calma (uns {minutes} min) ou ouça o áudio, e conclua de novo.'**
   String roomReadingTooFast(int minutes);
+
+  /// No description provided for @roomReopen.
+  ///
+  /// In pt, this message translates to:
+  /// **'Reabrir o grupo'**
+  String get roomReopen;
+
+  /// No description provided for @roomReopenFailed.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não deu para reabrir o grupo. Tente de novo.'**
+  String get roomReopenFailed;
 
   /// No description provided for @roomRevealAgain.
   ///
@@ -16281,6 +16437,18 @@ abstract class AppLocalizations {
   /// **'Progresso restaurado.'**
   String get settingsProgressRestored;
 
+  /// No description provided for @settingsRateApp.
+  ///
+  /// In pt, this message translates to:
+  /// **'Avaliar o STWAY'**
+  String get settingsRateApp;
+
+  /// No description provided for @settingsRateAppSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deixe sua nota na loja'**
+  String get settingsRateAppSubtitle;
+
   /// No description provided for @settingsReminderAt.
   ///
   /// In pt, this message translates to:
@@ -16634,6 +16802,36 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Preparando sua jornada…'**
   String get splashPreparing;
+
+  /// No description provided for @storeRatingBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua avaliação na loja ajuda outras pessoas a acharem o caminho. Leva menos de um minuto.'**
+  String get storeRatingBody;
+
+  /// No description provided for @storeRatingCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Avaliar na loja'**
+  String get storeRatingCta;
+
+  /// No description provided for @storeRatingEyebrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Avaliar'**
+  String get storeRatingEyebrow;
+
+  /// No description provided for @storeRatingOpenFailed.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não deu para abrir a loja agora.'**
+  String get storeRatingOpenFailed;
+
+  /// No description provided for @storeRatingTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Que tal avaliar o STWAY?'**
+  String get storeRatingTitle;
 
   /// No description provided for @streakDayEmpty.
   ///
@@ -17702,6 +17900,78 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Trilha {roman}'**
   String trailsTrailNumber(String roman);
+
+  /// No description provided for @ttsNoVoices.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhuma voz em {language} instalada. Instale nas configurações de texto para fala do aparelho.'**
+  String ttsNoVoices(String language);
+
+  /// No description provided for @ttsSectionVoice.
+  ///
+  /// In pt, this message translates to:
+  /// **'Voz da leitura'**
+  String get ttsSectionVoice;
+
+  /// No description provided for @ttsSpeedFast.
+  ///
+  /// In pt, this message translates to:
+  /// **'Rápido'**
+  String get ttsSpeedFast;
+
+  /// No description provided for @ttsSpeedNormal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Normal'**
+  String get ttsSpeedNormal;
+
+  /// No description provided for @ttsSpeedSlow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Devagar'**
+  String get ttsSpeedSlow;
+
+  /// No description provided for @ttsTest.
+  ///
+  /// In pt, this message translates to:
+  /// **'Testar voz'**
+  String get ttsTest;
+
+  /// No description provided for @ttsTestStop.
+  ///
+  /// In pt, this message translates to:
+  /// **'Parar'**
+  String get ttsTestStop;
+
+  /// No description provided for @ttsVoiceAuto.
+  ///
+  /// In pt, this message translates to:
+  /// **'Automática'**
+  String get ttsVoiceAuto;
+
+  /// No description provided for @ttsVoiceFemale.
+  ///
+  /// In pt, this message translates to:
+  /// **'feminina'**
+  String get ttsVoiceFemale;
+
+  /// No description provided for @ttsVoiceHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Vozes instaladas neste aparelho para {language}.'**
+  String ttsVoiceHint(String language);
+
+  /// No description provided for @ttsVoiceMale.
+  ///
+  /// In pt, this message translates to:
+  /// **'masculina'**
+  String get ttsVoiceMale;
+
+  /// No description provided for @ttsVoiceNumbered.
+  ///
+  /// In pt, this message translates to:
+  /// **'Voz {number}'**
+  String ttsVoiceNumbered(int number);
 
   /// No description provided for @updateCheckDisabled.
   ///

@@ -929,10 +929,12 @@ class _LeagueScreenState extends State<LeagueScreen>
       style: progress.settings.portraitStyle,
       cover: profileCoverSceneOf(progress),
     );
+    // Sem desafio aberto na semana: o palco convida, como na Companhia —
+    // o placar e o histórico (se houver) ficam abaixo.
     final desafioEmpty =
         backend.isActive &&
         !(corners.loading && corners.mine.isEmpty) &&
-        CornerScoreboard.of(corners.mine, backend.uid ?? '').isEmpty;
+        CornerScoreboard.of(corners.mine, backend.uid ?? '').open.isEmpty;
 
     Widget? stageBody;
     if (pane == 0 && companions.isLoaded && companions.companions.isEmpty) {
@@ -940,11 +942,16 @@ class _LeagueScreenState extends State<LeagueScreen>
         me: me,
         loading: companions.loading,
         onInvite: () => _createCompanion(context),
+        onCall: () => _createAndCallCompanion(context),
+        onJoin: () => _joinCompanion(context),
       );
     } else if (pane == 1) {
-      stageBody = desafioEmpty
-          ? _DesafioEmptyStage(me: me, onPick: () => _openCornerPick(context))
-          : const _DesafioExplainer();
+      if (desafioEmpty) {
+        stageBody = _DesafioEmptyStage(
+          me: me,
+          onPick: () => _openCornerPick(context),
+        );
+      }
     }
 
     final list = <Widget>[
@@ -1051,20 +1058,8 @@ class _LeagueScreenState extends State<LeagueScreen>
       list.add(const SizedBox(height: AppSpace.md));
     }
 
-    if (companions.companions.isEmpty) {
-      list.add(
-        _reveal(
-          2,
-          _CompanionsEmpty(
-            loading: companions.loading,
-            onInvite: () => _createCompanion(context),
-            onJoin: () => _joinCompanion(context),
-            onCall: () => _createAndCallCompanion(context),
-          ),
-        ),
-      );
-      return list;
-    }
+    // Vazio: o palco acima já traz o convite e as outras portas.
+    if (companions.companions.isEmpty) return list;
 
     for (var i = 0; i < ordered.length; i++) {
       list.add(
@@ -1444,7 +1439,12 @@ class _LeagueScreenState extends State<LeagueScreen>
     }
 
     if (!rooms.hasRoom) {
+      final closed = rooms.closedRoom;
       return [
+        if (closed != null) ...[
+          _reveal(1, _ClosedRoomNotice(room: closed, myUid: backend.uid)),
+          const SizedBox(height: AppSpace.md),
+        ],
         for (final invite in incoming) ...[
           _reveal(1, _incomingInviteCard(context, invite)),
           const SizedBox(height: AppSpace.md),
@@ -1453,7 +1453,7 @@ class _LeagueScreenState extends State<LeagueScreen>
           1,
           _RoomsEmptyState(
             loading: rooms.loading,
-            error: rooms.lastError,
+            error: closed != null ? null : rooms.lastError,
             onCreate: () => _showCreateRoom(context),
             onJoin: () => _showJoinRoom(context),
           ),
@@ -1582,6 +1582,7 @@ class _LeagueScreenState extends State<LeagueScreen>
           members: members,
           walkedToday: progress.walkedToday,
           onClaim: () => _claimRoomChest(context, room.code),
+          showClock: weeklyContent,
           // Estudo pendente: o card acima já chama para ele.
           onWalk:
               study != null &&
@@ -1647,63 +1648,53 @@ class _LeagueScreenState extends State<LeagueScreen>
         _reveal(1, _incomingInviteCard(context, invite)),
         const SizedBox(height: AppSpace.md),
       ],
+      // Palco como o da Caravana (sem pintura): os lugares do grupo no
+      // miolo (acesos os já ocupados) e o convite logo abaixo.
       _reveal(
         2,
-        _RoomTitle(
-          room: room,
-          isOwner: isLeader,
-          onMenu: () => _openRoomMenu(context),
-        ),
-      ),
-      const SizedBox(height: AppSpace.md),
-      _reveal(
-        2,
-        AnanSpeech(
-          face: CloudFace.carregando,
-          padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+        JuntosHero(
+          accent: AppRoles.lamp,
+          // Nome e tipo do grupo dentro do card, com o menu ao lado.
+          header: Row(
             children: [
-              Text(
-                l10n.roomFormingTitle(kRoomMinMembers),
-                textAlign: TextAlign.center,
-                style: AppTypography.display(
-                  size: 22,
-                  color: AnanSpeechBubble.ink,
+              Expanded(
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: StageChip(
+                    accent: AppRoles.lamp,
+                    glyph: room.kind.glyph,
+                    label: '${room.name} · ${room.kind.label}',
+                  ),
                 ),
               ),
-              const SizedBox(height: AppSpace.sm),
-              Text(
-                l10n.roomFormingBody(rooms.missingToForm),
-                textAlign: TextAlign.center,
-                style: AppTypography.body(
-                  size: 14,
-                  height: 1.45,
-                  color: AnanSpeechBubble.muted,
-                ),
+              _MenuButton(
+                tooltip: l10n.juntosRoomOptions,
+                onTap: () => _openRoomMenu(context),
               ),
             ],
           ),
-        ),
-      ),
-      const SizedBox(height: AppSpace.md),
-      _reveal(
-        2,
-        CopperCta(
-          label: l10n.roomFormingInvite,
-          leading: CinematicGlyph.share,
-          expanded: true,
-          onTap: callPeople,
-        ),
-      ),
-      const SizedBox(height: AppSpace.sm),
-      _reveal(
-        2,
-        GhostCta(
-          label: l10n.roomFormingCompanion,
-          leading: CinematicGlyph.people,
-          expanded: true,
-          onTap: () => setState(() => _tab = _tabCompanhia),
+          title: l10n.roomFormingTitle(kRoomMinMembers),
+          body: l10n.roomFormingBody(rooms.missingToForm),
+          middle: _FormingSeats(
+            filled: kRoomMinMembers - rooms.missingToForm,
+            total: kRoomMinMembers,
+          ),
+          actions: [
+            CopperCta(
+              label: l10n.roomFormingInvite,
+              leading: CinematicGlyph.share,
+              expanded: true,
+              onTap: callPeople,
+            ),
+            // Só com dupla formada: sozinho, "vocês dois" não faz sentido.
+            if (members.length == 2)
+              GhostCta(
+                label: l10n.roomFormingCompanion,
+                leading: CinematicGlyph.people,
+                expanded: true,
+                onTap: () => setState(() => _tab = _tabCompanhia),
+              ),
+          ],
         ),
       ),
       const SizedBox(height: AppSpace.lg),
@@ -2631,6 +2622,7 @@ class _LeagueScreenState extends State<LeagueScreen>
           : plan.phase() == PlanPhase.ended
           ? RoomMenuPlan.ended
           : RoomMenuPlan.live,
+      planClosed: rooms.planClosed,
     );
     if (action == null || !context.mounted) return;
 
@@ -2676,6 +2668,8 @@ class _LeagueScreenState extends State<LeagueScreen>
         );
       case RoomMenuAction.endPlan:
         await _endRoomPlan(context);
+      case RoomMenuAction.revealPlan:
+        await _closeRoomPlan(context);
       case RoomMenuAction.leave:
         await _leaveRoom(
           context,
@@ -2695,11 +2689,20 @@ class _LeagueScreenState extends State<LeagueScreen>
       body: context.l10n.juntosCloseRoomBody,
       cancelLabel: context.l10n.commonCancel,
       confirmLabel: context.l10n.juntosCloseConfirm,
+      confirmDelay: const Duration(seconds: 5),
     );
     if (!ok || !context.mounted) return;
-    await context.read<RoomService>().closeRoom(
+    final closed = await context.read<RoomService>().closeRoom(
       progress: context.read<ProgressService>(),
     );
+    if (!closed && context.mounted) {
+      showAppToastFor(
+        context,
+        message: context.l10n.cornerActionFailed,
+        glyph: CinematicGlyph.wrong,
+        tone: AppToastTone.warn,
+      );
+    }
   }
 
   Future<bool> _transferRoom(
@@ -2957,30 +2960,13 @@ class _CaravanStageCard extends StatelessWidget {
     );
     // Sem pintura: a capa do cartão da etapa logo abaixo já é a imagem.
     // Aqui o protagonista é o relógio do mês.
-    return ProfilePanel(
+    return JuntosHero(
       accent: tone,
-      lit: true,
-      child: Column(
+      title: l10n.juntosCaravanMonthTitle,
+      body: l10n.juntosCaravanMonthBody,
+      middle: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text(
-            l10n.juntosCaravanMonthTitle,
-            textAlign: TextAlign.center,
-            style: AppTypography.display(size: 26, color: a.text),
-          ),
-          const SizedBox(height: 4),
-          Text(
-            l10n.juntosCaravanMonthBody,
-            textAlign: TextAlign.center,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            style: AppTypography.body(
-              size: 13,
-              height: 1.35,
-              color: a.textSecondary,
-            ),
-          ),
-          const SizedBox(height: AppSpace.lg),
           SeasonCountdown(
             large: true,
             opens: _monthClosesAt(),
@@ -3125,83 +3111,75 @@ class _CaravanLevel extends StatelessWidget {
   }
 }
 
-/// Três passos lado a lado — nó do meio na cor do bloco ([accent]).
-class _ExplainerSteps extends StatelessWidget {
-  final List<(CinematicGlyph, String)> steps;
-  final Color accent;
+/// Grupo encerrado: quem encerrou e quando. O líder pode reabrir; tudo
+/// (membros, propósito, respostas) continua guardado.
+class _ClosedRoomNotice extends StatelessWidget {
+  final StudyRoom room;
+  final String? myUid;
 
-  /// Uma cor por passo (acesos todos); sem ela, só o do meio acende.
-  final List<Color>? colors;
-
-  const _ExplainerSteps({
-    required this.steps,
-    this.accent = AppRoles.presence,
-    this.colors,
-  });
+  const _ClosedRoomNotice({required this.room, required this.myUid});
 
   @override
   Widget build(BuildContext context) {
+    final l10n = context.l10n;
     final a = Appearance.of(context);
-    final mid = steps.length ~/ 2;
-    const well = 38.0;
-    // Folga para a linha parar na borda do círculo — o fill do poço é
-    // translúcido, então um fio contínuo aparece dentro do nó.
-    const gap = 3.0;
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        final n = steps.length;
-        final col = n == 0 ? 0.0 : constraints.maxWidth / n;
-        final segment = col - well - gap * 2;
-        return Stack(
-          children: [
-            if (segment > 0)
-              for (var i = 0; i < n - 1; i++)
-                Positioned(
-                  left: col * (i + 0.5) + well / 2 + gap,
-                  top: well / 2,
-                  width: segment,
-                  height: 1,
-                  child: ColoredBox(color: accent.withValues(alpha: 0.35)),
-                ),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                for (var i = 0; i < steps.length; i++)
-                  Expanded(
-                    child: Column(
-                      children: [
-                        IconWell(
-                          size: well,
-                          accent: colors?[i] ?? (i == mid ? accent : a.place),
-                          glowing: colors != null || i == mid,
-                          child: CinematicIcon(
-                            glyph: steps[i].$1,
-                            size: AppMetrics.iconMd,
-                            accent: colors?[i] ?? (i == mid ? accent : a.place),
-                            framed: false,
-                          ),
-                        ),
-                        const SizedBox(height: 8),
-                        Text(
-                          steps[i].$2,
-                          textAlign: TextAlign.center,
-                          style: AppTypography.body(
-                            size: 12,
-                            height: 1.3,
-                            weight: FontWeight.w700,
-                            color: colors != null || i == mid
-                                ? a.textSecondary
-                                : a.textFaint,
-                          ),
-                        ),
-                      ],
-                    ),
+    final mine = room.isOwner(myUid);
+    final at = room.closedAt;
+    final date = at == null
+        ? ''
+        : DateFormat.MMMd(l10n.localeName).format(at.toLocal());
+    final by = (room.closedByName ?? '').trim();
+    final message = room.closedBy != null && room.closedBy == myUid
+        ? l10n.roomClosedNoticeMine(room.name, date)
+        : by.isEmpty
+        ? l10n.roomClosedNoticeAnon(room.name, date)
+        : l10n.roomClosedNotice(room.name, by.split(' ').first, date);
+    final rooms = context.read<RoomService>();
+    return ProfilePanel(
+      accent: AppRoles.presence,
+      padding: AppMetrics.cardPadding,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              CinematicIcon(
+                glyph: CinematicGlyph.lock,
+                size: AppMetrics.leadingIcon,
+                accent: a.textSecondary,
+              ),
+              const SizedBox(width: AppSpace.md),
+              Expanded(
+                child: Text(
+                  message,
+                  style: AppTypography.body(
+                    size: 13,
+                    height: 1.4,
+                    color: a.textSecondary,
                   ),
-              ],
+                ),
+              ),
+              IconButton(
+                tooltip: l10n.commonClose,
+                onPressed: rooms.dismissClosedRoom,
+                icon: Icon(Icons.close, size: 18, color: a.textFaint),
+              ),
+            ],
+          ),
+          if (mine) ...[
+            const SizedBox(height: AppSpace.sm),
+            GhostCta(
+              label: l10n.roomReopen,
+              leading: CinematicGlyph.door,
+              onTap: rooms.loading
+                  ? null
+                  : () => rooms.reopenClosedRoom(
+                      progress: context.read<ProgressService>(),
+                    ),
             ),
           ],
-        );
-      },
+        ],
+      ),
     );
   }
 }
@@ -3214,101 +3192,64 @@ typedef _Me = ({
   String? cover,
 });
 
-String _firstName(BuildContext context, String name) =>
-    name.trim().isEmpty ? context.l10n.commonYou : name.trim().split(' ').first;
-
-/// Sem companhia: o palco pintado com a sua capa — você de um lado, o lugar
-/// vazio do outro e o fio apagado com o Anan esperando no meio.
+/// Sem companhia: o palco pintado com a sua capa, só o convite — sem
+/// retratos nem fio (o Anan aparece só no carregando).
 class _CompanionEmptyStage extends StatelessWidget {
   final _Me me;
   final bool loading;
   final VoidCallback onInvite;
+  final VoidCallback onCall;
+  final VoidCallback onJoin;
 
   const _CompanionEmptyStage({
     required this.me,
     required this.loading,
     required this.onInvite,
+    required this.onCall,
+    required this.onJoin,
   });
 
   @override
   Widget build(BuildContext context) {
     final l10n = context.l10n;
-    final a = Appearance.of(context);
-    return PaintedStage(
+    return JuntosHero(
       accent: AppRoles.presence,
       sceneSlug: me.cover,
-      chipGlyph: CinematicGlyph.link,
-      chipLabel: l10n.juntosCompanionEmptyTitle,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          const SizedBox(height: AppSpace.lg),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              _BondMember(
-                name: _firstName(context, me.name),
-                walked: false,
-                highlight: false,
-                isUser: true,
-                photoUrl: me.photo,
-                seed: me.seed,
-                style: me.style,
-              ),
-              const Expanded(child: _WaitingThread(face: CloudFace.triste)),
-              const _EmptySeat(),
-            ],
-          ),
-          const SizedBox(height: AppSpace.lg),
-          Text(
-            l10n.juntosCompanionExplainerTitle,
-            textAlign: TextAlign.center,
-            style: AppTypography.display(size: 26, color: a.text, height: 1.1),
-          ),
-          const SizedBox(height: 6),
-          Text(
-            l10n.juntosCompanionExplainerBody,
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              height: 1.45,
-              color: a.textSecondary,
-            ),
-          ),
-          const SizedBox(height: AppSpace.lg),
-          StageSteps(
-            steps: [
-              (
-                CinematicGlyph.path,
-                l10n.juntosCompanionStep1,
-                AppRoles.presence,
-              ),
-              (
-                CinematicGlyph.flame,
-                l10n.juntosCompanionStep2,
-                AppRoles.streak,
-              ),
-              (CinematicGlyph.lamp, l10n.juntosCompanionStep3, AppRoles.lamp),
-            ],
-          ),
-          const SizedBox(height: AppSpace.lg),
-          if (loading)
-            const AppSpinner()
-          else
-            CopperCta(
-              label: l10n.juntosInviteCompanion,
-              onTap: onInvite,
-              leading: CinematicGlyph.people,
-              trailing: null,
-            ),
+      title: l10n.juntosCompanionExplainerTitle,
+      body: l10n.juntosCompanionExplainerBody,
+      middle: StageSteps(
+        steps: [
+          (CinematicGlyph.path, l10n.juntosCompanionStep1, AppRoles.presence),
+          (CinematicGlyph.flame, l10n.juntosCompanionStep2, AppRoles.streak),
+          (CinematicGlyph.lamp, l10n.juntosCompanionStep3, AppRoles.lamp),
         ],
       ),
+      loading: loading,
+      actions: [
+        CopperCta(
+          label: l10n.juntosInviteCompanion,
+          onTap: onInvite,
+          leading: CinematicGlyph.people,
+          trailing: null,
+        ),
+        GhostCta(
+          label: l10n.juntosCallFromCaravan,
+          leading: CinematicGlyph.people,
+          expanded: true,
+          onTap: onCall,
+        ),
+        GhostCta(
+          label: l10n.juntosHaveCode,
+          leading: CinematicGlyph.qr,
+          expanded: true,
+          onTap: onJoin,
+        ),
+      ],
     );
   }
 }
 
-/// Sem desafio: o mesmo palco — você contra o "?" e a bandeira de domingo
-/// com o prêmio no meio do fio.
+/// Sem desafio: o mesmo palco, só o convite — sem retratos nem bandeira.
 class _DesafioEmptyStage extends StatelessWidget {
   final _Me me;
   final VoidCallback onPick;
@@ -3318,212 +3259,30 @@ class _DesafioEmptyStage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = context.l10n;
-    final a = Appearance.of(context);
-    return PaintedStage(
+    return JuntosHero(
       accent: AppRoles.navTrails,
       sceneSlug: me.cover,
-      chipGlyph: CinematicGlyph.flag,
-      chipLabel: CornerCopy.boardEmptyTitle,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          const SizedBox(height: AppSpace.lg),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              _BondMember(
-                name: _firstName(context, me.name),
-                walked: false,
-                highlight: false,
-                isUser: true,
-                photoUrl: me.photo,
-                seed: me.seed,
-                style: me.style,
-              ),
-              const Expanded(child: _FinishFlag()),
-              const _EmptySeat(),
-            ],
+      title: l10n.juntosChallengeExplainerTitle,
+      body: l10n.juntosChallengeExplainerBody(CornerCopy.reward),
+      middle: StageSteps(
+        steps: [
+          (CinematicGlyph.path, l10n.juntosChallengeStep1, AppRoles.presence),
+          (
+            CinematicGlyph.calendar,
+            l10n.juntosChallengeStep2,
+            AppRoles.navTrails,
           ),
-          const SizedBox(height: AppSpace.lg),
-          Text(
-            l10n.juntosChallengeExplainerTitle,
-            textAlign: TextAlign.center,
-            style: AppTypography.display(size: 26, color: a.text, height: 1.1),
-          ),
-          const SizedBox(height: 6),
-          Text(
-            l10n.juntosChallengeExplainerBody(CornerCopy.reward),
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              height: 1.45,
-              color: a.textSecondary,
-            ),
-          ),
-          const SizedBox(height: AppSpace.lg),
-          StageSteps(
-            steps: [
-              (
-                CinematicGlyph.path,
-                l10n.juntosChallengeStep1,
-                AppRoles.presence,
-              ),
-              (
-                CinematicGlyph.calendar,
-                l10n.juntosChallengeStep2,
-                AppRoles.navTrails,
-              ),
-              (CinematicGlyph.rise, l10n.juntosChallengeStep3, AppRoles.reward),
-            ],
-          ),
-          const SizedBox(height: AppSpace.lg),
-          CopperCta(
-            label: CornerCopy.boardPickCta,
-            leading: CinematicGlyph.flag,
-            trailing: null,
-            onTap: onPick,
-          ),
+          (CinematicGlyph.rise, l10n.juntosChallengeStep3, AppRoles.reward),
         ],
       ),
-    );
-  }
-}
-
-/// Bandeira de chegada no meio do fio, com o prêmio embaixo.
-class _FinishFlag extends StatelessWidget {
-  const _FinishFlag();
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final gold = a.onDark ? AppRoles.reward : a.ink(AppRoles.reward);
-    return SizedBox(
-      height: 76,
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          const BondThread(state: BondState.none, color: AppRoles.navTrails),
-          Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Container(
-                width: 46,
-                height: 46,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  gradient: RadialGradient(
-                    colors: [
-                      AppRoles.reward.withValues(alpha: 0.45),
-                      AppRoles.reward.withValues(alpha: 0.12),
-                    ],
-                  ),
-                  border: Border.all(
-                    color: AppRoles.reward.withValues(alpha: 0.8),
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                      color: AppRoles.reward.withValues(alpha: 0.45),
-                      blurRadius: 16,
-                    ),
-                  ],
-                ),
-                alignment: Alignment.center,
-                child: CinematicIcon(
-                  glyph: CinematicGlyph.flag,
-                  size: 20,
-                  accent: a.onDark ? Colors.white : gold,
-                  framed: false,
-                ),
-              ),
-              const SizedBox(height: 4),
-              Text(
-                CornerCopy.reward,
-                style: AppTypography.label(
-                  size: 11,
-                  weight: FontWeight.w800,
-                  color: gold,
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _DesafioExplainer extends StatelessWidget {
-  const _DesafioExplainer();
-
-  @override
-  Widget build(BuildContext context) {
-    return _ExplainerSection(
-      accent: AppRoles.navTrails,
-      glyph: CinematicGlyph.flag,
-      title: context.l10n.juntosChallengeExplainerTitle,
-      body: context.l10n.juntosChallengeExplainerBody(CornerCopy.reward),
-      face: CloudFace.feliz,
-      steps: [
-        (CinematicGlyph.path, context.l10n.juntosChallengeStep1),
-        (CinematicGlyph.calendar, context.l10n.juntosChallengeStep2),
-        (CinematicGlyph.rise, context.l10n.juntosChallengeStep3),
+      actions: [
+        CopperCta(
+          label: CornerCopy.boardPickCta,
+          leading: CinematicGlyph.flag,
+          trailing: null,
+          onTap: onPick,
+        ),
       ],
-      colors: const [AppRoles.presence, AppRoles.navTrails, AppRoles.reward],
-    );
-  }
-}
-
-/// Quadro de explicação na língua do Perfil: cabeçalho com disco e serifa,
-/// o Anan ao lado da frase e os três passos acesos, cada um na sua cor.
-class _ExplainerSection extends StatelessWidget {
-  final Color accent;
-  final CinematicGlyph glyph;
-  final String title;
-  final String body;
-  final CloudFace face;
-  final List<(CinematicGlyph, String)> steps;
-  final List<Color> colors;
-
-  const _ExplainerSection({
-    required this.accent,
-    required this.glyph,
-    required this.title,
-    required this.body,
-    required this.face,
-    required this.steps,
-    required this.colors,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return ProfileSection(
-      accent: accent,
-      glyph: glyph,
-      title: title,
-      lit: true,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Row(
-            children: [
-              CloudMascot(face: face, size: 64),
-              const SizedBox(width: AppSpace.md),
-              Expanded(
-                child: Text(
-                  body,
-                  style: AppTypography.body(
-                    size: 13,
-                    height: 1.45,
-                    color: Appearance.of(context).textSecondary,
-                  ),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: AppSpace.lg),
-          _ExplainerSteps(steps: steps, accent: accent, colors: colors),
-        ],
-      ),
     );
   }
 }
@@ -3583,6 +3342,39 @@ class _RoomsOfflineCard extends StatelessWidget {
   }
 }
 
+/// Os lugares do grupo em formação: ocupados acesos na cor do Grupo,
+/// vazios no tom apagado.
+class _FormingSeats extends StatelessWidget {
+  final int filled;
+  final int total;
+
+  const _FormingSeats({required this.filled, required this.total});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        for (var i = 0; i < total; i++) ...[
+          if (i > 0) const SizedBox(width: AppSpace.md),
+          IconWell(
+            size: 44,
+            accent: i < filled ? AppRoles.lamp : a.textFaint,
+            glowing: i < filled,
+            child: CinematicIcon(
+              glyph: CinematicGlyph.people,
+              size: AppMetrics.iconMd,
+              accent: i < filled ? AppRoles.lamp : a.textFaint,
+              framed: false,
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+}
+
 class _RoomsEmptyState extends StatelessWidget {
   final bool loading;
   final String? error;
@@ -3598,166 +3390,47 @@ class _RoomsEmptyState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
+    final l10n = context.l10n;
     final cover = context.select(profileCoverSceneOf);
-    return PaintedStage(
+    return JuntosHero(
       accent: AppRoles.lamp,
       sceneSlug: cover,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          // Sem selo nem roda: a pintura respira sozinha em cima.
-          SizedBox(height: cover == null ? AppSpace.sm : 120),
-          Text(
-            context.l10n.juntosRoomsEmptyTitle,
-            textAlign: TextAlign.center,
-            style: AppTypography.display(size: 28, color: a.text),
+      title: l10n.juntosRoomsEmptyTitle,
+      body: l10n.juntosRoomsEmptyBody,
+      middle: StageSteps(
+        steps: [
+          (CinematicGlyph.book, l10n.juntosRoomBenefitStudy, AppRoles.navBible),
+          (
+            CinematicGlyph.people,
+            l10n.juntosRoomBenefitList,
+            AppRoles.presence,
           ),
-          const SizedBox(height: AppSpace.sm),
-          Text(
-            context.l10n.juntosRoomsEmptyBody,
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              height: 1.45,
-              color: a.textSecondary,
-            ),
-          ),
-          const SizedBox(height: AppSpace.lg),
-          Row(
-            children: [
-              _RoomBenefit(
-                glyph: CinematicGlyph.book,
-                label: context.l10n.juntosRoomBenefitStudy,
-                detail: context.l10n.juntosRoomBenefitStudyDetail,
-                color: AppRoles.navBible,
-              ),
-              const SizedBox(width: 8),
-              _RoomBenefit(
-                glyph: CinematicGlyph.people,
-                label: context.l10n.juntosRoomBenefitList,
-                detail: context.l10n.juntosRoomBenefitListDetail,
-                color: AppRoles.presence,
-              ),
-              const SizedBox(width: 8),
-              _RoomBenefit(
-                glyph: CinematicGlyph.bell,
-                label: context.l10n.juntosRoomBenefitWave,
-                detail: context.l10n.juntosRoomBenefitWaveDetail,
-                color: AppRoles.lamp,
-              ),
-            ],
-          ),
-          const SizedBox(height: AppSpace.xl),
-          if (loading)
-            const AppSpinner()
-          else ...[
-            CopperCta(
-              label: context.l10n.juntosCreateRoom,
-              onTap: onCreate,
-              leading: CinematicGlyph.people,
-              trailing: null,
-            ),
-            const SizedBox(height: AppSpace.sm),
-            GhostCta(
-              label: context.l10n.juntosHaveCode,
-              leading: CinematicGlyph.lock,
-              expanded: true,
-              onTap: onJoin,
-            ),
-          ],
-          if (error != null) ...[
-            const SizedBox(height: 14),
-            InlineNotice(message: error!, standalone: false),
-          ],
+          (CinematicGlyph.bell, l10n.juntosRoomBenefitWave, AppRoles.lamp),
+        ],
+        details: [
+          l10n.juntosRoomBenefitStudyDetail,
+          l10n.juntosRoomBenefitListDetail,
+          l10n.juntosRoomBenefitWaveDetail,
         ],
       ),
-    );
-  }
-}
-
-class _RoomBenefit extends StatelessWidget {
-  final CinematicGlyph glyph;
-  final String label;
-  final String detail;
-  final Color color;
-
-  const _RoomBenefit({
-    required this.glyph,
-    required this.label,
-    required this.detail,
-    required this.color,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    // Ficha de vidro acesa na cor do benefício, como os passos do palco.
-    return Expanded(
-      child: Container(
-        padding: const EdgeInsets.fromLTRB(6, 10, 6, 10),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(AppRadii.md),
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              color.withValues(alpha: 0.16),
-              color.withValues(alpha: 0.04),
-            ],
-          ),
-          border: Border.all(color: color.withValues(alpha: 0.35)),
+      loading: loading,
+      actions: [
+        CopperCta(
+          label: l10n.juntosCreateRoom,
+          onTap: onCreate,
+          leading: CinematicGlyph.people,
+          trailing: null,
         ),
-        child: Column(
-          children: [
-            Container(
-              width: 30,
-              height: 30,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: color.withValues(alpha: 0.2),
-                border: Border.all(color: color.withValues(alpha: 0.7)),
-                boxShadow: [
-                  BoxShadow(
-                    color: color.withValues(alpha: 0.35),
-                    blurRadius: 10,
-                  ),
-                ],
-              ),
-              alignment: Alignment.center,
-              child: CinematicIcon(
-                glyph: glyph,
-                size: 15,
-                accent: a.onDark
-                    ? Color.lerp(color, Colors.white, 0.2)!
-                    : a.ink(color),
-                framed: false,
-              ),
-            ),
-            const SizedBox(height: 6),
-            Text(
-              label,
-              textAlign: TextAlign.center,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.label(letterSpacing: 0, color: a.text),
-            ),
-            const SizedBox(height: 2),
-            Text(
-              detail,
-              textAlign: TextAlign.center,
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.body(
-                size: 11,
-                height: 1.25,
-                weight: FontWeight.w600,
-                color: a.textSecondary,
-              ),
-            ),
-          ],
+        GhostCta(
+          label: l10n.juntosHaveCode,
+          leading: CinematicGlyph.lock,
+          expanded: true,
+          onTap: onJoin,
         ),
-      ),
+      ],
+      notice: error == null
+          ? null
+          : InlineNotice(message: error!, standalone: false),
     );
   }
 }
@@ -3869,6 +3542,10 @@ class _RoomHearth extends StatelessWidget {
   /// começo, depois até o fim do último dia), não a semana de seg a dom.
   final RoomPlan? plan;
 
+  /// Falso: sem propósito e sem estudo da semana não há nada fechando —
+  /// o relógio some (antes contava até segunda sem o líder ter marcado nada).
+  final bool showClock;
+
   /// Segunda-feira 00:00 seguinte — quando a semana do grupo fecha.
   static DateTime _weekClosesAt([DateTime? now]) {
     final n = now ?? DateTime.now();
@@ -3884,6 +3561,7 @@ class _RoomHearth extends StatelessWidget {
     required this.roster,
     this.footer,
     this.plan,
+    this.showClock = true,
   });
 
   @override
@@ -3931,30 +3609,32 @@ class _RoomHearth extends StatelessWidget {
           ),
           // Relógio da semana (igual ao da Caravana): fecha segunda 00:00.
           // Azul → amarelo (2–3 dias) → vermelho e pisca no último dia.
-          const SizedBox(height: AppSpace.md),
-          SeasonCountdown(
-            opens: closesAt,
-            color: urgent <= 1
-                ? AppRoles.risk
-                : urgent <= 3
-                ? AppRoles.reward
-                : AppRoles.lamp,
-            muted: a.textSecondary,
-            accent: urgent <= 1
-                ? AppRoles.risk
-                : urgent <= 3
-                ? AppRoles.reward
-                : AppRoles.lamp,
-            large: true,
-            centered: true,
-            // Esperar o começo não é urgência: sem piscar.
-            blink: urgent <= 1,
-            label: p == null
-                ? l10n.juntosCaravanMonthCloses
-                : upcoming
-                ? l10n.planHearthStarts
-                : l10n.planHearthEnds,
-          ),
+          if (showClock) ...[
+            const SizedBox(height: AppSpace.md),
+            SeasonCountdown(
+              opens: closesAt,
+              color: urgent <= 1
+                  ? AppRoles.risk
+                  : urgent <= 3
+                  ? AppRoles.reward
+                  : AppRoles.lamp,
+              muted: a.textSecondary,
+              accent: urgent <= 1
+                  ? AppRoles.risk
+                  : urgent <= 3
+                  ? AppRoles.reward
+                  : AppRoles.lamp,
+              large: true,
+              centered: true,
+              // Esperar o começo não é urgência: sem piscar.
+              blink: urgent <= 1,
+              label: p == null
+                  ? l10n.juntosCaravanMonthCloses
+                  : upcoming
+                  ? l10n.planHearthStarts
+                  : l10n.planHearthEnds,
+            ),
+          ],
           const SizedBox(height: AppSpace.lg),
           roster,
           if (footer != null) ...[const SizedBox(height: AppSpace.lg), footer!],
@@ -5157,46 +4837,6 @@ class _CompanionsOfflineCard extends StatelessWidget {
           dense: true,
         ),
       ),
-    );
-  }
-}
-
-class _CompanionsEmpty extends StatelessWidget {
-  final bool loading;
-  final VoidCallback onInvite;
-  final VoidCallback onJoin;
-  final VoidCallback onCall;
-
-  const _CompanionsEmpty({
-    required this.loading,
-    required this.onInvite,
-    required this.onJoin,
-    required this.onCall,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    // O vazio (Anan triste + frase) já mora no quadro de explicação acima;
-    // aqui ficam só as ações.
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        if (!loading) ...[
-          GhostCta(
-            label: context.l10n.juntosCallFromCaravan,
-            leading: CinematicGlyph.people,
-            expanded: true,
-            onTap: onCall,
-          ),
-          const SizedBox(height: AppSpace.sm),
-          GhostCta(
-            label: context.l10n.juntosHaveCode,
-            leading: CinematicGlyph.qr,
-            expanded: true,
-            onTap: onJoin,
-          ),
-        ],
-      ],
     );
   }
 }

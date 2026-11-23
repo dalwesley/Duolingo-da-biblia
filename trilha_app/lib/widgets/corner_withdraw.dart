@@ -39,7 +39,7 @@ Future<void> confirmCornerWithdraw(
       peerName: challenge.peerName(myUid),
       peerPhoto: challenge.peerPhoto(myUid),
       caption: CornerCopy.burstLeft,
-      kicker: challenge.missionTitle,
+      kicker: challenge.missionTitleOf(myUid),
       mode: CrossingMode.leave,
     );
   }

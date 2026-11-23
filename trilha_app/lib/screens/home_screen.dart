@@ -9,6 +9,7 @@ import '../models/season_walk.dart';
 import '../models/trail.dart';
 import '../widgets/act_feel.dart';
 import '../services/analytics_service.dart';
+import '../services/backend_service.dart';
 import '../services/companion_service.dart';
 import '../services/content_catalog_service.dart';
 import '../services/corner_service.dart';
@@ -520,12 +521,13 @@ class _HomeScreenState extends State<HomeScreen>
   void _openDesafioFace() {
     final corner = context.read<CornerService>().face;
     if (corner == null) return;
+    final uid = context.read<BackendService>().uid ?? '';
     _openCardSheet(
       CornerHomeCard(
         challenge: corner,
         onWalk: () {
           Navigator.of(context).pop();
-          widget.onOpenMission(corner.missionSlug);
+          widget.onOpenMission(corner.missionSlugOf(uid));
         },
         onSettled: () => Navigator.of(context).pop(),
       ),

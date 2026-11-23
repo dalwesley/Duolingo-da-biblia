@@ -1702,6 +1702,9 @@ class BackendService extends ChangeNotifier {
       final ref = _db.doc('rooms/$normalized');
       final doc = await ref.get();
       if (!doc.exists || doc.data() == null) return null;
+      if (doc.data()!.containsKey('closedAt')) {
+        throw const RoomClosedException();
+      }
 
       final mine = await ref.collection('members').doc(_uid).get();
       if (!mine.exists) {
@@ -1722,6 +1725,8 @@ class BackendService extends ChangeNotifier {
 
       return StudyRoom.fromMap(normalized, doc.data()!);
     } on RoomFullException {
+      rethrow;
+    } on RoomClosedException {
       rethrow;
     } catch (e) {
       debugPrint('Falha ao entrar na sala: $e');
@@ -1749,16 +1754,39 @@ class BackendService extends ChangeNotifier {
     }
   }
 
-  /// Dono encerra o grupo. Quem abrir depois vê "grupo não encontrado".
-  Future<bool> deleteRoom(String code) async {
+  /// Dono encerra o grupo: só marca `closedAt` — membros, propósito e
+  /// respostas ficam no banco, e o líder pode reabrir.
+  Future<bool> closeRoom(String code, {required String byName}) async {
     if (!isActive) return false;
     final normalized = code.trim().toUpperCase();
     try {
-      await _db.doc('rooms/$normalized/members/$_uid').delete();
-      await _db.doc('rooms/$normalized').delete();
+      await _db.doc('rooms/$normalized').update({
+        'closedAt': FieldValue.serverTimestamp(),
+        'closedBy': _uid,
+        'closedByName': byName,
+        'updatedAt': FieldValue.serverTimestamp(),
+      });
       return true;
     } catch (e) {
       debugPrint('Falha ao encerrar sala: $e');
+      return false;
+    }
+  }
+
+  /// Dono reabre um grupo encerrado.
+  Future<bool> reopenRoom(String code) async {
+    if (!isActive) return false;
+    final normalized = code.trim().toUpperCase();
+    try {
+      await _db.doc('rooms/$normalized').update({
+        'closedAt': FieldValue.delete(),
+        'closedBy': FieldValue.delete(),
+        'closedByName': FieldValue.delete(),
+        'updatedAt': FieldValue.serverTimestamp(),
+      });
+      return true;
+    } catch (e) {
+      debugPrint('Falha ao reabrir sala: $e');
       return false;
     }
   }
@@ -3490,6 +3518,11 @@ class BackendService extends ChangeNotifier {
 /// Grupo cheio ([kRoomMemberLimit] pessoas).
 class RoomFullException implements Exception {
   const RoomFullException();
+}
+
+/// Grupo encerrado pelo líder: não aceita gente nova até reabrir.
+class RoomClosedException implements Exception {
+  const RoomClosedException();
 }
 
 /// Dias da semana corrente (1 = seg … 7 = dom) presentes em [playDates].

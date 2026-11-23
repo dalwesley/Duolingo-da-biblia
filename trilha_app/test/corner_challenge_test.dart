@@ -25,25 +25,47 @@ void main() {
       expect(hit.moduleTitle, 'O Jardim');
     });
 
-    test('different trail returns null', () {
+    test('different trail in the same mode matches, each with own scene', () {
       final two = [_trail(), _trail(slug: 'exodo', title: 'Êxodo')];
       final hit = CornerMatch.propose(
         catalog: two,
         myCompleted: const ['gen-01'],
         myClearedModes: const {},
-        theirCompleted: const ['gen-01', 'gen-02', 'gen-03'],
-        theirClearedModes: const {},
+        theirCompleted: const [],
+        theirClearedModes: const {
+          'genesis-1-11': ['semente'],
+        },
+        theirTrailModes: const {'exodo': 'semente'},
       );
-      expect(hit, isNull);
+      expect(hit, isNotNull);
+      expect(hit!.mode, 'semente');
+      expect(hit.mine.trailSlug, 'genesis-1-11');
+      expect(hit.mine.missionSlug, 'gen-02');
+      expect(hit.theirs.trailSlug, 'exodo');
+      expect(hit.theirs.missionSlug, 'gen-01');
     });
 
-    test('same trail but different next scene returns null', () {
+    test('same trail, different next scene still matches', () {
       final hit = CornerMatch.propose(
         catalog: catalog,
         myCompleted: const ['gen-01'],
         myClearedModes: const {},
         theirCompleted: const ['gen-01', 'gen-02'],
         theirClearedModes: const {},
+      );
+      expect(hit?.mine.missionSlug, 'gen-02');
+      expect(hit?.theirs.missionSlug, 'gen-03');
+    });
+
+    test('different mode returns null', () {
+      final hit = CornerMatch.propose(
+        catalog: catalog,
+        myCompleted: const ['gen-01'],
+        myClearedModes: const {},
+        myTrailModes: const {'genesis-1-11': 'semente'},
+        theirCompleted: const ['gen-01'],
+        theirClearedModes: const {},
+        theirTrailModes: const {'genesis-1-11': 'profundezas'},
       );
       expect(hit, isNull);
     });
@@ -128,16 +150,17 @@ void main() {
       );
     });
 
-    test('blockReason when next scene differs', () {
+    test('blockReason when the mode differs', () {
       expect(
         CornerMatch.blockReason(
           catalog: catalog,
           myCompleted: const ['gen-01'],
           myClearedModes: const {},
-          theirCompleted: const ['gen-01', 'gen-02'],
+          theirCompleted: const ['gen-01'],
           theirClearedModes: const {},
+          theirTrailModes: const {'genesis-1-11': 'caminhada'},
         ),
-        CornerCopy.differentScene,
+        CornerCopy.differentMode,
       );
     });
   });
@@ -206,6 +229,20 @@ void main() {
       expect(c.opensFor(me, 'gen-02'), isTrue);
       expect(c.opensFor(me, 'gen-03'), isFalse);
       expect(CornerChallenge.authorizes('gen-02', me, [c]), isTrue);
+    });
+
+    test('each person opens only their own scene', () {
+      final c = _challenge(
+        status: CornerStatus.active,
+        opponentMissionSlug: 'ex-01',
+        opponentMissionTitle: 'A sarça',
+      );
+      expect(c.opensFor(me, 'ex-01'), isTrue);
+      expect(c.opensFor(me, 'gen-02'), isFalse);
+      expect(c.opensFor(them, 'gen-02'), isTrue);
+      expect(c.opensFor(them, 'ex-01'), isFalse);
+      expect(c.missionTitleOf(me), 'A sarça');
+      expect(c.missionTitleOf(them), 'A queda');
     });
 
     test('done or pending corner does not skip the lock', () {
@@ -446,6 +483,8 @@ CornerChallenge _challenge({
   int? opponentCorrect,
   int? opponentTotal,
   String? withdrawnBy,
+  String? opponentMissionSlug,
+  String? opponentMissionTitle,
 }) {
   return CornerChallenge(
     id: id,
@@ -458,6 +497,8 @@ CornerChallenge _challenge({
     missionSlug: 'gen-02',
     missionTitle: 'A queda',
     moduleTitle: 'O Jardim',
+    opponentMissionSlug: opponentMissionSlug,
+    opponentMissionTitle: opponentMissionTitle,
     weekStart: weekStart.isEmpty ? cornerWeekStart() : weekStart,
     status: status,
     challengerDoneAt: challengerDoneAt,

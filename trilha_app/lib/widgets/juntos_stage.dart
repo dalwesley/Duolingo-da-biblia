@@ -7,6 +7,7 @@ import 'cinematic_icon.dart';
 import 'pilgrim_profile_cover.dart';
 import 'postcard.dart';
 import 'profile_section.dart';
+import 'ui_primitives.dart';
 
 /// Capa do Perfil: a cena escolhida (se ainda é uma cena feita) ou a mais
 /// recente. Também pinta o fundo dos palcos de Juntos.
@@ -146,6 +147,99 @@ class PaintedStage extends StatelessWidget {
   }
 }
 
+/// Palco padrão das abas de Juntos (Companhia, Desafio, Caravana e
+/// Grupos): mesma moldura pintada, mesmo título, frase, miolo e ações —
+/// cada aba muda só a cor ([accent]) e o que vai no miolo.
+class JuntosHero extends StatelessWidget {
+  final Color accent;
+
+  /// Pintura ao fundo (a capa do Perfil); sem ela, só a moldura de luz.
+  final String? sceneSlug;
+  final String title;
+  final String body;
+
+  /// Passos ([StageSteps]), relógio… entre a frase e as ações.
+  final Widget? middle;
+
+  /// Botões, na ordem: o principal ([CopperCta]) e os secundários.
+  final List<Widget> actions;
+
+  /// Troca as ações por um spinner.
+  final bool loading;
+
+  /// Aviso de erro logo abaixo das ações.
+  final Widget? notice;
+
+  /// Linha no topo do palco (selo do lugar, menu…), acima do título.
+  final Widget? header;
+
+  const JuntosHero({
+    super.key,
+    required this.accent,
+    required this.title,
+    required this.body,
+    this.sceneSlug,
+    this.middle,
+    this.actions = const [],
+    this.loading = false,
+    this.notice,
+    this.header,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return PaintedStage(
+      accent: accent,
+      sceneSlug: sceneSlug,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          if (header case final header?) ...[
+            header,
+            const SizedBox(height: AppSpace.sm),
+          ] else
+            // Com pintura, ela respira um pouco antes do título.
+            SizedBox(height: sceneSlug == null ? AppSpace.sm : 56),
+          Text(
+            title,
+            textAlign: TextAlign.center,
+            style: AppTypography.display(size: 26, color: a.text, height: 1.1),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            body,
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 13,
+              height: 1.45,
+              color: a.textSecondary,
+            ),
+          ),
+          if (middle case final middle?) ...[
+            const SizedBox(height: AppSpace.lg),
+            middle,
+          ],
+          if (loading) ...[
+            const SizedBox(height: AppSpace.lg),
+            const AppSpinner(),
+          ] else if (actions.isNotEmpty) ...[
+            const SizedBox(height: AppSpace.lg),
+            for (var i = 0; i < actions.length; i++) ...[
+              if (i > 0) const SizedBox(height: AppSpace.sm),
+              actions[i],
+            ],
+          ],
+          if (notice case final notice?) ...[
+            const SizedBox(height: 14),
+            notice,
+          ],
+        ],
+      ),
+    );
+  }
+}
+
 /// Selo de vidro escuro com o glifo na cor da seção.
 class StageChip extends StatelessWidget {
   final Color accent;
@@ -183,12 +277,16 @@ class StageChip extends StatelessWidget {
             framed: false,
           ),
           const SizedBox(width: 6),
-          Text(
-            label,
-            style: AppTypography.label(
-              size: 12,
-              weight: FontWeight.w800,
-              color: a.text,
+          Flexible(
+            child: Text(
+              label,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.label(
+                size: 12,
+                weight: FontWeight.w800,
+                color: a.text,
+              ),
             ),
           ),
         ],
@@ -201,7 +299,10 @@ class StageChip extends StatelessWidget {
 class StageSteps extends StatelessWidget {
   final List<(CinematicGlyph, String, Color)> steps;
 
-  const StageSteps({super.key, required this.steps});
+  /// Uma linha de detalhe por passo (opcional): o rótulo vira título curto.
+  final List<String>? details;
+
+  const StageSteps({super.key, required this.steps, this.details});
 
   @override
   Widget build(BuildContext context) {
@@ -211,7 +312,7 @@ class StageSteps extends StatelessWidget {
         for (var i = 0; i < steps.length; i++) ...[
           if (i > 0) const SizedBox(width: AppSpace.sm),
           Expanded(
-            child: _StepTile(step: steps[i], index: i + 1),
+            child: _StepTile(step: steps[i], detail: details?[i]),
           ),
         ],
       ],
@@ -221,9 +322,9 @@ class StageSteps extends StatelessWidget {
 
 class _StepTile extends StatelessWidget {
   final (CinematicGlyph, String, Color) step;
-  final int index;
+  final String? detail;
 
-  const _StepTile({required this.step, required this.index});
+  const _StepTile({required this.step, this.detail});
 
   @override
   Widget build(BuildContext context) {
@@ -267,17 +368,39 @@ class _StepTile extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          Text(
-            label,
-            textAlign: TextAlign.center,
-            maxLines: 2,
-            style: AppTypography.body(
-              size: 11,
-              height: 1.25,
-              weight: FontWeight.w700,
-              color: a.textSecondary,
+          if (detail case final detail?) ...[
+            Text(
+              label,
+              textAlign: TextAlign.center,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.label(letterSpacing: 0, color: a.text),
             ),
-          ),
+            const SizedBox(height: 2),
+            Text(
+              detail,
+              textAlign: TextAlign.center,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.body(
+                size: 11,
+                height: 1.25,
+                weight: FontWeight.w600,
+                color: a.textSecondary,
+              ),
+            ),
+          ] else
+            Text(
+              label,
+              textAlign: TextAlign.center,
+              maxLines: 2,
+              style: AppTypography.body(
+                size: 11,
+                height: 1.25,
+                weight: FontWeight.w700,
+                color: a.textSecondary,
+              ),
+            ),
         ],
       ),
     );

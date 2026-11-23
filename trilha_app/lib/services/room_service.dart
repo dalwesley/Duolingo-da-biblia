@@ -24,6 +24,14 @@ class RoomService extends ChangeNotifier {
   StudyRoom? activeRoom;
   List<RoomMember> members = const [];
 
+  /// Último grupo meu que encontrei encerrado (aviso + "Reabrir" do líder).
+  /// Some ao dispensar ou ao entrar noutro grupo.
+  StudyRoom? closedRoom;
+
+  /// Progresso visto por último — para limpar o código do grupo também na
+  /// nuvem quando quem chama não passa o progresso (abertura do app).
+  ProgressService? _progress;
+
   /// Membros já chamados hoje (um chamado por pessoa por dia).
   Set<String> nudgedToday = const {};
 
@@ -564,6 +572,9 @@ class RoomService extends ChangeNotifier {
   }
 
   Future<void> _persistCode(String? code, {ProgressService? progress}) async {
+    _progress = progress ?? _progress;
+    progress = _progress;
+    if (code != null && code.isNotEmpty) closedRoom = null;
     final prefs = await SharedPreferences.getInstance();
     if (code == null || code.isEmpty) {
       await prefs.remove(_keyActiveCode);
@@ -637,6 +648,11 @@ class RoomService extends ChangeNotifier {
       lastError = L10n.current.roomErrorFullAskLeader(kRoomMemberLimit);
       notifyListeners();
       return false;
+    } on RoomClosedException {
+      loading = false;
+      lastError = L10n.current.roomErrorClosedJoin;
+      notifyListeners();
+      return false;
     }
     loading = false;
     if (room == null) {
@@ -653,6 +669,7 @@ class RoomService extends ChangeNotifier {
 
   Future<void> openRoom(String code, {ProgressService? progress}) async {
     if (!backend.isActive) return;
+    _progress = progress ?? _progress;
     loading = true;
     lastError = null;
     notifyListeners();
@@ -668,11 +685,14 @@ class RoomService extends ChangeNotifier {
       return;
     }
     loadFailed = false;
-    if (room == null) {
+    if (room == null || room.isClosed) {
+      // Sai do grupo também na nuvem — senão o código volta a cada abertura
+      // e a presença continua indo para um grupo que não está mais ativo.
       activeRoom = null;
       members = const [];
       await _persistCode(null, progress: progress);
-      lastError = L10n.current.roomErrorLostGroup;
+      closedRoom = room;
+      lastError = room == null ? L10n.current.roomErrorLostGroup : null;
       loading = false;
       notifyListeners();
       return;
@@ -982,20 +1002,60 @@ class RoomService extends ChangeNotifier {
     return ok;
   }
 
-  /// Líder encerra o grupo para todos.
+  /// Líder encerra o grupo para todos. Nada é apagado: o grupo fica
+  /// inativo no banco e pode ser reaberto ([reopenClosedRoom]).
   Future<bool> closeRoom({ProgressService? progress}) async {
-    final code = activeRoom?.code;
-    if (code == null || !backend.isActive) return false;
-    final ok = await backend.deleteRoom(code);
+    final room = activeRoom;
+    if (room == null || !backend.isActive) return false;
+    final byName = (progress ?? _progress)?.publicUserName ?? room.ownerName;
+    final ok = await backend.closeRoom(room.code, byName: byName);
     if (!ok) return false;
+    unawaited(AnalyticsService.instance.logEvent('group_closed'));
     activeRoom = null;
     members = const [];
     nudgedToday = const {};
     latestClosing = null;
     lastError = null;
     await _persistCode(null, progress: progress);
+    closedRoom = StudyRoom(
+      code: room.code,
+      name: room.name,
+      ownerId: room.ownerId,
+      ownerName: room.ownerName,
+      kind: room.kind,
+      closedAt: DateTime.now(),
+      closedBy: backend.uid,
+      closedByName: byName,
+    );
     notifyListeners();
     return true;
+  }
+
+  /// Líder reabre o grupo que encerrou; volta a ser o grupo ativo.
+  Future<bool> reopenClosedRoom({ProgressService? progress}) async {
+    final room = closedRoom;
+    if (room == null || !backend.isActive || !room.isOwner(backend.uid)) {
+      return false;
+    }
+    final ok = await backend.reopenRoom(room.code);
+    if (!ok) {
+      lastError = L10n.current.roomReopenFailed;
+      notifyListeners();
+      return false;
+    }
+    unawaited(AnalyticsService.instance.logEvent('group_reopened'));
+    closedRoom = null;
+    await _persistCode(room.code, progress: progress);
+    await openRoom(room.code, progress: progress);
+    return activeRoom != null;
+  }
+
+  /// Fecha o aviso de grupo encerrado.
+  void dismissClosedRoom() {
+    if (closedRoom == null && lastError == null) return;
+    closedRoom = null;
+    lastError = null;
+    notifyListeners();
   }
 
   /// Dono ajusta (ou limpa, com `null`) a meta semanal de passos da sala.

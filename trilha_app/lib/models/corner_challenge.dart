@@ -4,6 +4,7 @@ import '../l10n/app_language.dart';
 import '../l10n/l10n_global.dart';
 import '../services/progress_service.dart';
 import '../utils/trail_progress.dart';
+import 'difficulty.dart';
 import 'trail.dart';
 
 String cornerWeekStart([DateTime? now]) {
@@ -20,7 +21,8 @@ String cornerWeekStart([DateTime? now]) {
 /// soma no total, não no ranking da Caravana.
 const cornerArrivalBonusSteps = 10;
 
-/// Textos do Desafio — duas pessoas, a mesma cena, até domingo.
+/// Textos do Desafio — duas pessoas no mesmo modo, cada uma na sua cena,
+/// até domingo.
 ///
 /// Disputa amigável: cada um que chega ganha os passos; se os dois chegam,
 /// os dois ganham. "Perdeu" é não chegar a tempo, não o outro levar o seu.
@@ -90,8 +92,7 @@ class CornerCopy {
   static String get busyAccept => _l.cornerBusyAccept;
   static String get sendFailed => _l.cornerSendFailed;
   static String get actionFailed => _l.cornerActionFailed;
-  static String get differentTrail => _l.cornerDifferentTrail;
-  static String get differentScene => _l.cornerDifferentScene;
+  static String get differentMode => _l.cornerDifferentMode;
   static String get noCorner => _l.cornerNoCorner;
 
   static String get sameStretch =>
@@ -219,14 +220,15 @@ class CornerCopy {
       _l.cornerResultTheyLeftMissed(_who(name));
 }
 
-class CornerProposal {
+/// Uma cena do desafio: a próxima da trilha que a pessoa está caminhando.
+class CornerScene {
   final String trailSlug;
   final String trailTitle;
   final String missionSlug;
   final String missionTitle;
   final String moduleTitle;
 
-  const CornerProposal({
+  const CornerScene({
     required this.trailSlug,
     required this.trailTitle,
     required this.missionSlug,
@@ -235,41 +237,90 @@ class CornerProposal {
   });
 }
 
-/// Porta do desafio: mesma trilha em andamento + a mesma próxima cena.
+/// Proposta de desafio: o modo em comum e a cena de cada um.
+class CornerProposal {
+  /// Modo (id do banco: semente/caminhada/profundezas) em que os dois estão.
+  final String mode;
+  final CornerScene mine;
+  final CornerScene theirs;
+
+  const CornerProposal({
+    required this.mode,
+    required this.mine,
+    required this.theirs,
+  });
+
+  String get trailSlug => mine.trailSlug;
+  String get trailTitle => mine.trailTitle;
+  String get missionSlug => mine.missionSlug;
+  String get missionTitle => mine.missionTitle;
+  String get moduleTitle => mine.moduleTitle;
+}
+
+/// Porta do desafio: os dois caminhando uma trilha no mesmo modo
+/// (Observação/Compreensão/Interpretação). Trilha e cena podem ser
+/// diferentes — cada um faz a própria próxima cena.
 class CornerMatch {
-  /// Ignora a exigência de mesma trilha/cena (o limite de 1 desafio vale sempre).
+  /// Ignora a exigência de mesmo modo (o limite de 1 desafio vale sempre).
   static const forceOpenForPreview = false;
 
   static CornerProposal? propose({
     required List<Trail> catalog,
     required List<String> myCompleted,
     required Map<String, List<String>> myClearedModes,
+    Map<String, String> myTrailModes = const {},
     required List<String> theirCompleted,
     required Map<String, List<String>> theirClearedModes,
+    Map<String, String> theirTrailModes = const {},
   }) {
     final mine = _walkingTrail(catalog, myCompleted, myClearedModes);
     final theirs = _walkingTrail(catalog, theirCompleted, theirClearedModes);
     if (mine == null || theirs == null) return null;
-    if (mine.slug != theirs.slug) return null;
 
-    final myNext = TrailProgress.getCurrentMission(mine, myCompleted);
-    final theirNext = TrailProgress.getCurrentMission(theirs, theirCompleted);
-    if (myNext == null || theirNext == null) return null;
-    if (myNext.slug != theirNext.slug) return null;
+    final myMode = modeOf(mine.slug, myTrailModes, myClearedModes);
+    final theirMode = modeOf(theirs.slug, theirTrailModes, theirClearedModes);
+    if (myMode != theirMode) return null;
 
-    String moduleTitle = mine.localizedTitle;
-    for (final mod in mine.modules) {
-      if (mod.missions.any((m) => m.slug == myNext.slug)) {
+    final myScene = _nextScene(mine, myCompleted);
+    final theirScene = _nextScene(theirs, theirCompleted);
+    if (myScene == null || theirScene == null) return null;
+
+    return CornerProposal(mode: myMode, mine: myScene, theirs: theirScene);
+  }
+
+  /// Modo atual da trilha: o gravado, ou o próximo se aquele já foi selado.
+  static String modeOf(
+    String trailSlug,
+    Map<String, String> trailModes,
+    Map<String, List<String>> clearedModes,
+  ) {
+    return TrailProgress.openDifficultyId(
+          activeDifficultyId:
+              trailModes[trailSlug] ?? TrailDifficulty.semente.id,
+          clearedModes: clearedModes[trailSlug] ?? const [],
+        ) ??
+        TrailDifficulty.semente.id;
+  }
+
+  static CornerScene? _nextScene(Trail trail, List<String> completed) {
+    final next = TrailProgress.getCurrentMission(trail, completed);
+    if (next == null) return null;
+    return _sceneOf(trail, next);
+  }
+
+  static CornerScene _sceneOf(Trail trail, Mission mission) {
+    String moduleTitle = trail.localizedTitle;
+    for (final mod in trail.modules) {
+      if (mod.missions.any((m) => m.slug == mission.slug)) {
         moduleTitle = mod.localizedTitle;
         break;
       }
     }
-
-    return CornerProposal(
-      trailSlug: mine.slug,
-      trailTitle: mine.localizedTitle,
-      missionSlug: myNext.slug,
-      missionTitle: myNext.localizedTitle,
+    return CornerScene(
+      trailSlug: trail.slug,
+      trailTitle: trail.localizedTitle,
+      missionSlug: mission.slug,
+      missionTitle: mission.localizedTitle,
       moduleTitle: moduleTitle,
     );
   }
@@ -278,15 +329,19 @@ class CornerMatch {
     required List<Trail> catalog,
     required List<String> myCompleted,
     required Map<String, List<String>> myClearedModes,
+    Map<String, String> myTrailModes = const {},
     required List<String> theirCompleted,
     required Map<String, List<String>> theirClearedModes,
+    Map<String, String> theirTrailModes = const {},
   }) {
     if (propose(
           catalog: catalog,
           myCompleted: myCompleted,
           myClearedModes: myClearedModes,
+          myTrailModes: myTrailModes,
           theirCompleted: theirCompleted,
           theirClearedModes: theirClearedModes,
+          theirTrailModes: theirTrailModes,
         ) !=
         null) {
       return null;
@@ -294,8 +349,7 @@ class CornerMatch {
     final mine = _walkingTrail(catalog, myCompleted, myClearedModes);
     final theirs = _walkingTrail(catalog, theirCompleted, theirClearedModes);
     if (mine == null || theirs == null) return CornerCopy.noCorner;
-    if (mine.slug != theirs.slug) return CornerCopy.differentTrail;
-    return CornerCopy.differentScene;
+    return CornerCopy.differentMode;
   }
 
   /// Trilha já começada e ainda aberta. Se ninguém começou, cai na ativa da Home.
@@ -347,36 +401,34 @@ class CornerMatch {
     required List<Trail> catalog,
     required List<String> myCompleted,
     required Map<String, List<String>> myClearedModes,
+    Map<String, String> myTrailModes = const {},
   }) {
     final mine =
         _walkingTrail(catalog, myCompleted, myClearedModes) ??
         catalog.where((t) => t.missionSlugs.isNotEmpty).firstOrNull;
     if (mine == null) {
       final l = L10n.current;
-      return CornerProposal(
+      final scene = CornerScene(
         trailSlug: 'preview',
         trailTitle: l.commonTrail,
         missionSlug: 'preview-cena',
         missionTitle: l.commonScene,
         moduleTitle: l.commonModule,
       );
+      return CornerProposal(
+        mode: TrailDifficulty.semente.id,
+        mine: scene,
+        theirs: scene,
+      );
     }
     final next =
         TrailProgress.getCurrentMission(mine, myCompleted) ??
         mine.modules.first.missions.first;
-    String moduleTitle = mine.localizedTitle;
-    for (final mod in mine.modules) {
-      if (mod.missions.any((m) => m.slug == next.slug)) {
-        moduleTitle = mod.localizedTitle;
-        break;
-      }
-    }
+    final scene = _sceneOf(mine, next);
     return CornerProposal(
-      trailSlug: mine.slug,
-      trailTitle: mine.localizedTitle,
-      missionSlug: next.slug,
-      missionTitle: next.localizedTitle,
-      moduleTitle: moduleTitle,
+      mode: modeOf(mine.slug, myTrailModes, myClearedModes),
+      mine: scene,
+      theirs: scene,
     );
   }
 }
@@ -397,6 +449,17 @@ class CornerChallenge {
   final String missionSlug;
   final String missionTitle;
   final String moduleTitle;
+
+  /// Modo do desafio (semente/caminhada/profundezas); vazio em docs antigos.
+  final String mode;
+
+  /// Cena de quem foi chamado. Os campos sem prefixo (trailSlug, missionSlug…)
+  /// são a cena de quem chamou; docs antigos (mesma cena) não têm estes.
+  final String? opponentTrailSlug;
+  final String? opponentTrailTitle;
+  final String? opponentMissionSlug;
+  final String? opponentMissionTitle;
+  final String? opponentModuleTitle;
   final String weekStart;
   final CornerStatus status;
   final String? challengerDoneAt;
@@ -430,6 +493,12 @@ class CornerChallenge {
     required this.missionSlug,
     required this.missionTitle,
     required this.moduleTitle,
+    this.mode = '',
+    this.opponentTrailSlug,
+    this.opponentTrailTitle,
+    this.opponentMissionSlug,
+    this.opponentMissionTitle,
+    this.opponentModuleTitle,
     required this.weekStart,
     required this.status,
     this.challengerDoneAt,
@@ -451,6 +520,12 @@ class CornerChallenge {
     String? opponentPhotoUrl,
     List<int>? challengerDays,
     List<int>? opponentDays,
+    String? challengerDoneAt,
+    String? opponentDoneAt,
+    int? challengerCorrect,
+    int? challengerTotal,
+    int? opponentCorrect,
+    int? opponentTotal,
   }) {
     return CornerChallenge(
       id: id,
@@ -463,14 +538,20 @@ class CornerChallenge {
       missionSlug: missionSlug,
       missionTitle: missionTitle,
       moduleTitle: moduleTitle,
+      mode: mode,
+      opponentTrailSlug: opponentTrailSlug,
+      opponentTrailTitle: opponentTrailTitle,
+      opponentMissionSlug: opponentMissionSlug,
+      opponentMissionTitle: opponentMissionTitle,
+      opponentModuleTitle: opponentModuleTitle,
       weekStart: weekStart,
       status: status ?? this.status,
-      challengerDoneAt: challengerDoneAt,
-      opponentDoneAt: opponentDoneAt,
-      challengerCorrect: challengerCorrect,
-      challengerTotal: challengerTotal,
-      opponentCorrect: opponentCorrect,
-      opponentTotal: opponentTotal,
+      challengerDoneAt: challengerDoneAt ?? this.challengerDoneAt,
+      opponentDoneAt: opponentDoneAt ?? this.opponentDoneAt,
+      challengerCorrect: challengerCorrect ?? this.challengerCorrect,
+      challengerTotal: challengerTotal ?? this.challengerTotal,
+      opponentCorrect: opponentCorrect ?? this.opponentCorrect,
+      opponentTotal: opponentTotal ?? this.opponentTotal,
       withdrawnBy: withdrawnBy ?? this.withdrawnBy,
       challengerPhotoUrl: challengerPhotoUrl,
       opponentPhotoUrl: opponentPhotoUrl ?? this.opponentPhotoUrl,
@@ -478,6 +559,26 @@ class CornerChallenge {
       opponentDays: opponentDays ?? this.opponentDays,
     );
   }
+
+  static String _or(String? value, String fallback) =>
+      value == null || value.isEmpty ? fallback : value;
+
+  /// A cena de [uid] neste desafio (cada um faz a sua).
+  String missionSlugOf(String uid) =>
+      uid == opponentId ? _or(opponentMissionSlug, missionSlug) : missionSlug;
+
+  String missionTitleOf(String uid) => uid == opponentId
+      ? _or(opponentMissionTitle, missionTitle)
+      : missionTitle;
+
+  String trailSlugOf(String uid) =>
+      uid == opponentId ? _or(opponentTrailSlug, trailSlug) : trailSlug;
+
+  String trailTitleOf(String uid) =>
+      uid == opponentId ? _or(opponentTrailTitle, trailTitle) : trailTitle;
+
+  String moduleTitleOf(String uid) =>
+      uid == opponentId ? _or(opponentModuleTitle, moduleTitle) : moduleTitle;
 
   bool get isThisWeek => weekStart == cornerWeekStart();
 
@@ -501,11 +602,11 @@ class CornerChallenge {
       isThisWeek &&
       (status == CornerStatus.pending || status == CornerStatus.active);
 
-  /// A cena combinada desta semana — abre mesmo fora da ordem da trilha.
+  /// A minha cena desta semana — abre mesmo fora da ordem da trilha.
   bool opensFor(String uid, String missionSlug) {
     return status == CornerStatus.active &&
         isThisWeek &&
-        this.missionSlug == missionSlug &&
+        missionSlugOf(uid) == missionSlug &&
         !iDone(uid) &&
         !iLeft(uid);
   }
@@ -621,7 +722,7 @@ class CornerChallenge {
       case CornerOutcome.none:
         return CornerCopy.noneHeadline;
       case null:
-        return CornerCopy.inviteTitle(missionTitle);
+        return CornerCopy.inviteTitle(missionTitleOf(uid));
     }
   }
 

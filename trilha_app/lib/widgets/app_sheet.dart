@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import '../l10n/app_language.dart';
 
@@ -267,6 +269,8 @@ Future<T?> showAppDialog<T>(
 
 /// Confirmação de duas saídas. [danger] pinta a confirmação de erro e deixa
 /// o Anan triste (sair, encerrar, desistir).
+/// [confirmDelay]: o botão de confirmar só libera depois desse tempo, com a
+/// contagem no rótulo — para ações sérias, contra o toque no impulso.
 Future<bool> showAppConfirm(
   BuildContext context, {
   required String title,
@@ -275,6 +279,7 @@ Future<bool> showAppConfirm(
   required String confirmLabel,
   bool danger = false,
   CloudFace? face,
+  Duration confirmDelay = Duration.zero,
 }) async {
   final ok = await showAppDialog<bool>(
     context,
@@ -287,20 +292,59 @@ Future<bool> showAppConfirm(
           label: cancelLabel ?? ctx.l10n.commonCancel,
           onTap: () => Navigator.pop(ctx, false),
         ),
-        danger
-            ? GhostCta(
-                label: confirmLabel,
-                danger: true,
-                onTap: () => Navigator.pop(ctx, true),
-              )
-            : CopperCta(
-                label: confirmLabel,
-                dense: true,
-                trailing: null,
-                onTap: () => Navigator.pop(ctx, true),
-              ),
+        _DelayedConfirm(
+          delay: confirmDelay,
+          builder: (left) {
+            final label = left > 0 ? '$confirmLabel ($left)' : confirmLabel;
+            final onTap = left > 0 ? null : () => Navigator.pop(ctx, true);
+            return danger
+                ? GhostCta(label: label, danger: true, onTap: onTap)
+                : CopperCta(
+                    label: label,
+                    dense: true,
+                    trailing: null,
+                    onTap: onTap,
+                  );
+          },
+        ),
       ],
     ),
   );
   return ok ?? false;
+}
+
+/// Conta os segundos até liberar o botão de confirmar.
+class _DelayedConfirm extends StatefulWidget {
+  final Duration delay;
+  final Widget Function(int secondsLeft) builder;
+
+  const _DelayedConfirm({required this.delay, required this.builder});
+
+  @override
+  State<_DelayedConfirm> createState() => _DelayedConfirmState();
+}
+
+class _DelayedConfirmState extends State<_DelayedConfirm> {
+  late int _left = widget.delay.inSeconds;
+  Timer? _timer;
+
+  @override
+  void initState() {
+    super.initState();
+    if (_left <= 0) return;
+    _timer = Timer.periodic(const Duration(seconds: 1), (t) {
+      if (!mounted) return;
+      setState(() => _left--);
+      if (_left <= 0) t.cancel();
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) => widget.builder(_left);
 }

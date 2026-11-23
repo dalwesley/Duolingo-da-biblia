@@ -108,16 +108,20 @@ class _CornerPickSheetState extends State<_CornerPickSheet> {
         catalog: catalog,
         myCompleted: progress.completedMissions,
         myClearedModes: progress.clearedTrailModes,
+        myTrailModes: progress.trailDifficulties,
         theirCompleted: profile.completedMissions,
         theirClearedModes: profile.clearedTrailModes,
+        theirTrailModes: profile.trailModes,
       );
       if (proposal != null) return _Candidate(person, proposal, null);
       final reason = CornerMatch.blockReason(
         catalog: catalog,
         myCompleted: progress.completedMissions,
         myClearedModes: progress.clearedTrailModes,
+        myTrailModes: progress.trailDifficulties,
         theirCompleted: profile.completedMissions,
         theirClearedModes: profile.clearedTrailModes,
+        theirTrailModes: profile.trailModes,
       );
       return _Candidate(person, null, reason ?? CornerCopy.noCorner);
     } catch (e) {
@@ -177,9 +181,11 @@ class _CornerPickSheetState extends State<_CornerPickSheet> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            // Carregando, o Anan do spinner basta — sem o segundo no cabeçalho.
             AppSheetHeader(
               title: CornerCopy.pickTitle,
               subtitle: CornerCopy.pickSubtitle,
+              cloud: _candidates != null,
             ),
             const SizedBox(height: AppSpace.md),
             if (_candidates == null)
