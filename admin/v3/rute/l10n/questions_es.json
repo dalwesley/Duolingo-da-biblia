@@ -1,0 +1,1561 @@
+{
+ "rute-sem-rute-03-mara-01": {
+  "question": "En Rut 1:20, Noemí pidió que la llamaran Mara por causa de su gran amargura.",
+  "feedbackCorrect": "Cambia su nombre y explica el motivo: la gran amargura.",
+  "feedbackWrong": {
+   "false": "Lee Rut 1:20 de nuevo: ella misma pide el nombre y da el motivo."
+  },
+  "hint": "Mira el nombre que ella misma elige.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-sem-rute-03-mara-02": {
+  "question": "En Rut 1:20, toca el nombre que Noemí pide para sí misma.",
+  "feedbackCorrect": "Pide un nombre que refleje su amargura.",
+  "feedbackWrong": {
+   "b": "Ese es su nombre anterior, que aquí rechaza.",
+   "c": "Ese es Dios, a quien atribuye su amargura."
+  },
+  "hint": "Es el nombre amargo que ella misma elige."
+ },
+ "rute-sem-rute-03-mara-03": {
+  "question": "Según Rut 1:21, ¿cómo dice Noemí que se fue y cómo regresó?",
+  "feedbackCorrect": "Se fue llena y regresó vacía a Belén.",
+  "feedbackWrong": {
+   "a": "Es al revés: llena al salir y vacía al regresar.",
+   "c": "Sus hijos murieron en Moab; ella regresa con Rut.",
+   "d": "No se mencionan enfermedades ni curaciones en sus palabras."
+  },
+  "hint": "Presta atención a las dos palabras opuestas.",
+  "options": {
+   "a": "Se fue vacía y regresó con bienes",
+   "b": "Se fue llena y regresó vacía",
+   "c": "Se fue sola y regresó con sus hijos",
+   "d": "Se fue enferma y regresó sana a Belén"
+  }
+ },
+ "rute-sem-rute-03-mara-04": {
+  "question": "Ordena Rut 1:21 según la secuencia del texto.",
+  "feedbackCorrect": "Llena al salir, vacía al regresar y luego su sentimiento acerca de Dios.",
+  "feedbackWrong": {
+   "default": "Comienza por cómo estaba cuando se fue."
+  },
+  "hint": "Su declaración comienza con su pasado."
+ },
+ "rute-sem-rute-03-mara-05": {
+  "question": "En Rut 1:21, ¿con qué palabra describe Noemí cómo salió de Belén?",
+  "feedbackCorrect": "Salió con su esposo y sus hijos: salió con la familia completa.",
+  "feedbackWrong": {
+   "a": "Vacía describe cómo regresó, no cómo se fue.",
+   "c": "Salió acompañada de su familia, no sola."
+  },
+  "hint": "Es lo contrario de cómo regresó."
+ },
+ "rute-sem-rute-03-mara-06": {
+  "question": "¿Qué comunica Rut 1:20 que se relaciona con este contexto?",
+  "feedbackCorrect": "El nuevo nombre expresa el dolor de regresar sin nada ni nadie.",
+  "feedbackWrong": {
+   "a": "Habla con las mujeres, sin esconderse de ellas.",
+   "c": "No celebra la riqueza: lamenta su pérdida."
+  },
+  "hint": "Mira el sentimiento que ella misma expresa.",
+  "options": {
+   "a": "Vergüenza de ser reconocida",
+   "b": "Amargura de quien regresó vacía",
+   "c": "Alegría de quien regresó rica"
+  }
+ },
+ "rute-cam-rute-03-mara-01": {
+  "question": "En Rut 1:20–21, Noemí relaciona el nombre Mara con lo que siente que el Todopoderoso hizo con ella.",
+  "feedbackCorrect": "El nombre surge de la interpretación que ella hace de su propia pérdida.",
+  "feedbackWrong": {
+   "false": "Ella misma explica el nombre: el Todopoderoso le causó amargura."
+  },
+  "hint": "Busca la explicación que ella da del nombre.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-cam-rute-03-mara-02": {
+  "question": "En Rut 1:21, toca la palabra que contrasta cómo se fue y cómo regresó.",
+  "feedbackCorrect": "Llena al salir, vacía al regresar: esta pequeña palabra contrasta ambos momentos.",
+  "feedbackWrong": {
+   "a": "Esa palabra habla de Dios, no contrapone la salida y el regreso.",
+   "b": "Esa palabra aparece en la pregunta de las mujeres, sin establecer un contraste."
+  },
+  "hint": "Busca la conjunción que contrapone llena y vacía."
+ },
+ "rute-cam-rute-03-mara-03": {
+  "question": "¿Por qué Noemí rechaza su antiguo nombre en Rut 1:20–21?",
+  "feedbackCorrect": "Según ella, su antiguo nombre ya no corresponde a quien regresó vacía.",
+  "feedbackWrong": {
+   "a": "El texto no menciona ninguna prohibición de nombres.",
+   "b": "Las mujeres están usando precisamente su antiguo nombre.",
+   "d": "Rut no habla en esta escena de bienvenida."
+  },
+  "hint": "Compara cómo se fue y cómo regresó.",
+  "options": {
+   "a": "Porque en Moab estaban prohibidos los nombres hebreos",
+   "b": "Porque las mujeres ya usaban otro nombre",
+   "c": "Porque salió con todo y regresó sin nada",
+   "d": "Porque Rut le pidió que cambiara de nombre"
+  }
+ },
+ "rute-cam-rute-03-mara-04": {
+  "question": "¿Cómo se encadenan las declaraciones en Rut 1:20–21?",
+  "feedbackCorrect": "Rechazo, nuevo nombre y explicación: ese es el orden de sus palabras.",
+  "feedbackWrong": {
+   "default": "Comienza con el rechazo del antiguo nombre."
+  },
+  "hint": "La explicación viene después del nuevo nombre.",
+  "options": {
+   "a": "Ella rechaza que la llamen por su antiguo nombre",
+   "b": "Pide el nombre que significa amarga",
+   "c": "Explica que regresó vacía"
+  }
+ },
+ "rute-cam-rute-03-mara-05": {
+  "question": "En Rut 1:21, ¿cómo dice Noemí que el Señor la hizo regresar?",
+  "feedbackCorrect": "Regresó sin esposo, sin hijos y sin sustento.",
+  "feedbackWrong": {
+   "a": "Dios es precisamente quien, según ella, la hizo regresar.",
+   "c": "Honor es lo que siente que perdió en el camino."
+  },
+  "hint": "Es lo contrario de haberse ido llena."
+ },
+ "rute-cam-rute-03-mara-06": {
+  "question": "¿Qué conecta Rut 1:20 con Salmos 13:1?",
+  "feedbackCorrect": "En ambos textos, el dolor se convierte en palabras dirigidas a Dios, no en silencio.",
+  "feedbackWrong": {
+   "b": "Ninguno guarda silencio: ambos hablan con Dios de su dolor.",
+   "c": "El dolor sigue presente en ambos textos."
+  },
+  "hint": "Mira qué hacen ambos textos con el dolor.",
+  "options": {
+   "a": "Lamento que habla con Dios",
+   "b": "Silencio ante el sufrimiento",
+   "c": "Fiesta por el fin del dolor"
+  }
+ },
+ "rute-pro-rute-03-mara-01": {
+  "question": "Rut 1:20–21 enseña que Noemí perdió la fe y abandonó al Dios de Israel.",
+  "feedbackCorrect": "Ella se lamenta delante de Dios; no deja de hablar de él ni se aparta de él.",
+  "feedbackWrong": {
+   "true": "Regresa al pueblo de Dios y habla de él: esto es lamento, no abandono."
+  },
+  "hint": "Observa si deja de hablar de Dios.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-pro-rute-03-mara-02": {
+  "question": "En Rut 1:20, toca lo que Noemí dice que el Todopoderoso le causó.",
+  "feedbackCorrect": "Ese es el sentimiento que explica su nuevo nombre.",
+  "feedbackWrong": {
+   "a": "Esto introduce el rechazo del nombre, pero no menciona el sentimiento.",
+   "b": "Esa es su petición, no lo que Dios le causó."
+  },
+  "hint": "Busca el sentimiento al final del versículo."
+ },
+ "rute-pro-rute-03-mara-03": {
+  "question": "¿Qué interpretación sobre la amargura de Noemí respalda Rut 1:20–21?",
+  "feedbackCorrect": "Le dice a Dios cómo se siente, incluso mediante su nombre: esto es lamento.",
+  "feedbackWrong": {
+   "a": "Rut no es culpada por ninguna de sus palabras.",
+   "c": "El texto conserva su lamento sin condenarlo.",
+   "d": "Ella habla del Señor todo el tiempo; no niega a Dios."
+  },
+  "hint": "Mira delante de quién expresa su dolor.",
+  "options": {
+   "a": "Culpa a Rut por todo lo que perdió",
+   "b": "Expresa su dolor delante de Dios sin dejar de hablar de él",
+   "c": "Enseña que lamentarse es falta de fe",
+   "d": "Niega que Dios exista después de la pérdida"
+  }
+ },
+ "rute-pro-rute-03-mara-04": {
+  "question": "¿Qué secuencia revela el sentido de Rut 1:21–22?",
+  "feedbackCorrect": "La escena de mayor dolor termina precisamente en la época de la cosecha.",
+  "feedbackWrong": {
+   "default": "Comienza con su partida llena; la cosecha cierra la escena."
+  },
+  "hint": "La época de la cosecha es el detalle final.",
+  "options": {
+   "a": "Salió de Belén con su familia y todo lo que tenía",
+   "b": "Regresa vacía y pide otro nombre",
+   "c": "Llega al comienzo de la cosecha de la cebada"
+  }
+ },
+ "rute-pro-rute-03-mara-05": {
+  "question": "En Rut 1:21, ¿qué nombre cuestiona Noemí que la gente todavía le dé?",
+  "feedbackCorrect": "Para ella, su antiguo nombre ya no corresponde a quien regresó.",
+  "feedbackWrong": {
+   "b": "Eso describe cómo se fue; no es un nombre.",
+   "c": "Ese es el nuevo nombre que pide, no el que cuestiona."
+  },
+  "hint": "Es el nombre que tenía antes de la pérdida."
+ },
+ "rute-pro-rute-03-mara-06": {
+  "question": "¿Qué conecta Rut 1:20 con Éxodo 15:23?",
+  "feedbackCorrect": "En Éxodo, Mara es el lugar de las aguas amargas que no se podían beber.",
+  "feedbackWrong": {
+   "a": "Ninguno de los dos textos habla de vino.",
+   "c": "Ambos incluyen un viaje, pero la conexión está en el nombre."
+  },
+  "hint": "Compara el nombre en ambos textos.",
+  "options": {
+   "a": "Agua convertida en vino",
+   "b": "Mara, nombre de las aguas amargas",
+   "c": "Un viaje por el desierto"
+  }
+ },
+ "rute-sem-rute-04-asas-01": {
+  "question": "En Rut 2:12, Booz pidió al Señor que recompensara la actitud de Rut.",
+  "feedbackCorrect": "Pide que el Señor la retribuya y la recompense.",
+  "feedbackWrong": {
+   "false": "Lee Rut 2:12 de nuevo: eso es precisamente lo que pide Booz."
+  },
+  "hint": "Mira la petición que Booz hace a Dios.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-sem-rute-04-asas-02": {
+  "question": "En Rut 2:12, toca debajo de qué buscó refugio Rut.",
+  "feedbackCorrect": "La imagen es la de un ave que cubre: refugio debajo de sus alas.",
+  "feedbackWrong": {
+   "b": "Israel es el pueblo; el refugio se describe con otra imagen.",
+   "c": "El Señor es quien la protege; la imagen aparece después."
+  },
+  "hint": "Busca la imagen de protección al final del versículo."
+ },
+ "rute-sem-rute-04-asas-03": {
+  "question": "Según Rut 2:11, ¿qué le habían contado a Booz sobre Rut?",
+  "feedbackCorrect": "Su reputación se debía a la lealtad hacia su suegra después de la pérdida.",
+  "feedbackWrong": {
+   "a": "El matrimonio no aparece en lo que le contaron a Booz.",
+   "c": "Nadie la elogió por la cosecha; el tema es su suegra.",
+   "d": "Hizo lo contrario: se quedó definitivamente con Noemí."
+  },
+  "hint": "Mira hacia quién estaba dirigida su lealtad.",
+  "options": {
+   "a": "Que quería casarse con un hombre rico",
+   "b": "Lo que hizo por su suegra después de quedar viuda",
+   "c": "Que era la mejor recolectora de Belén",
+   "d": "Que planeaba regresar a Moab"
+  }
+ },
+ "rute-sem-rute-04-asas-04": {
+  "question": "Ordena Rut 2:11 según la secuencia del texto.",
+  "feedbackCorrect": "Padres, tierra natal y un pueblo nuevo: ese es el orden de lo que dejó atrás.",
+  "feedbackWrong": {
+   "default": "Comienza por los padres que dejó en Moab."
+  },
+  "hint": "La declaración comienza con lo que dejó atrás."
+ },
+ "rute-sem-rute-04-asas-05": {
+  "question": "En Rut 2:11, ¿por quién hizo Rut todo lo que le contaron a Booz?",
+  "feedbackCorrect": "La lealtad que llegó a oídos de Booz estaba dirigida a su suegra.",
+  "feedbackWrong": {
+   "a": "En el relato de Booz no se menciona ninguna hermana.",
+   "b": "Dejó a su madre en Moab; su lealtad fue hacia su suegra."
+  },
+  "hint": "Es la mujer a quien acompañó hasta Belén."
+ },
+ "rute-sem-rute-04-asas-06": {
+  "question": "¿Qué comunica Rut 2:12 que se relaciona con este contexto?",
+  "feedbackCorrect": "Booz interpreta su llegada como una búsqueda de refugio en el Dios de Israel.",
+  "feedbackWrong": {
+   "a": "Booz habla de una recompensa del Señor, no de un salario.",
+   "b": "Ella no regresó: buscó refugio y se quedó."
+  },
+  "hint": "Mira la imagen que Booz usa al final.",
+  "options": {
+   "a": "Trabajo recompensado con un salario",
+   "b": "Regreso arrepentido a Moab",
+   "c": "Refugio bajo las alas de Dios"
+  }
+ },
+ "rute-cam-rute-04-asas-01": {
+  "question": "En Rut 2:11–12, Booz pidió una recompensa para Rut porque ella no era extranjera en Belén.",
+  "feedbackCorrect": "Sí era extranjera: llegó a un pueblo que no conocía.",
+  "feedbackWrong": {
+   "true": "El texto destaca que dejó su tierra: era una extranjera."
+  },
+  "hint": "Recuerda de dónde venía Rut, según Booz.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-cam-rute-04-asas-02": {
+  "question": "En Rut 2:11, toca el verbo que resume lo que Rut hizo con su antigua vida.",
+  "feedbackCorrect": "Su padre, su madre y su tierra natal quedaron atrás: ella lo dejó todo.",
+  "feedbackWrong": {
+   "b": "Eso se refiere a la noticia que llegó a Booz, no a lo que ella hizo.",
+   "c": "Eso describe al pueblo nuevo, no lo que ella hizo."
+  },
+  "hint": "Busca la acción que realizó respecto a sus padres."
+ },
+ "rute-cam-rute-04-asas-03": {
+  "question": "¿Cómo interpreta Rut 2:12 lo que Rut hizo en Rut 2:11?",
+  "feedbackCorrect": "Dejarlo todo se convierte, en palabras de Booz, en buscar refugio en Dios.",
+  "feedbackWrong": {
+   "a": "Booz pide que el Señor sea quien la recompense.",
+   "b": "No es suerte: es refugio buscado en el Dios de Israel.",
+   "c": "No se menciona ninguna costumbre; Booz habla de su Dios."
+  },
+  "hint": "Mira la imagen teológica que usa Booz.",
+  "options": {
+   "a": "Como una deuda que Noemí tendría que pagar",
+   "b": "Como la suerte de quien encontró un buen campo",
+   "c": "Como una costumbre común entre las nueras moabitas",
+   "d": "Como una búsqueda de refugio en el Dios de Israel"
+  }
+ },
+ "rute-cam-rute-04-asas-04": {
+  "question": "¿Cómo se encadenan los acontecimientos de Rut 2:11–12?",
+  "feedbackCorrect": "Noticia, reconocimiento y bendición: ese es el orden de sus palabras.",
+  "feedbackWrong": {
+   "default": "Comienza por lo que llegó a oídos de Booz."
+  },
+  "hint": "La bendición es la parte final de su declaración.",
+  "options": {
+   "a": "Le contaron a Booz lo que ella hizo por su suegra",
+   "b": "Él recuerda que dejó a sus padres y su tierra",
+   "c": "Pide una recompensa al Dios de Israel"
+  }
+ },
+ "rute-cam-rute-04-asas-05": {
+  "question": "En Rut 2:12, ¿qué pide Booz que el Señor haga por la actitud de Rut?",
+  "feedbackCorrect": "Booz no la recompensa personalmente: pide que el Señor lo haga.",
+  "feedbackWrong": {
+   "b": "Esconderse no aparece en la petición de Booz.",
+   "c": "Pide lo contrario: que su actitud sea recompensada."
+  },
+  "hint": "Es lo primero que le pide al Señor."
+ },
+ "rute-cam-rute-04-asas-06": {
+  "question": "¿Qué conecta Rut 2:12 con Salmos 91:4?",
+  "feedbackCorrect": "El salmo usa la misma imagen: refugio bajo sus alas.",
+  "feedbackWrong": {
+   "b": "Ninguno de los textos habla de cuidar campos.",
+   "c": "La imagen no se refiere a aves reales ni a la cosecha."
+  },
+  "hint": "Compara la imagen de protección en ambos textos.",
+  "options": {
+   "a": "Refugio bajo las alas de Dios",
+   "b": "Viudas que cuidan el campo",
+   "c": "Aves que anuncian la cosecha"
+  }
+ },
+ "rute-pro-rute-04-asas-01": {
+  "question": "Rut 2:11–12 enseña que Dios solo acoge bajo sus alas a quienes nacieron en el pueblo de Israel.",
+  "feedbackCorrect": "Quien buscó refugio fue una moabita, una extranjera.",
+  "feedbackWrong": {
+   "true": "La acogida aquí es precisamente para una extranjera que buscó refugio."
+  },
+  "hint": "Recuerda de dónde venía Rut.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-pro-rute-04-asas-02": {
+  "question": "En Rut 2:12, toca la frase que muestra la iniciativa de Rut de buscar refugio en Dios.",
+  "feedbackCorrect": "Ella no encontró refugio por casualidad: lo buscó al venir.",
+  "feedbackWrong": {
+   "a": "Ese es quien la protege; la búsqueda aparece en otra frase.",
+   "b": "Eso es lo que será recompensado, no la búsqueda en sí."
+  },
+  "hint": "Busca el verbo que tiene a Rut como sujeto."
+ },
+ "rute-pro-rute-04-asas-03": {
+  "question": "¿Qué interpretación sobre Rut bajo las alas de Dios respalda Rut 2:11–12?",
+  "feedbackCorrect": "Aunque viene de fuera del pueblo, es acogida en el refugio de su Dios.",
+  "feedbackWrong": {
+   "a": "Su fe está en el Dios de Israel, no es propiedad de Booz.",
+   "b": "Las alas son una imagen de cuidado, no de protección física literal.",
+   "c": "Ella sigue recogiendo espigas en el campo: el refugio no elimina el trabajo."
+  },
+  "hint": "Relaciona su origen con la imagen que usa Booz.",
+  "options": {
+   "a": "Booz pasa a ser el dueño de la fe de Rut",
+   "b": "Dios protege con alas físicas a quienes trabajan bien",
+   "c": "Quienes tienen refugio en Dios no necesitan trabajar",
+   "d": "La extranjera es acogida en el refugio del Dios de Israel"
+  }
+ },
+ "rute-pro-rute-04-asas-04": {
+  "question": "¿Qué secuencia revela el sentido de Rut 2:11–12?",
+  "feedbackCorrect": "Renuncia, refugio y recompensa pedida: ese es el camino de ella hacia Dios.",
+  "feedbackWrong": {
+   "default": "Comienza por lo que dejó en Moab."
+  },
+  "hint": "La recompensa pedida completa la secuencia.",
+  "options": {
+   "a": "Deja a su padre, a su madre y su tierra natal",
+   "b": "Busca refugio en el Dios de Israel",
+   "c": "Booz pide una recompensa plena al Señor"
+  }
+ },
+ "rute-pro-rute-04-asas-05": {
+  "question": "En Rut 2:12, ¿qué pide Booz que venga del Señor para Rut?",
+  "feedbackCorrect": "Booz pide que su recompensa venga del propio Señor.",
+  "feedbackWrong": {
+   "a": "Ella ya hizo el viaje; ahora la petición es otra.",
+   "c": "Amargura es la palabra de Noemí, no la petición de Booz."
+  },
+  "hint": "Es lo que corresponde a la actitud de ella."
+ },
+ "rute-pro-rute-04-asas-06": {
+  "question": "¿Qué conecta Rut 2:12 con Mateo 23:37?",
+  "feedbackCorrect": "Jesús usa la misma imagen: reunir a los hijos bajo sus alas.",
+  "feedbackWrong": {
+   "b": "Jesús lamenta el rechazo, no anuncia un final así.",
+   "c": "La gallina es una imagen de cuidado, no el tema literal."
+  },
+  "hint": "Mira la imagen que Jesús usa para Jerusalén.",
+  "options": {
+   "a": "Jesús reúne bajo sus alas",
+   "b": "El fin del pueblo de Israel",
+   "c": "Una gallina perdida en el campo"
+  }
+ },
+ "rute-sem-rute-05-capa-01": {
+  "question": "En Rut 3:11, Booz prometió hacer todo lo que Rut le dijo.",
+  "feedbackCorrect": "Son sus palabras: haré todo lo que has dicho.",
+  "feedbackWrong": {
+   "false": "Lee Rut 3:11 de nuevo: esa es exactamente la promesa de Booz."
+  },
+  "hint": "Mira el compromiso que asume.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-sem-rute-05-capa-02": {
+  "question": "En Rut 3:9, toca quién dice Rut que es Booz para la familia.",
+  "feedbackCorrect": "Por su papel como pariente, ella le pide protección.",
+  "feedbackWrong": {
+   "a": "Sierva es como ella se presenta, no quién es él.",
+   "c": "Ese es su nombre, no el papel de él."
+  },
+  "hint": "Busca el parentesco al final del versículo."
+ },
+ "rute-sem-rute-05-capa-03": {
+  "question": "Según Rut 3:9, ¿qué le pidió Rut a Booz en la era?",
+  "feedbackCorrect": "La petición es recibir la protección del pariente redentor.",
+  "feedbackWrong": {
+   "a": "Recibirá cebada, pero aquí pide protección.",
+   "b": "Habla por sí misma, cara a cara con él.",
+   "c": "No pide que la esconda; pide un compromiso."
+  },
+  "hint": "Mira el gesto que le pide que haga sobre ella.",
+  "options": {
+   "a": "Que le diera más cebada para llevar",
+   "b": "Que hablara con Noemí por ella",
+   "c": "Que la escondiera hasta la mañana",
+   "d": "Que extendiera su manto sobre ella"
+  }
+ },
+ "rute-sem-rute-05-capa-04": {
+  "question": "Ordena Rut 3:10 según la secuencia del texto.",
+  "feedbackCorrect": "Bendición, elogio de su bondad y el motivo: ese es el orden de sus palabras.",
+  "feedbackWrong": {
+   "default": "Comienza con la bendición que pronuncia sobre ella."
+  },
+  "hint": "Su declaración comienza con una bendición sobre ella."
+ },
+ "rute-sem-rute-05-capa-05": {
+  "question": "En Rut 3:9, ¿qué le pide Rut a Booz que extienda sobre ella?",
+  "feedbackCorrect": "Extender esto sobre alguien era señal de compromiso.",
+  "feedbackWrong": {
+   "a": "La mano no se menciona en su petición esa noche.",
+   "b": "Sombra es una imagen de los salmos, no la palabra de esta escena."
+  },
+  "hint": "Es una prenda de su ropa."
+ },
+ "rute-sem-rute-05-capa-06": {
+  "question": "¿Qué comunica Rut 3:11 que se conecta con este contexto?",
+  "feedbackCorrect": "Ella pide la cobertura de quien puede rescatar a la familia.",
+  "feedbackWrong": {
+   "b": "Ella no se despide: pide compromiso.",
+   "c": "Trabajo ya tenía en el campo; la petición es otra."
+  },
+  "hint": "Mira el fundamento que ella da a su petición.",
+  "options": {
+   "a": "Petición de cobertura del rescatador",
+   "b": "Despedida antes de volver",
+   "c": "Petición de más trabajo"
+  }
+ },
+ "rute-cam-rute-05-capa-01": {
+  "question": "En Rut 3:10–11, Booz aceptó ayudar porque Rut salió a buscar a los jóvenes ricos de Belén.",
+  "feedbackCorrect": "Él elogia precisamente lo contrario: ella no corrió tras jóvenes.",
+  "feedbackWrong": {
+   "true": "Booz dice que ella no siguió jóvenes pobres ni ricos."
+  },
+  "hint": "Mira lo que ella no hizo, según Booz.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-cam-rute-05-capa-02": {
+  "question": "En Rut 3:10, toca la palabrita que da el motivo del elogio de Booz.",
+  "feedbackCorrect": "El elogio tiene motivo: ella no buscó a un joven cualquiera.",
+  "feedbackWrong": {
+   "b": "Joven es a quien ella no buscó, no el motivo en sí.",
+   "c": "Ricos describe a los jóvenes, sin explicar el elogio."
+  },
+  "hint": "Busca la conjunción corta en medio de la frase."
+ },
+ "rute-cam-rute-05-capa-03": {
+  "question": "¿Cómo explica Rut 3:10 la última bondad de Rut, mejor que la primera?",
+  "feedbackCorrect": "Antes, lealtad a la suegra; ahora, lealtad al futuro de la familia.",
+  "feedbackWrong": {
+   "a": "Ningún regalo se menciona en su discurso.",
+   "b": "El plan vino de la propia Noemí, sin secreto de ella.",
+   "d": "Horas de trabajo no son el tema del elogio."
+  },
+  "hint": "Compara las dos lealtades de ella en su discurso.",
+  "options": {
+   "a": "Ella trajo regalos caros a la casa de Booz",
+   "b": "Ella escondió de Noemí el plan de aquella noche",
+   "c": "Ella buscó el rescate de la familia, no a un joven cualquiera",
+   "d": "Ella trabajó más horas que el primer día"
+  }
+ },
+ "rute-cam-rute-05-capa-04": {
+  "question": "¿Cómo se encadenan los eventos de Rut 3:9–11?",
+  "feedbackCorrect": "Petición, bendición y promesa: es el orden de la conversación.",
+  "feedbackWrong": {
+   "default": "Empieza por la petición de ella en la era."
+  },
+  "hint": "La promesa de él cierra la conversación.",
+  "options": {
+   "a": "Ella se presenta y pide cobertura",
+   "b": "Él la bendice por su lealtad",
+   "c": "Él promete hacer lo que ella dijo"
+  }
+ },
+ "rute-cam-rute-05-capa-05": {
+  "question": "En Rut 3:11, ¿qué afirma Booz que hará de todo lo que Rut dijo?",
+  "feedbackCorrect": "No es quizás: él se compromete a actuar.",
+  "feedbackWrong": {
+   "a": "Él no lo posterga para pensar: promete actuar.",
+   "c": "Contar a la ciudad no es la promesa que él hace."
+  },
+  "hint": "Es un compromiso, no una duda."
+ },
+ "rute-cam-rute-05-capa-06": {
+  "question": "¿Qué conecta Rut 3:9 con Ezequiel 16:8?",
+  "feedbackCorrect": "En Ezequiel, Dios extiende el manto como señal de alianza.",
+  "feedbackWrong": {
+   "b": "El frío de la noche no es el sentido del gesto.",
+   "c": "No es un regalo de ropa: es señal de compromiso."
+  },
+  "hint": "Mira lo que el gesto significa en ambos textos.",
+  "options": {
+   "a": "Manto extendido como compromiso",
+   "b": "Frío durante la noche en la era",
+   "c": "Ropa nueva para una fiesta"
+  }
+ },
+ "rute-pro-rute-05-capa-01": {
+  "question": "Rut 3:10–11 muestra a Booz asumiendo la petición de Rut con una promesa clara, y no por un impulso escondido.",
+  "feedbackCorrect": "Él bendice, reconoce el valor de ella y promete actuar.",
+  "feedbackWrong": {
+   "false": "Su respuesta es abierta y comprometida, no un impulso."
+  },
+  "hint": "Mira cómo responde a la petición de ella.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-pro-rute-05-capa-02": {
+  "question": "En Rut 3:11, toca a quién, según Booz, conoce el valor de Rut.",
+  "feedbackCorrect": "La reputación de ella es pública, no un secreto de la era.",
+  "feedbackWrong": {
+   "a": "Así es como él la llama, no quien conoce el valor.",
+   "c": "Eso es lo que conocen de ella, no quien conoce."
+  },
+  "hint": "Busca el sujeto que sabe, al inicio de la frase."
+ },
+ "rute-pro-rute-05-capa-03": {
+  "question": "¿Qué lectura sostiene Rut 3:10–11 sobre la escena de la era?",
+  "feedbackCorrect": "Petición de rescate, bendición y promesa: es compromiso, no escándalo.",
+  "feedbackWrong": {
+   "b": "La ciudad ya conoce el valor de ella; nada de vergüenza.",
+   "c": "La petición es de rescate familiar, con motivo declarado.",
+   "d": "Él la protege y promete actuar abiertamente, por la mañana."
+  },
+  "hint": "Mira el motivo que ella misma declara.",
+  "options": {
+   "a": "Ella pide rescate al pariente y él acepta el encargo",
+   "b": "Los dos esconden un plan vergonzoso de la ciudad",
+   "c": "Ella armó una seducción para atrapar a Booz",
+   "d": "Booz se aprovechó de ella durante la noche"
+  }
+ },
+ "rute-pro-rute-05-capa-04": {
+  "question": "¿Qué secuencia revela el sentido de Rut 3:9–13?",
+  "feedbackCorrect": "Petición, reconocimiento y acción responsable: el rescate avanza.",
+  "feedbackWrong": {
+   "default": "Empieza por la petición de ella; la acción viene al final."
+  },
+  "hint": "La promesa de actuar cierra la secuencia.",
+  "options": {
+   "a": "Ella pide la cobertura del rescatador",
+   "b": "Él reconoce públicamente el valor de ella",
+   "c": "Él promete actuar, tras oír al otro pariente"
+  }
+ },
+ "rute-pro-rute-05-capa-05": {
+  "question": "En Rut 3:11, ¿qué cualidad reconoce toda la ciudad en Rut?",
+  "feedbackCorrect": "Mujer de valor: es su nombre público en Belén.",
+  "feedbackWrong": {
+   "a": "Booz precisamente le dice que no tenga ningún temor.",
+   "c": "Ella llegó pobre; lo que la ciudad vio fue carácter."
+  },
+  "hint": "Es carácter, no bienes ni temor."
+ },
+ "rute-pro-rute-05-capa-06": {
+  "question": "¿Qué conecta Rut 3:9 con Levítico 25:25?",
+  "feedbackCorrect": "La ley preveía el pariente que rescata lo que la familia perdió.",
+  "feedbackWrong": {
+   "a": "La ley protege al que empobreció, no lo castiga.",
+   "c": "No es una venta común: es rescate por parentesco."
+  },
+  "hint": "Mira quién podía rescatar en la ley antigua.",
+  "options": {
+   "a": "Castigo para el que empobrece",
+   "b": "Pariente que rescata lo perdido",
+   "c": "Venta común de un campo"
+  }
+ },
+ "rute-sem-rute-lealdade-01-rute-e-noemi-01": {
+  "question": "En Rut 1:14, Rut se apegó a Noemí después de que Orfa se despidió de ella.",
+  "feedbackCorrect": "Orfa se despidió con un beso, pero Rut se apegó a su suegra.",
+  "feedbackWrong": {
+   "false": "Vuelve a leer el final de Rut 1:14: Orfa partió, pero Rut se apegó a ella."
+  },
+  "hint": "Mira el final del versículo.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-sem-rute-lealdade-01-rute-e-noemi-02": {
+  "question": "En Rut 1:14, toca quién se apegó a su suegra.",
+  "feedbackCorrect": "Ella no se despidió: se apegó a su suegra.",
+  "feedbackWrong": {
+   "a": "Orfa se despidió con un beso y partió.",
+   "b": "La suegra es Noemí, a quien ella se apegó."
+  },
+  "hint": "Busca a quien hizo lo contrario de despedirse."
+ },
+ "rute-sem-rute-lealdade-01-rute-e-noemi-03": {
+  "question": "Según Rut 1:16, ¿qué decidió Rut sobre el pueblo y el Dios de Noemí?",
+  "feedbackCorrect": "Ella declara: tu pueblo es mi pueblo, y tu Dios es mi Dios.",
+  "feedbackWrong": {
+   "b": "Ningún esposo se menciona en su decisión.",
+   "c": "Ella va con Noemí, apegada a ella, no por su cuenta.",
+   "d": "Volver era el camino de Orfa, que ella rechaza."
+  },
+  "hint": "Lee la segunda mitad del versículo.",
+  "options": {
+   "a": "Hacer suyos el pueblo y el Dios de ella",
+   "b": "Buscar esposo entre los moabitas",
+   "c": "Vivir en Belén sin seguir a Noemí",
+   "d": "Volver a Moab como hizo Orfa"
+  }
+ },
+ "rute-sem-rute-lealdade-01-rute-e-noemi-04": {
+  "question": "Ordena Rut 1:16 según el texto.",
+  "feedbackCorrect": "Ir, posar, y por último pueblo y Dios: es el orden de su declaración.",
+  "feedbackWrong": {
+   "default": "Empieza por el ir; pueblo y Dios cierran la declaración."
+  },
+  "hint": "La declaración cierra con pueblo y Dios."
+ },
+ "rute-sem-rute-lealdade-01-rute-e-noemi-05": {
+  "question": "En Rut 1:14, ¿qué verbo dice lo que Rut hizo en relación con su suegra?",
+  "feedbackCorrect": "Orfa se despidió; ella, al contrario, se apegó a su suegra.",
+  "feedbackWrong": {
+   "b": "Quien se despidió fue Orfa, con un beso.",
+   "c": "Las dos lloraron antes; el gesto de ella fue otro."
+  },
+  "hint": "Es lo contrario de lo que hizo Orfa."
+ },
+ "rute-sem-rute-lealdade-01-rute-e-noemi-06": {
+  "question": "¿Qué comunica Rut 1:16 que se conecta con este contexto?",
+  "feedbackCorrect": "Ella elige quedarse: pueblo, Dios y camino de Noemí se vuelven suyos.",
+  "feedbackWrong": {
+   "a": "Volver era el camino de Orfa, que ella rechaza.",
+   "b": "Ningún matrimonio se menciona en su decisión."
+  },
+  "hint": "Mira lo que ella dice sobre pueblo y Dios.",
+  "options": {
+   "a": "Vuelve a Moab",
+   "b": "Busca matrimonio",
+   "c": "Lealtad que elige quedarse"
+  }
+ },
+ "rute-cam-rute-lealdade-01-rute-e-noemi-01": {
+  "question": "En Rut 1:14–15, Noemí mandó a Rut a irse porque Rut se negó a acompañarla.",
+  "feedbackCorrect": "Es lo contrario: ella se apegó, y Noemí le dice que vuelva como volvió Orfa.",
+  "feedbackWrong": {
+   "true": "Ella no se negó: se apegó. Noemí le dice que siga el ejemplo de Orfa."
+  },
+  "hint": "Compara el gesto de ella con la petición de Noemí.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-cam-rute-lealdade-01-rute-e-noemi-02": {
+  "question": "En Rut 1:14, toca la palabra que marca el contraste entre Orfa y Rut.",
+  "feedbackCorrect": "Una se despidió, pero la otra se apegó: la palabrita cambia la escena.",
+  "feedbackWrong": {
+   "a": "Esa palabra abre el versículo y no opone a nadie.",
+   "b": "Esa palabra acompaña el beso de la despedida, sin oponer."
+  },
+  "hint": "Busca la conjunción entre las dos acciones."
+ },
+ "rute-cam-rute-lealdade-01-rute-e-noemi-03": {
+  "question": "¿Cómo responde la declaración de Rut en Rut 1:16 al habla de Noemí en Rut 1:15?",
+  "feedbackCorrect": "Mandada de vuelta, ella responde que no la dejará: irá con Noemí.",
+  "feedbackWrong": {
+   "a": "Ella no negocia un regreso futuro; se queda de una vez.",
+   "b": "Ella hace lo contrario: el Dios de Noemí pasa a ser su Dios.",
+   "c": "No hay petición de tiempo: la decisión ya está tomada."
+  },
+  "hint": "Mira cómo empieza su respuesta a Noemí.",
+  "options": {
+   "a": "Ella promete volver después de visitar Moab",
+   "b": "Ella acepta volver a los dioses de Moab",
+   "c": "Ella pide un tiempo para pensar en Belén",
+   "d": "Ella rechaza volver y elige el camino de Noemí"
+  }
+ },
+ "rute-cam-rute-lealdade-01-rute-e-noemi-04": {
+  "question": "¿Cómo se encadenan los eventos de Rut 1:14–15?",
+  "feedbackCorrect": "Primero la despedida de Orfa, después el apego de ella y la petición de Noemí.",
+  "feedbackWrong": {
+   "default": "La petición de Noemí viene después de los dos gestos de las nueras."
+  },
+  "hint": "La petición de Noemí es la última habla de la escena.",
+  "options": {
+   "a": "Orfa se despide de su suegra con un beso",
+   "b": "Rut se apega a Noemí en vez de partir",
+   "c": "Noemí manda a Rut volver tras su cuñada"
+  }
+ },
+ "rute-cam-rute-lealdade-01-rute-e-noemi-05": {
+  "question": "En Rut 1:18, ¿cómo describe el texto la postura de Rut ante Noemí?",
+  "feedbackCorrect": "Noemí vio que ella estaba del todo decidida, y dejó de insistir.",
+  "feedbackWrong": {
+   "a": "Miedo no aparece: ella juró quedarse hasta la muerte.",
+   "b": "El texto dice lo contrario: ella estaba del todo firme."
+  },
+  "hint": "Mira por qué Noemí dejó de insistir."
+ },
+ "rute-cam-rute-lealdade-01-rute-e-noemi-06": {
+  "question": "¿Qué conecta Rut 1:16 con 2 Samuel 15:21?",
+  "feedbackCorrect": "Itai, también extranjero, jura quedarse con David como ella se quedó con Noemí.",
+  "feedbackWrong": {
+   "a": "Los dos hacen lo contrario: se quedan en vez de volver.",
+   "c": "La guerra es el escenario de Itai, no el punto en común de los juramentos."
+  },
+  "hint": "Compara el juramento de los dos extranjeros.",
+  "options": {
+   "a": "Vuelve a la tierra natal",
+   "b": "Extranjero que se queda por lealtad",
+   "c": "Huida de una guerra civil"
+  }
+ },
+ "rute-pro-rute-lealdade-01-rute-e-noemi-01": {
+  "question": "Rut 1:16–17 muestra una lealtad que incluye pueblo, Dios, morada y hasta sepultura.",
+  "feedbackCorrect": "Ir, posar, morir y ser sepultada: ella entrega la vida entera.",
+  "feedbackWrong": {
+   "false": "Vuelve a leer los dos versículos: ella incluye camino, pueblo, Dios y sepultura."
+  },
+  "hint": "Suma todo lo que ella promete en los dos versículos.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-pro-rute-lealdade-01-rute-e-noemi-02": {
+  "question": "En Rut 1:17, toca qué, según el juramento, solo eso podría separarla de Noemí.",
+  "feedbackCorrect": "Ella jura: solo algo más allá de eso la separaría de Noemí.",
+  "feedbackWrong": {
+   "a": "Ser sepultada es parte de la promesa, no lo que separa.",
+   "b": "El Señor es invocado en el juramento, no es lo que separa."
+  },
+  "hint": "Lee el final de su juramento."
+ },
+ "rute-pro-rute-lealdade-01-rute-e-noemi-03": {
+  "question": "¿Qué lectura sostiene Rut 1:16–17 sobre la decisión de Rut?",
+  "feedbackCorrect": "Ella elige pueblo y Dios con juramento: es fe y pertenencia.",
+  "feedbackWrong": {
+   "b": "Ningún matrimonio se menciona ni se promete en la escena.",
+   "c": "Un juramento hasta la sepultura no es un impulso sin peso.",
+   "d": "Noemí mandó lo contrario: volver a Moab."
+  },
+  "hint": "Mira lo que ella dice sobre el Dios de Noemí.",
+  "options": {
+   "a": "Fue elección de fe y pertenencia, no solo compañía",
+   "b": "Fue cálculo para conseguir matrimonio en Belén",
+   "c": "Fue impulso del momento, sin peso alguno",
+   "d": "Fue obediencia ciega a una orden de Noemí"
+  }
+ },
+ "rute-pro-rute-lealdade-01-rute-e-noemi-04": {
+  "question": "¿Qué secuencia revela el sentido de Rut 1:16 en la historia mayor?",
+  "feedbackCorrect": "La moabita que se quedó entra en el linaje de David y de Jesús.",
+  "feedbackWrong": {
+   "default": "Empieza por su llegada al pueblo; David es el punto final."
+  },
+  "hint": "Sigue desde su llegada hasta David.",
+  "options": {
+   "a": "La moabita se apega al pueblo de Noemí",
+   "b": "Ella entra en la familia de Booz y da a luz a Obed",
+   "c": "De Obed viene Isaí, y de Isaí viene David"
+  }
+ },
+ "rute-pro-rute-lealdade-01-rute-e-noemi-05": {
+  "question": "En Rut 1:16, ¿a quién elige Rut como suyo, junto con el pueblo de Noemí?",
+  "feedbackCorrect": "Su elección es también de fe: el Dios de Noemí se vuelve su Dios.",
+  "feedbackWrong": {
+   "a": "El pueblo también lo elige, pero el espacio pide el otro nombre.",
+   "b": "El camino lo sigue, pero no es el nombre que cierra la frase."
+  },
+  "hint": "Mira la segunda mitad de la declaración."
+ },
+ "rute-pro-rute-lealdade-01-rute-e-noemi-06": {
+  "question": "¿Qué conecta Rut 1:16 con Mateo 1:5?",
+  "feedbackCorrect": "Mateo pone a la moabita que se quedó en la genealogía de Jesús.",
+  "feedbackWrong": {
+   "a": "Mateo no narra otra salida; él lista generaciones.",
+   "c": "Es lo contrario: por ella, la familia de Noemí continúa."
+  },
+  "hint": "Mira dónde reaparece su nombre en el Nuevo Testamento.",
+  "options": {
+   "a": "Una segunda salida de Moab",
+   "b": "Rut en el linaje de Jesús",
+   "c": "El fin de la familia de Noemí"
+  }
+ },
+ "rute-sem-rute-lealdade-02-nos-campos-de-boaz-01": {
+  "question": "En Rut 2:8, Booz mandó a Rut a espigar en otro campo, lejos de sus criadas.",
+  "feedbackCorrect": "Él dijo lo contrario: nada de otro campo; quédate cerca de las criadas.",
+  "feedbackWrong": {
+   "true": "Vuelve a leer Rut 2:8: él prohíbe otro campo y manda quedarse cerca de las criadas."
+  },
+  "hint": "Mira el primer consejo de Booz.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-sem-rute-lealdade-02-nos-campos-de-boaz-02": {
+  "question": "En Rut 2:8, toca junto a quién Booz mandó a Rut a quedarse.",
+  "feedbackCorrect": "Ella debía quedarse cerca de sus criadas, no sola.",
+  "feedbackWrong": {
+   "a": "El campo es el lugar; ella debía quedarse junto a personas.",
+   "b": "Hija es como Booz la llama, no junto a quién quedarse."
+  },
+  "hint": "Busca el grupo que trabajaba con Booz."
+ },
+ "rute-sem-rute-lealdade-02-nos-campos-de-boaz-03": {
+  "question": "Según Rut 2:9, ¿qué podía hacer Rut cuando tuviera sed?",
+  "feedbackCorrect": "Ella podía ir a los vasos y beber de lo que los jóvenes habían sacado.",
+  "feedbackWrong": {
+   "a": "Ella no necesitaba salir del campo: había vasos allí.",
+   "b": "El agua ya estaba sacada en los vasos, a su disposición.",
+   "c": "Noemí ni se menciona en este habla de Booz."
+  },
+  "hint": "Mira lo que ya estaba listo en los vasos.",
+  "options": {
+   "a": "Volver a Belén para beber en casa",
+   "b": "Esperar que la lluvia moje el campo",
+   "c": "Pedir que Noemí le trajera agua",
+   "d": "Beber del agua sacada por los jóvenes"
+  }
+ },
+ "rute-sem-rute-lealdade-02-nos-campos-de-boaz-04": {
+  "question": "Ordena Rut 2:9 según el texto.",
+  "feedbackCorrect": "Ojos en el campo, tras las criadas, y agua en los vasos: es el orden.",
+  "feedbackWrong": {
+   "default": "Empieza por los ojos atentos al campo que siegan."
+  },
+  "hint": "El habla comienza con los ojos de ella en el campo."
+ },
+ "rute-sem-rute-lealdade-02-nos-campos-de-boaz-05": {
+  "question": "En Rut 2:9, ¿qué podía saciar Rut bebiendo de los vasos?",
+  "feedbackCorrect": "Booz pensó hasta en la sed de ella durante el trabajo.",
+  "feedbackWrong": {
+   "b": "Descanso no aparece en esta instrucción de Booz.",
+   "c": "Comida no se menciona aquí; el habla es sobre beber."
+  },
+  "hint": "Es la necesidad de quien trabaja al sol."
+ },
+ "rute-sem-rute-lealdade-02-nos-campos-de-boaz-06": {
+  "question": "¿Qué comunica Rut 2:8 que se conecta con este contexto?",
+  "feedbackCorrect": "El dueño del campo la mantiene allí, junto a las criadas: protección.",
+  "feedbackWrong": {
+   "a": "La cosecha está comenzando para ella, no terminando.",
+   "b": "Booz la mantiene en Belén, no la manda de vuelta."
+  },
+  "hint": "Mira lo que el dueño del campo le ofrece.",
+  "options": {
+   "a": "Fin de la cosecha en Belén",
+   "b": "Vuelta a Moab",
+   "c": "Protección en el campo de Booz"
+  }
+ },
+ "rute-cam-rute-lealdade-02-nos-campos-de-boaz-01": {
+  "question": "En Rut 2:8–9, Booz protege a Rut al mandarla a quedarse con las criadas y al prohibir a los jóvenes que la toquen.",
+  "feedbackCorrect": "Lugar junto a las criadas y orden a los jóvenes: protección completa.",
+  "feedbackWrong": {
+   "false": "Vuelve a leer los dos versículos: hay lugar definido y orden de protección."
+  },
+  "hint": "Junta las instrucciones de los dos versículos.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-cam-rute-lealdade-02-nos-campos-de-boaz-02": {
+  "question": "En Rut 2:9, toca la palabra que abre la instrucción sobre la sed de Rut.",
+  "feedbackCorrect": "La provisión ya queda arreglada para el momento de la necesidad.",
+  "feedbackWrong": {
+   "a": "Los vasos son el medio, no la palabra que abre la instrucción.",
+   "b": "Los jóvenes sacan el agua; la instrucción empieza antes de ellos."
+  },
+  "hint": "Busca la primera palabra de la segunda mitad."
+ },
+ "rute-cam-rute-lealdade-02-nos-campos-de-boaz-03": {
+  "question": "¿Cómo completa Rut 2:9 la instrucción dada en Rut 2:8?",
+  "feedbackCorrect": "Primero el lugar, luego la protección de los hombres y el agua de las vasijas.",
+  "feedbackWrong": {
+   "a": "El campo sigue siendo el mismo; no se menciona ningún cambio.",
+   "b": "Es lo contrario: debe quedarse cerca de las criadas.",
+   "d": "Sigue espigando; no se menciona ninguna dispensa."
+  },
+  "hint": "Compara lo que añade cada versículo.",
+  "options": {
+   "a": "Cambia el campo de Booz por otro campo mejor",
+   "b": "Le dice a Rut que trabaje lejos de las criadas",
+   "c": "Añade protección y agua al lugar donde se quedará",
+   "d": "Libera a Rut del trabajo al final del día"
+  }
+ },
+ "rute-cam-rute-lealdade-02-nos-campos-de-boaz-04": {
+  "question": "¿Cómo se encadenan los cuidados de Booz en Rut 2:8–9?",
+  "feedbackCorrect": "Lugar, protección y agua: los cuidados vienen en ese orden.",
+  "feedbackWrong": {
+   "default": "Comienza por el lugar donde debe quedarse."
+  },
+  "hint": "El agua es el último cuidado mencionado.",
+  "options": {
+   "a": "Ella se queda en este campo, junto a las criadas",
+   "b": "Los hombres tienen prohibido tocarla",
+   "c": "Ella puede beber del agua de las vasijas"
+  }
+ },
+ "rute-cam-rute-lealdade-02-nos-campos-de-boaz-05": {
+  "question": "En Rut 2:9, ¿qué recibieron los hombres la orden de no hacerle a Rut?",
+  "feedbackCorrect": "La orden protege el cuerpo y la honra de la extranjera en el campo.",
+  "feedbackWrong": {
+   "b": "Seguirla es lo que harían las criadas; la orden es otra.",
+   "c": "No se prohíbe mirar; la orden se refiere al contacto físico."
+  },
+  "hint": "Es un límite físico impuesto a los trabajadores."
+ },
+ "rute-cam-rute-lealdade-02-nos-campos-de-boaz-06": {
+  "question": "¿Qué relaciona Rut 2:8 con Levítico 19:9?",
+  "feedbackCorrect": "La ley dejaba parte de la cosecha para el pobre y el extranjero.",
+  "feedbackWrong": {
+   "a": "La ley hace lo contrario: ordena no cosecharlo todo.",
+   "c": "La ley regula la cosecha, no la prohíbe."
+  },
+  "hint": "Observa para quién quedaba parte de la cosecha.",
+  "options": {
+   "a": "Cosecha reservada solo para el dueño",
+   "b": "Cosecha dejada para el extranjero",
+   "c": "Trabajo prohibido durante la cosecha"
+  }
+ },
+ "rute-pro-rute-lealdade-02-nos-campos-de-boaz-01": {
+  "question": "Rut 2:8–9 enseña que Rut pagó el favor de Booz con un día entero de trabajo en aquel campo.",
+  "feedbackCorrect": "El favor viene primero: él la recibe y protege sin exigirle nada a cambio.",
+  "feedbackWrong": {
+   "true": "No se menciona ningún pago: Booz se lo ofrece antes de que ella produzca."
+  },
+  "hint": "Observa quién toma la iniciativa en esta escena.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-pro-rute-lealdade-02-nos-campos-de-boaz-02": {
+  "question": "En Rut 2:8, toca la frase que muestra que Rut es acogida junto al grupo de Booz.",
+  "feedbackCorrect": "Ella no espiga aislada: la ponen junto a las criadas de él.",
+  "feedbackWrong": {
+   "a": "Otro campo es lo que debe evitar, no una señal de acogida.",
+   "b": "Esto muestra la bondad de Booz, pero la acogida en el grupo está en otra parte."
+  },
+  "hint": "Busca el grupo al que ella se incorpora."
+ },
+ "rute-pro-rute-lealdade-02-nos-campos-de-boaz-03": {
+  "question": "¿Qué interpretación permite sostener Rut 2:8–9 sobre lo que le sucede a Rut en el campo?",
+  "feedbackCorrect": "La llama hija y la protege: un favor para quien no tenía nada.",
+  "feedbackWrong": {
+   "a": "Booz actúa primero; ella ni siquiera se lo ha pedido.",
+   "b": "En este encuentro en el campo no se hace ninguna petición.",
+   "d": "Booz hace lo contrario: la pone junto a las criadas."
+  },
+  "hint": "Observa cómo la trata Booz desde sus primeras palabras.",
+  "options": {
+   "a": "Rut manipula a Booz para asegurarse un lugar",
+   "b": "Booz ya le pide matrimonio en este encuentro",
+   "c": "Una extranjera vulnerable recibe protección inmerecida",
+   "d": "Las extranjeras siempre debían espigar solas"
+  }
+ },
+ "rute-pro-rute-lealdade-02-nos-campos-de-boaz-04": {
+  "question": "¿Qué secuencia revela el sentido de Rut 2:8 en la historia más amplia?",
+  "feedbackCorrect": "De la ley al gesto de Booz, Dios sostiene a quienes regresaron vacías.",
+  "feedbackWrong": {
+   "default": "Comienza por la ley antigua; el sustento de las viudas es el resultado."
+  },
+  "hint": "Sigue el recorrido desde la ley antigua hasta la vida de las viudas.",
+  "options": {
+   "a": "La ley deja parte de la cosecha para el extranjero",
+   "b": "Booz protege a la extranjera en su campo",
+   "c": "Dios sustenta a las dos viudas en Belén"
+  }
+ },
+ "rute-pro-rute-lealdade-02-nos-campos-de-boaz-05": {
+  "question": "En Rut 2:8, ¿cómo llama Booz a Rut al comienzo de su discurso?",
+  "feedbackCorrect": "Una extranjera es llamada hija por el dueño del campo.",
+  "feedbackWrong": {
+   "a": "Ella es viuda, pero Booz la llama de otra manera.",
+   "c": "Sierva es como la llamarán después, no aquí."
+  },
+  "hint": "Es un término familiar, no laboral."
+ },
+ "rute-pro-rute-lealdade-02-nos-campos-de-boaz-06": {
+  "question": "¿Qué relaciona Rut 2:8 con Salmos 68:5?",
+  "feedbackCorrect": "El salmo llama a Dios defensor de las viudas; aquí actúa por medio de Booz.",
+  "feedbackWrong": {
+   "a": "El salmo afirma precisamente que ellas tienen un defensor.",
+   "c": "Ninguno de los textos presenta la cosecha como castigo."
+  },
+  "hint": "Observa a quién dice el salmo que Dios defiende.",
+  "options": {
+   "a": "Viudas sin ningún defensor",
+   "b": "Dios, defensor de las viudas",
+   "c": "La cosecha como castigo divino"
+  }
+ },
+ "rute-sem-rute-redencao-01-o-resgatador-01": {
+  "question": "En Rut 4:17, las vecinas llamaron Isaí al hijo de Booz y Rut.",
+  "feedbackCorrect": "El nombre que le dieron fue Obed; Isaí fue su hijo.",
+  "feedbackWrong": {
+   "true": "Lee otra vez Rut 4:17: el nombre que le dieron las vecinas es otro."
+  },
+  "hint": "Busca el nombre que le dieron las vecinas.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-sem-rute-redencao-01-o-resgatador-02": {
+  "question": "En Rut 4:17, toca el nombre que las vecinas le dieron al niño.",
+  "feedbackCorrect": "Las vecinas le dieron el nombre al hijo de la moabita.",
+  "feedbackWrong": {
+   "b": "Ellas le dieron el nombre; no son el nombre que le dieron.",
+   "c": "Ese es su hijo, de la siguiente generación."
+  },
+  "hint": "Busca el nombre que aparece después de la palabra nombre."
+ },
+ "rute-sem-rute-redencao-01-o-resgatador-03": {
+  "question": "Según Rut 4:17, ¿quién es Obed en la familia que se forma?",
+  "feedbackCorrect": "Él es el vínculo: hijo de Booz y padre de Isaí.",
+  "feedbackWrong": {
+   "b": "Es antepasado de David, no su hermano.",
+   "c": "El esposo de Noemí murió en Moab años antes.",
+   "d": "Isaí es el padre de David, una generación después de él."
+  },
+  "hint": "Observa de quién es padre en el texto.",
+  "options": {
+   "a": "Hijo de Booz que después engendró a Isaí",
+   "b": "Hermano menor del rey David",
+   "c": "Esposo de Noemí en su vejez",
+   "d": "Padre de David e hijo directo de Booz"
+  }
+ },
+ "rute-sem-rute-redencao-01-o-resgatador-04": {
+  "question": "Ordena Rut 4:21–22 según la secuencia del texto.",
+  "feedbackCorrect": "Salmón, Booz, Obed, Isaí y David: ese es el orden de la lista.",
+  "feedbackWrong": {
+   "default": "Comienza por Salmón, el más antiguo de estos tres pasajes."
+  },
+  "hint": "Sigue el verbo engendró, de padre a hijo."
+ },
+ "rute-sem-rute-redencao-01-o-resgatador-05": {
+  "question": "En Rut 4:22, ¿cuál es el último nombre de la genealogía, engendrado por Isaí?",
+  "feedbackCorrect": "Toda la lista avanza hasta llegar a ese nombre.",
+  "feedbackWrong": {
+   "a": "Él es el comienzo de la lista, no el final.",
+   "c": "Él es el abuelo, dos generaciones antes del final."
+  },
+  "hint": "Es el nombre que cierra todo el libro."
+ },
+ "rute-sem-rute-redencao-01-o-resgatador-06": {
+  "question": "¿Qué comunica Rut 4:14 que se relaciona con este contexto?",
+  "feedbackCorrect": "Las mujeres interpretan el nacimiento como el cuidado de Dios por ella.",
+  "feedbackWrong": {
+   "a": "El pueblo celebra con ella, no la olvida.",
+   "b": "Ella permanece en Belén, ahora con un nieto en brazos."
+  },
+  "hint": "Observa lo que las mujeres dicen que Dios hizo.",
+  "options": {
+   "a": "Belén olvida el regreso de Noemí",
+   "b": "Noemí regresa sola a Moab",
+   "c": "Dios concede un redentor a Noemí"
+  }
+ },
+ "rute-cam-rute-redencao-01-o-resgatador-01": {
+  "question": "En Rut 4:14, las mujeres dicen que el Señor no dejó a Noemí sin un redentor.",
+  "feedbackCorrect": "Sus palabras responden al vacío que Noemí había lamentado.",
+  "feedbackWrong": {
+   "false": "Lee otra vez Rut 4:14: precisamente eso es lo que ellas celebran."
+  },
+  "hint": "Observa el motivo de la celebración de las mujeres.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-cam-rute-redencao-01-o-resgatador-02": {
+  "question": "En Rut 4:21, toca quién engendró a Obed, según la genealogía.",
+  "feedbackCorrect": "El pariente redentor del capítulo anterior es el padre del niño.",
+  "feedbackWrong": {
+   "a": "Él es el hijo engendrado aquí, no quien lo engendró.",
+   "b": "Él es el padre de Booz, una generación antes."
+  },
+  "hint": "Busca el nombre que aparece justo antes del verbo engendró."
+ },
+ "rute-cam-rute-redencao-01-o-resgatador-03": {
+  "question": "¿Cómo continúa la genealogía de Rut 4:18–22 la historia del niño?",
+  "feedbackCorrect": "Obed no es el punto final: desde él, la lista avanza hasta David.",
+  "feedbackWrong": {
+   "b": "Él engendra a Isaí: la historia continúa por medio de él.",
+   "c": "La descendencia es la de la familia rescatada en Belén.",
+   "d": "Cada nombre engendra al siguiente, en un orden claro."
+  },
+  "hint": "Observa dónde termina la lista.",
+  "options": {
+   "a": "Ubica al niño en una descendencia que llega hasta David",
+   "b": "Presenta al niño como el final aislado de la familia",
+   "c": "Cambia a la familia de Noemí por otra en Moab",
+   "d": "Repite los nombres sin ningún orden generacional"
+  }
+ },
+ "rute-cam-rute-redencao-01-o-resgatador-04": {
+  "question": "¿Cómo se encadenan las generaciones en Rut 4:21–22?",
+  "feedbackCorrect": "Del abuelo al padre, del padre al niño y de él al rey.",
+  "feedbackWrong": {
+   "default": "Comienza por la generación más antigua de las tres."
+  },
+  "hint": "El rey es el punto de llegada de la lista.",
+  "options": {
+   "a": "Salmón es el padre de Booz, el redentor",
+   "b": "Booz es el padre del niño Obed",
+   "c": "De Obed, la descendencia llega al rey"
+  }
+ },
+ "rute-cam-rute-redencao-01-o-resgatador-05": {
+  "question": "En Rut 4:14, ¿cómo llaman las mujeres al Señor al celebrar el nacimiento?",
+  "feedbackCorrect": "Quien regresó amargada ahora escucha una bendición al Señor.",
+  "feedbackWrong": {
+   "b": "Ellas celebran a un Dios presente, no distante.",
+   "c": "La escena es de diálogo y celebración, no de silencio."
+  },
+  "hint": "Es la primera palabra de alabanza de ellas."
+ },
+ "rute-cam-rute-redencao-01-o-resgatador-06": {
+  "question": "¿Qué relaciona Rut 4:17 con Mateo 1:5?",
+  "feedbackCorrect": "Mateo repite los mismos nombres en la genealogía de Jesús.",
+  "feedbackWrong": {
+   "b": "La familia permanece en Belén y forma parte de la historia de Israel.",
+   "c": "Mateo enumera generaciones, no otro nacimiento aquí."
+  },
+  "hint": "Compara los nombres de ambos textos.",
+  "options": {
+   "a": "La misma descendencia que llega hasta David",
+   "b": "El regreso definitivo a Moab",
+   "c": "Un segundo hijo de Noemí"
+  }
+ },
+ "rute-pro-rute-redencao-01-o-resgatador-01": {
+  "question": "Rut 4:17 presenta la genealogía como un detalle sin relación con la historia de las dos viudas.",
+  "feedbackCorrect": "La lista le da un destino a la historia: de ella surge la descendencia de David.",
+  "feedbackWrong": {
+   "true": "Sin esta lista, el libro perdería su punto de llegada en David."
+  },
+  "hint": "Observa el último nombre de la lista.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-pro-rute-redencao-01-o-resgatador-02": {
+  "question": "En Rut 4:17, toca la frase que muestra hasta dónde llegará la descendencia del niño.",
+  "feedbackCorrect": "Desde el nombre del niño, el texto apunta al futuro rey.",
+  "feedbackWrong": {
+   "b": "Eso anuncia el nacimiento, no el destino de la descendencia.",
+   "c": "Ellas nombran al niño; el destino está en la otra frase."
+  },
+  "hint": "Busca el nombre del rey al final del versículo."
+ },
+ "rute-pro-rute-redencao-01-o-resgatador-03": {
+  "question": "¿Qué interpretación permite sostener Rut 4:14 sobre el final de la historia de Noemí y Rut?",
+  "feedbackCorrect": "Dos viudas sin futuro se convierten en el comienzo de la descendencia del rey.",
+  "feedbackWrong": {
+   "b": "Entre ellas y David están Obed e Isaí, dos generaciones.",
+   "c": "El texto celebra a las viudas y a una extranjera, no solo a los reyes.",
+   "d": "Obed engendra a Isaí: el texto declara que hay un futuro."
+  },
+  "hint": "Relaciona a las protagonistas con el último nombre de la lista.",
+  "options": {
+   "a": "La fidelidad de las viudas entra en la descendencia de David",
+   "b": "David nace directamente de Booz y Rut en Belén",
+   "c": "La genealogía demuestra que a Dios solo le importan los reyes",
+   "d": "La historia termina con el niño, sin ningún futuro"
+  }
+ },
+ "rute-pro-rute-redencao-01-o-resgatador-04": {
+  "question": "¿Qué secuencia revela el sentido de Rut 4:17 en la historia más amplia?",
+  "feedbackCorrect": "Lealtad, nacimiento y descendencia real: ese es el recorrido del libro.",
+  "feedbackWrong": {
+   "default": "Comienza por la decisión de la moabita en el capítulo uno."
+  },
+  "hint": "El rey es el punto final de la historia más amplia.",
+  "options": {
+   "a": "La moabita fiel se queda con su suegra viuda",
+   "b": "El hijo de ella con Booz recibe un nombre",
+   "c": "Desde el niño, la descendencia llega al rey David"
+  }
+ },
+ "rute-pro-rute-redencao-01-o-resgatador-05": {
+  "question": "En Rut 4:17, ¿a quién engendró Obed en la siguiente generación rumbo a David?",
+  "feedbackCorrect": "Él es el vínculo intermedio entre el niño y el rey.",
+  "feedbackWrong": {
+   "a": "Booz es su padre, no su hijo.",
+   "b": "Salmón es su abuelo, dos generaciones antes."
+  },
+  "hint": "Es el nombre que está entre el niño y el rey."
+ },
+ "rute-pro-rute-redencao-01-o-resgatador-06": {
+  "question": "¿Qué relaciona Rut 4:22 con Mateo 1:1?",
+  "feedbackCorrect": "Mateo comienza llamando a Jesús hijo de David.",
+  "feedbackWrong": {
+   "a": "Obed no reina: es un eslabón de la descendencia.",
+   "b": "En estos textos ningún rey regresa a Moab."
+  },
+  "hint": "Observa el título de Jesús al comienzo de Mateo.",
+  "options": {
+   "a": "El trono eterno de Obed",
+   "b": "El regreso del rey a Moab",
+   "c": "David en la descendencia de Jesús"
+  }
+ },
+ "rute-sem-rute-redencao-02-desafio-linhagem-01": {
+  "question": "En Rut 4:14, las mujeres bendijeron al Señor por el redentor concedido a Noemí.",
+  "feedbackCorrect": "Su celebración es una bendición al Señor por el redentor que les dio.",
+  "feedbackWrong": {
+   "false": "Lee otra vez Rut 4:14: las palabras de las mujeres comienzan con una bendición."
+  },
+  "hint": "Observa las primeras palabras de las mujeres.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-sem-rute-redencao-02-desafio-linhagem-02": {
+  "question": "En Rut 4:17, toca el nombre que las vecinas le dieron al niño.",
+  "feedbackCorrect": "Ese es el nombre del hijo de Booz y Rut.",
+  "feedbackWrong": {
+   "b": "Ese nombre corresponde a la siguiente generación, su hijo.",
+   "c": "Hijo es lo que él es, no el nombre que recibió."
+  },
+  "hint": "Busca después de las palabras llamaron su nombre."
+ },
+ "rute-sem-rute-redencao-02-desafio-linhagem-03": {
+  "question": "Según Rut 4:17, ¿qué dijeron las vecinas que le había nacido a Noemí?",
+  "feedbackCorrect": "Para Noemí, el nieto es celebrado como un hijo recibido.",
+  "feedbackWrong": {
+   "a": "El rey viene generaciones después, no en este nacimiento.",
+   "b": "En esta escena no aparece ningún cargo del templo.",
+   "d": "Las vecinas no anuncian a ningún profeta."
+  },
+  "hint": "Escucha lo que las vecinas dicen sobre Noemí.",
+  "options": {
+   "a": "Un rey para gobernar Belén",
+   "b": "Un sacerdote para el templo",
+   "c": "Un hijo en su familia",
+   "d": "Un profeta para juzgar a Israel"
+  }
+ },
+ "rute-sem-rute-redencao-02-desafio-linhagem-04": {
+  "question": "Ordena Rut 4:18–19 según la secuencia del texto.",
+  "feedbackCorrect": "Fares, Hezrón, Ram y Aminadab: ese es el comienzo de la lista.",
+  "feedbackWrong": {
+   "default": "Comienza por Fares, el primer nombre de la genealogía."
+  },
+  "hint": "La lista comienza con Fares."
+ },
+ "rute-sem-rute-redencao-02-desafio-linhagem-05": {
+  "question": "En Rut 4:22, ¿a quién engendró Isaí?",
+  "feedbackCorrect": "Es el nombre que cierra el libro y abre el futuro de Israel.",
+  "feedbackWrong": {
+   "a": "Él es antepasado del niño, no hijo de Isaí.",
+   "b": "Él abre la lista, no la cierra."
+  },
+  "hint": "Es el último nombre de todo el libro."
+ },
+ "rute-sem-rute-redencao-02-desafio-linhagem-06": {
+  "question": "¿Qué comunica Rut 4:14 que se relaciona con este contexto?",
+  "feedbackCorrect": "Quien regresó vacía escucha que Dios le concedió un redentor.",
+  "feedbackWrong": {
+   "b": "Ella permanece en Belén, ahora con una familia.",
+   "c": "El dolor no se borra: recibe una respuesta con un nieto."
+  },
+  "hint": "Observa lo que Dios concedió, según ellas.",
+  "options": {
+   "a": "Un redentor para quien regresó vacía",
+   "b": "El regreso sola a Moab",
+   "c": "El olvido del dolor pasado"
+  }
+ },
+ "rute-sem-rute-redencao-02-desafio-linhagem-07": {
+  "question": "En Rut 4:14, toca lo que las mujeres desean para el nombre del niño en Israel.",
+  "feedbackCorrect": "Ellas desean que el nombre del niño sea famoso en Israel.",
+  "feedbackWrong": {
+   "a": "Eso es lo que Dios concedió, no el deseo sobre el nombre.",
+   "c": "Ese es el pueblo donde se conocería el nombre."
+  },
+  "hint": "Busca el deseo de ellas sobre su nombre."
+ },
+ "rute-sem-rute-redencao-02-desafio-linhagem-08": {
+  "question": "Ordena Rut 4:17 según la secuencia del texto.",
+  "feedbackCorrect": "Las vecinas hablan, anuncian al hijo y le dan un nombre.",
+  "feedbackWrong": {
+   "default": "Comienza por la acción de las vecinas en el versículo."
+  },
+  "hint": "El nombre propio aparece solamente al final."
+ },
+ "rute-cam-rute-redencao-02-desafio-linhagem-01": {
+  "question": "En Rut 4:17, el niño es presentado como padre de Isaí, y no como hijo de Isaí.",
+  "feedbackCorrect": "Obed viene primero: es padre de Isaí y abuelo del rey.",
+  "feedbackWrong": {
+   "false": "Lee otra vez el final de Rut 4:17: ese es el orden de las generaciones."
+  },
+  "hint": "Comprueba quién es padre de quién.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-cam-rute-redencao-02-desafio-linhagem-02": {
+  "question": "En Rut 4:21, toca quién engendró al niño Obed.",
+  "feedbackCorrect": "El pariente redentor es el padre del niño celebrado.",
+  "feedbackWrong": {
+   "b": "Él es el niño engendrado, no quien lo engendró.",
+   "c": "Él engendró a Booz, una generación antes del niño."
+  },
+  "hint": "Busca el sujeto del segundo verbo engendró."
+ },
+ "rute-cam-rute-redencao-02-desafio-linhagem-03": {
+  "question": "¿Cómo continúa Rut 4:17 la celebración que se escucha en Rut 4:14?",
+  "feedbackCorrect": "El redentor celebrado recibe un nombre y una descendencia en el texto.",
+  "feedbackWrong": {
+   "a": "La familia se establece en Belén, no regresa a Moab.",
+   "b": "El tono sigue siendo de celebración, ahora con nombre y descendencia.",
+   "d": "El futuro queda declarado: padre de Isaí, padre del rey."
+  },
+  "hint": "Observa qué añade el versículo a la alabanza.",
+  "options": {
+   "a": "Llevando a la familia de regreso a la tierra de Moab",
+   "b": "Cambiando la alabanza de las mujeres por un nuevo lamento",
+   "c": "Dándole un nombre al niño y vinculándolo con las generaciones siguientes",
+   "d": "Terminando la historia sin hablar de su futuro"
+  }
+ },
+ "rute-cam-rute-redencao-02-desafio-linhagem-04": {
+  "question": "¿Cómo se encadenan las generaciones en Rut 4:21–22?",
+  "feedbackCorrect": "Del redentor al niño, y de él hasta la familia real.",
+  "feedbackWrong": {
+   "default": "Comienza con el redentor convirtiéndose en padre."
+  },
+  "hint": "La familia real es el punto de llegada.",
+  "options": {
+   "a": "El redentor se convierte en padre del niño",
+   "b": "El niño se convierte en padre de la siguiente generación",
+   "c": "La descendencia llega al padre del futuro rey"
+  }
+ },
+ "rute-cam-rute-redencao-02-desafio-linhagem-05": {
+  "question": "En Rut 4:14, ¿qué palabra de alabanza dirigen las mujeres al Señor?",
+  "feedbackCorrect": "La respuesta al dolor de Noemí ahora es alabanza pública.",
+  "feedbackWrong": {
+   "a": "Ellas alaban a un Dios que actuó, no a uno distante.",
+   "b": "No se habla de demora: la alabanza es por el presente."
+  },
+  "hint": "Es la palabra de alabanza que abre lo que dicen."
+ },
+ "rute-cam-rute-redencao-02-desafio-linhagem-06": {
+  "question": "¿Qué relaciona Rut 4:22 con Lucas 3:32?",
+  "feedbackCorrect": "Lucas trae los mismos nombres en la genealogía de Jesús.",
+  "feedbackWrong": {
+   "a": "Lucas enumera generaciones; no vuelve a contar el nacimiento.",
+   "c": "Son generaciones de Israel, no reyes de Moab."
+  },
+  "hint": "Compara los nombres de las dos listas.",
+  "options": {
+   "a": "El nacimiento contado dos veces",
+   "b": "Una descendencia registrada también en Lucas",
+   "c": "Una lista de reyes de Moab"
+  }
+ },
+ "rute-cam-rute-redencao-02-desafio-linhagem-07": {
+  "question": "En Rut 4:22, toca a quien engendró al futuro rey, según la lista.",
+  "feedbackCorrect": "Él es el padre del rey e hijo del niño de Belén.",
+  "feedbackWrong": {
+   "a": "Él es el abuelo del rey, una generación antes.",
+   "b": "Él es el rey engendrado, no quien lo engendró."
+  },
+  "hint": "Busca el sujeto del último \"gerou\"."
+ },
+ "rute-cam-rute-redencao-02-desafio-linhagem-08": {
+  "question": "¿Cómo avanza la escena final de Rut 4:14–18?",
+  "feedbackCorrect": "Alabanza, el nombre del niño y la lista de generaciones.",
+  "feedbackWrong": {
+   "default": "Comienza con la alabanza de las mujeres en Belén."
+  },
+  "hint": "La genealogía es la parte final de la escena.",
+  "options": {
+   "a": "Las mujeres alaban a Dios por el redentor",
+   "b": "Las vecinas le ponen nombre al niño",
+   "c": "La genealogía se remonta al antiguo Fares"
+  }
+ },
+ "rute-pro-rute-redencao-02-desafio-linhagem-01": {
+  "question": "Rut 4:17 enseña que solo el futuro rey importa en la historia, y las dos viudas no tienen valor en ella.",
+  "feedbackCorrect": "El texto celebra primero a las viudas: el rey viene de su historia.",
+  "feedbackWrong": {
+   "true": "El anuncio es para Noemí: la historia de las viudas es el centro."
+  },
+  "hint": "Mira a quién se le anuncia el nacimiento.",
+  "options": {
+   "true": "Verdadero",
+   "false": "Falso"
+  }
+ },
+ "rute-pro-rute-redencao-02-desafio-linhagem-02": {
+  "question": "En Rut 4:17, toca el fragmento que apunta al destino real de la descendencia.",
+  "feedbackCorrect": "Cuando el pueblo le pone nombre al niño, ya se anuncia al rey.",
+  "feedbackWrong": {
+   "a": "Esto anuncia el nacimiento, no el destino real.",
+   "c": "Esto habla de las vecinas, no del destino del niño."
+  },
+  "hint": "Busca el nombre del rey al final del versículo."
+ },
+ "rute-pro-rute-redencao-02-desafio-linhagem-03": {
+  "question": "¿Qué lectura sostiene el desenlace de Rut sobre las historias pequeñas de fidelidad?",
+  "feedbackCorrect": "De la era de Belén a la casa real: la fidelidad dio fruto.",
+  "feedbackWrong": {
+   "a": "El texto la presenta como una generación real de la familia.",
+   "b": "Es precisamente por ellas que la descendencia continúa.",
+   "d": "La descendencia pasa por viudas y una extranjera pobre."
+  },
+  "hint": "Une a las protagonistas con el final de la lista.",
+  "options": {
+   "a": "La genealogía fue inventada sin base en la historia",
+   "b": "Las viudas fieles no entran en los planes de Dios",
+   "c": "Dios lleva la fidelidad de las viudas hasta la línea real",
+   "d": "Dios solo usa familias poderosas y numerosas"
+  }
+ },
+ "rute-pro-rute-redencao-02-desafio-linhagem-04": {
+  "question": "¿Qué secuencia revela el sentido de Rut 4:22 en la Biblia?",
+  "feedbackCorrect": "De la moabita al rey, y del rey a Jesús, hijo de David.",
+  "feedbackWrong": {
+   "default": "Comienza con la entrada de la moabita al pueblo."
+  },
+  "hint": "Jesús, hijo de David, cierra la línea.",
+  "options": {
+   "a": "La moabita entra al pueblo de Dios",
+   "b": "Su descendiente es abuelo del rey David",
+   "c": "Jesús es presentado como hijo de David"
+  }
+ },
+ "rute-pro-rute-redencao-02-desafio-linhagem-05": {
+  "question": "En Rut 4:14, ¿qué dicen las mujeres que Dios le concedió a Noemí?",
+  "feedbackCorrect": "La palabra resume el libro: Dios no la dejó sin redentor.",
+  "feedbackWrong": {
+   "a": "En esta celebración no se concede ningún ejército.",
+   "b": "El trono solo llegará con David, generaciones después de ella."
+  },
+  "hint": "Es la palabra clave de toda su historia."
+ },
+ "rute-pro-rute-redencao-02-desafio-linhagem-06": {
+  "question": "¿Qué relaciona Rut 4:22 con Apocalipsis 22:16?",
+  "feedbackCorrect": "Jesús se presenta como raíz y linaje de esta descendencia.",
+  "feedbackWrong": {
+   "a": "La genealogía no termina: desemboca en Jesús.",
+   "c": "El rey nace en Belén, no en Moab."
+  },
+  "hint": "Mira cómo se presenta Jesús al final de la Biblia.",
+  "options": {
+   "a": "El fin de toda genealogía",
+   "b": "Jesús, raíz y linaje de David",
+   "c": "Un rey nacido en Moab"
+  }
+ },
+ "rute-pro-rute-redencao-02-desafio-linhagem-07": {
+  "question": "En Rut 4:18, toca el primer nombre de la genealogía final.",
+  "feedbackCorrect": "La lista se remonta a él antes de avanzar hasta David.",
+  "feedbackWrong": {
+   "a": "Él es el segundo nombre, engendrado por el primero.",
+   "c": "Eso es el título de la lista, no un nombre de ella."
+  },
+  "hint": "Es el nombre justo después de la palabra \"gerações\"."
+ },
+ "rute-pro-rute-redencao-02-desafio-linhagem-08": {
+  "question": "¿Qué secuencia revela la lógica del desenlace en Rut 4:14–22?",
+  "feedbackCorrect": "Un redentor concedido, un niño con nombre y una descendencia hasta el rey.",
+  "feedbackWrong": {
+   "default": "Comienza con lo que Dios le concedió a la viuda."
+  },
+  "hint": "El rey es el destino final de la secuencia.",
+  "options": {
+   "a": "Dios no deja a la viuda sin redentor",
+   "b": "El niño recibe nombre y descendencia",
+   "c": "La descendencia llega hasta el rey David"
+  }
+ }
+}

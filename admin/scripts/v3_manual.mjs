@@ -12,19 +12,22 @@
  *   node admin/scripts/v3_manual.mjs conferir --trail rute
  *       → lê v3/rute/manual/respostas/<cena>.json, completa, valida;
  *         válidas vão para cenas/, as outras ganham manual/correcoes/<cena>.txt
- *   node admin/scripts/v3_manual.mjs traducao --trail rute [--lang en]
- *       → v3/rute/manual/traducao/<lang>/<nn>-<cena>.txt (depois do merge)
- *   node admin/scripts/v3_manual.mjs conferir-traducao --trail rute [--lang en]
- *       → lê manual/traducao-respostas/<lang>/<cena>.json e grava l10n/ (aplique com
+ *   node admin/scripts/v3_manual.mjs traducao --trail rute [--completo]
+ *       → v3/rute/manual/traducao/<nn>-<lote>.txt: EN+ES de uma vez, só o que falta
+ *         (com --completo cada pedido já leva as regras; sem, use o Projeto de
+ *         tradução com v3/_chatgpt/traducao_instrucoes.txt)
+ *   node admin/scripts/v3_manual.mjs conferir-traducao --trail rute
+ *       → lê manual/traducao-respostas/<nn>-<lote>.json e grava l10n/ (aplique com
  *         v3_translate.mjs --apply)
  */
+import { createHash } from 'crypto';
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { parseJsonReply } from './_llm.mjs';
 import { hydrateCena, scopeErrors } from './_v3_hydrate.mjs';
 import { FORMAT_RULES, ROLE, exampleJson, fixPromptInChat, specText, userPrompt } from './_v3_prompts.mjs';
 import { ADMIN_DIR, argValue, readJson, trailDir } from './_v3_paths.mjs';
-import { LANG, checkEntry, questionSource, studySource, system as translateRules } from './v3_translate.mjs';
+import { batchesOf, buildRequest, checkReply, pendingItems, saveTrail, storeTranslation, systemBoth } from './v3_translate.mjs';
 import { buildInputs } from './v3_inputs.mjs';
 import { validateCenaData } from './validate_pilot_v3.mjs';
 import { verseCount } from './_jfaal_core.mjs';
@@ -270,88 +273,173 @@ function conferir(trail) {
   }
 }
 
-function langsArg() {
-  return (argValue('--lang') || argValue('--langs') || 'en,es').split(',').map((s) => s.trim());
+/**
+ * Pedidos de tradução no formato compacto: EN e ES de uma vez, só o que
+ * falta (ou mudou no português), em lotes numerados. O mapa liga cada número
+ * do lote à pergunta ou ao estudo.
+ */
+function traducao(trail, { completo }) {
+  const p = pendingItems(trail);
+  const dir = trailDir(trail);
+  const out = join(dir, 'manual', 'traducao');
+  const respDir = join(dir, 'manual', 'traducao-respostas');
+  mkdirSync(out, { recursive: true });
+  mkdirSync(respDir, { recursive: true });
+  // Pedidos velhos saem (as respostas ficam); o mapa acumula.
+  for (const f of readdirSync(out)) if (f.endsWith('.txt')) rmSync(join(out, f));
+  const mapPath = join(dir, 'manual', 'traducao-mapa.json');
+  const map = readJson(mapPath, {});
+  const batches = batchesOf(p);
+  batches.forEach((items, i) => {
+    const id = createHash('sha1').update(items.map((it) => `${it.key}:${it.hash}`).join('|')).digest('hex').slice(0, 6);
+    const name = `${nn(i)}-${id}`;
+    map[id] = items.map(({ key, slug, tf, hash, src }) => ({ key, slug, tf, hash, src }));
+    const req = buildRequest(items);
+    const tail = 'Responda num único JSON: {"en":{"<n>":{...}},"es":{"<n>":{...}}}';
+    writeFileSync(join(out, `${name}.txt`), completo ? `${systemBoth()}\n\n${req}\n` : `${req}\n\n${tail}\n`);
+  });
+  writeFileSync(mapPath, `${JSON.stringify(map)}\n`);
+  mkdirSync(KIT_DIR, { recursive: true });
+  writeFileSync(join(KIT_DIR, 'traducao_instrucoes.txt'), `${systemBoth()}\n`);
+  if (!p.q.length && !p.s.length) saveTrail(p);
+  console.log(`${trail}: ${p.q.length}/${p.total} pergunta(s) e ${p.s.length} estudo(s) a traduzir → ${batches.length} pedido(s) em ${out}`);
+  if (batches.length) {
+    console.log(`Cole cada pedido numa conversa ${completo ? 'nova' : 'do Projeto de tradução (instruções em v3/_chatgpt/traducao_instrucoes.txt)'} e salve a resposta em manual/traducao-respostas/<mesmo nome>.json`);
+  }
 }
 
-function traducao(trail) {
-  const dir = trailDir(trail);
-  const questions = readJson(join(dir, 'questions_v3.json'));
-  const { studies } = readJson(join(dir, 'studies_v3.json'));
-  const slugs = Object.keys(studies);
-  for (const lang of langsArg()) {
-    if (!LANG[lang]) throw new Error(`Idioma desconhecido: ${lang}`);
-    const out = join(dir, 'manual', 'traducao', lang);
-    mkdirSync(out, { recursive: true });
-    mkdirSync(join(dir, 'manual', 'traducao-respostas', lang), { recursive: true });
-    slugs.forEach((slug, i) => {
-      const entries = Object.fromEntries(
-        questions.filter((q) => q.section === slug).map((q) => [q.id, { ...questionSource(q), _verso: q.passageText }]),
-      );
-      // O estudo da cena vai junto, sob a chave "estudo:<slug>".
-      entries[`estudo:${slug}`] = { ...studySource(studies[slug]), _verso: studies[slug].passageText };
-      writeFileSync(join(out, `${nn(i)}-${slug}.txt`), `${translateRules(lang)}\n\n${JSON.stringify(entries, null, 1)}\n`);
-    });
-    console.log(`✓ ${lang}: ${slugs.length} pedido(s) em ${out}. Respostas em manual/traducao-respostas/${lang}/<cena>.json`);
+/** Fim do objeto que abre em `start` (respeita strings); -1 se não fecha. */
+function objectEnd(t, start) {
+  let depth = 0;
+  let inStr = false;
+  let esc = false;
+  for (let i = start; i < t.length; i++) {
+    const ch = t[i];
+    if (inStr) {
+      if (esc) esc = false;
+      else if (ch === '\\') esc = true;
+      else if (ch === '"') inStr = false;
+      continue;
+    }
+    if (ch === '"') inStr = true;
+    else if (ch === '{') depth++;
+    else if (ch === '}' && --depth === 0) return i;
   }
+  return -1;
+}
+
+const ITEM_KEYS = new Set(['q', 'c', 'w', 'h', 'o', 'x', 'f', 'k', 'r', 't']);
+const SPANISH = /[¿¡ñ]|\b(el|los|las|del|que|una|por|para)\b/gi;
+const ENGLISH = /\b(the|and|of|to|what|which|is|does)\b/gi;
+const looksSpanish = (s) => (s.match(SPANISH) || []).length > (s.match(ENGLISH) || []).length;
+
+/**
+ * Resposta do lote como {en, es}, lida item a item: aceita {"en","es"}, um
+ * bloco por idioma, agrupamentos copiados do pedido e chaves fechadas a mais.
+ */
+function translationReply(text) {
+  const t = String(text || '');
+  const esAt = t.search(/"es"\s*:\s*\{/);
+  const enAt = t.search(/"en"\s*:\s*\{/);
+  const reply = { en: {}, es: {} };
+  // Sem "en"/"es": um bloco de primeiro nível por idioma; o idioma é o do bloco inteiro.
+  const blocks = [];
+  for (let i = 0; i < t.length; i++) {
+    if (t[i] !== '{') continue;
+    const end = objectEnd(t, i);
+    if (end < 0) break;
+    blocks.push({ start: i, end, lang: looksSpanish(t.slice(i, end + 1)) ? 'es' : 'en' });
+    i = end;
+  }
+  const blockLang = (pos) => (blocks.find((b) => pos >= b.start && pos <= b.end) || { lang: 'en' }).lang;
+  const re = /"(\d+)"\s*:\s*\{/g;
+  let m;
+  let found = 0;
+  while ((m = re.exec(t))) {
+    const start = m.index + m[0].length - 1;
+    const end = objectEnd(t, start);
+    if (end < 0) continue;
+    let obj;
+    try {
+      obj = JSON.parse(t.slice(start, end + 1));
+    } catch {
+      continue;
+    }
+    const keys = Object.keys(obj);
+    if (!keys.length || !keys.every((k) => ITEM_KEYS.has(k))) continue;
+    let lang;
+    if (esAt >= 0 && enAt >= 0) lang = (esAt > enAt ? m.index > esAt : m.index < enAt) ? 'es' : 'en';
+    else lang = blockLang(m.index);
+    reply[lang][m[1]] = obj;
+    found++;
+    re.lastIndex = end + 1;
+  }
+  if (!found) throw new Error('Resposta sem itens traduzidos.');
+  return reply;
 }
 
 function conferirTraducao(trail) {
   const dir = trailDir(trail);
-  const questions = readJson(join(dir, 'questions_v3.json'));
-  const { studies } = readJson(join(dir, 'studies_v3.json'));
-  mkdirSync(join(dir, 'l10n'), { recursive: true });
-  for (const lang of langsArg()) {
-    const respDir = join(dir, 'manual', 'traducao-respostas', lang);
-    const qPath = join(dir, 'l10n', `questions_${lang}.json`);
-    const sPath = join(dir, 'l10n', `studies_${lang}.json`);
-    const qOut = readJson(qPath, {});
-    const sOut = readJson(sPath, {});
-    const files = existsSync(respDir) ? readdirSync(respDir).filter((f) => /\.(json|txt)$/.test(f)) : [];
-    for (const f of files) {
-      const slug = slugOf(f);
-      let reply;
-      try {
-        reply = parseJsonReply(readFileSync(join(respDir, f), 'utf8'));
-      } catch (e) {
-        console.log(`  ✗ ${lang} ${slug}: JSON incompleto (${e.message})`);
-        continue;
-      }
-      const errs = [];
-      for (const q of questions.filter((x) => x.section === slug)) {
-        const tr = reply[q.id];
-        if (!tr) {
-          errs.push(`${q.id}: faltou`);
-          continue;
-        }
-        errs.push(...checkEntry(questionSource(q), tr, q.id));
-      }
-      const study = reply[`estudo:${slug}`];
-      if (studies[slug]) {
-        if (!study) errs.push(`estudo:${slug}: faltou`);
-        else errs.push(...checkEntry(studySource(studies[slug]), study, `estudo:${slug}`));
-      }
-      if (errs.length) {
-        console.log(`  ✗ ${lang} ${slug}: ${errs.length} problema(s): ${errs.slice(0, 4).join('; ')}`);
-        continue;
-      }
-      for (const q of questions.filter((x) => x.section === slug)) {
-        const e = { ...reply[q.id] };
-        delete e._verso;
-        if (q.type === 'true_false') e.options = LANG[lang].tf;
-        qOut[q.id] = e;
-      }
-      const s = { ...study };
-      delete s._verso;
-      sOut[slug] = s;
-      console.log(`  ✓ ${lang} ${slug}`);
+  const respDir = join(dir, 'manual', 'traducao-respostas');
+  const map = readJson(join(dir, 'manual', 'traducao-mapa.json'), {});
+  const p = pendingItems(trail);
+  const pending = new Map([...p.q, ...p.s].map((it) => [it.key, it]));
+  const files = existsSync(respDir) ? readdirSync(respDir).filter((f) => /^\d{2}-[0-9a-f]{6}\.(json|txt)$/.test(f)) : [];
+  let accepted = 0;
+  for (const f of files) {
+    let reply;
+    try {
+      reply = translationReply(readFileSync(join(respDir, f), 'utf8'));
+    } catch (e) {
+      console.log(`  ✗ ${f}: ${e.message}`);
+      continue;
     }
-    writeFileSync(qPath, `${JSON.stringify(qOut, null, 1)}\n`);
-    writeFileSync(sPath, `${JSON.stringify(sOut, null, 1)}\n`);
-    const done = questions.filter((q) => qOut[q.id]).length;
-    console.log(`${lang}: ${done}/${questions.length} pergunta(s) traduzidas.`);
+    // O nome diz o lote; se a resposta for de outro lote ainda pendente, vale o que encaixa melhor.
+    const score = (its) => checkReply(its, reply).ok.size;
+    let id = f.slice(3, 9);
+    let best = map[id] ? score(map[id]) : -1;
+    for (const [other, its] of Object.entries(map)) {
+      if (other === id) continue;
+      const sc = score(its);
+      if (sc > best) [id, best] = [other, sc];
+    }
+    const items = map[id];
+    // Encaixe fraco = resposta de outra coisa: não aceita nada por coincidência.
+    if (!items || best < Math.ceil(items.length * 0.8)) {
+      console.log(`  ? ${f}: não bate com nenhum pedido (salvou a resposta certa?)`);
+      continue;
+    }
+    if (id !== f.slice(3, 9)) console.log(`  … ${f} é a resposta do pedido ${id}`);
+    const { ok, failed } = checkReply(items, reply);
+    let n = 0;
+    let stale = 0;
+    for (const it of items) {
+      const tr = ok.get(it.key);
+      const cur = pending.get(it.key);
+      if (!tr || !cur) continue;
+      // Português mudou depois do pedido: a tradução não vale mais.
+      if (cur.hash !== it.hash) {
+        stale++;
+        continue;
+      }
+      storeTranslation(p, cur, tr);
+      pending.delete(it.key);
+      n++;
+    }
+    accepted += n;
+    const notes = [failed.length ? `${failed.length} com problema (${failed[0].errs[0]})` : '', stale ? `${stale} com português mudado` : '']
+      .filter(Boolean)
+      .join('; ');
+    console.log(`  ${failed.length ? '△' : '✓'} ${f}: ${n} aceito(s)${notes ? ` · ${notes}` : ''}`);
   }
-  console.log(`Quando estiver completo: node admin/scripts/v3_translate.mjs --trail ${trail} --apply`);
+  saveTrail(p);
+  const left = pending.size;
+  console.log(`${trail}: ${accepted} item(ns) aceitos agora · faltam ${left}.`);
+  console.log(
+    left
+      ? `Para o que falta: node admin/scripts/v3_manual.mjs traducao --trail ${trail} (gera só os pendentes)`
+      : `Completo. Aplique: node admin/scripts/v3_translate.mjs --trail ${trail} --apply`,
+  );
 }
 
 const [cmd] = process.argv.slice(2);
@@ -364,7 +452,7 @@ try {
   if (cmd === 'kit') kit();
   else if (cmd === 'pedidos') pedidos(needTrail(), { completo: process.argv.includes('--completo') });
   else if (cmd === 'conferir') conferir(needTrail());
-  else if (cmd === 'traducao') traducao(needTrail());
+  else if (cmd === 'traducao') traducao(needTrail(), { completo: process.argv.includes('--completo') });
   else if (cmd === 'conferir-traducao') conferirTraducao(needTrail());
   else {
     console.log('Uso: node admin/scripts/v3_manual.mjs kit | pedidos | conferir | traducao | conferir-traducao --trail <slug>');
