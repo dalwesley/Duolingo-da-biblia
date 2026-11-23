@@ -375,33 +375,115 @@ class ProgressService extends ChangeNotifier {
   /// Favoritos ("abbrev:capítulo:versículo", ex.: "gn:1:1").
   List<String> bibleBookmarks = [];
 
-  /// Quando cada lista que se apaga item a item mudou aqui por último (ms):
-  /// `mistakes` (erros + marcações), `bookmarks`, `used`. Ao juntar com a
-  /// nuvem vale a lista inteira do lado mais novo — somar devolvia o erro
-  /// resolvido ou o favorito tirado em outro aparelho.
-  Map<String, int> listStamps = {};
+  /// Última mudança de cada item nas listas que se apagam item a item:
+  /// `mistakes` (erros + marcações) e `bookmarks`. Valor em ms: positivo =
+  /// entrou, negativo = saiu. Ao juntar com a nuvem cada item segue a mudança
+  /// mais nova dele; item sem registro (app antigo) soma como antes.
+  Map<String, Map<String, int>> listEdits = {};
 
-  void _stampList(String key) {
-    listStamps = {...listStamps, key: DateTime.now().millisecondsSinceEpoch};
+  /// Dias que o registro de um item fica guardado (o das listas e o das
+  /// lápides de anotação).
+  static const listEditDays = 120;
+  static const _listEditCap = 300;
+
+  void _editList(String list, String item, {required bool added}) {
+    final now = DateTime.now().millisecondsSinceEpoch;
+    listEdits = {
+      ...listEdits,
+      list: {...?listEdits[list], item: added ? now : -now},
+    };
   }
 
-  /// Lista da nuvem ou daqui, pelo carimbo mais novo. Nuvem sem carimbo
-  /// (app antigo) soma como antes; aqui sem carimbo e nuvem com: vale a
-  /// nuvem (este aparelho só tinha cópia velha).
-  List<String> _newerList(
-    String key,
+  /// Junta a lista daqui com a da nuvem item a item. Fica quem está em
+  /// alguma das duas, menos o que tem saída mais nova que a entrada.
+  List<String> _mergeEditedList(
+    String list,
     List<String> local,
     List<String> cloud,
-    Map<String, int> cloudStamps,
+    Map<String, int> cloudEdits,
   ) {
-    final cloudTs = cloudStamps[key];
-    final localTs = listStamps[key];
-    if (cloudTs == null) return _unionStringLists(local, cloud);
-    if (localTs == null || cloudTs > localTs) {
-      listStamps = {...listStamps, key: cloudTs};
-      return cloud;
+    final edits = <String, int>{...cloudEdits};
+    for (final e in (listEdits[list] ?? const <String, int>{}).entries) {
+      final c = edits[e.key];
+      if (c == null || e.value.abs() >= c.abs()) edits[e.key] = e.value;
     }
-    return local;
+    final out = [
+      for (final id in _unionStringLists(local, cloud))
+        if ((edits[id] ?? 1) > 0) id,
+    ];
+    listEdits = {...listEdits, list: _pruneListEdits(edits)};
+    return out;
+  }
+
+  static Map<String, int> _pruneListEdits(Map<String, int> edits) {
+    final since =
+        DateTime.now().millisecondsSinceEpoch - listEditDays * 86400000;
+    final kept = edits.entries.where((e) => e.value.abs() >= since).toList()
+      ..sort((a, b) => b.value.abs().compareTo(a.value.abs()));
+    return {for (final e in kept.take(_listEditCap)) e.key: e.value};
+  }
+
+  static Map<String, Map<String, int>> _asListEdits(dynamic raw) {
+    if (raw is! Map) return const {};
+    return {
+      for (final e in raw.entries)
+        if (e.value is Map) e.key.toString(): _asIntMap(e.value),
+    };
+  }
+
+  /// Favoritos, erros e perguntas vistas de [data] (nuvem ou espelho local)
+  /// juntos com os daqui.
+  void _mergeItemLists(Map<String, dynamic> data) {
+    final cloudEdits = _asListEdits(data['listEdits']);
+    if (data.containsKey('bibleBookmarks')) {
+      bibleBookmarks = _mergeEditedList(
+        'bookmarks',
+        bibleBookmarks,
+        _asStringList(data['bibleBookmarks']),
+        cloudEdits['bookmarks'] ?? const {},
+      );
+    }
+    if (data.containsKey('usedQuestionIds')) {
+      final merged = _unionStringLists(
+        usedQuestionIds,
+        _asStringList(data['usedQuestionIds']),
+      );
+      usedQuestionIds = merged.length > 400
+          ? merged.sublist(merged.length - 400)
+          : merged;
+    }
+    if (data.containsKey('mistakeQuestionIds')) {
+      final localEdits = listEdits['mistakes'] ?? const <String, int>{};
+      final cloudMistakeEdits = cloudEdits['mistakes'] ?? const <String, int>{};
+      var merged = _mergeEditedList(
+        'mistakes',
+        mistakeQuestionIds,
+        _asStringList(data['mistakeQuestionIds']),
+        cloudMistakeEdits,
+      );
+      if (merged.length > 80) merged = merged.sublist(merged.length - 80);
+      mistakeQuestionIds = merged;
+      final cloudAnswers = _asStringMap(data['mistakeAnswers']);
+      final answers = <String, String>{};
+      for (final id in merged) {
+        final cloudNewer =
+            (cloudMistakeEdits[id]?.abs() ?? 0) > (localEdits[id]?.abs() ?? 0);
+        final a = cloudNewer
+            ? (cloudAnswers[id] ?? mistakeAnswers[id])
+            : (mistakeAnswers[id] ?? cloudAnswers[id]);
+        if (a != null) answers[id] = a;
+      }
+      mistakeAnswers = answers;
+    }
+  }
+
+  /// Na abertura: a nuvem já entrou, mas o espelho local pode ter favorito
+  /// ou erro mexido sem rede que não chegou a subir. Só as listas item a
+  /// item (o resto o espelho só aplica se for mais rico).
+  void mergeItemListsFromCache(Map<String, dynamic> cache) {
+    final epoch = (cache['progressEpoch'] as num?)?.toInt() ?? 0;
+    if (epoch != progressEpoch) return;
+    _mergeItemLists(cache);
   }
 
   /// Anotações por versículo (mesma chave dos favoritos), com lápides.
@@ -1525,7 +1607,7 @@ class ProgressService extends ChangeNotifier {
     usedQuestionIds = [];
     mistakeQuestionIds = [];
     mistakeAnswers = {};
-    listStamps = {};
+    listEdits = {};
     playDates = [];
     frozenDates = [];
     repairedDates = [];
@@ -2137,13 +2219,13 @@ class ProgressService extends ChangeNotifier {
         for (final k in bibleBookmarks)
           if (k != key) k,
       ];
-      _stampList('bookmarks');
+      _editList('bookmarks', key, added: false);
       await _save();
       notifyListeners();
       return false;
     }
     bibleBookmarks = [key, ...bibleBookmarks];
-    _stampList('bookmarks');
+    _editList('bookmarks', key, added: true);
     await _bumpQuest('bookmark');
     await _save();
     notifyListeners();
@@ -2169,7 +2251,7 @@ class ProgressService extends ChangeNotifier {
     final now = DateTime.now().millisecondsSinceEpoch;
     // Lápide velha já cumpriu o papel (os aparelhos sincronizaram): sai,
     // para o doc privado não crescer sem fim.
-    final keepTombsSince = now - noteTombstoneDays * 86400000;
+    final keepTombsSince = now - listEditDays * 86400000;
     bibleNotes = {
       for (final e in bibleNotes.entries)
         if (!e.value.deleted || e.value.updatedAtMs >= keepTombsSince)
@@ -2183,9 +2265,6 @@ class ProgressService extends ChangeNotifier {
     await _save();
     notifyListeners();
   }
-
-  /// Dias que a lápide de uma anotação apagada fica guardada.
-  static const noteTombstoneDays = 120;
 
   /// Anotações vivas, mais recentes primeiro.
   List<({String abbrev, int chapter, int verse, BibleNote note})> parseNotes() {
@@ -2934,7 +3013,6 @@ class ProgressService extends ChangeNotifier {
     usedQuestionIds = next.length > 400
         ? next.sublist(next.length - 400)
         : next;
-    _stampList('used');
     await _save();
   }
 
@@ -2965,7 +3043,7 @@ class ProgressService extends ChangeNotifier {
       changed = true;
     }
     if (changed) {
-      _stampList('mistakes');
+      _editList('mistakes', questionId, added: true);
       _schedulePersist();
     }
   }
@@ -3044,7 +3122,7 @@ class ProgressService extends ChangeNotifier {
     if (mistakeAnswers.containsKey(questionId)) {
       mistakeAnswers = {...mistakeAnswers}..remove(questionId);
     }
-    _stampList('mistakes');
+    _editList('mistakes', questionId, added: false);
     _schedulePersist();
   }
 
@@ -3618,7 +3696,7 @@ class ProgressService extends ChangeNotifier {
       'trailsLeftAt': trailsLeftAt,
       'leftMissionSlugs': leftMissionSlugs,
       'progressEpoch': progressEpoch,
-      'listStamps': listStamps,
+      'listEdits': listEdits,
       'trailChoicesSeedV': trailChoicesSeedV,
       'postcardsOn': postcardsOn,
       'caravanPostcards': caravanPostcards,
@@ -3827,7 +3905,6 @@ class ProgressService extends ChangeNotifier {
 
   Future<void> _applyFromCloudData(Map<String, dynamic> data) async {
     final version = (data['version'] as num?)?.toInt() ?? 1;
-    final cloudStamps = _asIntMap(data['listStamps']);
 
     // Marca do servidor: só liga. O cache local (sem o campo) não desliga.
     if (data['desbravador'] == true && !desbravador) {
@@ -4183,14 +4260,6 @@ class ProgressService extends ChangeNotifier {
         }
         bibleChapterReadOn = merged;
       }
-      if (data.containsKey('bibleBookmarks')) {
-        bibleBookmarks = _newerList(
-          'bookmarks',
-          bibleBookmarks,
-          _asStringList(data['bibleBookmarks']),
-          cloudStamps,
-        );
-      }
       if (data.containsKey('bibleNotes')) {
         bibleNotes = _mergeBibleNotes(bibleNotes, data['bibleNotes']);
       }
@@ -4322,32 +4391,7 @@ class ProgressService extends ChangeNotifier {
           _asStringList(data['memoryMastered']),
         );
       }
-      if (data.containsKey('usedQuestionIds')) {
-        usedQuestionIds = _newerList(
-          'used',
-          usedQuestionIds,
-          _asStringList(data['usedQuestionIds']),
-          cloudStamps,
-        );
-      }
-      if (data.containsKey('mistakeQuestionIds')) {
-        final localWins =
-            cloudStamps['mistakes'] != null &&
-            listStamps['mistakes'] != null &&
-            listStamps['mistakes']! >= cloudStamps['mistakes']!;
-        mistakeQuestionIds = _newerList(
-          'mistakes',
-          mistakeQuestionIds,
-          _asStringList(data['mistakeQuestionIds']),
-          cloudStamps,
-        );
-        if (!localWins && data.containsKey('mistakeAnswers')) {
-          mistakeAnswers = {
-            ...mistakeAnswers,
-            ..._asStringMap(data['mistakeAnswers']),
-          };
-        }
-      }
+      _mergeItemLists(data);
       if (mistakeAnswers.keys.any((id) => !mistakeQuestionIds.contains(id))) {
         mistakeAnswers = {
           for (final e in mistakeAnswers.entries)
@@ -4900,7 +4944,7 @@ class ProgressService extends ChangeNotifier {
     usedQuestionIds = [];
     mistakeQuestionIds = [];
     mistakeAnswers = {};
-    listStamps = {};
+    listEdits = {};
     playDates = [];
     frozenDates = [];
     repairedDates = [];

@@ -32,10 +32,11 @@ export const PRIVATE_KEYS = [
   'borrowedMissions', 'weeklyReviewsDone', 'memoryScores', 'bibleBookmarks',
   'bibleNotes', 'sharedVerses', 'lifeChallengesDone', 'settings', 'bibleReadingPlan',
   'companionCodes', 'activeRoomCode', 'claimedReferralRewards', 'firstOpenAtMs',
+  'listEdits',
 ];
 // Saíram do público na 1.0.50; a regra só os recusa quando a 1.0.49 sair de
 // uso. Rode com --moved para limpá-los também.
-export const MOVED_KEYS = ['rankedScenes', 'sceneLastDoneOn', 'listStamps'];
+export const MOVED_KEYS = ['rankedScenes', 'sceneLastDoneOn'];
 
 async function getDb() {
   const account = getGlobalDefaultAccount();

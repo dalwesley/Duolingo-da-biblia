@@ -90,7 +90,7 @@ service cloud.firestore {
         'weeklyReviewsDone', 'memoryScores', 'bibleBookmarks', 'bibleNotes',
         'sharedVerses', 'lifeChallengesDone', 'settings', 'bibleReadingPlan',
         'companionCodes', 'activeRoomCode', 'claimedReferralRewards',
-        'firstOpenAtMs'
+        'firstOpenAtMs', 'listEdits'
       ];
     }
 

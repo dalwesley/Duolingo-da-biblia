@@ -105,17 +105,20 @@ void main() {
   });
 
   group('listas que se apagam item a item', () {
+    int now() => DateTime.now().millisecondsSinceEpoch;
+
     test('erro resolvido aqui não volta da nuvem mais velha', () async {
       final p = ProgressService();
       await p.recordMistake('q1', answer: 'a');
       await p.recordMistake('q2', answer: 'b');
-      final cloudTs = p.listStamps['mistakes']! - 1000;
       await p.clearMistake('q1');
       await p.applyFromCloud({
         'version': 2,
         'mistakeQuestionIds': ['q1', 'q2'],
         'mistakeAnswers': {'q1': 'a', 'q2': 'b'},
-        'listStamps': {'mistakes': cloudTs},
+        'listEdits': {
+          'mistakes': {'q1': now() - 5000, 'q2': now() - 5000},
+        },
       });
       expect(p.mistakeQuestionIds, ['q2']);
       expect(p.mistakeAnswers.keys, ['q2']);
@@ -125,27 +128,47 @@ void main() {
       final p = ProgressService();
       await p.recordMistake('q1');
       await p.recordMistake('q2');
-      final newer = p.listStamps['mistakes']! + 5000;
       await p.applyFromCloud({
         'version': 2,
         'mistakeQuestionIds': ['q2'],
-        'listStamps': {'mistakes': newer},
+        'listEdits': {
+          'mistakes': {'q1': -(now() + 5000)},
+        },
       });
       expect(p.mistakeQuestionIds, ['q2']);
-      expect(p.listStamps['mistakes'], newer);
     });
 
-    test('aparelho sem carimbo fica com a lista da nuvem', () async {
-      final p = ProgressService()..bibleBookmarks = ['gn:1:1', 'jo:3:16'];
+    test(
+      'favoritos novos dos dois lados ficam (offline × outro aparelho)',
+      () async {
+        final p = ProgressService();
+        await p.toggleBibleBookmark('gn', 1, 1);
+        await p.applyFromCloud({
+          'version': 2,
+          'bibleBookmarks': ['jo:3:16'],
+          'listEdits': {
+            'bookmarks': {'jo:3:16': now() - 60000},
+          },
+        });
+        expect(p.bibleBookmarks.toSet(), {'gn:1:1', 'jo:3:16'});
+      },
+    );
+
+    test('erro novo da 1.0.49 (sem registro) não se perde', () async {
+      final p = ProgressService();
+      await p.recordMistake('q1');
+      await p.clearMistake('q1');
       await p.applyFromCloud({
         'version': 2,
-        'bibleBookmarks': ['jo:3:16'],
-        'listStamps': {'bookmarks': 10},
+        'mistakeQuestionIds': ['q1', 'q3'],
+        'listEdits': {
+          'mistakes': {'q1': now() - 5000},
+        },
       });
-      expect(p.bibleBookmarks, ['jo:3:16']);
+      expect(p.mistakeQuestionIds, ['q3']);
     });
 
-    test('nuvem de app antigo (sem carimbo) soma como antes', () async {
+    test('nuvem de app antigo (sem registro) soma como antes', () async {
       final p = ProgressService();
       await p.toggleBibleBookmark('gn', 1, 1);
       await p.applyFromCloud({
@@ -153,6 +176,47 @@ void main() {
         'bibleBookmarks': ['jo:3:16'],
       });
       expect(p.bibleBookmarks.toSet(), {'gn:1:1', 'jo:3:16'});
+    });
+
+    test(
+      'espelho local devolve favorito feito sem rede antes de fechar',
+      () async {
+        final offline = ProgressService();
+        await offline.toggleBibleBookmark('gn', 1, 1);
+        final cache = offline.toCloudMap();
+
+        // App reaberto: a nuvem entra primeiro, sem o favorito.
+        final p = ProgressService();
+        await p.applyFromCloud({
+          'version': 2,
+          'bibleBookmarks': ['jo:3:16'],
+        });
+        p.mergeItemListsFromCache(cache);
+        expect(p.bibleBookmarks.toSet(), {'gn:1:1', 'jo:3:16'});
+        expect(p.listEdits['bookmarks']!.containsKey('gn:1:1'), isTrue);
+      },
+    );
+
+    test('espelho de antes do reset não volta', () async {
+      final offline = ProgressService();
+      await offline.toggleBibleBookmark('gn', 1, 1);
+      final cache = offline.toCloudMap();
+      final p = ProgressService()..progressEpoch = 99;
+      p.mergeItemListsFromCache(cache);
+      expect(p.bibleBookmarks, isEmpty);
+    });
+
+    test('registro com mais de 120 dias sai', () async {
+      final p = ProgressService();
+      final old = now() - 130 * 86400000;
+      await p.applyFromCloud({
+        'version': 2,
+        'bibleBookmarks': <String>[],
+        'listEdits': {
+          'bookmarks': {'gn:1:1': -old},
+        },
+      });
+      expect(p.listEdits['bookmarks'], isEmpty);
     });
   });
 }

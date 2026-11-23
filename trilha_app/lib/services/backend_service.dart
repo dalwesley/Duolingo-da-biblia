@@ -952,7 +952,7 @@ class BackendService extends ChangeNotifier {
     // A regra ainda não recusa estes no público: a 1.0.49 os grava lá.
     'rankedScenes',
     'sceneLastDoneOn',
-    'listStamps',
+    'listEdits',
   };
 
   /// Separa o payload: privado vai para [_privatePath]; o público ganha
@@ -1419,6 +1419,9 @@ class BackendService extends ChangeNotifier {
             'steps=${local['steps'] ?? local['xp']})',
           );
           await progress.applyFromCloud(local);
+        } else if (local != null) {
+          // Favorito ou erro mexido sem rede que não subiu antes de fechar.
+          progress.mergeItemListsFromCache(local);
         }
         // Entitlements de passe (subcoleção): o private legado pode ter
         // a cópia antiga; a subcoleção é a fonte que o cliente não forja.
@@ -2246,9 +2249,13 @@ class BackendService extends ChangeNotifier {
                   .get()
                   .timeout(const Duration(seconds: 10)))
               .data();
-    } catch (e) {
-      // Sem o privado, segue com o público (cópias antigas ainda estão lá).
+    } catch (e, st) {
+      // Sem o privado não dá para seguir só com o público: erros, favoritos,
+      // anotações e o histórico por cena moram só lá, e o próximo save os
+      // gravaria vazios. Trata como falha de leitura (fica o espelho local).
       _authLog('fetch private FAILED uid=$_uid: $e');
+      quietError(e, st, 'sync:fetch-private');
+      return UserBackupResult.error('private: $e');
     }
     if (private == null || private.isEmpty) return public;
     return UserBackupResult.found({...?public.data, ...private});
