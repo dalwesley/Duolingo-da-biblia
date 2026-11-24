@@ -16,6 +16,12 @@
  *       → v3/rute/manual/traducao/<nn>-<lote>.txt: EN+ES de uma vez, só o que falta
  *         (com --completo cada pedido já leva as regras; sem, use o Projeto de
  *         tradução com v3/_chatgpt/traducao_instrucoes.txt)
+ *   node admin/scripts/v3_manual.mjs traducao-livros [--trails a,b]
+ *       → v3/_traducao/pedidos/<nnn>-<trilha>-<lote>.txt: todos os livros numa pasta,
+ *         em ordem bíblica, um pedido por livro (até 100 itens; maior vira partes)
+ *   node admin/scripts/v3_manual.mjs conferir-livros [--apply]
+ *       → lê v3/_traducao/respostas/<mesmo nome>.json, grava l10n/ de cada trilha e,
+ *         com --apply, aplica no app os livros completos
  *   node admin/scripts/v3_manual.mjs conferir-traducao --trail rute
  *       → lê manual/traducao-respostas/<nn>-<lote>.json e grava l10n/ (aplique com
  *         v3_translate.mjs --apply)
@@ -378,68 +384,159 @@ function translationReply(text) {
   return reply;
 }
 
-function conferirTraducao(trail) {
+/** Estado de uma trilha para conferir respostas (mapa dos lotes + o que falta). */
+function trailCheck(trail) {
   const dir = trailDir(trail);
-  const respDir = join(dir, 'manual', 'traducao-respostas');
   const map = readJson(join(dir, 'manual', 'traducao-mapa.json'), {});
   const p = pendingItems(trail);
   const pending = new Map([...p.q, ...p.s].map((it) => [it.key, it]));
-  const files = existsSync(respDir) ? readdirSync(respDir).filter((f) => /^\d{2}-[0-9a-f]{6}\.(json|txt)$/.test(f)) : [];
-  let accepted = 0;
-  for (const f of files) {
-    let reply;
-    try {
-      reply = translationReply(readFileSync(join(respDir, f), 'utf8'));
-    } catch (e) {
-      console.log(`  ✗ ${f}: ${e.message}`);
-      continue;
-    }
-    // O nome diz o lote; se a resposta for de outro lote ainda pendente, vale o que encaixa melhor.
-    const score = (its) => checkReply(its, reply).ok.size;
-    let id = f.slice(3, 9);
-    let best = map[id] ? score(map[id]) : -1;
-    for (const [other, its] of Object.entries(map)) {
-      if (other === id) continue;
-      const sc = score(its);
-      if (sc > best) [id, best] = [other, sc];
-    }
-    const items = map[id];
-    // Encaixe fraco = resposta de outra coisa: não aceita nada por coincidência.
-    if (!items || best < Math.ceil(items.length * 0.8)) {
-      console.log(`  ? ${f}: não bate com nenhum pedido (salvou a resposta certa?)`);
-      continue;
-    }
-    if (id !== f.slice(3, 9)) console.log(`  … ${f} é a resposta do pedido ${id}`);
-    const { ok, failed } = checkReply(items, reply);
-    let n = 0;
-    let stale = 0;
-    for (const it of items) {
-      const tr = ok.get(it.key);
-      const cur = pending.get(it.key);
-      if (!tr || !cur) continue;
-      // Português mudou depois do pedido: a tradução não vale mais.
-      if (cur.hash !== it.hash) {
-        stale++;
-        continue;
-      }
-      storeTranslation(p, cur, tr);
-      pending.delete(it.key);
-      n++;
-    }
-    accepted += n;
-    const notes = [failed.length ? `${failed.length} com problema (${failed[0].errs[0]})` : '', stale ? `${stale} com português mudado` : '']
-      .filter(Boolean)
-      .join('; ');
-    console.log(`  ${failed.length ? '△' : '✓'} ${f}: ${n} aceito(s)${notes ? ` · ${notes}` : ''}`);
+  return { trail, map, p, pending, accepted: 0 };
+}
+
+/** Confere uma resposta e guarda o que for válido. [ownId]: o lote que o nome do arquivo diz. */
+function acceptReply(ctx, text, label, ownId) {
+  let reply;
+  try {
+    reply = translationReply(text);
+  } catch (e) {
+    console.log(`  ✗ ${label}: ${e.message}`);
+    return;
   }
-  saveTrail(p);
-  const left = pending.size;
-  console.log(`${trail}: ${accepted} item(ns) aceitos agora · faltam ${left}.`);
+  const score = (its) => checkReply(its, reply).ok.size;
+  let id = ownId;
+  let best = ctx.map[id] ? score(ctx.map[id]) : -1;
+  for (const [other, its] of Object.entries(ctx.map)) {
+    if (other === ownId) continue;
+    const sc = score(its);
+    if (sc > best) [id, best] = [other, sc];
+  }
+  const items = ctx.map[id];
+  // Lote do próprio nome: vale o que chegou (resposta cortada aceita a parte boa).
+  // Outro lote: só com encaixe forte, para não aceitar nada por coincidência.
+  if (!items || best < 1 || (id !== ownId && best < Math.ceil(items.length * 0.8))) {
+    console.log(`  ? ${label}: não bate com nenhum pedido (salvou a resposta certa?)`);
+    return;
+  }
+  if (id !== ownId) console.log(`  … ${label} é a resposta do pedido ${id}`);
+  const { ok, failed } = checkReply(items, reply);
+  let n = 0;
+  let stale = 0;
+  for (const it of items) {
+    const tr = ok.get(it.key);
+    const cur = ctx.pending.get(it.key);
+    if (!tr || !cur) continue;
+    // Português mudou depois do pedido: a tradução não vale mais.
+    if (cur.hash !== it.hash) {
+      stale++;
+      continue;
+    }
+    storeTranslation(ctx.p, cur, tr);
+    ctx.pending.delete(it.key);
+    n++;
+  }
+  ctx.accepted += n;
+  const missing = failed.filter((f) => f.errs.some((e) => e.endsWith('faltou'))).length;
+  const notes = [
+    missing ? `${missing} não vieram (resposta cortada?)` : '',
+    failed.length - missing ? `${failed.length - missing} com problema (${failed.find((f) => !f.errs.every((e) => e.endsWith('faltou')))?.errs[0]})` : '',
+    stale ? `${stale} com português mudado` : '',
+  ]
+    .filter(Boolean)
+    .join('; ');
+  console.log(`  ${failed.length ? '△' : '✓'} ${label}: ${n} aceito(s)${notes ? ` · ${notes}` : ''}`);
+}
+
+function conferirTraducao(trail) {
+  const ctx = trailCheck(trail);
+  const respDir = join(trailDir(trail), 'manual', 'traducao-respostas');
+  const files = existsSync(respDir) ? readdirSync(respDir).filter((f) => /^\d{2}-[0-9a-f]{6}\.(json|txt)$/.test(f)) : [];
+  for (const f of files) acceptReply(ctx, readFileSync(join(respDir, f), 'utf8'), f, f.slice(3, 9));
+  saveTrail(ctx.p);
+  const left = ctx.pending.size;
+  console.log(`${trail}: ${ctx.accepted} item(ns) aceitos agora · faltam ${left}.`);
   console.log(
     left
       ? `Para o que falta: node admin/scripts/v3_manual.mjs traducao --trail ${trail} (gera só os pendentes)`
       : `Completo. Aplique: node admin/scripts/v3_translate.mjs --trail ${trail} --apply`,
   );
+}
+
+// ---- Livro por livro: todos os pedidos numa pasta só, em ordem bíblica ----
+const LIVROS_DIR = join(ADMIN_DIR, 'v3', '_traducao');
+const LIVRO_MAX = 100;
+const BIBLE_ORDER = [
+  'genesis-1-11', 'genesis-12-50', 'exodo', 'levitico', 'numeros', 'deuteronomio', 'josue', 'juizes', 'rute',
+  'samuel', 'reis', 'cronicas', 'esdras', 'neemias', 'ester', 'jo', 'salmos', 'proverbios', 'eclesiastes',
+  'cantares', 'isaias', 'jeremias', 'lamentacoes', 'ezequiel', 'daniel', 'oseias', 'joel', 'amos', 'obadias',
+  'jonas', 'miqueias', 'naum', 'habacuque', 'sofonias', 'ageu', 'zacarias', 'malaquias', 'evangelhos', 'mateus',
+  'sermao-do-monte', 'marcos', 'lucas', 'joao', 'atos', 'romanos', 'corintios', 'galatas', 'efesios',
+  'filipenses', 'colossenses', 'tessalonicenses', 'timoteo', 'tito', 'filemom', 'hebreus', 'tiago', 'pedro',
+  'cartas-joao', 'judas', 'apocalipse', 'cartas-paulo', 'cartas-gerais',
+];
+
+function allTrails() {
+  const v3 = join(ADMIN_DIR, 'v3');
+  const slugs = readdirSync(v3).filter((t) => !t.startsWith('_') && !t.endsWith('-cap') && existsSync(join(v3, t, 'questions_v3.json')));
+  const rank = (t) => (BIBLE_ORDER.includes(t) ? BIBLE_ORDER.indexOf(t) : 1000);
+  return slugs.sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
+}
+
+function traducaoLivros() {
+  const out = join(LIVROS_DIR, 'pedidos');
+  mkdirSync(out, { recursive: true });
+  mkdirSync(join(LIVROS_DIR, 'respostas'), { recursive: true });
+  for (const f of readdirSync(out)) if (f.endsWith('.txt')) rmSync(join(out, f));
+  const only = (argValue('--trails') || '').split(',').map((s) => s.trim()).filter(Boolean);
+  const tail = 'Responda num único JSON: {"en":{"<n>":{...}},"es":{"<n>":{...}}}';
+  let n = 0;
+  let books = 0;
+  for (const trail of allTrails()) {
+    if (only.length && !only.includes(trail)) continue;
+    const p = pendingItems(trail);
+    const items = [...p.q, ...p.s];
+    if (!items.length) continue;
+    books++;
+    const mapPath = join(trailDir(trail), 'manual', 'traducao-mapa.json');
+    mkdirSync(join(trailDir(trail), 'manual'), { recursive: true });
+    const map = readJson(mapPath, {});
+    for (let i = 0; i < items.length; i += LIVRO_MAX) {
+      const part = items.slice(i, i + LIVRO_MAX);
+      const id = createHash('sha1').update(part.map((it) => `${it.key}:${it.hash}`).join('|')).digest('hex').slice(0, 6);
+      map[id] = part.map(({ key, slug, tf, hash, src }) => ({ key, slug, tf, hash, src }));
+      n++;
+      writeFileSync(join(out, `${String(n).padStart(3, '0')}-${trail}-${id}.txt`), `${buildRequest(part)}\n\n${tail}\n`);
+    }
+    writeFileSync(mapPath, `${JSON.stringify(map)}\n`);
+  }
+  console.log(`${books} livro(s) · ${n} pedido(s) em ${out}`);
+  console.log('Cole cada um numa conversa nova do Projeto de tradução e salve a resposta em v3/_traducao/respostas/<mesmo nome>.json');
+}
+
+async function conferirLivros() {
+  const respDir = join(LIVROS_DIR, 'respostas');
+  const files = existsSync(respDir) ? readdirSync(respDir).filter((f) => /^\d{3}-.+-[0-9a-f]{6}\.(json|txt)$/.test(f)).sort() : [];
+  const byTrail = new Map();
+  for (const f of files) {
+    const m = f.match(/^\d{3}-(.+)-([0-9a-f]{6})\.(json|txt)$/);
+    if (!byTrail.has(m[1])) byTrail.set(m[1], []);
+    byTrail.get(m[1]).push({ f, id: m[2] });
+  }
+  const apply = process.argv.includes('--apply');
+  const { applyTrail } = await import('./v3_translate.mjs');
+  for (const [trail, list] of byTrail) {
+    if (!existsSync(join(trailDir(trail), 'questions_v3.json'))) {
+      console.log(`? ${trail}: trilha desconhecida`);
+      continue;
+    }
+    const ctx = trailCheck(trail);
+    for (const { f, id } of list) acceptReply(ctx, readFileSync(join(respDir, f), 'utf8'), f, id);
+    saveTrail(ctx.p);
+    const left = ctx.pending.size;
+    console.log(`${trail}: ${ctx.accepted} aceito(s) agora · faltam ${left}${left ? '' : ' · completo'}`);
+    if (!left && apply) for (const lang of ['en', 'es']) applyTrail(trail, lang);
+  }
+  console.log(apply ? 'Livros completos já aplicados no app.' : 'Para aplicar os completos: conferir-livros --apply');
+  console.log('O que faltou volta no próximo: node admin/scripts/v3_manual.mjs traducao-livros');
 }
 
 const [cmd] = process.argv.slice(2);
@@ -454,6 +551,8 @@ try {
   else if (cmd === 'conferir') conferir(needTrail());
   else if (cmd === 'traducao') traducao(needTrail(), { completo: process.argv.includes('--completo') });
   else if (cmd === 'conferir-traducao') conferirTraducao(needTrail());
+  else if (cmd === 'traducao-livros') traducaoLivros();
+  else if (cmd === 'conferir-livros') await conferirLivros();
   else {
     console.log('Uso: node admin/scripts/v3_manual.mjs kit | pedidos | conferir | traducao | conferir-traducao --trail <slug>');
     process.exitCode = 1;

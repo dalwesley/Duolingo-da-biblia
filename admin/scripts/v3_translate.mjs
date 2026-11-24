@@ -183,7 +183,7 @@ async function translateItems(items, opts) {
   return done;
 }
 
-function apply(trail, lang, dir) {
+export function applyTrail(trail, lang, dir = trailDir(trail)) {
   const qPath = join(APP_L10N, `questions_${lang}.json`);
   const sPath = join(APP_L10N, `studies_${lang}.json`);
   const qNew = readJson(join(dir, 'l10n', `questions_${lang}.json`));
@@ -287,7 +287,7 @@ async function main() {
   mkdirSync(join(dir, 'l10n'), { recursive: true });
 
   if (process.argv.includes('--apply')) {
-    for (const lang of (argValue('--langs') || 'en,es').split(',')) apply(trail, lang.trim(), dir);
+    for (const lang of (argValue('--langs') || 'en,es').split(',')) applyTrail(trail, lang.trim(), dir);
     return;
   }
 
