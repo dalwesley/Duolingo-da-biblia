@@ -691,9 +691,64 @@ export async function renderUsersPage(root) {
         <input type="search" id="us-q" class="ez-search" placeholder="Filtrar lista ou buscar e-mail · uid · ABCD1234" autocomplete="off" />
         <button type="submit" class="btn btn-primary">Buscar</button>
       </form>
+      <details class="qs-advanced" id="us-room-plus">
+        <summary>Plus para um grupo inteiro (Igreja piloto)</summary>
+        <p class="ez-hint">Dá ou tira o Plus manual de todos os membros atuais do grupo. Quem entrar depois não ganha sozinho: rode de novo.</p>
+        <div class="us-actions">
+          <input data-room-code placeholder="Código do grupo (ex.: D9MFJW)" maxlength="12" autocomplete="off" />
+          <select data-room-days aria-label="Prazo">
+            <option value="30">30 dias</option>
+            <option value="90">90 dias</option>
+            <option value="365" selected>1 ano</option>
+          </select>
+          <input class="us-plus-reason" data-room-reason placeholder="Motivo (ex.: Igreja X, Pix 24/11)" maxlength="200" />
+          <button type="button" class="btn btn-primary btn-sm" data-room-plus="on">Dar Plus ao grupo</button>
+          <button type="button" class="btn btn-ghost btn-sm" data-room-plus="off">Tirar Plus do grupo</button>
+        </div>
+      </details>
       <div id="us-list"><div class="ez-skeleton">Carregando contas…</div></div>
       <div id="us-results"></div>
     </div>`;
+
+  const roomBox = root.querySelector('#us-room-plus');
+  roomBox.querySelectorAll('[data-room-plus]').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const on = btn.dataset.roomPlus === 'on';
+      const code = roomBox.querySelector('[data-room-code]').value.trim().toUpperCase();
+      const reason = roomBox.querySelector('[data-room-reason]').value.trim();
+      const days = Number(roomBox.querySelector('[data-room-days]').value || 365);
+      if (!code) {
+        showToast('Escreva o código do grupo.', 'error');
+        return;
+      }
+      if (reason.length < 3) {
+        showToast('Escreva o motivo (fica no histórico).', 'error');
+        return;
+      }
+      const ask = on
+        ? `Dar ${days} dias de Plus a todos os membros do grupo ${code}?`
+        : `Tirar o Plus manual de todos os membros do grupo ${code}?`;
+      if (!confirm(ask)) return;
+      roomBox.querySelectorAll('[data-room-plus]').forEach((b) => { b.disabled = true; });
+      try {
+        const { data } = await moderateUser({ action: on ? 'roomPlusOn' : 'roomPlusOff', code, days, reason });
+        const label = data.name ? `${data.name} (${code})` : code;
+        const problems = [
+          data.failed?.length ? `${data.failed.length} falharam` : '',
+          data.rcFailed?.length ? `${data.rcFailed.length} sem RevenueCat` : '',
+        ].filter(Boolean).join(' · ');
+        showToast(
+          `${label}: ${data.done} de ${data.members} ${on ? 'com Plus' : 'sem Plus manual'}${problems ? ` · ${problems}` : ''}`,
+          problems ? 'error' : 'success',
+        );
+        loadList();
+      } catch (e) {
+        showToast(e.message || String(e), 'error');
+      } finally {
+        roomBox.querySelectorAll('[data-room-plus]').forEach((b) => { b.disabled = false; });
+      }
+    });
+  });
 
   const listEl = root.querySelector('#us-list');
   const out = root.querySelector('#us-results');

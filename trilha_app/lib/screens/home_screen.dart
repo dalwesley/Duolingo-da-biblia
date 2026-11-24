@@ -51,6 +51,7 @@ import '../widgets/plus_billing_banner.dart';
 import '../widgets/plus_offer_sheet.dart';
 import '../widgets/home_support_banner.dart';
 import '../widgets/next_step_card.dart';
+import '../widgets/year_review_home_card.dart';
 import 'bible_screen.dart';
 import 'memory_screen.dart';
 import 'paywall_screen.dart';
@@ -450,6 +451,7 @@ class _HomeScreenState extends State<HomeScreen>
                   subtitle: ctx.l10n.homeBibleOfflineSubtitle,
                   leadingGlyph: CinematicGlyph.book,
                   onBack: () => Navigator.pop(ctx),
+                  trailing: search,
                 ),
               ),
             ),
@@ -868,6 +870,15 @@ class _HomeScreenState extends State<HomeScreen>
                         NextStepCard(
                           trails: trails,
                           onOpenMission: widget.onOpenMission,
+                          topGap: AppSpace.section,
+                        ),
+                      ),
+                      // Retrospectiva do ano (28/12–31/01), acima da Estação;
+                      // fora da janela não ocupa espaço.
+                      _reveal(
+                        2,
+                        YearReviewHomeCard(
+                          trails: trails,
                           topGap: AppSpace.section,
                         ),
                       ),

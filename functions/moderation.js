@@ -158,6 +158,9 @@ async function moderate(deps, caller, input) {
   if (action === 'plusOn' || action === 'plusOff') {
     return setPlus(deps, caller, input, action === 'plusOn');
   }
+  if (action === 'roomPlusOn' || action === 'roomPlusOff') {
+    return setRoomPlus(deps, caller, input, action === 'roomPlusOn');
+  }
   if (action === 'timeline') {
     const who = String(input?.uid || '').trim();
     if (!who || who.length > 128) throw new ModerationError('invalid-argument', 'uid inválido.');
@@ -349,6 +352,43 @@ async function setPlus(deps, caller, input, on) {
   });
   logger.info('plus manual', { uid, on, by: caller.uid, rc: details.revenueCat });
   return { ok: true, details };
+}
+
+/** Teto de membros por chamada (Igreja piloto: até ~150 pessoas). */
+const ROOM_PLUS_MAX = 200;
+
+/**
+ * Plus manual para todos os membros atuais de um grupo de uma vez (Igreja
+ * piloto, vendida à mão). Cada membro passa pelo mesmo [setPlus] — mesmo
+ * promocional, mesmo espelho, uma linha no histórico por pessoa. Quem
+ * entrar no grupo depois não ganha sozinho: rode de novo.
+ */
+async function setRoomPlus(deps, caller, input, on) {
+  const { db } = deps;
+  const code = String(input?.code || '').trim().toUpperCase();
+  if (!/^[A-Z0-9]{4,12}$/.test(code)) throw new ModerationError('invalid-argument', 'Código do grupo inválido.');
+  const reason = String(input?.reason || '').trim().slice(0, 500);
+  if (reason.length < 3) throw new ModerationError('invalid-argument', 'Escreva o motivo (fica no histórico).');
+  const room = await db.doc(`rooms/${code}`).get();
+  if (!room.exists) throw new ModerationError('not-found', `Grupo ${code} não existe.`);
+  const members = await db.collection(`rooms/${code}/members`).get();
+  if (members.empty) throw new ModerationError('failed-precondition', 'O grupo não tem membros.');
+  if (members.size > ROOM_PLUS_MAX) {
+    throw new ModerationError('invalid-argument', `Grupo grande demais (${members.size}).`);
+  }
+  let done = 0;
+  const rcFailed = [];
+  const failed = [];
+  for (const m of members.docs) {
+    try {
+      const r = await setPlus(deps, caller, { uid: m.id, days: input?.days, reason: `[grupo ${code}] ${reason}` }, on);
+      done += 1;
+      if (!r.details.revenueCat) rcFailed.push(m.id);
+    } catch (e) {
+      failed.push({ uid: m.id, error: e.message });
+    }
+  }
+  return { ok: failed.length === 0, room: code, name: room.get('name') || null, members: members.size, done, rcFailed, failed };
 }
 
 /** Suspensões vencidas voltam sozinhas. */

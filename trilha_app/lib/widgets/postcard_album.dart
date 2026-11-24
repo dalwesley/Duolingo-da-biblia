@@ -133,7 +133,8 @@ class _PostcardAlbumState extends State<PostcardAlbum> {
         albums.sort((x, y) => y.last.compareTo(x.last));
 
         final height = PostcardView.heightFor(_thumb, mini: true);
-        final year = DateTime.now().year;
+        // Em janeiro a retrospectiva ainda é do ano que acabou.
+        final year = RemoteConfigService.reviewYearFor(DateTime.now());
         final inYear = {
           ...progress.missionCompletedOn,
           ...progress.postcardsOn,

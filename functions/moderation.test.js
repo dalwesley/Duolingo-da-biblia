@@ -32,6 +32,12 @@ function fakeDb(seed = {}) {
     async listDocuments() {
       return [];
     },
+    async get() {
+      const ds = [...docs]
+        .filter(([k]) => k.startsWith(`${path}/`) && !k.slice(path.length + 1).includes('/'))
+        .map(([k, v]) => ({ id: k.split('/').pop(), data: () => v }));
+      return { docs: ds, size: ds.length, empty: ds.length === 0 };
+    },
     where: () => ({ async get() { return { docs: [], size: 0 }; } }),
   });
   return {
@@ -223,4 +229,37 @@ test('Plus manual vencido sai do doc; o que ainda vale fica', async () => {
   assert.equal(docs['users/a'].plusActive, false);
   assert.equal(docs['users/b'].plusActive, true);
   assert.equal(log[0].action, 'plusExpired');
+});
+
+test('Plus para o grupo inteiro: cada membro atual, com o código no motivo', async () => {
+  const db = fakeDb({
+    ...seed,
+    'rooms/ABC123': { name: 'Igreja Piloto' },
+    'rooms/ABC123/members/m1': { name: 'Ana' },
+    'rooms/ABC123/members/m2': { name: 'Davi' },
+  });
+  const calls = [];
+  const revenueCat = {
+    async grantDays(uid, days) { calls.push(['grant', uid, days]); return Date.UTC(2027, 10, 24); },
+    async revokePromotional(uid) { calls.push(['revoke', uid]); },
+  };
+  const d = { ...deps(db, fakeAuth()), revenueCat };
+  await assert.rejects(M.moderate(d, admin, { action: 'roomPlusOn', code: 'NOPE99', days: 365, reason: 'igreja' }), { code: 'not-found' });
+  await assert.rejects(M.moderate(d, admin, { action: 'roomPlusOn', code: 'ABC123', days: 365, reason: '' }), { code: 'invalid-argument' });
+  await assert.rejects(
+    M.moderate(deps(db, fakeAuth()), { uid: 'ed' }, { action: 'roomPlusOn', code: 'ABC123', days: 365, reason: 'igreja' }),
+    { code: 'permission-denied' },
+  );
+
+  const r = await M.moderate(d, admin, { action: 'roomPlusOn', code: 'abc123', days: 365, reason: 'igreja piloto' });
+  assert.equal(r.done, 2);
+  assert.equal(r.members, 2);
+  assert.deepEqual(r.rcFailed, []);
+  assert.deepEqual(calls.map((c) => c[1]).sort(), ['m1', 'm2']);
+  assert.equal(db.docs.get('users/m1').plusActive, true);
+  assert.ok(db.log.every((l) => l.reason.startsWith('[grupo ABC123]')));
+
+  const off = await M.moderate(d, admin, { action: 'roomPlusOff', code: 'ABC123', reason: 'fim do piloto' });
+  assert.equal(off.done, 2);
+  assert.equal(db.docs.get('users/m2').plusActive, false);
 });

@@ -72,14 +72,11 @@ class RemoteConfigService extends ChangeNotifier {
       // Ouve antes de buscar: se o 1º fetch falhar (sem rede), a
       // atualização em tempo real ainda chega quando a conexão voltar.
       await _updates?.cancel();
-      _updates = rc.onConfigUpdated.listen(
-        (_) async {
-          await rc.activate();
-          _logPlusKeys('atualizado');
-          notifyListeners();
-        },
-        onError: (Object e) => debugPrint('Remote Config (tempo real): $e'),
-      );
+      _updates = rc.onConfigUpdated.listen((_) async {
+        await rc.activate();
+        _logPlusKeys('atualizado');
+        notifyListeners();
+      }, onError: (Object e) => debugPrint('Remote Config (tempo real): $e'));
       await rc.fetchAndActivate();
       _logPlusKeys('carregado');
       notifyListeners();
@@ -173,14 +170,33 @@ class RemoteConfigService extends ChangeNotifier {
   }
 
   /// Primeiro dia (YYYY-MM-DD) em que a retrospectiva do ano abre. Vazio ou
-  /// inválido: fechada.
+  /// inválido: o padrão, 28/12 (três dias depois do Natal). `off` fecha.
   DateTime? get yearReviewFrom => _date(_keyYearReviewFrom);
 
-  bool get yearReviewOpen {
-    final from = yearReviewFrom;
-    if (from == null) return false;
-    final now = DateTime.now();
-    return !DateTime(now.year, now.month, now.day).isBefore(from);
+  bool get yearReviewOpen => yearReviewOpenAt(DateTime.now());
+
+  /// Mesma janela num dia dado (a Home usa o relógio do Laboratório).
+  bool yearReviewOpenAt(DateTime day) =>
+      yearReviewOpenOn(day, _string(_keyYearReviewFrom));
+
+  /// Ano que a retrospectiva mostra em [now]: em janeiro, ainda o ano que
+  /// acabou.
+  static int reviewYearFor(DateTime now) =>
+      now.month == 1 ? now.year - 1 : now.year;
+
+  /// Janela: de [rawFrom] (só vale se for do próprio ano da retrospectiva;
+  /// senão 28/12) até 31/01 do ano seguinte. Assim abre sozinha todo fim de
+  /// ano, sem mexer no painel.
+  static bool yearReviewOpenOn(DateTime now, String rawFrom) {
+    final raw = rawFrom.trim();
+    if (raw.toLowerCase() == 'off') return false;
+    final today = DateTime(now.year, now.month, now.day);
+    final year = reviewYearFor(today);
+    final parsed = DateTime.tryParse(raw);
+    final from = parsed != null && parsed.year == year
+        ? DateTime(parsed.year, parsed.month, parsed.day)
+        : DateTime(year, 12, 28);
+    return !today.isBefore(from) && !today.isAfter(DateTime(year + 1, 1, 31));
   }
 
   DateTime? _date(String key) {

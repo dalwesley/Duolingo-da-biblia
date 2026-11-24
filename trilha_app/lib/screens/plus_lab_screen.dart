@@ -33,6 +33,7 @@ import '../widgets/plus_offer_sheet.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
+import '../widgets/year_review_home_card.dart';
 import 'lesson_screen.dart';
 import 'paywall_screen.dart';
 import 'room_reveal_screen.dart';
@@ -588,6 +589,13 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                           'Abre a retrospectiva do ano corrente agora, '
                           'mesmo antes de year_review_from e com menos '
                           'de 3 postais.',
+                        ),
+                        toggle(
+                          'Mostrar o card da retrospectiva na Home',
+                          YearReviewHomeCard.forceShow.value,
+                          (v) => setState(
+                            () => YearReviewHomeCard.forceShow.value = v,
+                          ),
                         ),
                         button(
                           'Abrir retrospectiva do ano',

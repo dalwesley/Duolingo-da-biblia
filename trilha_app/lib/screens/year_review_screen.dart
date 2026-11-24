@@ -16,6 +16,7 @@ import '../services/backend_service.dart';
 import '../services/companion_service.dart';
 import '../services/progress_service.dart';
 import '../services/recognition_service.dart';
+import '../services/remote_config_service.dart';
 import '../services/room_service.dart';
 import '../services/sound_service.dart';
 import '../services/subscription_service.dart';
@@ -41,7 +42,7 @@ Future<void> openYearReview(
   bool force = false,
 }) async {
   final progress = context.read<ProgressService>();
-  final y = year ?? DateTime.now().year;
+  final y = year ?? RemoteConfigService.reviewYearFor(DateTime.now());
   final together = _togetherFrom(context, y);
   BackendService? backend;
   try {
