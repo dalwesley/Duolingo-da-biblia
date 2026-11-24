@@ -161,5 +161,59 @@
     "pt": "Seus 3 dias grátis deste plano acabaram. Ele continua no Peregrino+; a Bíblia inteira segue grátis.",
     "en": "Your 3 free days on this plan are over. It continues with Pilgrim+; the whole Bible stays free.",
     "es": "Tus 3 días gratis de este plan terminaron. Continúa con Peregrino+; la Biblia entera sigue gratis."
+  },
+  "guidedPlanDaysUnit": {
+    "pt": "dias",
+    "en": "days",
+    "es": "días",
+    "description": "Unidade embaixo do número no selo do plano"
+  },
+  "guidedPlanDaysCount": {
+    "pt": "{count, plural, =1{1 dia} other{{count} dias}}",
+    "en": "{count, plural, =1{1 day} other{{count} days}}",
+    "es": "{count, plural, =1{1 día} other{{count} días}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "guidedPlanMinutesPerDay": {
+    "pt": "~{minutes} min/dia",
+    "en": "~{minutes} min/day",
+    "es": "~{minutes} min/día",
+    "placeholders": {
+      "minutes": "int"
+    }
+  },
+  "guidedPlanFirstDays": {
+    "pt": "Primeiros dias",
+    "en": "First days",
+    "es": "Primeros días"
+  },
+  "guidedPlanDayShort": {
+    "pt": "Dia {day}",
+    "en": "Day {day}",
+    "es": "Día {day}",
+    "placeholders": {
+      "day": "int"
+    }
+  },
+  "guidedPlanStart": {
+    "pt": "Começar plano",
+    "en": "Start plan",
+    "es": "Empezar plan"
+  },
+  "guidedPlanFreeNote": {
+    "pt": "Os primeiros {count} dias são grátis; depois, Peregrino+.",
+    "en": "The first {count} days are free; then Pilgrim+.",
+    "es": "Los primeros {count} días son gratis; después, Peregrino+.",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "guidedPlanAllDays": {
+    "pt": "Dia a dia",
+    "en": "Day by day",
+    "es": "Día a día",
+    "description": "Título da lista completa de dias na prévia do plano"
   }
 }

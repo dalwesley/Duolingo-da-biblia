@@ -68,7 +68,7 @@ class _Payload {
   const _Payload({required this.rows, required this.verseCount});
 }
 
-/// Cor de cada língua do texto (poço do código e barra da versão ativa).
+/// Cor de cada língua do texto (sigla da versão e capitular).
 Color _languageTone(String language) => switch (language) {
   'en' => AppColors.cedar,
   'es' => AppColors.clay,
@@ -287,18 +287,11 @@ class _VerseCompareSheetState extends State<_VerseCompareSheet> {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
+                // Ações nos cantos; o título fica centrado como num códice.
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(18, 0, 6, 0),
+                  padding: const EdgeInsets.symmetric(horizontal: 6),
                   child: Row(
                     children: [
-                      Expanded(
-                        child: AppSheetHeader(
-                          eyebrow: context.l10n.bibleVerseCompare,
-                          title: _ref,
-                          // Carregando, o Anan está no balão embaixo: um só.
-                          cloud: payload != null,
-                        ),
-                      ),
                       if (payload != null) ...[
                         headerIcon(
                           CinematicGlyph.copy,
@@ -311,6 +304,7 @@ class _VerseCompareSheetState extends State<_VerseCompareSheet> {
                           () => _shareAll(payload.rows),
                         ),
                       ],
+                      const Spacer(),
                       headerIcon(
                         CinematicGlyph.close,
                         MaterialLocalizations.of(context).closeButtonTooltip,
@@ -318,6 +312,10 @@ class _VerseCompareSheetState extends State<_VerseCompareSheet> {
                       ),
                     ],
                   ),
+                ),
+                _CompareTitle(
+                  eyebrow: context.l10n.bibleVerseCompare,
+                  title: _ref,
                 ),
                 if (payload != null && payload.verseCount > 1)
                   _VerseStepper(
@@ -348,6 +346,60 @@ class _VerseCompareSheetState extends State<_VerseCompareSheet> {
             );
           },
         ),
+      ),
+    );
+  }
+}
+
+/// COMPARAR VERSÕES / Gênesis 1:1 / filete — centrado.
+class _CompareTitle extends StatelessWidget {
+  final String eyebrow;
+  final String title;
+
+  const _CompareTitle({required this.eyebrow, required this.title});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final accent = a.ink(AppColors.sand);
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(24, 0, 24, 2),
+      child: Column(
+        children: [
+          Text(
+            eyebrow.toUpperCase(),
+            textAlign: TextAlign.center,
+            style: AppTypography.label(
+              size: 11,
+              letterSpacing: 2.4,
+              color: accent,
+            ),
+          ),
+          const SizedBox(height: 2),
+          Text(
+            title,
+            textAlign: TextAlign.center,
+            style: AppTypography.display(
+              size: 30,
+              weight: FontWeight.w700,
+              color: a.text,
+            ),
+          ),
+          const SizedBox(height: 6),
+          Container(
+            width: 120,
+            height: 1,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  accent.withValues(alpha: 0),
+                  accent,
+                  accent.withValues(alpha: 0),
+                ],
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -434,24 +486,25 @@ class _CompareBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final active = rows.isEmpty ? null : rows.first;
-    final others = rows.length > 1 ? rows.sublist(1) : const <_Row>[];
-
     return SingleChildScrollView(
-      padding: EdgeInsets.fromLTRB(22, 6, 22, AppSpace.lg + bottomInset),
+      padding: EdgeInsets.fromLTRB(16, 6, 16, AppSpace.lg + bottomInset),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          if (active != null)
-            _VersionBlock(row: active, active: true, onCopy: onCopy),
-          const SizedBox(height: AppSpace.lg),
-          _OriginalBlock(future: original, onCopy: onCopy, onStudy: onStudy),
-          for (final r in others) ...[
-            const Padding(
-              padding: EdgeInsets.symmetric(vertical: AppSpace.md),
-              child: ListDivider(),
+          // O original abre a página, solto; cada versão vem no seu poço,
+          // tingido de leve na cor da língua (a em leitura primeiro).
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 6),
+            child: _OriginalBlock(
+              future: original,
+              onCopy: onCopy,
+              onStudy: onStudy,
             ),
-            _VersionBlock(row: r, active: false, onCopy: onCopy),
+          ),
+          const SizedBox(height: AppSpace.lg),
+          for (var i = 0; i < rows.length; i++) ...[
+            if (i > 0) const SizedBox(height: 10),
+            _VersionBlock(row: rows[i], onCopy: onCopy),
           ],
         ],
       ),
@@ -463,42 +516,21 @@ class _CompareBody extends StatelessWidget {
 class _Tag extends StatelessWidget {
   final String text;
   final Color color;
-  final String? note;
 
-  const _Tag({required this.text, required this.color, this.note});
+  const _Tag({required this.text, required this.color});
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Text.rich(
-      TextSpan(
-        children: [
-          TextSpan(
-            text: text,
-            style: AppTypography.label(size: 11, color: color),
-          ),
-          if (note != null)
-            TextSpan(
-              text: '   $note',
-              style: AppTypography.body(size: 12, color: a.textFaint),
-            ),
-        ],
-      ),
-    );
+    return Text(text, style: AppTypography.label(size: 11, color: color));
   }
 }
 
 /// Um bloco de versão. A em leitura ganha só a barra lateral e letra maior.
 class _VersionBlock extends StatelessWidget {
   final _Row row;
-  final bool active;
   final Future<void> Function(String label, String text) onCopy;
 
-  const _VersionBlock({
-    required this.row,
-    required this.active,
-    required this.onCopy,
-  });
+  const _VersionBlock({required this.row, required this.onCopy});
 
   @override
   Widget build(BuildContext context) {
@@ -506,48 +538,37 @@ class _VersionBlock extends StatelessWidget {
     final t = row.translation;
     final tone = a.ink(_languageTone(t.language));
     final text = row.text;
+    final verseStyle = AppTypography.verse(
+      size: 19,
+      height: 1.4,
+      color: a.text,
+    );
     final content = Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        _Tag(
-          text: '${t.shortName} · ${t.language.toUpperCase()}',
-          color: tone,
-          note: active ? context.l10n.bibleCompareReading : null,
-        ),
+        _Tag(text: '${t.shortName} · ${t.language.toUpperCase()}', color: tone),
         const SizedBox(height: 6),
-        Text(
-          text ?? context.l10n.bibleCompareMissing,
-          style: text == null
-              ? AppTypography.body(size: 14, color: a.textFaint)
-              : AppTypography.verse(
-                  size: active ? 22 : 19,
-                  height: 1.4,
-                  color: active ? a.text : a.text.withValues(alpha: 0.86),
-                ),
-        ),
+        if (text == null)
+          Text(
+            context.l10n.bibleCompareMissing,
+            style: AppTypography.body(size: 14, color: a.textFaint),
+          )
+        else
+          Text(text, style: verseStyle),
       ],
     );
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
       onLongPress: text == null ? null : () => onCopy(t.shortName, text),
-      child: active
-          ? IntrinsicHeight(
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Container(
-                    width: 3,
-                    margin: const EdgeInsets.only(right: 14),
-                    decoration: BoxDecoration(
-                      color: tone,
-                      borderRadius: BorderRadius.circular(AppRadii.hair),
-                    ),
-                  ),
-                  Expanded(child: content),
-                ],
-              ),
-            )
-          : content,
+      child: Container(
+        padding: const EdgeInsets.fromLTRB(16, 12, 16, 14),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(18),
+          color: tone.withValues(alpha: a.onDark ? 0.07 : 0.06),
+          border: Border.all(color: tone.withValues(alpha: 0.2)),
+        ),
+        child: content,
+      ),
     );
   }
 }
@@ -606,9 +627,12 @@ class _OriginalBlock extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              _Tag(text: language.toUpperCase(), color: tone),
+              Center(
+                child: _Tag(text: language.toUpperCase(), color: a.textFaint),
+              ),
               const SizedBox(height: 8),
               Wrap(
+                alignment: WrapAlignment.center,
                 textDirection: o.hebrew ? TextDirection.rtl : TextDirection.ltr,
                 spacing: 14,
                 runSpacing: 10,
@@ -624,7 +648,6 @@ class _OriginalBlock extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               Align(
-                alignment: Alignment.centerLeft,
                 child: InkWell(
                   onTap: onStudy,
                   borderRadius: BorderRadius.circular(AppRadii.sm),
@@ -687,7 +710,7 @@ class _Word extends StatelessWidget {
             textDirection: hebrew ? TextDirection.rtl : TextDirection.ltr,
             style: AppTypography.original(
               hebrew: hebrew,
-              size: hebrew ? 24 : 19,
+              size: hebrew ? 28 : 21,
               height: 1.25,
               color: a.text,
             ),

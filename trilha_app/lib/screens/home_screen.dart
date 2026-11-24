@@ -443,7 +443,7 @@ class _HomeScreenState extends State<HomeScreen>
               appearance: appearance,
               frameChild: false,
               child: BibleScreen(
-                topBar: TopBar(
+                topBarBuilder: (search) => TopBar(
                   inline: true,
                   immersive: true,
                   dark: appearance.onDark,

@@ -934,6 +934,18 @@ abstract class AppLocalizations {
   /// **'{ref} — via Stway'**
   String bibleShareVia(String ref);
 
+  /// No description provided for @bibleShelfChapters.
+  ///
+  /// In pt, this message translates to:
+  /// **'{read} de {total} capítulos'**
+  String bibleShelfChapters(int read, int total);
+
+  /// No description provided for @bibleShelfSemantics.
+  ///
+  /// In pt, this message translates to:
+  /// **'Estante da Bíblia: {read} de {total} capítulos lidos'**
+  String bibleShelfSemantics(int read, int total);
+
   /// No description provided for @bibleTabReading.
   ///
   /// In pt, this message translates to:
@@ -1093,7 +1105,7 @@ abstract class AppLocalizations {
   /// No description provided for @canonEvangelhosBlurb.
   ///
   /// In pt, this message translates to:
-  /// **'Mateus a João — a vida de Jesus'**
+  /// **'A vida de Jesus'**
   String get canonEvangelhosBlurb;
 
   /// No description provided for @canonEvangelhosTitle.
@@ -1129,7 +1141,7 @@ abstract class AppLocalizations {
   /// No description provided for @canonHistoricosBlurb.
   ///
   /// In pt, this message translates to:
-  /// **'Josué a Ester — a história de Israel'**
+  /// **'A história de Israel'**
   String get canonHistoricosBlurb;
 
   /// No description provided for @canonHistoricosTitle.
@@ -1153,7 +1165,7 @@ abstract class AppLocalizations {
   /// No description provided for @canonPentateucoBlurb.
   ///
   /// In pt, this message translates to:
-  /// **'A Lei — Gênesis a Deuteronômio'**
+  /// **'A Lei'**
   String get canonPentateucoBlurb;
 
   /// No description provided for @canonPentateucoTitle.
@@ -5176,17 +5188,53 @@ abstract class AppLocalizations {
   /// **'Atos em 28 dias'**
   String get guidedPlanActsTitle;
 
+  /// Título da lista completa de dias na prévia do plano
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia a dia'**
+  String get guidedPlanAllDays;
+
   /// No description provided for @guidedPlanDayOf.
   ///
   /// In pt, this message translates to:
   /// **'Dia {day} de {total}'**
   String guidedPlanDayOf(int day, int total);
 
+  /// No description provided for @guidedPlanDayShort.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia {day}'**
+  String guidedPlanDayShort(int day);
+
+  /// No description provided for @guidedPlanDaysCount.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 dia} other{{count} dias}}'**
+  String guidedPlanDaysCount(int count);
+
+  /// Unidade embaixo do número no selo do plano
+  ///
+  /// In pt, this message translates to:
+  /// **'dias'**
+  String get guidedPlanDaysUnit;
+
   /// No description provided for @guidedPlanFinished.
   ///
   /// In pt, this message translates to:
   /// **'Você concluiu «{plan}».'**
   String guidedPlanFinished(String plan);
+
+  /// No description provided for @guidedPlanFirstDays.
+  ///
+  /// In pt, this message translates to:
+  /// **'Primeiros dias'**
+  String get guidedPlanFirstDays;
+
+  /// No description provided for @guidedPlanFreeNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Os primeiros {count} dias são grátis; depois, Peregrino+.'**
+  String guidedPlanFreeNote(int count);
 
   /// No description provided for @guidedPlanGenesisSubtitle.
   ///
@@ -5218,6 +5266,12 @@ abstract class AppLocalizations {
   /// **'{subtitle} · ~{minutes} min/dia'**
   String guidedPlanMeta(String subtitle, int minutes);
 
+  /// No description provided for @guidedPlanMinutesPerDay.
+  ///
+  /// In pt, this message translates to:
+  /// **'~{minutes} min/dia'**
+  String guidedPlanMinutesPerDay(int minutes);
+
   /// No description provided for @guidedPlanNewTestamentSubtitle.
   ///
   /// In pt, this message translates to:
@@ -5241,6 +5295,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Salmos e Provérbios em 31 dias'**
   String get guidedPlanPsalmsTitle;
+
+  /// No description provided for @guidedPlanStart.
+  ///
+  /// In pt, this message translates to:
+  /// **'Começar plano'**
+  String get guidedPlanStart;
 
   /// No description provided for @heroEndAllBody.
   ///
@@ -11631,6 +11691,12 @@ abstract class AppLocalizations {
   /// **'~{minutes} min'**
   String planApproxMinutes(int minutes);
 
+  /// No description provided for @planApproxMinutesPerDay.
+  ///
+  /// In pt, this message translates to:
+  /// **'~{duration}'**
+  String planApproxMinutesPerDay(String duration);
+
   /// No description provided for @planApproxMonths.
   ///
   /// In pt, this message translates to:
@@ -11757,6 +11823,12 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{1 caminha aqui} other{{count} caminham juntos}}'**
   String planCoverTogether(int count);
 
+  /// No description provided for @planDailyReading.
+  ///
+  /// In pt, this message translates to:
+  /// **'Leitura por dia'**
+  String get planDailyReading;
+
   /// No description provided for @planDateRange.
   ///
   /// In pt, this message translates to:
@@ -11816,6 +11888,36 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Pergunta: {text}'**
   String planDayQuestionLine(String text);
+
+  /// No description provided for @planDeadlineBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dividimos o que falta em porções iguais até o prazo — na ordem da Bíblia ou na ordem dos acontecimentos. Capítulos que você já leu são pulados.'**
+  String get planDeadlineBody;
+
+  /// No description provided for @planDeadlineMonths.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 mês} other{{count} meses}}'**
+  String planDeadlineMonths(int count);
+
+  /// No description provided for @planDeadlineQuestion.
+  ///
+  /// In pt, this message translates to:
+  /// **'Em quanto tempo quer ler a Bíblia?'**
+  String get planDeadlineQuestion;
+
+  /// No description provided for @planDeadlineYears.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 ano} other{{count} anos}}'**
+  String planDeadlineYears(int count);
+
+  /// Prazo do plano: "1 ano e 3 meses"
+  ///
+  /// In pt, this message translates to:
+  /// **'{years} e {months}'**
+  String planDeadlineYearsMonths(String years, String months);
 
   /// No description provided for @planDone.
   ///
@@ -12255,6 +12357,18 @@ abstract class AppLocalizations {
   /// **'{minutes} min'**
   String planMinutes(int minutes);
 
+  /// Plano de leitura: escolher pelos minutos diários
+  ///
+  /// In pt, this message translates to:
+  /// **'Tempo por dia'**
+  String get planModeDaily;
+
+  /// Plano de leitura: escolher em quanto tempo terminar
+  ///
+  /// In pt, this message translates to:
+  /// **'Prazo'**
+  String get planModeDeadline;
+
   /// No description provided for @planNextOpens.
   ///
   /// In pt, this message translates to:
@@ -12597,6 +12711,12 @@ abstract class AppLocalizations {
   /// **'Ainda não'**
   String get planSeatNotIn;
 
+  /// No description provided for @planSectionDeadline.
+  ///
+  /// In pt, this message translates to:
+  /// **'Terminar em'**
+  String get planSectionDeadline;
+
   /// No description provided for @planSectionOrder.
   ///
   /// In pt, this message translates to:
@@ -12756,8 +12876,8 @@ abstract class AppLocalizations {
   /// No description provided for @planStartCta.
   ///
   /// In pt, this message translates to:
-  /// **'Começar plano · {minutes} min/dia'**
-  String planStartCta(int minutes);
+  /// **'Começar plano · {duration}/dia'**
+  String planStartCta(String duration);
 
   /// No description provided for @planStepRead.
   ///

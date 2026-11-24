@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -17,12 +18,14 @@ import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../utils/liturgical_calendar.dart';
 import '../widgets/act_feel.dart';
+import '../widgets/app_nav_row.dart';
 import '../widgets/app_sheet.dart';
 import '../widgets/bible_passage_picker.dart';
 import '../widgets/cloud_mascot.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/juntos_chrome.dart';
+import '../widgets/profile_section.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/shell_tab_scope.dart';
 import '../widgets/top_bar.dart';
@@ -94,10 +97,12 @@ String _foldPt(String input) {
 /// Leitura: continuar, plano e tempo litúrgico.
 /// A leitura abre em tela cheia ([BibleReaderScreen]), por cima da barra de abas.
 class BibleScreen extends StatefulWidget {
-  final Widget? topBar;
+  /// Barra de quem abriu a Bíblia (aba do shell, Hoje). Recebe a lupa para
+  /// pôr à direita; sem ele, a tela monta a própria barra.
+  final Widget Function(Widget searchAction)? topBarBuilder;
   final String? initialBookAbbrev;
 
-  const BibleScreen({super.key, this.topBar, this.initialBookAbbrev});
+  const BibleScreen({super.key, this.topBarBuilder, this.initialBookAbbrev});
 
   @override
   State<BibleScreen> createState() => _BibleScreenState();
@@ -255,7 +260,8 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
 
   /// Root da aba / rota empurrada — nunca fica sem chrome.
   Widget _rootTopBar() {
-    if (widget.topBar != null) return widget.topBar!;
+    final search = _searchAction();
+    if (widget.topBarBuilder != null) return widget.topBarBuilder!(search);
     final appearance = Appearance.of(context);
     final nav = Navigator.of(context);
     return TopBar(
@@ -266,6 +272,25 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
       subtitle: LiturgicalCalendar.momentFor().subtitle,
       leadingGlyph: CinematicGlyph.book,
       onBack: nav.canPop() ? () => nav.pop() : null,
+      trailing: search,
+    );
+  }
+
+  /// Lupa da barra do topo: abre a busca da Bíblia.
+  Widget _searchAction() {
+    final a = Appearance.of(context);
+    return IconButton(
+      tooltip: context.l10n.bibleSearchButtonSemantics,
+      onPressed: () {
+        ActHaptics.tap();
+        setState(() => _searching = true);
+      },
+      icon: CinematicIcon(
+        glyph: CinematicGlyph.search,
+        size: AppMetrics.iconMd,
+        accent: a.textSecondary,
+        framed: false,
+      ),
     );
   }
 
@@ -344,7 +369,6 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
       books: books,
       pane: _pane,
       onPane: (i) => setState(() => _pane = i),
-      onSearch: () => setState(() => _searching = true),
       onOpenReference: _openReference,
       onOpenBook: _openBook,
       onOpenPlan: () => Navigator.of(context).push(
@@ -366,7 +390,7 @@ class _BibleLibrary extends StatelessWidget {
   final List<BibleBook> books;
   final int pane;
   final ValueChanged<int> onPane;
-  final VoidCallback onSearch;
+
   final ValueChanged<String> onOpenReference;
   final ValueChanged<int> onOpenBook;
   final VoidCallback onOpenPlan;
@@ -378,7 +402,6 @@ class _BibleLibrary extends StatelessWidget {
     required this.books,
     required this.pane,
     required this.onPane,
-    required this.onSearch,
     required this.onOpenReference,
     required this.onOpenBook,
     required this.onOpenPlan,
@@ -430,12 +453,15 @@ class _BibleLibrary extends StatelessWidget {
           ),
           if (booksPane) ...[
             const SizedBox(height: AppSpace.md),
-            _SearchButton(onTap: onSearch),
-            const SizedBox(height: AppSpace.md),
+
             // Navegação livre: retoma de onde parou no leitor.
             _ContinueHero(books: books, onOpenReference: onOpenReference),
-            const SizedBox(height: AppSpace.sm),
-            const _ExploreSoonRow(),
+            const SizedBox(height: AppSpace.md),
+            // Atlas em uma linha só; a estante mora em cada testamento.
+            GlassCard(
+              padding: const EdgeInsets.symmetric(horizontal: AppSpace.lg),
+              child: const _ExploreSoonRow(),
+            ),
             const SizedBox(height: AppSpace.md),
             _OrderChips(order: order),
           ],
@@ -517,9 +543,11 @@ class _BibleLibrary extends StatelessWidget {
     List<int> indices, {
     String? blurb,
     Color? accent,
+    bool first = false,
   }) {
     return [
-      const SizedBox(height: AppSpace.lg),
+      // Mesmo respiro curto entre cards de todas as ordens.
+      if (!first) const SizedBox(height: AppSpace.sm),
       BibleBookList(
         title: title,
         blurb: blurb,
@@ -541,7 +569,10 @@ class _BibleLibrary extends StatelessWidget {
 
   Widget _testament(BuildContext context, bool nt) {
     const otEnd = BibleService.oldTestamentCount;
-    final accent = Appearance.of(context).place;
+    // AT quente, NT frio — a mesma família das cores de gênero abaixo.
+    final look = Appearance.of(context);
+    final hue = nt ? AppColors.cedar : AppColors.sand;
+    final accent = look.onDark ? hue : look.ink(hue);
     final id = nt ? 'nt' : 'ot';
     final open = _sectionOpen(id);
     final groups = [
@@ -553,8 +584,19 @@ class _BibleLibrary extends StatelessWidget {
       return n + (end - g.startIndex + 1);
     });
     final motion = MediaQuery.disableAnimationsOf(context);
+    final start = nt ? otEnd : 0;
+    final end = nt ? books.length : math.min(otEnd, books.length);
+    final progress = context.watch<ProgressService>();
+    var chapters = 0;
+    var read = 0;
+    for (var i = start; i < end; i++) {
+      final n = books[i].chapters.length;
+      chapters += n;
+      read += progress.readChaptersInBook(books[i].abbrev).clamp(0, n).toInt();
+    }
     return Padding(
-      padding: EdgeInsets.only(top: nt ? AppSpace.xxl : AppSpace.sm),
+      // Mesmo respiro entre todos os blocos da aba (AppSpace.md).
+      padding: EdgeInsets.only(top: nt ? AppSpace.sm : 0),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
         child: GlassCard(
@@ -568,9 +610,12 @@ class _BibleLibrary extends StatelessWidget {
                     : context.l10n.bibleOldTestament,
                 accent: accent,
                 count: count,
+                whisper: context.l10n.bibleShelfChapters(read, chapters),
                 expanded: open,
                 onToggle: () => onToggleSection(id),
               ),
+              // Estante do testamento: fica visível mesmo fechado.
+              _BibleShelf(books: books, start: start, end: end),
               AnimatedSize(
                 duration: motion
                     ? Duration.zero
@@ -635,6 +680,11 @@ class _BibleLibrary extends StatelessWidget {
             era.title,
             byEra[era.id]!,
             blurb: era.blurb,
+            first:
+                era.id ==
+                BibleChronology.eras
+                    .firstWhere((e) => byEra[e.id]?.isNotEmpty ?? false)
+                    .id,
           ),
     ];
   }
@@ -647,7 +697,10 @@ class _BibleLibrary extends StatelessWidget {
       byLetter.putIfAbsent(_bookLetter(books[i].name), () => []).add(i);
     }
     final letters = byLetter.keys.toList()..sort();
-    return [for (final l in letters) ..._group('letra:$l', l, byLetter[l]!)];
+    return [
+      for (final l in letters)
+        ..._group('letra:$l', l, byLetter[l]!, first: l == letters.first),
+    ];
   }
 }
 
@@ -656,6 +709,7 @@ class _FoldHeader extends StatelessWidget {
   final String title;
   final Color accent;
   final int count;
+  final String? whisper;
   final bool expanded;
   final VoidCallback onToggle;
 
@@ -663,6 +717,7 @@ class _FoldHeader extends StatelessWidget {
     required this.title,
     required this.accent,
     required this.count,
+    this.whisper,
     required this.expanded,
     required this.onToggle,
   });
@@ -684,74 +739,47 @@ class _FoldHeader extends StatelessWidget {
         child: InkWell(
           onTap: onToggle,
           child: Padding(
-            padding: EdgeInsets.fromLTRB(
+            padding: const EdgeInsets.fromLTRB(
               AppSpace.lg,
+              AppSpace.md,
               AppSpace.lg,
-              AppSpace.lg,
-              expanded ? AppSpace.md : AppSpace.lg,
+              AppSpace.sm,
             ),
-            child: RelicChapter(
-              title: title,
-              accent: accent,
-              divided: false,
-              trailing: CountBadge('$count', color: accent, filled: false),
-              action: AnimatedRotation(
-                turns: expanded ? 0.25 : 0,
-                duration: motion
-                    ? Duration.zero
-                    : const Duration(milliseconds: 220),
-                curve: AppMotion.enter,
-                child: ListChevron(color: a.textFaint),
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _SearchButton extends StatelessWidget {
-  final VoidCallback onTap;
-
-  const _SearchButton({required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Semantics(
-      button: true,
-      label: context.l10n.bibleSearchButtonSemantics,
-      excludeSemantics: true,
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: onTap,
-          borderRadius: BorderRadius.circular(AppRadii.pill),
-          child: Ink(
-            padding: const EdgeInsets.symmetric(
-              horizontal: AppSpace.lg,
-              vertical: AppSpace.md,
-            ),
-            decoration: BoxDecoration(
-              color: a.cardFillSoft,
-              borderRadius: BorderRadius.circular(AppRadii.pill),
-              border: Border.all(color: a.cardBorder),
-            ),
+            // Contagem colada ao título; selo e seta centrados no bloco.
             child: Row(
               children: [
-                CinematicIcon(
-                  glyph: CinematicGlyph.search,
-                  size: AppMetrics.iconMd,
-                  accent: a.textSecondary,
-                  framed: false,
-                ),
-                const SizedBox(width: AppSpace.sm),
                 Expanded(
-                  child: Text(
-                    context.l10n.bibleSearchButtonHint,
-                    style: AppTypography.body(size: 14, color: a.textFaint),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      RelicChapter(
+                        title: title,
+                        accent: accent,
+                        divided: false,
+                      ),
+                      if (whisper != null)
+                        Padding(
+                          padding: const EdgeInsets.only(left: 13),
+                          child: Text(
+                            whisper!,
+                            style: AppTypography.body(
+                              size: 12,
+                              height: 1.2,
+                              color: a.textSecondary,
+                            ),
+                          ),
+                        ),
+                    ],
                   ),
+                ),
+                CountBadge('$count', color: accent, filled: false),
+                AnimatedRotation(
+                  turns: expanded ? 0.25 : 0,
+                  duration: motion
+                      ? Duration.zero
+                      : const Duration(milliseconds: 220),
+                  curve: AppMotion.enter,
+                  child: ListChevron(color: a.textFaint),
                 ),
               ],
             ),
@@ -770,38 +798,44 @@ class _ExploreSoonRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return GlassCard(
+    // Rodapé da estante: uma linha só, sem card próprio.
+    return InkWell(
       onTap: () {
         ActHaptics.tap();
         openComingSoon(context, ComingSoonFeature.explore, source: 'bible');
       },
-      child: Row(
-        children: [
-          CinematicIcon(
-            glyph: CinematicGlyph.hourglass,
-            size: AppMetrics.iconMd,
-            accent: a.textSecondary,
-            framed: false,
-          ),
-          const SizedBox(width: AppSpace.sm),
-          Expanded(
-            child: Text(
-              context.l10n.exploreSoonEntryTitle,
-              style: AppTypography.body(size: 14, color: a.textSecondary),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: AppSpace.md),
+        child: Row(
+          children: [
+            CinematicIcon(
+              glyph: CinematicGlyph.hourglass,
+              size: AppMetrics.iconSm,
+              accent: a.place,
+              framed: false,
             ),
-          ),
-          const SizedBox(width: AppSpace.sm),
-          Text(
-            context.l10n.exploreSoonEntryBadge.toUpperCase(),
-            style: AppTypography.body(
-              size: 11,
-              weight: FontWeight.w800,
-              color: AppRoles.reward,
+            const SizedBox(width: AppSpace.sm),
+            Expanded(
+              child: Text(
+                context.l10n.exploreSoonEntryTitle,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: AppTypography.body(size: 13, color: a.textSecondary),
+              ),
             ),
-          ),
-          const SizedBox(width: AppSpace.xs),
-          ListChevron(color: a.textFaint, size: 18),
-        ],
+            const SizedBox(width: AppSpace.sm),
+            Text(
+              context.l10n.exploreSoonEntryBadge.toUpperCase(),
+              style: AppTypography.body(
+                size: 10,
+                weight: FontWeight.w800,
+                color: AppRoles.reward,
+              ),
+            ),
+            const SizedBox(width: 2),
+            ListChevron(color: a.textFaint, size: 16),
+          ],
+        ),
       ),
     );
   }
@@ -840,6 +874,10 @@ class _ContinueHero extends StatelessWidget {
       (ProgressService p) => p.readChaptersInBook(book.abbrev),
     );
     final reference = '${book.name} $chapter';
+    final verses = book.chapters.isEmpty
+        ? const <String>[]
+        : book.chapters[chapter - 1];
+    final opening = verses.isEmpty ? '' : verses.first.trim();
 
     // Lâmpada acesa: o card inteiro é o convite — sem botão dentro.
     const tone = AppRoles.lamp;
@@ -849,48 +887,179 @@ class _ContinueHero extends StatelessWidget {
       tint: tone,
       color: Color.lerp(a.cardFill, tone, a.onDark ? 0.2 : 0.14),
       onTap: () => onOpenReference(reference),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      child: Stack(
         children: [
-          CardHeader(
-            label: fresh
-                ? context.l10n.bibleHeroStartHere
-                : context.l10n.bibleHeroContinueReading,
-            accent: tone,
-            trailing: !fresh && read > 0
-                ? Text(
-                    context.l10n.bibleReadOf(read, total),
-                    style: AppTypography.body(size: 12, color: a.textFaint),
-                  )
-                : null,
-          ),
-          const SizedBox(height: AppSpace.xs),
-          Row(
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Expanded(
-                child: Text(
-                  reference,
-                  style: AppTypography.display(size: 24, color: a.text),
-                ),
+              CardHeader(
+                label: fresh
+                    ? context.l10n.bibleHeroStartHere
+                    : context.l10n.bibleHeroContinueReading,
+                accent: tone,
+                trailing: !fresh && read > 0
+                    ? Text(
+                        context.l10n.bibleReadOf(read, total),
+                        style: AppTypography.body(size: 12, color: a.textFaint),
+                      )
+                    : null,
               ),
-              const ListChevron(color: tone, size: 22),
+              const SizedBox(height: AppSpace.xs),
+              Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      reference,
+                      style: AppTypography.display(size: 24, color: a.text),
+                    ),
+                  ),
+                  const ListChevron(color: tone, size: 22),
+                ],
+              ),
+              if (fresh) ...[
+                const SizedBox(height: 4),
+                Text(
+                  context.l10n.bibleHeroFreshBlurb,
+                  style: AppTypography.body(size: 13, color: a.textSecondary),
+                ),
+              ] else if (opening.isNotEmpty) ...[
+                // Primeiro versículo do capítulo: a página já entreaberta.
+                const SizedBox(height: 6),
+                Text(
+                  '“$opening”',
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.verse(
+                    size: 16,
+                    height: 1.4,
+                    weight: FontWeight.w500,
+                    fontStyle: FontStyle.italic,
+                    color: a.textSecondary,
+                  ),
+                ),
+              ],
+              if (!fresh && read > 0) ...[
+                const SizedBox(height: AppSpace.md),
+                AppProgressBar(value: read / total, height: 4, color: tone),
+              ],
             ],
           ),
-          if (fresh) ...[
-            const SizedBox(height: 4),
-            Text(
-              context.l10n.bibleHeroFreshBlurb,
-              style: AppTypography.body(size: 13, color: a.textSecondary),
+        ],
+      ),
+    );
+  }
+}
+
+/// Estante de um testamento: uma lombada por livro, na cor do gênero, altura
+/// pelo tamanho do livro. O que já foi lido acende de baixo para cima.
+class _BibleShelf extends StatelessWidget {
+  final List<BibleBook> books;
+
+  /// Livros [start, end) do cânon.
+  final int start;
+  final int end;
+
+  const _BibleShelf({
+    required this.books,
+    required this.start,
+    required this.end,
+  });
+
+  static const _minSpine = 10.0;
+  static const _maxSpine = 30.0;
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final progress = context.watch<ProgressService>();
+    final maxChapters = books.fold<int>(
+      1,
+      (m, b) => math.max(m, b.chapters.length),
+    );
+    var total = 0;
+    var read = 0;
+    final spines = <Widget>[];
+    for (var i = start; i < end; i++) {
+      final b = books[i];
+      final count = b.chapters.length;
+      final done = progress
+          .readChaptersInBook(b.abbrev)
+          .clamp(0, count)
+          .toInt();
+      total += count;
+      read += done;
+      final hue = BibleCanonicalGroups.toneOf(i) ?? a.place;
+      final tone = a.onDark ? hue : a.ink(hue);
+      // Raiz: Salmos (150) não engole Obadias (1).
+      final height =
+          _minSpine + (_maxSpine - _minSpine) * math.sqrt(count / maxChapters);
+      spines.add(
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 0.6),
+            child: Container(
+              height: height,
+              alignment: Alignment.bottomCenter,
+              decoration: BoxDecoration(
+                color: tone.withValues(alpha: a.onDark ? 0.42 : 0.36),
+                borderRadius: const BorderRadius.vertical(
+                  top: Radius.circular(2),
+                ),
+              ),
+              child: done == 0
+                  ? null
+                  : FractionallySizedBox(
+                      heightFactor: count == 0 ? 0 : done / count,
+                      widthFactor: 1,
+                      child: DecoratedBox(
+                        decoration: BoxDecoration(
+                          color: tone,
+                          borderRadius: const BorderRadius.vertical(
+                            top: Radius.circular(2),
+                          ),
+                          boxShadow: [
+                            BoxShadow(
+                              color: tone.withValues(alpha: 0.5),
+                              blurRadius: 6,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
             ),
-          ],
-          if (!fresh && read > 0) ...[
-            const SizedBox(height: AppSpace.md),
-            AppProgressBar(
-              value: read / total,
-              height: 4,
-              color: AppRoles.success,
+          ),
+        ),
+      );
+    }
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.lg,
+        0,
+        AppSpace.lg,
+        AppSpace.md,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Semantics(
+            label: context.l10n.bibleShelfSemantics(read, total),
+            excludeSemantics: true,
+            child: SizedBox(
+              height: _maxSpine,
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: spines,
+              ),
             ),
-          ],
+          ),
+          Container(
+            height: 2,
+            decoration: BoxDecoration(
+              color: a.divider,
+              borderRadius: BorderRadius.circular(AppRadii.hair),
+            ),
+          ),
         ],
       ),
     );
@@ -1072,18 +1241,21 @@ class _PlansCatalogState extends State<_PlansCatalog> {
       feature: 'guided_plan',
       hasPlus: sub.hasPlus,
     );
+    // Tocar só mostra o plano; começar é uma escolha explícita na prévia.
+    final start = await showAppSheet<bool>(
+      context,
+      builder: (_) => _GuidedPlanPreview(
+        def: def,
+        tone: _planTone(def.id),
+        minutes: _minutes[def.id],
+        freeNote: !sub.plusFeaturesOpen,
+      ),
+    );
+    if (start != true || !mounted) return;
     // Sem Plus, começa igual: os primeiros dias do guiado são grátis
     // (BibleReadingPlan.guidedFreeDays). A trava aparece no dia seguinte
-    // ao fim da amostra, dentro do plano — não na porta.
-    if (plan.active) {
-      final ok = await showAppConfirm(
-        context,
-        title: context.l10n.planSwitchTitle,
-        body: context.l10n.planSwitchBody,
-        confirmLabel: context.l10n.modeSwitch,
-      );
-      if (!ok || !mounted) return;
-    }
+    // ao fim da amostra, dentro do plano — não na porta. A troca de plano
+    // já foi avisada na prévia.
     await progress.startGuidedReadingPlan(def.id);
     if (mounted) await _openPlan();
   }
@@ -1095,27 +1267,39 @@ class _PlansCatalogState extends State<_PlansCatalog> {
     final plan = context.select((ProgressService p) => p.bibleReadingPlan);
     final sub = context.watch<SubscriptionService>();
 
-    return GlassCard(
-      padding: const EdgeInsets.fromLTRB(
-        AppSpace.md,
-        AppSpace.md,
-        AppSpace.md,
-        AppSpace.xs,
-      ),
+    Widget badge(bool active, bool locked, Color tone) {
+      if (active) {
+        return SoftBadge(
+          text: l10n.commonActive,
+          accent: a.onDark ? tone : a.ink(tone),
+        );
+      }
+      if (locked) {
+        return CinematicIcon(
+          glyph: CinematicGlyph.lock,
+          size: AppMetrics.iconMd,
+          accent: a.textFaint,
+          framed: false,
+        );
+      }
+      return ListChevron(color: a.textFaint);
+    }
+
+    // Mesmo quadro dos Ajustes ("Sobre o Stway"): ícone, título, linhas.
+    return ProfileSection(
+      accent: a.place,
+      glyph: CinematicGlyph.calendar,
+      title: l10n.plansCatalogHeader,
+      trailing: sub.showsPlus
+          ? SoftBadge(
+              text: l10n.paywallTitle,
+              glyph: CinematicGlyph.plus,
+              accent: AppRoles.reward,
+            )
+          : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          CardHeader(
-            label: l10n.plansCatalogHeader,
-            trailing: sub.showsPlus
-                ? SoftBadge(
-                    text: l10n.paywallTitle,
-                    glyph: CinematicGlyph.plus,
-                    accent: AppRoles.reward,
-                  )
-                : null,
-          ),
-          const SizedBox(height: AppSpace.xs),
           Text(
             sub.plusFeaturesOpen
                 ? l10n.plansCatalogBody
@@ -1126,16 +1310,22 @@ class _PlansCatalogState extends State<_PlansCatalog> {
               color: a.textSecondary,
             ),
           ),
-          const SizedBox(height: AppSpace.xs),
-          _CatalogRow(
+          const SizedBox(height: AppSpace.md),
+          AppNavRow(
             title: l10n.plansWholeBibleTitle,
             subtitle: l10n.planCardIdle,
-            active: plan.active && !plan.isGuided,
+            glyph: _planGlyph(null),
+            accent: _planTone(null),
+            trailing: badge(
+              plan.active && !plan.isGuided,
+              false,
+              _planTone(null),
+            ),
             onTap: () => _tapWholeBible(plan),
           ),
           for (final def in GuidedReadingPlan.all) ...[
-            const ListDivider(),
-            _CatalogRow(
+            const AppNavDivider(),
+            AppNavRow(
               title: def.title(l10n),
               subtitle: _minutes[def.id] == null
                   ? def.subtitle(l10n)
@@ -1143,14 +1333,17 @@ class _PlansCatalogState extends State<_PlansCatalog> {
                       def.subtitle(l10n),
                       _minutes[def.id]!.round().clamp(1, 120),
                     ),
-              active: plan.active && plan.guidedId == def.id,
-              // Cadeado só no plano ativo com a amostra já usada: os
-              // demais começam grátis, então a seta é o convite certo.
-              locked:
-                  !sub.plusFeaturesOpen &&
-                  plan.active &&
-                  plan.guidedId == def.id &&
-                  plan.lockedToday(plusOpen: sub.plusFeaturesOpen),
+              glyph: _planGlyph(def.id),
+              accent: _planTone(def.id),
+              trailing: badge(
+                plan.active && plan.guidedId == def.id,
+                // Cadeado só no plano ativo com a amostra já usada.
+                !sub.plusFeaturesOpen &&
+                    plan.active &&
+                    plan.guidedId == def.id &&
+                    plan.lockedToday(plusOpen: sub.plusFeaturesOpen),
+                _planTone(def.id),
+              ),
               onTap: () => _tapGuided(plan, def),
             ),
           ],
@@ -1160,65 +1353,245 @@ class _PlansCatalogState extends State<_PlansCatalog> {
   }
 }
 
-class _CatalogRow extends StatelessWidget {
-  final String title;
-  final String subtitle;
-  final bool active;
+/// Ícone de cada plano, no poço redondo da linha.
+CinematicGlyph _planGlyph(String? id) => switch (id) {
+  'evangelhos-30' => CinematicGlyph.dove,
+  'salmos-proverbios-31' => CinematicGlyph.heart,
+  'atos-28' => CinematicGlyph.flame,
+  'genesis-25' => CinematicGlyph.seed,
+  'nt-90' => CinematicGlyph.path,
+  _ => CinematicGlyph.book,
+};
 
-  /// Guiado sem Peregrino+: cadeado no lugar da seta.
+/// Cor de cada plano: a do gênero que ele percorre (Evangelhos cedro,
+/// Salmos rosa…). Bíblia inteira = cor da aba.
+Color _planTone(String? id) => switch (id) {
+  'evangelhos-30' => BibleCanonicalGroups.toneOf(39)!,
+  'salmos-proverbios-31' => BibleCanonicalGroups.toneOf(18)!,
+  'atos-28' => BibleCanonicalGroups.toneOf(43)!,
+  'genesis-25' => BibleCanonicalGroups.toneOf(0)!,
+  'nt-90' => BibleCanonicalGroups.toneOf(44)!,
+  _ => AppRoles.navBible,
+};
+
+/// "Mateus 1–3 · Marcos 1": capítulos seguidos do mesmo livro viram faixa.
+String _dayLabel(List<PlanChapterRef> day) {
+  final parts = <String>[];
+  var i = 0;
+  while (i < day.length) {
+    var j = i;
+    while (j + 1 < day.length &&
+        day[j + 1].bookIndex == day[i].bookIndex &&
+        day[j + 1].chapter == day[j].chapter + 1) {
+      j++;
+    }
+    parts.add(
+      j == i
+          ? day[i].label
+          : '${day[i].bookName} ${day[i].chapter}–${day[j].chapter}',
+    );
+    i = j + 1;
+  }
+  return parts.join(' · ');
+}
+
+/// Prévia de um plano guiado: o que é, quanto leva e os primeiros dias.
+/// Só "Começar plano" ativa (devolve true).
+class _GuidedPlanPreview extends StatefulWidget {
+  final GuidedReadingPlan def;
+  final Color tone;
+  final double? minutes;
+  final bool freeNote;
+
+  const _GuidedPlanPreview({
+    required this.def,
+    required this.tone,
+    required this.minutes,
+    required this.freeNote,
+  });
+
+  @override
+  State<_GuidedPlanPreview> createState() => _GuidedPlanPreviewState();
+}
+
+class _GuidedPlanPreviewState extends State<_GuidedPlanPreview> {
+  late final Future<List<List<PlanChapterRef>>> _days = BibleReadingPlanService
+      .instance
+      .guidedDays(widget.def);
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final tone = a.onDark ? widget.tone : a.ink(widget.tone);
+    final switching = context.select(
+      (ProgressService p) => p.bibleReadingPlan.active,
+    );
+
+    Widget pill(String text) => Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      decoration: BoxDecoration(
+        color: tone.withValues(alpha: 0.16),
+        borderRadius: BorderRadius.circular(AppRadii.pill),
+        border: Border.all(color: tone.withValues(alpha: 0.6)),
+      ),
+      child: Text(
+        text,
+        style: AppTypography.body(
+          size: 12,
+          weight: FontWeight.w800,
+          color: tone,
+        ),
+      ),
+    );
+
+    // Folha alta: cabeçalho e botão fixos, o plano inteiro rola no meio.
+    final height = MediaQuery.sizeOf(context).height * 0.86;
+    return AppSheetPanel(
+      tint: widget.tone,
+      child: SizedBox(
+        height: height,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            AppSheetHeader(
+              eyebrow: l10n.plansCatalogHeader,
+              eyebrowColor: tone,
+              title: widget.def.title(l10n),
+              subtitle: widget.def.subtitle(l10n),
+            ),
+            const SizedBox(height: AppSpace.md),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                pill(l10n.guidedPlanDaysCount(widget.def.days)),
+                if (widget.minutes != null)
+                  pill(
+                    l10n.guidedPlanMinutesPerDay(
+                      widget.minutes!.round().clamp(1, 120),
+                    ),
+                  ),
+              ],
+            ),
+            const SizedBox(height: AppSpace.lg),
+            SectionLabel(l10n.guidedPlanAllDays),
+            const SizedBox(height: AppSpace.xs),
+            Expanded(
+              child: FutureBuilder<List<List<PlanChapterRef>>>(
+                future: _days,
+                builder: (context, snap) {
+                  final days = snap.data;
+                  if (days == null) {
+                    return const Center(child: AppSpinner(inline: true));
+                  }
+                  return ListView.separated(
+                    padding: const EdgeInsets.symmetric(vertical: AppSpace.xs),
+                    itemCount: days.length,
+                    separatorBuilder: (_, _) => const ListDivider(),
+                    itemBuilder: (context, d) => _GuidedDayRow(
+                      day: d + 1,
+                      chapters: days[d],
+                      tone: tone,
+                      // Sem Plus: depois da amostra grátis, cadeado discreto.
+                      locked:
+                          widget.freeNote &&
+                          d >= BibleReadingPlan.guidedFreeDays,
+                    ),
+                  );
+                },
+              ),
+            ),
+            if (widget.freeNote || switching) ...[
+              const SizedBox(height: AppSpace.sm),
+              Text(
+                [
+                  if (widget.freeNote)
+                    l10n.guidedPlanFreeNote(BibleReadingPlan.guidedFreeDays),
+                  if (switching) l10n.planSwitchBody,
+                ].join(' '),
+                style: AppTypography.body(
+                  size: 12,
+                  height: 1.4,
+                  color: a.textFaint,
+                ),
+              ),
+            ],
+            const SizedBox(height: AppSpace.md),
+            CopperCta(
+              label: l10n.guidedPlanStart,
+              onTap: () => Navigator.pop(context, true),
+              trailing: null,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Uma linha do plano: número do dia no poço da cor do plano, os
+/// capítulos e o tempo estimado.
+class _GuidedDayRow extends StatelessWidget {
+  final int day;
+  final List<PlanChapterRef> chapters;
+  final Color tone;
   final bool locked;
-  final VoidCallback onTap;
 
-  const _CatalogRow({
-    required this.title,
-    required this.subtitle,
-    required this.active,
-    required this.onTap,
-    this.locked = false,
+  const _GuidedDayRow({
+    required this.day,
+    required this.chapters,
+    required this.tone,
+    required this.locked,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return InkWell(
-      onTap: onTap,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 12),
-        child: Row(
-          children: [
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    title,
-                    style: AppTypography.title(size: 15, color: a.text),
-                  ),
-                  const SizedBox(height: 2),
-                  Text(
-                    subtitle,
-                    style: AppTypography.body(size: 12, color: a.textSecondary),
-                  ),
-                ],
+    final minutes = chapters.fold<double>(0, (m, c) => m + c.estimatedMinutes);
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 10),
+      child: Row(
+        children: [
+          Container(
+            width: 34,
+            height: 34,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: tone.withValues(alpha: 0.16),
+              border: Border.all(color: tone.withValues(alpha: 0.55)),
+            ),
+            child: Text(
+              '$day',
+              style: AppTypography.body(
+                size: 13,
+                weight: FontWeight.w800,
+                color: tone,
               ),
             ),
-            const SizedBox(width: AppSpace.sm),
-            if (active)
-              SoftBadge(
-                text: context.l10n.commonActive,
-                accent: AppRoles.success,
-              )
-            else if (locked)
-              CinematicIcon(
-                glyph: CinematicGlyph.lock,
-                size: AppMetrics.iconMd,
-                accent: a.textFaint,
-                framed: false,
-              )
-            else
-              ListChevron(color: a.textFaint),
-          ],
-        ),
+          ),
+          const SizedBox(width: AppSpace.md),
+          Expanded(
+            child: Text(
+              _dayLabel(chapters),
+              style: AppTypography.body(size: 14, color: a.text),
+            ),
+          ),
+          const SizedBox(width: AppSpace.sm),
+          if (locked)
+            CinematicIcon(
+              glyph: CinematicGlyph.lock,
+              size: AppMetrics.iconSm,
+              accent: a.textFaint,
+              framed: false,
+            )
+          else
+            Text(
+              context.l10n.planMinutes(math.max(1, minutes.round())),
+              style: AppTypography.body(size: 12, color: a.textFaint),
+            ),
+        ],
       ),
     );
   }

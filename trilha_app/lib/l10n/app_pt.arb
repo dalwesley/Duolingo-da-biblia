@@ -407,6 +407,28 @@
       }
     }
   },
+  "bibleShelfChapters": "{read} de {total} capítulos",
+  "@bibleShelfChapters": {
+    "placeholders": {
+      "read": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "bibleShelfSemantics": "Estante da Bíblia: {read} de {total} capítulos lidos",
+  "@bibleShelfSemantics": {
+    "placeholders": {
+      "read": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "bibleTabReading": "Planos",
   "bibleTapToClose": "Toque para fechar",
   "bibleTapToOpen": "Toque para abrir",
@@ -471,17 +493,17 @@
       }
     }
   },
-  "canonEvangelhosBlurb": "Mateus a João — a vida de Jesus",
+  "canonEvangelhosBlurb": "A vida de Jesus",
   "canonEvangelhosTitle": "Evangelhos",
   "canonGeraisBlurb": "Hebreus a Judas",
   "canonGeraisTitle": "Cartas gerais",
   "canonHistoriaNtBlurb": "Atos dos Apóstolos",
   "canonHistoriaNtTitle": "História",
-  "canonHistoricosBlurb": "Josué a Ester — a história de Israel",
+  "canonHistoricosBlurb": "A história de Israel",
   "canonHistoricosTitle": "Históricos",
   "canonPaulinasBlurb": "Romanos a Filemom",
   "canonPaulinasTitle": "Cartas paulinas",
-  "canonPentateucoBlurb": "A Lei — Gênesis a Deuteronômio",
+  "canonPentateucoBlurb": "A Lei",
   "canonPentateucoTitle": "Pentateuco",
   "canonPoeticosBlurb": "Jó a Cantares",
   "canonPoeticosTitle": "Poéticos e sabedoria",
@@ -2167,6 +2189,10 @@
   "growthWhisper": "Cada dia da sequência sobe um marco: Semente, Broto, Ramo, Árvore e Fruto.",
   "guidedPlanActsSubtitle": "A igreja nasce, um capítulo por dia",
   "guidedPlanActsTitle": "Atos em 28 dias",
+  "guidedPlanAllDays": "Dia a dia",
+  "@guidedPlanAllDays": {
+    "description": "Título da lista completa de dias na prévia do plano"
+  },
   "guidedPlanDayOf": "Dia {day} de {total}",
   "@guidedPlanDayOf": {
     "placeholders": {
@@ -2178,11 +2204,40 @@
       }
     }
   },
+  "guidedPlanDayShort": "Dia {day}",
+  "@guidedPlanDayShort": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      }
+    }
+  },
+  "guidedPlanDaysCount": "{count, plural, =1{1 dia} other{{count} dias}}",
+  "@guidedPlanDaysCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "guidedPlanDaysUnit": "dias",
+  "@guidedPlanDaysUnit": {
+    "description": "Unidade embaixo do número no selo do plano"
+  },
   "guidedPlanFinished": "Você concluiu «{plan}».",
   "@guidedPlanFinished": {
     "placeholders": {
       "plan": {
         "type": "String"
+      }
+    }
+  },
+  "guidedPlanFirstDays": "Primeiros dias",
+  "guidedPlanFreeNote": "Os primeiros {count} dias são grátis; depois, Peregrino+.",
+  "@guidedPlanFreeNote": {
+    "placeholders": {
+      "count": {
+        "type": "int"
       }
     }
   },
@@ -2201,10 +2256,19 @@
       }
     }
   },
+  "guidedPlanMinutesPerDay": "~{minutes} min/dia",
+  "@guidedPlanMinutesPerDay": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
   "guidedPlanNewTestamentSubtitle": "De Mateus a Apocalipse, cerca de 3 capítulos por dia",
   "guidedPlanNewTestamentTitle": "Novo Testamento em 90 dias",
   "guidedPlanPsalmsSubtitle": "Um capítulo de Provérbios e alguns Salmos por dia",
   "guidedPlanPsalmsTitle": "Salmos e Provérbios em 31 dias",
+  "guidedPlanStart": "Começar plano",
   "heroEndAllBody": "Novas trilhas chegam em breve. Enquanto isso, revise o que ficou ou leia a Bíblia.",
   "heroEndAllTitle": "Você caminhou todas as trilhas",
   "heroEndPlusBody": "As próximas trilhas são do Peregrino+. A Bíblia continua aberta para ler.",
@@ -4992,6 +5056,14 @@
       }
     }
   },
+  "planApproxMinutesPerDay": "~{duration}",
+  "@planApproxMinutesPerDay": {
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
   "planApproxMonths": "{count, plural, =1{~1 mês} other{~{count} meses}}",
   "@planApproxMonths": {
     "placeholders": {
@@ -5095,6 +5167,7 @@
       }
     }
   },
+  "planDailyReading": "Leitura por dia",
   "planDateRange": "{count, plural, =1{1 dia} other{{count} dias}} · {from} a {to}",
   "@planDateRange": {
     "placeholders": {
@@ -5164,6 +5237,36 @@
     "description": "Day row in the plan editor: the question of that day.",
     "placeholders": {
       "text": {
+        "type": "String"
+      }
+    }
+  },
+  "planDeadlineBody": "Dividimos o que falta em porções iguais até o prazo — na ordem da Bíblia ou na ordem dos acontecimentos. Capítulos que você já leu são pulados.",
+  "planDeadlineMonths": "{count, plural, =1{1 mês} other{{count} meses}}",
+  "@planDeadlineMonths": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planDeadlineQuestion": "Em quanto tempo quer ler a Bíblia?",
+  "planDeadlineYears": "{count, plural, =1{1 ano} other{{count} anos}}",
+  "@planDeadlineYears": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planDeadlineYearsMonths": "{years} e {months}",
+  "@planDeadlineYearsMonths": {
+    "description": "Prazo do plano: \"1 ano e 3 meses\"",
+    "placeholders": {
+      "years": {
+        "type": "String"
+      },
+      "months": {
         "type": "String"
       }
     }
@@ -5391,6 +5494,14 @@
         "type": "int"
       }
     }
+  },
+  "planModeDaily": "Tempo por dia",
+  "@planModeDaily": {
+    "description": "Plano de leitura: escolher pelos minutos diários"
+  },
+  "planModeDeadline": "Prazo",
+  "@planModeDeadline": {
+    "description": "Plano de leitura: escolher em quanto tempo terminar"
   },
   "planNextOpens": "O dia {n} abre {when}.",
   "@planNextOpens": {
@@ -5660,6 +5771,7 @@
   "@planSeatNotIn": {
     "description": "Person sheet: hasn't tapped 'I'm in' yet."
   },
+  "planSectionDeadline": "Terminar em",
   "planSectionOrder": "Ordem",
   "planSectionTime": "Tempo disponível",
   "planSetupBody": "Montamos a porção diária para caber nesse tempo — na ordem da Bíblia ou na ordem dos acontecimentos. Capítulos que você já leu são pulados.",
@@ -5786,11 +5898,11 @@
     }
   },
   "planStartAnother": "Começar outro propósito",
-  "planStartCta": "Começar plano · {minutes} min/dia",
+  "planStartCta": "Começar plano · {duration}/dia",
   "@planStartCta": {
     "placeholders": {
-      "minutes": {
-        "type": "int"
+      "duration": {
+        "type": "String"
       }
     }
   },

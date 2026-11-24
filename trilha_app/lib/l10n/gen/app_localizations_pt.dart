@@ -554,6 +554,16 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String bibleShelfChapters(int read, int total) {
+    return '$read de $total capítulos';
+  }
+
+  @override
+  String bibleShelfSemantics(int read, int total) {
+    return 'Estante da Bíblia: $read de $total capítulos lidos';
+  }
+
+  @override
   String get bibleTabReading => 'Planos';
 
   @override
@@ -650,7 +660,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get canonEvangelhosBlurb => 'Mateus a João — a vida de Jesus';
+  String get canonEvangelhosBlurb => 'A vida de Jesus';
 
   @override
   String get canonEvangelhosTitle => 'Evangelhos';
@@ -668,7 +678,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get canonHistoriaNtTitle => 'História';
 
   @override
-  String get canonHistoricosBlurb => 'Josué a Ester — a história de Israel';
+  String get canonHistoricosBlurb => 'A história de Israel';
 
   @override
   String get canonHistoricosTitle => 'Históricos';
@@ -680,7 +690,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get canonPaulinasTitle => 'Cartas paulinas';
 
   @override
-  String get canonPentateucoBlurb => 'A Lei — Gênesis a Deuteronômio';
+  String get canonPentateucoBlurb => 'A Lei';
 
   @override
   String get canonPentateucoTitle => 'Pentateuco';
@@ -3315,13 +3325,43 @@ class AppLocalizationsPt extends AppLocalizations {
   String get guidedPlanActsTitle => 'Atos em 28 dias';
 
   @override
+  String get guidedPlanAllDays => 'Dia a dia';
+
+  @override
   String guidedPlanDayOf(int day, int total) {
     return 'Dia $day de $total';
   }
 
   @override
+  String guidedPlanDayShort(int day) {
+    return 'Dia $day';
+  }
+
+  @override
+  String guidedPlanDaysCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dias',
+      one: '1 dia',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get guidedPlanDaysUnit => 'dias';
+
+  @override
   String guidedPlanFinished(String plan) {
     return 'Você concluiu «$plan».';
+  }
+
+  @override
+  String get guidedPlanFirstDays => 'Primeiros dias';
+
+  @override
+  String guidedPlanFreeNote(int count) {
+    return 'Os primeiros $count dias são grátis; depois, Peregrino+.';
   }
 
   @override
@@ -3343,6 +3383,11 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String guidedPlanMinutesPerDay(int minutes) {
+    return '~$minutes min/dia';
+  }
+
+  @override
   String get guidedPlanNewTestamentSubtitle =>
       'De Mateus a Apocalipse, cerca de 3 capítulos por dia';
 
@@ -3355,6 +3400,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get guidedPlanPsalmsTitle => 'Salmos e Provérbios em 31 dias';
+
+  @override
+  String get guidedPlanStart => 'Começar plano';
 
   @override
   String get heroEndAllBody =>
@@ -7457,6 +7505,11 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String planApproxMinutesPerDay(String duration) {
+    return '~$duration';
+  }
+
+  @override
   String planApproxMonths(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -7578,6 +7631,9 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get planDailyReading => 'Leitura por dia';
+
+  @override
   String planDateRange(int count, String from, String to) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -7631,6 +7687,40 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String planDayQuestionLine(String text) {
     return 'Pergunta: $text';
+  }
+
+  @override
+  String get planDeadlineBody =>
+      'Dividimos o que falta em porções iguais até o prazo — na ordem da Bíblia ou na ordem dos acontecimentos. Capítulos que você já leu são pulados.';
+
+  @override
+  String planDeadlineMonths(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count meses',
+      one: '1 mês',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get planDeadlineQuestion => 'Em quanto tempo quer ler a Bíblia?';
+
+  @override
+  String planDeadlineYears(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count anos',
+      one: '1 ano',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planDeadlineYearsMonths(String years, String months) {
+    return '$years e $months';
   }
 
   @override
@@ -7933,6 +8023,12 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get planModeDaily => 'Tempo por dia';
+
+  @override
+  String get planModeDeadline => 'Prazo';
+
+  @override
   String planNextOpens(int n, String when) {
     return 'O dia $n abre $when.';
   }
@@ -8184,6 +8280,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get planSeatNotIn => 'Ainda não';
 
   @override
+  String get planSectionDeadline => 'Terminar em';
+
+  @override
   String get planSectionOrder => 'Ordem';
 
   @override
@@ -8296,8 +8395,8 @@ class AppLocalizationsPt extends AppLocalizations {
   String get planStartAnother => 'Começar outro propósito';
 
   @override
-  String planStartCta(int minutes) {
-    return 'Começar plano · $minutes min/dia';
+  String planStartCta(String duration) {
+    return 'Começar plano · $duration/dia';
   }
 
   @override

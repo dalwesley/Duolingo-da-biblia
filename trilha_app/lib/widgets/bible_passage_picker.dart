@@ -239,6 +239,9 @@ class _PassagePickerSheetState extends State<_PassagePickerSheet> {
   }
 }
 
+/// Tom de gênero forte: puro no escuro, [AppearanceStyle.ink] no papel.
+Color _strong(AppearanceStyle a, Color tone) => a.onDark ? tone : a.ink(tone);
+
 /// Lista de livros — título do grupo dentro do card, depois as linhas.
 class BibleBookList extends StatelessWidget {
   final List<BibleBook> books;
@@ -271,7 +274,6 @@ class BibleBookList extends StatelessWidget {
   });
 
   static const _abbrevWidth = 42.0;
-  static const _dividerIndent = AppSpace.lg + _abbrevWidth + AppSpace.sm;
 
   @override
   Widget build(BuildContext context) {
@@ -281,9 +283,9 @@ class BibleBookList extends StatelessWidget {
     final rows = Column(
       children: [
         for (var n = 0; n < indices.length; n++) ...[
-          if (n > 0) const ListDivider(indent: _dividerIndent),
           _BookRow(
             book: books[indices[n]],
+            tone: BibleCanonicalGroups.toneOf(indices[n]),
             read: progress.readChaptersInBook(books[indices[n]].abbrev),
             finishedOn: progress
                 .booksFinishedOn[books[indices[n]].abbrev.toLowerCase()],
@@ -309,23 +311,45 @@ class BibleBookList extends StatelessWidget {
                 AppSpace.lg,
                 AppSpace.sm,
               ),
-              child: Column(
+              // Barra na cor do gênero; o subtítulo vem na mesma linha do
+              // título ("Pentateuco  A Lei") para a lista ficar curta.
+              child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    title!,
-                    style: AppTypography.title(size: 16, color: a.text),
-                  ),
-                  if (blurb != null) ...[
-                    const SizedBox(height: 2),
-                    Text(
-                      blurb!,
-                      style: AppTypography.body(
-                        size: 12,
-                        color: a.textSecondary,
-                      ),
+                  Container(
+                    width: 3,
+                    height: 18,
+                    margin: const EdgeInsets.only(top: 2),
+                    decoration: BoxDecoration(
+                      color: indices.isEmpty
+                          ? (accent ?? a.place)
+                          : _strong(
+                              a,
+                              BibleCanonicalGroups.toneOf(indices.first) ??
+                                  a.place,
+                            ),
+                      borderRadius: BorderRadius.circular(AppRadii.hair),
                     ),
-                  ],
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Text.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(text: title!),
+                          if (blurb != null && blurb!.isNotEmpty)
+                            TextSpan(
+                              text: ' - ${blurb!}',
+                              style: AppTypography.body(
+                                size: 12,
+                                color: a.textFaint,
+                              ),
+                            ),
+                        ],
+                      ),
+                      style: AppTypography.title(size: 16, color: a.text),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -407,6 +431,9 @@ class BibleBookList extends StatelessWidget {
 
 class _BookRow extends StatelessWidget {
   final BibleBook book;
+
+  /// Cor do gênero (Pentateuco, Evangelhos…); null = cor do lugar.
+  final Color? tone;
   final int read;
   final bool selected;
   final VoidCallback onTap;
@@ -416,6 +443,7 @@ class _BookRow extends StatelessWidget {
 
   const _BookRow({
     required this.book,
+    this.tone,
     required this.read,
     this.finishedOn,
     required this.selected,
@@ -442,6 +470,9 @@ class _BookRow extends StatelessWidget {
         ? context.l10n.bibleChapterCountShort(total)
         : context.l10n.bibleReadOf(read, total);
     final abbrev = book.short.toUpperCase();
+    final hue = tone ?? a.place;
+    // No escuro o tom vai puro (ink clareia e lava a cor); no papel, ink.
+    final ink = a.onDark ? hue : a.ink(hue);
 
     return Semantics(
       button: true,
@@ -457,22 +488,34 @@ class _BookRow extends StatelessWidget {
         child: InkWell(
           onTap: onTap,
           child: Padding(
+            // Sem divisória entre livros: linhas mais juntas.
             padding: const EdgeInsets.symmetric(
               horizontal: AppSpace.lg,
-              vertical: AppSpace.md,
+              vertical: AppSpace.sm,
             ),
             child: Row(
               children: [
-                SizedBox(
+                // Sigla em selo suave na cor do gênero: a lista vira um mapa
+                // de cores (lei, história, poesia, profetas, evangelhos…).
+                Container(
                   width: BibleBookList._abbrevWidth,
+                  height: 30,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: hue.withValues(alpha: a.onDark ? 0.3 : 0.22),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: hue.withValues(alpha: a.onDark ? 0.85 : 0.7),
+                    ),
+                  ),
                   child: Text(
                     abbrev,
                     maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
+                    overflow: TextOverflow.clip,
                     style: AppTypography.label(
                       size: abbrev.length > 3 ? 10 : 11,
                       letterSpacing: 0.4,
-                      color: a.textSecondary,
+                      color: ink,
                     ),
                   ),
                 ),
@@ -535,7 +578,7 @@ class _BookRow extends StatelessWidget {
                             ? 0
                             : read / total,
                         height: 3,
-                        color: sealed ? AppRoles.reward : AppRoles.presence,
+                        color: sealed ? AppRoles.reward : ink,
                       ),
                     ],
                   ),

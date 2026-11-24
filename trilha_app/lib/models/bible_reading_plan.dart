@@ -87,6 +87,13 @@ class BibleReadingPlan {
 
   /// Dias iniciais de todo plano guiado, para qualquer pessoa: dá para
   /// começar e provar antes de o Peregrino+ entrar (como a Caminhada).
+  /// Piso do plano por tempo. 1 min: um prazo longo divide o que falta em
+  /// porções pequenas (cada dia ainda leva ao menos um capítulo).
+  static const minMinutesPerDay = 1;
+
+  /// Teto do plano por tempo: 6 h por dia.
+  static const maxMinutesPerDay = 360;
+
   static const guidedFreeDays = 3;
 
   /// Hoje a leitura está travada: plano guiado, amostra usada e sem
@@ -152,7 +159,11 @@ class BibleReadingPlan {
       active: raw['active'] == true,
       order: BibleReadingOrder.fromStorage(raw['order']?.toString()),
       minutesPerDay:
-          (raw['minutesPerDay'] as num?)?.toInt().clamp(5, 120) ?? 15,
+          (raw['minutesPerDay'] as num?)?.toInt().clamp(
+            BibleReadingPlan.minMinutesPerDay,
+            BibleReadingPlan.maxMinutesPerDay,
+          ) ??
+          15,
       cursor: (raw['cursor'] as num?)?.toInt().clamp(0, 100000) ?? 0,
       lastCompletedDay: raw['lastCompletedDay']?.toString(),
       completedDays:

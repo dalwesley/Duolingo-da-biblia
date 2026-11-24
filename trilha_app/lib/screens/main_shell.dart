@@ -705,8 +705,10 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     required String userName,
     required String? photoUrl,
     required AppearanceStyle appearance,
+    Widget? trailing,
   }) {
     return TopBar(
+      trailing: trailing,
       inline: true,
       immersive: true,
       dark: appearance.onDark,
@@ -821,7 +823,18 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
                 portalsActive: _index == 1,
               ),
             ),
-            _lazyTab(2, () => BibleScreen(topBar: tabBar(2))),
+            _lazyTab(
+              2,
+              () => BibleScreen(
+                topBarBuilder: (search) => _tabTopBar(
+                  index: 2,
+                  userName: userName,
+                  photoUrl: photoUrl,
+                  appearance: appearance,
+                  trailing: search,
+                ),
+              ),
+            ),
             _lazyTab(
               3,
               () => LeagueScreen(

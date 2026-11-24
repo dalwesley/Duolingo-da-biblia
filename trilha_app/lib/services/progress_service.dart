@@ -2047,7 +2047,10 @@ class ProgressService extends ChangeNotifier {
     bibleReadingPlan = BibleReadingPlan(
       active: true,
       order: order,
-      minutesPerDay: minutesPerDay.clamp(5, 120),
+      minutesPerDay: minutesPerDay.clamp(
+        BibleReadingPlan.minMinutesPerDay,
+        BibleReadingPlan.maxMinutesPerDay,
+      ),
       cursor: cursor,
       lastCompletedDay: null,
       completedDays: 0,
@@ -2111,7 +2114,10 @@ class ProgressService extends ChangeNotifier {
   Future<void> updateBibleReadingPlanMinutes(int minutesPerDay) async {
     if (!bibleReadingPlan.active) return;
     bibleReadingPlan = bibleReadingPlan.copyWith(
-      minutesPerDay: minutesPerDay.clamp(5, 120),
+      minutesPerDay: minutesPerDay.clamp(
+        BibleReadingPlan.minMinutesPerDay,
+        BibleReadingPlan.maxMinutesPerDay,
+      ),
     );
     await _save();
     notifyListeners();

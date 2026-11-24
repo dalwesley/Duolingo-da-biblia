@@ -52,10 +52,6 @@ void main() {
       }
     }
     expect(find.text('Gênesis 1:1'), findsOneWidget);
-    expect(
-      find.textContaining('em leitura', findRichText: true),
-      findsOneWidget,
-    );
     expect(find.text('Versículo 1 de 31'), findsOneWidget);
     for (final code in ['JFAAL · PT', 'TB · PT', 'BSB · EN', 'BES · ES']) {
       expect(
@@ -69,7 +65,7 @@ void main() {
     expect(find.textContaining('Al principio'), findsOneWidget);
     // Ativa (JFAAL) no topo, antes das outras.
     final hero = tester
-        .getTopLeft(find.textContaining('em leitura', findRichText: true))
+        .getTopLeft(find.textContaining('JFAAL · PT', findRichText: true))
         .dy;
     final en = tester.getTopLeft(find.textContaining('In the beginning')).dy;
     expect(hero, lessThan(en));

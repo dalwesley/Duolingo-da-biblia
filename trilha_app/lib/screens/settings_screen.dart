@@ -32,6 +32,7 @@ import '../utils/content_filter.dart';
 import '../utils/appearance.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/trail_progress.dart';
+import '../widgets/app_nav_row.dart';
 import '../widgets/store_rating_sheet.dart';
 import '../widgets/whats_new_sheet.dart';
 import '../widgets/app_report_sheet.dart';
@@ -372,7 +373,7 @@ class _SettingsScreenState extends State<SettingsScreen>
             _fieldHint(a, context.l10n.settingsStreakGoalHint),
             const SizedBox(height: AppSpace.md),
             _streakGoalPicker(progress),
-            const _SettingsDivider(compact: true),
+            const AppNavDivider(),
             _navRow(
               a,
               context.l10n.modeSheetEyebrow,
@@ -387,7 +388,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                 tint: DifficultyVisuals.accentFor(mode),
               ),
             ),
-            const _SettingsDivider(compact: true),
+            const AppNavDivider(),
             _navRow(
               a,
               context.l10n.settingsIntentLabel,
@@ -483,7 +484,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           glyph: CinematicGlyph.bell,
           tone: AppColors.ember,
         ),
-        const _SettingsDivider(compact: true),
+        const AppNavDivider(),
         _toggle(
           a,
           context.l10n.settingsSounds,
@@ -607,7 +608,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           accent: mode.accent,
           onTap: () => showAppearanceSheet(context),
         ),
-        const _SettingsDivider(compact: true),
+        const AppNavDivider(),
         _navRow(
           a,
           context.l10n.languageTitle,
@@ -679,54 +680,16 @@ class _SettingsScreenState extends State<SettingsScreen>
     Widget? leading,
     Widget? trailing,
   }) {
-    return MergeSemantics(
-      child: Semantics(
-        button: true,
-        child: InkWell(
-          onTap: onTap,
-          splashColor: Colors.transparent,
-          highlightColor: Colors.transparent,
-          borderRadius: BorderRadius.circular(AppRadii.sm),
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(minHeight: 52),
-            child: Row(
-              children: [
-                leading ??
-                    CinematicIcon(
-                      glyph: glyph,
-                      size: AppMetrics.leadingIcon,
-                      accent: accent ?? a.place,
-                      glowing: false,
-                    ),
-                const SizedBox(width: AppSpace.md),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        label,
-                        style: AppTypography.title(
-                          size: 14,
-                          color: labelColor ?? a.text,
-                        ),
-                      ),
-                      const SizedBox(height: 2),
-                      Text(
-                        value,
-                        style: AppTypography.body(
-                          size: 12,
-                          color: a.textSecondary,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                trailing ?? ListChevron(color: a.textFaint),
-              ],
-            ),
-          ),
-        ),
-      ),
+    // Mesma linha dos quadros da Bíblia e dos planos (AppNavRow).
+    return AppNavRow(
+      title: label,
+      subtitle: value,
+      glyph: glyph,
+      accent: accent,
+      onTap: onTap,
+      leading: leading,
+      titleColor: labelColor,
+      trailing: trailing ?? ListChevron(color: a.textFaint),
     );
   }
 
@@ -1151,7 +1114,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           onTap: () => _openBackupSheet(sync),
         ),
         if (backend.isSignedIn) ...[
-          const _SettingsDivider(compact: true),
+          const AppNavDivider(),
           _navRow(
             a,
             context.l10n.settingsBlockedPeople,
@@ -1162,7 +1125,7 @@ class _SettingsScreenState extends State<SettingsScreen>
             accent: AppRoles.areaNewTestament,
             onTap: _openBlockedSheet,
           ),
-          const _SettingsDivider(compact: true),
+          const AppNavDivider(),
           _navRow(
             a,
             context.l10n.settingsSignOut,
@@ -1197,7 +1160,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           onTap: () => _confirmResetProgress(progress),
         ),
         if (backend.isSignedIn) ...[
-          const _SettingsDivider(compact: true),
+          const AppNavDivider(),
           _navRow(
             a,
             context.l10n.settingsDeleteAccount,
@@ -1391,7 +1354,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           accent: AppRoles.areaChristianLife,
           onTap: openAboutPage,
         ),
-        const _SettingsDivider(compact: true),
+        const AppNavDivider(),
         _navRow(
           a,
           context.l10n.settingsManifesto,
@@ -1400,7 +1363,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           accent: AppRoles.reward,
           onTap: () => openSitePage(manifestoPageUrl),
         ),
-        const _SettingsDivider(compact: true),
+        const AppNavDivider(),
         _navRow(
           a,
           context.l10n.settingsReplayIntro,
@@ -1415,7 +1378,7 @@ class _SettingsScreenState extends State<SettingsScreen>
             );
           },
         ),
-        const _SettingsDivider(compact: true),
+        const AppNavDivider(),
         _navRow(
           a,
           context.l10n.settingsWhatsNew,
@@ -1424,7 +1387,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           accent: AppRoles.areaChristianLife,
           onTap: () => WhatsNew.preview(context),
         ),
-        const _SettingsDivider(compact: true),
+        const AppNavDivider(),
         _navRow(
           a,
           context.l10n.settingsCreditsTitle,
@@ -1433,7 +1396,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           accent: AppColors.orchid,
           onTap: () => _openCreditsSheet(credits),
         ),
-        const _SettingsDivider(compact: true),
+        const AppNavDivider(),
         _navRow(
           a,
           context.l10n.settingsReportProblem,
@@ -1442,7 +1405,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           accent: AppColors.ember,
           onTap: () => showAppReportSheet(context),
         ),
-        const _SettingsDivider(compact: true),
+        const AppNavDivider(),
         _navRow(
           a,
           context.l10n.settingsRateApp,
@@ -1455,7 +1418,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           },
         ),
         if (kDebugMode) ...[
-          const _SettingsDivider(compact: true),
+          const AppNavDivider(),
           _navRow(
             a,
             'Laboratório Peregrino+',
@@ -1547,17 +1510,13 @@ class _SettingsScreenState extends State<SettingsScreen>
 }
 
 class _SettingsDivider extends StatelessWidget {
-  final bool compact;
-
-  const _SettingsDivider({this.compact = false});
+  const _SettingsDivider();
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(
-        vertical: compact ? AppSpace.xs : AppSpace.lg,
-      ),
-      child: const ListDivider(),
+    return const Padding(
+      padding: EdgeInsets.symmetric(vertical: AppSpace.lg),
+      child: ListDivider(),
     );
   }
 }

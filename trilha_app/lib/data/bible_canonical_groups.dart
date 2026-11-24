@@ -1,7 +1,10 @@
 /// Divisões canônicas (ordem protestante) — Pentateuco, Históricos, etc.
 library;
 
+import 'package:flutter/painting.dart';
+
 import '../l10n/l10n_global.dart';
+import '../theme/app_colors.dart';
 
 class BibleCanonGroup {
   final String id;
@@ -17,6 +20,22 @@ class BibleCanonGroup {
   });
 
   int get count => endIndex - startIndex + 1;
+
+  /// Cor do gênero — AT em tons quentes (terra, fogo), NT em tons frios
+  /// (água, céu). Vizinhos nunca repetem a mesma família.
+  Color get tone => switch (id) {
+    'pentateuco' => AppColors.sand,
+    'historicos' => AppColors.ember,
+    'poeticos' => const Color(0xFFFF8FB1),
+    'profetas-maiores' => AppColors.coral,
+    'profetas-menores' => AppColors.clay,
+    'evangelhos' => AppColors.cedar,
+    'historia-nt' => AppColors.sprout,
+    'paulinas' => AppColors.sky,
+    'gerais' => AppColors.orchid,
+    'profecia' => const Color(0xFFB592FF),
+    _ => AppColors.slate,
+  };
 
   String get title => switch (id) {
     'pentateuco' => L10n.current.canonPentateucoTitle,
@@ -64,6 +83,9 @@ class BibleCanonicalGroups {
     BibleCanonGroup(id: 'gerais', startIndex: 57, endIndex: 64),
     BibleCanonGroup(id: 'profecia', startIndex: 65, endIndex: 65),
   ];
+
+  /// Cor do gênero do livro [bookIndex]; null fora do cânon.
+  static Color? toneOf(int bookIndex) => ofBook(bookIndex)?.tone;
 
   /// Grupo do livro [bookIndex] (0–65), ou null fora do cânon.
   static BibleCanonGroup? ofBook(int bookIndex) {

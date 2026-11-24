@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import '../data/bible_chronology.dart';
 import '../data/guided_reading_plans.dart';
 import '../models/bible_reading_plan.dart';
@@ -216,9 +218,12 @@ class BibleReadingPlanService {
         remainingChapters++;
       }
     }
+    // Cada dia leva ao menos um capítulo: nunca mais dias que capítulos.
     final days = remainingChapters == 0
         ? 0
-        : (remainingMinutes / minutesPerDay).ceil().clamp(1, 5000);
+        : math
+              .min((remainingMinutes / minutesPerDay).ceil(), remainingChapters)
+              .clamp(1, 5000);
     return (
       totalChapters: seq.length,
       remainingChapters: remainingChapters,

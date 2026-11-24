@@ -359,11 +359,11 @@
     "es": "Capítulos pendientes"
   },
   "planStartCta": {
-    "pt": "Começar plano · {minutes} min/dia",
-    "en": "Start plan · {minutes} min/day",
-    "es": "Empezar plan · {minutes} min/día",
+    "pt": "Começar plano · {duration}/dia",
+    "en": "Start plan · {duration}/day",
+    "es": "Empezar plan · {duration}/día",
     "placeholders": {
-      "minutes": "int"
+      "duration": "String"
     }
   },
   "planDone": {
@@ -1091,5 +1091,89 @@
       "count": "int"
     },
     "description": "Selo do livro concluído"
+  },
+  "bibleShelfChapters": {
+    "pt": "{read} de {total} capítulos",
+    "en": "{read} of {total} chapters",
+    "es": "{read} de {total} capítulos",
+    "placeholders": {
+      "read": "int",
+      "total": "int"
+    }
+  },
+  "bibleShelfSemantics": {
+    "pt": "Estante da Bíblia: {read} de {total} capítulos lidos",
+    "en": "Bible shelf: {read} of {total} chapters read",
+    "es": "Estante de la Biblia: {read} de {total} capítulos leídos",
+    "placeholders": {
+      "read": "int",
+      "total": "int"
+    }
+  },
+  "planModeDaily": {
+    "pt": "Tempo por dia",
+    "en": "Time per day",
+    "es": "Tiempo al día",
+    "description": "Plano de leitura: escolher pelos minutos diários"
+  },
+  "planModeDeadline": {
+    "pt": "Prazo",
+    "en": "Deadline",
+    "es": "Plazo",
+    "description": "Plano de leitura: escolher em quanto tempo terminar"
+  },
+  "planDeadlineQuestion": {
+    "pt": "Em quanto tempo quer ler a Bíblia?",
+    "en": "How long do you want to take to read the Bible?",
+    "es": "¿En cuánto tiempo quieres leer la Biblia?"
+  },
+  "planDeadlineBody": {
+    "pt": "Dividimos o que falta em porções iguais até o prazo — na ordem da Bíblia ou na ordem dos acontecimentos. Capítulos que você já leu são pulados.",
+    "en": "We split what's left into equal daily portions until the deadline — in Bible order or in the order events happened. Chapters you've already read are skipped.",
+    "es": "Dividimos lo que falta en porciones iguales hasta el plazo — en el orden de la Biblia o en el orden de los acontecimientos. Los capítulos que ya leíste se omiten."
+  },
+  "planSectionDeadline": {
+    "pt": "Terminar em",
+    "en": "Finish in",
+    "es": "Terminar en"
+  },
+  "planDeadlineMonths": {
+    "pt": "{count, plural, =1{1 mês} other{{count} meses}}",
+    "en": "{count, plural, =1{1 month} other{{count} months}}",
+    "es": "{count, plural, =1{1 mes} other{{count} meses}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planDeadlineYears": {
+    "pt": "{count, plural, =1{1 ano} other{{count} anos}}",
+    "en": "{count, plural, =1{1 year} other{{count} years}}",
+    "es": "{count, plural, =1{1 año} other{{count} años}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planDailyReading": {
+    "pt": "Leitura por dia",
+    "en": "Reading per day",
+    "es": "Lectura al día"
+  },
+  "planApproxMinutesPerDay": {
+    "pt": "~{duration}",
+    "en": "~{duration}",
+    "es": "~{duration}",
+    "placeholders": {
+      "duration": "String"
+    }
+  },
+  "planDeadlineYearsMonths": {
+    "pt": "{years} e {months}",
+    "en": "{years} and {months}",
+    "es": "{years} y {months}",
+    "placeholders": {
+      "years": "String",
+      "months": "String"
+    },
+    "description": "Prazo do plano: \"1 ano e 3 meses\""
   }
 }

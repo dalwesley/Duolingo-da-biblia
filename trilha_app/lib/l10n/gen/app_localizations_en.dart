@@ -552,6 +552,16 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String bibleShelfChapters(int read, int total) {
+    return '$read of $total chapters';
+  }
+
+  @override
+  String bibleShelfSemantics(int read, int total) {
+    return 'Bible shelf: $read of $total chapters read';
+  }
+
+  @override
   String get bibleTabReading => 'Plans';
 
   @override
@@ -647,7 +657,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get canonEvangelhosBlurb => 'Matthew to John — the life of Jesus';
+  String get canonEvangelhosBlurb => 'The life of Jesus';
 
   @override
   String get canonEvangelhosTitle => 'Gospels';
@@ -665,7 +675,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get canonHistoriaNtTitle => 'History';
 
   @override
-  String get canonHistoricosBlurb => 'Joshua to Esther — the history of Israel';
+  String get canonHistoricosBlurb => 'The history of Israel';
 
   @override
   String get canonHistoricosTitle => 'Historical';
@@ -677,7 +687,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get canonPaulinasTitle => 'Pauline letters';
 
   @override
-  String get canonPentateucoBlurb => 'The Law — Genesis to Deuteronomy';
+  String get canonPentateucoBlurb => 'The Law';
 
   @override
   String get canonPentateucoTitle => 'Pentateuch';
@@ -3314,13 +3324,43 @@ class AppLocalizationsEn extends AppLocalizations {
   String get guidedPlanActsTitle => 'Acts in 28 days';
 
   @override
+  String get guidedPlanAllDays => 'Day by day';
+
+  @override
   String guidedPlanDayOf(int day, int total) {
     return 'Day $day of $total';
   }
 
   @override
+  String guidedPlanDayShort(int day) {
+    return 'Day $day';
+  }
+
+  @override
+  String guidedPlanDaysCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days',
+      one: '1 day',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get guidedPlanDaysUnit => 'days';
+
+  @override
   String guidedPlanFinished(String plan) {
     return 'You finished “$plan”.';
+  }
+
+  @override
+  String get guidedPlanFirstDays => 'First days';
+
+  @override
+  String guidedPlanFreeNote(int count) {
+    return 'The first $count days are free; then Pilgrim+.';
   }
 
   @override
@@ -3342,6 +3382,11 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String guidedPlanMinutesPerDay(int minutes) {
+    return '~$minutes min/day';
+  }
+
+  @override
   String get guidedPlanNewTestamentSubtitle =>
       'From Matthew to Revelation, about 3 chapters a day';
 
@@ -3354,6 +3399,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get guidedPlanPsalmsTitle => 'Psalms and Proverbs in 31 days';
+
+  @override
+  String get guidedPlanStart => 'Start plan';
 
   @override
   String get heroEndAllBody =>
@@ -7437,6 +7485,11 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String planApproxMinutesPerDay(String duration) {
+    return '~$duration';
+  }
+
+  @override
   String planApproxMonths(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -7558,6 +7611,9 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get planDailyReading => 'Reading per day';
+
+  @override
   String planDateRange(int count, String from, String to) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -7611,6 +7667,41 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String planDayQuestionLine(String text) {
     return 'Question: $text';
+  }
+
+  @override
+  String get planDeadlineBody =>
+      'We split what\'s left into equal daily portions until the deadline — in Bible order or in the order events happened. Chapters you\'ve already read are skipped.';
+
+  @override
+  String planDeadlineMonths(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count months',
+      one: '1 month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get planDeadlineQuestion =>
+      'How long do you want to take to read the Bible?';
+
+  @override
+  String planDeadlineYears(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count years',
+      one: '1 year',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String planDeadlineYearsMonths(String years, String months) {
+    return '$years and $months';
   }
 
   @override
@@ -7913,6 +8004,12 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get planModeDaily => 'Time per day';
+
+  @override
+  String get planModeDeadline => 'Deadline';
+
+  @override
   String planNextOpens(int n, String when) {
     return 'Day $n opens $when.';
   }
@@ -8163,6 +8260,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get planSeatNotIn => 'Not yet';
 
   @override
+  String get planSectionDeadline => 'Finish in';
+
+  @override
   String get planSectionOrder => 'Order';
 
   @override
@@ -8275,8 +8375,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get planStartAnother => 'Start another purpose';
 
   @override
-  String planStartCta(int minutes) {
-    return 'Start plan · $minutes min/day';
+  String planStartCta(String duration) {
+    return 'Start plan · $duration/day';
   }
 
   @override
