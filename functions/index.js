@@ -696,13 +696,55 @@ exports.onTrailGiftReferral = functions.firestore
     const before = change.before.data() || {};
     const after = change.after.data() || {};
     if (!after.toUid || before.toUid) return;
-    await attributeReferral(getFirestore(), {
+    const db = getFirestore();
+    await attributeReferral(db, {
       inviteeUid: after.toUid,
       inviterUid: after.fromUid,
       via: 'passe',
       code: context.params.code,
     });
+    await notifyTrailGiftRedeemed(db, after, context.params.code);
   });
+
+/**
+ * Avisa quem deu que o passe foi recebido: fecha o ciclo do presente.
+ * Falha de push não desfaz nada (o resgate já está gravado).
+ */
+async function notifyTrailGiftRedeemed(db, gift, code) {
+  const fromUid = gift.fromUid || '';
+  const toUid = gift.toUid || '';
+  if (!fromUid || !toUid || fromUid === toUid) return;
+  try {
+    const blocked = await db.doc(`users/${fromUid}/blocks/${toUid}`).get();
+    if (blocked.exists) return;
+    const token = await fcmTokenOf(db, fromUid);
+    if (!token || typeof token !== 'string') return;
+    let trailTitle = '';
+    const slug = gift.trailSlug || '';
+    if (slug) {
+      const trail = await db.doc(`content_trails/${slug}`).get();
+      const title = trail.data()?.title;
+      if (typeof title === 'string') trailTitle = title.trim();
+    }
+    const name = String(gift.toName || '').trim().split(/\s+/)[0] || 'Alguém';
+    const body = trailTitle
+      ? `Sua assinatura liberou ${trailTitle} inteira para essa pessoa.`
+      : 'Sua assinatura liberou uma trilha inteira para essa pessoa.';
+    await getMessaging().send({
+      token,
+      notification: { title: `${name} recebeu seu passe de trilha 🎁`, body },
+      data: { action: 'home', type: 'passe' },
+      android: {
+        priority: 'high',
+        notification: { channelId: 'trilha_habits', sound: 'default' },
+      },
+      apns: { payload: { aps: { sound: 'default' } } },
+    });
+    logger.info('push de passe recebido enviado', { fromUid, code });
+  } catch (err) {
+    logger.error('falha no push de passe recebido', err);
+  }
+}
 
 /** Mês guardado de quem ficou sem Plus (fim do mês dado ou da assinatura). */
 exports.releaseReferralMonths = functions
