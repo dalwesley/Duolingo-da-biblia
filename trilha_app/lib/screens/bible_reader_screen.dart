@@ -26,6 +26,8 @@ import '../widgets/relic_panel.dart';
 import '../widgets/share_verse_sheet.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
+import '../widgets/tts_voice_settings.dart';
+import '../widgets/verse_compare_sheet.dart';
 import '../widgets/verse_study_sheet.dart';
 import '../services/subscription_service.dart';
 import 'support_screen.dart';
@@ -120,7 +122,7 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
     if (!mounted) return;
     setState(() {
       _books = books;
-      _loadedTranslationId = id;
+      _loadedTranslationId = BibleService.instance.translationId;
       if (ref.verseStart != null) {
         _highlight = (
           bookIndex: ref.bookIndex,
@@ -155,7 +157,7 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
     }
     setState(() {
       _books = books;
-      _loadedTranslationId = id;
+      _loadedTranslationId = BibleService.instance.translationId;
       _reloadScheduled = false;
     });
     _goTo(bookIndex, _chapter, animate: false, force: true);
@@ -288,24 +290,56 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
     _goTo(pick.bookIndex, pick.chapter, animate: pick.bookIndex == _bookIndex);
   }
 
-  void _toggleListen(List<String> verses) {
+  /// Língua do texto aberto (BSB = en, BES = es) — a voz segue o texto.
+  String get _textLanguage => BibleService.byId(
+    _loadedTranslationId ?? BibleService.instance.translationId,
+  ).language;
+
+  /// Sem voz da língua no aparelho, avisa em vez de ler com sotaque errado.
+  Future<bool> _ensureVoice(String language) async {
+    if (await TtsService.instance.hasVoice(language)) return true;
+    if (!mounted) return false;
+    final l10n = context.l10n;
+    final name = switch (language) {
+      'en' => l10n.bibleVoiceEnglish,
+      'es' => l10n.bibleVoiceSpanish,
+      _ => l10n.bibleVoicePortuguese,
+    };
+    await showAppToastFor(
+      context,
+      message: l10n.bibleListenVoiceMissing(name),
+      tone: AppToastTone.warn,
+      glyph: CinematicGlyph.echo,
+    );
+    return false;
+  }
+
+  Future<void> _toggleListen(List<String> verses) async {
     final tts = TtsService.instance;
     if (tts.sequenceKey == _chapterKey || tts.isSpeaking) {
       unawaited(tts.stop());
       return;
     }
     ActHaptics.light();
+    final language = _textLanguage;
+    // Português: lê como sempre leu, mesmo se a checagem de voz falhar.
+    if (language != 'pt' && !await _ensureVoice(language)) return;
+    if (!mounted) return;
     _chrome.value = true;
-    unawaited(tts.speakSequence(verses, key: _chapterKey));
+    unawaited(tts.speakSequence(verses, key: _chapterKey, language: language));
   }
 
-  void _listenFrom(int verse) {
+  Future<void> _listenFrom(int verse) async {
     final verses = _book.chapters[_chapter - 1];
+    final language = _textLanguage;
+    if (language != 'pt' && !await _ensureVoice(language)) return;
+    if (!mounted) return;
     unawaited(
       TtsService.instance.speakSequence(
         verses,
         key: _chapterKey,
         start: verse - 1,
+        language: language,
       ),
     );
   }
@@ -363,8 +397,10 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final translationId = context.select(
-      (ProgressService p) => p.settings.bibleTranslationId,
+    // Escolha salva + idioma do app (EN abre BSB, ES abre BES).
+    final translationId = BibleService.effectiveId(
+      context.select((ProgressService p) => p.settings.bibleTranslationId),
+      context.l10n.localeName,
     );
     if (_loadedTranslationId != null &&
         _loadedTranslationId != translationId &&
@@ -993,51 +1029,77 @@ class _VerseBlock extends StatelessWidget {
               ),
             ),
           ),
-          child: Text.rich(
-            TextSpan(
-              children: [
-                if (pin && postcard != null)
-                  WidgetSpan(
-                    alignment: PlaceholderAlignment.middle,
-                    child: Semantics(
-                      button: true,
-                      label: context.l10n.postcardYouWereHere,
-                      child: GestureDetector(
-                        onTap: onPostcardTap,
-                        child: Padding(
-                          padding: const EdgeInsets.only(right: 8),
-                          child: Transform.rotate(
-                            angle: -0.06,
-                            child: PostcardPin(postcard: postcard!),
-                          ),
-                        ),
-                      ),
+          // Lendo em voz alta: só este bloco escuta a palavra falada.
+          child: speaking
+              ? ValueListenableBuilder<({int start, int end})?>(
+                  valueListenable: TtsService.instance.wordRange,
+                  builder: (context, range, _) =>
+                      _verseText(context, motion, range),
+                )
+              : _verseText(context, motion, null),
+        ),
+      ),
+    );
+  }
+
+  /// Texto do versículo; com [range], a palavra falada agora fica marcada.
+  Widget _verseText(
+    BuildContext context,
+    bool motion,
+    ({int start, int end})? range,
+  ) {
+    final base = postcard == null
+        ? reading.verseStyle
+        : reading.verseStyle.copyWith(
+            decoration: TextDecoration.underline,
+            decorationColor: AppRoles.reward.withValues(alpha: 0.7),
+            decorationThickness: 1.4,
+          );
+    final r = range;
+    final valid = r != null && r.start >= 0 && r.end <= text.length;
+    return Text.rich(
+      TextSpan(
+        children: [
+          if (pin && postcard != null)
+            WidgetSpan(
+              alignment: PlaceholderAlignment.middle,
+              child: Semantics(
+                button: true,
+                label: context.l10n.postcardYouWereHere,
+                child: GestureDetector(
+                  onTap: onPostcardTap,
+                  child: Padding(
+                    padding: const EdgeInsets.only(right: 8),
+                    child: Transform.rotate(
+                      angle: -0.06,
+                      child: PostcardPin(postcard: postcard!),
                     ),
                   ),
-                TextSpan(
-                  text: '$number  ',
-                  style: reading.numberStyle.copyWith(
-                    fontSize: 12,
-                    height: 1,
-                    color: speaking ? reading.ink : reading.verseNumber,
-                  ),
                 ),
-                TextSpan(
-                  text: text,
-                  style: postcard == null
-                      ? reading.verseStyle
-                      : reading.verseStyle.copyWith(
-                          decoration: TextDecoration.underline,
-                          decorationColor: AppRoles.reward.withValues(
-                            alpha: 0.7,
-                          ),
-                          decorationThickness: 1.4,
-                        ),
-                ),
-              ],
+              ),
+            ),
+          TextSpan(
+            text: '$number  ',
+            style: reading.numberStyle.copyWith(
+              fontSize: 12,
+              height: 1,
+              color: speaking ? reading.ink : reading.verseNumber,
             ),
           ),
-        ),
+          if (!valid)
+            TextSpan(text: text, style: base)
+          else ...[
+            TextSpan(text: text.substring(0, r.start), style: base),
+            TextSpan(
+              text: text.substring(r.start, r.end),
+              style: base.copyWith(
+                color: reading.ink,
+                backgroundColor: reading.verseNumber.withValues(alpha: 0.34),
+              ),
+            ),
+            TextSpan(text: text.substring(r.end), style: base),
+          ],
+        ],
       ),
     );
   }
@@ -1592,6 +1654,23 @@ Future<void> _showVerseActions(
               },
             ),
             action(
+              glyph: CinematicGlyph.book,
+              label: context.l10n.bibleVerseCompare,
+              detail: context.l10n.bibleVerseCompareDetail,
+              accent: reading.verseNumber,
+              onTap: () {
+                Navigator.pop(ctx);
+                showVerseCompareSheet(
+                  context,
+                  bookIndex: bookIndex,
+                  bookName: book.name,
+                  chapter: chapter,
+                  verse: verse,
+                  onOpenRef: onOpenRef,
+                );
+              },
+            ),
+            action(
               glyph: CinematicGlyph.scroll,
               label: context.l10n.bibleVerseStudy,
               detail: context.l10n.bibleVerseStudyDetail,
@@ -1942,6 +2021,10 @@ Future<void> _showReadingSettings(BuildContext context) {
     builder: (ctx) => Consumer<ProgressService>(
       builder: (ctx, progress, _) {
         final settings = progress.settings;
+        final activeId = BibleService.effectiveId(
+          settings.bibleTranslationId,
+          context.l10n.localeName,
+        );
         final appearance = AppearanceStyle.resolve(settings.appearanceMode);
         final reading = BibleReadingStyle.resolve(
           appearance,
@@ -1972,123 +2055,242 @@ Future<void> _showReadingSettings(BuildContext context) {
         }
 
         final a = Appearance.of(ctx);
+        final active = BibleService.byId(activeId);
+        final percent = (scale * 100).round();
+        // Rola: com a seção de voz, a folha passa da tela em celular pequeno.
         return AppSheetPanel(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              const Center(child: CloudMascot(face: CloudFace.feliz, size: 72)),
-              const SizedBox(height: AppSpace.md),
-              Text(
-                'Lâmpada para os meus pés é a tua palavra.',
-                textAlign: TextAlign.center,
-                style: AppTypography.verse(
-                  size: 18,
-                  height: 1.4,
-                  weight: FontWeight.w500,
-                  color: a.text,
-                ),
-              ),
-              const SizedBox(height: AppSpace.xl),
-              SectionLabel(
-                context.l10n.bibleReaderTextSize,
-                color: a.sectionLabel,
-              ),
-              const SizedBox(height: AppSpace.sm),
-              Row(
+          child: ConstrainedBox(
+            constraints: BoxConstraints(
+              maxHeight: MediaQuery.sizeOf(ctx).height * 0.86,
+            ),
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  _SettingButton(
-                    label: 'A−',
-                    enabled: scale > 0.86,
-                    onTap: () => setScale(-0.1),
-                  ),
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: AppSpace.md,
-                      ),
-                      child: AppProgressBar(
-                        value: (scale - 0.85) / 0.5,
-                        height: 6,
-                        color: a.chrome,
-                      ),
-                    ),
-                  ),
-                  _SettingButton(
-                    label: 'A+',
-                    enabled: scale < 1.34,
-                    onTap: () => setScale(0.1),
-                  ),
-                ],
-              ),
-              const SizedBox(height: AppSpace.xl),
-              SectionLabel(
-                context.l10n.bibleReaderPaper,
-                color: a.sectionLabel,
-              ),
-              const SizedBox(height: AppSpace.sm),
-              Row(
-                children: [
-                  for (final p in const [
-                    BiblePaper.light,
-                    BiblePaper.sepia,
-                    BiblePaper.night,
-                  ]) ...[
-                    if (p != BiblePaper.light)
-                      const SizedBox(width: AppSpace.sm),
-                    Expanded(
-                      child: _PaperSwatch(
-                        paper: p,
-                        appearance: appearance,
-                        selected: p == paper,
-                        onTap: () => setPaper(p),
-                      ),
-                    ),
-                  ],
-                ],
-              ),
-              const SizedBox(height: AppSpace.xl),
-              SectionLabel(
-                context.l10n.bibleReaderVersion,
-                color: a.sectionLabel,
-              ),
-              const SizedBox(height: AppSpace.sm),
-              Row(
-                children: [
-                  for (final t in BibleService.catalog) ...[
-                    if (t != BibleService.catalog.first)
-                      const SizedBox(width: AppSpace.sm),
-                    Expanded(
-                      child: AppSelectChip(
-                        label: t.shortName,
-                        selected: t.id == settings.bibleTranslationId,
-                        fontSize: 12,
-                        padding: const EdgeInsets.symmetric(vertical: 12),
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(AppRadii.md),
+                  AppSheetHeader(title: context.l10n.bibleReaderSettings),
+                  const SizedBox(height: AppSpace.md),
+                  // Prévia ao vivo: versão, papel e tamanho escolhidos.
+                  _ReadingPreview(translation: active, reading: reading),
+                  const SizedBox(height: AppSpace.xl),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: SectionLabel(
+                          context.l10n.bibleReaderTextSize,
+                          color: a.sectionLabel,
                         ),
-                        onTap: () => _applyTranslation(ctx, t),
+                      ),
+                      Text(
+                        '$percent%',
+                        style: AppTypography.label(
+                          size: 12,
+                          color: a.textSecondary,
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: AppSpace.sm),
+                  Row(
+                    children: [
+                      _SettingButton(
+                        label: 'A−',
+                        enabled: scale > 0.86,
+                        onTap: () => setScale(-0.1),
+                      ),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: AppSpace.md,
+                          ),
+                          child: AppProgressBar(
+                            value: (scale - 0.85) / 0.5,
+                            height: 6,
+                            color: a.chrome,
+                          ),
+                        ),
+                      ),
+                      _SettingButton(
+                        label: 'A+',
+                        enabled: scale < 1.34,
+                        onTap: () => setScale(0.1),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: AppSpace.xl),
+                  SectionLabel(
+                    context.l10n.bibleReaderPaper,
+                    color: a.sectionLabel,
+                  ),
+                  const SizedBox(height: AppSpace.sm),
+                  Row(
+                    children: [
+                      for (final p in const [
+                        BiblePaper.light,
+                        BiblePaper.sepia,
+                        BiblePaper.night,
+                      ]) ...[
+                        if (p != BiblePaper.light)
+                          const SizedBox(width: AppSpace.sm),
+                        Expanded(
+                          child: _PaperSwatch(
+                            paper: p,
+                            appearance: appearance,
+                            selected: p == paper,
+                            onTap: () => setPaper(p),
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
+                  const SizedBox(height: AppSpace.xl),
+                  SectionLabel(
+                    context.l10n.bibleReaderVersion,
+                    color: a.sectionLabel,
+                  ),
+                  const SizedBox(height: AppSpace.sm),
+                  // Todas as línguas numa faixa só: dá para ler a BSB com o
+                  // app em PT. A escolha fica guardada por idioma do app.
+                  // Sem "em breve": a versão que falta abre a folha de doar.
+                  AppChipGrid(
+                    columns: 3,
+                    children: [
+                      for (final lang in BibleService.textLanguages)
+                        for (final t in BibleService.translationsIn(lang))
+                          AppSelectChip(
+                            label: '${t.shortName} · ${lang.toUpperCase()}',
+                            selected: t.id == activeId,
+                            fill: true,
+                            fontSize: 12,
+                            padding: const EdgeInsets.symmetric(
+                              vertical: 12,
+                              horizontal: 8,
+                            ),
+                            borderRadius: const BorderRadius.all(
+                              Radius.circular(AppRadii.md),
+                            ),
+                            onTap: () => _applyTranslation(ctx, t),
+                          ),
+                    ],
+                  ),
+                  const SizedBox(height: AppSpace.sm),
+                  Text(
+                    active.name,
+                    style: AppTypography.body(
+                      size: 13,
+                      weight: FontWeight.w700,
+                      color: a.textSecondary,
+                    ),
+                  ),
+                  if (active.attribution != null) ...[
+                    const SizedBox(height: 2),
+                    Text(
+                      active.attribution!,
+                      style: AppTypography.body(
+                        size: 11,
+                        height: 1.35,
+                        color: a.textFaint,
                       ),
                     ),
                   ],
+                  const SizedBox(height: AppSpace.xl),
+                  // Velocidade e voz do "Ouvir", na língua da versão aberta.
+                  TtsVoiceSettings(
+                    language: active.language,
+                    labelColor: a.sectionLabel,
+                  ),
                 ],
               ),
-              const SizedBox(height: AppSpace.sm),
-              Text(
-                BibleService.byId(settings.bibleTranslationId).attribution ??
-                    BibleService.byId(settings.bibleTranslationId).name,
-                style: AppTypography.body(
-                  size: 11,
-                  height: 1.35,
-                  color: a.textFaint,
-                ),
-              ),
-            ],
+            ),
           ),
         );
       },
     ),
   );
+}
+
+/// Salmo 119:105 na versão escolhida, no papel e no tamanho escolhidos.
+/// Guarda o texto por tradução: o Consumer reconstrói a cada ajuste.
+class _ReadingPreview extends StatefulWidget {
+  final BibleTranslation translation;
+  final BibleReadingStyle reading;
+
+  const _ReadingPreview({required this.translation, required this.reading});
+
+  @override
+  State<_ReadingPreview> createState() => _ReadingPreviewState();
+}
+
+class _ReadingPreviewState extends State<_ReadingPreview> {
+  final Map<String, String> _texts = {};
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  @override
+  void didUpdateWidget(covariant _ReadingPreview old) {
+    super.didUpdateWidget(old);
+    if (old.translation.id != widget.translation.id) _load();
+  }
+
+  Future<void> _load() async {
+    final id = widget.translation.id;
+    if (_texts.containsKey(id)) return;
+    try {
+      final text = await BibleService.instance.verseIn(id, 18, 119, 105);
+      if (!mounted || text == null) return;
+      setState(() => _texts[id] = text);
+    } catch (_) {}
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final reading = widget.reading;
+    final t = widget.translation;
+    final text = _texts[t.id] ?? context.l10n.bibleReaderPreviewVerse;
+    final motion = MediaQuery.disableAnimationsOf(context);
+    return AnimatedContainer(
+      duration: motion ? Duration.zero : AppMotion.standard,
+      curve: AppMotion.enter,
+      padding: const EdgeInsets.fromLTRB(18, 16, 18, 14),
+      decoration: BoxDecoration(
+        color: reading.page,
+        borderRadius: BorderRadius.circular(AppRadii.lg),
+        border: Border.all(color: reading.pageBorder),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          AnimatedSwitcher(
+            duration: motion ? Duration.zero : AppMotion.standard,
+            child: Text.rich(
+              key: ValueKey('${t.id}|$text'),
+              TextSpan(
+                children: [
+                  TextSpan(
+                    text: '105  ',
+                    style: reading.numberStyle.copyWith(
+                      fontSize: 12,
+                      height: 1,
+                    ),
+                  ),
+                  TextSpan(text: text, style: reading.verseStyle),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            '${context.l10n.bibleReaderPreviewRef} · ${t.shortName}',
+            style: reading.metaStyle.copyWith(fontSize: 12),
+          ),
+        ],
+      ),
+    );
+  }
 }
 
 Future<void> _applyTranslation(
@@ -2124,10 +2326,18 @@ Future<void> _applyTranslation(
     );
     return;
   }
-  if (translation.id == progress.settings.bibleTranslationId) return;
+  final stored = progress.settings.bibleTranslationId;
+  final locale = context.l10n.localeName;
+  if (translation.id == BibleService.effectiveId(stored, locale)) return;
   ActHaptics.tap();
   await progress.updateSettings(
-    progress.settings.copyWith(bibleTranslationId: translation.id),
+    progress.settings.copyWith(
+      bibleTranslationId: BibleService.withChoice(
+        stored,
+        translation.id,
+        locale,
+      ),
+    ),
   );
 }
 

@@ -793,9 +793,8 @@ class _LeagueScreenState extends State<LeagueScreen>
     // A caminhada da estação (Advento) vive na Home, não aqui: a Caravana
     // fica com a etapa do mês e o ranking.
     final children = <Widget>[
-      _reveal(1, const _CaravanStageCard()),
-      const SizedBox(height: AppSpace.md),
-      // A etapa do mês: 2º cartão, logo depois do cabeçalho do ranking.
+      // A etapa do mês abre a Caravana; o cabeçalho do ranking vem logo
+      // depois, colado na lista.
       if (_goal case final goal? when !GuestGate.isGuest(context)) ...[
         _reveal(
           1,
@@ -807,6 +806,8 @@ class _LeagueScreenState extends State<LeagueScreen>
         ),
         const SizedBox(height: AppSpace.md),
       ],
+      _reveal(1, const _CaravanStageCard()),
+      const SizedBox(height: AppSpace.md),
     ];
 
     final me = LeagueEntry(
@@ -1819,6 +1820,30 @@ class _LeagueScreenState extends State<LeagueScreen>
           },
         ),
       ),
+      // 2º cartão, como na Caravana: relógio do propósito e quem caminha.
+      const SizedBox(height: AppSpace.md),
+      _reveal(
+        2,
+        _RoomHearth(
+          room: room,
+          plan: plan,
+          members: members,
+          walkedToday: progress.walkedToday,
+          onClaim: () => _claimRoomChest(context, room.code),
+          // O card do propósito já tem o próximo passo: sem 2º botão.
+          onWalk: null,
+          roster: RoomMembersList(
+            members: _seatedMembers(members, room.ownerId),
+            myPhotoUrl: backend.userPhotoUrl,
+            myStyle: progress.settings.portraitStyle,
+            leaderId: room.ownerId,
+            leaderTitle: room.kind.leaderTitle,
+            study: null,
+            onTap: (m) => _showRoomSeat(context, m),
+            onInvite: rooms.isFull ? null : callPeople,
+          ),
+        ),
+      ),
       if (unseen != null && !isLeader) ...[
         const SizedBox(height: AppSpace.md),
         _reveal(
@@ -1847,29 +1872,6 @@ class _LeagueScreenState extends State<LeagueScreen>
           ),
         ),
       ],
-      const SizedBox(height: AppSpace.md),
-      _reveal(
-        2,
-        _RoomHearth(
-          room: room,
-          plan: plan,
-          members: members,
-          walkedToday: progress.walkedToday,
-          onClaim: () => _claimRoomChest(context, room.code),
-          // O card do propósito já tem o próximo passo: sem 2º botão.
-          onWalk: null,
-          roster: RoomMembersList(
-            members: _seatedMembers(members, room.ownerId),
-            myPhotoUrl: backend.userPhotoUrl,
-            myStyle: progress.settings.portraitStyle,
-            leaderId: room.ownerId,
-            leaderTitle: room.kind.leaderTitle,
-            study: null,
-            onTap: (m) => _showRoomSeat(context, m),
-            onInvite: rooms.isFull ? null : callPeople,
-          ),
-        ),
-      ),
       const SizedBox(height: AppSpace.md),
       if (rooms.lastError != null) ...[
         InlineNotice(
@@ -3523,6 +3525,66 @@ class _RoomTitle extends StatelessWidget {
 
 /// Semana do grupo: o relógio até segunda 00:00, quem está no grupo (com as
 /// bolinhas da semana), a meta e o baú.
+/// Relógio do grupo (igual ao da Caravana). Sem propósito: fecha segunda
+/// 00:00. Com propósito: até o começo, depois até o fim do último dia.
+/// Âmbar → amarelo (2–3 dias) → vermelho e pisca no último dia; esperar o
+/// começo não é urgência.
+class _RoomClock extends StatelessWidget {
+  final RoomPlan? plan;
+
+  const _RoomClock({this.plan});
+
+  static ({DateTime closesAt, Color tone, bool blink, bool upcoming}) of(
+    RoomPlan? p,
+  ) {
+    final now = DateTime.now();
+    final upcoming = p != null && p.phase() == PlanPhase.upcoming;
+    // Fim do propósito = 00:00 do dia seguinte ao último.
+    final planEnd = p == null ? null : parsePlanYmd(p.end);
+    final closesAt = p == null
+        ? DateTime(now.year, now.month, now.day + LeagueService.daysLeft(now))
+        : upcoming
+        ? parsePlanYmd(p.start)!
+        : DateTime(planEnd!.year, planEnd.month, planEnd.day + 1);
+    final days = closesAt
+        .difference(DateTime(now.year, now.month, now.day))
+        .inDays;
+    final urgent = upcoming ? 99 : days;
+    final tone = urgent <= 1
+        ? AppRoles.risk
+        : urgent <= 3
+        ? AppRoles.reward
+        : AppRoles.lamp;
+    return (
+      closesAt: closesAt,
+      tone: tone,
+      blink: urgent <= 1,
+      upcoming: upcoming,
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final c = of(plan);
+    return SeasonCountdown(
+      opens: c.closesAt,
+      color: a.onDark ? c.tone : a.ink(c.tone),
+      muted: a.textSecondary,
+      accent: c.tone,
+      large: true,
+      centered: true,
+      blink: c.blink,
+      label: plan == null
+          ? l10n.juntosCaravanMonthCloses
+          : c.upcoming
+          ? l10n.planHearthStarts
+          : l10n.planHearthEnds,
+    );
+  }
+}
+
 class _RoomHearth extends StatelessWidget {
   final StudyRoom room;
   final List<RoomMember> members;
@@ -3546,12 +3608,6 @@ class _RoomHearth extends StatelessWidget {
   /// o relógio some (antes contava até segunda sem o líder ter marcado nada).
   final bool showClock;
 
-  /// Segunda-feira 00:00 seguinte — quando a semana do grupo fecha.
-  static DateTime _weekClosesAt([DateTime? now]) {
-    final n = now ?? DateTime.now();
-    return DateTime(n.year, n.month, n.day + LeagueService.daysLeft(n));
-  }
-
   const _RoomHearth({
     required this.room,
     required this.members,
@@ -3570,20 +3626,6 @@ class _RoomHearth extends StatelessWidget {
     final a = Appearance.of(context);
     final l10n = context.l10n;
     final p = plan;
-    final upcoming = p != null && p.phase() == PlanPhase.upcoming;
-    // Fim do propósito = 00:00 do dia seguinte ao último.
-    final planEnd = p == null ? null : parsePlanYmd(p.end);
-    final closesAt = p == null
-        ? _weekClosesAt()
-        : upcoming
-        ? parsePlanYmd(p.start)!
-        : DateTime(planEnd!.year, planEnd.month, planEnd.day + 1);
-    final now = DateTime.now();
-    final days = closesAt
-        .difference(DateTime(now.year, now.month, now.day))
-        .inDays;
-    // Cor de urgência só no fechamento; esperar o começo fica azul.
-    final urgent = upcoming ? 99 : days;
 
     final total = members.length;
     final lit = members.where((m) => m.walkedThisWeek).length;
@@ -3597,90 +3639,99 @@ class _RoomHearth extends StatelessWidget {
         !claimed && walkedToday && total > 0 && (goalReached || halfway);
     final bonus = RemoteConfigService.instance.roomChestBonusSteps;
 
-    return ProfilePanel(
-      accent: (ready ? AppRoles.presence : null) ?? AppRoles.lamp,
-      lit: ready,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          CardHeader(
-            label: p == null ? l10n.juntosRoomWeekLabel : l10n.planHearthLabel,
-            accent: ready ? AppRoles.presence : null,
+    // Mesma cara da Caravana: um cartão com o título e o relógio (a moldura
+    // acende na cor da urgência) e, embaixo, outro com as pessoas.
+    final title = Text(
+      p == null ? l10n.juntosRoomWeekLabel : l10n.planHearthLabel,
+      textAlign: TextAlign.center,
+      style: AppTypography.display(size: 26, color: a.text),
+    );
+    final people = <Widget>[
+      roster,
+      if (footer != null) ...[const SizedBox(height: AppSpace.lg), footer!],
+      if (goal != null && goal > 0) ...[
+        const SizedBox(height: AppSpace.md),
+        Row(
+          children: [
+            SectionLabel(l10n.juntosRoomGoalLabel, size: 10),
+            const Spacer(),
+            Text(
+              l10n.juntosRoomGoalProgress(sumSteps, goal),
+              style: AppTypography.body(
+                size: 12,
+                weight: FontWeight.w800,
+                color: goalReached ? AppRoles.reward : a.text,
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 6),
+        AppProgressBar(
+          value: (sumSteps / goal).clamp(0.0, 1.0),
+          color: AppRoles.reward,
+        ),
+      ],
+      if (!walkedToday && total > 1 && onWalk != null) ...[
+        const SizedBox(height: AppSpace.lg),
+        CopperCta(
+          label: l10n.juntosStudyToday,
+          onTap: onWalk,
+          leading: CinematicGlyph.book,
+          dense: true,
+        ),
+      ],
+      if (ready) ...[
+        const SizedBox(height: AppSpace.lg),
+        CopperCta(
+          label: l10n.juntosRoomChestOpen(bonus),
+          onTap: onClaim,
+          leading: CinematicGlyph.gift,
+          trailing: null,
+          dense: true,
+        ),
+      ],
+    ];
+
+    if (!showClock) {
+      return ProfilePanel(
+        accent: ready ? AppRoles.presence : AppRoles.lamp,
+        lit: ready,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            title,
+            const SizedBox(height: AppSpace.md),
+            ...people,
+          ],
+        ),
+      );
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        ProfilePanel(
+          accent: _RoomClock.of(p).tone,
+          lit: true,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              title,
+              const SizedBox(height: AppSpace.lg),
+              _RoomClock(plan: p),
+            ],
           ),
-          // Relógio da semana (igual ao da Caravana): fecha segunda 00:00.
-          // Azul → amarelo (2–3 dias) → vermelho e pisca no último dia.
-          if (showClock) ...[
-            const SizedBox(height: AppSpace.md),
-            SeasonCountdown(
-              opens: closesAt,
-              color: urgent <= 1
-                  ? AppRoles.risk
-                  : urgent <= 3
-                  ? AppRoles.reward
-                  : AppRoles.lamp,
-              muted: a.textSecondary,
-              accent: urgent <= 1
-                  ? AppRoles.risk
-                  : urgent <= 3
-                  ? AppRoles.reward
-                  : AppRoles.lamp,
-              large: true,
-              centered: true,
-              // Esperar o começo não é urgência: sem piscar.
-              blink: urgent <= 1,
-              label: p == null
-                  ? l10n.juntosCaravanMonthCloses
-                  : upcoming
-                  ? l10n.planHearthStarts
-                  : l10n.planHearthEnds,
-            ),
-          ],
-          const SizedBox(height: AppSpace.lg),
-          roster,
-          if (footer != null) ...[const SizedBox(height: AppSpace.lg), footer!],
-          if (goal != null && goal > 0) ...[
-            const SizedBox(height: AppSpace.md),
-            Row(
-              children: [
-                SectionLabel(l10n.juntosRoomGoalLabel, size: 10),
-                const Spacer(),
-                Text(
-                  l10n.juntosRoomGoalProgress(sumSteps, goal),
-                  style: AppTypography.body(
-                    size: 12,
-                    weight: FontWeight.w800,
-                    color: goalReached ? AppRoles.reward : a.text,
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 6),
-            AppProgressBar(
-              value: (sumSteps / goal).clamp(0.0, 1.0),
-              color: AppRoles.reward,
-            ),
-          ],
-          if (!walkedToday && total > 1 && onWalk != null) ...[
-            const SizedBox(height: AppSpace.lg),
-            CopperCta(
-              label: l10n.juntosStudyToday,
-              onTap: onWalk,
-              leading: CinematicGlyph.book,
-              dense: true,
-            ),
-          ],
-          if (ready) ...[
-            const SizedBox(height: AppSpace.lg),
-            CopperCta(
-              label: l10n.juntosRoomChestOpen(bonus),
-              onTap: onClaim,
-              leading: CinematicGlyph.gift,
-              trailing: null,
-              dense: true,
-            ),
-          ],
-        ],
-      ),
+        ),
+        const SizedBox(height: AppSpace.md),
+        ProfilePanel(
+          accent: ready ? AppRoles.presence : AppRoles.lamp,
+          lit: ready,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: people,
+          ),
+        ),
+      ],
     );
   }
 }

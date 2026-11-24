@@ -347,7 +347,6 @@
   "bibleReaderPreviewVerse": "A tua palavra é lâmpada para os meus pés e luz para o meu caminho.",
   "bibleReaderReadTag": "lido",
   "bibleReaderSettings": "Ajustes de leitura",
-  "bibleReaderSoonTag": "em breve",
   "bibleReaderStop": "Parar",
   "bibleReaderSubtitle": "Capítulo {chapter} · {translation}",
   "@bibleReaderSubtitle": {
@@ -4613,8 +4612,8 @@
   "paywallOffersFailed": "Não conseguimos carregar os planos. Confira sua conexão e tente de novo.",
   "paywallPerkBadgeBody": "Um selo exclusivo no seu perfil e na Caravana.",
   "paywallPerkBadgeTitle": "Selo de Peregrino",
-  "paywallPerkGiftBody": "Compartilhe 1 trilha do Peregrino+ por mês com alguém. Ela fica aberta inteira para quem recebe, sem pagar.",
-  "paywallPerkGiftTitle": "Uma trilha por mês de presente",
+  "paywallPerkGiftBody": "Todo mês, 1 trilha do Peregrino+ inteira de presente para quem você escolher. Quem recebe não paga nada.",
+  "paywallPerkGiftTitle": "Sua assinatura libera alguém",
   "paywallPerkManyTrailsBody": "No grátis é uma trilha por vez. No Peregrino+, você anda em quantas quiser, cada uma no seu ritmo.",
   "paywallPerkManyTrailsTitle": "Várias trilhas ao mesmo tempo",
   "paywallPerkPlansBody": "Os Evangelhos em 30 dias, o Novo Testamento em 90 e outros caminhos.",
@@ -7766,13 +7765,33 @@
       }
     }
   },
-  "trailGiftCardBody": "Sua assinatura libera alguém: 1 trilha do Peregrino+ por mês, inteira, para quem você escolher.",
-  "trailGiftCardTitle": "Libere esta trilha para alguém",
+  "trailGiftCardBody": "Seu passe do mês libera ela inteira para quem você escolher.",
+  "trailGiftCardTitle": "Dar esta trilha a alguém",
   "trailGiftCodeSubtitle": "Cole a mensagem com o link do passe ou digite o código de 8 letras.",
   "trailGiftEyebrow": "Passe de trilha",
   "trailGiftFailed": "Não foi possível abrir o passe. Tente de novo.",
+  "trailGiftGivePickSubtitle": "Quem receber caminha nela inteira, sem pagar e sem prazo.",
+  "trailGiftGivePickTitle": "Qual trilha você vai liberar?",
   "trailGiftInvalid": "Este passe não existe. Confira o link.",
-  "trailGiftNeedsAccount": "Entre na sua conta para receber o passe. Depois abra o link de novo.",
+  "trailGiftMonthChoose": "Escolher a trilha eu mesmo",
+  "trailGiftMonthOpen": "Você chamou alguém para a Companhia, e o passe deste mês foi junto no convite. Quem aceitar ganha uma trilha do Peregrino+ e escolhe qual. Se preferir, escolha você a trilha agora.",
+  "trailGiftMonthOpenLink": "Seu passe deste mês está pronto e ninguém recebeu ainda. Quem abrir o link escolhe a trilha.",
+  "trailGiftMonthPick": "Escolher a trilha por ela",
+  "trailGiftMonthReady": "Você tem 1 passe neste mês. Mande para alguém: a pessoa escolhe uma trilha do Peregrino+ e caminha nela inteira, sem pagar e sem prazo.",
+  "trailGiftMonthReserved": "Seu passe deste mês está guardado para {trail}. Ninguém recebeu ainda.",
+  "@trailGiftMonthReserved": {
+    "placeholders": {
+      "trail": {
+        "type": "String"
+      }
+    }
+  },
+  "trailGiftMonthReshare": "Compartilhar de novo",
+  "trailGiftMonthSend": "Enviar o passe",
+  "trailGiftMonthSwap": "Trocar a trilha",
+  "trailGiftMonthTitle": "Sua assinatura libera alguém",
+  "trailGiftMonthTrial": "Depois do teste grátis, você libera 1 trilha do Peregrino+ por mês para quem quiser.",
+  "trailGiftNeedsAccount": "Entre na sua conta para receber o passe. Ele abre sozinho logo depois.",
   "trailGiftNotNeeded": "Você já tem esta trilha. O passe fica para outra pessoa.",
   "trailGiftOwn": "Este passe é seu. Compartilhe com alguém.",
   "trailGiftPending": "Termine {trail}, que você recebeu, para receber outro passe. Este passe continua com quem enviou.",
@@ -7810,14 +7829,28 @@
   },
   "trailGiftSendFailed": "Não foi possível criar o passe. Tente de novo.",
   "trailGiftShareCta": "Compartilhar o passe",
+  "trailGiftShareOpenText": "Te dei uma trilha do Peregrino+ no Stway 🎁 Você escolhe qual, e ela fica sua, inteira. Abre pelo link: {link}\n\nAinda não tem o app? Instale, entre e toque em “Recebeu um passe de trilha?” no Perfil. Código: {code}",
+  "@trailGiftShareOpenText": {
+    "placeholders": {
+      "link": {
+        "type": "String"
+      },
+      "code": {
+        "type": "String"
+      }
+    }
+  },
   "trailGiftShareSubject": "Uma trilha do Stway para você",
-  "trailGiftShareText": "Liberei pra você a trilha {trail} no Stway 🎁 É sua, inteira. Abre pelo link: {link}",
+  "trailGiftShareText": "Liberei pra você a trilha {trail} no Stway 🎁 É sua, inteira. Abre pelo link: {link}\n\nAinda não tem o app? Instale, entre e toque em “Recebeu um passe de trilha?” no Perfil. Código: {code}",
   "@trailGiftShareText": {
     "placeholders": {
       "trail": {
         "type": "String"
       },
       "link": {
+        "type": "String"
+      },
+      "code": {
         "type": "String"
       }
     }

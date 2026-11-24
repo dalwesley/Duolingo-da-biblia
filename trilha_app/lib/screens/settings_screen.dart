@@ -26,11 +26,13 @@ import '../services/sound_service.dart';
 import '../services/subscription_service.dart';
 import '../services/sync_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/store_rating_pace.dart';
 import '../utils/guest_gate.dart';
 import '../utils/content_filter.dart';
 import '../utils/appearance.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/trail_progress.dart';
+import '../widgets/store_rating_sheet.dart';
 import '../widgets/whats_new_sheet.dart';
 import '../widgets/app_report_sheet.dart';
 import '../widgets/app_sheet.dart';
@@ -1439,6 +1441,18 @@ class _SettingsScreenState extends State<SettingsScreen>
           glyph: CinematicGlyph.flag,
           accent: AppColors.ember,
           onTap: () => showAppReportSheet(context),
+        ),
+        const _SettingsDivider(compact: true),
+        _navRow(
+          a,
+          context.l10n.settingsRateApp,
+          context.l10n.settingsRateAppSubtitle,
+          glyph: CinematicGlyph.star,
+          accent: AppRoles.reward,
+          onTap: () async {
+            final ok = await openStoreRating();
+            if (ok) await StoreRatingPace.markRated();
+          },
         ),
         if (kDebugMode) ...[
           const _SettingsDivider(compact: true),

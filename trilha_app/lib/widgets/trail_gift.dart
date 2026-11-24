@@ -12,6 +12,7 @@ import '../models/trail_gift.dart';
 import '../screens/trail_map_screen.dart';
 import '../services/analytics_service.dart';
 import '../services/backend_service.dart';
+import '../services/companion_service.dart';
 import '../services/invite_deep_link_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
@@ -26,9 +27,10 @@ import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'path_preview_sheet.dart';
+import 'profile_section.dart';
 import 'ui_primitives.dart';
 
-/// "Sua assinatura libera alguém": no mapa de uma trilha do Peregrino+,
+/// "Dar esta trilha a alguém": no topo do mapa de uma trilha do Peregrino+,
 /// quem assina libera a trilha inteira para outra pessoa (1 passe por mês).
 class TrailGiftCard extends StatelessWidget {
   final Trail trail;
@@ -67,6 +69,13 @@ class TrailGiftCard extends StatelessWidget {
               ],
             ),
           ),
+          const SizedBox(width: AppSpace.sm),
+          CinematicIcon(
+            glyph: CinematicGlyph.chevron,
+            size: 14,
+            accent: a.textSecondary,
+            framed: false,
+          ),
         ],
       ),
     );
@@ -75,7 +84,14 @@ class TrailGiftCard extends StatelessWidget {
 
 /// Folha do passe para [trail]: compartilhar, trocar o passe guardado
 /// para outra trilha ou dizer para quem ele já foi neste mês.
-Future<void> showTrailGiftSheet(BuildContext context, Trail trail) async {
+///
+/// [onChanged] roda depois do compartilhamento (o passe foi criado ou
+/// trocou de trilha) — a folha já fechou antes de gravar.
+Future<void> showTrailGiftSheet(
+  BuildContext context,
+  Trail trail, {
+  VoidCallback? onChanged,
+}) async {
   ActHaptics.tap();
   final backend = context.read<BackendService>();
   final current = await backend.fetchMonthTrailGift();
@@ -123,13 +139,27 @@ Future<void> showTrailGiftSheet(BuildContext context, Trail trail) async {
               onTap: () async {
                 Navigator.of(sheet).pop();
                 await _shareTrailGift(context, trail);
+                onChanged?.call();
               },
             ),
           ),
   );
 }
 
-Future<void> _shareTrailGift(BuildContext context, Trail trail) async {
+/// Passe aberto, num toque: quem receber escolhe a trilha. É o jeito mais
+/// curto de dar — quem dá não precisa saber qual trilha a pessoa quer.
+Future<void> sendOpenTrailGift(
+  BuildContext context, {
+  VoidCallback? onChanged,
+}) async {
+  ActHaptics.tap();
+  await _shareTrailGift(context, null);
+  onChanged?.call();
+}
+
+/// Cria (ou troca) o passe do mês e abre o compartilhar. [trail] nulo é o
+/// passe aberto.
+Future<void> _shareTrailGift(BuildContext context, Trail? trail) async {
   final sub = context.read<SubscriptionService>();
   // Espelha a rule: teste grátis não cria passe (evita PERMISSION_DENIED).
   if (!sub.canShareTrailGift) {
@@ -143,27 +173,33 @@ Future<void> _shareTrailGift(BuildContext context, Trail trail) async {
   }
   final backend = context.read<BackendService>();
   final name = context.read<ProgressService>().publicUserName;
-  final gift = await backend.sendTrailGift(
-    trailSlug: trail.slug,
-    fromName: name,
-  );
+  final slug = trail?.slug ?? '';
+  final gift = await backend.sendTrailGift(trailSlug: slug, fromName: name);
   if (!context.mounted) return;
   final l10n = context.l10n;
   if (gift == null || gift.redeemed) {
     unawaited(
       AnalyticsService.instance.logTrailGift(
         action: 'send',
-        trail: trail.slug,
+        trail: slug,
         result: gift == null ? 'failed' : 'used',
       ),
     );
+    var usedTitle = trail?.localizedTitle ?? '';
+    if (gift != null && gift.trailSlug.isNotEmpty && gift.trailSlug != slug) {
+      final other = await TrailRepository().getTrailBySlug(gift.trailSlug);
+      if (!context.mounted) return;
+      usedTitle = other?.localizedTitle ?? gift.trailSlug;
+    }
     await showAppToastFor(
       context,
       message: gift == null
           ? l10n.trailGiftSendFailed
           : l10n.trailGiftSheetUsed(
-              trail.localizedTitle,
-              gift.toName!.isEmpty ? l10n.trailGiftSomeone : gift.toName!,
+              usedTitle,
+              (gift.toName ?? '').isEmpty
+                  ? l10n.trailGiftSomeone
+                  : gift.toName!,
             ),
       glyph: CinematicGlyph.wrong,
       tone: AppToastTone.warn,
@@ -173,18 +209,27 @@ Future<void> _shareTrailGift(BuildContext context, Trail trail) async {
   unawaited(
     AnalyticsService.instance.logTrailGift(
       action: 'send',
-      trail: trail.slug,
-      result: 'shared',
+      trail: gift.trailSlug,
+      result: gift.trailSlug.isEmpty ? 'shared_open' : 'shared',
     ),
   );
+  // O passe guardado pode ser de outra trilha (ex.: aberto que já existia
+  // e não aceita voltar a ser aberto): o texto segue o passe real.
+  final link = InviteDeepLinkService.trailGiftHttpsUrl(gift.code);
+  final String text;
+  if (gift.trailSlug.isEmpty) {
+    text = l10n.trailGiftShareOpenText(link, gift.code);
+  } else {
+    var title = trail?.localizedTitle ?? '';
+    if (gift.trailSlug != slug) {
+      final other = await TrailRepository().getTrailBySlug(gift.trailSlug);
+      if (!context.mounted) return;
+      title = other?.localizedTitle ?? gift.trailSlug;
+    }
+    text = l10n.trailGiftShareText(title, link, gift.code);
+  }
   await SharePlus.instance.share(
-    ShareParams(
-      text: l10n.trailGiftShareText(
-        trail.localizedTitle,
-        InviteDeepLinkService.trailGiftHttpsUrl(gift.code),
-      ),
-      subject: l10n.trailGiftShareSubject,
-    ),
+    ShareParams(text: text, subject: l10n.trailGiftShareSubject),
   );
 }
 
@@ -236,7 +281,11 @@ Future<void> redeemTrailGiftLink(BuildContext context, String code) async {
     );
   }
 
-  if (!backend.isActive) return fail(TrailGiftRedeem.needsAccount);
+  if (!backend.isActive) {
+    // Sem conta: o passe espera o login e abre sozinho depois.
+    InviteDeepLinkService.instance.holdTrailGiftCode(code);
+    return fail(TrailGiftRedeem.needsAccount);
+  }
   final peek = await backend.fetchTrailGift(code);
   if (!context.mounted) return;
   if (peek == null) return fail(TrailGiftRedeem.invalid);
@@ -380,15 +429,45 @@ Future<Trail?> _pickGiftTrail(BuildContext context, String fromName) async {
   if (!context.mounted || trails.isEmpty) return null;
   return showAppSheet<Trail>(
     context,
-    builder: (sheet) => _GiftTrailPicker(fromName: fromName, trails: trails),
+    builder: (sheet) => _GiftTrailPicker(
+      title: context.l10n.trailGiftPickTitle(fromName),
+      subtitle: context.l10n.trailGiftPickSubtitle,
+      trails: trails,
+    ),
+  );
+}
+
+/// Quem assina escolhe qual trilha do Peregrino+ vai liberar.
+Future<Trail?> pickTrailToGive(BuildContext context) async {
+  final trails = (await TrailRepository().getTrails())
+      .where(
+        (t) =>
+            PlusAccess.trailInPlus(t) &&
+            !t.comingSoon &&
+            t.missionSlugs.isNotEmpty,
+      )
+      .toList();
+  if (!context.mounted || trails.isEmpty) return null;
+  return showAppSheet<Trail>(
+    context,
+    builder: (sheet) => _GiftTrailPicker(
+      title: context.l10n.trailGiftGivePickTitle,
+      subtitle: context.l10n.trailGiftGivePickSubtitle,
+      trails: trails,
+    ),
   );
 }
 
 class _GiftTrailPicker extends StatelessWidget {
-  final String fromName;
+  final String title;
+  final String subtitle;
   final List<Trail> trails;
 
-  const _GiftTrailPicker({required this.fromName, required this.trails});
+  const _GiftTrailPicker({
+    required this.title,
+    required this.subtitle,
+    required this.trails,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -405,8 +484,8 @@ class _GiftTrailPicker extends StatelessWidget {
             AppSheetHeader(
               eyebrow: l10n.trailGiftEyebrow,
               eyebrowColor: AppRoles.reward,
-              title: l10n.trailGiftPickTitle(fromName),
-              subtitle: l10n.trailGiftPickSubtitle,
+              title: title,
+              subtitle: subtitle,
               center: true,
             ),
             const SizedBox(height: AppSpace.md),
@@ -459,6 +538,168 @@ class _GiftTrailPicker extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// "Sua assinatura libera alguém" no Perfil: o passe do mês sempre à mão
+/// (antes só existia no fim do mapa de uma trilha do Peregrino+). Mostra se
+/// o passe está livre, guardado para uma trilha, no convite de companhia ou
+/// já dado — e leva a escolher, compartilhar de novo ou trocar a trilha.
+/// No teste grátis só avisa (a regra não cria passe no teste).
+class TrailGiftMonthCard extends StatefulWidget {
+  /// Falso no teste grátis: só o aviso, sem ação.
+  final bool canGive;
+
+  const TrailGiftMonthCard({super.key, required this.canGive});
+
+  @override
+  State<TrailGiftMonthCard> createState() => _TrailGiftMonthCardState();
+}
+
+class _TrailGiftMonthCardState extends State<TrailGiftMonthCard> {
+  bool _loaded = false;
+  TrailGift? _gift;
+  Trail? _trail;
+
+  @override
+  void initState() {
+    super.initState();
+    if (widget.canGive) {
+      _load();
+    } else {
+      _loaded = true;
+    }
+  }
+
+  Future<void> _load() async {
+    final gift = await context.read<BackendService>().fetchMonthTrailGift();
+    Trail? trail;
+    if (gift != null && gift.trailSlug.isNotEmpty) {
+      trail = await TrailRepository().getTrailBySlug(gift.trailSlug);
+    }
+    if (!mounted) return;
+    setState(() {
+      _gift = gift;
+      _trail = trail;
+      _loaded = true;
+    });
+  }
+
+  Future<void> _pickAndShare() async {
+    final trail = await pickTrailToGive(context);
+    if (trail == null || !mounted) return;
+    await showTrailGiftSheet(context, trail, onChanged: _load);
+  }
+
+  Future<void> _sendOpen() => sendOpenTrailGift(context, onChanged: _load);
+
+  Future<void> _reshare() async {
+    final trail = _trail;
+    if (trail == null) return _pickAndShare();
+    await showTrailGiftSheet(context, trail, onChanged: _load);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final gift = _gift;
+    final trailTitle = _trail?.localizedTitle ?? gift?.trailSlug ?? '';
+    final used = gift != null && gift.redeemed;
+    // Passe aberto só está "no convite" se o convite ainda espera alguém.
+    // Convite cancelado ou vencido deixa o passe aberto solto: volta a ser
+    // um passe livre (escolher a trilha grava nele).
+    final giftCode = gift?.code;
+    final inLiveInvite = context.select<CompanionService, bool>(
+      (c) => c.companions.any(
+        (m) =>
+            m.awaitingPartner && m.giftCode != null && m.giftCode == giftCode,
+      ),
+    );
+    final open = gift != null && !used && gift.trailSlug.isEmpty;
+    final openInInvite = open && inLiveInvite;
+    final reserved = gift != null && !used && gift.trailSlug.isNotEmpty;
+    final free = gift == null;
+
+    final String text;
+    if (!widget.canGive) {
+      text = l10n.trailGiftMonthTrial;
+    } else if (used) {
+      final name = gift.toName ?? '';
+      text = l10n.trailGiftSheetUsed(
+        trailTitle,
+        name.isEmpty ? l10n.trailGiftSomeone : name,
+      );
+    } else if (openInInvite) {
+      text = l10n.trailGiftMonthOpen;
+    } else if (open) {
+      text = l10n.trailGiftMonthOpenLink;
+    } else if (reserved) {
+      text = l10n.trailGiftMonthReserved(trailTitle);
+    } else {
+      text = l10n.trailGiftMonthReady;
+    }
+
+    // Ação principal: mandar o passe (aberto ou o já guardado). A
+    // secundária: escolher ou trocar a trilha.
+    final List<Widget> actions;
+    if (!widget.canGive || used) {
+      actions = const [];
+    } else if (openInInvite) {
+      actions = [
+        GhostCta(
+          label: l10n.trailGiftMonthChoose,
+          leading: CinematicGlyph.gift,
+          expanded: true,
+          onTap: _pickAndShare,
+        ),
+      ];
+    } else {
+      actions = [
+        CopperCta(
+          label: free ? l10n.trailGiftMonthSend : l10n.trailGiftMonthReshare,
+          leading: free ? CinematicGlyph.gift : CinematicGlyph.share,
+          expanded: true,
+          onTap: reserved ? _reshare : _sendOpen,
+        ),
+        const SizedBox(height: AppSpace.sm),
+        GhostCta(
+          label: reserved ? l10n.trailGiftMonthSwap : l10n.trailGiftMonthPick,
+          leading: reserved ? CinematicGlyph.refresh : CinematicGlyph.book,
+          expanded: true,
+          onTap: _pickAndShare,
+        ),
+      ];
+    }
+
+    return ProfileSection(
+      accent: AppRoles.reward,
+      glyph: CinematicGlyph.gift,
+      title: l10n.trailGiftMonthTitle,
+      lit: widget.canGive && _loaded && (free || open) && !openInInvite,
+      child: !_loaded
+          ? const Padding(
+              padding: EdgeInsets.symmetric(vertical: AppSpace.md),
+              child: AppSpinner(),
+            )
+          : Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(
+                  text,
+                  style: AppTypography.body(
+                    size: 13,
+                    height: 1.45,
+                    color: a.textSecondary,
+                  ),
+                ),
+                if (actions.isNotEmpty) ...[
+                  const SizedBox(height: AppSpace.md),
+                  ...actions,
+                ],
+              ],
+            ),
     );
   }
 }

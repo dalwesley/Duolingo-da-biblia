@@ -10,6 +10,7 @@ import '../services/league_service.dart';
 import '../services/plus_log.dart';
 import '../services/progress_service.dart';
 import '../services/remote_config_service.dart';
+import '../utils/store_rating_pace.dart';
 import '../utils/juntos_invite_pace.dart';
 import '../models/advent_prize.dart';
 import '../models/room_week.dart';
@@ -22,6 +23,7 @@ import '../utils/liturgical_calendar.dart';
 import '../utils/home_support.dart';
 import '../utils/plus_offers.dart';
 import '../utils/season_walk_debug.dart';
+import '../widgets/store_rating_sheet.dart';
 import '../widgets/juntos_invite_sheet.dart';
 import '../widgets/whats_new_sheet.dart';
 import '../widgets/cinematic_icon.dart';
@@ -569,6 +571,16 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                         button('Zerar convite da Juntos', () async {
                           await JuntosInvitePace.reset();
                           _toast('Convite da Juntos zerado');
+                        }),
+                      ]),
+                      section('Avaliar na loja', [
+                        button(
+                          'Abrir convite para avaliar',
+                          () => showStoreRatingSheet(context),
+                        ),
+                        button('Zerar convite de avaliação', () async {
+                          await StoreRatingPace.reset();
+                          _toast('Convite de avaliação zerado');
                         }),
                       ]),
                       section('Postais', [

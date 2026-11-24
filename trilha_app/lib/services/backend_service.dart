@@ -2332,7 +2332,13 @@ class BackendService extends ChangeNotifier {
     final current = await fetchMonthTrailGift();
     try {
       if (current != null) {
-        if (current.redeemed || current.trailSlug == trailSlug) return current;
+        // Pedir o passe aberto com um já guardado para uma trilha: a regra
+        // não deixa voltar a aberto, então devolve o que já existe.
+        if (current.redeemed ||
+            current.trailSlug == trailSlug ||
+            trailSlug.isEmpty) {
+          return current;
+        }
         await _db.doc('trailGifts/${current.code}').update({
           'trailSlug': trailSlug,
         });

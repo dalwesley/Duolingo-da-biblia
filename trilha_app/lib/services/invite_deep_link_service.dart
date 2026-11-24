@@ -37,6 +37,12 @@ class InviteDeepLinkService extends ChangeNotifier {
   String? get pendingRoomCode => _pendingRoomCode;
   String? get pendingTrailGiftCode => _pendingTrailGiftCode;
 
+  /// Guarda um passe digitado ou colado sem conta: o shell resgata depois
+  /// do login, como faria com o link.
+  void holdTrailGiftCode(String code) {
+    _pendingTrailGiftCode = code;
+  }
+
   /// Link tocável no WhatsApp / QR — convite.
   static String companionUri(String code) =>
       '$scheme://$companionHost/${code.trim().toUpperCase()}';

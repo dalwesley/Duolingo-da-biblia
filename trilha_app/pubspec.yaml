@@ -41,6 +41,8 @@ dependencies:
   flutter_tts: ^4.2.5
   purchases_flutter: ^10.11.0
   sensors_plus: ^7.1.0
+  upgrader: ^14.0.0
+  in_app_review: ^2.0.12
 
 dev_dependencies:
   flutter_test:
@@ -71,6 +73,8 @@ flutter:
     # vem do Firestore.
     - assets/data/bible_tb.json
     - assets/data/bible_jfaal.json
+    - assets/data/bible_bsb.json
+    - assets/data/bible_bes.json
     - assets/data/bible_study.sqlite.gz
     # Overlay EN/ES de metadados (trilhas + intros de livros). PT = fonte.
     - assets/l10n/content/

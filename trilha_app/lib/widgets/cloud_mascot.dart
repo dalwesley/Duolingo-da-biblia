@@ -54,21 +54,31 @@ class CloudMascot extends StatefulWidget {
   /// Espera antes da reação — maior quando a nuvem entra com a tela.
   final Duration reactDelay;
 
+  /// Luz correndo na borda (só no carregando). Desligada, a luz fica
+  /// parada no alto (pintada uma vez). Ligada custa uma camada por quadro:
+  /// só no carregamento em tela cheia — nunca em lista, card ou imagem.
+  final bool glow;
+
   const CloudMascot({
     super.key,
     required this.face,
     this.size = 96,
     this.react = true,
     this.reactDelay = const Duration(milliseconds: 220),
+    this.glow = false,
   });
 
   /// Proporção do corpo (480×356).
   static const aspect = 356 / 480;
 
+  /// Só a borda (branca), para a luz que corre em volta no carregando.
+  static const rim = 'assets/mascot/cloud_rim.png';
+
   /// Decodifica os corpos antes da primeira troca de cara.
   static Future<void> precache(BuildContext context) => Future.wait([
     for (final f in CloudFace.values)
       precacheImage(AssetImage(f.body), context),
+    precacheImage(const AssetImage(rim), context),
   ]);
 
   @override
@@ -107,6 +117,15 @@ class _CloudMascotState extends State<CloudMascot>
     value: 0.5,
   );
 
+  /// Luz que dá a volta na borda enquanto carrega. Começa no alto à
+  /// direita, onde o brilho do corpo ficava.
+  late final AnimationController _glow = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 1500),
+    value: _glowRest,
+  );
+  static const _glowRest = 0.875;
+
   static const _morph = Interval(0, 0.5, curve: Curves.easeOutBack);
   static const _fade = Interval(0, 0.4, curve: Curves.easeOut);
   static const _gesture = Interval(0.3, 1);
@@ -138,6 +157,9 @@ class _CloudMascotState extends State<CloudMascot>
       _appear.value = 1;
       _react.value = 1;
       _float.stop();
+      _glow
+        ..stop()
+        ..value = _glowRest;
       _nextBlink?.cancel();
       _nextIdle?.cancel();
       return;
@@ -158,6 +180,7 @@ class _CloudMascotState extends State<CloudMascot>
   @override
   void didUpdateWidget(CloudMascot old) {
     super.didUpdateWidget(old);
+    if (old.glow != widget.glow && !_still) _syncIdle();
     if (old.face == widget.face) return;
     _delay?.cancel();
     _from = _current(old.face);
@@ -180,6 +203,7 @@ class _CloudMascotState extends State<CloudMascot>
     _blink.dispose();
     _idle.dispose();
     _float.dispose();
+    _glow.dispose();
     super.dispose();
   }
 
@@ -196,8 +220,17 @@ class _CloudMascotState extends State<CloudMascot>
   void _syncIdle() {
     if (widget.face == CloudFace.carregando) {
       if (!_float.isAnimating) _float.repeat(reverse: true);
-    } else if (_float.isAnimating || _float.value != 0.5) {
-      _float.animateTo(0.5, duration: const Duration(milliseconds: 300));
+      if (widget.glow && !_glow.isAnimating) _glow.repeat();
+      if (!widget.glow) {
+        _glow
+          ..stop()
+          ..value = _glowRest;
+      }
+    } else {
+      _glow.stop();
+      if (_float.isAnimating || _float.value != 0.5) {
+        _float.animateTo(0.5, duration: const Duration(milliseconds: 300));
+      }
     }
     _nextBlink?.cancel();
     if (widget.face._blinks) _scheduleBlink();
@@ -266,6 +299,11 @@ class _CloudMascotState extends State<CloudMascot>
                     (1 - math.sin(_blink.value * math.pi) * 0.88) *
                     (1 - squint);
                 final appear = _appear.value;
+                // A luz acompanha o corpo de carregando: entra e sai com ele.
+                final fromLoading = _fromFace == CloudFace.carregando;
+                final glow = widget.face == CloudFace.carregando
+                    ? (_fromFace == null || fromLoading ? 1.0 : fade)
+                    : (fromLoading && fade < 1 ? 1 - fade : 0.0);
                 final cloud = SizedBox(
                   width: size,
                   height: height,
@@ -281,6 +319,7 @@ class _CloudMascotState extends State<CloudMascot>
                             : fade,
                         child: _body(widget.face),
                       ),
+                      if (glow > 0) _rimLight(glow),
                       CustomPaint(
                         painter: _FacePainter(
                           expression: _current(widget.face),
@@ -308,6 +347,40 @@ class _CloudMascotState extends State<CloudMascot>
     );
   }
 
+  /// Cometa branco na borda: a máscara giratória deixa só a cabeça e a
+  /// cauda aparecerem. Camada própria — só ela repinta a cada quadro.
+  Widget _rimLight(double opacity) => Opacity(
+    opacity: opacity,
+    child: RepaintBoundary(
+      child: AnimatedBuilder(
+        animation: _glow,
+        builder: (context, child) => ShaderMask(
+          blendMode: BlendMode.dstIn,
+          shaderCallback: (rect) => SweepGradient(
+            center: const Alignment(0, 0.08),
+            transform: GradientRotation(_glow.value * 2 * math.pi),
+            colors: const [
+              Color(0x00FFFFFF),
+              Color(0x00FFFFFF),
+              Color(0x66FFFFFF),
+              Color(0xF2FFFFFF),
+              Color(0x00FFFFFF),
+            ],
+            stops: const [0, 0.6, 0.9, 0.985, 1],
+          ).createShader(rect),
+          child: child,
+        ),
+        child: Image.asset(
+          CloudMascot.rim,
+          fit: BoxFit.contain,
+          gaplessPlayback: true,
+          filterQuality: FilterQuality.medium,
+          excludeFromSemantics: true,
+        ),
+      ),
+    ),
+  );
+
   Widget _body(CloudFace face) => Image.asset(
     face.body,
     fit: BoxFit.contain,
@@ -322,8 +395,12 @@ class _CloudMascotState extends State<CloudMascot>
     final m = Matrix4.identity();
     final pop = Curves.easeOutBack.transform(_appear.value.clamp(0.0, 1.0));
     final grow = 0.82 + 0.18 * pop;
-    final float = (_float.value - 0.5) * size * 0.0625;
-    m.translateByDouble(0, float, 0, 1);
+    // Flutua e respira junto: no alto estica, embaixo assenta.
+    final wave = (Curves.easeInOut.transform(_float.value) - 0.5) * 2;
+    m.translateByDouble(0, wave * size * 0.05, 0, 1);
+    if (wave != 0) {
+      m.scaleByDouble(1 + 0.018 * wave, 1 - 0.028 * wave, 1, 1);
+    }
 
     final g = _gesture.transform(t);
     if (_fromFace != null && g > 0 && g < 1) {

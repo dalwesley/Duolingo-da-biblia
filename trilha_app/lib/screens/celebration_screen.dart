@@ -14,6 +14,7 @@ import '../models/scene_takeaway.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/difficulty.dart';
 import '../models/pilgrim_medals.dart';
+import '../services/app_update_service.dart';
 import '../services/analytics_service.dart';
 import '../services/backend_service.dart';
 import '../services/companion_service.dart';
@@ -24,12 +25,14 @@ import '../services/remote_config_service.dart';
 import '../services/sound_service.dart';
 import '../services/room_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/store_rating_pace.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../utils/difficulty_trails.dart';
 import '../utils/mascot_messages.dart';
 import '../models/trail.dart';
 import '../services/bible_service.dart';
+import '../widgets/store_rating_sheet.dart';
 import '../widgets/book_finished_sheet.dart';
 import '../utils/plus_access.dart';
 import '../utils/trail_progress.dart';
@@ -437,12 +440,14 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     final progress = context.read<ProgressService>();
     final companions = context.read<CompanionService>();
     final hasPartner = companions.companions.any((c) => !c.awaitingPartner);
+    var shownSheet = false;
     // Companhia no 2º dia seguido — Friend Streak, não na 1ª missão.
     if (RemoteConfigService.instance.companionEnabled &&
         progress.streak >= 2 &&
         !progress.companionInviteOffered &&
         !hasPartner &&
         companions.companions.isEmpty) {
+      shownSheet = true;
       final code = await showCompanionInvitePromptSheet(
         context,
         tomorrowTitle: _hook?.title,
@@ -464,7 +469,28 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       }
     }
     if (!mounted) return;
+    if (!progress.notificationsPrompted) shownSheet = true;
     await _askReminderOnce();
+    if (!mounted || shownSheet) return;
+    await _askStoreRatingIfDue();
+  }
+
+  /// Convite neutro para avaliar na loja — só depois de uma cena boa, sem
+  /// outra folha na mesma saída nem o aviso de atualização na sessão.
+  Future<void> _askStoreRatingIfDue() async {
+    if (_noProgress || _isGuest) return;
+    if (AppUpdateService.promptShownThisSession) return;
+    final progress = context.read<ProgressService>();
+    final due = await StoreRatingPace.load(
+      now: DateTime.now(),
+      scenesDone: progress.completedMissions.length,
+      accountAgeDays: progress.accountAgeDays,
+      correct: widget.correct,
+      total: widget.total,
+      perfect: widget.perfect,
+    );
+    if (!due || !mounted) return;
+    await showStoreRatingSheet(context);
   }
 
   /// Lembrete “até amanhã” — 1ª cena, no toque de sair (Home, mapa ou
@@ -662,7 +688,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
               final uid = backend.uid ?? '';
               CornerChallenge? closed;
               for (final c in corners.mine) {
-                if (c.missionSlug == widget.missionSlug &&
+                if (c.missionSlugOf(uid) == widget.missionSlug &&
                     c.isThisWeek &&
                     c.iDone(uid)) {
                   closed = c;
@@ -2279,10 +2305,10 @@ class _CornerClosedBeat extends StatelessWidget {
                   challenge.subline(myUid ?? ''),
                   style: AppTypography.body(size: 12, color: a.textSecondary),
                 ),
-                if (challenge.missionTitle.isNotEmpty) ...[
+                if (challenge.missionTitleOf(myUid ?? '').isNotEmpty) ...[
                   const SizedBox(height: 2),
                   Text(
-                    challenge.missionTitle,
+                    challenge.missionTitleOf(myUid ?? ''),
                     style: AppTypography.body(size: 11, color: a.textFaint),
                   ),
                 ],

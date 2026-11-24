@@ -5,14 +5,14 @@
     "es": "Pase de ruta"
   },
   "trailGiftCardTitle": {
-    "pt": "Libere esta trilha para alguém",
+    "pt": "Dar esta trilha a alguém",
     "en": "Give this trail to someone",
-    "es": "Libera esta ruta para alguien"
+    "es": "Regalar esta ruta a alguien"
   },
   "trailGiftCardBody": {
-    "pt": "Sua assinatura libera alguém: 1 trilha do Peregrino+ por mês, inteira, para quem você escolher.",
-    "en": "Your subscription opens the way for someone: 1 Peregrino+ trail a month, whole, for whoever you choose.",
-    "es": "Tu suscripción abre el camino a alguien: 1 ruta de Peregrino+ al mes, completa, para quien elijas."
+    "pt": "Seu passe do mês libera ela inteira para quem você escolher.",
+    "en": "Your monthly pass unlocks all of it for whoever you choose.",
+    "es": "Tu pase del mes la libera entera para quien elijas."
   },
   "trailGiftSheetBody": {
     "pt": "Quem receber caminha nesta trilha inteira, sem pagar e sem prazo. Você tem 1 passe por mês.",
@@ -42,12 +42,13 @@
     "es": "Compartir el pase"
   },
   "trailGiftShareText": {
-    "pt": "Liberei pra você a trilha {trail} no Stway 🎁 É sua, inteira. Abre pelo link: {link}",
-    "en": "I unlocked the {trail} trail on Stway for you 🎁 It's yours, all of it. Open it here: {link}",
-    "es": "Te liberé la ruta {trail} en Stway 🎁 Es tuya, completa. Ábrela aquí: {link}",
+    "pt": "Liberei pra você a trilha {trail} no Stway 🎁 É sua, inteira. Abre pelo link: {link}\n\nAinda não tem o app? Instale, entre e toque em “Recebeu um passe de trilha?” no Perfil. Código: {code}",
+    "en": "I unlocked the trail {trail} for you on Stway 🎁 It's yours, the whole thing. Open the link: {link}\n\nDon't have the app yet? Install it, sign in and tap “Got a trail pass?” in your Profile. Code: {code}",
+    "es": "Te liberé la ruta {trail} en Stway 🎁 Es tuya, entera. Ábrela con el enlace: {link}\n\n¿Aún no tienes la app? Instálala, entra y toca “¿Recibiste un pase de sendero?” en el Perfil. Código: {code}",
     "placeholders": {
       "trail": "String",
-      "link": "String"
+      "link": "String",
+      "code": "String"
     }
   },
   "trailGiftShareSubject": {
@@ -74,9 +75,9 @@
     "es": "Alguien"
   },
   "trailGiftNeedsAccount": {
-    "pt": "Entre na sua conta para receber o passe. Depois abra o link de novo.",
-    "en": "Sign in to receive the pass. Then open the link again.",
-    "es": "Inicia sesión para recibir el pase. Luego abre el enlace de nuevo."
+    "pt": "Entre na sua conta para receber o passe. Ele abre sozinho logo depois.",
+    "en": "Sign in to receive the pass. It opens by itself right after.",
+    "es": "Entra en tu cuenta para recibir el pase. Se abre solo justo después."
   },
   "trailGiftInvalid": {
     "pt": "Este passe não existe. Confira o link.",
@@ -104,14 +105,14 @@
     "es": "No fue posible abrir el pase. Inténtalo de nuevo."
   },
   "paywallPerkGiftTitle": {
-    "pt": "Uma trilha por mês de presente",
-    "en": "A trail to give every month",
-    "es": "Una ruta de regalo cada mes"
+    "pt": "Sua assinatura libera alguém",
+    "en": "Your subscription opens the way for someone",
+    "es": "Tu suscripción le abre el camino a alguien"
   },
   "paywallPerkGiftBody": {
-    "pt": "Compartilhe 1 trilha do Peregrino+ por mês com alguém. Ela fica aberta inteira para quem recebe, sem pagar.",
-    "en": "Share 1 Peregrino+ trail a month with someone. It stays open, whole, for them, free.",
-    "es": "Comparte 1 ruta de Peregrino+ al mes con alguien. Queda abierta completa para quien la recibe, sin pagar."
+    "pt": "Todo mês, 1 trilha do Peregrino+ inteira de presente para quem você escolher. Quem recebe não paga nada.",
+    "en": "Every month, give 1 whole Peregrino+ trail to anyone you choose. They pay nothing.",
+    "es": "Cada mes, regala 1 ruta completa de Peregrino+ a quien elijas. Quien la recibe no paga nada."
   },
   "trailGiftCodeSubtitle": {
     "pt": "Cole a mensagem com o link do passe ou digite o código de 8 letras.",
@@ -170,5 +171,82 @@
     "en": "Paste the link or type the 8-letter code",
     "es": "Pega el enlace o escribe el código de 8 letras",
     "description": "Perfil: entrada para resgatar passe de trilha por código"
+  },
+  "trailGiftMonthTitle": {
+    "pt": "Sua assinatura libera alguém",
+    "en": "Your subscription opens the way for someone",
+    "es": "Tu suscripción le abre el camino a alguien"
+  },
+  "trailGiftMonthReady": {
+    "pt": "Você tem 1 passe neste mês. Mande para alguém: a pessoa escolhe uma trilha do Peregrino+ e caminha nela inteira, sem pagar e sem prazo.",
+    "en": "You have 1 pass this month. Send it to someone: they pick a Peregrino+ trail and walk the whole of it, free and with no time limit.",
+    "es": "Tienes 1 pase este mes. Envíalo a alguien: elige una ruta de Peregrino+ y la recorre entera, sin pagar y sin plazo."
+  },
+  "trailGiftMonthPick": {
+    "pt": "Escolher a trilha por ela",
+    "en": "Pick the trail for them",
+    "es": "Elegir la ruta por esa persona"
+  },
+  "trailGiftMonthReserved": {
+    "pt": "Seu passe deste mês está guardado para {trail}. Ninguém recebeu ainda.",
+    "en": "This month's pass is saved for {trail}. Nobody has received it yet.",
+    "es": "Tu pase de este mes está guardado para {trail}. Nadie lo recibió todavía.",
+    "placeholders": {
+      "trail": "String"
+    }
+  },
+  "trailGiftMonthReshare": {
+    "pt": "Compartilhar de novo",
+    "en": "Share again",
+    "es": "Compartir de nuevo"
+  },
+  "trailGiftMonthSwap": {
+    "pt": "Trocar a trilha",
+    "en": "Change the trail",
+    "es": "Cambiar la ruta"
+  },
+  "trailGiftMonthOpen": {
+    "pt": "Você chamou alguém para a Companhia, e o passe deste mês foi junto no convite. Quem aceitar ganha uma trilha do Peregrino+ e escolhe qual. Se preferir, escolha você a trilha agora.",
+    "en": "You invited someone to walk with you, and this month's pass went along with the invite. Whoever accepts gets a Peregrino+ trail and picks which one. If you prefer, pick the trail yourself now.",
+    "es": "Invitaste a alguien a la Compañía, y el pase de este mes fue junto con la invitación. Quien acepte gana una ruta de Peregrino+ y elige cuál. Si prefieres, elige tú la ruta ahora."
+  },
+  "trailGiftMonthTrial": {
+    "pt": "Depois do teste grátis, você libera 1 trilha do Peregrino+ por mês para quem quiser.",
+    "en": "After the free trial, you can give 1 Peregrino+ trail a month to anyone you choose.",
+    "es": "Después de la prueba gratis, liberas 1 ruta de Peregrino+ por mes para quien quieras."
+  },
+  "trailGiftGivePickTitle": {
+    "pt": "Qual trilha você vai liberar?",
+    "en": "Which trail will you give?",
+    "es": "¿Qué ruta vas a liberar?"
+  },
+  "trailGiftGivePickSubtitle": {
+    "pt": "Quem receber caminha nela inteira, sem pagar e sem prazo.",
+    "en": "Whoever gets it walks the whole trail, free and with no time limit.",
+    "es": "Quien la reciba la recorre entera, sin pagar y sin plazo."
+  },
+  "trailGiftMonthChoose": {
+    "pt": "Escolher a trilha eu mesmo",
+    "en": "Pick the trail myself",
+    "es": "Elegir la ruta yo"
+  },
+  "trailGiftMonthSend": {
+    "pt": "Enviar o passe",
+    "en": "Send the pass",
+    "es": "Enviar el pase"
+  },
+  "trailGiftMonthOpenLink": {
+    "pt": "Seu passe deste mês está pronto e ninguém recebeu ainda. Quem abrir o link escolhe a trilha.",
+    "en": "This month's pass is ready and nobody has received it yet. Whoever opens the link picks the trail.",
+    "es": "Tu pase de este mes está listo y nadie lo recibió todavía. Quien abra el enlace elige la ruta."
+  },
+  "trailGiftShareOpenText": {
+    "pt": "Te dei uma trilha do Peregrino+ no Stway 🎁 Você escolhe qual, e ela fica sua, inteira. Abre pelo link: {link}\n\nAinda não tem o app? Instale, entre e toque em “Recebeu um passe de trilha?” no Perfil. Código: {code}",
+    "en": "I'm giving you a Peregrino+ trail on Stway 🎁 You pick which one, and the whole trail is yours. Open the link: {link}\n\nDon't have the app yet? Install it, sign in and tap “Got a trail pass?” in your Profile. Code: {code}",
+    "es": "Te regalo una ruta de Peregrino+ en Stway 🎁 Tú eliges cuál, y es tuya, entera. Ábrela con el enlace: {link}\n\n¿Aún no tienes la app? Instálala, entra y toca “¿Recibiste un pase de sendero?” en el Perfil. Código: {code}",
+    "placeholders": {
+      "link": "String",
+      "code": "String"
+    }
   }
 }

@@ -375,6 +375,17 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
           ),
           child: PromiseMapCard(),
         ),
+      // Passe de trilha à vista: antes ficava no fim do mapa e ninguém via.
+      if (canGift && PlusAccess.trailInPlus(trail))
+        Padding(
+          padding: const EdgeInsets.fromLTRB(
+            AppSpace.screen,
+            0,
+            AppSpace.screen,
+            AppSpace.md,
+          ),
+          child: TrailGiftCard(trail: trail),
+        ),
       if (medalChip != null)
         Padding(
           padding: const EdgeInsets.fromLTRB(
@@ -448,11 +459,6 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
-                                if (canGift &&
-                                    PlusAccess.trailInPlus(trail)) ...[
-                                  TrailGiftCard(trail: trail),
-                                  const SizedBox(height: AppSpace.lg),
-                                ],
                                 MilestoneChestsCard(
                                   trailSlug: trail.slug,
                                   done: prog.done,

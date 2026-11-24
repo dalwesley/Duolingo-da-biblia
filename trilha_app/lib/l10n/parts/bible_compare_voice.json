@@ -1,0 +1,178 @@
+{
+  "bibleVerseCompare": {
+    "pt": "Comparar versões",
+    "en": "Compare versions",
+    "es": "Comparar versiones"
+  },
+  "bibleVerseCompareDetail": {
+    "pt": "Português, inglês, espanhol e o original",
+    "en": "Portuguese, English, Spanish and the original",
+    "es": "Portugués, inglés, español y el original"
+  },
+  "bibleCompareHebrew": {
+    "pt": "Hebraico",
+    "en": "Hebrew",
+    "es": "Hebreo"
+  },
+  "bibleCompareGreek": {
+    "pt": "Grego",
+    "en": "Greek",
+    "es": "Griego"
+  },
+  "bibleCompareOriginalMissing": {
+    "pt": "O original deste versículo ainda não está no app.",
+    "en": "The original of this verse is not in the app yet.",
+    "es": "El original de este versículo todavía no está en la app."
+  },
+  "bibleCompareMissing": {
+    "pt": "Esta versão não traz este versículo.",
+    "en": "This version does not include this verse.",
+    "es": "Esta versión no incluye este versículo."
+  },
+  "bibleCompareLoading": {
+    "pt": "Buscando este versículo em cada versão…",
+    "en": "Finding this verse in every version…",
+    "es": "Buscando este versículo en cada versión…"
+  },
+  "bibleCompareReading": {
+    "pt": "em leitura",
+    "en": "reading",
+    "es": "leyendo"
+  },
+  "bibleCompareVerseOf": {
+    "pt": "Versículo {verse} de {total}",
+    "en": "Verse {verse} of {total}",
+    "es": "Versículo {verse} de {total}",
+    "placeholders": {
+      "verse": "int",
+      "total": "int"
+    }
+  },
+  "bibleCompareCopyAll": {
+    "pt": "Copiar tudo",
+    "en": "Copy all",
+    "es": "Copiar todo"
+  },
+  "bibleCompareCopiedAll": {
+    "pt": "Comparação copiada",
+    "en": "Comparison copied",
+    "es": "Comparación copiada"
+  },
+  "bibleCompareStudyCta": {
+    "pt": "Estudar palavra por palavra",
+    "en": "Study word by word",
+    "es": "Estudiar palabra por palabra"
+  },
+  "bibleComparePrevVerse": {
+    "pt": "Versículo anterior",
+    "en": "Previous verse",
+    "es": "Versículo anterior"
+  },
+  "bibleCompareNextVerse": {
+    "pt": "Próximo versículo",
+    "en": "Next verse",
+    "es": "Siguiente versículo"
+  },
+  "bibleListenVoiceMissing": {
+    "pt": "Seu aparelho não tem a voz em {language}. Instale nas configurações de voz (texto para fala) do aparelho para ouvir esta versão.",
+    "en": "Your device has no {language} voice. Install it in the device's text-to-speech settings to listen to this version.",
+    "es": "Tu dispositivo no tiene la voz en {language}. Instálala en los ajustes de voz (texto a voz) del dispositivo para escuchar esta versión.",
+    "placeholders": {
+      "language": "String"
+    }
+  },
+  "bibleVoicePortuguese": {
+    "pt": "português",
+    "en": "Portuguese",
+    "es": "portugués"
+  },
+  "bibleVoiceEnglish": {
+    "pt": "inglês",
+    "en": "English",
+    "es": "inglés"
+  },
+  "bibleVoiceSpanish": {
+    "pt": "espanhol",
+    "en": "Spanish",
+    "es": "español"
+  },
+  "bibleReaderPreviewVerse": {
+    "pt": "A tua palavra é lâmpada para os meus pés e luz para o meu caminho.",
+    "en": "Your word is a lamp to my feet and a light to my path.",
+    "es": "Tu palabra es luz para mis pies; siempre alumbra mi camino."
+  },
+  "bibleReaderPreviewRef": {
+    "pt": "Salmos 119:105",
+    "en": "Psalm 119:105",
+    "es": "Salmos 119:105"
+  },
+  "ttsSectionVoice": {
+    "pt": "Voz da leitura",
+    "en": "Reading voice",
+    "es": "Voz de la lectura"
+  },
+  "ttsSpeedSlow": {
+    "pt": "Devagar",
+    "en": "Slow",
+    "es": "Lento"
+  },
+  "ttsSpeedNormal": {
+    "pt": "Normal",
+    "en": "Normal",
+    "es": "Normal"
+  },
+  "ttsSpeedFast": {
+    "pt": "Rápido",
+    "en": "Fast",
+    "es": "Rápido"
+  },
+  "ttsVoiceAuto": {
+    "pt": "Automática",
+    "en": "Automatic",
+    "es": "Automática"
+  },
+  "ttsVoiceNumbered": {
+    "pt": "Voz {number}",
+    "en": "Voice {number}",
+    "es": "Voz {number}",
+    "placeholders": {
+      "number": "int"
+    }
+  },
+  "ttsVoiceFemale": {
+    "pt": "feminina",
+    "en": "female",
+    "es": "femenina"
+  },
+  "ttsVoiceMale": {
+    "pt": "masculina",
+    "en": "male",
+    "es": "masculina"
+  },
+  "ttsTest": {
+    "pt": "Testar voz",
+    "en": "Test voice",
+    "es": "Probar voz"
+  },
+  "ttsTestStop": {
+    "pt": "Parar",
+    "en": "Stop",
+    "es": "Detener"
+  },
+  "ttsNoVoices": {
+    "pt": "Nenhuma voz em {language} instalada. Instale nas configurações de texto para fala do aparelho.",
+    "en": "No {language} voice installed. Install one in the device's text-to-speech settings.",
+    "es": "No hay voz en {language} instalada. Instálala en los ajustes de texto a voz del dispositivo.",
+    "placeholders": {
+      "language": "String"
+    }
+  },
+  "ttsVoiceHint": {
+    "pt": "Vozes instaladas neste aparelho para {language}.",
+    "en": "Voices installed on this device for {language}.",
+    "es": "Voces instaladas en este dispositivo para {language}.",
+    "placeholders": {
+      "language": "String"
+    }
+  }
+}

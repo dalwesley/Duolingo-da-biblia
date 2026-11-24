@@ -57,8 +57,23 @@ class MissionListenButton extends StatelessWidget {
             if (speaking) {
               TtsService.instance.stop();
             } else {
-              TtsService.instance.speak(
-                script(verse: verse, insight: insight, l10n: l10n),
+              // Versículo do palco (JFAAL) em voz PT; insight na língua do
+              // app — cada parte com a sua voz.
+              final passage = SessionComposer.clipEntranceVerse(
+                (verse ?? '').trim(),
+                maxWords: 80,
+              );
+              final hoje = (insight ?? '').trim();
+              TtsService.instance.speakSequence(
+                [
+                  if (passage.isNotEmpty) passage,
+                  if (hoje.isNotEmpty) l10n.seasonTodayInsight(hoje),
+                ],
+                languages: [
+                  if (passage.isNotEmpty) 'pt',
+                  if (hoje.isNotEmpty) l10n.localeName,
+                ],
+                key: 'mission',
               );
             }
           },

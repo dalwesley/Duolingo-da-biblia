@@ -474,9 +474,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get bibleReaderSettings => 'Ajustes de leitura';
 
   @override
-  String get bibleReaderSoonTag => 'em breve';
-
-  @override
   String get bibleReaderStop => 'Parar';
 
   @override
@@ -6957,10 +6954,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get paywallPerkGiftBody =>
-      'Compartilhe 1 trilha do Peregrino+ por mês com alguém. Ela fica aberta inteira para quem recebe, sem pagar.';
+      'Todo mês, 1 trilha do Peregrino+ inteira de presente para quem você escolher. Quem recebe não paga nada.';
 
   @override
-  String get paywallPerkGiftTitle => 'Uma trilha por mês de presente';
+  String get paywallPerkGiftTitle => 'Sua assinatura libera alguém';
 
   @override
   String get paywallPerkManyTrailsBody =>
@@ -11300,10 +11297,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get trailGiftCardBody =>
-      'Sua assinatura libera alguém: 1 trilha do Peregrino+ por mês, inteira, para quem você escolher.';
+      'Seu passe do mês libera ela inteira para quem você escolher.';
 
   @override
-  String get trailGiftCardTitle => 'Libere esta trilha para alguém';
+  String get trailGiftCardTitle => 'Dar esta trilha a alguém';
 
   @override
   String get trailGiftCodeSubtitle =>
@@ -11317,11 +11314,57 @@ class AppLocalizationsPt extends AppLocalizations {
       'Não foi possível abrir o passe. Tente de novo.';
 
   @override
+  String get trailGiftGivePickSubtitle =>
+      'Quem receber caminha nela inteira, sem pagar e sem prazo.';
+
+  @override
+  String get trailGiftGivePickTitle => 'Qual trilha você vai liberar?';
+
+  @override
   String get trailGiftInvalid => 'Este passe não existe. Confira o link.';
 
   @override
+  String get trailGiftMonthChoose => 'Escolher a trilha eu mesmo';
+
+  @override
+  String get trailGiftMonthOpen =>
+      'Você chamou alguém para a Companhia, e o passe deste mês foi junto no convite. Quem aceitar ganha uma trilha do Peregrino+ e escolhe qual. Se preferir, escolha você a trilha agora.';
+
+  @override
+  String get trailGiftMonthOpenLink =>
+      'Seu passe deste mês está pronto e ninguém recebeu ainda. Quem abrir o link escolhe a trilha.';
+
+  @override
+  String get trailGiftMonthPick => 'Escolher a trilha por ela';
+
+  @override
+  String get trailGiftMonthReady =>
+      'Você tem 1 passe neste mês. Mande para alguém: a pessoa escolhe uma trilha do Peregrino+ e caminha nela inteira, sem pagar e sem prazo.';
+
+  @override
+  String trailGiftMonthReserved(String trail) {
+    return 'Seu passe deste mês está guardado para $trail. Ninguém recebeu ainda.';
+  }
+
+  @override
+  String get trailGiftMonthReshare => 'Compartilhar de novo';
+
+  @override
+  String get trailGiftMonthSend => 'Enviar o passe';
+
+  @override
+  String get trailGiftMonthSwap => 'Trocar a trilha';
+
+  @override
+  String get trailGiftMonthTitle => 'Sua assinatura libera alguém';
+
+  @override
+  String get trailGiftMonthTrial =>
+      'Depois do teste grátis, você libera 1 trilha do Peregrino+ por mês para quem quiser.';
+
+  @override
   String get trailGiftNeedsAccount =>
-      'Entre na sua conta para receber o passe. Depois abra o link de novo.';
+      'Entre na sua conta para receber o passe. Ele abre sozinho logo depois.';
 
   @override
   String get trailGiftNotNeeded =>
@@ -11364,11 +11407,16 @@ class AppLocalizationsPt extends AppLocalizations {
   String get trailGiftShareCta => 'Compartilhar o passe';
 
   @override
+  String trailGiftShareOpenText(String link, String code) {
+    return 'Te dei uma trilha do Peregrino+ no Stway 🎁 Você escolhe qual, e ela fica sua, inteira. Abre pelo link: $link\n\nAinda não tem o app? Instale, entre e toque em “Recebeu um passe de trilha?” no Perfil. Código: $code';
+  }
+
+  @override
   String get trailGiftShareSubject => 'Uma trilha do Stway para você';
 
   @override
-  String trailGiftShareText(String trail, String link) {
-    return 'Liberei pra você a trilha $trail no Stway 🎁 É sua, inteira. Abre pelo link: $link';
+  String trailGiftShareText(String trail, String link, String code) {
+    return 'Liberei pra você a trilha $trail no Stway 🎁 É sua, inteira. Abre pelo link: $link\n\nAinda não tem o app? Instale, entre e toque em “Recebeu um passe de trilha?” no Perfil. Código: $code';
   }
 
   @override

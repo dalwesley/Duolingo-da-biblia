@@ -258,7 +258,6 @@ class _SplashScreenState extends State<SplashScreen>
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.sizeOf(context);
     // Usa a aparência salva no aparelho (mesma do restante do app).
     final mode = context.watch<ProgressService>().settings.appearanceMode;
     final appearance = AppearanceStyle.resolve(mode);
@@ -283,21 +282,19 @@ class _SplashScreenState extends State<SplashScreen>
       body: AnimatedBuilder(
         animation: _master,
         builder: (context, _) {
-          final t = _master.value;
-
           final title = CurvedAnimation(
             parent: _master,
             curve: _i(0.0, 0.45, curve: AppMotion.settle),
           );
           final tag = CurvedAnimation(parent: _master, curve: _i(0.22, 0.58));
-          final bar = CurvedAnimation(
+          final foot = CurvedAnimation(
             parent: _master,
             curve: _i(0.55, 1.0, curve: AppMotion.enter),
           );
 
           final titleV = title.value.clamp(0.0, 1.0);
           final tagV = tag.value.clamp(0.0, 1.0);
-          final barV = bar.value.clamp(0.0, 1.0);
+          final footV = foot.value.clamp(0.0, 1.0);
 
           return SafeArea(
             child: Padding(
@@ -325,34 +322,16 @@ class _SplashScreenState extends State<SplashScreen>
                   ),
                   const Spacer(),
                   Opacity(
-                    opacity: barV,
+                    opacity: footV,
                     child: Column(
                       children: [
-                        const CloudMascot(face: CloudFace.carregando, size: 96),
-                        const SizedBox(height: 18),
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(AppRadii.pill),
-                          child: SizedBox(
-                            height: 5,
-                            width: size.width * 0.42,
-                            child: Stack(
-                              fit: StackFit.expand,
-                              children: [
-                                ColoredBox(color: appearance.progressTrack),
-                                FractionallySizedBox(
-                                  alignment: Alignment.centerLeft,
-                                  widthFactor: t.clamp(0.08, 1.0),
-                                  child: const DecoratedBox(
-                                    decoration: BoxDecoration(
-                                      gradient: AppGradients.gold,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
+                        // O Anan é o carregamento: luz na borda, respirando.
+                        const CloudMascot(
+                          face: CloudFace.carregando,
+                          size: 96,
+                          glow: true,
                         ),
-                        const SizedBox(height: 14),
+                        const SizedBox(height: 18),
                         Text(
                           context.l10n.splashPreparing,
                           style: AppTypography.label(

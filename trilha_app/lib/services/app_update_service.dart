@@ -5,6 +5,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:upgrader/upgrader.dart'
+    show ITunesSearchAPI, ITunesResults, PlayStoreSearchAPI, PlayStoreResults;
 import 'package:url_launcher/url_launcher.dart';
 
 import '../l10n/l10n_global.dart';
@@ -48,33 +50,34 @@ class AppUpdateStatus {
   }
 }
 
-/// Lê `content_meta/app_release` e compara com o build local.
+/// Compara a versão instalada com a versão publicada na loja (Play Store /
+/// App Store, via `upgrader`). Nada para editar no painel a cada release.
 ///
-/// Campos no Firestore:
-/// - `latestVersion` (string) — ex. "1.0.3"
-/// - `latestBuild` (int) — versionCode / CFBundleVersion
+/// `content_meta/app_release` continua opcional, só para casos raros:
 /// - `minBuild` (int) — abaixo disso = update obrigatório
-/// - `androidStoreUrl` / `iosStoreUrl` (string)
-/// - `message` (string)
-/// - `enabled` (bool, default true)
+/// - `enabled` (bool, default true) — `false` desliga a checagem
+/// - `message` (string) — texto da sheet
 class AppUpdateService {
   AppUpdateService._();
 
   static const _docPath = 'content_meta/app_release';
   static const _snoozeKey = 'app_update_snooze_until_ms';
   static const _snoozeDays = 3;
+  static const _storeCountry = 'BR';
+  static const _storeLanguage = 'pt';
+  static const _timeout = Duration(seconds: 8);
 
   static const androidStoreUrl =
       'https://play.google.com/store/apps/details?id=com.trilha.trilha_app';
-  static const iosStoreUrl = 'https://apps.apple.com/br/search?term=STWAY';
-
-  static const _androidStoreDefault = androidStoreUrl;
-  static const _iosStoreDefault = iosStoreUrl;
+  static const iosStoreUrl = 'https://apps.apple.com/br/app/stway/id6801332526';
 
   static String get _defaultMessage => L10n.current.updateDefaultMessage;
 
   /// Uma vez por sessão (soft auto-check).
   static bool _sessionPromptShown = false;
+
+  /// O aviso de atualização já apareceu nesta sessão (outras folhas cedem).
+  static bool get promptShownThisSession => _sessionPromptShown;
 
   /// `flutter run --dart-define=FORCE_UPDATE_PROMPT=true` — prévia da sheet
   /// 1×/sessão, mesmo com o build local à frente da loja.
@@ -83,126 +86,162 @@ class AppUpdateService {
     defaultValue: false,
   );
 
-  /// Soft só quando a loja tem build maior. Abaixo de [minBuild], obrigatório.
+  /// Soft só quando a loja tem versão maior. Abaixo de [minBuild], obrigatório.
   /// [preview] existe só para o dart-define acima — debug comum não força.
   static AppUpdateKind resolveKind({
+    required String localVersion,
+    required String? storeVersion,
     required int localBuild,
-    required int latestBuild,
     required int minBuild,
     bool preview = false,
   }) {
     if (minBuild > 0 && localBuild < minBuild) return AppUpdateKind.force;
-    if (latestBuild > 0 && localBuild < latestBuild) return AppUpdateKind.soft;
-    if (preview && latestBuild > 0) return AppUpdateKind.soft;
+    final store = storeVersion?.trim() ?? '';
+    if (store.isEmpty) return AppUpdateKind.none;
+    if (compareVersions(localVersion, store) < 0) return AppUpdateKind.soft;
+    if (preview) return AppUpdateKind.soft;
     return AppUpdateKind.none;
+  }
+
+  /// Compara "1.0.49" com "1.0.50" número a número. Negativo = [a] menor.
+  /// Partes não numéricas (ex. "1.0.49-beta") contam só os dígitos iniciais.
+  static int compareVersions(String a, String b) {
+    List<int> parts(String v) => v
+        .split('+')
+        .first
+        .split('.')
+        .map((p) => int.tryParse(RegExp(r'^\d+').stringMatch(p) ?? '') ?? 0)
+        .toList();
+    final pa = parts(a);
+    final pb = parts(b);
+    final n = pa.length > pb.length ? pa.length : pb.length;
+    for (var i = 0; i < n; i++) {
+      final x = i < pa.length ? pa[i] : 0;
+      final y = i < pb.length ? pb[i] : 0;
+      if (x != y) return x.compareTo(y);
+    }
+    return 0;
   }
 
   static Future<AppUpdateStatus> check({bool ignoreSnooze = false}) async {
     final info = await PackageInfo.fromPlatform();
     final localVersion = info.version;
     final localBuild = int.tryParse(info.buildNumber) ?? 0;
-    final storeUrl = _defaultStoreUrl();
+    final defaultUrl = _defaultStoreUrl();
 
-    if (Firebase.apps.isEmpty) {
+    final results = await Future.wait([
+      _storeLookup(info.packageName),
+      _remoteConfig(),
+    ]);
+    final store = results[0] as _StoreLookup?;
+    final remote = results[1] as Map<String, dynamic>?;
+
+    final storeUrl = store?.url ?? defaultUrl;
+    final message = (remote?['message'] as String?)?.trim().isNotEmpty == true
+        ? (remote!['message'] as String).trim()
+        : _defaultMessage;
+
+    if (remote?['enabled'] == false) {
       return AppUpdateStatus(
         kind: AppUpdateKind.none,
         localVersion: localVersion,
         localBuild: localBuild,
-        message: L10n.current.updateFirebaseUnavailable,
+        latestVersion: store?.version,
+        message: L10n.current.updateCheckDisabled,
         storeUrl: storeUrl,
-        remoteReachable: false,
       );
     }
 
-    try {
-      final snap = await FirebaseFirestore.instance.doc(_docPath).get();
-      if (!snap.exists) {
-        if (forceUpdatePrompt) {
-          return AppUpdateStatus(
-            kind: AppUpdateKind.soft,
-            localVersion: localVersion,
-            localBuild: localBuild,
-            latestVersion: localVersion,
-            latestBuild: localBuild + 1,
-            message: _defaultMessage,
-            storeUrl: storeUrl,
-          );
-        }
-        return AppUpdateStatus(
-          kind: AppUpdateKind.none,
-          localVersion: localVersion,
-          localBuild: localBuild,
-          message: L10n.current.updateNoneInCloud,
-          storeUrl: storeUrl,
-          remoteReachable: true,
-        );
-      }
+    final minBuild = (remote?['minBuild'] as num?)?.toInt() ?? 0;
+    var storeVersion = store?.version;
+    if (forceUpdatePrompt && (storeVersion == null || storeVersion.isEmpty)) {
+      storeVersion = localVersion;
+    }
 
-      final data = snap.data() ?? const <String, dynamic>{};
-      final enabled = data['enabled'] != false;
-      if (!enabled) {
-        return AppUpdateStatus(
-          kind: AppUpdateKind.none,
-          localVersion: localVersion,
-          localBuild: localBuild,
-          latestVersion: data['latestVersion'] as String?,
-          latestBuild: (data['latestBuild'] as num?)?.toInt(),
-          message: L10n.current.updateCheckDisabled,
-          storeUrl: _storeUrlFrom(data) ?? storeUrl,
-        );
-      }
+    var kind = resolveKind(
+      localVersion: localVersion,
+      storeVersion: storeVersion,
+      localBuild: localBuild,
+      minBuild: minBuild,
+      preview: forceUpdatePrompt,
+    );
+    final skipSnooze = ignoreSnooze || forceUpdatePrompt;
+    if (kind == AppUpdateKind.soft && !skipSnooze && await _isSnoozed()) {
+      kind = AppUpdateKind.none;
+    }
 
-      final latestBuild = (data['latestBuild'] as num?)?.toInt() ?? 0;
-      final minBuild = (data['minBuild'] as num?)?.toInt() ?? 0;
-      final latestVersion = data['latestVersion'] as String? ?? '';
-      final message = (data['message'] as String?)?.trim().isNotEmpty == true
-          ? (data['message'] as String).trim()
-          : _defaultMessage;
-      final url = _storeUrlFrom(data) ?? storeUrl;
-
-      var kind = resolveKind(
-        localBuild: localBuild,
-        latestBuild: latestBuild,
-        minBuild: minBuild,
-        preview: forceUpdatePrompt,
-      );
-      final skipSnooze = ignoreSnooze || forceUpdatePrompt;
-      if (kind == AppUpdateKind.soft && !skipSnooze) {
-        if (await _isSnoozed()) {
-          kind = AppUpdateKind.none;
-        }
-      }
-
-      if (forceUpdatePrompt &&
-          kind == AppUpdateKind.soft &&
-          (latestBuild <= 0 || localBuild >= latestBuild)) {
-        debugPrint(
-          'AppUpdateService: prévia forçada (FORCE_UPDATE_PROMPT) — '
-          'local $localBuild, loja $latestBuild',
-        );
-      }
-
+    if (store == null && kind == AppUpdateKind.none) {
       return AppUpdateStatus(
         kind: kind,
-        localVersion: localVersion,
-        localBuild: localBuild,
-        latestVersion: latestVersion.isEmpty ? null : latestVersion,
-        latestBuild: latestBuild > 0
-            ? latestBuild
-            : (forceUpdatePrompt ? localBuild + 1 : null),
-        message: message,
-        storeUrl: url,
-      );
-    } catch (e, st) {
-      debugPrint('AppUpdateService.check failed: $e\n$st');
-      return AppUpdateStatus(
-        kind: AppUpdateKind.none,
         localVersion: localVersion,
         localBuild: localBuild,
         message: L10n.current.updateCheckFailed,
         storeUrl: storeUrl,
         remoteReachable: false,
       );
+    }
+
+    return AppUpdateStatus(
+      kind: kind,
+      localVersion: localVersion,
+      localBuild: localBuild,
+      latestVersion: storeVersion,
+      message: message,
+      storeUrl: storeUrl,
+    );
+  }
+
+  /// Versão publicada na loja da plataforma. `null` se não deu para ler.
+  static Future<_StoreLookup?> _storeLookup(String packageName) async {
+    if (kIsWeb || packageName.isEmpty) return null;
+    try {
+      if (Platform.isAndroid) {
+        final api = PlayStoreSearchAPI();
+        final doc = await api
+            .lookupById(
+              packageName,
+              country: _storeCountry,
+              language: _storeLanguage,
+            )
+            .timeout(_timeout);
+        if (doc == null) return null;
+        final v = api.version(doc);
+        if (v == null || v.isEmpty) return null;
+        return _StoreLookup(v, androidStoreUrl);
+      }
+      if (Platform.isIOS) {
+        final api = ITunesSearchAPI();
+        final res = await api
+            .lookupByBundleId(
+              packageName,
+              country: _storeCountry,
+              language: _storeLanguage,
+            )
+            .timeout(_timeout);
+        if (res == null) return null;
+        final v = api.version(res);
+        if (v == null || v.isEmpty) return null;
+        final url = api.trackViewUrl(res);
+        return _StoreLookup(v, url?.isNotEmpty == true ? url! : iosStoreUrl);
+      }
+    } catch (e, st) {
+      debugPrint('AppUpdateService store lookup failed: $e\n$st');
+    }
+    return null;
+  }
+
+  /// `content_meta/app_release` (opcional). `null` se ausente/inacessível.
+  static Future<Map<String, dynamic>?> _remoteConfig() async {
+    if (Firebase.apps.isEmpty) return null;
+    try {
+      final snap = await FirebaseFirestore.instance
+          .doc(_docPath)
+          .get()
+          .timeout(_timeout);
+      return snap.data();
+    } catch (e) {
+      debugPrint('AppUpdateService remote config failed: $e');
+      return null;
     }
   }
 
@@ -252,14 +291,13 @@ class AppUpdateService {
   }
 
   static String _defaultStoreUrl() {
-    if (!kIsWeb && Platform.isIOS) return _iosStoreDefault;
-    return _androidStoreDefault;
+    if (!kIsWeb && Platform.isIOS) return iosStoreUrl;
+    return androidStoreUrl;
   }
+}
 
-  static String? _storeUrlFrom(Map<String, dynamic> data) {
-    final key = (!kIsWeb && Platform.isIOS) ? 'iosStoreUrl' : 'androidStoreUrl';
-    final raw = (data[key] as String?)?.trim();
-    if (raw == null || raw.isEmpty) return null;
-    return raw;
-  }
+class _StoreLookup {
+  final String version;
+  final String url;
+  const _StoreLookup(this.version, this.url);
 }

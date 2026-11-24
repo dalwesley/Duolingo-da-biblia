@@ -13,6 +13,9 @@ class BibleTranslation {
   final String blurb;
   final String? assetPath;
 
+  /// Idioma do texto (`pt`, `en`, `es`). O leitor só oferece as do idioma do app.
+  final String language;
+
   /// Crédito/licença a exibir quando a tradução estiver ativa.
   final String? attribution;
 
@@ -21,6 +24,7 @@ class BibleTranslation {
     required this.name,
     required this.shortName,
     required this.blurb,
+    this.language = 'pt',
     this.assetPath,
     this.attribution,
   });
@@ -31,14 +35,21 @@ class BibleTranslation {
 /// Um livro da Bíblia carregado do asset offline.
 class BibleBook {
   final String name;
+
+  /// Sigla PT em todas as traduções: é chave de progresso (capítulos lidos,
+  /// marcadores, notas). Para exibir, use [short].
   final String abbrev;
+
+  /// Sigla no idioma da tradução (EN "Ex", ES "Éx"); PT = [abbrev].
+  final String short;
   final List<List<String>> chapters;
 
   const BibleBook({
     required this.name,
     required this.abbrev,
+    String? short,
     required this.chapters,
-  });
+  }) : short = short ?? abbrev;
 }
 
 /// Referência resolvida ("Gênesis 1:1–2" → livro/capítulo/versículos).
@@ -88,9 +99,16 @@ class BibleService {
 
   BibleService._();
 
-  /// Leitura e palco: Almeida. TB continua no disco do banco (legado).
+  /// Leitura PT: Almeida. TB continua no disco do banco (legado).
   static const defaultTranslationId = 'jfaal';
+
+  /// Palco das perguntas: sempre JFAAL, em qualquer idioma. Toque, Ordenar e
+  /// Completar usam palavras exatas da JFAAL (o overlay EN/ES não traduz os
+  /// tokens do versículo); trocar o palco quebraria essas perguntas.
   static const palcoTranslationId = 'jfaal';
+
+  /// Tradução padrão de leitura por idioma do app.
+  static const _defaultByLanguage = {'pt': 'jfaal', 'en': 'bsb', 'es': 'bes'};
   static const oldTestamentCount = 39;
 
   static const catalog = <BibleTranslation>[
@@ -111,6 +129,28 @@ class BibleService {
       attribution:
           'Escrituras em português da JFAAL, Copyright © Marcos Cristiano '
           'Alves Ferreira. Setembro de 2024. Licença CC BY 3.0 BR.',
+    ),
+    BibleTranslation(
+      id: 'bsb',
+      name: 'Berean Standard Bible',
+      shortName: 'BSB',
+      blurb: 'Modern English · public domain · offline',
+      language: 'en',
+      assetPath: 'assets/data/bible_bsb.json',
+      attribution:
+          'The Holy Bible, Berean Standard Bible (BSB). '
+          'Dedicated to the public domain.',
+    ),
+    BibleTranslation(
+      id: 'bes',
+      name: 'La Biblia en Español Sencillo',
+      shortName: 'BES',
+      blurb: 'Español actual · dominio público · sin internet',
+      language: 'es',
+      assetPath: 'assets/data/bible_bes.json',
+      attribution:
+          'La Biblia en Español Sencillo (2026), AudioBiblia.org. '
+          'Dominio público.',
     ),
     BibleTranslation(
       id: 'ara',
@@ -136,6 +176,66 @@ class BibleService {
     return catalog.first;
   }
 
+  static String _languageOf(String? localeName) {
+    final code = (localeName ?? L10n.current.localeName)
+        .split(RegExp(r'[_-]'))
+        .first
+        .toLowerCase();
+    return _defaultByLanguage.containsKey(code) ? code : 'pt';
+  }
+
+  /// Idiomas de texto bíblico, na ordem em que o leitor os lista.
+  static const textLanguages = ['pt', 'en', 'es'];
+
+  /// Traduções de um idioma de texto (inclui as "em breve").
+  static List<BibleTranslation> translationsIn(String language) => [
+    for (final t in catalog)
+      if (t.language == language) t,
+  ];
+
+  /// Escolha salva → mapa idioma do app → tradução.
+  ///
+  /// `settings.bibleTranslationId` guarda `pt=tb;en=jfaal` (cada idioma do app
+  /// lembra a sua). Valor antigo sem `=` ("tb") vale para o idioma do próprio
+  /// texto. App antigo lê o formato novo como id desconhecido e cai na JFAAL.
+  static Map<String, String> _choices(String stored) {
+    final out = <String, String>{};
+    if (!stored.contains('=')) {
+      if (stored.isNotEmpty) out[byId(stored).language] = stored;
+      return out;
+    }
+    for (final part in stored.split(';')) {
+      final i = part.indexOf('=');
+      if (i <= 0) continue;
+      final lang = part.substring(0, i).trim();
+      final id = part.substring(i + 1).trim();
+      if (lang.isNotEmpty && id.isNotEmpty) out[lang] = id;
+    }
+    return out;
+  }
+
+  /// Grava [id] como escolha do idioma do app, sem mexer nos outros.
+  static String withChoice(String stored, String id, [String? localeName]) {
+    final map = _choices(stored)..[_languageOf(localeName)] = id;
+    return [
+      for (final lang in textLanguages)
+        if (map[lang] != null) '$lang=${map[lang]}',
+    ].join(';');
+  }
+
+  /// Tradução que de fato aparece: a escolha salva para o idioma do app (de
+  /// qualquer língua de texto — dá para ler a BSB com o app em PT); sem
+  /// escolha ou sem texto, a padrão do idioma.
+  static String effectiveId(String stored, [String? localeName]) {
+    final lang = _languageOf(localeName);
+    final id = _choices(stored)[lang];
+    if (id != null) {
+      final t = byId(id);
+      if (t.id == id && t.available) return id;
+    }
+    return _defaultByLanguage[lang]!;
+  }
+
   /// Compat: nome da tradução ativa.
   static String get translationName => instance.current.name;
 
@@ -143,34 +243,60 @@ class BibleService {
   final Map<String, List<BibleBook>> _loaded = {};
   final Map<String, Future<List<BibleBook>>> _loading = {};
 
-  String get translationId => _translationId;
-  BibleTranslation get current => byId(_translationId);
+  /// Tradução em uso no idioma atual (ver [effectiveId]).
+  // _translationId guarda a escolha salva crua (pode ser `pt=tb;en=bsb`).
+  String get translationId => effectiveId(_translationId);
+  BibleTranslation get current => byId(translationId);
 
   /// Gancho na Home: TB usa Jeová, então o cartão lê Almeida.
-  String get readerTranslationId =>
-      _translationId == 'tb' ? palcoTranslationId : _translationId;
+  String get readerTranslationId {
+    final id = translationId;
+    return id == 'tb' ? palcoTranslationId : id;
+  }
 
-  /// Troca a tradução ativa. Cache por id — não descarrega as outras.
-  Future<void> setTranslation(String id) async {
-    final next = byId(id);
+  /// Aplica a escolha salva (`settings.bibleTranslationId`, ver [effectiveId]).
+  Future<void> setTranslation(String stored) async {
+    final next = effectiveId(stored);
     debugPrint(
-      '[STWAY:Bible] setTranslation($id) → ${next.id} '
-      'available=${next.available} current=$_translationId '
-      'loaded=${_loaded.keys.toList()}',
+      '[STWAY:Bible] setTranslation($stored) → $next '
+      'current=$translationId loaded=${_loaded.keys.toList()}',
     );
-    if (!next.available) return;
-    if (_translationId == next.id && _loaded.containsKey(next.id)) return;
-    _translationId = next.id;
+    _translationId = stored;
     await books();
   }
 
-  Future<List<BibleBook>> books() async => _booksFor(_translationId);
+  /// Texto de um versículo numa tradução específica (comparar versões).
+  Future<String?> verseIn(
+    String translationId,
+    int bookIndex,
+    int chapter,
+    int verse,
+  ) async {
+    final list = await _booksFor(translationId);
+    if (bookIndex < 0 || bookIndex >= list.length) return null;
+    final chapters = list[bookIndex].chapters;
+    if (chapter < 1 || chapter > chapters.length) return null;
+    final verses = chapters[chapter - 1];
+    if (verse < 1 || verse > verses.length) return null;
+    final t = verses[verse - 1].trim();
+    return t.isEmpty ? null : t;
+  }
+
+  /// Solta da memória as traduções fora de uso (~15 MB cada). A ativa e o
+  /// palco ficam.
+  void releaseExtras() {
+    final keep = {translationId, palcoTranslationId};
+    _loaded.removeWhere((id, _) => !keep.contains(id));
+    _searchIndex.removeWhere((id, _) => !keep.contains(id));
+  }
+
+  Future<List<BibleBook>> books() async => _booksFor(translationId);
 
   Future<List<BibleBook>> _booksFor(String id) async {
     var useId = id;
-    if (byId(useId).assetPath == null) {
-      useId = defaultTranslationId;
-      if (id == _translationId) _translationId = useId;
+    final known = byId(useId);
+    if (known.id != useId || known.assetPath == null) {
+      useId = effectiveId(useId);
     }
     final cached = _loaded[useId];
     if (cached != null) return cached;
@@ -242,8 +368,9 @@ class BibleService {
   }
 
   /// Resolve referências como "Gênesis 1:1–2", "Êxodo 3" ou "Gn 12:1-3".
+  /// Em EN/ES também aceita o nome PT: o conteúdo cita livros em português.
   Future<BibleRef?> resolve(String reference, {String? translationId}) async {
-    final list = await _booksFor(translationId ?? _translationId);
+    final list = await _booksFor(translationId ?? this.translationId);
     final compact = _norm(reference);
 
     final m = _refShape.firstMatch(compact);
@@ -254,11 +381,22 @@ class BibleService {
     for (var i = 0; i < list.length; i++) {
       final name = _norm(list[i].name);
       final abbrev = _norm(list[i].abbrev);
+      final short = _norm(list[i].short);
       if (name == bookQuery ||
           abbrev == bookQuery ||
+          short == bookQuery ||
           name.startsWith(bookQuery)) {
         bookIndex = i;
         break;
+      }
+    }
+    if (bookIndex < 0 && list.length == _ptBookNames.length) {
+      for (var i = 0; i < _ptBookNames.length; i++) {
+        final name = _norm(_ptBookNames[i]);
+        if (name == bookQuery || name.startsWith(bookQuery)) {
+          bookIndex = i;
+          break;
+        }
       }
     }
     if (bookIndex < 0) return null;
@@ -286,7 +424,8 @@ class BibleService {
       final book = list[bi];
       final name = _norm(book.name);
       final abbrev = _norm(book.abbrev);
-      if (name.contains(q) || abbrev.contains(q)) {
+      final short = _norm(book.short);
+      if (name.contains(q) || abbrev.contains(q) || short.contains(q)) {
         hits.add(
           BibleSearchHit(
             bookIndex: bi,
@@ -302,9 +441,7 @@ class BibleService {
       }
     }
 
-    var useId = _translationId;
-    if (byId(useId).assetPath == null) useId = defaultTranslationId;
-    final index = await _indexFor(useId);
+    final index = await _indexFor(translationId);
     // indexOf num bloco só: sem alocar string por versículo.
     var from = 0;
     while (hits.length < limit) {
@@ -350,7 +487,7 @@ class BibleService {
 
   /// Texto completo da passagem ("Gênesis 1:1–2"), versículos unidos por espaço.
   Future<String?> passageText(String reference, {String? translationId}) async {
-    final id = translationId ?? _translationId;
+    final id = translationId ?? this.translationId;
     final ref = await resolve(reference, translationId: id);
     if (ref == null) return null;
     final list = await _booksFor(id);
@@ -379,6 +516,7 @@ List<BibleBook> _parseBooks(String raw) {
       BibleBook(
         name: (b as Map<String, dynamic>)['name'] as String,
         abbrev: b['abbrev'] as String,
+        short: b['short'] as String?,
         chapters: [
           for (final c in b['chapters'] as List<dynamic>)
             [for (final v in c as List<dynamic>) v as String],
@@ -386,6 +524,22 @@ List<BibleBook> _parseBooks(String raw) {
       ),
   ];
 }
+
+/// Nomes PT na ordem canônica — referências do conteúdo em qualquer idioma.
+const _ptBookNames = <String>[
+  'Gênesis', 'Êxodo', 'Levítico', 'Números', 'Deuteronômio', 'Josué', //
+  'Juízes', 'Rute', '1 Samuel', '2 Samuel', '1 Reis', '2 Reis', //
+  '1 Crônicas', '2 Crônicas', 'Esdras', 'Neemias', 'Ester', 'Jó', //
+  'Salmos', 'Provérbios', 'Eclesiastes', 'Cânticos', 'Isaías', //
+  'Jeremias', 'Lamentações de Jeremias', 'Ezequiel', 'Daniel', 'Oséias', //
+  'Joel', 'Amós', 'Obadias', 'Jonas', 'Miquéias', 'Naum', 'Habacuque', //
+  'Sofonias', 'Ageu', 'Zacarias', 'Malaquias', 'Mateus', 'Marcos', //
+  'Lucas', 'João', 'Atos', 'Romanos', '1 Coríntios', '2 Coríntios', //
+  'Gálatas', 'Efésios', 'Filipenses', 'Colossenses', //
+  '1 Tessalonicenses', '2 Tessalonicenses', '1 Timóteo', '2 Timóteo', //
+  'Tito', 'Filemom', 'Hebreus', 'Tiago', '1 Pedro', '2 Pedro', '1 João', //
+  '2 João', '3 João', 'Judas', 'Apocalipse', //
+];
 
 bool _isSpace(int c) =>
     c == 0x20 ||

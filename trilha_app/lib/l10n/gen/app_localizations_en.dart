@@ -472,9 +472,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get bibleReaderSettings => 'Reading settings';
 
   @override
-  String get bibleReaderSoonTag => 'soon';
-
-  @override
   String get bibleReaderStop => 'Stop';
 
   @override
@@ -6936,10 +6933,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallPerkGiftBody =>
-      'Share 1 Peregrino+ trail a month with someone. It stays open, whole, for them, free.';
+      'Every month, give 1 whole Peregrino+ trail to anyone you choose. They pay nothing.';
 
   @override
-  String get paywallPerkGiftTitle => 'A trail to give every month';
+  String get paywallPerkGiftTitle =>
+      'Your subscription opens the way for someone';
 
   @override
   String get paywallPerkManyTrailsBody =>
@@ -11276,7 +11274,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get trailGiftCardBody =>
-      'Your subscription opens the way for someone: 1 Peregrino+ trail a month, whole, for whoever you choose.';
+      'Your monthly pass unlocks all of it for whoever you choose.';
 
   @override
   String get trailGiftCardTitle => 'Give this trail to someone';
@@ -11292,11 +11290,58 @@ class AppLocalizationsEn extends AppLocalizations {
   String get trailGiftFailed => 'Couldn\'t open the pass. Try again.';
 
   @override
+  String get trailGiftGivePickSubtitle =>
+      'Whoever gets it walks the whole trail, free and with no time limit.';
+
+  @override
+  String get trailGiftGivePickTitle => 'Which trail will you give?';
+
+  @override
   String get trailGiftInvalid => 'This pass doesn\'t exist. Check the link.';
 
   @override
+  String get trailGiftMonthChoose => 'Pick the trail myself';
+
+  @override
+  String get trailGiftMonthOpen =>
+      'You invited someone to walk with you, and this month\'s pass went along with the invite. Whoever accepts gets a Peregrino+ trail and picks which one. If you prefer, pick the trail yourself now.';
+
+  @override
+  String get trailGiftMonthOpenLink =>
+      'This month\'s pass is ready and nobody has received it yet. Whoever opens the link picks the trail.';
+
+  @override
+  String get trailGiftMonthPick => 'Pick the trail for them';
+
+  @override
+  String get trailGiftMonthReady =>
+      'You have 1 pass this month. Send it to someone: they pick a Peregrino+ trail and walk the whole of it, free and with no time limit.';
+
+  @override
+  String trailGiftMonthReserved(String trail) {
+    return 'This month\'s pass is saved for $trail. Nobody has received it yet.';
+  }
+
+  @override
+  String get trailGiftMonthReshare => 'Share again';
+
+  @override
+  String get trailGiftMonthSend => 'Send the pass';
+
+  @override
+  String get trailGiftMonthSwap => 'Change the trail';
+
+  @override
+  String get trailGiftMonthTitle =>
+      'Your subscription opens the way for someone';
+
+  @override
+  String get trailGiftMonthTrial =>
+      'After the free trial, you can give 1 Peregrino+ trail a month to anyone you choose.';
+
+  @override
   String get trailGiftNeedsAccount =>
-      'Sign in to receive the pass. Then open the link again.';
+      'Sign in to receive the pass. It opens by itself right after.';
 
   @override
   String get trailGiftNotNeeded =>
@@ -11338,11 +11383,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get trailGiftShareCta => 'Share the pass';
 
   @override
+  String trailGiftShareOpenText(String link, String code) {
+    return 'I\'m giving you a Peregrino+ trail on Stway 🎁 You pick which one, and the whole trail is yours. Open the link: $link\n\nDon\'t have the app yet? Install it, sign in and tap “Got a trail pass?” in your Profile. Code: $code';
+  }
+
+  @override
   String get trailGiftShareSubject => 'A Stway trail for you';
 
   @override
-  String trailGiftShareText(String trail, String link) {
-    return 'I unlocked the $trail trail on Stway for you 🎁 It\'s yours, all of it. Open it here: $link';
+  String trailGiftShareText(String trail, String link, String code) {
+    return 'I unlocked the trail $trail for you on Stway 🎁 It\'s yours, the whole thing. Open the link: $link\n\nDon\'t have the app yet? Install it, sign in and tap “Got a trail pass?” in your Profile. Code: $code';
   }
 
   @override

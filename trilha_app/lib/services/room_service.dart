@@ -389,6 +389,9 @@ class RoomService extends ChangeNotifier {
           next == null ? r.copyWith(clearPlan: true) : r.copyWith(plan: next),
     );
     if (ok && next != null && previous?.id != next.id) {
+      // Quem cria o propósito já está dentro: não faz sentido o líder
+      // confirmar o que ele mesmo marcou.
+      unawaited(joinPlan());
       unawaited(
         AnalyticsService.instance.logEvent('group_plan_created', {
           'days': next.total,

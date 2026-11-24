@@ -161,7 +161,7 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
     if (!mounted) return;
     setState(() {
       _books = books;
-      _loadedTranslationId = id;
+      _loadedTranslationId = BibleService.instance.translationId;
       _reloadScheduled = false;
       _loadFailed = false;
     });
@@ -275,8 +275,10 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
   }
 
   Widget _buildBible(BuildContext context) {
-    final translationId = context.select(
-      (ProgressService p) => p.settings.bibleTranslationId,
+    // Escolha salva + idioma do app (EN abre BSB, ES abre BES).
+    final translationId = BibleService.effectiveId(
+      context.select((ProgressService p) => p.settings.bibleTranslationId),
+      context.l10n.localeName,
     );
     _ensureTranslation(translationId);
 

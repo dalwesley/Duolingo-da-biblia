@@ -802,12 +802,6 @@ abstract class AppLocalizations {
   /// **'Ajustes de leitura'**
   String get bibleReaderSettings;
 
-  /// No description provided for @bibleReaderSoonTag.
-  ///
-  /// In pt, this message translates to:
-  /// **'em breve'**
-  String get bibleReaderSoonTag;
-
   /// No description provided for @bibleReaderStop.
   ///
   /// In pt, this message translates to:
@@ -10890,13 +10884,13 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkGiftBody.
   ///
   /// In pt, this message translates to:
-  /// **'Compartilhe 1 trilha do Peregrino+ por mês com alguém. Ela fica aberta inteira para quem recebe, sem pagar.'**
+  /// **'Todo mês, 1 trilha do Peregrino+ inteira de presente para quem você escolher. Quem recebe não paga nada.'**
   String get paywallPerkGiftBody;
 
   /// No description provided for @paywallPerkGiftTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Uma trilha por mês de presente'**
+  /// **'Sua assinatura libera alguém'**
   String get paywallPerkGiftTitle;
 
   /// No description provided for @paywallPerkManyTrailsBody.
@@ -17424,13 +17418,13 @@ abstract class AppLocalizations {
   /// No description provided for @trailGiftCardBody.
   ///
   /// In pt, this message translates to:
-  /// **'Sua assinatura libera alguém: 1 trilha do Peregrino+ por mês, inteira, para quem você escolher.'**
+  /// **'Seu passe do mês libera ela inteira para quem você escolher.'**
   String get trailGiftCardBody;
 
   /// No description provided for @trailGiftCardTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Libere esta trilha para alguém'**
+  /// **'Dar esta trilha a alguém'**
   String get trailGiftCardTitle;
 
   /// No description provided for @trailGiftCodeSubtitle.
@@ -17451,16 +17445,94 @@ abstract class AppLocalizations {
   /// **'Não foi possível abrir o passe. Tente de novo.'**
   String get trailGiftFailed;
 
+  /// No description provided for @trailGiftGivePickSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quem receber caminha nela inteira, sem pagar e sem prazo.'**
+  String get trailGiftGivePickSubtitle;
+
+  /// No description provided for @trailGiftGivePickTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Qual trilha você vai liberar?'**
+  String get trailGiftGivePickTitle;
+
   /// No description provided for @trailGiftInvalid.
   ///
   /// In pt, this message translates to:
   /// **'Este passe não existe. Confira o link.'**
   String get trailGiftInvalid;
 
+  /// No description provided for @trailGiftMonthChoose.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolher a trilha eu mesmo'**
+  String get trailGiftMonthChoose;
+
+  /// No description provided for @trailGiftMonthOpen.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você chamou alguém para a Companhia, e o passe deste mês foi junto no convite. Quem aceitar ganha uma trilha do Peregrino+ e escolhe qual. Se preferir, escolha você a trilha agora.'**
+  String get trailGiftMonthOpen;
+
+  /// No description provided for @trailGiftMonthOpenLink.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu passe deste mês está pronto e ninguém recebeu ainda. Quem abrir o link escolhe a trilha.'**
+  String get trailGiftMonthOpenLink;
+
+  /// No description provided for @trailGiftMonthPick.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolher a trilha por ela'**
+  String get trailGiftMonthPick;
+
+  /// No description provided for @trailGiftMonthReady.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você tem 1 passe neste mês. Mande para alguém: a pessoa escolhe uma trilha do Peregrino+ e caminha nela inteira, sem pagar e sem prazo.'**
+  String get trailGiftMonthReady;
+
+  /// No description provided for @trailGiftMonthReserved.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu passe deste mês está guardado para {trail}. Ninguém recebeu ainda.'**
+  String trailGiftMonthReserved(String trail);
+
+  /// No description provided for @trailGiftMonthReshare.
+  ///
+  /// In pt, this message translates to:
+  /// **'Compartilhar de novo'**
+  String get trailGiftMonthReshare;
+
+  /// No description provided for @trailGiftMonthSend.
+  ///
+  /// In pt, this message translates to:
+  /// **'Enviar o passe'**
+  String get trailGiftMonthSend;
+
+  /// No description provided for @trailGiftMonthSwap.
+  ///
+  /// In pt, this message translates to:
+  /// **'Trocar a trilha'**
+  String get trailGiftMonthSwap;
+
+  /// No description provided for @trailGiftMonthTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua assinatura libera alguém'**
+  String get trailGiftMonthTitle;
+
+  /// No description provided for @trailGiftMonthTrial.
+  ///
+  /// In pt, this message translates to:
+  /// **'Depois do teste grátis, você libera 1 trilha do Peregrino+ por mês para quem quiser.'**
+  String get trailGiftMonthTrial;
+
   /// No description provided for @trailGiftNeedsAccount.
   ///
   /// In pt, this message translates to:
-  /// **'Entre na sua conta para receber o passe. Depois abra o link de novo.'**
+  /// **'Entre na sua conta para receber o passe. Ele abre sozinho logo depois.'**
   String get trailGiftNeedsAccount;
 
   /// No description provided for @trailGiftNotNeeded.
@@ -17523,6 +17595,12 @@ abstract class AppLocalizations {
   /// **'Compartilhar o passe'**
   String get trailGiftShareCta;
 
+  /// No description provided for @trailGiftShareOpenText.
+  ///
+  /// In pt, this message translates to:
+  /// **'Te dei uma trilha do Peregrino+ no Stway 🎁 Você escolhe qual, e ela fica sua, inteira. Abre pelo link: {link}\n\nAinda não tem o app? Instale, entre e toque em “Recebeu um passe de trilha?” no Perfil. Código: {code}'**
+  String trailGiftShareOpenText(String link, String code);
+
   /// No description provided for @trailGiftShareSubject.
   ///
   /// In pt, this message translates to:
@@ -17532,8 +17610,8 @@ abstract class AppLocalizations {
   /// No description provided for @trailGiftShareText.
   ///
   /// In pt, this message translates to:
-  /// **'Liberei pra você a trilha {trail} no Stway 🎁 É sua, inteira. Abre pelo link: {link}'**
-  String trailGiftShareText(String trail, String link);
+  /// **'Liberei pra você a trilha {trail} no Stway 🎁 É sua, inteira. Abre pelo link: {link}\n\nAinda não tem o app? Instale, entre e toque em “Recebeu um passe de trilha?” no Perfil. Código: {code}'**
+  String trailGiftShareText(String trail, String link, String code);
 
   /// No description provided for @trailGiftSheetBody.
   ///

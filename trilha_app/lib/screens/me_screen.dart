@@ -366,6 +366,13 @@ class _MeScreenState extends State<MeScreen> {
       // numa folha.
       pad(const _NaPalavraLine()),
       const SizedBox(height: AppSpace.section),
+      // "Sua assinatura libera alguém": o passe do mês de quem assina (no
+      // teste grátis, só o aviso). Antes só aparecia no fim do mapa de uma
+      // trilha do Peregrino+ — ninguém achava.
+      if (sub.isPeregrinoPlus) ...[
+        pad(TrailGiftMonthCard(canGive: sub.canShareTrailGift)),
+        const SizedBox(height: AppSpace.section),
+      ],
       // Passe de trilha recebido por link: quem instalou depois cola a
       // mensagem ou digita o código.
       pad(

@@ -1037,6 +1037,10 @@ class AppSelectChip extends StatelessWidget {
   final Color? unselectedColor;
   final Color? accent;
 
+  /// Ocupa o espaço dado (grade): texto numa linha só, centrado e reduzido
+  /// se não couber. Use com [AppChipGrid].
+  final bool fill;
+
   const AppSelectChip({
     super.key,
     required this.label,
@@ -1049,6 +1053,7 @@ class AppSelectChip extends StatelessWidget {
     this.fontWeight = FontWeight.w800,
     this.unselectedColor,
     this.accent,
+    this.fill = false,
   });
 
   @override
@@ -1102,13 +1107,22 @@ class AppSelectChip extends StatelessWidget {
         );
     }
 
-    final text = Text(
-      label,
-      textAlign: TextAlign.center,
-      style: useCta
-          ? AppTypography.cta(size: fontSize, color: ink)
-          : AppTypography.body(size: fontSize, weight: fontWeight, color: ink),
-    );
+    final style_ = useCta
+        ? AppTypography.cta(size: fontSize, color: ink)
+        : AppTypography.body(size: fontSize, weight: fontWeight, color: ink);
+    final Widget text = fill
+        ? Center(
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                label,
+                maxLines: 1,
+                textAlign: TextAlign.center,
+                style: style_,
+              ),
+            ),
+          )
+        : Text(label, textAlign: TextAlign.center, style: style_);
 
     final body = Ink(padding: padding, decoration: decoration, child: text);
     if (onTap == null) return body;
@@ -1123,6 +1137,50 @@ class AppSelectChip extends StatelessWidget {
         borderRadius: borderRadius,
         child: body,
       ),
+    );
+  }
+}
+
+/// Grade de [AppSelectChip] com [AppSelectChip.fill]: todas as células do
+/// mesmo tamanho, a última linha alinhada à esquerda.
+class AppChipGrid extends StatelessWidget {
+  final int columns;
+  final List<Widget> children;
+  final double spacing;
+
+  const AppChipGrid({
+    super.key,
+    required this.columns,
+    required this.children,
+    this.spacing = AppSpace.sm,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final rows = <Widget>[];
+    for (var i = 0; i < children.length; i += columns) {
+      if (rows.isNotEmpty) rows.add(SizedBox(height: spacing));
+      rows.add(
+        IntrinsicHeight(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              for (var c = 0; c < columns; c++) ...[
+                if (c > 0) SizedBox(width: spacing),
+                Expanded(
+                  child: i + c < children.length
+                      ? children[i + c]
+                      : const SizedBox.shrink(),
+                ),
+              ],
+            ],
+          ),
+        ),
+      );
+    }
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: rows,
     );
   }
 }

@@ -441,7 +441,7 @@ class _BookRow extends StatelessWidget {
         : read == 0
         ? context.l10n.bibleChapterCountShort(total)
         : context.l10n.bibleReadOf(read, total);
-    final abbrev = book.abbrev.toUpperCase();
+    final abbrev = book.short.toUpperCase();
 
     return Semantics(
       button: true,
