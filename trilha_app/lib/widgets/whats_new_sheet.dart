@@ -19,17 +19,16 @@ import 'ui_primitives.dart';
 class WhatsNew {
   WhatsNew._();
 
-  static const _release = '1.0.49';
+  static const _release = '1.0.50';
   static const _key = 'whats_new_seen';
 
   static List<(CinematicGlyph, String)> _items(AppLocalizations l) => [
-    (CinematicGlyph.gift, l.whatsNew148Advent),
-    (CinematicGlyph.path, l.whatsNew149Explore),
-    (CinematicGlyph.mail, l.whatsNew149Invite),
-    (CinematicGlyph.people, l.whatsNew148Plan),
-    (CinematicGlyph.book, l.whatsNew148Study),
-    (CinematicGlyph.rise, l.whatsNew149Free),
-    (CinematicGlyph.share, l.whatsNew148Share),
+    (CinematicGlyph.eye, l.whatsNew150Profile),
+    (CinematicGlyph.book, l.whatsNew150Bible),
+    (CinematicGlyph.seal, l.whatsNew150Book),
+    (CinematicGlyph.people, l.whatsNew150Caravan),
+    (CinematicGlyph.star, l.whatsNew150Advent),
+    (CinematicGlyph.calendar, l.whatsNew150Year),
   ];
 
   /// Laboratório: abre a folha agora, sem mexer na marca.

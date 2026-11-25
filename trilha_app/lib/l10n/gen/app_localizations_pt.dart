@@ -12354,32 +12354,28 @@ class AppLocalizationsPt extends AppLocalizations {
   String get weeklyReviewTodayPrev => 'Cena anterior';
 
   @override
-  String get whatsNew148Advent =>
-      'Presente do Advento: caminhe os 26 dias (29/11 a 24/12) e ganhe até 3 meses de Peregrino+. Sozinho, 1 mês; com sua Companhia, 2; com 3 ou mais do seu grupo, 3. Perdeu um dia? Dá para fazer depois.';
+  String get whatsNew150Advent =>
+      'O Advento agora termina em Belém: na véspera de Natal, a cena é \"A pequena Belém\" (Mq 5:2).';
 
   @override
-  String get whatsNew148Plan =>
-      'Propósito do grupo: dia de hoje, leitura e cena, respostas de cada um. O líder decide se o grupo vê as respostas.';
+  String get whatsNew150Bible =>
+      'Aba Bíblia refeita: planos de leitura novos, busca no topo e comparar o versículo em outras traduções.';
 
   @override
-  String get whatsNew148Share =>
-      'Compartilhe a frase e o postal do dia direto do Hoje.';
+  String get whatsNew150Book =>
+      'Terminou um livro da Bíblia? Ele ganha um selo com festa, a data na aba Bíblia e um lugar no seu Perfil.';
 
   @override
-  String get whatsNew148Study =>
-      'Estudar o versículo: modo interlinear, ouvir a palavra no original e ver como a TB traduz.';
+  String get whatsNew150Caravan =>
+      'Caravana com meta do mês: cada cena conta para o grupo todo, e quem chega junto ganha um postal.';
 
   @override
-  String get whatsNew149Explore =>
-      'A aba Trilhas agora é Explorar: AT, NT e Temas em coleções, e os 66 livros da Bíblia capítulo a capítulo.';
+  String get whatsNew150Profile =>
+      'Perfil: veja como a caravana te vê e escolha o que aparece. Novas seções Meu estudo e Na Palavra mostram seu acerto e os livros que você concluiu.';
 
   @override
-  String get whatsNew149Free =>
-      'Agora grátis: revisão da semana, erros explicados e a sua linha de crescimento no Perfil.';
-
-  @override
-  String get whatsNew149Invite =>
-      'Convite que vira presente: quem entra pelo seu convite e assina o Peregrino+ te dá 1 mês de Peregrino+ grátis.';
+  String get whatsNew150Year =>
+      'De 28/12 a 31/01, sua retrospectiva do ano abre sozinha: livros, marcos, a caminhada junto e o seu perfil do ano.';
 
   @override
   String get whatsNewEyebrow => 'Novidades';

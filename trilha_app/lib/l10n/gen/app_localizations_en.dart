@@ -12328,32 +12328,28 @@ class AppLocalizationsEn extends AppLocalizations {
   String get weeklyReviewTodayPrev => 'Previous scene';
 
   @override
-  String get whatsNew148Advent =>
-      'Advent gift: walk the 26 days (Nov 29 to Dec 24) and get up to 3 months of Peregrino+. Alone, 1 month; with your Companion, 2; with 3 or more from your group, 3. Missed a day? You can do it later.';
+  String get whatsNew150Advent =>
+      'Advent now ends in Bethlehem: on Christmas Eve, the scene is Micah\'s promise about the small town the King comes from (Mic 5:2).';
 
   @override
-  String get whatsNew148Plan =>
-      'Group purpose: today\'s day, reading and scene, everyone\'s answers. The leader decides whether the group sees the answers.';
+  String get whatsNew150Bible =>
+      'The Bible tab is new: fresh reading plans, search at the top and verse compare across translations. The Bible now also comes in English (BSB).';
 
   @override
-  String get whatsNew148Share =>
-      'Share the day\'s phrase and postcard right from Today.';
+  String get whatsNew150Book =>
+      'Finished a book of the Bible? It earns a seal with a celebration, the date on the Bible tab and a place on your Profile.';
 
   @override
-  String get whatsNew148Study =>
-      'Study the verse: interlinear mode, hear the word in the original and see how the translation renders it.';
+  String get whatsNew150Caravan =>
+      'The Caravan has a monthly goal: every scene counts for everyone, and reaching it together earns a postcard.';
 
   @override
-  String get whatsNew149Explore =>
-      'The Trails tab is now Explore: OT, NT and Themes as collections, and all 66 books of the Bible chapter by chapter.';
+  String get whatsNew150Profile =>
+      'Profile: see how your caravan sees you and choose what shows. New sections, My study and In the Word, show your accuracy and the books you\'ve finished.';
 
   @override
-  String get whatsNew149Free =>
-      'Now free: the weekly review, explained mistakes and your growth line on your Profile.';
-
-  @override
-  String get whatsNew149Invite =>
-      'An invite that becomes a gift: when someone joins through your invite and subscribes to Peregrino+, you get 1 free month of Peregrino+.';
+  String get whatsNew150Year =>
+      'From Dec 28 to Jan 31, your year in review opens by itself: books, milestones, walking together and your profile of the year.';
 
   @override
   String get whatsNewEyebrow => 'What\'s new';

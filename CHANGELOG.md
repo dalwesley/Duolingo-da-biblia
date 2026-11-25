@@ -29,6 +29,7 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 - Perfil redesenhado (capa, seções, calendário da chama, cofre); Juntos e Ajustes em 3 abas
 - Arte das cenas recomprimida (APK arm64 109,3 → 97,4 MB)
 - Conteúdo: EN/ES em V3 para Rute, Joel, João, Mateus, Salmos, Romanos, Lucas, Marcos, Hebreus, Isaías, Apocalipse e Efésios; 62 trilhas de livro na coleção Panorama
+- Novidades da versão: folha da 1.0.50 (perfil como a caravana vê, aba Bíblia, livro concluído, meta da Caravana, Advento em Belém, retrospectiva do ano); itens da 1.0.48/1.0.49 saem
 - Versão 1.0.50 (50), iOS 1050
 
 ### Fixed

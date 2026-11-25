@@ -12387,32 +12387,28 @@ class AppLocalizationsEs extends AppLocalizations {
   String get weeklyReviewTodayPrev => 'Escena anterior';
 
   @override
-  String get whatsNew148Advent =>
-      'Regalo de Adviento: camina los 26 días (29/11 al 24/12) y gana hasta 3 meses de Peregrino+. Solo, 1 mes; con tu Compañía, 2; con 3 o más de tu grupo, 3. ¿Perdiste un día? Puedes hacerlo después.';
+  String get whatsNew150Advent =>
+      'El Adviento ahora termina en Belén: en la víspera de Navidad, la escena es la promesa de Miqueas sobre el pueblo pequeño de donde sale el Rey (Mi 5:2).';
 
   @override
-  String get whatsNew148Plan =>
-      'Propósito del grupo: el día de hoy, lectura y escena, las respuestas de cada uno. El líder decide si el grupo ve las respuestas.';
+  String get whatsNew150Bible =>
+      'La pestaña Biblia es nueva: planes de lectura, búsqueda arriba y comparar el versículo en otras traducciones. La Biblia ahora también viene en español (BES).';
 
   @override
-  String get whatsNew148Share =>
-      'Comparte la frase y la postal del día directo desde Hoy.';
+  String get whatsNew150Book =>
+      '¿Terminaste un libro de la Biblia? Gana un sello con fiesta, la fecha en la pestaña Biblia y un lugar en tu Perfil.';
 
   @override
-  String get whatsNew148Study =>
-      'Estudiar el versículo: modo interlineal, escuchar la palabra en el original y ver cómo la traduce la versión.';
+  String get whatsNew150Caravan =>
+      'La Caravana tiene meta del mes: cada escena cuenta para todos, y llegar juntos regala una postal.';
 
   @override
-  String get whatsNew149Explore =>
-      'La pestaña Rutas ahora es Explorar: AT, NT y Temas en colecciones, y los 66 libros de la Biblia capítulo a capítulo.';
+  String get whatsNew150Profile =>
+      'Perfil: mira cómo te ve la caravana y elige qué aparece. Las nuevas secciones Mi estudio y En la Palabra muestran tu acierto y los libros que terminaste.';
 
   @override
-  String get whatsNew149Free =>
-      'Ahora gratis: el repaso de la semana, los errores explicados y tu línea de crecimiento en el Perfil.';
-
-  @override
-  String get whatsNew149Invite =>
-      'Invitación que se vuelve regalo: si alguien entra por tu invitación y se suscribe a Peregrino+, ganas 1 mes de Peregrino+ gratis.';
+  String get whatsNew150Year =>
+      'Del 28/12 al 31/01, tu resumen del año se abre solo: libros, hitos, caminar juntos y tu perfil del año.';
 
   @override
   String get whatsNewEyebrow => 'Novedades';

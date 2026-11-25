@@ -18921,47 +18921,41 @@ abstract class AppLocalizations {
   /// **'Cena anterior'**
   String get weeklyReviewTodayPrev;
 
-  /// No description provided for @whatsNew148Advent.
+  /// No description provided for @whatsNew150Advent.
   ///
   /// In pt, this message translates to:
-  /// **'Presente do Advento: caminhe os 26 dias (29/11 a 24/12) e ganhe até 3 meses de Peregrino+. Sozinho, 1 mês; com sua Companhia, 2; com 3 ou mais do seu grupo, 3. Perdeu um dia? Dá para fazer depois.'**
-  String get whatsNew148Advent;
+  /// **'O Advento agora termina em Belém: na véspera de Natal, a cena é \"A pequena Belém\" (Mq 5:2).'**
+  String get whatsNew150Advent;
 
-  /// No description provided for @whatsNew148Plan.
+  /// No description provided for @whatsNew150Bible.
   ///
   /// In pt, this message translates to:
-  /// **'Propósito do grupo: dia de hoje, leitura e cena, respostas de cada um. O líder decide se o grupo vê as respostas.'**
-  String get whatsNew148Plan;
+  /// **'Aba Bíblia refeita: planos de leitura novos, busca no topo e comparar o versículo em outras traduções.'**
+  String get whatsNew150Bible;
 
-  /// No description provided for @whatsNew148Share.
+  /// No description provided for @whatsNew150Book.
   ///
   /// In pt, this message translates to:
-  /// **'Compartilhe a frase e o postal do dia direto do Hoje.'**
-  String get whatsNew148Share;
+  /// **'Terminou um livro da Bíblia? Ele ganha um selo com festa, a data na aba Bíblia e um lugar no seu Perfil.'**
+  String get whatsNew150Book;
 
-  /// No description provided for @whatsNew148Study.
+  /// No description provided for @whatsNew150Caravan.
   ///
   /// In pt, this message translates to:
-  /// **'Estudar o versículo: modo interlinear, ouvir a palavra no original e ver como a TB traduz.'**
-  String get whatsNew148Study;
+  /// **'Caravana com meta do mês: cada cena conta para o grupo todo, e quem chega junto ganha um postal.'**
+  String get whatsNew150Caravan;
 
-  /// No description provided for @whatsNew149Explore.
+  /// No description provided for @whatsNew150Profile.
   ///
   /// In pt, this message translates to:
-  /// **'A aba Trilhas agora é Explorar: AT, NT e Temas em coleções, e os 66 livros da Bíblia capítulo a capítulo.'**
-  String get whatsNew149Explore;
+  /// **'Perfil: veja como a caravana te vê e escolha o que aparece. Novas seções Meu estudo e Na Palavra mostram seu acerto e os livros que você concluiu.'**
+  String get whatsNew150Profile;
 
-  /// No description provided for @whatsNew149Free.
+  /// No description provided for @whatsNew150Year.
   ///
   /// In pt, this message translates to:
-  /// **'Agora grátis: revisão da semana, erros explicados e a sua linha de crescimento no Perfil.'**
-  String get whatsNew149Free;
-
-  /// No description provided for @whatsNew149Invite.
-  ///
-  /// In pt, this message translates to:
-  /// **'Convite que vira presente: quem entra pelo seu convite e assina o Peregrino+ te dá 1 mês de Peregrino+ grátis.'**
-  String get whatsNew149Invite;
+  /// **'De 28/12 a 31/01, sua retrospectiva do ano abre sozinha: livros, marcos, a caminhada junto e o seu perfil do ano.'**
+  String get whatsNew150Year;
 
   /// No description provided for @whatsNewEyebrow.
   ///
