@@ -6,11 +6,13 @@ import 'package:trilha_app/widgets/pilgrim_profile_sections.dart';
 
 void main() {
   group('CaravanProfilePrefs', () {
-    test('defaults all sections visible', () {
+    test('defaults: classic sections visible, former private ones hidden', () {
       const prefs = CaravanProfilePrefs();
       for (final s in CaravanProfileSection.values) {
-        expect(prefs.isVisible(s), isTrue);
+        expect(prefs.isVisible(s), !s.optIn, reason: s.name);
       }
+      expect(CaravanProfileSection.study.optIn, isTrue);
+      expect(CaravanProfileSection.word.optIn, isTrue);
     });
 
     test('copyWithSection toggles one field', () {

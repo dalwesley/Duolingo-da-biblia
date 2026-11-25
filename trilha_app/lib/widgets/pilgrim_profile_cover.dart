@@ -98,6 +98,10 @@ class PilgrimProfileTop extends StatelessWidget {
   /// Números da caminhada, na faixa de vidro colada ao pé da pintura.
   final List<PilgrimStat> stats;
 
+  /// Rodapé dentro do mesmo cartão, abaixo dos números (a semana da
+  /// sequência na vitrine da caravana).
+  final Widget? footer;
+
   const PilgrimProfileTop({
     super.key,
     required this.name,
@@ -116,6 +120,7 @@ class PilgrimProfileTop extends StatelessWidget {
     this.pioneer = false,
     this.coverAction,
     this.stats = const [],
+    this.footer,
   });
 
   /// Pintura das cenas é 3:2 (640×427) — o cartão segue a proporção dela, então a
@@ -319,6 +324,23 @@ class PilgrimProfileTop extends StatelessWidget {
               ),
             ),
             if (stats.isNotEmpty) _StatBar(stats: stats, tone: tone),
+            if (footer case final f?)
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.fromLTRB(
+                  AppSpace.md,
+                  AppSpace.sm,
+                  AppSpace.md,
+                  AppSpace.md,
+                ),
+                decoration: BoxDecoration(
+                  color: Color.lerp(_StatBar.fill, tone, 0.10),
+                  border: Border(
+                    top: BorderSide(color: white.withValues(alpha: 0.08)),
+                  ),
+                ),
+                child: f,
+              ),
           ],
         ),
       ),

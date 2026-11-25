@@ -645,6 +645,9 @@
     }
   },
   "caravanPostcardsSection": "Caravana",
+  "caravanPreviewBody": "Toque num olho para mostrar ou esconder. Muda na hora, aqui embaixo.",
+  "caravanPreviewCardCaption": "Veja seu perfil como os outros veem e escolha o que aparece.",
+  "caravanPreviewTitle": "Como a caravana te vê",
   "caravanSeeAll": "Ver a caravana toda",
   "caravanSeePostcard": "Ver o postal",
   "caravanStop1": "1º pouso",
@@ -4884,6 +4887,14 @@
   "pilgrimAccuracySteady": "Caminhando com firmeza",
   "pilgrimAccuracyTitle": "Acertos",
   "pilgrimBadge": "Peregrino",
+  "pilgrimBooksDone": "{count, plural, =1{1 concluído} other{{count} concluídos}}",
+  "@pilgrimBooksDone": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "pilgrimChaptersBooks": "{chapters, plural, =1{1 capítulo} other{{chapters} capítulos}} · {books, plural, =1{1 livro} other{{books} livros}}",
   "@pilgrimChaptersBooks": {
     "placeholders": {
@@ -4949,6 +4960,22 @@
   },
   "pilgrimLastStudyDay": "Último dia de estudo",
   "pilgrimLedOverall": "Já liderou o ranking geral",
+  "pilgrimMoreBooks": "{count, plural, =1{+1 livro} other{+{count} livros}}",
+  "@pilgrimMoreBooks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pilgrimMoreTrails": "{count, plural, =1{+1 trilha} other{+{count} trilhas}}",
+  "@pilgrimMoreTrails": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "pilgrimNoReadingYet": "Ainda sem leitura registrada",
   "pilgrimNoTrailYet": "Nenhuma trilha em andamento ainda.",
   "pilgrimOnTheJourney": "na jornada",
@@ -6298,6 +6325,7 @@
   "profileNearTitle": "Quase lá",
   "profileNotes": "Anotações",
   "profileNotesAll": "Todas",
+  "profileNumbersPrivacyLabel": "Seu placar (posição, dias no topo e acerto)",
   "profileOfSevenDays": "{count} de 7 dias",
   "@profileOfSevenDays": {
     "placeholders": {
@@ -6356,15 +6384,20 @@
   "profileSectionBibleHint": "Livros e capítulos lidos",
   "profileSectionDaysOnTop": "Dias no topo",
   "profileSectionDaysOnTopHint": "Quantos dias ficou em 1º no ranking geral",
+  "profileSectionGroupSeals": "Selos de grupo",
+  "profileSectionGroupSealsHint": "Selos \"Fiel na semana\" dos grupos",
   "profileSectionLastScene": "Última cena",
   "profileSectionLastSceneHint": "Nome da última cena concluída",
   "profileSectionMedals": "Medalhas",
   "profileSectionMedalsHint": "Medalhas da jornada",
   "profileSectionPresence": "Presença",
   "profileSectionPresenceHint": "Semana, sequência e marcos, de Semente a Fruto",
+  "profileSectionQuestsHint": "Tarefas da semana em andamento",
   "profileSectionRanking": "Ranking e passos",
   "profileSectionRankingHint": "Posição e passos totais",
+  "profileSectionStudyHint": "Acerto por profundidade, semanas e gestos",
   "profileSectionTrailsHint": "Progresso nas trilhas e selos adquiridos",
+  "profileSectionWordHint": "Quantos favoritos e anotações (o texto fica só com você)",
   "profileSharedVerses": "Enviados",
   "profileSharedVersesEmpty": "Versículos que você compartilhar aparecem aqui — só a referência.",
   "profileSince": "Peregrino desde {month} de {year}",
@@ -6778,7 +6811,6 @@
       }
     }
   },
-  "reinforcePreparing": "Preparando…",
   "reminderDailyEyebrow": "Lembrete diário",
   "reminderHour": "{hour}h",
   "@reminderHour": {
@@ -7753,10 +7785,22 @@
       }
     }
   },
+  "studyDepthAnswers": "{count, plural, =1{1 resposta} other{{count} respostas}}",
+  "@studyDepthAnswers": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "studyDepthNext": "seu próximo passo",
+  "studyDepthNone": "nenhuma ainda",
   "studyDepthTitle": "Profundidade",
   "studyDepthToExplore": "a explorar",
   "studyFirstTry": "de primeira",
+  "studyGesturesTapHint": "Toque num gesto para treinar só ele.",
   "studyGesturesTitle": "Seus gestos",
+  "studyWeeksEmpty": "Jogue uma cena e a barra desta semana acende aqui.",
   "studyWeeksTitle": "Últimas semanas",
   "suggestionAuthorEmail": "E-mail",
   "suggestionAuthorEmailHint": "nome@email.com",

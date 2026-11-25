@@ -10,7 +10,6 @@ import '../l10n/l10n_global.dart';
 import '../theme/app_theme.dart';
 import '../utils/layout_utils.dart';
 import '../utils/appearance.dart';
-import '../utils/spiritual_growth.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'pilgrim_profile_cover.dart';
@@ -61,6 +60,9 @@ class ProfileHero extends StatelessWidget {
   /// Posição no ranking do mês (0 = fora).
   final int rank;
 
+  /// Canto da capa, ao lado de "Trocar capa" (o olho dos números).
+  final Widget? coverAction;
+
   /// Cena da capa (escolhida ou a mais recente).
   final String? coverScene;
   final VoidCallback? onChangeCover;
@@ -91,6 +93,7 @@ class ProfileHero extends StatelessWidget {
     this.accuracyCorrect = 0,
     this.accuracyTotal = 0,
     this.rank = 0,
+    this.coverAction,
     this.coverScene,
     this.onChangeCover,
     this.chromePinned = false,
@@ -143,22 +146,15 @@ class ProfileHero extends StatelessWidget {
                   onEditPortrait: onEditPortrait,
                   coverScene: coverScene,
                   onChangeCover: onChangeCover,
+                  coverAction: coverAction,
                   rank: rank,
                   epithet: epithet,
                   sinceLabel: sinceLabel,
                   supporter: supporter,
                   pilgrim: pilgrim,
                   pioneer: pioneer,
+                  // Sequência fica só no card de baixo (sem repetir aqui).
                   stats: [
-                    PilgrimStat(
-                      glyph: CinematicGlyph.flame,
-                      tone: AppRoles.streak,
-                      value: streak,
-                      label: l10n.profileStatStreak,
-                      caption: streak > 0
-                          ? SpiritualGrowth.fromStreak(streak).title
-                          : null,
-                    ),
                     PilgrimStat(
                       glyph: CinematicGlyph.sneaker,
                       tone: AppRoles.lamp,

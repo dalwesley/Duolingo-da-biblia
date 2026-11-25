@@ -828,11 +828,6 @@
       "gesture": "String"
     }
   },
-  "reinforcePreparing": {
-    "pt": "Preparando…",
-    "en": "Preparing…",
-    "es": "Preparando…"
-  },
   "reinforceEmpty": {
     "pt": "Ainda não há perguntas desse gesto nas cenas que você fez.",
     "en": "There are no questions of this gesture in the scenes you've done yet.",
@@ -1056,6 +1051,29 @@
     "en": "to explore",
     "es": "por explorar"
   },
+  "studyDepthAnswers": {
+    "pt": "{count, plural, =1{1 resposta} other{{count} respostas}}",
+    "en": "{count, plural, =1{1 answer} other{{count} answers}}",
+    "es": "{count, plural, =1{1 respuesta} other{{count} respuestas}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "studyDepthNone": {
+    "pt": "nenhuma ainda",
+    "en": "none yet",
+    "es": "ninguna aún"
+  },
+  "studyDepthNext": {
+    "pt": "seu próximo passo",
+    "en": "your next step",
+    "es": "tu próximo paso"
+  },
+  "studyWeeksEmpty": {
+    "pt": "Jogue uma cena e a barra desta semana acende aqui.",
+    "en": "Play a scene and this week's bar lights up here.",
+    "es": "Juega una escena y la barra de esta semana se enciende aquí."
+  },
   "studyWeeksTitle": {
     "pt": "Últimas semanas",
     "en": "Last weeks",
@@ -1065,6 +1083,11 @@
     "pt": "Seus gestos",
     "en": "Your gestures",
     "es": "Tus gestos"
+  },
+  "studyGesturesTapHint": {
+    "pt": "Toque num gesto para treinar só ele.",
+    "en": "Tap a gesture to practice just that one.",
+    "es": "Toca un gesto para practicar solo ese."
   },
   "wordStatChapters": {
     "pt": "Capítulos",
@@ -1085,5 +1108,74 @@
     "pt": "Anotações",
     "en": "Notes",
     "es": "Notas"
+  },
+  "caravanPreviewTitle": {
+    "pt": "Como a caravana te vê",
+    "en": "How your caravan sees you",
+    "es": "Cómo te ve la caravana"
+  },
+  "caravanPreviewBody": {
+    "pt": "Toque num olho para mostrar ou esconder. Muda na hora, aqui embaixo.",
+    "en": "Tap an eye to show or hide it. It changes right away, below.",
+    "es": "Toca un ojo para mostrar u ocultar. Cambia al instante, aquí abajo."
+  },
+  "caravanPreviewCardCaption": {
+    "pt": "Veja seu perfil como os outros veem e escolha o que aparece.",
+    "en": "See your profile the way others do and choose what shows.",
+    "es": "Mira tu perfil como lo ven los demás y elige qué aparece."
+  },
+  "profileNumbersPrivacyLabel": {
+    "pt": "Seu placar (posição, dias no topo e acerto)",
+    "en": "Your scoreboard (rank, days on top and accuracy)",
+    "es": "Tu marcador (posición, días en la cima y acierto)"
+  },
+  "pilgrimBooksDone": {
+    "pt": "{count, plural, =1{1 concluído} other{{count} concluídos}}",
+    "en": "{count, plural, =1{1 finished} other{{count} finished}}",
+    "es": "{count, plural, =1{1 terminado} other{{count} terminados}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "pilgrimMoreBooks": {
+    "pt": "{count, plural, =1{+1 livro} other{+{count} livros}}",
+    "en": "{count, plural, =1{+1 book} other{+{count} books}}",
+    "es": "{count, plural, =1{+1 libro} other{+{count} libros}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "pilgrimMoreTrails": {
+    "pt": "{count, plural, =1{+1 trilha} other{+{count} trilhas}}",
+    "en": "{count, plural, =1{+1 trail} other{+{count} trails}}",
+    "es": "{count, plural, =1{+1 ruta} other{+{count} rutas}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "profileSectionGroupSeals": {
+    "pt": "Selos de grupo",
+    "en": "Group seals",
+    "es": "Sellos de grupo"
+  },
+  "profileSectionStudyHint": {
+    "pt": "Acerto por profundidade, semanas e gestos",
+    "en": "Accuracy by depth, weeks and gestures",
+    "es": "Acierto por profundidad, semanas y gestos"
+  },
+  "profileSectionWordHint": {
+    "pt": "Quantos favoritos e anotações (o texto fica só com você)",
+    "en": "How many favorites and notes (the text stays with you)",
+    "es": "Cuántos favoritos y notas (el texto queda contigo)"
+  },
+  "profileSectionQuestsHint": {
+    "pt": "Tarefas da semana em andamento",
+    "en": "This week's tasks in progress",
+    "es": "Tareas de la semana en curso"
+  },
+  "profileSectionGroupSealsHint": {
+    "pt": "Selos \"Fiel na semana\" dos grupos",
+    "en": "\"Faithful this week\" seals from groups",
+    "es": "Sellos \"Fiel en la semana\" de los grupos"
   }
 }

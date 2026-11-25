@@ -2,6 +2,7 @@ import '../l10n/l10n_global.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
 import '../utils/plus_access.dart';
+import 'caravan_profile_extras.dart';
 import 'caravan_profile_prefs.dart';
 import 'trail.dart';
 
@@ -51,6 +52,28 @@ class CaravanTrailSnapshot {
 }
 
 /// Perfil público de um peregrino — ranking + jornada (nuvem ou local).
+/// Leitura de um livro da Bíblia no perfil público (capítulos lidos de
+/// [total]). Montado em [CaravanPilgrimProfile.enriched].
+class CaravanBibleBook {
+  final String abbrev;
+  final String name;
+  final int read;
+  final int total;
+  final bool newTestament;
+  final bool complete;
+
+  const CaravanBibleBook({
+    required this.abbrev,
+    required this.name,
+    required this.read,
+    required this.total,
+    required this.newTestament,
+    required this.complete,
+  });
+
+  double get progress => total == 0 ? 0 : (read / total).clamp(0.0, 1.0);
+}
+
 class CaravanPilgrimProfile {
   final String? uid;
   final String name;
@@ -94,6 +117,16 @@ class CaravanPilgrimProfile {
   final List<String> completeBookNames;
   final List<String> completeNtBooks;
   final int bibleChaptersRead;
+
+  /// Livros começados ou concluídos, com capítulos lidos de cada um.
+  final List<CaravanBibleBook> bibleBookProgress;
+
+  /// Capítulos de cada Testamento (para "12 de 929").
+  final int otChaptersTotal;
+  final int ntChaptersTotal;
+
+  /// Meu estudo, Na Palavra, tarefas e selos de grupo (ver [CaravanProfileExtras]).
+  final CaravanProfileExtras extras;
   final bool hasDepthsCleared;
   final String? lastMissionTitle;
   final String? lastTrailTitle;
@@ -148,6 +181,10 @@ class CaravanPilgrimProfile {
     this.completeBookNames = const [],
     this.completeNtBooks = const [],
     this.bibleChaptersRead = 0,
+    this.bibleBookProgress = const [],
+    this.otChaptersTotal = 0,
+    this.ntChaptersTotal = 0,
+    this.extras = const CaravanProfileExtras(),
     this.hasDepthsCleared = false,
     this.lastMissionTitle,
     this.lastTrailTitle,
@@ -160,6 +197,57 @@ class CaravanPilgrimProfile {
     this.desbravador = false,
     this.coverScene,
   });
+
+  /// Mesmo perfil com outras escolhas de privacidade (prévia do próprio
+  /// perfil: o olho muda e a vitrine responde na hora).
+  CaravanPilgrimProfile withPrefs(CaravanProfilePrefs next) =>
+      CaravanPilgrimProfile(
+        uid: uid,
+        name: name,
+        steps: steps,
+        streak: streak,
+        bestStreak: bestStreak,
+        lastWalkDate: lastWalkDate,
+        lastSeenDate: lastSeenDate,
+        completedMissions: completedMissions,
+        clearedTrailModes: clearedTrailModes,
+        trailModes: trailModes,
+        readBibleChapters: readBibleChapters,
+        booksFinished: booksFinished,
+        perfectMissions: perfectMissions,
+        sharedVerseCount: sharedVerseCount,
+        memoryMasteredCount: memoryMasteredCount,
+        reflectionCount: reflectionCount,
+        firstOpenDate: firstOpenDate,
+        playDates: playDates,
+        daysAsCaravanLeader: daysAsCaravanLeader,
+        lifetimeQuestionsCorrect: lifetimeQuestionsCorrect,
+        lifetimeQuestionsAnswered: lifetimeQuestionsAnswered,
+        lastMissionSlug: lastMissionSlug,
+        lastMissionCompletedDate: lastMissionCompletedDate,
+        prefs: next,
+        trails: trails,
+        bibleBooksRead: bibleBooksRead,
+        completeBibleBooks: completeBibleBooks,
+        completeBookNames: completeBookNames,
+        completeNtBooks: completeNtBooks,
+        bibleChaptersRead: bibleChaptersRead,
+        bibleBookProgress: bibleBookProgress,
+        otChaptersTotal: otChaptersTotal,
+        ntChaptersTotal: ntChaptersTotal,
+        extras: extras,
+        hasDepthsCleared: hasDepthsCleared,
+        lastMissionTitle: lastMissionTitle,
+        lastTrailTitle: lastTrailTitle,
+        lastMissionInsight: lastMissionInsight,
+        lastMissionRef: lastMissionRef,
+        photoUrl: photoUrl,
+        supporter: supporter,
+        pilgrim: pilgrim,
+        pioneer: pioneer,
+        desbravador: desbravador,
+        coverScene: coverScene,
+      );
 
   int get missionsCompleted => completedMissions.length;
 
@@ -234,6 +322,7 @@ class CaravanPilgrimProfile {
       prefs: progress.caravanProfilePrefs,
       desbravador: progress.desbravador,
       coverScene: progress.settings.coverScene,
+      extras: CaravanProfileExtras.fromProgress(progress),
     );
   }
 
@@ -310,6 +399,7 @@ class CaravanPilgrimProfile {
               (data['coverScene'] as String).trim().isNotEmpty)
           ? (data['coverScene'] as String).trim()
           : null,
+      extras: CaravanProfileExtras.fromCloudMap(data),
     );
   }
 
@@ -390,16 +480,35 @@ class CaravanPilgrimProfile {
     final sealed = {for (final b in booksFinished) b.toLowerCase()};
     final completeBooks = <String>[];
     final completeNt = <String>[];
+    final bookProgress = <CaravanBibleBook>[];
+    var otTotal = 0, ntTotal = 0;
     for (var i = 0; i < bibleBooks.length; i++) {
       final book = bibleBooks[i];
       final abbrev = book.abbrev.toLowerCase();
       final total = book.chapters.length;
       final read = byBook[abbrev] ?? 0;
-      if ((total > 0 && read >= total) || sealed.contains(abbrev)) {
+      final nt = i >= BibleService.oldTestamentCount;
+      if (nt) {
+        ntTotal += total;
+      } else {
+        otTotal += total;
+      }
+      final complete = (total > 0 && read >= total) || sealed.contains(abbrev);
+      if (complete) {
         completeBooks.add(abbrev);
-        if (i >= BibleService.oldTestamentCount) {
-          completeNt.add(abbrev);
-        }
+        if (nt) completeNt.add(abbrev);
+      }
+      if (read > 0 || complete) {
+        bookProgress.add(
+          CaravanBibleBook(
+            abbrev: book.abbrev,
+            name: book.name,
+            read: complete ? total : read.clamp(0, total),
+            total: total,
+            newTestament: nt,
+            complete: complete,
+          ),
+        );
       }
     }
 
@@ -450,6 +559,10 @@ class CaravanPilgrimProfile {
       completeBookNames: completeNames,
       completeNtBooks: completeNt,
       bibleChaptersRead: readBibleChapters.length,
+      bibleBookProgress: bookProgress,
+      otChaptersTotal: otTotal,
+      ntChaptersTotal: ntTotal,
+      extras: extras,
       hasDepthsCleared: depthsCleared,
       lastMissionTitle: missionTitle,
       lastTrailTitle: trailTitle,

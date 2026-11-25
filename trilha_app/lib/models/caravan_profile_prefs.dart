@@ -10,6 +10,11 @@ enum CaravanProfileSection {
   bible,
   trails,
   medals,
+  // Eram só do dono (11/2026): nascem escondidas, a pessoa abre no olho.
+  study,
+  word,
+  quests,
+  groupSeals,
 }
 
 extension CaravanProfileSectionX on CaravanProfileSection {
@@ -24,6 +29,10 @@ extension CaravanProfileSectionX on CaravanProfileSection {
       CaravanProfileSection.bible => l10n.navBible,
       CaravanProfileSection.trails => l10n.navTrails,
       CaravanProfileSection.medals => l10n.profileSectionMedals,
+      CaravanProfileSection.study => l10n.profileStudyTitle,
+      CaravanProfileSection.word => l10n.profileInTheWord,
+      CaravanProfileSection.quests => l10n.questWeeklyTitle,
+      CaravanProfileSection.groupSeals => l10n.profileSectionGroupSeals,
     };
   }
 
@@ -38,8 +47,21 @@ extension CaravanProfileSectionX on CaravanProfileSection {
       CaravanProfileSection.bible => l10n.profileSectionBibleHint,
       CaravanProfileSection.trails => l10n.profileSectionTrailsHint,
       CaravanProfileSection.medals => l10n.profileSectionMedalsHint,
+      CaravanProfileSection.study => l10n.profileSectionStudyHint,
+      CaravanProfileSection.word => l10n.profileSectionWordHint,
+      CaravanProfileSection.quests => l10n.profileSectionQuestsHint,
+      CaravanProfileSection.groupSeals => l10n.profileSectionGroupSealsHint,
     };
   }
+
+  /// Seções que nascem escondidas (eram privadas antes do olho).
+  bool get optIn => switch (this) {
+    CaravanProfileSection.study ||
+    CaravanProfileSection.word ||
+    CaravanProfileSection.quests ||
+    CaravanProfileSection.groupSeals => true,
+    _ => false,
+  };
 }
 
 /// O que outros peregrinos veem ao tocar no seu card na caravana.
@@ -49,7 +71,8 @@ class CaravanProfilePrefs {
   const CaravanProfilePrefs([Map<CaravanProfileSection, bool>? visibility])
     : visibility = visibility ?? const {};
 
-  bool isVisible(CaravanProfileSection section) => visibility[section] ?? true;
+  bool isVisible(CaravanProfileSection section) =>
+      visibility[section] ?? !section.optIn;
 
   CaravanProfilePrefs copyWithSection(
     CaravanProfileSection section,

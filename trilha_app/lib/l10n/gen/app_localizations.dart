@@ -1378,6 +1378,24 @@ abstract class AppLocalizations {
   /// **'Caravana'**
   String get caravanPostcardsSection;
 
+  /// No description provided for @caravanPreviewBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Toque num olho para mostrar ou esconder. Muda na hora, aqui embaixo.'**
+  String get caravanPreviewBody;
+
+  /// No description provided for @caravanPreviewCardCaption.
+  ///
+  /// In pt, this message translates to:
+  /// **'Veja seu perfil como os outros veem e escolha o que aparece.'**
+  String get caravanPreviewCardCaption;
+
+  /// No description provided for @caravanPreviewTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Como a caravana te vê'**
+  String get caravanPreviewTitle;
+
   /// No description provided for @caravanSeeAll.
   ///
   /// In pt, this message translates to:
@@ -11337,6 +11355,12 @@ abstract class AppLocalizations {
   /// **'Peregrino'**
   String get pilgrimBadge;
 
+  /// No description provided for @pilgrimBooksDone.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 concluído} other{{count} concluídos}}'**
+  String pilgrimBooksDone(int count);
+
   /// No description provided for @pilgrimChaptersBooks.
   ///
   /// In pt, this message translates to:
@@ -11402,6 +11426,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Já liderou o ranking geral'**
   String get pilgrimLedOverall;
+
+  /// No description provided for @pilgrimMoreBooks.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{+1 livro} other{+{count} livros}}'**
+  String pilgrimMoreBooks(int count);
+
+  /// No description provided for @pilgrimMoreTrails.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{+1 trilha} other{+{count} trilhas}}'**
+  String pilgrimMoreTrails(int count);
 
   /// No description provided for @pilgrimNoReadingYet.
   ///
@@ -13587,6 +13623,12 @@ abstract class AppLocalizations {
   /// **'Todas'**
   String get profileNotesAll;
 
+  /// No description provided for @profileNumbersPrivacyLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu placar (posição, dias no topo e acerto)'**
+  String get profileNumbersPrivacyLabel;
+
   /// No description provided for @profileOfSevenDays.
   ///
   /// In pt, this message translates to:
@@ -13683,6 +13725,18 @@ abstract class AppLocalizations {
   /// **'Quantos dias ficou em 1º no ranking geral'**
   String get profileSectionDaysOnTopHint;
 
+  /// No description provided for @profileSectionGroupSeals.
+  ///
+  /// In pt, this message translates to:
+  /// **'Selos de grupo'**
+  String get profileSectionGroupSeals;
+
+  /// No description provided for @profileSectionGroupSealsHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Selos \"Fiel na semana\" dos grupos'**
+  String get profileSectionGroupSealsHint;
+
   /// No description provided for @profileSectionLastScene.
   ///
   /// In pt, this message translates to:
@@ -13719,6 +13773,12 @@ abstract class AppLocalizations {
   /// **'Semana, sequência e marcos, de Semente a Fruto'**
   String get profileSectionPresenceHint;
 
+  /// No description provided for @profileSectionQuestsHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tarefas da semana em andamento'**
+  String get profileSectionQuestsHint;
+
   /// No description provided for @profileSectionRanking.
   ///
   /// In pt, this message translates to:
@@ -13731,11 +13791,23 @@ abstract class AppLocalizations {
   /// **'Posição e passos totais'**
   String get profileSectionRankingHint;
 
+  /// No description provided for @profileSectionStudyHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Acerto por profundidade, semanas e gestos'**
+  String get profileSectionStudyHint;
+
   /// No description provided for @profileSectionTrailsHint.
   ///
   /// In pt, this message translates to:
   /// **'Progresso nas trilhas e selos adquiridos'**
   String get profileSectionTrailsHint;
+
+  /// No description provided for @profileSectionWordHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quantos favoritos e anotações (o texto fica só com você)'**
+  String get profileSectionWordHint;
 
   /// No description provided for @profileSharedVerses.
   ///
@@ -14834,12 +14906,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Reforço: {gesture}'**
   String reinforceMissionTitle(String gesture);
-
-  /// No description provided for @reinforcePreparing.
-  ///
-  /// In pt, this message translates to:
-  /// **'Preparando…'**
-  String get reinforcePreparing;
 
   /// No description provided for @reminderDailyEyebrow.
   ///
@@ -17145,6 +17211,24 @@ abstract class AppLocalizations {
   /// **'{correct} de {total} respostas'**
   String studyAnswersOf(int correct, int total);
 
+  /// No description provided for @studyDepthAnswers.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 resposta} other{{count} respostas}}'**
+  String studyDepthAnswers(int count);
+
+  /// No description provided for @studyDepthNext.
+  ///
+  /// In pt, this message translates to:
+  /// **'seu próximo passo'**
+  String get studyDepthNext;
+
+  /// No description provided for @studyDepthNone.
+  ///
+  /// In pt, this message translates to:
+  /// **'nenhuma ainda'**
+  String get studyDepthNone;
+
   /// No description provided for @studyDepthTitle.
   ///
   /// In pt, this message translates to:
@@ -17163,11 +17247,23 @@ abstract class AppLocalizations {
   /// **'de primeira'**
   String get studyFirstTry;
 
+  /// No description provided for @studyGesturesTapHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Toque num gesto para treinar só ele.'**
+  String get studyGesturesTapHint;
+
   /// No description provided for @studyGesturesTitle.
   ///
   /// In pt, this message translates to:
   /// **'Seus gestos'**
   String get studyGesturesTitle;
+
+  /// No description provided for @studyWeeksEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'Jogue uma cena e a barra desta semana acende aqui.'**
+  String get studyWeeksEmpty;
 
   /// No description provided for @studyWeeksTitle.
   ///

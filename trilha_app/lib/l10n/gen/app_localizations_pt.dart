@@ -875,6 +875,17 @@ class AppLocalizationsPt extends AppLocalizations {
   String get caravanPostcardsSection => 'Caravana';
 
   @override
+  String get caravanPreviewBody =>
+      'Toque num olho para mostrar ou esconder. Muda na hora, aqui embaixo.';
+
+  @override
+  String get caravanPreviewCardCaption =>
+      'Veja seu perfil como os outros veem e escolha o que aparece.';
+
+  @override
+  String get caravanPreviewTitle => 'Como a caravana te vê';
+
+  @override
   String get caravanSeeAll => 'Ver a caravana toda';
 
   @override
@@ -7264,6 +7275,17 @@ class AppLocalizationsPt extends AppLocalizations {
   String get pilgrimBadge => 'Peregrino';
 
   @override
+  String pilgrimBooksDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count concluídos',
+      one: '1 concluído',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String pilgrimChaptersBooks(int chapters, int books) {
     String _temp0 = intl.Intl.pluralLogic(
       chapters,
@@ -7325,6 +7347,28 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get pilgrimLedOverall => 'Já liderou o ranking geral';
+
+  @override
+  String pilgrimMoreBooks(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count livros',
+      one: '+1 livro',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String pilgrimMoreTrails(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count trilhas',
+      one: '+1 trilha',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get pilgrimNoReadingYet => 'Ainda sem leitura registrada';
@@ -8892,6 +8936,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get profileNotesAll => 'Todas';
 
   @override
+  String get profileNumbersPrivacyLabel =>
+      'Seu placar (posição, dias no topo e acerto)';
+
+  @override
   String profileOfSevenDays(int count) {
     return '$count de 7 dias';
   }
@@ -8955,6 +9003,13 @@ class AppLocalizationsPt extends AppLocalizations {
       'Quantos dias ficou em 1º no ranking geral';
 
   @override
+  String get profileSectionGroupSeals => 'Selos de grupo';
+
+  @override
+  String get profileSectionGroupSealsHint =>
+      'Selos \"Fiel na semana\" dos grupos';
+
+  @override
   String get profileSectionLastScene => 'Última cena';
 
   @override
@@ -8974,14 +9029,25 @@ class AppLocalizationsPt extends AppLocalizations {
       'Semana, sequência e marcos, de Semente a Fruto';
 
   @override
+  String get profileSectionQuestsHint => 'Tarefas da semana em andamento';
+
+  @override
   String get profileSectionRanking => 'Ranking e passos';
 
   @override
   String get profileSectionRankingHint => 'Posição e passos totais';
 
   @override
+  String get profileSectionStudyHint =>
+      'Acerto por profundidade, semanas e gestos';
+
+  @override
   String get profileSectionTrailsHint =>
       'Progresso nas trilhas e selos adquiridos';
+
+  @override
+  String get profileSectionWordHint =>
+      'Quantos favoritos e anotações (o texto fica só com você)';
 
   @override
   String get profileSharedVerses => 'Enviados';
@@ -9691,9 +9757,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String reinforceMissionTitle(String gesture) {
     return 'Reforço: $gesture';
   }
-
-  @override
-  String get reinforcePreparing => 'Preparando…';
 
   @override
   String get reminderDailyEyebrow => 'Lembrete diário';
@@ -11170,6 +11233,23 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String studyDepthAnswers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count respostas',
+      one: '1 resposta',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get studyDepthNext => 'seu próximo passo';
+
+  @override
+  String get studyDepthNone => 'nenhuma ainda';
+
+  @override
   String get studyDepthTitle => 'Profundidade';
 
   @override
@@ -11179,7 +11259,14 @@ class AppLocalizationsPt extends AppLocalizations {
   String get studyFirstTry => 'de primeira';
 
   @override
+  String get studyGesturesTapHint => 'Toque num gesto para treinar só ele.';
+
+  @override
   String get studyGesturesTitle => 'Seus gestos';
+
+  @override
+  String get studyWeeksEmpty =>
+      'Jogue uma cena e a barra desta semana acende aqui.';
 
   @override
   String get studyWeeksTitle => 'Últimas semanas';

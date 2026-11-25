@@ -9,6 +9,33 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.50] — 2026-11-24
+
+### Added
+- Perfil: "Como a caravana te vê" — prévia do perfil como os outros veem, com olho para mostrar/esconder cada seção na hora. Meu estudo (acerto por modo e gesto, barras das últimas 8 semanas, próximo passo) e Na Palavra (livros e trilhas concluídos) só publicam um resumo de números no doc público, e só com o olho aberto; notas, favoritos e erros nunca saem do privado (`lib/models/caravan_profile_extras.dart`)
+- Bíblia em EN/ES (BSB/BES) pelo idioma do app, com escolha por idioma e folha de comparar versículos; o palco segue na JFAAL
+- Aba Bíblia e planos de leitura refeitos; busca na barra do topo; `AppNavRow`/`AppNavDivider` compartilhados entre Ajustes e Perfil
+- Pedido de avaliação na loja: folha neutra do Anan depois de uma cena boa (sem filtrar opinião)
+- Ajustes de voz da leitura em voz alta (TTS)
+- Aviso de atualização lê a versão da loja (`upgrader`); o painel fica só com minBuild/enabled/mensagem
+- Retrospectiva do ano abre sozinha de 28/12 a 31/01, com card na Home (noite + dourado, três últimos postais como selos); retrospectiva rica (palco, Bíblia acesa, marcos, caminhar junto, vídeo do ano no Peregrino+)
+- Livro concluído: selo com festa, data na Bíblia e selos no Perfil; Caravana com meta coletiva do mês e postal
+- Advento: véspera de Natal vira "A pequena Belém" (Mq 5:2)
+- Passe de trilha: quem deu é avisado quando o passe é resgatado
+- Painel: Plus manual por conta e para um grupo inteiro (piloto de igreja); Suporte com dias ativos, acerto, social e novos filtros
+
+### Changed
+- Juntos: um só padrão de palco para Companhia, Desafio, Caravana e Grupos; grupo fechado guarda os dados (`closedAt`) e pode reabrir
+- Perfil redesenhado (capa, seções, calendário da chama, cofre); Juntos e Ajustes em 3 abas
+- Arte das cenas recomprimida (APK arm64 109,3 → 97,4 MB)
+- Conteúdo: EN/ES em V3 para Rute, Joel, João, Mateus, Salmos, Romanos, Lucas, Marcos, Hebreus, Isaías, Apocalipse e Efésios; 62 trilhas de livro na coleção Panorama
+- Versão 1.0.50 (50), iOS 1050
+
+### Fixed
+- Sincronização: favoritos e erros juntam item a item (`listEdits`); itens apagados e progresso zerado não voltam da nuvem; falha ao ler o doc privado não grava listas vazias
+- Privacidade: perfil público sem dado pessoal; grupos não se listam
+- Advento: cena feita sem internet fica pendente e fecha depois
+
 ## [1.0.49] — 2026-11-17
 
 ### Added

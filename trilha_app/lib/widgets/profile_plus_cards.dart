@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../l10n/app_language.dart';
+import '../models/caravan_profile_extras.dart';
+import '../models/caravan_profile_prefs.dart';
 import '../models/difficulty.dart';
 import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
@@ -22,6 +24,7 @@ import '../utils/reading_growth.dart';
 import '../utils/reinforce_picker.dart';
 import '../utils/walk_stats.dart';
 import 'cinematic_icon.dart';
+import 'profile_privacy.dart';
 import 'profile_section.dart';
 import 'ui_primitives.dart';
 
@@ -32,22 +35,48 @@ import 'ui_primitives.dart';
 class ProfileAccuracyCard extends StatelessWidget {
   final bool plusOpen;
 
-  const ProfileAccuracyCard({super.key, required this.plusOpen});
+  /// Perfil de outra pessoa na caravana: o resumo publicado por ela. Sem
+  /// reforço, sem erros e sem frase em segunda pessoa.
+  final CaravanProfileExtras? visitor;
+  final int visitorCorrect;
+  final int visitorAnswered;
+
+  const ProfileAccuracyCard({super.key, required this.plusOpen})
+    : visitor = null,
+      visitorCorrect = 0,
+      visitorAnswered = 0;
+
+  const ProfileAccuracyCard.visitor({
+    super.key,
+    required CaravanProfileExtras this.visitor,
+    this.visitorCorrect = 0,
+    this.visitorAnswered = 0,
+  }) : plusOpen = true;
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    final progress = context.watch<ProgressService>();
+    final v = visitor;
+    final progress = v == null ? context.watch<ProgressService>() : null;
+    final answerCorrect = v?.studyCorrect ?? progress!.answerCorrect;
+    final answerTotal = v?.studyTotal ?? progress!.answerTotal;
+    final weekCorrect = v?.studyWeekCorrect ?? progress!.weekAnswerCorrect;
+    final weekTotal = v?.studyWeekTotal ?? progress!.weekAnswerTotal;
     final stats = WalkStats.from(
-      answerCorrect: progress.answerCorrect,
-      answerTotal: progress.answerTotal,
+      answerCorrect: answerCorrect,
+      answerTotal: answerTotal,
     );
     final weak = stats.weakest;
     final strong = stats.strongest;
-    final mistakes = progress.mistakeQuestionIds.length;
-    final lifeC = progress.lifetimeQuestionsCorrect;
-    final lifeT = progress.lifetimeQuestionsAnswered;
+    final mistakes = progress?.mistakeQuestionIds.length ?? 0;
+    final lifeC = v == null
+        ? progress!.lifetimeQuestionsCorrect
+        : visitorCorrect;
+    final lifeT = v == null
+        ? progress!.lifetimeQuestionsAnswered
+        : visitorAnswered;
+    final weeksEmpty = !weekTotal.values.any((n) => n > 0);
     final overall = lifeT > 0
         ? Accuracy(lifeC, lifeT)
         : Accuracy(
@@ -60,6 +89,10 @@ class ProfileAccuracyCard extends StatelessWidget {
       glyph: CinematicGlyph.target,
       title: l10n.profileStudyTitle,
       caption: l10n.profileAccuracyBody,
+      trailing: PrivacyEye(
+        sections: const {CaravanProfileSection.study},
+        label: l10n.profileStudyTitle,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -72,10 +105,8 @@ class ProfileAccuracyCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    _GrowthLine(
-                      correct: progress.weekAnswerCorrect,
-                      total: progress.weekAnswerTotal,
-                    ),
+                    if (v == null)
+                      _GrowthLine(correct: weekCorrect, total: weekTotal),
                     if (overall.total > 0) ...[
                       const SizedBox(height: 6),
                       Text(
@@ -97,15 +128,37 @@ class ProfileAccuracyCard extends StatelessWidget {
             _Label(l10n.studyDepthTitle),
             const SizedBox(height: AppSpace.sm),
             _DepthPillars(byMode: stats.byMode),
-            const SizedBox(height: AppSpace.lg),
-            _Label(l10n.studyWeeksTitle),
-            const SizedBox(height: AppSpace.sm),
-            _WeeksBars(
-              correct: progress.weekAnswerCorrect,
-              total: progress.weekAnswerTotal,
-            ),
+            if (v == null || !weeksEmpty) ...[
+              const SizedBox(height: AppSpace.lg),
+              _Label(l10n.studyWeeksTitle),
+              const SizedBox(height: AppSpace.sm),
+              _WeeksBars(correct: weekCorrect, total: weekTotal),
+            ],
             const SizedBox(height: AppSpace.lg),
             _Label(l10n.studyGesturesTitle),
+            if (v == null && plusOpen && stats.byGesture.isNotEmpty) ...[
+              const SizedBox(height: 4),
+              Row(
+                children: [
+                  CinematicIcon(
+                    glyph: CinematicGlyph.target,
+                    size: 12,
+                    accent: a.textSecondary,
+                    framed: false,
+                  ),
+                  const SizedBox(width: 5),
+                  Expanded(
+                    child: Text(
+                      l10n.studyGesturesTapHint,
+                      style: AppTypography.body(
+                        size: 12,
+                        color: a.textSecondary,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
             const SizedBox(height: AppSpace.sm),
             if (plusOpen)
               stats.byGesture.isEmpty
@@ -119,6 +172,13 @@ class ProfileAccuracyCard extends StatelessWidget {
                       gestures: stats.byGesture,
                       strong: strong?.$1,
                       weak: weak?.$1,
+                      onReinforce: v != null
+                          ? null
+                          : (g) => startReinforce(
+                              context,
+                              gesture: g,
+                              mode: stats.weakestMode,
+                            ),
                     )
             else
               _LockedGestures(gestures: stats.byGesture),
@@ -129,23 +189,21 @@ class ProfileAccuracyCard extends StatelessWidget {
               style: AppTypography.body(size: 12, color: a.textSecondary),
             ),
           ],
-          const SizedBox(height: AppSpace.lg),
-          if (plusOpen && weak != null) ...[
-            _ReinforceButton(gesture: weak.$1, mode: stats.weakestMode),
-            const SizedBox(height: AppSpace.sm),
-          ],
-          GhostCta(
-            label: mistakes == 0
-                ? l10n.profileStudyErrorsNone
-                : l10n.profileStudyErrors(mistakes),
-            leading: CinematicGlyph.lamp,
-            expanded: true,
-            onTap: () => Navigator.of(context).push(
-              MaterialPageRoute<void>(
-                builder: (_) => const ExplainedErrorsScreen(),
+          if (v == null) ...[
+            const SizedBox(height: AppSpace.lg),
+            GhostCta(
+              label: mistakes == 0
+                  ? l10n.profileStudyErrorsNone
+                  : l10n.profileStudyErrors(mistakes),
+              leading: CinematicGlyph.lamp,
+              expanded: true,
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                  builder: (_) => const ExplainedErrorsScreen(),
+                ),
               ),
             ),
-          ),
+          ],
         ],
       ),
     );
@@ -283,8 +341,9 @@ class _RingPainter extends CustomPainter {
       old.value != value || old.tone != tone || old.track != track;
 }
 
-/// Três colunas, uma por profundidade, na cor do modo. Sem resposta, a
-/// coluna fica em contorno — um convite, não uma falha.
+/// Três cartões, um por profundidade, na cor do modo: ícone, acerto,
+/// barra fina (0–100, honesta entre modos) e quantas respostas sustentam o
+/// número. Sem resposta, o cartão fica apagado — um convite, não uma falha.
 class _DepthPillars extends StatelessWidget {
   final Map<TrailDifficulty, Accuracy> byMode;
 
@@ -295,113 +354,162 @@ class _DepthPillars extends StatelessWidget {
     final a = Appearance.of(context);
     final l10n = context.l10n;
     final still = MediaQuery.disableAnimationsOf(context);
-    const barH = 78.0;
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.end,
-      children: [
-        for (final (i, mode) in TrailDifficulty.values.indexed) ...[
-          if (i > 0) const SizedBox(width: AppSpace.sm),
-          Expanded(
-            child: Builder(
-              builder: (context) {
-                final acc = byMode[mode] ?? const Accuracy(0, 0);
-                final empty = acc.total == 0;
-                final tone = a.ink(DifficultyVisuals.accentFor(mode));
-                return Column(
-                  children: [
-                    Text(
-                      empty ? l10n.studyDepthToExplore : '${acc.percent}%',
-                      style:
-                          AppTypography.title(
-                            size: empty ? 11 : 16,
-                            weight: FontWeight.w900,
-                            color: empty ? a.textFaint : a.text,
-                          ).copyWith(
-                            fontFeatures: const [FontFeature.liningFigures()],
-                          ),
-                    ),
-                    const SizedBox(height: 4),
-                    Container(
-                      height: barH,
-                      width: double.infinity,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(AppRadii.sm),
-                        color: empty ? null : tone.withValues(alpha: 0.08),
-                        border: Border.all(
-                          color: tone.withValues(alpha: empty ? 0.35 : 0.25),
-                          width: empty ? 1.2 : 1,
+    return IntrinsicHeight(
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          for (final (i, mode) in TrailDifficulty.values.indexed) ...[
+            if (i > 0) const SizedBox(width: AppSpace.sm),
+            Expanded(
+              child: Builder(
+                builder: (context) {
+                  final acc = byMode[mode] ?? const Accuracy(0, 0);
+                  final empty = acc.total == 0;
+                  final tone = a.ink(DifficultyVisuals.accentFor(mode));
+                  // Modo vazio logo depois de um já jogado: é o próximo
+                  // passo, não um buraco.
+                  final isNext =
+                      empty &&
+                      i > 0 &&
+                      (byMode[TrailDifficulty.values[i - 1]]?.total ?? 0) > 0;
+                  return Container(
+                    padding: const EdgeInsets.fromLTRB(10, 10, 10, 9),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(AppRadii.sm),
+                      gradient: empty
+                          ? null
+                          : LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                tone.withValues(alpha: 0.18),
+                                tone.withValues(alpha: 0.04),
+                              ],
+                            ),
+                      color: empty ? tone.withValues(alpha: 0.03) : null,
+                      border: Border.all(
+                        color: tone.withValues(
+                          alpha: empty ? (isNext ? 0.35 : 0.18) : 0.45,
                         ),
                       ),
-                      alignment: Alignment.bottomCenter,
-                      child: empty
-                          ? Center(
-                              child: CinematicIcon(
-                                glyph: DifficultyVisuals.glyphFor(mode),
-                                size: 22,
-                                accent: tone.withValues(alpha: 0.5),
-                                framed: false,
-                              ),
-                            )
-                          : TweenAnimationBuilder<double>(
-                              tween: Tween(
-                                begin: still ? acc.percent / 100 : 0,
-                                end: acc.percent / 100,
-                              ),
-                              duration: Duration(milliseconds: 900 + i * 150),
-                              curve: Curves.easeOutCubic,
-                              builder: (context, t, _) => FractionallySizedBox(
-                                heightFactor: t.clamp(0.04, 1.0),
-                                widthFactor: 1,
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(
-                                      AppRadii.sm - 1,
-                                    ),
-                                    gradient: LinearGradient(
-                                      begin: Alignment.bottomCenter,
-                                      end: Alignment.topCenter,
-                                      colors: [
-                                        tone.withValues(alpha: 0.55),
-                                        tone,
-                                      ],
-                                    ),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: tone.withValues(alpha: 0.4),
-                                        blurRadius: 10,
-                                      ),
-                                    ],
-                                  ),
-                                  alignment: Alignment.topCenter,
-                                  padding: const EdgeInsets.only(top: 6),
-                                  child: CinematicIcon(
-                                    glyph: DifficultyVisuals.glyphFor(mode),
-                                    size: 16,
-                                    accent: DifficultyVisuals.inkOn(mode),
-                                    framed: false,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              width: 26,
+                              height: 26,
+                              alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: tone.withValues(
+                                  alpha: empty ? 0.06 : 0.18,
+                                ),
+                                border: Border.all(
+                                  color: tone.withValues(
+                                    alpha: empty ? 0.25 : 0.5,
                                   ),
                                 ),
                               ),
+                              child: CinematicIcon(
+                                glyph: DifficultyVisuals.glyphFor(mode),
+                                size: 14,
+                                accent: empty
+                                    ? tone.withValues(alpha: 0.6)
+                                    : tone,
+                                framed: false,
+                              ),
                             ),
+                            const SizedBox(width: 6),
+                            Expanded(
+                              child: Text(
+                                empty
+                                    ? l10n.studyDepthToExplore
+                                    : '${acc.percent}%',
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                textAlign: TextAlign.end,
+                                style:
+                                    AppTypography.title(
+                                      size: empty ? 11.5 : 18,
+                                      weight: FontWeight.w900,
+                                      height: 1.1,
+                                      color: empty ? a.textFaint : a.text,
+                                    ).copyWith(
+                                      fontFeatures: const [
+                                        FontFeature.liningFigures(),
+                                      ],
+                                    ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        const Spacer(),
+                        const SizedBox(height: 8),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(3),
+                          child: SizedBox(
+                            height: 5,
+                            child: Stack(
+                              fit: StackFit.expand,
+                              children: [
+                                ColoredBox(color: a.progressTrack),
+                                if (!empty)
+                                  TweenAnimationBuilder<double>(
+                                    tween: Tween(
+                                      begin: still ? acc.percent / 100 : 0,
+                                      end: acc.percent / 100,
+                                    ),
+                                    duration: Duration(
+                                      milliseconds: 900 + i * 150,
+                                    ),
+                                    curve: Curves.easeOutCubic,
+                                    builder: (context, t, _) =>
+                                        FractionallySizedBox(
+                                          alignment: Alignment.centerLeft,
+                                          widthFactor: t.clamp(0.0, 1.0),
+                                          child: ColoredBox(color: tone),
+                                        ),
+                                  ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          mode.labelPt,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.body(
+                            size: 11.5,
+                            weight: FontWeight.w800,
+                            color: empty ? a.textFaint : a.text,
+                          ),
+                        ),
+                        Text(
+                          isNext
+                              ? l10n.studyDepthNext
+                              : empty
+                              ? l10n.studyDepthNone
+                              : l10n.studyDepthAnswers(acc.total),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.body(
+                            size: 10.5,
+                            color: a.textFaint,
+                          ),
+                        ),
+                      ],
                     ),
-                    const SizedBox(height: 6),
-                    Text(
-                      mode.labelPt,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.body(
-                        size: 11,
-                        weight: FontWeight.w800,
-                        color: empty ? a.textFaint : a.textSecondary,
-                      ),
-                    ),
-                  ],
-                );
-              },
+                  );
+                },
+              ),
             ),
-          ),
+          ],
         ],
-      ],
+      ),
     );
   }
 }
@@ -428,6 +536,25 @@ class _WeeksBars extends StatelessWidget {
       final w = e.key.split('.').first;
       t[w] = (t[w] ?? 0) + e.value;
       c[w] = (c[w] ?? 0) + (correct[e.key] ?? 0);
+    }
+    if (keys.every((w) => (t[w] ?? 0) == 0)) {
+      return Row(
+        children: [
+          CinematicIcon(
+            glyph: CinematicGlyph.seed,
+            size: 13,
+            accent: a.textSecondary,
+            framed: false,
+          ),
+          const SizedBox(width: 6),
+          Expanded(
+            child: Text(
+              context.l10n.studyWeeksEmpty,
+              style: AppTypography.body(size: 12, color: a.textSecondary),
+            ),
+          ),
+        ],
+      );
     }
     const h = 52.0;
     return SizedBox(
@@ -486,76 +613,240 @@ class _WeeksBars extends StatelessWidget {
   }
 }
 
-/// Mapa dos gestos: um chip por gesto, colorido pelo acerto; o firme leva
-/// coroa e o a reforçar, o alvo.
-class _GestureMap extends StatelessWidget {
+/// Mapa dos gestos: uma linha por gesto, do mais firme ao a reforçar, com
+/// barra de acerto na cor da faixa. O ponto forte e o a reforçar ganham
+/// etiqueta; o ícone do gesto fica sempre o mesmo. Com [onReinforce], cada
+/// linha abre o reforço daquele gesto.
+class _GestureMap extends StatefulWidget {
   final List<(ExerciseType, Accuracy)> gestures;
   final ExerciseType? strong;
   final ExerciseType? weak;
+  final Future<void> Function(ExerciseType gesture)? onReinforce;
 
-  const _GestureMap({required this.gestures, this.strong, this.weak});
+  const _GestureMap({
+    required this.gestures,
+    this.strong,
+    this.weak,
+    this.onReinforce,
+  });
+
+  @override
+  State<_GestureMap> createState() => _GestureMapState();
+}
+
+class _GestureMapState extends State<_GestureMap> {
+  ExerciseType? _busy;
+
+  Future<void> _tap(ExerciseType g) async {
+    if (_busy != null) return;
+    setState(() => _busy = g);
+    try {
+      await widget.onReinforce!(g);
+    } finally {
+      if (mounted) setState(() => _busy = null);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final strong = widget.strong, weak = widget.weak;
+    final sorted = [...widget.gestures]
+      ..sort((x, y) => y.$2.percent.compareTo(x.$2.percent));
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        for (final (i, (g, acc)) in sorted.indexed) ...[
+          if (i > 0) const SizedBox(height: 6),
+          _GestureRow(
+            busy: _busy == g,
+            onTap: widget.onReinforce == null || _busy != null
+                ? null
+                : () => _tap(g),
+            gesture: g,
+            accuracy: acc,
+            index: i,
+            tag: g == strong
+                ? _GestureTag.strong
+                : g == weak
+                ? _GestureTag.weak
+                : null,
+          ),
+        ],
+      ],
+    );
+  }
+}
+
+enum _GestureTag { strong, weak }
+
+class _GestureRow extends StatelessWidget {
+  final ExerciseType gesture;
+  final Accuracy accuracy;
+  final int index;
+  final _GestureTag? tag;
+  final bool busy;
+  final VoidCallback? onTap;
+
+  const _GestureRow({
+    required this.gesture,
+    required this.accuracy,
+    required this.index,
+    this.tag,
+    this.busy = false,
+    this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final sorted = [...gestures]
-      ..sort((x, y) => y.$2.percent.compareTo(x.$2.percent));
-    return Wrap(
-      spacing: 6,
-      runSpacing: 6,
+    final l10n = context.l10n;
+    final pct = accuracy.percent;
+    final tone = _tierColor(pct, a);
+    final still = MediaQuery.disableAnimationsOf(context);
+    final tagTone = tag == _GestureTag.weak
+        ? a.ink(AppRoles.lamp)
+        : a.ink(AppRoles.success);
+    final tappable = onTap != null || busy;
+    final body = Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        for (final (g, acc) in sorted)
-          Builder(
-            builder: (context) {
-              final tone = _tierColor(acc.percent, a);
-              final mark = g == strong
-                  ? CinematicGlyph.crown
-                  : g == weak
-                  ? CinematicGlyph.target
-                  : null;
-              return Container(
-                padding: const EdgeInsets.fromLTRB(8, 5, 10, 5),
+        Row(
+          children: [
+            CinematicIcon(
+              glyph: gestureGlyphOf(gesture),
+              size: 14,
+              accent: a.textSecondary,
+              framed: false,
+            ),
+            const SizedBox(width: 6),
+            Flexible(
+              child: Text(
+                gesture.labelPt,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: AppTypography.body(
+                  size: 13,
+                  weight: FontWeight.w800,
+                  color: a.text,
+                ),
+              ),
+            ),
+            if (tag != null) ...[
+              const SizedBox(width: 6),
+              Container(
+                padding: const EdgeInsets.fromLTRB(5, 2, 7, 2),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(AppRadii.pill),
-                  color: tone.withValues(alpha: 0.14),
-                  border: Border.all(
-                    color: tone.withValues(alpha: mark != null ? 0.8 : 0.35),
-                    width: mark != null ? 1.4 : 1,
-                  ),
+                  color: tagTone.withValues(alpha: 0.14),
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     CinematicIcon(
-                      glyph: mark ?? gestureGlyphOf(g),
-                      size: 13,
-                      accent: tone,
+                      glyph: tag == _GestureTag.weak
+                          ? CinematicGlyph.target
+                          : CinematicGlyph.crown,
+                      size: 10,
+                      accent: tagTone,
                       framed: false,
                     ),
-                    const SizedBox(width: 5),
+                    const SizedBox(width: 3),
                     Text(
-                      g.labelPt,
-                      style: AppTypography.body(
-                        size: 12,
-                        weight: FontWeight.w800,
-                        color: a.text,
-                      ),
-                    ),
-                    const SizedBox(width: 6),
-                    Text(
-                      '${acc.percent}%',
-                      style: AppTypography.title(
-                        size: 12,
+                      tag == _GestureTag.weak
+                          ? l10n.profileAccuracyToStrengthen
+                          : l10n.profileAccuracyStrongest,
+                      style: AppTypography.label(
+                        size: 9.5,
                         weight: FontWeight.w900,
-                        color: tone,
+                        color: tagTone,
                       ),
                     ),
                   ],
                 ),
-              );
-            },
+              ),
+            ],
+            const Spacer(),
+            Text(
+              '$pct%',
+              style: AppTypography.title(
+                size: 13,
+                weight: FontWeight.w900,
+                color: tone,
+              ).copyWith(fontFeatures: const [FontFeature.liningFigures()]),
+            ),
+            if (tappable) ...[
+              const SizedBox(width: 4),
+              SizedBox(
+                width: 14,
+                height: 14,
+                child: busy
+                    ? CircularProgressIndicator(
+                        color: a.textSecondary,
+                        strokeWidth: 1.6,
+                      )
+                    : ListChevron(color: a.textFaint, size: 14),
+              ),
+            ],
+          ],
+        ),
+        const SizedBox(height: 5),
+        ClipRRect(
+          borderRadius: BorderRadius.circular(3),
+          child: SizedBox(
+            height: 6,
+            child: Stack(
+              fit: StackFit.expand,
+              children: [
+                ColoredBox(color: a.progressTrack),
+                TweenAnimationBuilder<double>(
+                  tween: Tween(begin: still ? pct / 100 : 0, end: pct / 100),
+                  duration: Duration(milliseconds: 800 + index * 90),
+                  curve: Curves.easeOutCubic,
+                  builder: (context, t, _) => FractionallySizedBox(
+                    alignment: Alignment.centerLeft,
+                    widthFactor: t.clamp(0.0, 1.0),
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(3),
+                        gradient: LinearGradient(
+                          colors: [tone.withValues(alpha: 0.55), tone],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
+        ),
       ],
+    );
+    final radius = BorderRadius.circular(AppRadii.sm);
+    final tile = Ink(
+      decoration: BoxDecoration(
+        borderRadius: radius,
+        color: tag == _GestureTag.weak
+            ? tagTone.withValues(alpha: 0.08)
+            : a.text.withValues(alpha: 0.04),
+        border: Border.all(
+          color: tag == _GestureTag.weak
+              ? tagTone.withValues(alpha: 0.55)
+              : a.text.withValues(alpha: 0.10),
+        ),
+      ),
+      padding: const EdgeInsets.fromLTRB(10, 9, 8, 9),
+      child: body,
+    );
+    if (!tappable) {
+      return Material(type: MaterialType.transparency, child: tile);
+    }
+    return Semantics(
+      button: true,
+      label: l10n.reinforceCta(gesture.labelPt),
+      child: Material(
+        type: MaterialType.transparency,
+        child: InkWell(borderRadius: radius, onTap: onTap, child: tile),
+      ),
     );
   }
 }
@@ -780,37 +1071,4 @@ Future<void> startReinforce(
       ),
     ),
   );
-}
-
-class _ReinforceButton extends StatefulWidget {
-  final ExerciseType gesture;
-  final TrailDifficulty? mode;
-
-  const _ReinforceButton({required this.gesture, this.mode});
-
-  @override
-  State<_ReinforceButton> createState() => _ReinforceButtonState();
-}
-
-class _ReinforceButtonState extends State<_ReinforceButton> {
-  bool _loading = false;
-
-  Future<void> _start() async {
-    setState(() => _loading = true);
-    await startReinforce(context, gesture: widget.gesture, mode: widget.mode);
-    if (mounted) setState(() => _loading = false);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final l10n = context.l10n;
-    return CopperCta(
-      label: _loading
-          ? l10n.reinforcePreparing
-          : l10n.reinforceCta(widget.gesture.labelPt),
-      leading: CinematicGlyph.target,
-      expanded: true,
-      onTap: _loading ? null : _start,
-    );
-  }
 }

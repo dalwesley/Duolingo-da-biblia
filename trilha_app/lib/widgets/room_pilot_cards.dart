@@ -1,3 +1,5 @@
+import 'profile_privacy.dart';
+import '../models/caravan_profile_prefs.dart';
 import 'package:flutter/material.dart';
 
 import '../l10n/app_language.dart';
@@ -603,6 +605,11 @@ class GroupSealsCard extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+          // Só aparece no próprio perfil (fora dele o olho some).
+          PrivacyEye(
+            sections: const {CaravanProfileSection.groupSeals},
+            label: l10n.profileSectionGroupSeals,
           ),
         ],
       ),

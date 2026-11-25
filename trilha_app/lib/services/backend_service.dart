@@ -11,6 +11,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../data/season_walk_catalog.dart';
 import '../firebase_options.dart';
 import '../l10n/l10n_global.dart';
+import '../models/caravan_profile_extras.dart';
 import '../models/pilgrim_medal_catalog.dart';
 import '../models/recognition.dart';
 import '../models/room_week.dart';
@@ -974,6 +975,10 @@ class BackendService extends ChangeNotifier {
     if (settings is Map && settings.containsKey('coverScene')) {
       public['coverScene'] = settings['coverScene'] ?? '';
     }
+    // Meu estudo / Na Palavra: só o resumo, e só com o olho aberto.
+    for (final e in CaravanProfileExtras.publicSummary(full).entries) {
+      if (e.value != null) public[e.key] = e.value;
+    }
     return (public: public, private: private);
   }
 
@@ -1034,9 +1039,21 @@ class BackendService extends ChangeNotifier {
     // a regra recusa). Sem o privado, ele espera o próximo save.
     // Sem o privado, as cópias antigas ficam onde estão (nada se perde) e
     // o pessoal espera o próximo save.
+    // Resumo de seção escondida sai do público (o olho fechou).
+    final hiddenSummary = {
+      for (final k in [
+        ...CaravanProfileExtras.studyKeys,
+        CaravanProfileExtras.wordKey,
+      ])
+        if (!split.public.containsKey(k)) k: FieldValue.delete(),
+    };
     final public = privateOk
-        ? {...split.public, for (final k in privateKeys) k: FieldValue.delete()}
-        : split.public;
+        ? {
+            ...split.public,
+            ...hiddenSummary,
+            for (final k in privateKeys) k: FieldValue.delete(),
+          }
+        : {...split.public, ...hiddenSummary};
     await _db
         .doc('users/$_uid')
         .set(public, SetOptions(mergeFields: public.keys.toList()))

@@ -252,7 +252,11 @@ class WeeklyQuestsList extends StatelessWidget {
         ],
         for (var i = 0; i < WeeklyQuestDefs.all.length; i++) ...[
           if (i > 0) const SizedBox(height: AppSpace.md),
-          WeeklyQuestRow(quest: WeeklyQuestDefs.all[i], progress: progress),
+          WeeklyQuestRow(
+            quest: WeeklyQuestDefs.all[i],
+            value: progress.weeklyQuestProgress(WeeklyQuestDefs.all[i].id),
+            claimed: progress.isWeeklyQuestClaimed(WeeklyQuestDefs.all[i].id),
+          ),
         ],
       ],
     );
@@ -261,12 +265,14 @@ class WeeklyQuestsList extends StatelessWidget {
 
 class WeeklyQuestRow extends StatelessWidget {
   final DailyQuest quest;
-  final ProgressService progress;
+  final int value;
+  final bool claimed;
 
   const WeeklyQuestRow({
     super.key,
     required this.quest,
-    required this.progress,
+    required this.value,
+    required this.claimed,
   });
 
   static const _rewardSlot = 56.0;
@@ -274,8 +280,6 @@ class WeeklyQuestRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final value = progress.weeklyQuestProgress(quest.id);
-    final claimed = progress.isWeeklyQuestClaimed(quest.id);
     final done = claimed || value >= quest.target;
     final pct = (value / quest.target).clamp(0.0, 1.0);
     // Em curso: cenas no tom de Explorar (onde as cenas moram), dias e

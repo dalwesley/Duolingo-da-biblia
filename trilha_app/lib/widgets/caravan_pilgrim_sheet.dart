@@ -20,8 +20,11 @@ import 'pilgrim_profile_cover.dart';
 import 'profile_hero.dart' show ProfileHero;
 import 'recognition_actions.dart';
 import '../services/progress_service.dart';
+import '../utils/appearance.dart';
 import '../utils/spiritual_growth.dart';
 import 'pilgrim_profile_sections.dart';
+import 'profile_plus_cards.dart' show ProfileAccuracyCard;
+import 'room_pilot_cards.dart' show GroupSealsCard;
 import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 import 'user_moderation_sheet.dart';
@@ -43,11 +46,33 @@ Future<void> showCaravanPilgrimSheet(
   );
 }
 
+/// Prévia do **próprio** perfil como a caravana vê. No topo, os olhos de
+/// todas as seções: tocar muda o que aparece e a vitrine responde na hora.
+Future<void> showCaravanSelfPreviewSheet(
+  BuildContext context, {
+  required LeagueEntry entry,
+  required int rank,
+}) {
+  ActHaptics.light();
+  return showAppSheet<void>(
+    context,
+    enableDrag: true,
+    isDismissible: true,
+    builder: (ctx) =>
+        _CaravanPilgrimSheet(entry: entry, rank: rank, preview: true),
+  );
+}
+
 class _CaravanPilgrimSheet extends StatefulWidget {
   final LeagueEntry entry;
   final int rank;
+  final bool preview;
 
-  const _CaravanPilgrimSheet({required this.entry, required this.rank});
+  const _CaravanPilgrimSheet({
+    required this.entry,
+    required this.rank,
+    this.preview = false,
+  });
 
   @override
   State<_CaravanPilgrimSheet> createState() => _CaravanPilgrimSheetState();
@@ -76,7 +101,9 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
     try {
       final backend = context.read<BackendService>();
       final results = await Future.wait<Object?>([
-        loadEnrichedVisitorProfile(entry: widget.entry, backend: backend),
+        widget.preview
+            ? loadEnrichedOwnerProfile(context.read<ProgressService>(), backend)
+            : loadEnrichedVisitorProfile(entry: widget.entry, backend: backend),
         TrailRepository().getTrails(),
       ]);
       if (!mounted) return;
@@ -86,7 +113,7 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
         _error = null;
         _loading = false;
       });
-      if (widget.rank == 1) ActHaptics.confirm();
+      if (widget.rank == 1 && !widget.preview) ActHaptics.confirm();
     } catch (e, st) {
       debugPrint('CaravanPilgrimSheet: $e\n$st');
       if (!mounted) return;
@@ -107,6 +134,7 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
 
   /// Jogador real (com conta) — os de exemplo não têm uid.
   String? get _reportableUid {
+    if (widget.preview) return null;
     final uid = widget.entry.uid;
     return uid == null || uid.isEmpty ? null : uid;
   }
@@ -115,7 +143,12 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
   Widget build(BuildContext context) {
     // Alça + margens do painel ficam fora da área de conteúdo.
     final sheetHeight = MediaQuery.sizeOf(context).height * 0.82 - 32;
-    final profile = _profile;
+    // Na prévia, as escolhas vêm ao vivo do aparelho.
+    final profile = widget.preview && _profile != null
+        ? _profile!.withPrefs(
+            context.watch<ProgressService>().caravanProfilePrefs,
+          )
+        : _profile;
     // Pódio (1–3) acende em metal; do 4º em diante o halo é chrome neutro.
     final podium = widget.rank > 0 && widget.rank <= 3;
     final rankColor = podium ? pilgrimRankAccent(widget.rank) : AppRoles.chrome;
@@ -182,6 +215,16 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
                               ),
                             ),
                           )
+                        else if (widget.preview)
+                          const Padding(
+                            padding: EdgeInsets.fromLTRB(
+                              AppSpace.screen,
+                              4,
+                              AppSpace.screen,
+                              AppSpace.section,
+                            ),
+                            child: _SelfPreviewControls(),
+                          )
                         else
                           const SizedBox(height: 12),
                         Padding(
@@ -195,9 +238,10 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
                             catalog: _catalog,
                           ),
                         ),
-                        if (context
-                            .watch<RemoteConfigService>()
-                            .challengeEnabled)
+                        if (!widget.preview &&
+                            context
+                                .watch<RemoteConfigService>()
+                                .challengeEnabled)
                           CornerProfileCta(profile: profile, catalog: _catalog),
                       ],
                     ),
@@ -236,6 +280,17 @@ class _VisitorProfileMirror extends StatelessWidget {
         _visible(CaravanProfileSection.trails) ||
         _visible(CaravanProfileSection.bible) ||
         _visible(CaravanProfileSection.medals);
+    final extras = profile.extras;
+    final showStudy = _visible(CaravanProfileSection.study) && extras.hasStudy;
+    final showWord =
+        _visible(CaravanProfileSection.word) &&
+        (profile.bibleChaptersRead > 0 ||
+            extras.bookmarkCount > 0 ||
+            extras.noteCount > 0);
+    final showQuests =
+        _visible(CaravanProfileSection.quests) && extras.questsThisWeek;
+    final showGroupSeals =
+        _visible(CaravanProfileSection.groupSeals) && extras.groupSealCount > 0;
     final identityVisible =
         showRanking || showPresence || showAccuracy || showLeader;
 
@@ -340,6 +395,19 @@ class _VisitorProfileMirror extends StatelessWidget {
           supporter: profile.supporter,
           pilgrim: profile.pilgrim,
           pioneer: profile.pioneer,
+          footer: showPresence
+              ? PilgrimStreakFooter(
+                  streak: profile.streak,
+                  playDates: profile.playDates,
+                  walk: entry.walkedToday
+                      ? l10n.commonToday
+                      : pilgrimFormatShort(profile.lastWalkDate),
+                  online: pilgrimFormatOnline(profile.lastSeenDate),
+                  walkedToday: entry.walkedToday,
+                  showStreak: profile.streak > 0,
+                  bestStreak: profile.bestStreak,
+                )
+              : null,
           coverAction: profile.uid != null && walkDate != null
               ? RecognizeHeartButton(
                   toUid: profile.uid,
@@ -349,18 +417,15 @@ class _VisitorProfileMirror extends StatelessWidget {
                 )
               : null,
         ),
-        if (showPresence) ...[
+        // Mesma ordem do perfil próprio: tarefas e selos de grupo logo
+        // depois do topo.
+        if (showQuests) ...[
           const SizedBox(height: AppSpace.section),
-          PilgrimConstancyCard(
-            streak: profile.streak,
-            playDates: profile.playDates,
-            walk: entry.walkedToday
-                ? l10n.commonToday
-                : pilgrimFormatShort(profile.lastWalkDate),
-            online: pilgrimFormatOnline(profile.lastSeenDate),
-            walkedToday: entry.walkedToday,
-            showStreak: profile.streak > 0,
-          ),
+          PilgrimQuestsCard(extras: extras),
+        ],
+        if (showGroupSeals) ...[
+          const SizedBox(height: AppSpace.section),
+          GroupSealsCard(count: extras.groupSealCount),
         ],
         if (showLater || !identityVisible) ...[
           const SizedBox(height: AppSpace.section),
@@ -385,7 +450,158 @@ class _VisitorProfileMirror extends StatelessWidget {
                   ),
           ),
         ],
+        if (showStudy) ...[
+          const SizedBox(height: AppSpace.section),
+          ProfileAccuracyCard.visitor(
+            visitor: extras,
+            visitorCorrect: profile.lifetimeQuestionsCorrect,
+            visitorAnswered: profile.lifetimeQuestionsAnswered,
+          ),
+        ],
+        if (showWord) ...[
+          const SizedBox(height: AppSpace.section),
+          NaPalavraCard(
+            chapters: profile.bibleChaptersRead,
+            books: profile.completeBibleBooks.length,
+            favorites: extras.bookmarkCount,
+            notes: extras.noteCount,
+          ),
+        ],
       ],
+    );
+  }
+}
+
+/// Topo da prévia: o que é e um olho por seção. Mesmas escolhas dos olhos
+/// nos cards do perfil e de Ajustes.
+class _SelfPreviewControls extends StatelessWidget {
+  const _SelfPreviewControls();
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final progress = context.watch<ProgressService>();
+    final prefs = progress.caravanProfilePrefs;
+    return Container(
+      padding: const EdgeInsets.all(AppSpace.md),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        color: AppRoles.presence.withValues(alpha: 0.08),
+        border: Border.all(color: AppRoles.presence.withValues(alpha: 0.35)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const CinematicIcon(
+                glyph: CinematicGlyph.people,
+                size: 16,
+                accent: AppRoles.presence,
+                framed: false,
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  l10n.caravanPreviewTitle,
+                  style: AppTypography.title(size: 15, color: a.text),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 4),
+          Text(
+            l10n.caravanPreviewBody,
+            style: AppTypography.body(size: 12, color: a.textSecondary),
+          ),
+          const SizedBox(height: AppSpace.sm),
+          Wrap(
+            spacing: 6,
+            runSpacing: 6,
+            children: [
+              for (final s in CaravanProfileSection.values)
+                _SectionEyeChip(
+                  label: s.label,
+                  visible: prefs.isVisible(s),
+                  onTap: () {
+                    ActHaptics.tap();
+                    progress.updateCaravanProfilePrefs(
+                      prefs.copyWithSection(s, !prefs.isVisible(s)),
+                    );
+                  },
+                ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _SectionEyeChip extends StatelessWidget {
+  final String label;
+  final bool visible;
+  final VoidCallback onTap;
+
+  const _SectionEyeChip({
+    required this.label,
+    required this.visible,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final ink = visible ? AppRoles.presence : a.textFaint;
+    return Semantics(
+      button: true,
+      toggled: visible,
+      label: visible
+          ? context.l10n.profilePrivacyShownSemantics(label)
+          : context.l10n.profilePrivacyHiddenSemantics(label),
+      excludeSemantics: true,
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: onTap,
+        child: AnimatedContainer(
+          duration: AppMotion.quick,
+          constraints: const BoxConstraints(minHeight: 36),
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(AppRadii.pill),
+            color: visible
+                ? AppRoles.presence.withValues(alpha: 0.14)
+                : Colors.transparent,
+            border: Border.all(
+              color: visible
+                  ? AppRoles.presence.withValues(alpha: 0.55)
+                  : a.cardBorder,
+            ),
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(
+                visible
+                    ? Icons.visibility_outlined
+                    : Icons.visibility_off_outlined,
+                size: 14,
+                color: ink,
+              ),
+              const SizedBox(width: 5),
+              Text(
+                label,
+                style: AppTypography.body(
+                  size: 12,
+                  weight: FontWeight.w800,
+                  color: visible ? a.text : a.textFaint,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

@@ -14,6 +14,7 @@ import '../services/remote_config_service.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../widgets/caravan_pilgrim_sheet.dart';
 import '../utils/layout_utils.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/app_sheet.dart';
@@ -230,6 +231,15 @@ class _MeScreenState extends State<MeScreen> {
               profile?.lifetimeQuestionsAnswered ??
               progress.lifetimeQuestionsAnswered,
           rank: _overallRank,
+          // Mesmo que a caravana vê no topo: posição, dias no topo e acerto.
+          coverAction: PrivacyEye(
+            sections: const {
+              CaravanProfileSection.ranking,
+              CaravanProfileSection.daysAsLeader,
+              CaravanProfileSection.accuracy,
+            },
+            label: context.l10n.profileNumbersPrivacyLabel,
+          ),
           coverScene: _coverScene(progress),
           onChangeCover: () => showProfileCoverPicker(
             context,
@@ -296,16 +306,25 @@ class _MeScreenState extends State<MeScreen> {
             accent: AppRoles.lamp,
             glyph: CinematicGlyph.calendar,
             title: context.l10n.questWeeklyTitle,
-            trailing: Text(
-              context.l10n.questCountOf(
-                progress.weeklyQuestsCompleted,
-                WeeklyQuestDefs.all.length,
-              ),
-              style: AppTypography.title(
-                size: 13,
-                weight: FontWeight.w900,
-                color: AppRoles.lamp,
-              ),
+            trailing: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  context.l10n.questCountOf(
+                    progress.weeklyQuestsCompleted,
+                    WeeklyQuestDefs.all.length,
+                  ),
+                  style: AppTypography.title(
+                    size: 13,
+                    weight: FontWeight.w900,
+                    color: AppRoles.lamp,
+                  ),
+                ),
+                PrivacyEye(
+                  sections: const {CaravanProfileSection.quests},
+                  label: context.l10n.questWeeklyTitle,
+                ),
+              ],
             ),
             child: const WeeklyQuestsList(showHeader: false),
           ),
@@ -317,10 +336,10 @@ class _MeScreenState extends State<MeScreen> {
       ],
     ];
 
+    final today = DateTime.now().toIso8601String().substring(0, 10);
     if (_caravanLoading) {
       body.addAll([const SizedBox(height: AppSpace.xl), const AppSpinner()]);
     } else if (profile != null) {
-      final today = DateTime.now().toIso8601String().substring(0, 10);
       body.addAll([
         const SizedBox(height: AppSpace.section),
         pad(
@@ -342,13 +361,10 @@ class _MeScreenState extends State<MeScreen> {
               CaravanProfileSection.daysAsLeader,
               CaravanProfileSection.accuracy,
               CaravanProfileSection.presence,
-              // Escrituras e última cena repetem o cofre e "Suas trilhas".
-              // Na caravana os dois continuam, para quem abre o perfil de outro.
-              CaravanProfileSection.bible,
-              CaravanProfileSection.lastMission,
             },
+            // Perfil e caravana mostram as mesmas seções (11/2026): última
+            // cena, trilha em destaque e Escrituras também aqui, com olho.
             includeStreakMilestones: false,
-            showTrailPath: false,
             collectionsFirst: true,
             showOwnerPrivacyBanner: false,
             onStartWalking: _backToTrail,
@@ -358,6 +374,33 @@ class _MeScreenState extends State<MeScreen> {
     }
 
     body.addAll([
+      const SizedBox(height: AppSpace.section),
+      // O que a caravana vê: a vitrine de verdade, com um olho por seção.
+      // Cobre o que o perfil próprio não mostra (ranking, acerto, última
+      // cena, Escrituras, trilha em destaque).
+      pad(
+        ProfileSection(
+          accent: AppRoles.presence,
+          glyph: CinematicGlyph.people,
+          title: context.l10n.caravanPreviewTitle,
+          caption: context.l10n.caravanPreviewCardCaption,
+          trailing: ListChevron(color: Appearance.of(context).textSecondary),
+          onTap: () => showCaravanSelfPreviewSheet(
+            context,
+            rank: _overallRank,
+            entry: LeagueEntry(
+              uid: backend.uid,
+              name: progress.publicUserName,
+              steps: progress.steps,
+              isUser: true,
+              portraitStyle: progress.settings.portraitStyle,
+              lastWalkDate: progress.lastPlayedDate,
+              lastSeenDate: today,
+              photoUrl: backend.userPhotoUrl,
+            ),
+          ),
+        ),
+      ),
       const SizedBox(height: AppSpace.section),
       // Meu estudo: evolução, acerto e erros (todos); gesto e reforço (Plus).
       pad(ProfileAccuracyCard(plusOpen: plusOpen)),
@@ -483,98 +526,16 @@ class _NaPalavraLine extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = context.l10n;
     final progress = context.watch<ProgressService>();
-    final stats = [
-      (
-        CinematicGlyph.book,
-        progress.readBibleChapters.length,
-        l10n.wordStatChapters,
-      ),
-      (
-        CinematicGlyph.library,
-        progress.booksFinishedOn.length,
-        l10n.wordStatBooks,
-      ),
-      (
-        CinematicGlyph.bookmark,
-        progress.parseBookmarks().length,
-        l10n.wordStatFavorites,
-      ),
-      (CinematicGlyph.pencil, progress.parseNotes().length, l10n.wordStatNotes),
-    ];
-    const accent = AppRoles.navBible;
-    final a = Appearance.of(context);
-    return ProfileSection(
-      accent: accent,
-      glyph: CinematicGlyph.book,
-      title: l10n.profileInTheWord,
-      trailing: CinematicIcon(
-        glyph: CinematicGlyph.chevron,
-        size: 14,
-        accent: a.textSecondary,
-        framed: false,
-      ),
+    return NaPalavraCard(
+      chapters: progress.readBibleChapters.length,
+      books: progress.booksFinishedOn.length,
+      favorites: progress.parseBookmarks().length,
+      notes: progress.parseNotes().length,
       onTap: () {
         ActHaptics.tap();
         showAppSheet<void>(context, builder: (_) => const _NaPalavraSheet());
       },
-      child: Row(
-        children: [
-          for (final (i, (glyph, value, label)) in stats.indexed) ...[
-            if (i > 0) const SizedBox(width: AppSpace.sm),
-            Expanded(
-              child: Container(
-                padding: const EdgeInsets.symmetric(vertical: AppSpace.sm),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(AppRadii.md),
-                  color: a.insetFill,
-                  border: Border.all(
-                    color: accent.withValues(alpha: value > 0 ? 0.35 : 0.12),
-                  ),
-                ),
-                child: Column(
-                  children: [
-                    CinematicIcon(
-                      glyph: glyph,
-                      size: 18,
-                      accent: value > 0 ? a.ink(accent) : a.textFaint,
-                      framed: false,
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      '$value',
-                      style:
-                          AppTypography.title(
-                            size: 20,
-                            weight: FontWeight.w900,
-                            height: 1,
-                            color: value > 0 ? a.text : a.textFaint,
-                          ).copyWith(
-                            fontFeatures: const [FontFeature.liningFigures()],
-                          ),
-                    ),
-                    const SizedBox(height: 3),
-                    FittedBox(
-                      fit: BoxFit.scaleDown,
-                      child: Text(
-                        label.toUpperCase(),
-                        maxLines: 1,
-                        style: AppTypography.label(
-                          size: 9,
-                          letterSpacing: 0.8,
-                          weight: FontWeight.w900,
-                          color: a.textSecondary,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ],
-        ],
-      ),
     );
   }
 }

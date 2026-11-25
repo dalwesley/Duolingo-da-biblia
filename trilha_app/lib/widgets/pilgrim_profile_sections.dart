@@ -1,3 +1,6 @@
+import 'milestone_chests.dart';
+import '../models/daily_quest.dart';
+import '../models/caravan_profile_extras.dart';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
@@ -521,46 +524,229 @@ class PilgrimProfileDetailSections extends StatelessWidget {
     );
   }
 
-  Widget _escriturasPanel() {
-    final chapters = profile.bibleChaptersRead;
-    final books = profile.completeBibleBooks.length;
-    final l10n = L10n.current;
-    final subtitle = chapters == 0
+  Widget _escriturasPanel() => PilgrimScripturesCard(profile: profile);
+}
+
+/// Escrituras: capítulos lidos, os dois Testamentos em barra e os livros
+/// começados (mesma leitura da aba Bíblia). Até [_shown] livros; o resto
+/// abre no toque.
+class PilgrimScripturesCard extends StatefulWidget {
+  final CaravanPilgrimProfile profile;
+
+  const PilgrimScripturesCard({super.key, required this.profile});
+
+  @override
+  State<PilgrimScripturesCard> createState() => _PilgrimScripturesCardState();
+}
+
+class _PilgrimScripturesCardState extends State<PilgrimScripturesCard> {
+  static const _shown = 4;
+  bool _open = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final p = widget.profile;
+    final chapters = p.bibleChaptersRead;
+    final books = [...p.bibleBookProgress]
+      ..sort((x, y) {
+        if (x.complete != y.complete) return x.complete ? -1 : 1;
+        final c = y.progress.compareTo(x.progress);
+        return c != 0 ? c : y.read.compareTo(x.read);
+      });
+    final done = books.where((b) => b.complete).length;
+    final caption = chapters == 0
         ? l10n.pilgrimNoReadingYet
-        : books == 0
+        : books.isEmpty
         ? l10n.pilgrimChaptersWordMedal(chapters)
-        : l10n.pilgrimChaptersBooks(chapters, books);
-    final hasBooks = chapters > 0 && profile.completeBookNames.isNotEmpty;
+        : done == 0
+        ? l10n.pilgrimChaptersBooks(chapters, books.length)
+        : '${l10n.pilgrimChaptersBooks(chapters, books.length)}'
+              ' · ${l10n.pilgrimBooksDone(done)}';
+    final otRead = books
+        .where((b) => !b.newTestament)
+        .fold(0, (n, b) => n + b.read);
+    final ntRead = books
+        .where((b) => b.newTestament)
+        .fold(0, (n, b) => n + b.read);
+    final visible = _open ? books : books.take(_shown).toList();
+    final hidden = books.length - visible.length;
+
     return ProfileSection(
       accent: AppRoles.navBible,
       glyph: CinematicGlyph.book,
       title: l10n.pilgrimScriptures,
-      caption: subtitle,
+      caption: caption,
       trailing: PrivacyEye(
         sections: const {CaravanProfileSection.bible},
         label: l10n.pilgrimScriptures,
       ),
-      child: !hasBooks
+      child: books.isEmpty
           ? null
           : Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                ...[
-                  Wrap(
-                    spacing: 8,
-                    runSpacing: 8,
+                if (p.otChaptersTotal > 0 && p.ntChaptersTotal > 0) ...[
+                  Row(
                     children: [
-                      for (final name in profile.completeBookNames.take(8))
-                        _ScriptureChip(name: name),
-                      if (profile.completeBookNames.length > 8)
-                        _ScriptureChip(
-                          name: '+${profile.completeBookNames.length - 8}',
+                      Expanded(
+                        child: _TestamentBar(
+                          label: l10n.bibleOldTestament,
+                          read: otRead,
+                          total: p.otChaptersTotal,
                         ),
+                      ),
+                      const SizedBox(width: AppSpace.md),
+                      Expanded(
+                        child: _TestamentBar(
+                          label: l10n.bibleNewTestament,
+                          read: ntRead,
+                          total: p.ntChaptersTotal,
+                        ),
+                      ),
                     ],
+                  ),
+                  const SizedBox(height: AppSpace.md),
+                  RelicHairline(accent: AppRoles.navBible),
+                ],
+                for (final b in visible) _BibleBookRow(book: b),
+                if (books.length > _shown) ...[
+                  const SizedBox(height: AppSpace.sm),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: TextCta(
+                      label: _open
+                          ? l10n.homeMoreSeeLess
+                          : l10n.pilgrimMoreBooks(hidden),
+                      color: a.ink(AppRoles.navBible),
+                      onTap: () => setState(() => _open = !_open),
+                    ),
                   ),
                 ],
               ],
             ),
+    );
+  }
+}
+
+class _TestamentBar extends StatelessWidget {
+  final String label;
+  final int read;
+  final int total;
+
+  const _TestamentBar({
+    required this.label,
+    required this.read,
+    required this.total,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          label,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: AppTypography.body(
+            size: 11.5,
+            weight: FontWeight.w800,
+            color: a.textSecondary,
+          ),
+        ),
+        const SizedBox(height: 2),
+        Text(
+          context.l10n.bibleReadOf(read, total),
+          style: AppTypography.body(size: 11, color: a.textFaint),
+        ),
+        const SizedBox(height: 6),
+        AppProgressBar(
+          value: total == 0 ? 0 : read / total,
+          color: a.ink(AppRoles.navBible),
+          height: 4,
+        ),
+      ],
+    );
+  }
+}
+
+/// Uma linha por livro, como na aba Bíblia: sigla, nome, "12 de 50", barra.
+class _BibleBookRow extends StatelessWidget {
+  final CaravanBibleBook book;
+
+  const _BibleBookRow({required this.book});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final tone = book.complete ? AppRoles.reward : a.ink(AppRoles.navBible);
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
+      child: Row(
+        children: [
+          Container(
+            width: 34,
+            height: 26,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(AppRadii.sm),
+              color: tone.withValues(alpha: 0.14),
+              border: Border.all(color: tone.withValues(alpha: 0.45)),
+            ),
+            child: Text(
+              book.abbrev.toUpperCase(),
+              maxLines: 1,
+              style: AppTypography.label(
+                size: 10,
+                weight: FontWeight.w900,
+                color: tone,
+              ),
+            ),
+          ),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        book.name,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppTypography.title(size: 14, color: a.text),
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    if (book.complete)
+                      const CinematicIcon(
+                        glyph: CinematicGlyph.check,
+                        size: 13,
+                        accent: AppRoles.reward,
+                        framed: false,
+                      )
+                    else
+                      Text(
+                        context.l10n.bibleReadOf(book.read, book.total),
+                        style: AppTypography.body(
+                          size: 12,
+                          weight: FontWeight.w700,
+                          color: a.textSecondary,
+                        ),
+                      ),
+                  ],
+                ),
+                const SizedBox(height: 5),
+                AppProgressBar(value: book.progress, color: tone, height: 4),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
@@ -585,6 +771,8 @@ class PilgrimScenePoster extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final quote = insight?.trim();
+    final hasRef = verseRef != null && verseRef!.isNotEmpty;
+    final hasDate = date != null && date!.isNotEmpty;
     return ProfileSection(
       accent: AppColors.clay,
       glyph: CinematicGlyph.scroll,
@@ -607,31 +795,50 @@ class PilgrimScenePoster extends StatelessWidget {
               color: a.text,
             ),
           ),
-          if (verseRef != null && verseRef!.isNotEmpty) ...[
-            const SizedBox(height: 6),
-            Text(
-              verseRef!,
-              style: AppTypography.label(
-                size: 11,
-                letterSpacing: 1.2,
-                color: a.sectionLabel,
+          if (quote != null && quote.isNotEmpty) ...[
+            const SizedBox(height: 12),
+            IntrinsicHeight(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Container(
+                    width: 3,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(2),
+                      color: AppColors.clay.withValues(alpha: 0.7),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Text(
+                      quote,
+                      maxLines: 3,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTypography.verse(size: 16, color: a.text),
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
-          if (quote != null && quote.isNotEmpty) ...[
-            const SizedBox(height: 12),
-            Text(
-              '“$quote”',
-              maxLines: 3,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.verse(size: 16, color: a.text),
-            ),
-          ],
-          if (date != null && date!.isNotEmpty) ...[
+          if (hasRef || hasDate) ...[
             const SizedBox(height: 14),
-            Text(
-              context.l10n.pilgrimCompletedOn(date!),
-              style: AppTypography.body(size: 12, color: a.textFaint),
+            Row(
+              children: [
+                if (hasRef)
+                  Flexible(
+                    child: SoftBadge(
+                      text: verseRef!,
+                      glyph: CinematicGlyph.book,
+                    ),
+                  ),
+                if (hasRef && hasDate) const SizedBox(width: AppSpace.sm),
+                if (hasDate)
+                  Text(
+                    context.l10n.pilgrimCompletedOn(date!),
+                    style: AppTypography.body(size: 12, color: a.textFaint),
+                  ),
+              ],
             ),
           ],
         ],
@@ -898,42 +1105,111 @@ class PilgrimTrailPath extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              trail.title,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.display(
-                size: compact ? 18 : 20,
-                weight: FontWeight.w900,
-                color: a.text,
-              ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.baseline,
+              textBaseline: TextBaseline.alphabetic,
+              children: [
+                Expanded(
+                  child: Text(
+                    trail.title,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.display(
+                      size: compact ? 18 : 20,
+                      weight: FontWeight.w900,
+                      color: a.text,
+                    ),
+                  ),
+                ),
+                const SizedBox(width: AppSpace.sm),
+                Text(
+                  '${(trail.progress * 100).round()}%',
+                  style: AppTypography.title(
+                    size: 15,
+                    weight: FontWeight.w900,
+                    color: accent,
+                  ),
+                ),
+              ],
             ),
-            const SizedBox(height: 12),
-            AppProgressBar(value: trail.progress, color: accent),
+            const SizedBox(height: 2),
+            Text(
+              l10n.pilgrimScenesOf(trail.missionsDone, trail.missionsTotal),
+              style: AppTypography.body(size: 12, color: a.textFaint),
+            ),
+            // Com etapas, o caminho já é a barra; sem elas, a barra simples.
+            if (trail.modules.length < 2) ...[
+              const SizedBox(height: 10),
+              AppProgressBar(value: trail.progress, color: accent, height: 6),
+            ],
             if (trail.modules.length >= 2) ...[
-              const SizedBox(height: 16),
+              const SizedBox(height: 12),
               _PilgrimHorizontalTrail(
                 modules: trail.modules,
                 progress: trail.progress,
                 accent: accent,
               ),
-            ] else ...[
+            ] else if (trail.clearedModes.isNotEmpty) ...[
               const SizedBox(height: 6),
               Text(
-                '${l10n.pilgrimScenesOf(trail.missionsDone, trail.missionsTotal)}'
-                '${trail.clearedModes.isNotEmpty ? ' · ${trail.clearedModes.join(', ')}' : ''}',
+                trail.clearedModes.join(', '),
                 style: AppTypography.body(size: 12, color: a.textFaint),
               ),
             ],
-            if (rest.isNotEmpty) ...[
-              const SizedBox(height: 16),
-              RelicHairline(accent: accent),
-              const SizedBox(height: 4),
-              for (final other in rest) _OpenTrailRow(trail: other),
-            ],
+            if (rest.isNotEmpty) _RestTrails(rest: rest, accent: accent),
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Outras trilhas abertas: as mais avançadas primeiro, sem as de 0%, até
+/// três; o resto abre no toque.
+class _RestTrails extends StatefulWidget {
+  final List<CaravanTrailSnapshot> rest;
+  final Color accent;
+
+  const _RestTrails({required this.rest, required this.accent});
+
+  @override
+  State<_RestTrails> createState() => _RestTrailsState();
+}
+
+class _RestTrailsState extends State<_RestTrails> {
+  static const _shown = 3;
+  bool _open = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = context.l10n;
+    final started = [
+      for (final t in widget.rest)
+        if (t.missionsDone > 0) t,
+    ]..sort((x, y) => y.progress.compareTo(x.progress));
+    if (started.isEmpty) return const SizedBox.shrink();
+    final visible = _open ? started : started.take(_shown).toList();
+    final hidden = started.length - visible.length;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const SizedBox(height: 12),
+        RelicHairline(accent: widget.accent),
+        for (final other in visible) _OpenTrailRow(trail: other),
+        if (started.length > _shown) ...[
+          const SizedBox(height: AppSpace.sm),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: TextCta(
+              label: _open
+                  ? l10n.homeMoreSeeLess
+                  : l10n.pilgrimMoreTrails(hidden),
+              color: AppRoles.presence,
+              onTap: () => setState(() => _open = !_open),
+            ),
+          ),
+        ],
+      ],
     );
   }
 }
@@ -1013,7 +1289,7 @@ class _PilgrimHorizontalTrail extends StatelessWidget {
     if (current < 0) current = stops.length - 1;
 
     return SizedBox(
-      height: 72,
+      height: 46,
       child: Stack(
         children: [
           Positioned(
@@ -1215,6 +1491,101 @@ class _HorizontalTrailPainter extends CustomPainter {
       old.seed != seed;
 }
 
+/// Rodapé da sequência no cartão do topo da caravana: a semana em bolinhas
+/// e, numa linha, a melhor sequência (ou o último dia de estudo) e quando
+/// foi visto. O número da sequência já está na faixa de números acima.
+class PilgrimStreakFooter extends StatelessWidget {
+  final int streak;
+  final List<String> playDates;
+  final String walk;
+  final String online;
+  final bool walkedToday;
+  final bool showStreak;
+
+  /// Maior sequência já feita (0 = não mostra).
+  final int bestStreak;
+
+  const PilgrimStreakFooter({
+    super.key,
+    required this.streak,
+    required this.playDates,
+    required this.walk,
+    required this.online,
+    required this.walkedToday,
+    required this.showStreak,
+    this.bestStreak = 0,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final played = playDates.toSet();
+    final showBest = showStreak && bestStreak > streak && bestStreak > 1;
+    final showOnline = online.isNotEmpty && online != '—';
+    final left = !showStreak
+        ? '${l10n.pilgrimLastStudyDay} · $walk'
+        : showBest
+        ? l10n.profileBestStreak(bestStreak)
+        : null;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        StreakWeek(
+          orbSize: 30,
+          playedOnDate: (day) {
+            final key = day.toIso8601String().substring(0, 10);
+            final now = DateTime.now();
+            final isToday =
+                day.year == now.year &&
+                day.month == now.month &&
+                day.day == now.day;
+            return played.contains(key) || (isToday && walkedToday);
+          },
+        ),
+        if (left != null || showOnline) ...[
+          const SizedBox(height: 10),
+          Row(
+            children: [
+              if (left != null) ...[
+                CinematicIcon(
+                  glyph: showStreak
+                      ? CinematicGlyph.trophy
+                      : CinematicGlyph.flame,
+                  size: 13,
+                  accent: AppRoles.streak,
+                  framed: false,
+                ),
+                const SizedBox(width: 5),
+                Flexible(
+                  child: Text(
+                    left,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.body(
+                      size: 12,
+                      weight: FontWeight.w800,
+                      color: a.textSecondary,
+                    ),
+                  ),
+                ),
+              ],
+              const Spacer(),
+              if (showOnline)
+                Text(
+                  l10n.pilgrimLastSeen(online),
+                  style: AppTypography.body(size: 12, color: a.textFaint),
+                ),
+            ],
+          ),
+        ],
+      ],
+    );
+  }
+}
+
+/// Sequência em card próprio (fora da vitrine com capa).
 class PilgrimConstancyCard extends StatelessWidget {
   final int streak;
   final List<String> playDates;
@@ -1236,8 +1607,6 @@ class PilgrimConstancyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final played = playDates.toSet();
-
     return ProfileSection(
       accent: AppRoles.streak,
       glyph: CinematicGlyph.flame,
@@ -1248,45 +1617,23 @@ class PilgrimConstancyCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: [
-              RelicDisc(
-                glyph: CinematicGlyph.flame,
-                accent: AppRoles.streak,
-                size: 44,
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Text(
-                  showStreak ? context.l10n.commonDays(streak) : walk,
-                  style: AppTypography.display(
-                    size: 24,
-                    weight: FontWeight.w900,
-                    color: a.text,
-                  ),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 14),
-          StreakWeek(
-            playedOnDate: (day) {
-              final key = day.toIso8601String().substring(0, 10);
-              final now = DateTime.now();
-              final isToday =
-                  day.year == now.year &&
-                  day.month == now.month &&
-                  day.day == now.day;
-              return played.contains(key) || (isToday && walkedToday);
-            },
-          ),
-          if (online.isNotEmpty && online != '—') ...[
-            const SizedBox(height: 8),
-            Text(
-              context.l10n.pilgrimLastSeen(online),
-              style: AppTypography.body(size: 12, color: a.textFaint),
+          Text(
+            showStreak ? context.l10n.commonDays(streak) : walk,
+            style: AppTypography.display(
+              size: 24,
+              weight: FontWeight.w900,
+              color: a.text,
             ),
-          ],
+          ),
+          const SizedBox(height: 12),
+          PilgrimStreakFooter(
+            streak: streak,
+            playDates: playDates,
+            walk: walk,
+            online: online,
+            walkedToday: walkedToday,
+            showStreak: true,
+          ),
         ],
       ),
     );
@@ -1348,17 +1695,156 @@ class PilgrimOwnerPrivacyBanner extends StatelessWidget {
   }
 }
 
-class _ScriptureChip extends StatelessWidget {
-  final String name;
+/// Na Palavra: capítulos, livros, favoritos e anotações em quatro números.
+/// No perfil próprio abre a folha com o conteúdo; na caravana só os números
+/// (o texto das notas nunca sai do aparelho).
+class NaPalavraCard extends StatelessWidget {
+  final int chapters;
+  final int books;
+  final int favorites;
+  final int notes;
+  final VoidCallback? onTap;
 
-  const _ScriptureChip({required this.name});
+  const NaPalavraCard({
+    super.key,
+    required this.chapters,
+    required this.books,
+    required this.favorites,
+    required this.notes,
+    this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return SoftBadge(
-      text: name,
-      glyph: CinematicGlyph.star,
-      accent: AppRoles.reward,
+    final l10n = context.l10n;
+    final stats = [
+      (CinematicGlyph.book, chapters, l10n.wordStatChapters),
+      (CinematicGlyph.library, books, l10n.wordStatBooks),
+      (CinematicGlyph.bookmark, favorites, l10n.wordStatFavorites),
+      (CinematicGlyph.pencil, notes, l10n.wordStatNotes),
+    ];
+    const accent = AppRoles.navBible;
+    final a = Appearance.of(context);
+    return ProfileSection(
+      accent: accent,
+      glyph: CinematicGlyph.book,
+      title: l10n.profileInTheWord,
+      trailing: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          PrivacyEye(
+            sections: const {CaravanProfileSection.word},
+            label: l10n.profileInTheWord,
+          ),
+          if (onTap != null)
+            CinematicIcon(
+              glyph: CinematicGlyph.chevron,
+              size: 14,
+              accent: a.textSecondary,
+              framed: false,
+            ),
+        ],
+      ),
+      onTap: onTap,
+      child: Row(
+        children: [
+          for (final (i, (glyph, value, label)) in stats.indexed) ...[
+            if (i > 0) const SizedBox(width: AppSpace.sm),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.symmetric(vertical: AppSpace.sm),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(AppRadii.md),
+                  color: a.insetFill,
+                  border: Border.all(
+                    color: accent.withValues(alpha: value > 0 ? 0.35 : 0.12),
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    CinematicIcon(
+                      glyph: glyph,
+                      size: 18,
+                      accent: value > 0 ? a.ink(accent) : a.textFaint,
+                      framed: false,
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      '$value',
+                      style:
+                          AppTypography.title(
+                            size: 20,
+                            weight: FontWeight.w900,
+                            height: 1,
+                            color: value > 0 ? a.text : a.textFaint,
+                          ).copyWith(
+                            fontFeatures: const [FontFeature.liningFigures()],
+                          ),
+                    ),
+                    const SizedBox(height: 3),
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        label.toUpperCase(),
+                        maxLines: 1,
+                        style: AppTypography.label(
+                          size: 9,
+                          letterSpacing: 0.8,
+                          weight: FontWeight.w900,
+                          color: a.textSecondary,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+/// Tarefas da semana de outra pessoa: só leitura, desta semana.
+class PilgrimQuestsCard extends StatelessWidget {
+  final CaravanProfileExtras extras;
+
+  const PilgrimQuestsCard({super.key, required this.extras});
+
+  @override
+  Widget build(BuildContext context) {
+    final quests = WeeklyQuestDefs.all;
+    bool claimed(String id) => extras.weeklyClaimed.contains(id);
+    int value(String id) => extras.weeklyProgress[id] ?? 0;
+    final done = quests
+        .where((q) => claimed(q.id) || value(q.id) >= q.target)
+        .length;
+    return ProfileSection(
+      accent: AppRoles.lamp,
+      glyph: CinematicGlyph.calendar,
+      title: context.l10n.questWeeklyTitle,
+      trailing: Text(
+        context.l10n.questCountOf(done, quests.length),
+        style: AppTypography.title(
+          size: 13,
+          weight: FontWeight.w900,
+          color: AppRoles.lamp,
+        ),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          for (var i = 0; i < quests.length; i++) ...[
+            if (i > 0) const SizedBox(height: AppSpace.md),
+            WeeklyQuestRow(
+              quest: quests[i],
+              value: value(quests[i].id),
+              claimed: claimed(quests[i].id),
+            ),
+          ],
+        ],
+      ),
     );
   }
 }
