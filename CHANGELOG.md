@@ -9,14 +9,16 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
-## [1.0.51] — 2026-11-25
+## [1.0.50] — 2026-11-25 (build 51, iOS 1051)
+
+Primeira versão nas lojas desde a 1.0.49. Junta o corte de 24/11 (build 50, não publicado) com planos novos e uma rodada de correções e desempenho.
 
 ### Added
 - Planos novos: Pioneiro vitalício (compra única, 200 vagas), Casal / Família 3 / Família 4 (convite por código e link `stway://familia/…`, `FamilyService` + `functions/family.js`) e Pastor/Missionário; preços de 25/11 no app, site e `MONETIZATION.md`
 
 ### Changed
-- Novidades da versão: folha da 1.0.51 leva tudo desde a 1.0.49 (a 1.0.50 não chegou às lojas): itens da 1.0.50 + planos Casal/Família e Pioneiro vitalício + app mais firme
-- Versão 1.0.51 (51), iOS 1051
+- Novidades da versão: folha da 1.0.50 leva tudo desde a 1.0.49: itens do corte de 24/11 + planos Casal/Família e Pioneiro vitalício + app mais firme
+- Versão 1.0.50 (51), iOS 1051; extensão do widget iOS com `MARKETING_VERSION` 1.0.50 (estava 1.0.49)
 
 ### Fixed
 - Planos: Pioneiro sem período na loja era lido como assinatura ("Assinar", "cancele quando quiser"); agora é vitalício. Sair da família tira o Plus na hora, mesmo com o card já fechado
@@ -31,9 +33,9 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 - Onboarding: céu com `RepaintBoundary` e sensor de inclinação só com animação ligada; retrospectiva e confete isolados em `RepaintBoundary`; chama da sequência para de animar quando apaga
 - Prática e memória não reconstroem a tela inteira a cada mudança de progresso (`context.select`)
 
-## [1.0.50] — 2026-11-24
+### Corte de 24/11 (build 50, iOS 1050 — não publicado)
 
-### Added
+#### Added
 - Perfil: "Como a caravana te vê" — prévia do perfil como os outros veem, com olho para mostrar/esconder cada seção na hora. Meu estudo (acerto por modo e gesto, barras das últimas 8 semanas, próximo passo) e Na Palavra (livros e trilhas concluídos) só publicam um resumo de números no doc público, e só com o olho aberto; notas, favoritos e erros nunca saem do privado (`lib/models/caravan_profile_extras.dart`)
 - Bíblia em EN/ES (BSB/BES) pelo idioma do app, com escolha por idioma e folha de comparar versículos; o palco segue na JFAAL
 - Aba Bíblia e planos de leitura refeitos; busca na barra do topo; `AppNavRow`/`AppNavDivider` compartilhados entre Ajustes e Perfil
@@ -46,15 +48,13 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 - Passe de trilha: quem deu é avisado quando o passe é resgatado
 - Painel: Plus manual por conta e para um grupo inteiro (piloto de igreja); Suporte com dias ativos, acerto, social e novos filtros
 
-### Changed
+#### Changed
 - Juntos: um só padrão de palco para Companhia, Desafio, Caravana e Grupos; grupo fechado guarda os dados (`closedAt`) e pode reabrir
 - Perfil redesenhado (capa, seções, calendário da chama, cofre); Juntos e Ajustes em 3 abas
 - Arte das cenas recomprimida (APK arm64 109,3 → 97,4 MB)
 - Conteúdo: EN/ES em V3 para Rute, Joel, João, Mateus, Salmos, Romanos, Lucas, Marcos, Hebreus, Isaías, Apocalipse e Efésios; 62 trilhas de livro na coleção Panorama
-- Novidades da versão: folha da 1.0.50 (perfil como a caravana vê, aba Bíblia, livro concluído, meta da Caravana, Advento em Belém, retrospectiva do ano); itens da 1.0.48/1.0.49 saem
-- Versão 1.0.50 (50), iOS 1050
 
-### Fixed
+#### Fixed
 - Sincronização: favoritos e erros juntam item a item (`listEdits`); itens apagados e progresso zerado não voltam da nuvem; falha ao ler o doc privado não grava listas vazias
 - Privacidade: perfil público sem dado pessoal; grupos não se listam
 - Advento: cena feita sem internet fica pendente e fecha depois

@@ -19,10 +19,10 @@ import 'ui_primitives.dart';
 class WhatsNew {
   WhatsNew._();
 
-  static const _release = '1.0.51';
+  static const _release = '1.0.50';
   static const _key = 'whats_new_seen';
 
-  // 1.0.50 não chegou às lojas: a folha da 1.0.51 leva tudo desde a 1.0.49.
+  // 1.0.50 (build 51) é a primeira desde a 1.0.49 nas lojas: a folha leva tudo.
   static List<(CinematicGlyph, String)> _items(AppLocalizations l) => [
     (CinematicGlyph.heart, l.whatsNew151Family),
     (CinematicGlyph.eye, l.whatsNew150Profile),
