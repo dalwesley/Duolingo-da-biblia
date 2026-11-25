@@ -19,16 +19,19 @@ import 'ui_primitives.dart';
 class WhatsNew {
   WhatsNew._();
 
-  static const _release = '1.0.50';
+  static const _release = '1.0.51';
   static const _key = 'whats_new_seen';
 
+  // 1.0.50 não chegou às lojas: a folha da 1.0.51 leva tudo desde a 1.0.49.
   static List<(CinematicGlyph, String)> _items(AppLocalizations l) => [
+    (CinematicGlyph.heart, l.whatsNew151Family),
     (CinematicGlyph.eye, l.whatsNew150Profile),
     (CinematicGlyph.book, l.whatsNew150Bible),
     (CinematicGlyph.seal, l.whatsNew150Book),
     (CinematicGlyph.people, l.whatsNew150Caravan),
     (CinematicGlyph.star, l.whatsNew150Advent),
     (CinematicGlyph.calendar, l.whatsNew150Year),
+    (CinematicGlyph.check, l.whatsNew151Steady),
   ];
 
   /// Laboratório: abre a folha agora, sem mexer na marca.

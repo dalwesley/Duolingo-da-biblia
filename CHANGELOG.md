@@ -15,13 +15,14 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 - Planos novos: Pioneiro vitalício (compra única, 200 vagas), Casal / Família 3 / Família 4 (convite por código e link `stway://familia/…`, `FamilyService` + `functions/family.js`) e Pastor/Missionário; preços de 25/11 no app, site e `MONETIZATION.md`
 
 ### Changed
+- Novidades da versão: folha da 1.0.51 leva tudo desde a 1.0.49 (a 1.0.50 não chegou às lojas): itens da 1.0.50 + planos Casal/Família e Pioneiro vitalício + app mais firme
 - Versão 1.0.51 (51), iOS 1051
 
 ### Fixed
 - Planos: Pioneiro sem período na loja era lido como assinatura ("Assinar", "cancele quando quiser"); agora é vitalício. Sair da família tira o Plus na hora, mesmo com o card já fechado
 - Cena: missões diárias de ontem não aparecem mais como feitas depois da meia-noite com o app aberto (nem liberam o Baú); toque duplo na memória não conta o cartão duas vezes; toque duplo na celebração não abre duas folhas
 - Bíblia: leitura em voz alta não trava em versículo vazio (BSB), "parar" vale mesmo durante a busca da voz, trocar de tradução para a leitura antiga; busca não fica girando para sempre em erro nem devolve resultado velho; falha ao abrir texto/índice/banco de estudo não fica presa até reiniciar; fechar o estudo do versículo não para a leitura do capítulo
-- Grupos: trocar de grupo durante o carregamento não mistura membros; reconhecimentos voltam a ouvir depois de erro no stream; dias da Companhia, do plano do grupo e da última caminhada certos no dia de horário de verão
+- Grupos: trocar de grupo durante o carregamento não mistura membros; reconhecimentos voltam a ouvir depois de erro no stream; dias da Companhia, do plano do grupo e da última caminhada certos no dia de horário de verão; "faltam N dias" (propósito do grupo, Caminhada da estação, fechamento da semana) não erra mais em 1 nesse dia
 - Lembretes: avançar dias por calendário (não +24h), sem disparar uma hora antes/depois na troca de horário de verão
 - Lista de espera: falha ao gravar não marca como inscrito
 

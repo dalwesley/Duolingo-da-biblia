@@ -3550,9 +3550,10 @@ class _RoomClock extends StatelessWidget {
         : upcoming
         ? parsePlanYmd(p.start)!
         : DateTime(planEnd!.year, planEnd.month, planEnd.day + 1);
-    final days = closesAt
-        .difference(DateTime(now.year, now.month, now.day))
-        .inDays;
+    final days =
+        (closesAt.difference(DateTime(now.year, now.month, now.day)).inHours /
+                24)
+            .round();
     final urgent = upcoming ? 99 : days;
     final tone = urgent <= 1
         ? AppRoles.risk

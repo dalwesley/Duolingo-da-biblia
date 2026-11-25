@@ -12633,6 +12633,14 @@ class AppLocalizationsEn extends AppLocalizations {
       'From Dec 28 to Jan 31, your year in review opens by itself: books, milestones, walking together and your profile of the year.';
 
   @override
+  String get whatsNew151Family =>
+      'Peregrino+ for the whole home: Couple and Family plans (up to 4 people), each with their own account. And Pioneer is now lifetime: pay once, keep it for good.';
+
+  @override
+  String get whatsNew151Steady =>
+      'Steadier on the path: reading aloud no longer stalls, reminders arrive on time and daily quests turn over at midnight.';
+
+  @override
   String get whatsNewEyebrow => 'What\'s new';
 
   @override

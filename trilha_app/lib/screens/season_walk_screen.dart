@@ -173,7 +173,7 @@ class SeasonWalkScreen extends StatelessWidget {
   }
 
   static int _daysUntil(DateTime start, DateTime today) =>
-      start.difference(today).inDays;
+      (start.difference(today).inHours / 24).round();
 }
 
 class _WeekBlock extends StatelessWidget {
@@ -292,7 +292,7 @@ class _DayTile extends StatelessWidget {
     );
     final isToday = todayIndex == day.index;
     final locked = !access.playable;
-    final daysUntil = date.difference(today).inDays;
+    final daysUntil = (date.difference(today).inHours / 24).round();
     final trailName = SeasonWalkCatalog.trailTeaser(day.trailSlug);
     final title = access.future
         ? l10n.seasonDayTrailLocked(day.index, trailName)

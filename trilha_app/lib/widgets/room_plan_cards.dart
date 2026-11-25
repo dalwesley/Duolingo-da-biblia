@@ -37,7 +37,7 @@ String planWhen(BuildContext context, String ymd) {
   if (d == null) return ymd;
   final now = DateTime.now();
   final today = DateTime(now.year, now.month, now.day);
-  final diff = d.difference(today).inDays;
+  final diff = (d.difference(today).inHours / 24).round();
   if (diff == 1) return context.l10n.planTomorrow;
   final locale = Localizations.localeOf(context).toString();
   if (diff > 1 && diff < 7) return DateFormat.EEEE(locale).format(d);
@@ -278,11 +278,11 @@ class RoomPlanCard extends StatelessWidget {
     final now = DateTime.now();
     final daysLeft = end == null
         ? 0
-        : DateTime(
-                end.year,
-                end.month,
-                end.day + 1,
-              ).difference(DateTime(now.year, now.month, now.day)).inDays -
+        : (DateTime(end.year, end.month, end.day + 1)
+                          .difference(DateTime(now.year, now.month, now.day))
+                          .inHours /
+                      24)
+                  .round() -
               1;
     return [
       if (!cover) ...[

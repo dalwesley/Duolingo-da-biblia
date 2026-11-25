@@ -12691,6 +12691,14 @@ class AppLocalizationsEs extends AppLocalizations {
       'Del 28/12 al 31/01, tu resumen del año se abre solo: libros, hitos, caminar juntos y tu perfil del año.';
 
   @override
+  String get whatsNew151Family =>
+      'Peregrino+ para toda la casa: planes Pareja y Familia (hasta 4 personas), cada una con su propia cuenta. Y Pionero ahora es de por vida: pagas una vez, vale para siempre.';
+
+  @override
+  String get whatsNew151Steady =>
+      'Más firme en el camino: la lectura en voz alta ya no se traba, los recordatorios llegan a tiempo y las misiones del día cambian a medianoche.';
+
+  @override
   String get whatsNewEyebrow => 'Novedades';
 
   @override

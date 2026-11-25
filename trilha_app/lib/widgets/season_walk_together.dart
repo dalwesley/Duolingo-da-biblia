@@ -62,7 +62,7 @@ class SeasonWalkTogetherCard extends StatefulWidget {
 
   /// Dias até o 1º dia (0 = começa hoje ou já começou).
   static int daysUntilStart(SeasonWalkCampaign campaign, DateTime now) {
-    final days = campaign.start.difference(_day(now)).inDays;
+    final days = (campaign.start.difference(_day(now)).inHours / 24).round();
     return days < 0 ? 0 : days;
   }
 

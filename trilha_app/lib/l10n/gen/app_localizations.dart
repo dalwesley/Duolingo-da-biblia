@@ -19365,6 +19365,18 @@ abstract class AppLocalizations {
   /// **'De 28/12 a 31/01, sua retrospectiva do ano abre sozinha: livros, marcos, a caminhada junto e o seu perfil do ano.'**
   String get whatsNew150Year;
 
+  /// No description provided for @whatsNew151Family.
+  ///
+  /// In pt, this message translates to:
+  /// **'Peregrino+ para a casa toda: planos Casal e Família (até 4 pessoas), cada uma com a própria conta. E o Pioneiro agora é vitalício: paga uma vez, vale para sempre.'**
+  String get whatsNew151Family;
+
+  /// No description provided for @whatsNew151Steady.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mais firme no caminho: a leitura em voz alta não trava, os lembretes chegam na hora certa e as missões do dia viram à meia-noite.'**
+  String get whatsNew151Steady;
+
   /// No description provided for @whatsNewEyebrow.
   ///
   /// In pt, this message translates to:
