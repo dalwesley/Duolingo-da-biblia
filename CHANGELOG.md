@@ -20,7 +20,7 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ### Fixed
 - Planos: Pioneiro sem período na loja era lido como assinatura ("Assinar", "cancele quando quiser"); agora é vitalício. Sair da família tira o Plus na hora, mesmo com o card já fechado
-- Cena: missões diárias de ontem não aparecem mais como feitas depois da meia-noite com o app aberto (nem liberam o Baú); toque duplo na memória não conta o cartão duas vezes; toque duplo na celebração não abre duas folhas
+- Cena: missões diárias de ontem não aparecem mais como feitas depois da meia-noite com o app aberto (nem liberam o Baú); ao voltar do segundo plano o app vira dia, semana e mês na hora (missões semanais, meta do dia, gelo da sequência), sem esperar a próxima cena (`ProgressService.rolloverIfNeeded`); toque duplo na memória não conta o cartão duas vezes; toque duplo na celebração não abre duas folhas
 - Bíblia: leitura em voz alta não trava em versículo vazio (BSB), "parar" vale mesmo durante a busca da voz, trocar de tradução para a leitura antiga; busca não fica girando para sempre em erro nem devolve resultado velho; falha ao abrir texto/índice/banco de estudo não fica presa até reiniciar; fechar o estudo do versículo não para a leitura do capítulo
 - Grupos: trocar de grupo durante o carregamento não mistura membros; reconhecimentos voltam a ouvir depois de erro no stream; dias da Companhia, do plano do grupo e da última caminhada certos no dia de horário de verão; "faltam N dias" (propósito do grupo, Caminhada da estação, fechamento da semana) não erra mais em 1 nesse dia
 - Lembretes: avançar dias por calendário (não +24h), sem disparar uma hora antes/depois na troca de horário de verão

@@ -563,6 +563,9 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     if (state == AppLifecycleState.resumed) {
       // Volta ao app: a vez da Home (oferta, baú, medalha) reabre.
       _progressRef?.clearPostSceneQuiet();
+      // App ficou aberto na virada do dia/semana: vira antes de mostrar.
+      final progress = _progressRef;
+      if (progress != null) unawaited(progress.rolloverIfNeeded());
       final pending = NotificationService.instance.takePendingAction();
       if (pending != null) _handleReminderAction(pending);
       _syncReminders();

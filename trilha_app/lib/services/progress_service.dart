@@ -4816,6 +4816,43 @@ class ProgressService extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Volta do background: aplica a virada de dia, semana e mês como no
+  /// load, sem esperar a próxima cena (app aberto ontem, retomado hoje).
+  /// Só salva e notifica se algo virou.
+  Future<void> rolloverIfNeeded() async {
+    if (!_loaded) return;
+    final before = (
+      missionsToday,
+      questDay,
+      weeklyWeek,
+      monthlyMonth,
+      streakFreezeAvailable,
+      lastPlayedDate,
+      streakRepairAvailable,
+    );
+    _ensureMissionsDay();
+    _ensureQuestDay();
+    _ensureWeeklyWeek();
+    _ensureMonthlyMonth();
+    _ensureStreakFreezeWeek();
+    final freezeApplied = _applyPendingStreakFreeze();
+    if (freezeApplied && !geloTeachSeen) {
+      _pendingGeloTeach = true;
+    }
+    _ensureStreakRepairMonth();
+    final after = (
+      missionsToday,
+      questDay,
+      weeklyWeek,
+      monthlyMonth,
+      streakFreezeAvailable,
+      lastPlayedDate,
+      streakRepairAvailable,
+    );
+    if (before == after) return;
+    await _save();
+  }
+
   /// Home: explica o gelo uma vez depois que ele cobre ontem.
   bool takePendingGeloTeach() {
     if (!_pendingGeloTeach || geloTeachSeen) return false;
