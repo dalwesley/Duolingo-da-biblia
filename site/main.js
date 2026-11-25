@@ -1034,7 +1034,7 @@ const ANAN_FACE = `<svg class="anan-face" viewBox="0 0 480 356" aria-hidden="tru
     postais: 'Terminou a cena, ganhou postal. Eu adoro carimbar!',
     advento: adventLine,
     comecar: 'E aí, o que te traz aqui?',
-    planos: 'A Bíblia é grátis. O resto custa menos de 25 centavos por dia!',
+    planos: 'A Bíblia, as trilhas e o hebraico e grego: tudo grátis!',
     contato: 'Igreja, célula, imprensa? Escreve pra gente.',
     coda: 'Vamos? É grátis no Android.',
   };

@@ -150,8 +150,15 @@ class BibleStudyService {
 
   Future<Database> _database() async {
     if (_db != null) return _db!;
-    _opening ??= _open();
-    _db = await _opening!;
+    final opening = _opening ??= _open();
+    try {
+      _db = await opening;
+    } catch (_) {
+      // Falha (disco cheio, gunzip interrompido) não fica em cache: a
+      // próxima abertura tenta de novo em vez de falhar para sempre.
+      if (identical(_opening, opening)) _opening = null;
+      rethrow;
+    }
     return _db!;
   }
 

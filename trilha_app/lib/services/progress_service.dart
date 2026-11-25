@@ -3132,9 +3132,16 @@ class ProgressService extends ChangeNotifier {
     _schedulePersist();
   }
 
-  int questProgress(String id) => questProgressMap[id] ?? 0;
+  /// Quests de outro dia não valem hoje: o app aberto atravessa a
+  /// meia-noite (e a nuvem pode trazer um dia velho) sem passar por
+  /// [_ensureQuestDay] até a próxima cena.
+  bool get _questDayIsToday => questDay == _todayKey();
 
-  bool isQuestClaimed(String id) => questClaimed.contains(id);
+  int questProgress(String id) =>
+      _questDayIsToday ? questProgressMap[id] ?? 0 : 0;
+
+  bool isQuestClaimed(String id) =>
+      _questDayIsToday && questClaimed.contains(id);
 
   int get questsCompletedToday => DailyQuestDefs.all
       .where((q) => questProgress(q.id) >= q.target || isQuestClaimed(q.id))

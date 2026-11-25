@@ -30,11 +30,11 @@
     const faces = flip ? [...flip.querySelectorAll('.bubble-face')] : [];
     const LINES = {
       '/palco': 'Aqui você responde dentro do versículo!',
-      '/profundidades': 'Três mergulhos no mesmo texto. Bora?',
+      '/profundidades': 'Três mergulhos no mesmo texto. Vamos?',
       '/strong': 'Hebraico e grego sem medo. Eu te mostro!',
-      '/trilhas': 'Do Gênesis ao Apocalipse, um passo por dia.',
+      '/trilhas': 'Bíblia inteira, temas e estudos. Um passo por dia.',
       '/por-dentro': 'Quer ver o app por dentro? Vem comigo!',
-      '/juntos': 'Chama alguém. Junto a gente vai mais longe!',
+      '/juntos': 'Chame alguém. Juntos, vamos mais longe!',
       '/postais': 'Cada cena vira um postal. Eu carimbo!',
     };
     let cheerTimer = 0;

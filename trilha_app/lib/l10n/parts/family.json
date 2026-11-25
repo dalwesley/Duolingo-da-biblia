@@ -1,0 +1,315 @@
+{
+  "paywallForSolo": {
+    "pt": "Só eu",
+    "en": "Just me",
+    "es": "Solo yo"
+  },
+  "paywallForFamily": {
+    "pt": "Família",
+    "en": "Family",
+    "es": "Familia"
+  },
+  "paywallFamilyIntro": {
+    "pt": "O mesmo Peregrino+ para quem caminha com você em casa. Cada pessoa tem a própria conta e o próprio caminho.",
+    "en": "The same Peregrino+ for the people who walk with you at home. Each person has their own account and their own path.",
+    "es": "El mismo Peregrino+ para quienes caminan contigo en casa. Cada persona tiene su propia cuenta y su propio camino."
+  },
+  "paywallPlanCouple": {
+    "pt": "Casal",
+    "en": "Couple",
+    "es": "Pareja"
+  },
+  "paywallPlanFamilyOf": {
+    "pt": "Família · {count} pessoas",
+    "en": "Family · {count} people",
+    "es": "Familia · {count} personas",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "paywallFamilyPerPerson": {
+    "pt": "{price} por pessoa no ano",
+    "en": "{price} per person a year",
+    "es": "{price} por persona al año",
+    "placeholders": {
+      "price": "String"
+    }
+  },
+  "paywallFamilyHow": {
+    "pt": "Cada pessoa usa a própria conta. Você assina e manda o link; quem entra por ele ganha o Peregrino+ enquanto o seu plano estiver ativo. Dá para tirar ou trocar as pessoas no Perfil.",
+    "en": "Everyone uses their own account. You subscribe and send the link; whoever joins through it gets Peregrino+ while your plan is active. You can remove or swap people in your Profile.",
+    "es": "Cada persona usa su propia cuenta. Tú te suscribes y envías el enlace; quien entra por él recibe Peregrino+ mientras tu plan esté activo. Puedes quitar o cambiar a las personas en tu Perfil."
+  },
+  "familyTitle": {
+    "pt": "Minha família",
+    "en": "My family",
+    "es": "Mi familia"
+  },
+  "familyOwnerYou": {
+    "pt": "Você · titular",
+    "en": "You · plan owner",
+    "es": "Tú · titular"
+  },
+  "familyOwnerNamed": {
+    "pt": "{name} · titular",
+    "en": "{name} · plan owner",
+    "es": "{name} · titular",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "familyMemberYou": {
+    "pt": "Você",
+    "en": "You",
+    "es": "Tú"
+  },
+  "familySomeone": {
+    "pt": "Peregrino",
+    "en": "Pilgrim",
+    "es": "Peregrino"
+  },
+  "familySeatsLeft": {
+    "pt": "{count, plural, =0{Todas as vagas estão em uso} =1{1 vaga livre} other{{count} vagas livres}}",
+    "en": "{count, plural, =0{All spots are in use} =1{1 spot open} other{{count} spots open}}",
+    "es": "{count, plural, =0{Todas las plazas están en uso} =1{1 plaza libre} other{{count} plazas libres}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "familyEmptySeat": {
+    "pt": "Vaga livre",
+    "en": "Open spot",
+    "es": "Plaza libre"
+  },
+  "familyInvite": {
+    "pt": "Convidar pelo link",
+    "en": "Invite with the link",
+    "es": "Invitar con el enlace"
+  },
+  "familyInviteMessage": {
+    "pt": "{name} chamou você para o Peregrino+ da família no Stway. Toque para entrar: {link}",
+    "en": "{name} invited you to the family Peregrino+ on Stway. Tap to join: {link}",
+    "es": "{name} te invitó al Peregrino+ familiar en Stway. Toca para entrar: {link}",
+    "placeholders": {
+      "name": "String",
+      "link": "String"
+    }
+  },
+  "familyNewLink": {
+    "pt": "Gerar link novo",
+    "en": "New link",
+    "es": "Enlace nuevo"
+  },
+  "familyNewLinkDone": {
+    "pt": "Link novo pronto. O anterior parou de funcionar.",
+    "en": "New link ready. The old one no longer works.",
+    "es": "Enlace nuevo listo. El anterior dejó de funcionar."
+  },
+  "familyRemove": {
+    "pt": "Tirar do plano",
+    "en": "Remove from plan",
+    "es": "Quitar del plan"
+  },
+  "familyRemoveConfirm": {
+    "pt": "Tirar {name} do plano? A pessoa perde o Peregrino+ da família na hora e a vaga fica livre.",
+    "en": "Remove {name} from the plan? They lose the family Peregrino+ right away and the spot opens up.",
+    "es": "¿Quitar a {name} del plan? Pierde el Peregrino+ familiar al instante y la plaza queda libre.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "familyRemoved": {
+    "pt": "{name} saiu do plano.",
+    "en": "{name} left the plan.",
+    "es": "{name} salió del plan.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "familyLeave": {
+    "pt": "Sair do plano",
+    "en": "Leave the plan",
+    "es": "Salir del plan"
+  },
+  "familyLeaveConfirm": {
+    "pt": "Sair do plano da família? Você perde o Peregrino+ que vem dele.",
+    "en": "Leave the family plan? You lose the Peregrino+ that comes with it.",
+    "es": "¿Salir del plan familiar? Pierdes el Peregrino+ que viene con él."
+  },
+  "familyLeft": {
+    "pt": "Você saiu do plano da família.",
+    "en": "You left the family plan.",
+    "es": "Saliste del plan familiar."
+  },
+  "familyPaused": {
+    "pt": "Plano pausado: a assinatura de quem paga não está ativa. Quando ela voltar, todos recebem o Peregrino+ de novo.",
+    "en": "Plan paused: the owner’s subscription is not active. When it comes back, everyone gets Peregrino+ again.",
+    "es": "Plan en pausa: la suscripción de quien paga no está activa. Cuando vuelva, todos reciben Peregrino+ de nuevo."
+  },
+  "familyPreparing": {
+    "pt": "Preparando o seu plano. Leva alguns segundos depois da compra.",
+    "en": "Setting up your plan. It takes a few seconds after the purchase.",
+    "es": "Preparando tu plan. Tarda unos segundos después de la compra."
+  },
+  "familyPlanOf": {
+    "pt": "Família de {name}",
+    "en": "{name}’s family",
+    "es": "Familia de {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "familyJoinTitle": {
+    "pt": "Peregrino+ da família",
+    "en": "Family Peregrino+",
+    "es": "Peregrino+ familiar"
+  },
+  "familyJoinBody": {
+    "pt": "{name} chamou você para o plano da família. Você ganha o Peregrino+ enquanto o plano estiver ativo, com a sua conta e o seu caminho.",
+    "en": "{name} invited you to the family plan. You get Peregrino+ while the plan is active, with your own account and your own path.",
+    "es": "{name} te invitó al plan familiar. Recibes Peregrino+ mientras el plan esté activo, con tu cuenta y tu camino.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "familyJoinCta": {
+    "pt": "Entrar no plano",
+    "en": "Join the plan",
+    "es": "Entrar al plan"
+  },
+  "familyJoinDone": {
+    "pt": "Pronto! Você está na família de {name}.",
+    "en": "Done! You are in {name}’s family.",
+    "es": "¡Listo! Estás en la familia de {name}.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "familyAlreadyIn": {
+    "pt": "Você já está neste plano.",
+    "en": "You are already in this plan.",
+    "es": "Ya estás en este plan."
+  },
+  "familyErrorInvalid": {
+    "pt": "Este convite não vale mais. Peça um link novo.",
+    "en": "This invite is no longer valid. Ask for a new link.",
+    "es": "Esta invitación ya no vale. Pide un enlace nuevo."
+  },
+  "familyErrorOwn": {
+    "pt": "Este é o seu próprio plano.",
+    "en": "This is your own plan.",
+    "es": "Este es tu propio plan."
+  },
+  "familyErrorFull": {
+    "pt": "As vagas deste plano já foram usadas.",
+    "en": "All spots in this plan are taken.",
+    "es": "Las plazas de este plan ya se usaron."
+  },
+  "familyErrorOther": {
+    "pt": "Você já está em outro plano de família. Saia dele no Perfil antes.",
+    "en": "You are already in another family plan. Leave it in your Profile first.",
+    "es": "Ya estás en otro plan familiar. Sal de él en tu Perfil antes."
+  },
+  "familyErrorInactive": {
+    "pt": "Este plano da família está pausado.",
+    "en": "This family plan is paused.",
+    "es": "Este plan familiar está en pausa."
+  },
+  "familyErrorHasPlus": {
+    "pt": "Você já assina o Peregrino+. Cancele a sua assinatura na loja antes de entrar, para não pagar duas vezes.",
+    "en": "You already subscribe to Peregrino+. Cancel your subscription in the store before joining, so you don’t pay twice.",
+    "es": "Ya tienes Peregrino+. Cancela tu suscripción en la tienda antes de entrar, para no pagar dos veces."
+  },
+  "familyErrorNeedsAccount": {
+    "pt": "Entre na sua conta para aceitar o convite. Ele espera por você.",
+    "en": "Sign in to accept the invite. It will wait for you.",
+    "es": "Entra en tu cuenta para aceptar la invitación. Te espera."
+  },
+  "familyErrorFailed": {
+    "pt": "Não deu certo agora. Tente de novo.",
+    "en": "That didn’t work. Try again.",
+    "es": "No funcionó. Inténtalo de nuevo."
+  },
+  "familyStatToday": {
+    "pt": "Hoje",
+    "en": "Today",
+    "es": "Hoy"
+  },
+  "familyStatTogether": {
+    "pt": "Dias juntos",
+    "en": "Days together",
+    "es": "Días juntos"
+  },
+  "familyStatWalks": {
+    "pt": "Caminhadas",
+    "en": "Walks",
+    "es": "Caminatas"
+  },
+  "familyAllWalkedToday": {
+    "pt": "A casa inteira caminhou hoje!",
+    "en": "The whole house walked today!",
+    "es": "¡Toda la casa caminó hoy!"
+  },
+  "familyTogetherHint": {
+    "pt": "Quando todos caminharem no mesmo dia, a coluna acende em dourado.",
+    "en": "When everyone walks on the same day, that column lights up in gold.",
+    "es": "Cuando todos caminen el mismo día, la columna se enciende en dorado."
+  },
+  "familyWalkPrivate": {
+    "pt": "Semana guardada",
+    "en": "Week kept private",
+    "es": "Semana guardada"
+  },
+  "familyNoStreak": {
+    "pt": "Sem sequência agora",
+    "en": "No streak right now",
+    "es": "Sin racha ahora"
+  },
+  "familyInviteShort": {
+    "pt": "Convidar",
+    "en": "Invite",
+    "es": "Invitar"
+  },
+  "familyManage": {
+    "pt": "Gerenciar",
+    "en": "Manage",
+    "es": "Gestionar"
+  },
+  "familyManageDone": {
+    "pt": "Pronto",
+    "en": "Done",
+    "es": "Listo"
+  },
+  "familyMissingToday": {
+    "pt": "Hoje ainda falta: {names}",
+    "en": "Still to walk today: {names}",
+    "es": "Hoy todavía falta: {names}",
+    "placeholders": {
+      "names": "String"
+    }
+  },
+  "familyStreak": {
+    "pt": "{count, plural, =1{1 dia seguido} other{{count} dias seguidos}}",
+    "en": "{count, plural, =1{1 day in a row} other{{count} days in a row}}",
+    "es": "{count, plural, =1{1 día seguido} other{{count} días seguidos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "paywallFamilySeatsLine": {
+    "pt": "{count, plural, =1{Você + 1 pessoa} other{Você + {count} pessoas}}",
+    "en": "{count, plural, =1{You + 1 person} other{You + {count} people}}",
+    "es": "{count, plural, =1{Tú + 1 persona} other{Tú + {count} personas}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "paywallPerPersonShort": {
+    "pt": "{price} por pessoa",
+    "en": "{price} per person",
+    "es": "{price} por persona",
+    "placeholders": {
+      "price": "String"
+    }
+  }
+}

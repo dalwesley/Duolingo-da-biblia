@@ -93,13 +93,19 @@ class RecognitionService extends ChangeNotifier {
     }
     await _sub?.cancel();
     _boundUid = uid;
-    _sub = backend.watchIncomingRecognitions().listen(
+    late final StreamSubscription<dynamic> sub;
+    sub = _sub = backend.watchIncomingRecognitions().listen(
       (list) {
         _incoming = list;
         notifyListeners();
       },
       onError: (Object e) {
         debugPrint('Falha ao ouvir reconhecimentos: $e');
+        // Stream morre no erro: solta para o próximo bind() reabrir.
+        if (!identical(_sub, sub)) return;
+        unawaited(sub.cancel());
+        _sub = null;
+        _boundUid = null;
       },
     );
     unawaited(refreshRecent());

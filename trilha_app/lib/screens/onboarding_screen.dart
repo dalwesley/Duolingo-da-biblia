@@ -97,7 +97,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   static const _beats = _Beat.values;
 
   final _nameController = TextEditingController();
-  final _tilt = TiltParallax()..start();
+  final _tilt = TiltParallax();
   late final AnimationController _scene;
   late final AnimationController _breath;
   late final AnimationController _world;
@@ -359,10 +359,13 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     super.didChangeDependencies();
     // Com movimento reduzido o fôlego fica parado: sem isso o fundo
     // (trilha em tela cheia) repintava a cada quadro sem mudar nada.
+    // O acelerômetro também: cada leitura (50/s) reconstruía o fundo.
     if (MediaQuery.disableAnimationsOf(context)) {
       _breath.stop();
+      _tilt.stop();
     } else if (!_breath.isAnimating) {
       _breath.repeat();
+      _tilt.start();
     }
   }
 
@@ -577,16 +580,20 @@ class _OnboardingScreenState extends State<OnboardingScreen>
       background: Stack(
         fit: StackFit.expand,
         children: [
-          AnimatedBuilder(
-            animation: Listenable.merge([_world, _breath, _scene, _tilt]),
-            builder: (context, _) => _WorldFrame(
-              from: _fromWorld,
-              to: _toWorld,
-              reveal: _world.value,
-              breath: _breath.value,
-              scene: _scene.value,
-              beat: _beat,
-              tilt: _tilt.value,
+          // Fundo repinta a cada quadro (fôlego, inclinação): camada própria
+          // para não levar o texto e os botões junto.
+          RepaintBoundary(
+            child: AnimatedBuilder(
+              animation: Listenable.merge([_world, _breath, _scene, _tilt]),
+              builder: (context, _) => _WorldFrame(
+                from: _fromWorld,
+                to: _toWorld,
+                reveal: _world.value,
+                breath: _breath.value,
+                scene: _scene.value,
+                beat: _beat,
+                tilt: _tilt.value,
+              ),
             ),
           ),
           // Claro e Médio têm arte própria no app: o fundo do tema escolhido

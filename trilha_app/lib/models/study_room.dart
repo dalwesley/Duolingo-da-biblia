@@ -398,7 +398,8 @@ class RoomMember {
     if (last == null) return null;
     final d = now ?? DateTime.now();
     final today = DateTime(d.year, d.month, d.day);
-    return today.difference(last).inDays;
+    // Arredonda: dia de 23h (horário de verão) não perde um dia.
+    return (today.difference(last).inHours / 24).round();
   }
 
   static String studyDoneKey(RoomStudy study) =>

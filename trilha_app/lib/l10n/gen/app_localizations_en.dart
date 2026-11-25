@@ -874,7 +874,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get caravanPreviewBody =>
-      'Tap an eye to show or hide it. It changes right away, below.';
+      'Tap the eye on each card to show or hide it. Faded cards are only visible to you.';
 
   @override
   String get caravanPreviewCardCaption =>
@@ -2916,6 +2916,183 @@ class AppLocalizationsEn extends AppLocalizations {
   String get exploreSoonTitle => 'The Bible Atlas is on the way';
 
   @override
+  String get familyAllWalkedToday => 'The whole house walked today!';
+
+  @override
+  String get familyAlreadyIn => 'You are already in this plan.';
+
+  @override
+  String get familyEmptySeat => 'Open spot';
+
+  @override
+  String get familyErrorFailed => 'That didn’t work. Try again.';
+
+  @override
+  String get familyErrorFull => 'All spots in this plan are taken.';
+
+  @override
+  String get familyErrorHasPlus =>
+      'You already subscribe to Peregrino+. Cancel your subscription in the store before joining, so you don’t pay twice.';
+
+  @override
+  String get familyErrorInactive => 'This family plan is paused.';
+
+  @override
+  String get familyErrorInvalid =>
+      'This invite is no longer valid. Ask for a new link.';
+
+  @override
+  String get familyErrorNeedsAccount =>
+      'Sign in to accept the invite. It will wait for you.';
+
+  @override
+  String get familyErrorOther =>
+      'You are already in another family plan. Leave it in your Profile first.';
+
+  @override
+  String get familyErrorOwn => 'This is your own plan.';
+
+  @override
+  String get familyInvite => 'Invite with the link';
+
+  @override
+  String familyInviteMessage(String name, String link) {
+    return '$name invited you to the family Peregrino+ on Stway. Tap to join: $link';
+  }
+
+  @override
+  String get familyInviteShort => 'Invite';
+
+  @override
+  String familyJoinBody(String name) {
+    return '$name invited you to the family plan. You get Peregrino+ while the plan is active, with your own account and your own path.';
+  }
+
+  @override
+  String get familyJoinCta => 'Join the plan';
+
+  @override
+  String familyJoinDone(String name) {
+    return 'Done! You are in $name’s family.';
+  }
+
+  @override
+  String get familyJoinTitle => 'Family Peregrino+';
+
+  @override
+  String get familyLeave => 'Leave the plan';
+
+  @override
+  String get familyLeaveConfirm =>
+      'Leave the family plan? You lose the Peregrino+ that comes with it.';
+
+  @override
+  String get familyLeft => 'You left the family plan.';
+
+  @override
+  String get familyManage => 'Manage';
+
+  @override
+  String get familyManageDone => 'Done';
+
+  @override
+  String get familyMemberYou => 'You';
+
+  @override
+  String familyMissingToday(String names) {
+    return 'Still to walk today: $names';
+  }
+
+  @override
+  String get familyNewLink => 'New link';
+
+  @override
+  String get familyNewLinkDone =>
+      'New link ready. The old one no longer works.';
+
+  @override
+  String get familyNoStreak => 'No streak right now';
+
+  @override
+  String familyOwnerNamed(String name) {
+    return '$name · plan owner';
+  }
+
+  @override
+  String get familyOwnerYou => 'You · plan owner';
+
+  @override
+  String get familyPaused =>
+      'Plan paused: the owner’s subscription is not active. When it comes back, everyone gets Peregrino+ again.';
+
+  @override
+  String familyPlanOf(String name) {
+    return '$name’s family';
+  }
+
+  @override
+  String get familyPreparing =>
+      'Setting up your plan. It takes a few seconds after the purchase.';
+
+  @override
+  String get familyRemove => 'Remove from plan';
+
+  @override
+  String familyRemoveConfirm(String name) {
+    return 'Remove $name from the plan? They lose the family Peregrino+ right away and the spot opens up.';
+  }
+
+  @override
+  String familyRemoved(String name) {
+    return '$name left the plan.';
+  }
+
+  @override
+  String familySeatsLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count spots open',
+      one: '1 spot open',
+      zero: 'All spots are in use',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get familySomeone => 'Pilgrim';
+
+  @override
+  String get familyStatToday => 'Today';
+
+  @override
+  String get familyStatTogether => 'Days together';
+
+  @override
+  String get familyStatWalks => 'Walks';
+
+  @override
+  String familyStreak(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days in a row',
+      one: '1 day in a row',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get familyTitle => 'My family';
+
+  @override
+  String get familyTogetherHint =>
+      'When everyone walks on the same day, that column lights up in gold.';
+
+  @override
+  String get familyWalkPrivate => 'Week kept private';
+
+  @override
   String get feedbackAlmost => 'Almost';
 
   @override
@@ -2988,6 +3165,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String groupCallFull(int count) {
     return 'This group already has $count people.';
   }
+
+  @override
+  String get groupCallSearchEmpty => 'No one by that name in the caravan.';
+
+  @override
+  String get groupCallSearchHint => 'Search by name';
 
   @override
   String get groupCallShareCta => 'Share · QR code and code';
@@ -6900,10 +7083,24 @@ class AppLocalizationsEn extends AppLocalizations {
       'There was a payment problem. Update it in the store to keep access.';
 
   @override
+  String get paywallBuyLifetime => 'Get lifetime access';
+
+  @override
   String get paywallBuyOnce => 'Buy';
 
   @override
   String get paywallCancelAnytime => 'Cancel anytime.';
+
+  @override
+  String paywallCtaNoteTrial(int count, String price) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days free, then $price',
+      one: '1 day free, then $price',
+    );
+    return '$_temp0';
+  }
 
   @override
   String paywallEndsOn(String date) {
@@ -6911,11 +7108,41 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get paywallFamilyHow =>
+      'Everyone uses their own account. You subscribe and send the link; whoever joins through it gets Peregrino+ while your plan is active. You can remove or swap people in your Profile.';
+
+  @override
+  String get paywallFamilyIntro =>
+      'The same Peregrino+ for the people who walk with you at home. Each person has their own account and their own path.';
+
+  @override
+  String paywallFamilyPerPerson(String price) {
+    return '$price per person a year';
+  }
+
+  @override
+  String paywallFamilySeatsLine(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'You + $count people',
+      one: 'You + 1 person',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get paywallForFamily => 'Family';
+
+  @override
+  String get paywallForSolo => 'Just me';
+
+  @override
   String get paywallFounderBadge => 'Launch';
 
   @override
   String paywallFounderBody(String price) {
-    return 'A launch price for those who arrive first at Stway. You pay $price a year for as long as you renew.';
+    return 'A launch price for those who arrive first at Stway. You pay $price once and keep Peregrino+ forever, with no renewal.';
   }
 
   @override
@@ -6941,7 +7168,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get paywallFounderNote => 'The price stays while you renew.';
+  String get paywallFounderNote => 'Pay once. Yours forever.';
 
   @override
   String paywallFounderRemaining(int cap) {
@@ -6949,7 +7176,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get paywallFounderTitle => 'The launch price';
+  String get paywallFounderTitle => 'Launch lifetime';
 
   @override
   String get paywallFreeForever =>
@@ -6957,6 +7184,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallHeadline => 'Keep your pace';
+
+  @override
+  String get paywallHeroBody =>
+      'Every trail open, at your own pace. And your support keeps Stway free for those who can\'t pay.';
+
+  @override
+  String get paywallHeroTitle => 'Walk without limits';
 
   @override
   String paywallLaunchFreeBody(String date) {
@@ -6968,6 +7202,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallLifetimeActive => 'Lifetime: it never expires.';
+
+  @override
+  String paywallLifetimeNote(String price) {
+    return '$price once · lifetime access, no renewal';
+  }
 
   @override
   String get paywallManage => 'Manage subscription';
@@ -6982,6 +7221,14 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get paywallOffersFailed =>
       'We couldn\'t load the plans. Check your connection and try again.';
+
+  @override
+  String get paywallOnceShort => 'one-time';
+
+  @override
+  String paywallPerPersonShort(String price) {
+    return '$price per person';
+  }
 
   @override
   String get paywallPerkBadgeBody =>
@@ -7055,11 +7302,22 @@ class AppLocalizationsEn extends AppLocalizations {
   String get paywallPerkYearReviewTitle => 'Your whole year';
 
   @override
+  String get paywallPerksHeader => 'What Peregrino+ includes';
+
+  @override
   String get paywallPitch =>
       'Your support keeps Stway free for those who can\'t pay.\nAnd you also get the benefits below.';
 
   @override
   String get paywallPlanAnnual => 'Annual';
+
+  @override
+  String get paywallPlanCouple => 'Couple';
+
+  @override
+  String paywallPlanFamilyOf(int count) {
+    return 'Family · $count people';
+  }
 
   @override
   String get paywallPlanFounder => 'Pioneer';
@@ -7149,6 +7407,12 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get paywallSeeAllPerks => 'See all perks';
+
+  @override
+  String get paywallSeeFewerPerks => 'See less';
+
+  @override
   String paywallStartTrial(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -7192,15 +7456,18 @@ class AppLocalizationsEn extends AppLocalizations {
       'Everything in Pilgrim+ unlocked, nothing to pay.';
 
   @override
+  String get paywallTitheBody =>
+      'of Peregrino+ net revenue goes to missions and Bible translation.';
+
+  @override
+  String get paywallTitheField =>
+      'Your subscription supports the mission field.';
+
+  @override
   String get paywallTitheLink => 'Read the manifesto';
 
   @override
-  String get paywallTitheOffer =>
-      '10% of Peregrino+ net revenue goes to missions and Bible translation.';
-
-  @override
-  String get paywallTithePaid =>
-      'Your subscription also supports the field: 10% of net revenue goes to missions and Bible translation.';
+  String get paywallTitheTitle => 'Stway\'s tithe';
 
   @override
   String get paywallTitle => 'Pilgrim+';
@@ -7503,11 +7770,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'In this group, answers stay with the leader.';
 
   @override
-  String planAnswersTitle(int n) {
-    return 'Answers for day $n';
-  }
-
-  @override
   String planApproxDays(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -7790,8 +8052,14 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String planEditorDurationTrail(String name) {
-    return 'Follows the $name trail: one plan day for each scene.';
+  String planEditorDurationTrail(String name, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count scenes',
+      one: '1 scene',
+    );
+    return '$_temp0 from the $name trail, one a day. Rest days don\'t count.';
   }
 
   @override
@@ -7846,6 +8114,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get planEditorSaved => 'Purpose saved. The group can see it.';
+
+  @override
+  String planEditorScenesAll(int count) {
+    return 'All ($count)';
+  }
 
   @override
   String planEditorShowDays(int count) {
@@ -8199,6 +8472,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String planQ9(String ref) {
     return 'What do you want to ask God after reading $ref?';
   }
+
+  @override
+  String planQuestionDayTitle(int n) {
+    return 'Question for day $n';
+  }
+
+  @override
+  String get planQuestionTodayTitle => 'Today\'s question';
 
   @override
   String planReadingDays(int count) {

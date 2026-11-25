@@ -23,6 +23,7 @@ import '../services/moderation_service.dart';
 import '../services/notification_service.dart';
 import '../services/progress_service.dart';
 import '../services/sound_service.dart';
+import '../services/family_service.dart';
 import '../services/subscription_service.dart';
 import '../services/sync_service.dart';
 import '../theme/app_theme.dart';
@@ -775,7 +776,7 @@ class _SettingsScreenState extends State<SettingsScreen>
               // Visitante já tem o botão de entrar: um botão só no cartão.
               showCta: signedIn || !backend.isFirebaseReady,
               paidLine: sub.isPeregrinoPlus
-                  ? '${plusPlanLabel(context.l10n, sub)} · '
+                  ? '${plusPlanLabel(context.l10n, sub, joined: context.watch<FamilyService?>()?.joined)} · '
                         '${plusStatusLabel(context.l10n, sub)}'
                   : null,
               promoLine: promoUntil == null

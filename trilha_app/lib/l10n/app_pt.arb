@@ -645,7 +645,7 @@
     }
   },
   "caravanPostcardsSection": "Caravana",
-  "caravanPreviewBody": "Toque num olho para mostrar ou esconder. Muda na hora, aqui embaixo.",
+  "caravanPreviewBody": "Toque no olho de cada card para mostrar ou esconder. O que fica apagado só você vê.",
   "caravanPreviewCardCaption": "Veja seu perfil como os outros veem e escolha o que aparece.",
   "caravanPreviewTitle": "Como a caravana te vê",
   "caravanSeeAll": "Ver a caravana toda",
@@ -1916,6 +1916,124 @@
   "exploreSoonMeanwhile": "Enquanto isso, na Bíblia, toque num versículo e em \"Estudar este versículo\" para ver a palavra original e as conexões com outros textos.",
   "exploreSoonPickHeader": "O que você quer usar?",
   "exploreSoonTitle": "O Atlas da Bíblia está chegando",
+  "familyAllWalkedToday": "A casa inteira caminhou hoje!",
+  "familyAlreadyIn": "Você já está neste plano.",
+  "familyEmptySeat": "Vaga livre",
+  "familyErrorFailed": "Não deu certo agora. Tente de novo.",
+  "familyErrorFull": "As vagas deste plano já foram usadas.",
+  "familyErrorHasPlus": "Você já assina o Peregrino+. Cancele a sua assinatura na loja antes de entrar, para não pagar duas vezes.",
+  "familyErrorInactive": "Este plano da família está pausado.",
+  "familyErrorInvalid": "Este convite não vale mais. Peça um link novo.",
+  "familyErrorNeedsAccount": "Entre na sua conta para aceitar o convite. Ele espera por você.",
+  "familyErrorOther": "Você já está em outro plano de família. Saia dele no Perfil antes.",
+  "familyErrorOwn": "Este é o seu próprio plano.",
+  "familyInvite": "Convidar pelo link",
+  "familyInviteMessage": "{name} chamou você para o Peregrino+ da família no Stway. Toque para entrar: {link}",
+  "@familyInviteMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "familyInviteShort": "Convidar",
+  "familyJoinBody": "{name} chamou você para o plano da família. Você ganha o Peregrino+ enquanto o plano estiver ativo, com a sua conta e o seu caminho.",
+  "@familyJoinBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "familyJoinCta": "Entrar no plano",
+  "familyJoinDone": "Pronto! Você está na família de {name}.",
+  "@familyJoinDone": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "familyJoinTitle": "Peregrino+ da família",
+  "familyLeave": "Sair do plano",
+  "familyLeaveConfirm": "Sair do plano da família? Você perde o Peregrino+ que vem dele.",
+  "familyLeft": "Você saiu do plano da família.",
+  "familyManage": "Gerenciar",
+  "familyManageDone": "Pronto",
+  "familyMemberYou": "Você",
+  "familyMissingToday": "Hoje ainda falta: {names}",
+  "@familyMissingToday": {
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "familyNewLink": "Gerar link novo",
+  "familyNewLinkDone": "Link novo pronto. O anterior parou de funcionar.",
+  "familyNoStreak": "Sem sequência agora",
+  "familyOwnerNamed": "{name} · titular",
+  "@familyOwnerNamed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "familyOwnerYou": "Você · titular",
+  "familyPaused": "Plano pausado: a assinatura de quem paga não está ativa. Quando ela voltar, todos recebem o Peregrino+ de novo.",
+  "familyPlanOf": "Família de {name}",
+  "@familyPlanOf": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "familyPreparing": "Preparando o seu plano. Leva alguns segundos depois da compra.",
+  "familyRemove": "Tirar do plano",
+  "familyRemoveConfirm": "Tirar {name} do plano? A pessoa perde o Peregrino+ da família na hora e a vaga fica livre.",
+  "@familyRemoveConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "familyRemoved": "{name} saiu do plano.",
+  "@familyRemoved": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "familySeatsLeft": "{count, plural, =0{Todas as vagas estão em uso} =1{1 vaga livre} other{{count} vagas livres}}",
+  "@familySeatsLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "familySomeone": "Peregrino",
+  "familyStatToday": "Hoje",
+  "familyStatTogether": "Dias juntos",
+  "familyStatWalks": "Caminhadas",
+  "familyStreak": "{count, plural, =1{1 dia seguido} other{{count} dias seguidos}}",
+  "@familyStreak": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "familyTitle": "Minha família",
+  "familyTogetherHint": "Quando todos caminharem no mesmo dia, a coluna acende em dourado.",
+  "familyWalkPrivate": "Semana guardada",
   "feedbackAlmost": "Quase",
   "feedbackAnswer": "Resposta",
   "feedbackCheer1": "Isso.",
@@ -1957,6 +2075,8 @@
       }
     }
   },
+  "groupCallSearchEmpty": "Ninguém com esse nome na caravana.",
+  "groupCallSearchHint": "Buscar pelo nome",
   "groupCallShareCta": "Compartilhar · QR code e código",
   "groupCallSubtitle": "O convite aparece no app. Ou compartilhe o QR code e o código.",
   "groupCallTitle": "Chamar pessoas",
@@ -4601,8 +4721,20 @@
   "paywallAutoRenew": "Renova automaticamente pelo mesmo preço até você cancelar. Cancele quando quiser na App Store ou no Google Play, até 24 horas antes da renovação.",
   "paywallBestValue": "Melhor valor",
   "paywallBillingIssue": "Houve um problema no pagamento. Atualize na loja para não perder o acesso.",
+  "paywallBuyLifetime": "Garantir meu vitalício",
   "paywallBuyOnce": "Comprar",
   "paywallCancelAnytime": "Cancele quando quiser.",
+  "paywallCtaNoteTrial": "{count, plural, =1{1 dia grátis, depois {price}} other{{count} dias grátis, depois {price}}}",
+  "@paywallCtaNoteTrial": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
   "paywallEndsOn": "Cancelada. Seu acesso vai até {date}.",
   "@paywallEndsOn": {
     "placeholders": {
@@ -4611,8 +4743,28 @@
       }
     }
   },
+  "paywallFamilyHow": "Cada pessoa usa a própria conta. Você assina e manda o link; quem entra por ele ganha o Peregrino+ enquanto o seu plano estiver ativo. Dá para tirar ou trocar as pessoas no Perfil.",
+  "paywallFamilyIntro": "O mesmo Peregrino+ para quem caminha com você em casa. Cada pessoa tem a própria conta e o próprio caminho.",
+  "paywallFamilyPerPerson": "{price} por pessoa no ano",
+  "@paywallFamilyPerPerson": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "paywallFamilySeatsLine": "{count, plural, =1{Você + 1 pessoa} other{Você + {count} pessoas}}",
+  "@paywallFamilySeatsLine": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "paywallForFamily": "Família",
+  "paywallForSolo": "Só eu",
   "paywallFounderBadge": "Lançamento",
-  "paywallFounderBody": "Um valor de lançamento para quem chega primeiro ao Stway. Você paga {price} por ano enquanto renovar.",
+  "paywallFounderBody": "Um valor de lançamento para quem chega primeiro ao Stway. Você paga {price} uma vez e tem o Peregrino+ para sempre, sem renovação.",
   "@paywallFounderBody": {
     "placeholders": {
       "price": {
@@ -4650,7 +4802,7 @@
       }
     }
   },
-  "paywallFounderNote": "O preço fica enquanto você renovar.",
+  "paywallFounderNote": "Pague uma vez. É seu para sempre.",
   "paywallFounderRemaining": "de {cap} vagas restantes",
   "@paywallFounderRemaining": {
     "description": "Contador do Pioneiro no paywall: o número grande ao lado são as vagas que restam",
@@ -4660,9 +4812,11 @@
       }
     }
   },
-  "paywallFounderTitle": "O preço do lançamento",
+  "paywallFounderTitle": "Vitalício de lançamento",
   "paywallFreeForever": "A Bíblia, livro a livro, e as portas de entrada continuam grátis — uma trilha por vez. Sempre.",
   "paywallHeadline": "Mantenha seu ritmo",
+  "paywallHeroBody": "Todas as trilhas abertas, no seu ritmo. E seu apoio mantém o Stway grátis para quem não pode pagar.",
+  "paywallHeroTitle": "Caminhe sem limites",
   "paywallLaunchFreeBody": "Tudo do Peregrino+ liberado até {date}. Depois, você decide se quer continuar.",
   "@paywallLaunchFreeBody": {
     "placeholders": {
@@ -4673,10 +4827,27 @@
   },
   "paywallLaunchFreeTitle": "Grátis no lançamento",
   "paywallLifetimeActive": "Vitalício: não expira.",
+  "paywallLifetimeNote": "{price} uma vez · acesso vitalício, sem renovação",
+  "@paywallLifetimeNote": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
   "paywallManage": "Gerenciar assinatura",
   "paywallManageHint": "Mudar de plano ou cancelar é na App Store ou no Google Play.",
   "paywallMoreComing": "E muitos outros benefícios estão a caminho.",
   "paywallOffersFailed": "Não conseguimos carregar os planos. Confira sua conexão e tente de novo.",
+  "paywallOnceShort": "pagamento único",
+  "paywallPerPersonShort": "{price} por pessoa",
+  "@paywallPerPersonShort": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
   "paywallPerkBadgeBody": "Um selo exclusivo no seu perfil e na Caravana.",
   "paywallPerkBadgeTitle": "Selo de Peregrino",
   "paywallPerkGiftBody": "Todo mês, 1 trilha do Peregrino+ inteira de presente para quem você escolher. Quem recebe não paga nada.",
@@ -4709,8 +4880,18 @@
   "@paywallPerkYearReviewTitle": {
     "description": "Benefício Plus: retrospectiva do ano"
   },
+  "paywallPerksHeader": "O que vem no Peregrino+",
   "paywallPitch": "Seu apoio mantém o Stway grátis para quem não pode pagar.\nE você ainda ganha os benefícios abaixo.",
   "paywallPlanAnnual": "Anual",
+  "paywallPlanCouple": "Casal",
+  "paywallPlanFamilyOf": "Família · {count} pessoas",
+  "@paywallPlanFamilyOf": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "paywallPlanFounder": "Pioneiro",
   "paywallPlanLifetime": "Vitalício",
   "paywallPlanMonthly": "Mensal",
@@ -4805,6 +4986,8 @@
       }
     }
   },
+  "paywallSeeAllPerks": "Ver todos os benefícios",
+  "paywallSeeFewerPerks": "Ver menos",
   "paywallStartTrial": "{count, plural, =1{Começar 1 dia grátis} other{Começar {count} dias grátis}}",
   "@paywallStartTrial": {
     "placeholders": {
@@ -4845,17 +5028,21 @@
   },
   "paywallTimelineToday": "Hoje",
   "paywallTimelineTodayBody": "Tudo do Peregrino+ liberado, sem pagar nada.",
+  "paywallTitheBody": "da receita líquida do Peregrino+ vai para missões e tradução da Bíblia.",
+  "@paywallTitheBody": {
+    "description": "Paywall: dízimo do Stway (manifesto) — lido depois do \"10%\" grande"
+  },
+  "paywallTitheField": "Sua assinatura sustenta o campo missionário.",
+  "@paywallTitheField": {
+    "description": "Paywall: dízimo do Stway — frase em destaque, linha própria"
+  },
   "paywallTitheLink": "Ver o manifesto",
   "@paywallTitheLink": {
     "description": "Paywall: dízimo do Stway (manifesto)"
   },
-  "paywallTitheOffer": "10% da receita líquida do Peregrino+ vai para missões e tradução da Bíblia.",
-  "@paywallTitheOffer": {
-    "description": "Paywall: dízimo do Stway (manifesto)"
-  },
-  "paywallTithePaid": "Sua assinatura também sustenta o campo: 10% da receita líquida vai para missões e tradução da Bíblia.",
-  "@paywallTithePaid": {
-    "description": "Paywall: dízimo do Stway (manifesto)"
+  "paywallTitheTitle": "O dízimo do Stway",
+  "@paywallTitheTitle": {
+    "description": "Paywall: dízimo do Stway (manifesto) — título do card"
   },
   "paywallTitle": "Peregrino+",
   "@paywallTitle": {
@@ -5051,14 +5238,6 @@
   "planAnswersNowOpen": "Quem responder vê as respostas do grupo.",
   "planAnswersNowPrivate": "Agora só você vê as respostas.",
   "planAnswersPrivateNote": "Neste grupo, as respostas ficam com o líder.",
-  "planAnswersTitle": "Respostas do dia {n}",
-  "@planAnswersTitle": {
-    "placeholders": {
-      "n": {
-        "type": "int"
-      }
-    }
-  },
   "planApproxDays": "{count, plural, =1{~1 dia} other{~{count} dias}}",
   "@planApproxDays": {
     "placeholders": {
@@ -5326,11 +5505,14 @@
       }
     }
   },
-  "planEditorDurationTrail": "Segue a trilha {name}: um dia do propósito para cada cena.",
+  "planEditorDurationTrail": "{count, plural, =1{1 cena} other{{count} cenas}} da trilha {name}, uma por dia. Dias de descanso não contam.",
   "@planEditorDurationTrail": {
     "placeholders": {
       "name": {
         "type": "String"
+      },
+      "count": {
+        "type": "int"
       }
     }
   },
@@ -5373,6 +5555,14 @@
   "planEditorSaveError": "Não foi possível salvar o propósito.",
   "planEditorSaveNew": "Começar o propósito",
   "planEditorSaved": "Propósito salvo. O grupo já vê.",
+  "planEditorScenesAll": "Todas ({count})",
+  "@planEditorScenesAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "planEditorShowDays": "Ver a pergunta de cada dia ({count})",
   "@planEditorShowDays": {
     "placeholders": {
@@ -5708,6 +5898,15 @@
       }
     }
   },
+  "planQuestionDayTitle": "Pergunta do dia {n}",
+  "@planQuestionDayTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "planQuestionTodayTitle": "Pergunta de hoje",
   "planReadingDays": "{count, plural, =1{1 dia de leitura} other{{count} dias de leitura}}",
   "@planReadingDays": {
     "placeholders": {

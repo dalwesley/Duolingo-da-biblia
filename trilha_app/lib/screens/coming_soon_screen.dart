@@ -106,10 +106,15 @@ class _ComingSoonScreenState extends State<ComingSoonScreen> {
         .map((t) => t.$1)
         .where(_picks.contains)
         .toList();
-    await context.read<BackendService>().joinWaitlist(
+    final ok = await context.read<BackendService>().joinWaitlist(
       widget.feature.key,
       picks: picks,
     );
+    if (!ok) {
+      // Falhou a escrita: não marca como inscrito; o botão volta a valer.
+      if (mounted) setState(() => _busy = false);
+      return;
+    }
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_prefsKey, true);
     AnalyticsService.instance.logEvent('${widget.feature.key}_waitlist_join', {

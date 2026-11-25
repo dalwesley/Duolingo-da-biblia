@@ -164,7 +164,9 @@ class WalkCompanion {
     if (last == null) return const {};
     return {
       for (var i = 0; i < sharedDays; i++)
-        _dateKey(last.subtract(Duration(days: i))),
+        // Calendário, não 24h: no início do horário de verão o dia tem 23h
+        // e subtrair 24h pulava um dia.
+        _dateKey(DateTime(last.year, last.month, last.day - i)),
     };
   }
 
@@ -371,7 +373,8 @@ class WalkCompanion {
     if (last == null) return null;
     final now = DateTime.now();
     final today = DateTime(now.year, now.month, now.day);
-    return today.difference(last).inDays.clamp(0, 999);
+    // Arredonda: dia de 23h/25h (horário de verão) não perde um dia.
+    return (today.difference(last).inHours / 24).round().clamp(0, 999);
   }
 }
 

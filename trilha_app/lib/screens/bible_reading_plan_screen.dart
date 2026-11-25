@@ -68,6 +68,9 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
   }
 
   Future<void> _reload() async {
+    // Chamado depois de awaits (_start, _confirmClear, _completeDay): a tela
+    // pode já ter saído.
+    if (!mounted) return;
     final progress = context.read<ProgressService>();
     final plan = progress.bibleReadingPlan;
     setState(() => _loading = true);

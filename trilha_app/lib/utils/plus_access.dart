@@ -9,9 +9,25 @@ class PlusAccess {
   /// e problema de cobrança sem liberar para sempre.
   static const graceDays = 7;
 
-  /// Anual de lançamento (Pioneiro). No Android a loja pode devolver o id
-  /// com o plano base (`plus_founder_annual:annual`).
-  static const pioneerProductId = 'plus_founder_annual';
+  /// Pioneiro: vitalício de lançamento (compra única, 200 vagas).
+  static const pioneerProductId = 'plus_pioneer_lifetime';
+
+  /// Anual de lançamento antigo (só testadores). Ainda dá o selo.
+  static const pioneerLegacyProductId = 'plus_founder_annual';
+
+  /// Casal e Família: vagas extras de cada produto (o titular já é uma
+  /// pessoa). Espelha `FAMILY_PRODUCTS` em functions/family.js.
+  static const familySeats = {
+    'plus_casal_annual': 1,
+    'plus_familia3_annual': 2,
+    'plus_familia4_annual': 3,
+  };
+
+  /// Vagas extras do produto, ou 0 se não é plano de família.
+  static int familySeatsFor(String? id) =>
+      id == null ? 0 : familySeats[baseProductId(id)] ?? 0;
+
+  static bool isFamilyProduct(String? id) => familySeatsFor(id) > 0;
 
   /// Trilhas que alguém com o Peregrino+ liberou para este peregrino
   /// (passe de trilha). Espelho de `ProgressService.giftedTrails`, que
@@ -55,9 +71,11 @@ class PlusAccess {
     return now.isBefore(expires.add(const Duration(days: graceDays)));
   }
 
-  static bool isPioneerProduct(String? id) =>
-      id != null &&
-      (id == pioneerProductId || id.startsWith('$pioneerProductId:'));
+  static bool isPioneerProduct(String? id) {
+    if (id == null) return false;
+    final base = baseProductId(id);
+    return base == pioneerProductId || base == pioneerLegacyProductId;
+  }
 
   /// Id do produto sem o plano base do Android (`plus_annual:annual` →
   /// `plus_annual`). Comparar ids de loja sempre por aqui: o pacote da

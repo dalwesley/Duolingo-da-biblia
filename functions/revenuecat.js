@@ -20,12 +20,15 @@ const { FieldValue } = require('firebase-admin/firestore');
 const ENTITLEMENT_ID = 'peregrino_plus';
 const SUPPORT_PREFIX = 'apoio';
 
-/// Anual de lançamento, com teste de 14 dias. A vaga é do primeiro
-/// pagamento, não do início do teste: quem desiste no teste não ocupa
-/// vaga. Cancelar depois de pagar não devolve, renovar não soma de novo.
-const PIONEER_PRODUCT_ID = 'plus_founder_annual';
+/// Pioneiro: vitalício de lançamento (compra única, sem teste), as
+/// primeiras 200 vagas. A vaga conta na compra. `plus_founder_annual` era
+/// o anual de lançamento antigo (só testadores): continua reconhecido
+/// para o selo, e a conversão do teste dele ainda conta vaga.
+const PIONEER_PRODUCT_ID = 'plus_pioneer_lifetime';
+const PIONEER_LEGACY_IDS = ['plus_founder_annual'];
 const PIONEER_CAP = 200;
 const PIONEER_SLOT_TYPES = new Set([
+  'NON_RENEWING_PURCHASE',
   'INITIAL_PURCHASE',
   'RENEWAL',
   'PRODUCT_CHANGE',
@@ -80,14 +83,26 @@ function plusStateFromEvent(event, { allowSandbox = false } = {}) {
     entitlements != null && entitlements.includes(ENTITLEMENT_ID);
   const product = String(event.product_id || '');
 
-  // Apoio avulso (consumível): não é assinatura, só o selo.
-  if (type === 'NON_RENEWING_PURCHASE') {
-    if (!product.startsWith(SUPPORT_PREFIX)) return null;
-    return { uid, fields: { supporter: true } };
-  }
-
   const expiresMs =
     typeof event.expiration_at_ms === 'number' ? event.expiration_at_ms : null;
+
+  // Compra única: apoio avulso (só o selo) ou o Pioneiro vitalício
+  // (Plus sem data de fim).
+  if (type === 'NON_RENEWING_PURCHASE') {
+    if (product.startsWith(SUPPORT_PREFIX)) return { uid, fields: { supporter: true } };
+    if (!hasEntitlement) return null;
+    return {
+      uid,
+      fields: {
+        plusProductId: product || null,
+        plusExpiresAt: expiresMs ? new Date(expiresMs).toISOString() : null,
+        plusSource: 'revenuecat',
+        plusActive: true,
+        plusWillRenew: false,
+        plusInTrial: false,
+      },
+    };
+  }
   const expiresAt = expiresMs ? new Date(expiresMs).toISOString() : null;
   // Teste grátis: o passe de trilha exige Plus pago. plusInTrial trava
   // a create em firestore.rules — quem inicia o teste e cancela não
@@ -102,7 +117,8 @@ function plusStateFromEvent(event, { allowSandbox = false } = {}) {
   // Assinatura mudou de conta (compra anônima que ganhou login, troca
   // de usuário da loja): o Plus morre na origem, que vem em `also` para
   // a função gravar junto. No destino só nasce se ainda vale — restaurar
-  // recibo vencido ou de apoio não dá Plus (não há produto vitalício).
+  // recibo vencido ou de apoio não dá Plus. Vitalício vem sem data de fim:
+  // o destino é lido no RevenueCat ([withTransferLookup]).
   // Sem nada a ligar no destino, `fields` é null e só a origem é gravada.
   if (type === 'TRANSFER') {
     const from = Array.isArray(event.transferred_from)
@@ -161,6 +177,19 @@ function plusStateFromEvent(event, { allowSandbox = false } = {}) {
       },
     };
   }
+  // Compra única sem data de fim (vitalício) só é cancelada por
+  // reembolso: o acesso acaba na hora.
+  if (type === 'CANCELLATION' && expiresMs == null) {
+    return {
+      uid,
+      fields: {
+        ...base,
+        plusActive: false,
+        plusWillRenew: false,
+        plusInTrial: false,
+      },
+    };
+  }
   if (STILL_ACTIVE.has(type)) {
     // Cancelou ≠ acabou: o acesso vai até a data de fim.
     const active =
@@ -191,16 +220,14 @@ function plusStateFromEvent(event, { allowSandbox = false } = {}) {
 }
 
 function isPioneerProduct(id) {
-  const product = String(id || '');
-  return (
-    product === PIONEER_PRODUCT_ID ||
-    product.startsWith(`${PIONEER_PRODUCT_ID}:`)
-  );
+  const product = String(id || '').split(':')[0];
+  return product === PIONEER_PRODUCT_ID || PIONEER_LEGACY_IDS.includes(product);
 }
 
 /**
  * Esta compra ocupa uma vaga de Pioneiro? Null se não.
- * Sandbox não conta. Começo de teste não conta: a vaga vem na conversão
+ * Sandbox não conta. O vitalício conta na compra (NON_RENEWING_PURCHASE).
+ * No anual antigo, começo de teste não conta: a vaga vem na conversão
  * do teste (RENEWAL com `is_trial_conversion`). Outras renovações,
  * cancelamento e expiração não contam.
  * TRANSFER de uma conta que já ocupou vaga herda (`from`), sem somar;
@@ -433,4 +460,5 @@ module.exports = {
   ENTITLEMENT_ID,
   PIONEER_PRODUCT_ID,
   PIONEER_CAP,
+  isPioneerProduct,
 };

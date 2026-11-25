@@ -11,9 +11,11 @@ import '../services/corner_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../services/remote_config_service.dart';
+import '../services/family_service.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../widgets/family_plan.dart';
 import '../widgets/caravan_pilgrim_sheet.dart';
 import '../utils/layout_utils.dart';
 import '../widgets/act_feel.dart';
@@ -159,6 +161,7 @@ class _MeScreenState extends State<MeScreen> {
     final challengeOn = context.watch<RemoteConfigService>().challengeEnabled;
     final record = context.watch<CornerService>().record;
     final sub = context.watch<SubscriptionService>();
+    final family = context.watch<FamilyService?>();
     final plusOpen = sub.plusFeaturesOpen;
     final profile = _caravanProfile;
     final accuracy =
@@ -333,6 +336,11 @@ class _MeScreenState extends State<MeScreen> {
       if (progress.groupSealWeeks.isNotEmpty) ...[
         const SizedBox(height: AppSpace.section),
         pad(GroupSealsCard(count: progress.groupSealWeeks.length)),
+      ],
+      // Casal e Família: quem paga e quem entrou pelo convite.
+      if (family != null && FamilyPlanCard.visible(family, sub)) ...[
+        const SizedBox(height: AppSpace.section),
+        pad(const FamilyPlanCard()),
       ],
     ];
 

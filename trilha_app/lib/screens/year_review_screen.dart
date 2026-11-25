@@ -350,18 +350,22 @@ class _YearReviewScreenState extends State<YearReviewScreen>
           key: _stackKey,
           fit: StackFit.expand,
           children: [
+            // Os raios giram sem parar: camada própria, senão o slide
+            // inteiro (texto, cartões, desfoque) repinta a cada quadro.
             Positioned.fill(
-              child: TweenAnimationBuilder<Color?>(
-                tween: ColorTween(end: page.accent),
-                duration: AppMotion.scene,
-                builder: (_, color, _) => TweenAnimationBuilder<Offset>(
-                  tween: Tween(end: _focus),
+              child: RepaintBoundary(
+                child: TweenAnimationBuilder<Color?>(
+                  tween: ColorTween(end: page.accent),
                   duration: AppMotion.scene,
-                  curve: AppMotion.enter,
-                  builder: (_, focus, _) => RevealStage(
-                    rays: _rays,
-                    color: color ?? page.accent,
-                    focus: focus,
+                  builder: (_, color, _) => TweenAnimationBuilder<Offset>(
+                    tween: Tween(end: _focus),
+                    duration: AppMotion.scene,
+                    curve: AppMotion.enter,
+                    builder: (_, focus, _) => RevealStage(
+                      rays: _rays,
+                      color: color ?? page.accent,
+                      focus: focus,
+                    ),
                   ),
                 ),
               ),

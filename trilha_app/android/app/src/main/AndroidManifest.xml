@@ -50,6 +50,7 @@
                 <data android:scheme="stway" android:host="redeem_web_purchase"/>
                 <!-- Passe de trilha: stway://passe/CODIGO -->
                 <data android:scheme="stway" android:host="passe"/>
+                <data android:scheme="stway" android:host="familia"/>
                 <!-- Botão "Abrir no Stway" do site: stway://hoje -->
                 <data android:scheme="stway" android:host="hoje"/>
             </intent-filter>

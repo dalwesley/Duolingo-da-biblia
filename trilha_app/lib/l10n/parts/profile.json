@@ -1115,9 +1115,9 @@
     "es": "Cómo te ve la caravana"
   },
   "caravanPreviewBody": {
-    "pt": "Toque num olho para mostrar ou esconder. Muda na hora, aqui embaixo.",
-    "en": "Tap an eye to show or hide it. It changes right away, below.",
-    "es": "Toca un ojo para mostrar u ocultar. Cambia al instante, aquí abajo."
+    "pt": "Toque no olho de cada card para mostrar ou esconder. O que fica apagado só você vê.",
+    "en": "Tap the eye on each card to show or hide it. Faded cards are only visible to you.",
+    "es": "Toca el ojo de cada tarjeta para mostrar u ocultar. Lo atenuado solo lo ves tú."
   },
   "caravanPreviewCardCaption": {
     "pt": "Veja seu perfil como os outros veem e escolha o que aparece.",
@@ -1177,5 +1177,57 @@
     "pt": "Selos \"Fiel na semana\" dos grupos",
     "en": "\"Faithful this week\" seals from groups",
     "es": "Sellos \"Fiel en la semana\" de los grupos"
+  },
+  "paywallHeroTitle": {
+    "pt": "Caminhe sem limites",
+    "en": "Walk without limits",
+    "es": "Camina sin límites"
+  },
+  "paywallHeroBody": {
+    "pt": "Todas as trilhas abertas, no seu ritmo. E seu apoio mantém o Stway grátis para quem não pode pagar.",
+    "en": "Every trail open, at your own pace. And your support keeps Stway free for those who can't pay.",
+    "es": "Todas las rutas abiertas, a tu ritmo. Y tu apoyo mantiene Stway gratis para quien no puede pagar."
+  },
+  "paywallOnceShort": {
+    "pt": "pagamento único",
+    "en": "one-time",
+    "es": "pago único"
+  },
+  "paywallSeeAllPerks": {
+    "pt": "Ver todos os benefícios",
+    "en": "See all perks",
+    "es": "Ver todos los beneficios"
+  },
+  "paywallCtaNoteTrial": {
+    "pt": "{count, plural, =1{1 dia grátis, depois {price}} other{{count} dias grátis, depois {price}}}",
+    "en": "{count, plural, =1{1 day free, then {price}} other{{count} days free, then {price}}}",
+    "es": "{count, plural, =1{1 día gratis, luego {price}} other{{count} días gratis, luego {price}}}",
+    "placeholders": {
+      "count": "int",
+      "price": "String"
+    }
+  },
+  "paywallPerksHeader": {
+    "pt": "O que vem no Peregrino+",
+    "en": "What Peregrino+ includes",
+    "es": "Lo que incluye Peregrino+"
+  },
+  "paywallSeeFewerPerks": {
+    "pt": "Ver menos",
+    "en": "See less",
+    "es": "Ver menos"
+  },
+  "paywallBuyLifetime": {
+    "pt": "Garantir meu vitalício",
+    "en": "Get lifetime access",
+    "es": "Asegurar mi acceso de por vida"
+  },
+  "paywallLifetimeNote": {
+    "pt": "{price} uma vez · acesso vitalício, sem renovação",
+    "en": "{price} once · lifetime access, no renewal",
+    "es": "{price} una vez · acceso de por vida, sin renovación",
+    "placeholders": {
+      "price": "String"
+    }
   }
 }

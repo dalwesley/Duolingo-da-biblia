@@ -254,8 +254,11 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
 
   @override
   void dispose() {
-    // Fechar a folha cala o "Ouvir o original".
-    unawaited(TtsService.instance.stop());
+    // Fechar a folha cala o "Ouvir o original" — mas não o capítulo que o
+    // leitor está lendo em voz alta por trás (sequência).
+    if (TtsService.instance.sequenceKey == null) {
+      unawaited(TtsService.instance.stop());
+    }
     super.dispose();
   }
 
@@ -363,7 +366,10 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
       bookIndex,
       limit: 40,
     );
-    if (!mounted || _selected?.pos != token.pos) return;
+    // Toques rápidos em dois livros: a resposta antiga não sobrescreve.
+    if (!mounted || _selected?.pos != token.pos || _filterBook != bookIndex) {
+      return;
+    }
     setState(() => _filterHits = hits);
   }
 

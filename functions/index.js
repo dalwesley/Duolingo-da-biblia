@@ -615,7 +615,8 @@ exports.revenueCatWebhook = functions
         allowSandbox: process.env.REVENUECAT_ALLOW_SANDBOX === '1',
       });
       await referralFromEvent(getFirestore(), event);
-      await stamp(out ? 'ok' : 'ignored', event);
+      const fam = await familyFromEvent(getFirestore(), event);
+      await stamp(out || fam ? 'ok' : 'ignored', event);
       if (!out) {
         // Evento que não muda o Plus nem ocupa vaga de Pioneiro.
         res.status(200).json({ ok: true, ignored: true });
@@ -632,6 +633,51 @@ exports.revenueCatWebhook = functions
       logger.error('revenuecat: falha ao gravar', err);
       await stamp('error', event, err && err.message);
       res.status(500).json({ ok: false, error: 'Falha ao gravar.' });
+    }
+  });
+
+// ---- Casal e Família (ver family.js) ----------------------------------------
+
+const family = require('./family');
+
+/**
+ * Depois do estado Plus gravado: compra, renovação ou fim de um plano de
+ * família cria, estende ou pausa `families/{titular}` e o Plus dos
+ * membros. Falha aqui só loga (o principal já foi gravado).
+ */
+async function familyFromEvent(db, event) {
+  const rc = referralRc();
+  if (!rc) return null;
+  try {
+    return await family.applyFamilyEvent(db, rc, event, logger, {
+      allowSandbox: process.env.REVENUECAT_ALLOW_SANDBOX === '1',
+    });
+  } catch (e) {
+    logger.error('família: falha no webhook', { error: e.message });
+    return null;
+  }
+}
+
+/** App: entrar, sair, tirar alguém, trocar o código (ver family.js). */
+exports.familyAction = functions
+  .region('us-central1')
+  .runWith({ secrets: [revenueCatSecretKey], timeoutSeconds: 60, memory: '256MB' })
+  .https.onCall(async (data, context) => {
+    if (!context.auth) {
+      throw new functions.https.HttpsError('unauthenticated', 'Entre na sua conta.', { reason: 'needs_account' });
+    }
+    try {
+      return await family.handle(
+        { db: getFirestore(), rc: referralRc(), logger },
+        context.auth.uid,
+        data || {},
+      );
+    } catch (e) {
+      if (e instanceof family.FamilyError) {
+        throw new functions.https.HttpsError(e.code, e.message, { reason: e.reason });
+      }
+      logger.error('família: falhou', { error: e.message, action: data?.action });
+      throw new functions.https.HttpsError('internal', 'Não deu certo agora. Tente de novo.', { reason: 'failed' });
     }
   });
 
@@ -845,9 +891,16 @@ const account = require('./account');
 
 /** Conta apagada no app (ou no Console): limpa o rastro no Firestore. */
 exports.onAuthUserDelete = functions
-  .runWith({ timeoutSeconds: 300, memory: '256MB' })
+  .runWith({ timeoutSeconds: 300, memory: '256MB', secrets: [revenueCatSecretKey] })
   .auth.user()
   .onDelete(async (user) => {
+    // Família antes do resto: libera a vaga (membro) ou tira o Plus dos
+    // membros (titular). Falha não segura a limpeza.
+    try {
+      await family.onAccountDeleted({ db: getFirestore(), rc: referralRc(), logger }, user.uid);
+    } catch (e) {
+      logger.error('conta: falha ao sair da família', { uid: user.uid, error: e.message });
+    }
     const failed = await account.purgeUserData(getFirestore(), user.uid, logger);
     logger.info('conta: excluída', { uid: user.uid, failed });
   });

@@ -84,7 +84,9 @@ class _PracticeScreenState extends State<PracticeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final mode = context.watch<ProgressService>().settings.appearanceMode;
+    final mode = context.select(
+      (ProgressService p) => p.settings.appearanceMode,
+    );
     final appearance = AppearanceStyle.resolve(mode);
 
     if (_loading) {

@@ -408,7 +408,7 @@ class NotificationService {
     final now = tz.TZDateTime.now(tz.local);
     final isToday =
         when.year == now.year && when.month == now.month && when.day == now.day;
-    if (plan.doneToday && isToday) when = when.add(const Duration(days: 1));
+    if (plan.doneToday && isToday) when = _plusDays(when, 1);
     final guided = GuidedReadingPlan.byId(plan.guidedId);
     final l = L10n.current;
     await _schedule(
@@ -841,6 +841,18 @@ class NotificationService {
     }
   }
 
+  /// Mesmo relógio local, [days] dias depois. Somar `Duration(days: 1)`
+  /// soma 24 h e, na virada do horário de verão (EUA, Europa), o lembrete
+  /// cairia uma hora antes ou depois — e o diário repetiria na hora errada.
+  static tz.TZDateTime _plusDays(tz.TZDateTime t, int days) => tz.TZDateTime(
+    tz.local,
+    t.year,
+    t.month,
+    t.day + days,
+    t.hour,
+    t.minute,
+  );
+
   tz.TZDateTime _nextSlot(int hour, int minute) {
     final now = tz.TZDateTime.now(tz.local);
     var scheduled = tz.TZDateTime(
@@ -852,7 +864,7 @@ class NotificationService {
       minute,
     );
     if (!scheduled.isAfter(now.add(const Duration(minutes: 2)))) {
-      scheduled = scheduled.add(const Duration(days: 1));
+      scheduled = _plusDays(scheduled, 1);
     }
     return scheduled;
   }
@@ -863,12 +875,12 @@ class NotificationService {
       tz.local,
       now.year,
       now.month,
-      now.day,
+      now.day + days,
       hour,
       minute,
-    ).add(Duration(days: days));
+    );
     if (!scheduled.isAfter(now.add(const Duration(minutes: 2)))) {
-      scheduled = scheduled.add(const Duration(days: 1));
+      scheduled = _plusDays(scheduled, 1);
     }
     return scheduled;
   }
@@ -885,7 +897,7 @@ class NotificationService {
     );
     while (scheduled.weekday != weekday ||
         !scheduled.isAfter(now.add(const Duration(minutes: 2)))) {
-      scheduled = scheduled.add(const Duration(days: 1));
+      scheduled = _plusDays(scheduled, 1);
     }
     return scheduled;
   }

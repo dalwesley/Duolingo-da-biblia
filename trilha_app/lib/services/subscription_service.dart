@@ -61,6 +61,7 @@ class SubscriptionService extends ChangeNotifier {
         ' teste=$plusInTrial promo=${launchPromoActive ? _ymd(launchFreeUntil) : 'não'}'
         ' aberto=$plusFeaturesOpen podeComprar=$canPurchase'
         ' pioneiro=${pioneerOnSale ? 'à venda' : 'fora'} $pioneerTaken/$pioneerCap'
+        ' família=${familyPackages.length}'
         ' apoiador=$isSupporter';
   }
 
@@ -110,9 +111,8 @@ class SubscriptionService extends ChangeNotifier {
 
   static const _entitlementId = 'peregrino_plus';
 
-  /// Produto anual de lançamento (R$ 89,90 travado enquanto renovar).
-  /// Produto separado porque na loja o preço mora no produto: ao fim do
-  /// corte ele sai da oferta e quem assinou continua no preço original.
+  /// Pioneiro: vitalício de lançamento, compra única (R$ 149,90, 200
+  /// vagas). Sai da tela quando as vagas ou o prazo acabam.
   static const founderProductId = PlusAccess.pioneerProductId;
 
   /// Teto das primeiras compras do Pioneiro, se o servidor ainda não disse.
@@ -124,6 +124,9 @@ class SubscriptionService extends ChangeNotifier {
 
   /// Oferta da RevenueCat com as compras avulsas de apoio (consumíveis).
   static const supportOfferingId = 'apoio';
+
+  /// Oferta da RevenueCat com Casal e Família (anuais, sem teste).
+  static const familyOfferingId = 'familia';
   static const _supportProductPrefix = 'apoio';
 
   // Chaves públicas do RevenueCat (projeto STWAY). O iOS fica vazio até a
@@ -148,6 +151,9 @@ class SubscriptionService extends ChangeNotifier {
   String? managementUrl;
   List<Package> availablePackages = const [];
   List<Package> supportPackages = const [];
+
+  /// Casal, Família 3 e Família 4, do mais barato ao mais caro.
+  List<Package> familyPackages = const [];
 
   bool loading = false;
   String? lastError;
@@ -349,16 +355,12 @@ class SubscriptionService extends ChangeNotifier {
     return !DateTime(now.year, now.month, now.day).isAfter(until);
   }
 
-  /// Pacotes à venda. No lançamento o Pioneiro é o único anual (com o
-  /// teste de 14 dias); acabadas as vagas ou o prazo, entra o anual
-  /// regular. Não depende de a loja tirar o produto da oferta a tempo.
+  /// Pacotes individuais à venda: mensal, anual e, enquanto houver vaga
+  /// e prazo, o Pioneiro vitalício. Não depende de a loja tirar o produto
+  /// da oferta a tempo. Casal e Família ficam em [familyPackages].
   List<Package> get packagesForSale => [
     for (final p in availablePackages)
-      if (pioneerOnSale
-          ? PlusAccess.baseProductId(p.storeProduct.identifier) !=
-                annualProductId
-          : !isFounderPackage(p))
-        p,
+      if (!isFamilyPackage(p) && (pioneerOnSale || !isFounderPackage(p))) p,
   ];
 
   void _listenPioneerCount() {
@@ -762,12 +764,17 @@ class SubscriptionService extends ChangeNotifier {
       supportPackages = [
         ...?offerings.all[supportOfferingId]?.availablePackages,
       ]..sort((a, b) => a.storeProduct.price.compareTo(b.storeProduct.price));
+      familyPackages = [
+        ...?offerings.all[familyOfferingId]?.availablePackages.where(
+          isFamilyPackage,
+        ),
+      ]..sort((a, b) => a.storeProduct.price.compareTo(b.storeProduct.price));
       _offeringsReady = availablePackages.isNotEmpty;
       PlusLog.log(
         'ofertas',
         'padrão=${offerings.current?.identifier ?? '-'} '
             'planos=${[for (final p in availablePackages) '${p.storeProduct.identifier} ${p.storeProduct.priceString}'].join(' | ')} '
-            'apoio=${supportPackages.length}',
+            'apoio=${supportPackages.length} família=${familyPackages.length}',
       );
       notifyListeners();
       await _loadTrialEligibility();
@@ -1163,23 +1170,40 @@ class SubscriptionService extends ChangeNotifier {
       'P2M' => PackageType.twoMonth,
       'P1M' || 'P4W' => PackageType.monthly,
       'P1W' || 'P7D' => PackageType.weekly,
-      _ => type,
+      // Pioneiro vitalício num pacote personalizado: compra única, sem
+      // período. Sem isto o paywall dizia "Assinar · cancele quando quiser".
+      _ => isFounderPackage(p) ? PackageType.lifetime : type,
     };
   }
 
   static bool isFounderPackage(Package p) =>
       PlusAccess.isPioneerProduct(p.storeProduct.identifier);
 
+  static bool isFamilyPackage(Package p) =>
+      PlusAccess.isFamilyProduct(p.storeProduct.identifier);
+
   /// A assinatura ativa é o Fundador de lançamento.
   bool get plusIsFounder => PlusAccess.isPioneerProduct(plusProductId);
+
+  /// A assinatura ativa é Casal ou Família (esta conta é a titular).
+  bool get plusIsFamily =>
+      isPeregrinoPlus && PlusAccess.isFamilyProduct(plusProductId);
+
+  /// Vagas extras do plano de família ativo (0 fora dele).
+  int get familySeats =>
+      plusIsFamily ? PlusAccess.familySeatsFor(plusProductId) : 0;
+
+  /// Há Casal ou Família à venda na loja.
+  bool get familyOnSale =>
+      isConfigured && _offeringsReady && familyPackages.isNotEmpty;
 
   /// Pacote Fundador da oferta atual, se ainda estiver à venda.
   Package? get founderPackage =>
       packagesForSale.where(isFounderPackage).firstOrNull;
 
-  /// O anual à venda agora: o Pioneiro no lançamento, depois o regular.
-  /// Folha de oferta e aviso de promoção falam deste.
-  Package? get annualOnSale => founderPackage ?? annualPackage;
+  /// O anual à venda (o único com teste grátis). Folha de oferta e aviso
+  /// de promoção falam deste. O Pioneiro é vitalício: não entra aqui.
+  Package? get annualOnSale => annualPackage;
 
   /// Tipo do plano ativo (anual, mensal…), pelo produto da oferta.
   PackageType? get plusPackageType {
@@ -1299,6 +1323,21 @@ class SubscriptionService extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Plus simulado com um produto exato (Casal, Família ou o promocional
+  /// `rc_promo…` de quem entrou na família de alguém).
+  void debugSetPlusProduct(String productId) {
+    if (!kDebugMode) return;
+    isPeregrinoPlus = true;
+    plusProductId = productId;
+    plusInTrial = false;
+    plusWillRenew = !productId.startsWith('rc_promo');
+    plusBillingIssue = false;
+    final now = DateTime.now();
+    plusExpiresAt = DateTime(now.year + 1, now.month, now.day);
+    unawaited(_debugSave());
+    notifyListeners();
+  }
+
   /// Apoiador simulado (sem loja).
   void debugSetSupporter(bool value) {
     if (!kDebugMode) return;
@@ -1358,6 +1397,7 @@ class SubscriptionService extends ChangeNotifier {
     if (value) {
       availablePackages = _debugPlans();
       supportPackages = _debugSupport();
+      familyPackages = _debugFamily();
       _offeringsReady = true;
       _trialEligibility = {
         for (final p in availablePackages)
@@ -1367,6 +1407,7 @@ class SubscriptionService extends ChangeNotifier {
     } else {
       availablePackages = const [];
       supportPackages = const [];
+      familyPackages = const [];
       _offeringsReady = false;
       _trialEligibility = const {};
     }
@@ -1403,6 +1444,7 @@ class SubscriptionService extends ChangeNotifier {
       _debugFakeStore = true;
       availablePackages = _debugPlans();
       supportPackages = _debugSupport();
+      familyPackages = _debugFamily();
       _offeringsReady = true;
       _trialEligibility = {
         for (final p in availablePackages)
@@ -1452,25 +1494,22 @@ class SubscriptionService extends ChangeNotifier {
     PresentedOfferingContext(offering, null, null),
   );
 
-  // Espelha a loja real decidida em out/2026 (ver MONETIZATION.md):
-  // mensal 19,90 · Pioneiro 89,90 e anual 119,90, os dois com 14 dias.
+  // Espelha a loja real decidida em 25/11/2026 (ver MONETIZATION.md):
+  // mensal 9,90 · anual 89,90 com 14 dias · Pioneiro vitalício 149,90.
   static List<Package> _debugPlans() => [
     _debugPackage(
       'plus_monthly',
       PackageType.monthly,
-      19.90,
-      r'R$ 19,90',
+      9.90,
+      r'R$ 9,90',
       period: 'P1M',
     ),
-    // Como no RevenueCat: a oferta só aceita um Annual, o Pioneiro é o
-    // pacote personalizado `pioneiro` e o período vem do produto.
     _debugPackage(
-      founderProductId,
-      PackageType.custom,
-      packageId: 'pioneiro',
-      period: 'P1Y',
+      annualProductId,
+      PackageType.annual,
       89.90,
       r'R$ 89,90',
+      period: 'P1Y',
       perMonth: r'R$ 7,49',
       intro: const IntroductoryPrice(
         0,
@@ -1481,22 +1520,24 @@ class SubscriptionService extends ChangeNotifier {
         14,
       ),
     ),
-    _debugPackage(
-      annualProductId,
-      PackageType.annual,
-      119.90,
-      r'R$ 119,90',
-      period: 'P1Y',
-      perMonth: r'R$ 9,99',
-      intro: const IntroductoryPrice(
-        0,
-        r'R$ 0,00',
-        'P14D',
-        1,
-        PeriodUnit.day,
-        14,
+    _debugPackage(founderProductId, PackageType.lifetime, 149.90, r'R$ 149,90'),
+  ];
+
+  // Casal e Família: anuais sem teste (+50 / +40 / +30 sobre o anual).
+  static List<Package> _debugFamily() => [
+    for (final (id, price, label) in [
+      ('plus_casal_annual', 139.90, r'R$ 139,90'),
+      ('plus_familia3_annual', 179.90, r'R$ 179,90'),
+      ('plus_familia4_annual', 209.90, r'R$ 209,90'),
+    ])
+      _debugPackage(
+        id,
+        PackageType.custom,
+        price,
+        label,
+        offering: familyOfferingId,
+        period: 'P1Y',
       ),
-    ),
   ];
 
   static List<Package> _debugSupport() => [

@@ -503,7 +503,13 @@ async function openSupportModal({ uid, user: known, onOpenFicha } = {}) {
             </select>
             <input class="us-plus-reason" data-plus-reason placeholder="Motivo (ex.: teste no Redmi)" maxlength="200" />
             <button type="button" class="btn btn-primary btn-sm" data-plus="on">Dar Plus</button>
-            <button type="button" class="btn btn-ghost btn-sm" data-plus="off">Tirar Plus</button>`
+            <button type="button" class="btn btn-ghost btn-sm" data-plus="off">Tirar Plus</button>
+            <p class="ez-hint">Pastor / missionário (grátis, por contato): Plus por 1 ano, renovável. Uma bolsa por igreja.</p>
+            <input data-pastor="church" placeholder="Igreja" maxlength="120" />
+            <input data-pastor="city" placeholder="Cidade / UF" maxlength="80" />
+            <input data-pastor="link" placeholder="Link (Instagram, site ou CNPJ)" maxlength="300" />
+            <button type="button" class="btn btn-primary btn-sm" data-pastor-btn="on">Dar bolsa pastoral</button>
+            <button type="button" class="btn btn-ghost btn-sm" data-pastor-btn="off">Tirar bolsa</button>`
               : '<p class="ez-hint">Plus vem do webhook RevenueCat. Só admin dá ou tira Plus manual.</p>'}
             <a class="btn btn-ghost btn-sm" target="_blank" rel="noopener" href="https://console.firebase.google.com/project/${escapeHtml(import.meta.env.VITE_FIREBASE_PROJECT_ID || 'trilha-biblia')}/firestore/data/~2Fusers~2F${encodeURIComponent(uid)}">Abrir no Console ↗</a>
           </div>
@@ -556,6 +562,41 @@ async function openSupportModal({ uid, user: known, onOpenFicha } = {}) {
         } catch (e) {
           showToast(e.message || String(e), 'error');
           modal.querySelectorAll('[data-plus]').forEach((b) => { b.disabled = false; });
+        }
+      });
+    });
+    modal.querySelectorAll('[data-pastor-btn]').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const on = btn.dataset.pastorBtn === 'on';
+        const val = (k) => modal.querySelector(`[data-pastor="${k}"]`)?.value.trim() || '';
+        const payload = { uid, action: on ? 'pastorOn' : 'pastorOff', church: val('church'), city: val('city'), link: val('link') };
+        if (on && (payload.church.length < 2 || payload.city.length < 2 || payload.link.length < 5)) {
+          showToast('Preencha igreja, cidade e link.', 'error');
+          return;
+        }
+        if (!on && !confirm(`Tirar a bolsa pastoral de ${name}?`)) return;
+        const send = async (force) => {
+          const { data } = await moderateUser({ ...payload, ...(force ? { force: true } : {}) });
+          const rc = data?.details?.revenueCat;
+          showToast(
+            rc ? (on ? 'Bolsa pastoral ligada por 1 ano' : 'Bolsa pastoral desligada') : `Gravado, mas o RevenueCat falhou: ${data?.details?.revenueCatError || '?'}`,
+            rc ? 'success' : 'error',
+          );
+        };
+        modal.querySelectorAll('[data-pastor-btn]').forEach((b) => { b.disabled = true; });
+        try {
+          try {
+            await send(false);
+          } catch (e) {
+            // Igreja que já tem bolsa: pergunta antes de dar a segunda.
+            if (!String(e.code || '').includes('already-exists') || !confirm(`${e.message}`)) throw e;
+            await send(true);
+          }
+          close();
+          openSupportModal({ uid, onOpenFicha });
+        } catch (e) {
+          showToast(e.message || String(e), 'error');
+          modal.querySelectorAll('[data-pastor-btn]').forEach((b) => { b.disabled = false; });
         }
       });
     });

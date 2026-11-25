@@ -21,7 +21,7 @@
   ];
   const more = [
     { href: '/advento', label: 'Advento', hint: '26 cenas até o Natal' },
-    { href: '/planos', label: 'Peregrino+ em detalhe', hint: 'Tudo o que a assinatura abre' },
+    { href: '/planos', label: 'Planos', hint: 'Tudo o que a assinatura abre' },
     { href: '/manifesto', label: 'Manifesto', hint: 'No que cremos e o dízimo' },
     { href: '/sobre', label: 'Sobre', hint: 'Por que o Stway existe' },
     { href: '/doar', label: 'Doar', hint: 'Ajude o próximo passo' },

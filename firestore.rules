@@ -247,7 +247,7 @@ service cloud.firestore {
                   == resource.data.get('giftedTrails', {}));
     }
 
-    // Contagem do Pioneiro (primeiras compras de plus_founder_annual).
+    // Contagem do Pioneiro (primeiras compras do vitalício de lançamento).
     // O webhook soma; o paywall só lê.
     match /stats/pioneer {
       allow read: if true;
@@ -899,6 +899,21 @@ service cloud.firestore {
     match /referralRewards/{uid} {
       allow get: if isSignedIn() && request.auth.uid == uid;
       allow list, write: if false;
+    }
+
+    // Casal e Família (functions/family.js): o titular e os membros leem;
+    // só o servidor grava (webhook e a callable familyAction). A consulta
+    // do membro é `memberIds array-contains uid`.
+    match /families/{ownerUid} {
+      allow get, list: if isSignedIn()
+        && (request.auth.uid == ownerUid
+            || request.auth.uid in resource.data.memberIds);
+      allow write: if false;
+    }
+
+    // Bolsa pastoral (painel): só o servidor.
+    match /pastorGrants/{uid} {
+      allow read, write: if false;
     }
 
     match /users/{uid}/blocks/{blockedUid} {

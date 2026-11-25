@@ -78,6 +78,18 @@ void main() {
     expect(PlusAccess.isPioneerProduct('plus_annual'), isFalse);
     expect(PlusAccess.isPioneerProduct('plus_founder_annual_x'), isFalse);
     expect(PlusAccess.isPioneerProduct(null), isFalse);
+    // O vitalício de lançamento é o Pioneiro de hoje.
+    expect(PlusAccess.isPioneerProduct('plus_pioneer_lifetime'), isTrue);
+  });
+
+  test('Casal e Família: vagas extras por produto', () {
+    expect(PlusAccess.familySeatsFor('plus_casal_annual'), 1);
+    expect(PlusAccess.familySeatsFor('plus_familia3_annual:annual'), 2);
+    expect(PlusAccess.familySeatsFor('plus_familia4_annual'), 3);
+    expect(PlusAccess.familySeatsFor('plus_annual'), 0);
+    expect(PlusAccess.familySeatsFor(null), 0);
+    expect(PlusAccess.isFamilyProduct('plus_casal_annual'), isTrue);
+    expect(PlusAccess.isFamilyProduct('plus_monthly'), isFalse);
   });
 
   test('id base ignora o plano base do Android', () {

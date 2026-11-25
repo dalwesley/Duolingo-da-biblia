@@ -6,6 +6,7 @@ import 'package:flutter/foundation.dart';
 /// Deep links: `stway://companhia/CODIGO` · `stway://sala/CODIGO` · `stway://juntos`
 /// · `stway://redeem_web_purchase?…` (Peregrino+ comprado no site)
 /// · `stway://passe/CODIGO` (passe de trilha do Peregrino+)
+/// · `stway://familia/CODIGO` (convite do Casal/Família do Peregrino+)
 /// Link https do grupo (câmera / WhatsApp): [roomHttpsUrl]
 class InviteDeepLinkService extends ChangeNotifier {
   InviteDeepLinkService._();
@@ -22,6 +23,9 @@ class InviteDeepLinkService extends ChangeNotifier {
   /// Passe de trilha: alguém com o Peregrino+ liberou uma trilha.
   static const trailGiftHost = 'passe';
 
+  /// Convite para o Casal ou a Família de alguém (functions/family.js).
+  static const familyHost = 'familia';
+
   final _appLinks = AppLinks();
   StreamSubscription<Uri>? _sub;
 
@@ -29,6 +33,7 @@ class InviteDeepLinkService extends ChangeNotifier {
   String? _pendingRoomCode;
   String? _pendingWebPurchaseLink;
   String? _pendingTrailGiftCode;
+  String? _pendingFamilyCode;
   bool _wantJuntosTab = false;
   bool _wantCompanhiaTab = false;
   bool _wantGruposTab = false;
@@ -36,6 +41,12 @@ class InviteDeepLinkService extends ChangeNotifier {
   String? get pendingCompanionCode => _pendingCompanionCode;
   String? get pendingRoomCode => _pendingRoomCode;
   String? get pendingTrailGiftCode => _pendingTrailGiftCode;
+  String? get pendingFamilyCode => _pendingFamilyCode;
+
+  /// Convite de família aberto sem conta: espera o login.
+  void holdFamilyCode(String code) {
+    _pendingFamilyCode = code;
+  }
 
   /// Guarda um passe digitado ou colado sem conta: o shell resgata depois
   /// do login, como faria com o link.
@@ -73,6 +84,46 @@ class InviteDeepLinkService extends ChangeNotifier {
 
   static String trailGiftHttpsUrl(String code) =>
       '$trailGiftHttpsBase?c=${Uri.encodeQueryComponent(code.trim().toUpperCase())}';
+
+  /// Página do convite de família (WhatsApp): abre [familyUri] ou leva à loja.
+  /// Hosting: `site/abrir/familia/` → stway-app.web.app.
+  static const familyHttpsBase = 'https://stway-app.web.app/abrir/familia';
+
+  static String familyUri(String code) =>
+      '$scheme://$familyHost/${code.trim().toUpperCase()}';
+
+  static String familyHttpsUrl(String code) =>
+      '$familyHttpsBase?c=${Uri.encodeQueryComponent(code.trim().toUpperCase())}';
+
+  /// Código em `stway://familia/CODIGO` ou `https://…/abrir/familia?c=`.
+  static String? extractFamilyCode(String? raw) {
+    if (raw == null || raw.trim().isEmpty) return null;
+    final uri = Uri.tryParse(raw.trim());
+    if (uri == null) return null;
+    final segs = _segments(uri);
+    final query = _query(uri, 'c') ?? _query(uri, 'code');
+    String? clean(String? v) {
+      final s = (v ?? '').trim().toUpperCase();
+      return RegExp(r'^[A-Z0-9]{6}$').hasMatch(s) ? s : null;
+    }
+
+    if (uri.scheme == scheme) {
+      if (uri.host.toLowerCase() == familyHost) {
+        return clean(segs.isNotEmpty ? segs.first : query);
+      }
+      if (segs.length >= 2 && segs.first.toLowerCase() == familyHost) {
+        return clean(segs[1]);
+      }
+      return null;
+    }
+    if (uri.scheme == 'https' || uri.scheme == 'http') {
+      final i = segs.indexWhere((s) => s.toLowerCase() == familyHost);
+      if (i < 0) return null;
+      if (query != null && query.isNotEmpty) return clean(query);
+      if (i + 1 < segs.length) return clean(segs[i + 1]);
+    }
+    return null;
+  }
 
   /// Código do passe num texto colado: o link dentro da mensagem do
   /// WhatsApp, ou só as 8 letras. Palavra solta não vira código.
@@ -249,6 +300,14 @@ $juntosHttpsUrl
       notifyListeners();
       return;
     }
+    // Família antes de tudo: o código de 6 letras também passaria por
+    // código de companhia.
+    final familyCode = extractFamilyCode(uri.toString());
+    if (familyCode != null) {
+      _pendingFamilyCode = familyCode;
+      notifyListeners();
+      return;
+    }
     // Antes do convite de companhia: sem isto `stway://passe/X` virava
     // código de companhia ("STWAY").
     final giftCode = extractTrailGiftCode(uri.toString());
@@ -337,6 +396,13 @@ $juntosHttpsUrl
     final link = _pendingWebPurchaseLink;
     _pendingWebPurchaseLink = null;
     return link;
+  }
+
+  /// MainShell consome o convite de família pendente (uma vez).
+  String? takePendingFamilyCode() {
+    final code = _pendingFamilyCode;
+    _pendingFamilyCode = null;
+    return code;
   }
 
   /// MainShell consome o passe de trilha pendente (uma vez).

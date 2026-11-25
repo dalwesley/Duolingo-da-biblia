@@ -228,7 +228,9 @@ class RoomPlan {
   int daysUntilStart([DateTime? now]) {
     final d = now ?? DateTime.now();
     final s = parsePlanYmd(start)!;
-    return s.difference(DateTime(d.year, d.month, d.day)).inDays;
+    // Arredonda: dia de 23h (horário de verão) não perde um dia.
+    return (s.difference(DateTime(d.year, d.month, d.day)).inHours / 24)
+        .round();
   }
 
   PlanDay? dayOn(String ymd) {

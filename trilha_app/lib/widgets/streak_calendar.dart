@@ -675,6 +675,18 @@ class _LiveFlameState extends State<_LiveFlame>
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
+    _sync();
+  }
+
+  // A sequência acende/apaga com o card na tela: sem isto a chama acesa
+  // ficava parada, e a apagada seguia repintando à toa.
+  @override
+  void didUpdateWidget(covariant _LiveFlame oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.lit != widget.lit) _sync();
+  }
+
+  void _sync() {
     if (!widget.lit || MediaQuery.disableAnimationsOf(context)) {
       _c.stop();
     } else if (!_c.isAnimating) {

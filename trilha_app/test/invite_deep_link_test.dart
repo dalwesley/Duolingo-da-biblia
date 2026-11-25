@@ -97,4 +97,31 @@ void main() {
       'AB23CD45',
     );
   });
+
+  test('convite de família: app e https; outros links não viram família', () {
+    expect(
+      InviteDeepLinkService.extractFamilyCode('stway://familia/ab23cd'),
+      'AB23CD',
+    );
+    expect(
+      InviteDeepLinkService.extractFamilyCode(
+        InviteDeepLinkService.familyHttpsUrl('AB23CD'),
+      ),
+      'AB23CD',
+    );
+    expect(
+      InviteDeepLinkService.extractFamilyCode('stway://passe/AB23CD45'),
+      isNull,
+    );
+    expect(
+      InviteDeepLinkService.extractFamilyCode(
+        InviteDeepLinkService.roomHttpsUrl('AB23CD'),
+      ),
+      isNull,
+    );
+    expect(
+      InviteDeepLinkService.extractFamilyCode('stway://familia/AB23CD45'),
+      isNull,
+    );
+  });
 }

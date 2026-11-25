@@ -41,7 +41,6 @@ class TtsService extends ChangeNotifier {
   static final TtsService instance = TtsService._();
 
   final FlutterTts _tts = FlutterTts();
-  bool _configured = false;
   bool _speaking = false;
 
   /// Texto em pt-BR para ler se a voz original falhar no meio.
@@ -237,9 +236,13 @@ class TtsService extends ChangeNotifier {
   /// Parte que está sendo lida agora na sequência.
   int? get sequenceIndex => _inSequence ? _sequenceIndex : null;
 
-  Future<void> _ensureConfigured() async {
-    if (_configured) return;
-    _configured = true;
+  /// Mesma configuração para chamadas simultâneas: antes, a 2ª seguia sem
+  /// esperar prefs/handlers.
+  Future<void>? _configuring;
+
+  Future<void> _ensureConfigured() => _configuring ??= _configure();
+
+  Future<void> _configure() async {
     await _loadPrefs();
     try {
       await _tts.setLanguage('pt-BR');
@@ -289,8 +292,11 @@ class TtsService extends ChangeNotifier {
     if (text.trim().isEmpty) return;
     await _ensureConfigured();
     _endSequence();
+    // stop()/outro pedido durante a busca da voz cancela este.
+    final gen = _sequenceGen;
     _fallbackOnError = null;
     final locale = await _localeFor(language);
+    if (gen != _sequenceGen) return;
     try {
       await _tts.stop();
       await _tts.setLanguage(locale);
@@ -400,6 +406,9 @@ class TtsService extends ChangeNotifier {
           await _applyVoice(langAt(i));
         }
         wordRange.value = null;
+        // Versículo vazio (a BSB omite alguns): speak('') pode não disparar
+        // a conclusão e a sequência travava ali.
+        if (parts[i].trim().isEmpty) continue;
         await _tts.speak(parts[i]);
       } catch (e) {
         debugPrint('TtsService.speakSequence falhou: $e');

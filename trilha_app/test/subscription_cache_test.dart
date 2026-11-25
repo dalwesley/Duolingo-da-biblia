@@ -52,7 +52,7 @@ void main() {
     expect(sub.trialDaysFor(annual), isNull);
   });
 
-  test('Fundador é anual, mas não rouba o anual do trial', () {
+  test('Pioneiro é vitalício: compra única, sem teste, ao lado do anual', () {
     SharedPreferences.setMockInitialValues({});
     final sub = SubscriptionService();
     sub.debugSetFakeStore(true);
@@ -65,46 +65,60 @@ void main() {
       sub.annualPackage?.storeProduct.identifier,
       SubscriptionService.annualProductId,
     );
-    // No RevenueCat o Pioneiro é pacote personalizado; o período do
-    // produto faz dele um anual no paywall ("/ano", economia, renovação).
-    expect(founder.packageType, PackageType.custom);
-    expect(SubscriptionService.planType(founder), PackageType.annual);
-    expect(SubscriptionService.packageLabel(founder), contains('89,90'));
-    expect(
-      SubscriptionService.packageLabel(founder),
-      isNot(startsWith(founder.storeProduct.title)),
-    );
-    // No lançamento o Pioneiro também tem os 14 dias de teste.
-    expect(sub.trialDaysFor(founder), 14);
+    expect(SubscriptionService.planType(founder), PackageType.lifetime);
+    expect(SubscriptionService.packageLabel(founder), contains('149,90'));
+    expect(sub.trialDaysFor(founder), isNull);
     expect(sub.trialDaysFor(sub.annualPackage!), 14);
-
-    // Laboratório espelha a loja decidida: sem vitalício, apoio de 50.
-    expect(
-      sub.availablePackages.any((p) => p.packageType == PackageType.lifetime),
-      isFalse,
-    );
     expect(
       sub.supportPackages.map((p) => p.storeProduct.identifier),
       contains('apoio_50'),
     );
 
-    // Quem assina o Pioneiro vê esse nome no plano ativo.
+    // Quem comprou o Pioneiro vê esse nome no plano ativo.
     sub.plusProductId = SubscriptionService.founderProductId;
     expect(sub.plusIsFounder, isTrue);
-    // Selo de Pioneiro só com a assinatura ativa.
+    // Selo de Pioneiro só com o Plus ativo.
     sub.isPeregrinoPlus = false;
     expect(sub.hasPioneerBadge, isFalse);
     sub.isPeregrinoPlus = true;
     expect(sub.hasPioneerBadge, isTrue);
     final l10n = lookupAppLocalizations(const Locale('pt'));
     expect(plusPlanLabel(l10n, sub), 'Pioneiro');
+    // O anual de lançamento antigo (testadores) ainda dá o selo.
+    sub.plusProductId = 'plus_founder_annual:annual';
+    expect(sub.hasPioneerBadge, isTrue);
+  });
+
+  test('Casal e Família: oferta própria, vagas e nome do plano', () {
+    SharedPreferences.setMockInitialValues({});
+    final sub = SubscriptionService();
+    sub.debugSetFakeStore(true);
+    expect(sub.familyOnSale, isTrue);
+    expect([for (final p in sub.familyPackages) p.storeProduct.identifier], [
+      'plus_casal_annual',
+      'plus_familia3_annual',
+      'plus_familia4_annual',
+    ]);
+    // Família não aparece entre os planos individuais.
+    expect(
+      sub.packagesForSale.any(SubscriptionService.isFamilyPackage),
+      isFalse,
+    );
+    sub.isPeregrinoPlus = true;
+    sub.plusProductId = 'plus_familia4_annual:annual';
+    expect(sub.plusIsFamily, isTrue);
+    expect(sub.familySeats, 3);
+    final l10n = lookupAppLocalizations(const Locale('pt'));
+    expect(plusPlanLabel(l10n, sub), 'Família · 4 pessoas');
+    sub.plusProductId = 'plus_casal_annual';
+    expect(plusPlanLabel(l10n, sub), 'Casal');
   });
 
   List<String> forSale(SubscriptionService sub) => [
     for (final p in sub.packagesForSale) p.storeProduct.identifier,
   ];
 
-  test('no lançamento o Pioneiro é o único anual à venda', () {
+  test('no lançamento o Pioneiro fica ao lado do mensal e do anual', () {
     SharedPreferences.setMockInitialValues({});
     final sub = SubscriptionService();
     sub.debugSetFakeStore(true);
@@ -113,8 +127,12 @@ void main() {
     sub.debugSetPioneerCount(199, cap: 200);
     expect(sub.pioneerOnSale, isTrue);
     expect(forSale(sub), contains(SubscriptionService.founderProductId));
-    expect(forSale(sub), isNot(contains(SubscriptionService.annualProductId)));
-    expect(sub.annualOnSale, same(sub.founderPackage));
+    expect(forSale(sub), contains(SubscriptionService.annualProductId));
+    // A folha de oferta fala do anual com teste, nunca do vitalício.
+    expect(
+      sub.annualOnSale?.storeProduct.identifier,
+      SubscriptionService.annualProductId,
+    );
   });
 
   test('vagas reservadas saem das que restam e contam para esgotar', () {

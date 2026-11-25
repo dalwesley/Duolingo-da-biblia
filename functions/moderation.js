@@ -158,6 +158,9 @@ async function moderate(deps, caller, input) {
   if (action === 'plusOn' || action === 'plusOff') {
     return setPlus(deps, caller, input, action === 'plusOn');
   }
+  if (action === 'pastorOn' || action === 'pastorOff') {
+    return setPastor(deps, caller, input, action === 'pastorOn');
+  }
   if (action === 'roomPlusOn' || action === 'roomPlusOff') {
     return setRoomPlus(deps, caller, input, action === 'roomPlusOn');
   }
@@ -352,6 +355,73 @@ async function setPlus(deps, caller, input, on) {
   });
   logger.info('plus manual', { uid, on, by: caller.uid, rc: details.revenueCat });
   return { ok: true, details };
+}
+
+const PASTOR_DAYS = 365;
+
+/** Igreja + cidade sem acento nem caixa: a mesma igreja digitada de outro jeito. */
+function churchKey(church, city) {
+  return `${church}|${city}`
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9|]+/g, ' ')
+    .trim();
+}
+
+/**
+ * Pastor / missionário (por contato, grátis): Plus de 1 ano, renovável à
+ * mão. O pedido fica em `pastorGrants/{uid}` (igreja, cidade, link) — é
+ * também o que a família usa para devolver o promocional depois de
+ * revogar. Uma concessão por igreja: a segunda pede `force`.
+ */
+async function setPastor(deps, caller, input, on) {
+  const { db } = deps;
+  const uid = String(input?.uid || '').trim();
+  if (!uid || uid.length > 128) throw new ModerationError('invalid-argument', 'uid inválido.');
+  const ref = db.doc(`pastorGrants/${uid}`);
+  if (!on) {
+    const r = await setPlus(deps, caller, { uid, reason: input?.reason || 'Fim da bolsa pastoral' }, false);
+    await ref.delete();
+    return r;
+  }
+  const church = String(input?.church || '').trim().slice(0, 120);
+  const city = String(input?.city || '').trim().slice(0, 80);
+  const link = String(input?.link || '').trim().slice(0, 300);
+  if (church.length < 2) throw new ModerationError('invalid-argument', 'Escreva o nome da igreja.');
+  if (city.length < 2) throw new ModerationError('invalid-argument', 'Escreva a cidade.');
+  if (link.length < 5) throw new ModerationError('invalid-argument', 'Cole um link da igreja (Instagram, site ou CNPJ).');
+  const key = churchKey(church, city);
+  const now = Date.now();
+  if (input?.force !== true) {
+    const same = await db.collection('pastorGrants').where('churchKey', '==', key).get();
+    const other = same.docs.find((d) => d.id !== uid && (d.get('untilMs') || 0) > now);
+    if (other) {
+      throw new ModerationError(
+        'already-exists',
+        `Esta igreja já tem bolsa (${other.get('name') || other.id.slice(0, 6)}). Confirme para dar mesmo assim.`,
+      );
+    }
+  }
+  const r = await setPlus(
+    deps,
+    caller,
+    { uid, days: PASTOR_DAYS, reason: `[pastor] ${church} — ${city}. ${String(input?.reason || '').trim()}`.trim() },
+    true,
+  );
+  const user = await db.doc(`users/${uid}`).get();
+  await ref.set({
+    church,
+    city,
+    link,
+    churchKey: key,
+    name: String((user.exists && user.get('name')) || '').slice(0, 60),
+    untilMs: now + PASTOR_DAYS * 86_400_000,
+    by: caller.uid,
+    byEmail: caller.email || null,
+    at: FieldValue.serverTimestamp(),
+  });
+  return r;
 }
 
 /** Teto de membros por chamada (Igreja piloto: até ~150 pessoas). */

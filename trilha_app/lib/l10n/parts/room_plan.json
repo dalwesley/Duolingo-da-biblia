@@ -226,10 +226,15 @@
     "en": "When half the group completes the day on its date, the chain grows.",
     "es": "Cuando la mitad del grupo cumple el día en su fecha, la cadena crece."
   },
-  "planAnswersTitle": {
-    "pt": "Respostas do dia {n}",
-    "en": "Answers for day {n}",
-    "es": "Respuestas del día {n}",
+  "planQuestionTodayTitle": {
+    "pt": "Pergunta de hoje",
+    "en": "Today's question",
+    "es": "Pregunta de hoy"
+  },
+  "planQuestionDayTitle": {
+    "pt": "Pergunta do dia {n}",
+    "en": "Question for day {n}",
+    "es": "Pregunta del día {n}",
     "placeholders": {
       "n": "int"
     }
@@ -937,11 +942,20 @@
     "description": "Person sheet stat label: days of the plan this person closed (value like 5/21)."
   },
   "planEditorDurationTrail": {
-    "pt": "Segue a trilha {name}: um dia do propósito para cada cena.",
-    "en": "Follows the {name} trail: one plan day for each scene.",
-    "es": "Sigue la ruta {name}: un día del propósito para cada escena.",
+    "pt": "{count, plural, =1{1 cena} other{{count} cenas}} da trilha {name}, uma por dia. Dias de descanso não contam.",
+    "en": "{count, plural, =1{1 scene} other{{count} scenes}} from the {name} trail, one a day. Rest days don't count.",
+    "es": "{count, plural, =1{1 escena} other{{count} escenas}} de la ruta {name}, una por día. Los días de descanso no cuentan.",
     "placeholders": {
-      "name": "String"
+      "name": "String",
+      "count": "int"
+    }
+  },
+  "planEditorScenesAll": {
+    "pt": "Todas ({count})",
+    "en": "All ({count})",
+    "es": "Todas ({count})",
+    "placeholders": {
+      "count": "int"
     }
   },
   "planSourceChangedShorter": {

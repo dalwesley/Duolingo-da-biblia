@@ -1150,7 +1150,13 @@ class RoomPlanAnswersCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          CardHeader(label: l10n.planAnswersTitle(day.n)),
+          // O card é sobre a pergunta (e o que o grupo respondeu): hoje
+          // na maioria das vezes; dia passado quando escolhido na faixa.
+          CardHeader(
+            label: day.date == planYmd(DateTime.now())
+                ? l10n.planQuestionTodayTitle
+                : l10n.planQuestionDayTitle(day.n),
+          ),
           const SizedBox(height: AppSpace.sm),
           // A pergunta já está no caminho do dia; aqui ela volta só junto
           // das respostas, para dar contexto ao que o grupo escreveu.

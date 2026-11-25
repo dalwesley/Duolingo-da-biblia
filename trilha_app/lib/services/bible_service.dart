@@ -347,13 +347,24 @@ class BibleService {
   final Map<String, Future<_SearchIndex>> _searchIndex = {};
 
   Future<_SearchIndex> _indexFor(String id) {
-    return _searchIndex[id] ??= () async {
+    final pending = _searchIndex[id];
+    if (pending != null) return pending;
+    final future = () async {
       final raw = await rootBundle.loadString(
         byId(id).assetPath!,
         cache: false,
       );
       return compute(_buildSearchIndex, raw);
     }();
+    _searchIndex[id] = future;
+    // Falha não fica no cache: a próxima busca tenta de novo.
+    future.then<void>(
+      (_) {},
+      onError: (Object _) {
+        if (identical(_searchIndex[id], future)) _searchIndex.remove(id);
+      },
+    );
+    return future;
   }
 
   /// "livro capítulo[:vIni[–vFim]]"

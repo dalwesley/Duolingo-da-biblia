@@ -213,9 +213,9 @@ class _ReadingPickerState extends State<_ReadingPicker> {
   /// O texto do estudo da semana como leitura (se o estudo tem passagem).
   RoomReading? _fromStudy;
 
-  /// Card "Mesmo texto do estudo" escolhido. Tocar só marca; quem confirma
-  /// é o botão, como no livro e capítulo. Mexer no livro ou no capítulo
-  /// desmarca.
+  /// Card "Mesmo texto do estudo" escolhido. Abre marcado quando o estudo
+  /// tem passagem (salvo se já há outra leitura salva). Tocar só marca;
+  /// quem confirma é o botão. Mexer no livro ou no capítulo desmarca.
   bool _useStudy = false;
 
   @override
@@ -228,11 +228,11 @@ class _ReadingPickerState extends State<_ReadingPicker> {
         final cur = widget.current;
         setState(() {
           _fromStudy = r;
-          // Leitura já salva é o próprio texto do estudo: abre marcado.
+          // Sem leitura salva, ou a salva é o próprio texto do estudo:
+          // abre marcado. Outra leitura já escolhida continua valendo.
           _useStudy =
-              cur != null &&
-              cur.bookAbbrev == r.bookAbbrev &&
-              cur.from == r.from;
+              cur == null ||
+              (cur.bookAbbrev == r.bookAbbrev && cur.from == r.from);
         });
       });
     }
@@ -285,6 +285,7 @@ class _ReadingPickerState extends State<_ReadingPicker> {
             GlassCard(
               tint: AppRoles.presence,
               borderColor: _useStudy ? a.selected : null,
+              glow: _useStudy ? 0.35 : null,
               onTap: () => setState(() => _useStudy = !_useStudy),
               child: Row(
                 children: [
@@ -316,15 +317,28 @@ class _ReadingPickerState extends State<_ReadingPicker> {
                       ],
                     ),
                   ),
-                  if (_useStudy) ...[
-                    const SizedBox(width: AppSpace.sm),
-                    CinematicIcon(
-                      glyph: CinematicGlyph.check,
-                      size: 20,
-                      accent: a.selected,
-                      framed: false,
+                  const SizedBox(width: AppSpace.sm),
+                  // Marcador sempre visível: vazio = não escolhido.
+                  AnimatedContainer(
+                    duration: const Duration(milliseconds: 180),
+                    width: 26,
+                    height: 26,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: _useStudy ? a.selected : Colors.transparent,
+                      border: Border.all(
+                        color: _useStudy ? a.selected : a.textFaint,
+                        width: 2,
+                      ),
                     ),
-                  ],
+                    child: _useStudy
+                        ? Icon(
+                            Icons.check_rounded,
+                            size: 18,
+                            color: a.onDark ? Colors.black : Colors.white,
+                          )
+                        : null,
+                  ),
                 ],
               ),
             ),
@@ -335,55 +349,66 @@ class _ReadingPickerState extends State<_ReadingPicker> {
           if (_books.isEmpty)
             const Center(child: AppSpinner())
           else ...[
-            DropdownButtonFormField<int>(
-              initialValue: _book,
-              isExpanded: true,
-              dropdownColor: a.cardFill,
-              decoration: InputDecoration(labelText: l10n.roomReadingBook),
-              items: [
-                for (var i = 0; i < _books.length; i++)
-                  DropdownMenuItem(value: i, child: Text(_books[i].name)),
-              ],
-              onChanged: (v) => setState(() {
-                _useStudy = false;
-                _book = v ?? _book;
-                _from = 1;
-                _to = 1;
-                _clamp();
-              }),
-            ),
-            const SizedBox(height: AppSpace.md),
-            Row(
-              children: [
-                Expanded(
-                  child: _Stepper(
-                    label: widget.startOnly
-                        ? l10n.planPickReadingChapter
-                        : l10n.roomReadingFrom,
-                    value: _from,
+            AnimatedOpacity(
+              duration: const Duration(milliseconds: 180),
+              opacity: _useStudy ? 0.4 : 1,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  DropdownButtonFormField<int>(
+                    initialValue: _book,
+                    isExpanded: true,
+                    dropdownColor: a.cardFill,
+                    decoration: InputDecoration(
+                      labelText: l10n.roomReadingBook,
+                    ),
+                    items: [
+                      for (var i = 0; i < _books.length; i++)
+                        DropdownMenuItem(value: i, child: Text(_books[i].name)),
+                    ],
                     onChanged: (v) => setState(() {
                       _useStudy = false;
-                      _from = v;
-                      if (_to < _from) _to = _from;
+                      _book = v ?? _book;
+                      _from = 1;
+                      _to = 1;
                       _clamp();
                     }),
                   ),
-                ),
-                if (!widget.startOnly) ...[
-                  const SizedBox(width: AppSpace.md),
-                  Expanded(
-                    child: _Stepper(
-                      label: l10n.roomReadingTo,
-                      value: _to,
-                      onChanged: (v) => setState(() {
-                        _useStudy = false;
-                        _to = v < _from ? _from : v;
-                        _clamp();
-                      }),
-                    ),
+                  const SizedBox(height: AppSpace.md),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: _Stepper(
+                          label: widget.startOnly
+                              ? l10n.planPickReadingChapter
+                              : l10n.roomReadingFrom,
+                          value: _from,
+                          onChanged: (v) => setState(() {
+                            _useStudy = false;
+                            _from = v;
+                            if (_to < _from) _to = _from;
+                            _clamp();
+                          }),
+                        ),
+                      ),
+                      if (!widget.startOnly) ...[
+                        const SizedBox(width: AppSpace.md),
+                        Expanded(
+                          child: _Stepper(
+                            label: l10n.roomReadingTo,
+                            value: _to,
+                            onChanged: (v) => setState(() {
+                              _useStudy = false;
+                              _to = v < _from ? _from : v;
+                              _clamp();
+                            }),
+                          ),
+                        ),
+                      ],
+                    ],
                   ),
                 ],
-              ],
+              ),
             ),
             const SizedBox(height: AppSpace.lg),
             CopperCta(

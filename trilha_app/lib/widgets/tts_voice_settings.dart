@@ -46,6 +46,7 @@ class _TtsVoiceSettingsState extends State<TtsVoiceSettings> {
 
   @override
   void dispose() {
+    _detachDone();
     if (_testing) unawaited(TtsService.instance.stop());
     super.dispose();
   }
@@ -88,15 +89,30 @@ class _TtsVoiceSettingsState extends State<TtsVoiceSettings> {
     if (!mounted || sample.isEmpty) return;
     setState(() => _testing = true);
     await tts.speak(sample, language: widget.language);
+    if (!mounted) return;
     // speak não espera o fim: acompanha pelo isSpeaking.
     void done() {
       if (!tts.isSpeaking) {
         tts.removeListener(done);
+        if (identical(_doneListener, done)) _doneListener = null;
         if (mounted) setState(() => _testing = false);
       }
     }
 
+    _detachDone();
+    _doneListener = done;
     tts.addListener(done);
+    // speak pode ter falhado ou acabado antes do listener: sem isto o botão
+    // ficava em "testando" até o próximo aviso do TTS.
+    done();
+  }
+
+  VoidCallback? _doneListener;
+
+  void _detachDone() {
+    final l = _doneListener;
+    if (l != null) TtsService.instance.removeListener(l);
+    _doneListener = null;
   }
 
   Future<void> _pickVoice(TtsVoice? v) async {

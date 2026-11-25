@@ -484,3 +484,41 @@ test('transferência sem data: pergunta ao RevenueCat e liga o destino', async (
   assert.equal(await RC.withTransferLookup(buy, { type: 'EXPIRATION' }, rc), buy);
   assert.equal(asked.length, 1);
 });
+
+// ---- Pioneiro vitalício (compra única) ----
+
+test('vitalício: Plus sem data de fim, sem renovar', () => {
+  const out = RC.plusStateFromEvent({
+    type: 'NON_RENEWING_PURCHASE',
+    app_user_id: 'uid1',
+    product_id: 'plus_pioneer_lifetime',
+    entitlement_ids: ['peregrino_plus'],
+  });
+  assert.equal(out.fields.plusActive, true);
+  assert.equal(out.fields.plusExpiresAt, null);
+  assert.equal(out.fields.plusWillRenew, false);
+  assert.equal(out.fields.plusProductId, 'plus_pioneer_lifetime');
+});
+
+test('vitalício reembolsado (CANCELLATION sem data de fim) desliga', () => {
+  const out = RC.plusStateFromEvent({
+    type: 'CANCELLATION',
+    app_user_id: 'uid1',
+    product_id: 'plus_pioneer_lifetime',
+    entitlement_ids: ['peregrino_plus'],
+    cancel_reason: 'CUSTOMER_SUPPORT',
+  });
+  assert.equal(out.fields.plusActive, false);
+});
+
+test('vitalício conta a vaga na compra; o anual antigo segue reconhecido', () => {
+  const slot = RC.pioneerSlotFromEvent({
+    type: 'NON_RENEWING_PURCHASE',
+    app_user_id: 'uid1',
+    product_id: 'plus_pioneer_lifetime',
+    environment: 'PRODUCTION',
+  });
+  assert.deepEqual(slot, { uid: 'uid1', from: [] });
+  assert.equal(RC.isPioneerProduct('plus_founder_annual:annual'), true);
+  assert.equal(RC.isPioneerProduct('plus_annual'), false);
+});

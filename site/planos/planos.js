@@ -11,14 +11,14 @@ const CHECKOUT = {
   mensal: "",
 };
 
-// Pioneiro: o único anual enquanto houver vaga (MONETIZATION.md). Desligue
-// junto com o `pioneer_until` do Remote Config.
+// Pioneiro: vitalício de lançamento, só no app, para as 200 primeiras
+// compras (MONETIZATION.md). Desligue quando as vagas acabarem.
 const PIONEER_ON_SALE = true;
+document.querySelectorAll(".plan-extra-pioneer").forEach((el) => { el.hidden = !PIONEER_ON_SALE; });
 
 const PRICES = {
-  mensal: { amount: "R$ 19,90", note: "por mês" },
-  anual: { amount: "R$ 119,90", note: "por ano · R$ 9,99/mês" },
-  pioneiro: { amount: "R$ 89,90", note: "por ano · R$ 7,49/mês", was: "R$ 119,90" },
+  mensal: { amount: "R$ 9,90", note: "por mês" },
+  anual: { amount: "R$ 89,90", note: "por ano · R$ 7,49/mês" },
 };
 
 const PLAY_URL =
@@ -37,9 +37,9 @@ const saveEl = $("billing-save");
 
 function render(billing) {
   const annual = billing === "anual";
-  const pioneer = annual && PIONEER_ON_SALE;
-  const price = annual ? (pioneer ? PRICES.pioneiro : PRICES.anual) : PRICES.mensal;
-  const tag = pioneer ? "Preço de Pioneiro" : annual ? "O mais escolhido" : "Mês a mês";
+  const pioneer = false; // o Pioneiro não troca mais o anual: fica em plus-fine
+  const price = annual ? PRICES.anual : PRICES.mensal;
+  const tag = annual ? "O mais escolhido" : "Mês a mês";
   const link = CHECKOUT[billing];
   const href = link || PLAY_URL;
   const ctaText = link
@@ -55,9 +55,9 @@ function render(billing) {
   set("plus-was", pioneer ? price.was : "");
   set("plus-amount", price.amount);
   set("plus-note", price.note);
-  set("plus-fine", pioneer
-    ? "Preço travado enquanto a assinatura renovar. Para os primeiros assinantes."
-    : annual ? "Metade do mensal ao longo do ano." : "Cancele quando quiser. Sem teste grátis no mensal.");
+  set("plus-fine", annual
+    ? "Pague 9 meses do mensal e leve 12."
+    : "Cancele quando quiser. Sem teste grátis no mensal.");
   set("plus-cta-note", link
     ? (annual ? "Sem cobrança nos primeiros 14 dias. Cancele quando quiser." : "")
     : "Por enquanto, a assinatura é feita dentro do app.");
@@ -122,4 +122,15 @@ document.querySelectorAll("[data-web]").forEach((el) => {
 
 buttons.forEach((b) => b.addEventListener("click", () => render(b.dataset.billing)));
 render("anual");
+
+// Na home, o card inteiro de cada plano leva para /planos (botões e links seguem o próprio caminho).
+document.querySelectorAll(".home-plans .plan, .home-plans .plan-extra").forEach((card) => {
+  card.dataset.planLink = "";
+  card.addEventListener("click", (event) => {
+    if (event.target.closest("a, button, input, label") || window.getSelection()?.toString()) return;
+    const href = card.id ? `/planos#${card.id}` : "/planos";
+    if (window.stwayFolha?.handles(href)) window.stwayFolha.open(href);
+    else location.href = href;
+  });
+});
 }

@@ -1,3 +1,4 @@
+import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
@@ -21,6 +22,7 @@ import '../services/progress_service.dart';
 import '../services/room_service.dart';
 import '../services/session_composer.dart';
 import '../theme/app_theme.dart';
+import '../utils/answer_phrase.dart';
 import '../utils/appearance.dart';
 import '../utils/content_filter.dart';
 import '../utils/trail_progress.dart';
@@ -2508,11 +2510,13 @@ Future<void> showRoomCallSheet(
   required Future<bool> Function(LeagueEntry person) onInvite,
   required Future<bool> Function(LeagueEntry person) onCancel,
   required VoidCallback onShareLink,
+  Future<List<LeagueEntry>> Function()? loadRoster,
 }) {
   return showAppSheet<void>(
     context,
     builder: (ctx) => _RoomCallSheet(
       people: people,
+      loadRoster: loadRoster,
       onInvite: onInvite,
       onCancel: onCancel,
       onShareLink: () {
@@ -2529,11 +2533,15 @@ class _RoomCallSheet extends StatefulWidget {
   final Future<bool> Function(LeagueEntry person) onCancel;
   final VoidCallback onShareLink;
 
+  /// A Caravana inteira (quem não está no trecho baixado), para a busca.
+  final Future<List<LeagueEntry>> Function()? loadRoster;
+
   const _RoomCallSheet({
     required this.people,
     required this.onInvite,
     required this.onCancel,
     required this.onShareLink,
+    this.loadRoster,
   });
 
   @override
@@ -2544,6 +2552,44 @@ class _RoomCallSheetState extends State<_RoomCallSheet> {
   final Set<String> _busy = {};
   final Set<String> _invited = {};
   String? _error;
+
+  final _search = TextEditingController();
+  bool _searching = false;
+
+  /// Quem a Caravana inteira trouxe além da lista inicial.
+  final List<LeagueEntry> _found = [];
+
+  /// A Caravana inteira (até ~1000 leituras) só desce quando alguém busca.
+  bool _rosterAsked = false;
+
+  Future<void> _loadRoster() async {
+    final load = widget.loadRoster;
+    if (load == null || _rosterAsked) return;
+    _rosterAsked = true;
+    setState(() => _searching = true);
+    var roster = const <LeagueEntry>[];
+    try {
+      roster = await load();
+    } catch (e) {
+      debugPrint('Falha ao carregar a Caravana: $e');
+    }
+    if (!mounted) return;
+    // Vazio costuma ser falha de rede: a próxima busca tenta de novo.
+    if (roster.isEmpty) _rosterAsked = false;
+    setState(() {
+      _searching = false;
+      final known = {for (final p in widget.people) p.uid};
+      for (final p in roster) {
+        if (known.add(p.uid)) _found.add(p);
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _search.dispose();
+    super.dispose();
+  }
 
   Future<void> _invite(LeagueEntry person) async {
     final uid = person.uid;
@@ -2600,13 +2646,25 @@ class _RoomCallSheetState extends State<_RoomCallSheet> {
     final a = Appearance.of(context);
     final rooms = context.watch<RoomService>();
     final memberIds = {for (final member in rooms.members) member.uid};
+    final query = foldKey(_search.text);
     final people = [
-      for (final person in widget.people)
-        if (!memberIds.contains(person.uid)) person,
-    ];
+      for (final person in [...widget.people, if (query.isNotEmpty) ..._found])
+        if (!memberIds.contains(person.uid) &&
+            (query.isEmpty || foldKey(person.name).contains(query)))
+          person,
+    ]..sort((x, y) => x.name.toLowerCase().compareTo(y.name.toLowerCase()));
     final pending = {...rooms.pendingTargets, ..._invited};
     final full = rooms.isFull;
-    final maxH = MediaQuery.sizeOf(context).height * 0.72;
+    // Com o teclado aberto sobra menos tela: desconta teclado, barra de
+    // status e o contorno da sheet (alça, margens) para a lista encolher.
+    final media = MediaQuery.of(context);
+    final room =
+        media.size.height -
+        media.viewInsets.bottom -
+        media.padding.top -
+        media.padding.bottom -
+        110;
+    final maxH = math.max(200.0, math.min(media.size.height * 0.72, room));
 
     return AppSheetPanel(
       child: ConstrainedBox(
@@ -2620,7 +2678,56 @@ class _RoomCallSheetState extends State<_RoomCallSheet> {
               subtitle: context.l10n.groupCallSubtitle,
             ),
             const SizedBox(height: AppSpace.md),
-            if (people.isEmpty)
+            TextField(
+              controller: _search,
+              textInputAction: TextInputAction.search,
+              textCapitalization: TextCapitalization.words,
+              style: AppTypography.body(size: 14, color: a.text),
+              onChanged: (v) {
+                if (v.trim().isNotEmpty) _loadRoster();
+                setState(() {});
+              },
+              decoration: InputDecoration(
+                isDense: true,
+                hintText: context.l10n.groupCallSearchHint,
+                prefixIcon: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  child: CinematicIcon(
+                    glyph: CinematicGlyph.search,
+                    size: AppMetrics.iconSm,
+                    accent: a.textFaint,
+                    framed: false,
+                  ),
+                ),
+                prefixIconConstraints: const BoxConstraints(minWidth: 40),
+                suffixIcon: _searching && query.isNotEmpty
+                    ? const Padding(
+                        padding: EdgeInsets.all(12),
+                        child: SizedBox.square(
+                          dimension: 16,
+                          child: CircularProgressIndicator(strokeWidth: 2),
+                        ),
+                      )
+                    : query.isNotEmpty
+                    ? IconButton(
+                        tooltip: context.l10n.commonClose,
+                        onPressed: () => setState(_search.clear),
+                        icon: CinematicIcon(
+                          glyph: CinematicGlyph.close,
+                          size: AppMetrics.iconSm,
+                          accent: a.textFaint,
+                          framed: false,
+                        ),
+                      )
+                    : null,
+              ),
+            ),
+            const SizedBox(height: AppSpace.sm),
+            if (people.isEmpty && query.isNotEmpty)
+              _searching
+                  ? const SizedBox(height: 48)
+                  : EmptyState(title: context.l10n.groupCallSearchEmpty)
+            else if (people.isEmpty)
               EmptyState(title: context.l10n.groupCallEmpty)
             else
               Flexible(

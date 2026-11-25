@@ -1,7 +1,7 @@
 name: trilha_app
 description: STWAY — missões diárias para criar hábito de ler e estudar a Bíblia.
 publish_to: 'none'
-version: 1.0.50+50
+version: 1.0.51+51
 
 environment:
   sdk: ^3.12.0
@@ -43,6 +43,7 @@ dependencies:
   sensors_plus: ^7.1.0
   upgrader: ^14.0.0
   in_app_review: ^2.0.12
+  cloud_functions: ^6.3.5
 
 dev_dependencies:
   flutter_test:

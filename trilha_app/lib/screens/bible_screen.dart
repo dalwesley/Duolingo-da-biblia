@@ -208,6 +208,7 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
     _searchDebounce?.cancel();
     final trimmed = q.trim();
     if (trimmed.length < 2) {
+      _searchGen++;
       setState(() {
         _hits = const [];
         _searchingBusy = false;
@@ -217,7 +218,14 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
     setState(() => _searchingBusy = true);
     final gen = ++_searchGen;
     _searchDebounce = Timer(const Duration(milliseconds: 280), () async {
-      final hits = await BibleService.instance.search(trimmed);
+      List<BibleSearchHit> hits;
+      try {
+        hits = await BibleService.instance.search(trimmed);
+      } catch (e) {
+        // Sem isto o spinner da busca girava para sempre.
+        debugPrint('[STWAY:Bible] search failed: $e');
+        hits = const [];
+      }
       if (!mounted || gen != _searchGen) return;
       setState(() {
         _hits = hits;
@@ -226,11 +234,17 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
     });
   }
 
-  void _closeSearch() => setState(() {
-    _searching = false;
-    _searchCtrl.clear();
-    _hits = const [];
-  });
+  void _closeSearch() {
+    // Busca pendente não pode repovoar a lista depois de fechar.
+    _searchDebounce?.cancel();
+    _searchGen++;
+    setState(() {
+      _searching = false;
+      _searchCtrl.clear();
+      _hits = const [];
+      _searchingBusy = false;
+    });
+  }
 
   void _openReference(String reference) =>
       BibleReaderScreen.open(context, reference);

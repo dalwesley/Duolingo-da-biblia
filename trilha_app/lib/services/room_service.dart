@@ -717,6 +717,15 @@ class RoomService extends ChangeNotifier {
       backend.fetchRoomNudgedToday(code),
       backend.fetchLatestRoomClosing(code),
     ]);
+    // Trocou ou saiu do grupo durante a busca: não pinta o grupo novo com
+    // os membros do anterior.
+    if (activeRoom?.code != code) {
+      if (activeRoom == null && loading) {
+        loading = false;
+        notifyListeners();
+      }
+      return;
+    }
     members = results[0] as List<RoomMember>;
     nudgedToday = results[1] as Set<String>;
     latestClosing = results[2] as RoomClosing?;

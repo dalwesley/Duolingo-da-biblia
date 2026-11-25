@@ -290,6 +290,20 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   /// real — dismiss volta à Home e Continuar pode mostrar a folha de novo.
   Future<int> _offerEntryFork() async {
     if (_entryForkShown || _noProgress) return _forkNone;
+    // Toque duplo na saída enquanto a folha carrega/está aberta: o 2º
+    // toque não abre outra folha nem navega por baixo dela.
+    if (_forkBusy) return _forkNavigated;
+    _forkBusy = true;
+    try {
+      return await _offerEntryForkOnce();
+    } finally {
+      _forkBusy = false;
+    }
+  }
+
+  bool _forkBusy = false;
+
+  Future<int> _offerEntryForkOnce() async {
     final canon = EntryTrails.continuesTo[widget.missionSlug];
     final freeSlug = EntryTrails.freeContinuesTo[widget.missionSlug];
     if (canon == null || freeSlug == null) return _forkNone;

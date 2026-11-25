@@ -2800,6 +2800,33 @@ class BackendService extends ChangeNotifier {
     }
   }
 
+  /// Todos da Caravana do mês atual e do anterior, para filtrar por nome
+  /// no aparelho (o Firestore não busca ignorando acentos). Exclui o
+  /// próprio usuário. Mês atual primeiro quando a pessoa está nos dois.
+  Future<List<CloudPlayer>> fetchCaravanRoster({int limit = 500}) async {
+    if (!isActive) return const [];
+    final month = LeagueService.monthKey();
+    try {
+      final snaps = await Future.wait([
+        for (final m in [month, LeagueService.previousMonthKey(month)])
+          _db
+              .collection('monthlyLeagues/$m/players')
+              .orderBy('xp', descending: true)
+              .limit(limit)
+              .get(),
+      ]).timeout(const Duration(seconds: 10));
+      final seen = <String>{};
+      return [
+        for (final snap in snaps)
+          for (final p in _mapCloudPlayers(snap.docs))
+            if (seen.add(p.uid)) p,
+      ];
+    } catch (e) {
+      debugPrint('Lista da Caravana falhou: $e');
+      return const [];
+    }
+  }
+
   /// Uma página da Caravana inteira, do primeiro para baixo. [after] é o
   /// cursor da página anterior. Inclui o próprio usuário (a tela marca).
   Future<({List<CloudPlayer> players, Object? cursor})> fetchCaravanPage({

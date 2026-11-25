@@ -57,7 +57,15 @@ class JuntosSegmentTabs extends StatelessWidget {
       decoration: BoxDecoration(
         color: fill ?? a.insetFill,
         borderRadius: BorderRadius.circular(AppRadii.lg),
-        border: Border.all(color: fill == null ? a.insetBorder : a.cardBorder),
+        // No escuro a borda do poço (6%) some sobre a arte: o trilho
+        // precisa de contorno para a aba inativa parecer tocável.
+        border: Border.all(
+          color: fill != null
+              ? a.cardBorder
+              : a.onDark
+              ? AppColors.textOnDark.withValues(alpha: 0.12)
+              : a.insetBorder,
+        ),
       ),
       child: LayoutBuilder(
         builder: (context, c) {
@@ -118,8 +126,9 @@ class JuntosSegmentTabs extends StatelessWidget {
     Color tone,
   ) {
     final selected = i == index;
-    // Ativo = tinta do accent; idle = chrome frio. Branco fica na cena.
-    final ink = selected ? tone : a.iconMuted;
+    // Ativo = tinta do accent; idle = texto de apoio do tema. O ícone
+    // inativo (50% no escuro) sumia sobre a arte e o rótulo não lia.
+    final ink = selected ? tone : a.textSecondary;
     final leading =
         item.mark ??
         (item.glyph != null

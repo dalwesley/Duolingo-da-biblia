@@ -1474,6 +1474,10 @@ class _LeagueScreenState extends State<LeagueScreen>
       onInvite: (person) => _inviteCaravanPerson(context, person),
       onCancel: (person) => _cancelRoomInvite(context, person),
       onShareLink: shareRoom,
+      loadRoster: () async => _withoutBlocked([
+        for (final p in await backend.fetchCaravanRoster())
+          if (p.uid != backend.uid) _entryOf(p),
+      ]),
     );
 
     final isLeader = room.isOwner(backend.uid);

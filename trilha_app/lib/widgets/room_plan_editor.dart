@@ -166,9 +166,18 @@ class _PlanEditorState extends State<_PlanEditor> {
   /// Capítulo(s) da passagem de cada cena, por slug.
   final Map<String, PlanReading?> _sceneReadings = {};
 
-  /// Fim escolhido à mão com a trilha: vence o "um dia por cena" (dias a
-  /// mais ficam sem cena; a menos, cortam cenas). Null = segue as cenas.
-  DateTime? _endOverride;
+  /// Trilha: quantas cenas o propósito leva (uma por dia). Só encurta —
+  /// dia sem cena não existe. Null = todas (até [RoomPlan.maxDays]).
+  int? _sceneCount;
+
+  /// Cenas da trilha que cabem no propósito (a partir da cena de partida).
+  int get _scenesTotal => math.min(_scenes.length, RoomPlan.maxDays);
+
+  /// Quantas cenas (dias) o propósito leva agora.
+  int get _scenesUsed => math.min(_sceneCount ?? _scenesTotal, _scenesTotal);
+
+  /// Atalhos de "quantas cenas": só os menores que o total da trilha.
+  static const _sceneOptions = [7, 14, 21, 30];
   final Map<int, ({String? question, String? note})> _edits = {};
 
   /// Trocou a trilha/estação com o propósito em andamento: ele recomeça do
@@ -256,7 +265,11 @@ class _PlanEditorState extends State<_PlanEditor> {
       }
       _questionOn = g['q'] != false;
       _readingFromScenes = g['rs'] == true;
-      if (g['eo'] == true) _endOverride = _end;
+      // Fim à mão (versões antigas também esticavam): vira quantas cenas
+      // o propósito tinha. Dia sem cena some.
+      if (g['eo'] == true && season == null) {
+        _sceneCount = c.days.where((d) => d.scene != null).length;
+      }
       // Pergunta do líder e recado ficam como edição do dia.
       for (final d in c.days) {
         final q = d.customQuestion ? d.question : null;
@@ -437,9 +450,7 @@ class _PlanEditorState extends State<_PlanEditor> {
           if (_seasonSceneOn(d) != null) d,
       ];
     }
-    final over = _endOverride;
-    if (over != null) return RoomPlan.datesBetween(_start, over, _restOn);
-    final n = math.min(_scenes.length, RoomPlan.maxDays);
+    final n = _scenesUsed;
     final far = DateTime(_start.year, _start.month, _start.day + n * 7 + 7);
     return RoomPlan.datesBetween(_start, far, _restOn).take(n).toList();
   }
@@ -463,7 +474,7 @@ class _PlanEditorState extends State<_PlanEditor> {
     // Trilha nova: perguntas voltam a sair das cenas dela e o fim volta a
     // seguir as cenas. O líder troca depois, se quiser.
     _questionOn = true;
-    _endOverride = null;
+    _sceneCount = null;
     final now = DateTime.now();
     final today = DateTime(now.year, now.month, now.day);
     // Nome automático segue a escolha nova; nome escrito pelo líder fica.
@@ -688,7 +699,7 @@ class _PlanEditorState extends State<_PlanEditor> {
           },
           'q': _questionOn,
           if (_readingFromScenes && _scene != null) 'rs': true,
-          if (_endOverride != null && _sceneDriven && _season == null)
+          if (_sceneDriven && _season == null && _scenesUsed < _scenesTotal)
             'eo': true,
           if (fresh && widget.current != null)
             'pv': [
@@ -850,12 +861,12 @@ class _PlanEditorState extends State<_PlanEditor> {
       final weeks = _weeks == 0 ? 3 : _weeks;
       _start = picked;
       if (season == null) _end = _endForWeeks(weeks);
-      _endOverride = null;
     });
   }
 
-  /// Fim à mão. Trilha: troca o "um dia por cena". Estação: só encurta
-  /// (depois do último dia dela não há cena). Em andamento: não antes de hoje.
+  /// Fim à mão (sem trilha). Estação: só encurta (depois do último dia
+  /// dela não há cena). Em andamento: não antes de hoje. Trilha nova não
+  /// passa por aqui: a duração sai de quantas cenas.
   Future<void> _pickEnd(String current) async {
     final now = DateTime.now();
     final today = DateTime(now.year, now.month, now.day);
@@ -879,13 +890,7 @@ class _PlanEditorState extends State<_PlanEditor> {
       lastDate: last,
     );
     if (picked == null || !mounted) return;
-    setState(() {
-      if (_sceneDriven && _season == null && _live == null) {
-        _endOverride = picked;
-      } else {
-        _end = picked;
-      }
-    });
+    setState(() => _end = picked);
   }
 
   Future<void> _editDay(PlanDay day) async {
@@ -1199,6 +1204,7 @@ class _PlanEditorState extends State<_PlanEditor> {
                                         : _sceneDriven
                                         ? l10n.planEditorDurationTrail(
                                             _scene!.trail ?? _scene!.title,
+                                            _scenesUsed,
                                           )
                                         : l10n.planEditorDurationBody,
                                     style: AppTypography.body(
@@ -1211,6 +1217,40 @@ class _PlanEditorState extends State<_PlanEditor> {
                             ),
                           ],
                         ),
+                        // Trilha: uma cena por dia. Só dá para levar menos
+                        // cenas (trilha longa); nunca dias sem cena.
+                        if (_sceneDriven &&
+                            _season == null &&
+                            live == null &&
+                            _scenesTotal > _sceneOptions.first) ...[
+                          const SizedBox(height: AppSpace.lg),
+                          Row(
+                            children: [
+                              for (final n in [
+                                for (final o in _sceneOptions)
+                                  if (o < _scenesTotal) o,
+                                _scenesTotal,
+                              ]) ...[
+                                if (n != _sceneOptions.first)
+                                  const SizedBox(width: 6),
+                                Expanded(
+                                  child: _Pill(
+                                    label: n == _scenesTotal
+                                        ? l10n.planEditorScenesAll(n)
+                                        : '$n',
+                                    on: _scenesUsed == n,
+                                    dense: true,
+                                    onTap: () => setState(
+                                      () => _sceneCount = n == _scenesTotal
+                                          ? null
+                                          : n,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ],
+                          ),
+                        ],
                         // Cenas mandam na duração: sem escolher semanas.
                         if (!_sceneDriven) ...[
                           const SizedBox(height: AppSpace.lg),
@@ -1263,10 +1303,15 @@ class _PlanEditorState extends State<_PlanEditor> {
                                   context,
                                   days.isEmpty ? planYmd(_end) : days.last.date,
                                 ),
-                                // Trava no último dia ou depois dele.
+                                // Trava no último dia ou depois dele. Trilha
+                                // nova: o fim sai de quantas cenas.
                                 onTap:
-                                    days.isNotEmpty &&
-                                        days.last.date.compareTo(today) <= 0
+                                    (_sceneDriven &&
+                                            _season == null &&
+                                            live == null) ||
+                                        (days.isNotEmpty &&
+                                            days.last.date.compareTo(today) <=
+                                                0)
                                     ? null
                                     : () => _pickEnd(
                                         days.isEmpty

@@ -15,6 +15,7 @@ import '../utils/juntos_invite_pace.dart';
 import '../models/advent_prize.dart';
 import '../models/room_week.dart';
 import '../services/advent_prize_service.dart';
+import '../services/family_service.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -26,6 +27,7 @@ import '../utils/season_walk_debug.dart';
 import '../widgets/store_rating_sheet.dart';
 import '../widgets/juntos_invite_sheet.dart';
 import '../widgets/whats_new_sheet.dart';
+import '../widgets/family_plan.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/daily_chest_sheet.dart';
 import '../widgets/immersive_background.dart';
@@ -264,6 +266,86 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
     );
   }
 
+  /// Titular simulado: plano no FamilyService e o produto na assinatura.
+  void _familyOwner(String productId, {int members = 0, bool active = true}) {
+    final family = FamilyService.instance;
+    final names = ['Ana', 'Lucas', 'Davi'];
+    family.debugSet(
+      owned: FamilyService.debugPlan(
+        ownerUid: family.uid ?? 'lab-me',
+        ownerName: context.read<ProgressService>().publicUserName,
+        productId: productId,
+        active: active,
+        members: [
+          for (var i = 0; i < members; i++)
+            FamilyMember(
+              uid: 'lab-${names[i].toLowerCase()}',
+              name: names[i],
+              joinedAt: DateTime.now().subtract(Duration(days: 30 - i)),
+            ),
+        ],
+      ),
+    );
+    context.read<SubscriptionService>().debugSetPlusProduct(productId);
+    _toast('Veja o card Minha família no Perfil');
+  }
+
+  /// Membro simulado da família da Marta (Plus promocional).
+  void _familyMember() {
+    final family = FamilyService.instance;
+    family.debugSet(
+      joined: FamilyService.debugPlan(
+        ownerUid: 'lab-marta',
+        ownerName: 'Marta',
+        productId: 'plus_familia4_annual',
+        inviteCode: FamilyService.debugInviteCode,
+        members: [
+          FamilyMember(uid: family.uid ?? 'lab-me', name: ''),
+          const FamilyMember(uid: 'lab-pedro', name: 'Pedro'),
+        ],
+      ),
+    );
+    context.read<SubscriptionService>().debugSetPlusProduct(
+      'rc_promo_plus_lab',
+    );
+    _toast('Veja o card Minha família no Perfil');
+  }
+
+  /// Sem família (simulado): para testar o convite do zero.
+  void _familyNone() {
+    FamilyService.instance.debugSet();
+    final sub = context.read<SubscriptionService>();
+    if (sub.plusIsFamily || (sub.plusProductId ?? '').startsWith('rc_promo')) {
+      sub.debugSetPlus(false);
+    }
+  }
+
+  void _familyReal() {
+    _familyNone();
+    FamilyService.instance.debugClear();
+    _toast('Família real de volta');
+  }
+
+  Future<void> _familyJoinByLink() async {
+    final family = FamilyService.instance;
+    if (!family.debugActive) _familyNone();
+    await joinFamilyByCode(context, FamilyService.debugInviteCode);
+    if (!mounted || family.joined == null) return;
+    context.read<SubscriptionService>().debugSetPlusProduct(
+      'rc_promo_plus_lab',
+    );
+  }
+
+  String _familyState(FamilyService family) {
+    final plan = family.plan;
+    final tag = family.debugActive ? ' (simulado)' : '';
+    if (plan == null) return 'Família: nenhuma$tag';
+    final role = family.isOwner ? 'titular' : 'membro de ${plan.ownerName}';
+    return 'Família: $role · ${plan.productId} · '
+        '${plan.people} pessoa(s), ${plan.freeSeats} vaga(s)'
+        '${plan.active ? '' : ' · pausado'}$tag';
+  }
+
   void _open(Widget screen) {
     Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => screen));
   }
@@ -496,6 +578,55 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                           context.watch<RemoteConfigService>().challengeEnabled,
                           RemoteConfigService.instance.debugSetChallengeEnabled,
                         ),
+                      ]),
+                      section('Casal e Família', [
+                        line(
+                          'Simula o plano neste aparelho, sem servidor: o '
+                          'card Minha família no Perfil, o nome do plano em '
+                          'Ajustes e no paywall, convidar, tirar pessoa, '
+                          'novo link e sair. "Entrar por convite" roda o '
+                          'fluxo do link (prévia, confirmação, toast) com '
+                          'a família da Marta. Não fica salvo ao fechar o '
+                          'app. Para comprar Casal/Família no paywall, '
+                          'ligue a loja falsa.',
+                        ),
+                        ListenableBuilder(
+                          listenable: FamilyService.instance,
+                          builder: (context, _) =>
+                              line(_familyState(FamilyService.instance)),
+                        ),
+                        button(
+                          'Titular do Casal (vaga livre)',
+                          () => _familyOwner('plus_casal_annual'),
+                        ),
+                        button(
+                          'Titular da Família de 4 (2 pessoas, 1 vaga)',
+                          () =>
+                              _familyOwner('plus_familia4_annual', members: 2),
+                        ),
+                        button(
+                          'Titular da Família de 3 (cheia)',
+                          () =>
+                              _familyOwner('plus_familia3_annual', members: 2),
+                        ),
+                        button(
+                          'Titular com plano pausado',
+                          () => _familyOwner(
+                            'plus_familia4_annual',
+                            members: 1,
+                            active: false,
+                          ),
+                        ),
+                        button('Membro da família da Marta', _familyMember),
+                        button('Sem família (simulado)', () {
+                          _familyNone();
+                          _toast('Sem família');
+                        }),
+                        button(
+                          'Entrar por convite (link de teste)',
+                          _familyJoinByLink,
+                        ),
+                        button('Voltar à família real', _familyReal),
                       ]),
                       section('Promoção de lançamento', [
                         line(

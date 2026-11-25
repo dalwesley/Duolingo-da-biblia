@@ -24,6 +24,7 @@ import '../utils/appearance.dart';
 import '../utils/spiritual_growth.dart';
 import 'pilgrim_profile_sections.dart';
 import 'profile_plus_cards.dart' show ProfileAccuracyCard;
+import 'profile_privacy.dart';
 import 'room_pilot_cards.dart' show GroupSealsCard;
 import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
@@ -231,12 +232,24 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
                           padding: const EdgeInsets.symmetric(
                             horizontal: AppSpace.screen,
                           ),
-                          child: _VisitorProfileMirror(
-                            entry: widget.entry,
-                            rank: widget.rank,
-                            profile: profile!,
-                            catalog: _catalog,
-                          ),
+                          child: widget.preview
+                              // Prévia: cada card traz o olho e o que está
+                              // escondido fica esmaecido, para reabrir.
+                              ? ProfilePrivacyScope(
+                                  child: _VisitorProfileMirror(
+                                    entry: widget.entry,
+                                    rank: widget.rank,
+                                    profile: profile!,
+                                    catalog: _catalog,
+                                    editable: true,
+                                  ),
+                                )
+                              : _VisitorProfileMirror(
+                                  entry: widget.entry,
+                                  rank: widget.rank,
+                                  profile: profile!,
+                                  catalog: _catalog,
+                                ),
                         ),
                         if (!widget.preview &&
                             context
@@ -259,15 +272,25 @@ class _VisitorProfileMirror extends StatelessWidget {
   final CaravanPilgrimProfile profile;
   final List<Trail> catalog;
 
+  /// Prévia do próprio perfil: escondidos aparecem esmaecidos com o olho.
+  final bool editable;
+
   const _VisitorProfileMirror({
     required this.entry,
     required this.rank,
     required this.profile,
     required this.catalog,
+    this.editable = false,
   });
 
   bool _visible(CaravanProfileSection section) =>
       profile.prefs.shouldShow(section, isOwner: false);
+
+  /// Entra no layout: visível, ou escondido mas na prévia (esmaecido).
+  bool _listed(CaravanProfileSection section) => editable || _visible(section);
+
+  Widget _veil(CaravanProfileSection section, Widget child) =>
+      editable ? PrivacyVeil(hidden: !_visible(section), child: child) : child;
 
   @override
   Widget build(BuildContext context) {
@@ -281,16 +304,16 @@ class _VisitorProfileMirror extends StatelessWidget {
         _visible(CaravanProfileSection.bible) ||
         _visible(CaravanProfileSection.medals);
     final extras = profile.extras;
-    final showStudy = _visible(CaravanProfileSection.study) && extras.hasStudy;
+    final showStudy = _listed(CaravanProfileSection.study) && extras.hasStudy;
     final showWord =
-        _visible(CaravanProfileSection.word) &&
+        _listed(CaravanProfileSection.word) &&
         (profile.bibleChaptersRead > 0 ||
             extras.bookmarkCount > 0 ||
             extras.noteCount > 0);
     final showQuests =
-        _visible(CaravanProfileSection.quests) && extras.questsThisWeek;
+        _listed(CaravanProfileSection.quests) && extras.questsThisWeek;
     final showGroupSeals =
-        _visible(CaravanProfileSection.groupSeals) && extras.groupSealCount > 0;
+        _listed(CaravanProfileSection.groupSeals) && extras.groupSealCount > 0;
     final identityVisible =
         showRanking || showPresence || showAccuracy || showLeader;
 
@@ -395,7 +418,32 @@ class _VisitorProfileMirror extends StatelessWidget {
           supporter: profile.supporter,
           pilgrim: profile.pilgrim,
           pioneer: profile.pioneer,
-          footer: showPresence
+          footer: editable
+              ? Row(
+                  children: [
+                    Expanded(
+                      child: _veil(
+                        CaravanProfileSection.presence,
+                        PilgrimStreakFooter(
+                          streak: profile.streak,
+                          playDates: profile.playDates,
+                          walk: entry.walkedToday
+                              ? l10n.commonToday
+                              : pilgrimFormatShort(profile.lastWalkDate),
+                          online: pilgrimFormatOnline(profile.lastSeenDate),
+                          walkedToday: entry.walkedToday,
+                          showStreak: profile.streak > 0,
+                          bestStreak: profile.bestStreak,
+                        ),
+                      ),
+                    ),
+                    PrivacyEye(
+                      sections: const {CaravanProfileSection.presence},
+                      label: l10n.profileSectionPresence,
+                    ),
+                  ],
+                )
+              : showPresence
               ? PilgrimStreakFooter(
                   streak: profile.streak,
                   playDates: profile.playDates,
@@ -408,7 +456,17 @@ class _VisitorProfileMirror extends StatelessWidget {
                   bestStreak: profile.bestStreak,
                 )
               : null,
-          coverAction: profile.uid != null && walkDate != null
+          // Prévia: o olho dos números do topo, como no perfil próprio.
+          coverAction: editable
+              ? PrivacyEye(
+                  sections: const {
+                    CaravanProfileSection.ranking,
+                    CaravanProfileSection.daysAsLeader,
+                    CaravanProfileSection.accuracy,
+                  },
+                  label: l10n.profileNumbersPrivacyLabel,
+                )
+              : profile.uid != null && walkDate != null
               ? RecognizeHeartButton(
                   toUid: profile.uid,
                   kind: RecognitionKind.walk,
@@ -421,13 +479,19 @@ class _VisitorProfileMirror extends StatelessWidget {
         // depois do topo.
         if (showQuests) ...[
           const SizedBox(height: AppSpace.section),
-          PilgrimQuestsCard(extras: extras),
+          _veil(
+            CaravanProfileSection.quests,
+            PilgrimQuestsCard(extras: extras),
+          ),
         ],
         if (showGroupSeals) ...[
           const SizedBox(height: AppSpace.section),
-          GroupSealsCard(count: extras.groupSealCount),
+          _veil(
+            CaravanProfileSection.groupSeals,
+            GroupSealsCard(count: extras.groupSealCount),
+          ),
         ],
-        if (showLater || !identityVisible) ...[
+        if (showLater || !identityVisible || editable) ...[
           const SizedBox(height: AppSpace.section),
           PilgrimProfileDetailSections(
             profile: profile,
@@ -440,7 +504,8 @@ class _VisitorProfileMirror extends StatelessWidget {
               CaravanProfileSection.presence,
             },
             includeStreakMilestones: false,
-            suppressEmptyState: identityVisible,
+            suppressEmptyState: identityVisible || editable,
+            veilHidden: editable,
             visitorPostcards: scenes.isEmpty
                 ? null
                 : PilgrimPostcardStrip(
@@ -452,19 +517,25 @@ class _VisitorProfileMirror extends StatelessWidget {
         ],
         if (showStudy) ...[
           const SizedBox(height: AppSpace.section),
-          ProfileAccuracyCard.visitor(
-            visitor: extras,
-            visitorCorrect: profile.lifetimeQuestionsCorrect,
-            visitorAnswered: profile.lifetimeQuestionsAnswered,
+          _veil(
+            CaravanProfileSection.study,
+            ProfileAccuracyCard.visitor(
+              visitor: extras,
+              visitorCorrect: profile.lifetimeQuestionsCorrect,
+              visitorAnswered: profile.lifetimeQuestionsAnswered,
+            ),
           ),
         ],
         if (showWord) ...[
           const SizedBox(height: AppSpace.section),
-          NaPalavraCard(
-            chapters: profile.bibleChaptersRead,
-            books: profile.completeBibleBooks.length,
-            favorites: extras.bookmarkCount,
-            notes: extras.noteCount,
+          _veil(
+            CaravanProfileSection.word,
+            NaPalavraCard(
+              chapters: profile.bibleChaptersRead,
+              books: profile.completeBibleBooks.length,
+              favorites: extras.bookmarkCount,
+              notes: extras.noteCount,
+            ),
           ),
         ],
       ],
@@ -472,8 +543,8 @@ class _VisitorProfileMirror extends StatelessWidget {
   }
 }
 
-/// Topo da prévia: o que é e um olho por seção. Mesmas escolhas dos olhos
-/// nos cards do perfil e de Ajustes.
+/// Topo da prévia: o que é. Os olhos ficam em cada card logo abaixo —
+/// mesmas escolhas dos olhos no perfil próprio e em Ajustes.
 class _SelfPreviewControls extends StatelessWidget {
   const _SelfPreviewControls();
 
@@ -481,8 +552,6 @@ class _SelfPreviewControls extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    final progress = context.watch<ProgressService>();
-    final prefs = progress.caravanProfilePrefs;
     return Container(
       padding: const EdgeInsets.all(AppSpace.md),
       decoration: BoxDecoration(
@@ -515,92 +584,7 @@ class _SelfPreviewControls extends StatelessWidget {
             l10n.caravanPreviewBody,
             style: AppTypography.body(size: 12, color: a.textSecondary),
           ),
-          const SizedBox(height: AppSpace.sm),
-          Wrap(
-            spacing: 6,
-            runSpacing: 6,
-            children: [
-              for (final s in CaravanProfileSection.values)
-                _SectionEyeChip(
-                  label: s.label,
-                  visible: prefs.isVisible(s),
-                  onTap: () {
-                    ActHaptics.tap();
-                    progress.updateCaravanProfilePrefs(
-                      prefs.copyWithSection(s, !prefs.isVisible(s)),
-                    );
-                  },
-                ),
-            ],
-          ),
         ],
-      ),
-    );
-  }
-}
-
-class _SectionEyeChip extends StatelessWidget {
-  final String label;
-  final bool visible;
-  final VoidCallback onTap;
-
-  const _SectionEyeChip({
-    required this.label,
-    required this.visible,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final ink = visible ? AppRoles.presence : a.textFaint;
-    return Semantics(
-      button: true,
-      toggled: visible,
-      label: visible
-          ? context.l10n.profilePrivacyShownSemantics(label)
-          : context.l10n.profilePrivacyHiddenSemantics(label),
-      excludeSemantics: true,
-      child: GestureDetector(
-        behavior: HitTestBehavior.opaque,
-        onTap: onTap,
-        child: AnimatedContainer(
-          duration: AppMotion.quick,
-          constraints: const BoxConstraints(minHeight: 36),
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadii.pill),
-            color: visible
-                ? AppRoles.presence.withValues(alpha: 0.14)
-                : Colors.transparent,
-            border: Border.all(
-              color: visible
-                  ? AppRoles.presence.withValues(alpha: 0.55)
-                  : a.cardBorder,
-            ),
-          ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Icon(
-                visible
-                    ? Icons.visibility_outlined
-                    : Icons.visibility_off_outlined,
-                size: 14,
-                color: ink,
-              ),
-              const SizedBox(width: 5),
-              Text(
-                label,
-                style: AppTypography.body(
-                  size: 12,
-                  weight: FontWeight.w800,
-                  color: visible ? a.text : a.textFaint,
-                ),
-              ),
-            ],
-          ),
-        ),
       ),
     );
   }

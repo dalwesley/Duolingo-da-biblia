@@ -108,3 +108,19 @@ class PrivacyEye extends StatelessWidget {
     );
   }
 }
+
+/// Na prévia "Como a caravana te vê": o card escondido continua ali,
+/// esmaecido, para o olho riscado poder trazer de volta.
+class PrivacyVeil extends StatelessWidget {
+  final bool hidden;
+  final Widget child;
+
+  const PrivacyVeil({super.key, required this.hidden, required this.child});
+
+  @override
+  Widget build(BuildContext context) => AnimatedOpacity(
+    duration: AppMotion.quick,
+    opacity: hidden ? 0.4 : 1,
+    child: child,
+  );
+}

@@ -19,6 +19,7 @@ import 'services/corner_service.dart';
 import 'services/league_service.dart';
 import 'services/home_widget_service.dart';
 import 'services/invite_deep_link_service.dart';
+import 'services/family_service.dart';
 import 'services/moderation_service.dart';
 import 'services/notification_service.dart';
 import 'services/progress_service.dart';
@@ -77,6 +78,15 @@ class TrilhaApp extends StatelessWidget {
             // o app só liga a conta à loja.
             unawaited(sub.bindUid(backend.uid));
             return sub;
+          },
+        ),
+        // Casal e Família: o plano desta conta, ao vivo (functions/family.js).
+        ChangeNotifierProxyProvider<BackendService, FamilyService>(
+          create: (_) => FamilyService.instance,
+          update: (_, backend, previous) {
+            final family = previous ?? FamilyService.instance;
+            family.bind(backend.isActive ? backend.uid : null);
+            return family;
           },
         ),
         ChangeNotifierProvider.value(value: RemoteConfigService.instance),

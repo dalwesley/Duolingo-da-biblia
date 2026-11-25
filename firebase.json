@@ -36,7 +36,8 @@
       "ignore": [
         "firebase.json",
         "**/.*",
-        "**/node_modules/**"
+        "**/node_modules/**",
+        "_partials/**"
       ],
       "cleanUrls": true,
       "trailingSlash": false,
@@ -62,7 +63,28 @@
               "value": "strict-origin-when-cross-origin"
             }
           ]
+        },
+        {
+          "regex": "^/[^.]*$",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
+            }
+          ]
+        },
+        {
+          "source": "**/*.html",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
+            }
+          ]
         }
+      ],
+      "predeploy": [
+        "node \"$PROJECT_DIR/site/_partials/sync.mjs\""
       ]
     }
   ]

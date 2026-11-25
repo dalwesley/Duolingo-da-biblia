@@ -143,9 +143,23 @@ class _MemoryScreenState extends State<MemoryScreen>
     _flip.forward(from: 0);
   }
 
+  /// Toque duplo em "Sei"/"Ainda não": um cartão, uma resposta.
+  bool _answering = false;
+
   Future<void> _answer({required bool knew}) async {
+    if (_answering || !_revealed || _finished) return;
+    _answering = true;
+    try {
+      await _answerCard(knew: knew);
+    } finally {
+      _answering = false;
+    }
+  }
+
+  Future<void> _answerCard({required bool knew}) async {
     final progress = context.read<ProgressService>();
     await progress.recordMemoryReview(_current.id, knew: knew);
+    if (!mounted) return;
     if (knew) {
       SoundService.instance.playCorrect();
       _known++;
@@ -170,7 +184,9 @@ class _MemoryScreenState extends State<MemoryScreen>
 
   @override
   Widget build(BuildContext context) {
-    final mode = context.watch<ProgressService>().settings.appearanceMode;
+    final mode = context.select(
+      (ProgressService p) => p.settings.appearanceMode,
+    );
     final appearance = AppearanceStyle.resolve(mode);
 
     return Appearance(

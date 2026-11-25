@@ -144,71 +144,98 @@ sempre se pode repetir. O Plus de quem libera vem do doc público
 
 ---
 
-## Preços (decididos em 20 out 2026)
+## Preços (decididos em 25 nov 2026; substituem a tabela de 20 out)
 
 Referências de mercado, out/2026: Glorify R$ 14,90/mês e R$ 149,90/ano
 (promo recorrente de R$ 69,90); Hallow ~R$ 39,90/mês; Duolingo Super
 R$ 34,90/mês e R$ 179,90/ano (Família R$ 269,90); Bibliando US$ 2,99/22,99;
 YouVersion tudo grátis. Salário mínimo 2026: R$ 1.621.
 
+| Plano | Mensal | Anual | Acessos | Onde vende |
+|---|---|---|---|---|
+| Grátis | — | — | 1 conta | — |
+| Peregrino+ | **R$ 9,90** | **R$ 89,90** (trial 14 dias) | 1 conta | loja e web |
+| Pioneiro (vitalício, 200 vagas) | — | **R$ 149,90 uma vez** | 1 conta | loja e web |
+| Casal | — | **R$ 139,90** | 2 contas | loja |
+| Família 3 | — | **R$ 179,90** | 3 contas | loja |
+| Família 4 | — | **R$ 209,90** | 4 contas | loja |
+| Pastor / Missionário | grátis | grátis | 1 conta + ferramentas de líder | contato |
+| Igreja Pequena / Igreja / Rede | contato | contato | sob medida | contato |
+| Apoio avulso | R$ 5 / 15 / 30 / 50, pagamento único | — | só o selo de apoiador | loja |
+
 ### Peregrino+ (individual)
 
-| Plano | Preço | Papel |
-|---|---|---|
-| Mensal | **R$ 19,90/mês** | Âncora: existe para o anual ser óbvio e para quem apoia por poucos meses |
-| Anual | **R$ 119,90/ano** (R$ 9,99/mês) | **O herói depois do lançamento.** Metade do mensal × 12 (“pague 6, leve 12”). Trial de 14 dias. Fica fora do paywall enquanto o Pioneiro está à venda |
-| Pioneiro | **R$ 89,90/ano travado enquanto renovar** | **O único anual no lançamento**, com o mesmo trial de 14 dias. Primeiros 200 pagantes **ou** até `pioneer_until`, o que vier primeiro. Preço permanente enquanto renovar |
-
-- O app não grava preço; mostra o que a loja devolver. Anual primeiro.
-- **Lançamento (decidido em 21 out 2026):** o paywall mostra só
-  Pioneiro (14 dias grátis + preço travado) e Mensal. Uma escolha, com
-  teste e desconto juntos, sem dois anuais lado a lado. Quando as vagas
-  ou o prazo acabam, o app troca sozinho o Pioneiro pelo Anual regular
-  (`packagesForSale`). Sem promoção “Plus grátis” no lançamento: o
-  trial faz esse papel, e a promoção deixaria o Pioneiro sem motivo de
-  compra. A loja dá **um** trial por grupo de assinatura: quem testou o
-  Pioneiro não ganha outro teste no Anual.
-- **Fundador é produto separado** (`plus_founder_annual`): na loja, preço
-  mora no produto — não existe o mesmo anual a dois preços. Mesmo grupo
-  de assinatura e mesmo entitlement `peregrino_plus`; só muda o preço.
-  Ao bater o corte, o produto sai da oferta: ninguém novo compra e quem
-  assinou continua renovando a R$ 89,90 (a loja mantém o preço de quem
-  já assinou). A contagem fica em `stats/pioneer`: a vaga é
-  do **primeiro pagamento**, não do início do teste (o webhook soma na
-  compra sem teste ou na conversão do teste, `is_trial_conversion`; uma
-  vez por conta; cancelar depois de pagar não devolve a vaga). Quem está
-  no teste quando as vagas acabam converte normalmente, então o total
-  pode passar um pouco de 200 — aceito. Tirar o produto da oferta no
-  corte continua sendo ação na loja, mas o app já esconde o Pioneiro
-  quando o contador bate o teto ou passa `pioneer_until` (Remote Config,
-  YYYY-MM-DD inclusive; vazio = sem prazo), então a demora na loja não
-  vende vaga a mais.
-- **Vitalício: não criar o produto.** Se um dia existir, mínimo de 8× o anual.
+- Mensal R$ 9,90: o mais barato do nicho; porta de entrada.
+- Anual R$ 89,90 (R$ 7,49/mês): 24% abaixo de 12 × mensal (R$ 118,80).
+  Trial de 14 dias só no anual. É o herói do paywall.
 - Sem plano semestral.
-- Ajuste fino depois de 60–90 dias com D7 medido: testar R$ 99,90 ×
-  R$ 119,90 no anual via RevenueCat Experiments, com dado de conversão.
+- Ajuste fino depois de 60–90 dias com D7 medido, via RevenueCat
+  Experiments, com dado de conversão.
 
-### Família (fim da Fase 2 — depende do webhook no ar)
+### Pioneiro (vitalício, só no lançamento)
 
-| Plano | Preço | Papel |
-|---|---|---|
-| Família mensal | **R$ 29,90/mês** | 1,5× o individual |
-| Família anual | **R$ 179,90/ano** | Até 5 contas; R$ 3,00/pessoa/mês no grupo cheio |
+- **Pagamento único de R$ 149,90, acesso vitalício.** Só as primeiras
+  200 vagas; não reabre. Cerca de 1,7× o anual.
+- Na loja é produto **não consumível** (não é assinatura): sem trial,
+  sem renovação. Mesmo entitlement `peregrino_plus`.
+- Copy: "vitalício" ou "para sempre" é correto aqui (antes era "preço
+  travado enquanto renovar"; essa versão saiu).
+- A vaga conta na compra (`stats/pioneer`), uma por conta.
+- No código (25 nov 2026): `PlusAccess.pioneerProductId =
+  'plus_pioneer_lifetime'`; o paywall mostra anual, Pioneiro e mensal
+  enquanto houver vaga (`packagesForSale`). O webhook trata
+  `NON_RENEWING_PURCHASE` do vitalício (Plus sem data de fim), conta a
+  vaga na compra e desliga no reembolso (CANCELLATION sem data de fim).
+  `plus_founder_annual` segue reconhecido para o selo dos testadores.
 
-O mesmo Peregrino+ em até 5 contas, pelo entitlement no servidor
-(`users/{uid}.plusActive`). Nada de recursos exclusivos do Família além do
-compartilhamento: misturar direito institucional no individual bagunça
-preço e acesso.
+### Casal e Família (só anual)
 
-### Líderes e Igrejas (Fase 3 — web, Stripe + Pix, fora das lojas)
+O mesmo Peregrino+ em 2, 3 ou 4 contas, pelo entitlement no servidor
+(`users/{uid}.plusActive`), com convite e não Family Sharing da loja
+(funciona entre Android e iOS). Quanto mais gente, menor o preço por
+pessoa. Regra: anual individual + R$ 50 pela 2ª pessoa, + R$ 40 pela
+3ª, + R$ 30 pela 4ª.
 
-| Plano | Preço | Para quem |
-|---|---|---|
-| Líder | **R$ 29,90/mês** ou R$ 239,90/ano | 1 líder: preparo de célula, painel do grupo (até ~15 pessoas) |
-| Igreja Essencial | **R$ 49,90/mês** ou R$ 399,90/ano | Até 50 membros ativos nos grupos, 3 líderes |
-| Igreja | **R$ 99,90/mês** ou R$ 799,90/ano | Até 250 membros ativos |
-| Rede/Congregações | **R$ 199,90/mês** ou sob consulta | Multi-congregações |
-| Bolsa pastoral | **R$ 0** | Igreja pequena/pastor, por solicitação simples — missão e marketing |
+| Plano | Anual | Por pessoa | Desconto sobre N × R$ 89,90 |
+|---|---|---|---|
+| Casal | R$ 139,90 | R$ 69,95 | 22% |
+| Família 3 | R$ 179,90 | R$ 59,97 | 33% |
+| Família 4 | R$ 209,90 | R$ 52,48 | 42% |
+
+Sem mensal nesses planos (menos produtos na loja; família assina para
+o ano). Nada de recurso exclusivo além do compartilhamento.
+
+Como funciona (functions/family.js, 25 nov 2026):
+- Produtos `plus_casal_annual`, `plus_familia3_annual`,
+  `plus_familia4_annual` na oferta RevenueCat `familia`, mesmo grupo de
+  assinatura e entitlement `peregrino_plus`.
+- O webhook cria `families/{titular}` (vagas, fim, código de 6 letras).
+  Convite: `stway://familia/CODIGO` ou `stway-app.web.app/abrir/familia?c=`.
+- Entrar é a callable `familyAction` (join): reserva a vaga e dá Plus
+  promocional no RevenueCat até o fim do titular + 3 dias. Renovação
+  estende; fim, reembolso ou troca para individual pausa o plano e tira
+  o promocional (membros ficam na lista e voltam se o titular reassinar).
+- Quem já paga o próprio Plus (assinatura que renova ou vitalício) não
+  entra: pagaria duas vezes.
+- Perfil › Minha família: titular convida, tira pessoas e gera link novo;
+  membro vê quem paga e pode sair.
+- Depende do segredo `REVENUECAT_SECRET_KEY` (sk_) nas functions.
+
+### Pastor, missionário e igrejas (por contato)
+
+- **Pastor / Missionário: grátis**, pedido pelo formulário de contato.
+  Ganha Plus + ferramentas de líder (grupos), para levar a igreja.
+  Concessão por entitlement promocional do RevenueCat (1 ano,
+  renovável), liberado pelo painel admin (Usuários › Suporte › Dar bolsa
+  pastoral; grava `pastorGrants/{uid}`). Contra abuso: nome da igreja,
+  cidade e um link (Instagram, site ou CNPJ); 1 concessão por igreja;
+  renova por ano.
+- **Igreja Pequena, Igreja e Rede: preço sob consulta** no lançamento.
+  Venda conversada pela web (Pix, boleto) para aprender o que a igreja
+  quer antes de fixar tabela. Regra de partida: líderes recebem Plus
+  completo; membros têm acesso ao que o grupo estuda, não ao Plus
+  inteiro (Plus inteiro para 250 membros mataria o individual).
+- Sem plano Líder avulso no lançamento.
 
 Igreja não é sistema de gestão (esses custam R$ 50–350/mês no Brasil);
 é formação: painel do líder, grupos estudando juntos, trilhas da igreja.
@@ -236,10 +263,10 @@ aprovação; A Promessa não atrasa a loja — entra no lançamento só se a
 montagem editorial couber, senão é o primeiro lançamento seguinte.
 
 1. Cravar os preços desta tabela nas lojas, em BRL direto
-2. Produtos: `plus_annual` (trial 14 dias), `plus_monthly`,
-   `plus_founder_annual` (R$ 89,90, **trial 14 dias**, sai da oferta no
-   corte); preencher `pioneer_until` com o fim dos 60 dias,
-   `apoio_5/15/30/50`. Sem vitalício
+2. Produtos: `plus_annual` (R$ 89,90, trial 14 dias), `plus_monthly`
+   (R$ 9,90), Pioneiro vitalício não consumível (R$ 149,90, 200 vagas,
+   sem trial), `apoio_5/15/30/50`. Casal e Família 3/4 entram quando o
+   compartilhamento existir
 3. RevenueCat: entitlement `peregrino_plus`, oferta padrão, oferta `apoio`;
    preencher `_apiKeyAndroid`/`_apiKeyIos`
 4. Sandbox: comprar, trial, restaurar, gerenciar, cancelar, um apoio —

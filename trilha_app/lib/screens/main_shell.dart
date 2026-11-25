@@ -40,6 +40,7 @@ import '../widgets/immersive_background.dart';
 import '../widgets/main_bottom_nav.dart';
 import '../widgets/shell_tab_scope.dart';
 import '../widgets/top_bar.dart';
+import '../widgets/family_plan.dart';
 import '../widgets/trail_gift.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/set_piece.dart';
@@ -289,6 +290,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       unawaited(_maybePromptAppUpdate());
       _openJuntosIfInvitePending();
       unawaited(_redeemWebPurchaseIfPending());
+      unawaited(_joinFamilyIfPending());
       MedalEngagementService.instance.scheduleCheck(context);
     });
   }
@@ -305,6 +307,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     );
     // Passe aberto antes do login (ou na partida a frio) espera a conta.
     unawaited(_redeemTrailGiftIfPending());
+    unawaited(_joinFamilyIfPending());
   }
 
   void _onInviteDeepLink() {
@@ -312,6 +315,32 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     _openJuntosIfInvitePending();
     unawaited(_redeemWebPurchaseIfPending());
     unawaited(_redeemTrailGiftIfPending());
+    unawaited(_joinFamilyIfPending());
+  }
+
+  /// Já avisou que o convite de família espera o login (uma vez por sessão).
+  bool _familyWaitShown = false;
+
+  /// Convite para o Casal/Família de alguém. Sem conta, espera o login.
+  Future<void> _joinFamilyIfPending() async {
+    final links = InviteDeepLinkService.instance;
+    if (links.pendingFamilyCode == null) return;
+    final backend = context.read<BackendService>();
+    if (!backend.isActive || GuestGate.isGuest(context)) {
+      if (!backend.isInitializing && !_familyWaitShown) {
+        _familyWaitShown = true;
+        await showAppToastFor(
+          context,
+          message: context.l10n.familyErrorNeedsAccount,
+          glyph: CinematicGlyph.people,
+          tone: AppToastTone.warn,
+        );
+      }
+      return;
+    }
+    final code = links.takePendingFamilyCode();
+    if (code == null) return;
+    await joinFamilyByCode(context, code);
   }
 
   /// Passe de trilha: alguém com o Peregrino+ liberou uma trilha. Sem

@@ -103,21 +103,25 @@ class _ConfettiOverlayState extends State<ConfettiOverlay>
   @override
   Widget build(BuildContext context) {
     if (!widget.active) return const SizedBox.shrink();
+    // Camada própria: a chuva repinta a cada quadro sem arrastar a tela
+    // inteira por baixo junto.
     return IgnorePointer(
-      child: AnimatedBuilder(
-        animation: _controller,
-        builder: (context, _) {
-          return CustomPaint(
-            painter: _ConfettiPainter(
-              progress: _controller.value,
-              particles: _particles,
-              cinematic: widget.cinematic,
-              source: widget.source,
-              sourceSpan: widget.sourceSpan,
-            ),
-            size: Size.infinite,
-          );
-        },
+      child: RepaintBoundary(
+        child: AnimatedBuilder(
+          animation: _controller,
+          builder: (context, _) {
+            return CustomPaint(
+              painter: _ConfettiPainter(
+                progress: _controller.value,
+                particles: _particles,
+                cinematic: widget.cinematic,
+                source: widget.source,
+                sourceSpan: widget.sourceSpan,
+              ),
+              size: Size.infinite,
+            );
+          },
+        ),
       ),
     );
   }

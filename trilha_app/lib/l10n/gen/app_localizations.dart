@@ -1381,7 +1381,7 @@ abstract class AppLocalizations {
   /// No description provided for @caravanPreviewBody.
   ///
   /// In pt, this message translates to:
-  /// **'Toque num olho para mostrar ou esconder. Muda na hora, aqui embaixo.'**
+  /// **'Toque no olho de cada card para mostrar ou esconder. O que fica apagado só você vê.'**
   String get caravanPreviewBody;
 
   /// No description provided for @caravanPreviewCardCaption.
@@ -4552,6 +4552,276 @@ abstract class AppLocalizations {
   /// **'O Atlas da Bíblia está chegando'**
   String get exploreSoonTitle;
 
+  /// No description provided for @familyAllWalkedToday.
+  ///
+  /// In pt, this message translates to:
+  /// **'A casa inteira caminhou hoje!'**
+  String get familyAllWalkedToday;
+
+  /// No description provided for @familyAlreadyIn.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você já está neste plano.'**
+  String get familyAlreadyIn;
+
+  /// No description provided for @familyEmptySeat.
+  ///
+  /// In pt, this message translates to:
+  /// **'Vaga livre'**
+  String get familyEmptySeat;
+
+  /// No description provided for @familyErrorFailed.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não deu certo agora. Tente de novo.'**
+  String get familyErrorFailed;
+
+  /// No description provided for @familyErrorFull.
+  ///
+  /// In pt, this message translates to:
+  /// **'As vagas deste plano já foram usadas.'**
+  String get familyErrorFull;
+
+  /// No description provided for @familyErrorHasPlus.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você já assina o Peregrino+. Cancele a sua assinatura na loja antes de entrar, para não pagar duas vezes.'**
+  String get familyErrorHasPlus;
+
+  /// No description provided for @familyErrorInactive.
+  ///
+  /// In pt, this message translates to:
+  /// **'Este plano da família está pausado.'**
+  String get familyErrorInactive;
+
+  /// No description provided for @familyErrorInvalid.
+  ///
+  /// In pt, this message translates to:
+  /// **'Este convite não vale mais. Peça um link novo.'**
+  String get familyErrorInvalid;
+
+  /// No description provided for @familyErrorNeedsAccount.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entre na sua conta para aceitar o convite. Ele espera por você.'**
+  String get familyErrorNeedsAccount;
+
+  /// No description provided for @familyErrorOther.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você já está em outro plano de família. Saia dele no Perfil antes.'**
+  String get familyErrorOther;
+
+  /// No description provided for @familyErrorOwn.
+  ///
+  /// In pt, this message translates to:
+  /// **'Este é o seu próprio plano.'**
+  String get familyErrorOwn;
+
+  /// No description provided for @familyInvite.
+  ///
+  /// In pt, this message translates to:
+  /// **'Convidar pelo link'**
+  String get familyInvite;
+
+  /// No description provided for @familyInviteMessage.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} chamou você para o Peregrino+ da família no Stway. Toque para entrar: {link}'**
+  String familyInviteMessage(String name, String link);
+
+  /// No description provided for @familyInviteShort.
+  ///
+  /// In pt, this message translates to:
+  /// **'Convidar'**
+  String get familyInviteShort;
+
+  /// No description provided for @familyJoinBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} chamou você para o plano da família. Você ganha o Peregrino+ enquanto o plano estiver ativo, com a sua conta e o seu caminho.'**
+  String familyJoinBody(String name);
+
+  /// No description provided for @familyJoinCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entrar no plano'**
+  String get familyJoinCta;
+
+  /// No description provided for @familyJoinDone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pronto! Você está na família de {name}.'**
+  String familyJoinDone(String name);
+
+  /// No description provided for @familyJoinTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Peregrino+ da família'**
+  String get familyJoinTitle;
+
+  /// No description provided for @familyLeave.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sair do plano'**
+  String get familyLeave;
+
+  /// No description provided for @familyLeaveConfirm.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sair do plano da família? Você perde o Peregrino+ que vem dele.'**
+  String get familyLeaveConfirm;
+
+  /// No description provided for @familyLeft.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você saiu do plano da família.'**
+  String get familyLeft;
+
+  /// No description provided for @familyManage.
+  ///
+  /// In pt, this message translates to:
+  /// **'Gerenciar'**
+  String get familyManage;
+
+  /// No description provided for @familyManageDone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pronto'**
+  String get familyManageDone;
+
+  /// No description provided for @familyMemberYou.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você'**
+  String get familyMemberYou;
+
+  /// No description provided for @familyMissingToday.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hoje ainda falta: {names}'**
+  String familyMissingToday(String names);
+
+  /// No description provided for @familyNewLink.
+  ///
+  /// In pt, this message translates to:
+  /// **'Gerar link novo'**
+  String get familyNewLink;
+
+  /// No description provided for @familyNewLinkDone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Link novo pronto. O anterior parou de funcionar.'**
+  String get familyNewLinkDone;
+
+  /// No description provided for @familyNoStreak.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sem sequência agora'**
+  String get familyNoStreak;
+
+  /// No description provided for @familyOwnerNamed.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} · titular'**
+  String familyOwnerNamed(String name);
+
+  /// No description provided for @familyOwnerYou.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você · titular'**
+  String get familyOwnerYou;
+
+  /// No description provided for @familyPaused.
+  ///
+  /// In pt, this message translates to:
+  /// **'Plano pausado: a assinatura de quem paga não está ativa. Quando ela voltar, todos recebem o Peregrino+ de novo.'**
+  String get familyPaused;
+
+  /// No description provided for @familyPlanOf.
+  ///
+  /// In pt, this message translates to:
+  /// **'Família de {name}'**
+  String familyPlanOf(String name);
+
+  /// No description provided for @familyPreparing.
+  ///
+  /// In pt, this message translates to:
+  /// **'Preparando o seu plano. Leva alguns segundos depois da compra.'**
+  String get familyPreparing;
+
+  /// No description provided for @familyRemove.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tirar do plano'**
+  String get familyRemove;
+
+  /// No description provided for @familyRemoveConfirm.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tirar {name} do plano? A pessoa perde o Peregrino+ da família na hora e a vaga fica livre.'**
+  String familyRemoveConfirm(String name);
+
+  /// No description provided for @familyRemoved.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} saiu do plano.'**
+  String familyRemoved(String name);
+
+  /// No description provided for @familySeatsLeft.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =0{Todas as vagas estão em uso} =1{1 vaga livre} other{{count} vagas livres}}'**
+  String familySeatsLeft(int count);
+
+  /// No description provided for @familySomeone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Peregrino'**
+  String get familySomeone;
+
+  /// No description provided for @familyStatToday.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hoje'**
+  String get familyStatToday;
+
+  /// No description provided for @familyStatTogether.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dias juntos'**
+  String get familyStatTogether;
+
+  /// No description provided for @familyStatWalks.
+  ///
+  /// In pt, this message translates to:
+  /// **'Caminhadas'**
+  String get familyStatWalks;
+
+  /// No description provided for @familyStreak.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 dia seguido} other{{count} dias seguidos}}'**
+  String familyStreak(int count);
+
+  /// No description provided for @familyTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Minha família'**
+  String get familyTitle;
+
+  /// No description provided for @familyTogetherHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quando todos caminharem no mesmo dia, a coluna acende em dourado.'**
+  String get familyTogetherHint;
+
+  /// No description provided for @familyWalkPrivate.
+  ///
+  /// In pt, this message translates to:
+  /// **'Semana guardada'**
+  String get familyWalkPrivate;
+
   /// No description provided for @feedbackAlmost.
   ///
   /// In pt, this message translates to:
@@ -4689,6 +4959,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Este grupo já tem {count} pessoas.'**
   String groupCallFull(int count);
+
+  /// No description provided for @groupCallSearchEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ninguém com esse nome na caravana.'**
+  String get groupCallSearchEmpty;
+
+  /// No description provided for @groupCallSearchHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Buscar pelo nome'**
+  String get groupCallSearchHint;
 
   /// No description provided for @groupCallShareCta.
   ///
@@ -10827,6 +11109,12 @@ abstract class AppLocalizations {
   /// **'Houve um problema no pagamento. Atualize na loja para não perder o acesso.'**
   String get paywallBillingIssue;
 
+  /// No description provided for @paywallBuyLifetime.
+  ///
+  /// In pt, this message translates to:
+  /// **'Garantir meu vitalício'**
+  String get paywallBuyLifetime;
+
   /// No description provided for @paywallBuyOnce.
   ///
   /// In pt, this message translates to:
@@ -10839,11 +11127,53 @@ abstract class AppLocalizations {
   /// **'Cancele quando quiser.'**
   String get paywallCancelAnytime;
 
+  /// No description provided for @paywallCtaNoteTrial.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 dia grátis, depois {price}} other{{count} dias grátis, depois {price}}}'**
+  String paywallCtaNoteTrial(int count, String price);
+
   /// No description provided for @paywallEndsOn.
   ///
   /// In pt, this message translates to:
   /// **'Cancelada. Seu acesso vai até {date}.'**
   String paywallEndsOn(String date);
+
+  /// No description provided for @paywallFamilyHow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cada pessoa usa a própria conta. Você assina e manda o link; quem entra por ele ganha o Peregrino+ enquanto o seu plano estiver ativo. Dá para tirar ou trocar as pessoas no Perfil.'**
+  String get paywallFamilyHow;
+
+  /// No description provided for @paywallFamilyIntro.
+  ///
+  /// In pt, this message translates to:
+  /// **'O mesmo Peregrino+ para quem caminha com você em casa. Cada pessoa tem a própria conta e o próprio caminho.'**
+  String get paywallFamilyIntro;
+
+  /// No description provided for @paywallFamilyPerPerson.
+  ///
+  /// In pt, this message translates to:
+  /// **'{price} por pessoa no ano'**
+  String paywallFamilyPerPerson(String price);
+
+  /// No description provided for @paywallFamilySeatsLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{Você + 1 pessoa} other{Você + {count} pessoas}}'**
+  String paywallFamilySeatsLine(int count);
+
+  /// No description provided for @paywallForFamily.
+  ///
+  /// In pt, this message translates to:
+  /// **'Família'**
+  String get paywallForFamily;
+
+  /// No description provided for @paywallForSolo.
+  ///
+  /// In pt, this message translates to:
+  /// **'Só eu'**
+  String get paywallForSolo;
 
   /// No description provided for @paywallFounderBadge.
   ///
@@ -10854,7 +11184,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallFounderBody.
   ///
   /// In pt, this message translates to:
-  /// **'Um valor de lançamento para quem chega primeiro ao Stway. Você paga {price} por ano enquanto renovar.'**
+  /// **'Um valor de lançamento para quem chega primeiro ao Stway. Você paga {price} uma vez e tem o Peregrino+ para sempre, sem renovação.'**
   String paywallFounderBody(String price);
 
   /// Dias até pioneer_until no contador do Pioneiro
@@ -10878,7 +11208,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallFounderNote.
   ///
   /// In pt, this message translates to:
-  /// **'O preço fica enquanto você renovar.'**
+  /// **'Pague uma vez. É seu para sempre.'**
   String get paywallFounderNote;
 
   /// Contador do Pioneiro no paywall: o número grande ao lado são as vagas que restam
@@ -10890,7 +11220,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallFounderTitle.
   ///
   /// In pt, this message translates to:
-  /// **'O preço do lançamento'**
+  /// **'Vitalício de lançamento'**
   String get paywallFounderTitle;
 
   /// No description provided for @paywallFreeForever.
@@ -10904,6 +11234,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Mantenha seu ritmo'**
   String get paywallHeadline;
+
+  /// No description provided for @paywallHeroBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Todas as trilhas abertas, no seu ritmo. E seu apoio mantém o Stway grátis para quem não pode pagar.'**
+  String get paywallHeroBody;
+
+  /// No description provided for @paywallHeroTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Caminhe sem limites'**
+  String get paywallHeroTitle;
 
   /// No description provided for @paywallLaunchFreeBody.
   ///
@@ -10922,6 +11264,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Vitalício: não expira.'**
   String get paywallLifetimeActive;
+
+  /// No description provided for @paywallLifetimeNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'{price} uma vez · acesso vitalício, sem renovação'**
+  String paywallLifetimeNote(String price);
 
   /// No description provided for @paywallManage.
   ///
@@ -10946,6 +11294,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Não conseguimos carregar os planos. Confira sua conexão e tente de novo.'**
   String get paywallOffersFailed;
+
+  /// No description provided for @paywallOnceShort.
+  ///
+  /// In pt, this message translates to:
+  /// **'pagamento único'**
+  String get paywallOnceShort;
+
+  /// No description provided for @paywallPerPersonShort.
+  ///
+  /// In pt, this message translates to:
+  /// **'{price} por pessoa'**
+  String paywallPerPersonShort(String price);
 
   /// No description provided for @paywallPerkBadgeBody.
   ///
@@ -11067,6 +11427,12 @@ abstract class AppLocalizations {
   /// **'Seu ano inteiro'**
   String get paywallPerkYearReviewTitle;
 
+  /// No description provided for @paywallPerksHeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que vem no Peregrino+'**
+  String get paywallPerksHeader;
+
   /// No description provided for @paywallPitch.
   ///
   /// In pt, this message translates to:
@@ -11078,6 +11444,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Anual'**
   String get paywallPlanAnnual;
+
+  /// No description provided for @paywallPlanCouple.
+  ///
+  /// In pt, this message translates to:
+  /// **'Casal'**
+  String get paywallPlanCouple;
+
+  /// No description provided for @paywallPlanFamilyOf.
+  ///
+  /// In pt, this message translates to:
+  /// **'Família · {count} pessoas'**
+  String paywallPlanFamilyOf(int count);
 
   /// No description provided for @paywallPlanFounder.
   ///
@@ -11205,6 +11583,18 @@ abstract class AppLocalizations {
   /// **'Economize {percent}%'**
   String paywallSave(int percent);
 
+  /// No description provided for @paywallSeeAllPerks.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver todos os benefícios'**
+  String get paywallSeeAllPerks;
+
+  /// No description provided for @paywallSeeFewerPerks.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver menos'**
+  String get paywallSeeFewerPerks;
+
   /// No description provided for @paywallStartTrial.
   ///
   /// In pt, this message translates to:
@@ -11259,23 +11649,29 @@ abstract class AppLocalizations {
   /// **'Tudo do Peregrino+ liberado, sem pagar nada.'**
   String get paywallTimelineTodayBody;
 
+  /// Paywall: dízimo do Stway (manifesto) — lido depois do "10%" grande
+  ///
+  /// In pt, this message translates to:
+  /// **'da receita líquida do Peregrino+ vai para missões e tradução da Bíblia.'**
+  String get paywallTitheBody;
+
+  /// Paywall: dízimo do Stway — frase em destaque, linha própria
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua assinatura sustenta o campo missionário.'**
+  String get paywallTitheField;
+
   /// Paywall: dízimo do Stway (manifesto)
   ///
   /// In pt, this message translates to:
   /// **'Ver o manifesto'**
   String get paywallTitheLink;
 
-  /// Paywall: dízimo do Stway (manifesto)
+  /// Paywall: dízimo do Stway (manifesto) — título do card
   ///
   /// In pt, this message translates to:
-  /// **'10% da receita líquida do Peregrino+ vai para missões e tradução da Bíblia.'**
-  String get paywallTitheOffer;
-
-  /// Paywall: dízimo do Stway (manifesto)
-  ///
-  /// In pt, this message translates to:
-  /// **'Sua assinatura também sustenta o campo: 10% da receita líquida vai para missões e tradução da Bíblia.'**
-  String get paywallTithePaid;
+  /// **'O dízimo do Stway'**
+  String get paywallTitheTitle;
 
   /// Name of the supporter subscription
   ///
@@ -11703,12 +12099,6 @@ abstract class AppLocalizations {
   /// **'Neste grupo, as respostas ficam com o líder.'**
   String get planAnswersPrivateNote;
 
-  /// No description provided for @planAnswersTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Respostas do dia {n}'**
-  String planAnswersTitle(int n);
-
   /// No description provided for @planApproxDays.
   ///
   /// In pt, this message translates to:
@@ -12000,8 +12390,8 @@ abstract class AppLocalizations {
   /// No description provided for @planEditorDurationTrail.
   ///
   /// In pt, this message translates to:
-  /// **'Segue a trilha {name}: um dia do propósito para cada cena.'**
-  String planEditorDurationTrail(String name);
+  /// **'{count, plural, =1{1 cena} other{{count} cenas}} da trilha {name}, uma por dia. Dias de descanso não contam.'**
+  String planEditorDurationTrail(String name, int count);
 
   /// No description provided for @planEditorEnd.
   ///
@@ -12092,6 +12482,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Propósito salvo. O grupo já vê.'**
   String get planEditorSaved;
+
+  /// No description provided for @planEditorScenesAll.
+  ///
+  /// In pt, this message translates to:
+  /// **'Todas ({count})'**
+  String planEditorScenesAll(int count);
 
   /// No description provided for @planEditorShowDays.
   ///
@@ -12602,6 +12998,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'O que você quer pedir a Deus depois de ler {ref}?'**
   String planQ9(String ref);
+
+  /// No description provided for @planQuestionDayTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pergunta do dia {n}'**
+  String planQuestionDayTitle(int n);
+
+  /// No description provided for @planQuestionTodayTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pergunta de hoje'**
+  String get planQuestionTodayTitle;
 
   /// No description provided for @planReadingDays.
   ///

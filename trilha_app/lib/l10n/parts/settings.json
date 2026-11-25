@@ -633,17 +633,23 @@
     "en": "Your data",
     "es": "Tus datos"
   },
-  "paywallTitheOffer": {
-    "pt": "10% da receita líquida do Peregrino+ vai para missões e tradução da Bíblia.",
-    "en": "10% of Peregrino+ net revenue goes to missions and Bible translation.",
-    "es": "El 10% de los ingresos netos de Peregrino+ va a misiones y traducción de la Biblia.",
-    "description": "Paywall: dízimo do Stway (manifesto)"
+  "paywallTitheTitle": {
+    "pt": "O dízimo do Stway",
+    "en": "Stway's tithe",
+    "es": "El diezmo de Stway",
+    "description": "Paywall: dízimo do Stway (manifesto) — título do card"
   },
-  "paywallTithePaid": {
-    "pt": "Sua assinatura também sustenta o campo: 10% da receita líquida vai para missões e tradução da Bíblia.",
-    "en": "Your subscription also supports the field: 10% of net revenue goes to missions and Bible translation.",
-    "es": "Tu suscripción también sostiene el campo: el 10% de los ingresos netos va a misiones y traducción de la Biblia.",
-    "description": "Paywall: dízimo do Stway (manifesto)"
+  "paywallTitheBody": {
+    "pt": "da receita líquida do Peregrino+ vai para missões e tradução da Bíblia.",
+    "en": "of Peregrino+ net revenue goes to missions and Bible translation.",
+    "es": "de los ingresos netos de Peregrino+ va a misiones y traducción de la Biblia.",
+    "description": "Paywall: dízimo do Stway (manifesto) — lido depois do \"10%\" grande"
+  },
+  "paywallTitheField": {
+    "pt": "Sua assinatura sustenta o campo missionário.",
+    "en": "Your subscription supports the mission field.",
+    "es": "Tu suscripción sostiene el campo misionero.",
+    "description": "Paywall: dízimo do Stway — frase em destaque, linha própria"
   },
   "paywallTitheLink": {
     "pt": "Ver o manifesto",

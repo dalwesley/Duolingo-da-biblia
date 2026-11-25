@@ -329,6 +329,10 @@ class PilgrimProfileDetailSections extends StatelessWidget {
   /// Postais de quem é visitado: entram no cofre, ao lado das medalhas.
   final Widget? visitorPostcards;
 
+  /// Prévia "Como a caravana te vê": seções escondidas continuam na tela,
+  /// esmaecidas, para o olho de cada card poder reabrir.
+  final bool veilHidden;
+
   const PilgrimProfileDetailSections({
     super.key,
     required this.profile,
@@ -343,11 +347,18 @@ class PilgrimProfileDetailSections extends StatelessWidget {
     this.showOwnerPrivacyBanner = true,
     this.onStartWalking,
     this.visitorPostcards,
+    this.veilHidden = false,
   });
 
-  bool _show(CaravanProfileSection section) =>
-      !omitSections.contains(section) &&
+  bool _visible(CaravanProfileSection section) =>
       profile.prefs.shouldShow(section, isOwner: isOwner);
+
+  bool _show(CaravanProfileSection section) =>
+      !omitSections.contains(section) && (veilHidden || _visible(section));
+
+  Widget _veil(CaravanProfileSection section, Widget child) => veilHidden
+      ? PrivacyVeil(hidden: !_visible(section), child: child)
+      : child;
 
   @override
   Widget build(BuildContext context) {
@@ -366,20 +377,27 @@ class PilgrimProfileDetailSections extends StatelessWidget {
           _show(CaravanProfileSection.trails) &&
           (isOwner || acquiredSeals.isNotEmpty);
       final showMedals = _show(CaravanProfileSection.medals);
+      // Na prévia, um escondido sai do cofre e fica esmaecido sozinho.
+      final chest =
+          showSeals &&
+          showMedals &&
+          (!veilHidden ||
+              (_visible(CaravanProfileSection.trails) &&
+                  _visible(CaravanProfileSection.medals)));
       final seals = CharacterSealsStrip(
         completed: profile.completedMissions,
         acquiredOnly: !isOwner,
-        embedded: showMedals,
+        embedded: chest,
       );
       final medals = PilgrimMedalVaultsPanel(
         profile: profile,
         evalContext: PilgrimMedalEvalContext.fromProfile(profile),
         recognizeToUid: isOwner ? null : profile.uid,
         onStartWalking: isOwner ? onStartWalking : null,
-        embedded: showSeals,
+        embedded: chest,
       );
 
-      if (showSeals && showMedals) {
+      if (chest) {
         add(
           PilgrimChest(
             seals: seals,
@@ -391,15 +409,12 @@ class PilgrimProfileDetailSections extends StatelessWidget {
         );
       } else {
         if (!isOwner && visitorPostcards != null) add(visitorPostcards!);
-        if (showSeals) {
-          add(seals);
-        } else if (showMedals) {
-          add(medals);
-        }
+        if (showSeals) add(_veil(CaravanProfileSection.trails, seals));
+        if (showMedals) add(_veil(CaravanProfileSection.medals, medals));
       }
 
       if (collectionsFirst && _show(CaravanProfileSection.bible)) {
-        add(_escriturasPanel());
+        add(_veil(CaravanProfileSection.bible, _escriturasPanel()));
       }
     }
 
@@ -413,15 +428,21 @@ class PilgrimProfileDetailSections extends StatelessWidget {
     if (_show(CaravanProfileSection.lastMission) &&
         (profile.lastMissionTitle != null || profile.lastMissionSlug != null)) {
       add(
-        PilgrimScenePoster(
-          title:
-              profile.lastMissionTitle ??
-              profile.lastMissionSlug ??
-              L10n.current.pilgrimSceneFallback,
-          trail: profile.lastTrailTitle,
-          date: pilgrimFormatShort(profile.lastMissionCompletedDate, empty: ''),
-          insight: profile.lastMissionInsight,
-          verseRef: profile.lastMissionRef,
+        _veil(
+          CaravanProfileSection.lastMission,
+          PilgrimScenePoster(
+            title:
+                profile.lastMissionTitle ??
+                profile.lastMissionSlug ??
+                L10n.current.pilgrimSceneFallback,
+            trail: profile.lastTrailTitle,
+            date: pilgrimFormatShort(
+              profile.lastMissionCompletedDate,
+              empty: '',
+            ),
+            insight: profile.lastMissionInsight,
+            verseRef: profile.lastMissionRef,
+          ),
         ),
       );
     }
@@ -430,23 +451,29 @@ class PilgrimProfileDetailSections extends StatelessWidget {
       final featured = profile.featuredTrail;
       if (featured == null) {
         add(
-          ProfileSection(
-            accent: AppRoles.navTrails,
-            glyph: CinematicGlyph.path,
-            title: L10n.current.pilgrimTrail,
-            caption: L10n.current.pilgrimNoTrailYet,
-            trailing: PrivacyEye(
-              sections: const {CaravanProfileSection.trails},
-              label: L10n.current.pilgrimSealsAndTrails,
+          _veil(
+            CaravanProfileSection.trails,
+            ProfileSection(
+              accent: AppRoles.navTrails,
+              glyph: CinematicGlyph.path,
+              title: L10n.current.pilgrimTrail,
+              caption: L10n.current.pilgrimNoTrailYet,
+              trailing: PrivacyEye(
+                sections: const {CaravanProfileSection.trails},
+                label: L10n.current.pilgrimSealsAndTrails,
+              ),
             ),
           ),
         );
       } else {
         add(
-          PilgrimTrailPath(
-            trail: featured,
-            owner: isOwner,
-            rest: profile.restOpenTrails,
+          _veil(
+            CaravanProfileSection.trails,
+            PilgrimTrailPath(
+              trail: featured,
+              owner: isOwner,
+              rest: profile.restOpenTrails,
+            ),
           ),
         );
       }
@@ -498,7 +525,7 @@ class PilgrimProfileDetailSections extends StatelessWidget {
     }
 
     if (_show(CaravanProfileSection.bible) && !collectionsFirst) {
-      add(_escriturasPanel());
+      add(_veil(CaravanProfileSection.bible, _escriturasPanel()));
     }
 
     if (!collectionsFirst) addCollections();
@@ -1824,13 +1851,23 @@ class PilgrimQuestsCard extends StatelessWidget {
       accent: AppRoles.lamp,
       glyph: CinematicGlyph.calendar,
       title: context.l10n.questWeeklyTitle,
-      trailing: Text(
-        context.l10n.questCountOf(done, quests.length),
-        style: AppTypography.title(
-          size: 13,
-          weight: FontWeight.w900,
-          color: AppRoles.lamp,
-        ),
+      trailing: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            context.l10n.questCountOf(done, quests.length),
+            style: AppTypography.title(
+              size: 13,
+              weight: FontWeight.w900,
+              color: AppRoles.lamp,
+            ),
+          ),
+          // Só na prévia do próprio perfil (fora dela o olho some).
+          PrivacyEye(
+            sections: const {CaravanProfileSection.quests},
+            label: context.l10n.questWeeklyTitle,
+          ),
+        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,

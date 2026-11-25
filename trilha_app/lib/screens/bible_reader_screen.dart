@@ -111,15 +111,24 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
 
   Future<void> _resolve() async {
     final id = context.read<ProgressService>().settings.bibleTranslationId;
-    await BibleService.instance.setTranslation(id);
-    final ref = await BibleService.instance.resolve(widget.reference);
+    final BibleRef? found;
+    final List<BibleBook> books;
+    try {
+      await BibleService.instance.setTranslation(id);
+      found = await BibleService.instance.resolve(widget.reference);
+      books = await BibleService.instance.books();
+    } catch (e) {
+      // Sem isto a falha do asset deixava o leitor no spinner para sempre.
+      debugPrint('[STWAY:Bible] reader resolve failed: $e');
+      if (mounted) setState(() => _failed = true);
+      return;
+    }
     if (!mounted) return;
-    if (ref == null) {
+    if (found == null) {
       setState(() => _failed = true);
       return;
     }
-    final books = await BibleService.instance.books();
-    if (!mounted) return;
+    final ref = found;
     setState(() {
       _books = books;
       _loadedTranslationId = BibleService.instance.translationId;
@@ -148,6 +157,10 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
     await BibleService.instance.setTranslation(id);
     final books = await BibleService.instance.books();
     if (!mounted) return;
+    // O "Ouvir" lia o texto da versão anterior; a página já mostra a nova.
+    if (TtsService.instance.sequenceKey != null) {
+      unawaited(TtsService.instance.stop());
+    }
     var bookIndex = _bookIndex;
     if (keepAbbrev != null) {
       final i = books.indexWhere(
@@ -1537,7 +1550,7 @@ Future<void> _showVerseActions(
                         verse,
                       );
                       ActHaptics.light();
-                      setSheetState(() => saved = added);
+                      if (ctx.mounted) setSheetState(() => saved = added);
                     },
                   ),
                   (
