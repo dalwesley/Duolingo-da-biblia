@@ -17,7 +17,9 @@ export const WINDOWS = [
   { key: 'd30', label: 'D30', hint: 'fez cena entre o 28º e o 34º dia', from: 28, to: 34 },
 ];
 
-const PIONEER_PRODUCT = 'plus_founder_annual';
+// Vitalício de lançamento e o anual antigo dos testadores (mesmos ids do
+// webhook, functions/revenuecat.js).
+const PIONEER_PRODUCTS = ['plus_pioneer_lifetime', 'plus_founder_annual'];
 
 export function dayKey(raw) {
   if (raw == null || raw === '') return '';
@@ -71,7 +73,7 @@ export function summarize(u) {
     tester: u.desbravador === true,
     trial: plus && u.plusInTrial === true,
     paid: plus && u.plusInTrial !== true && u.plusSource === 'revenuecat',
-    pioneer: plus && product.split(':')[0] === PIONEER_PRODUCT,
+    pioneer: plus && PIONEER_PRODUCTS.includes(product.split(':')[0]),
   };
 }
 
