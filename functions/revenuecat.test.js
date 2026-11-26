@@ -522,3 +522,84 @@ test('vitalício conta a vaga na compra; o anual antigo segue reconhecido', () =
   assert.equal(RC.isPioneerProduct('plus_founder_annual:annual'), true);
   assert.equal(RC.isPioneerProduct('plus_annual'), false);
 });
+
+// ---- Mensal + Pioneiro na mesma conta ----
+
+test('mensal vence depois do Pioneiro: o RevenueCat mantém o Plus vitalício', async () => {
+  const lifetimeInfo = {
+    active: true,
+    willRenew: false,
+    inTrial: false,
+    productId: 'plus_pioneer_lifetime',
+    expiresAt: null,
+  };
+  const asked = [];
+  const rc = {
+    async plusInfo(uid) {
+      asked.push(uid);
+      return lifetimeInfo;
+    },
+  };
+  const ent = { app_user_id: 'u1', entitlement_ids: [RC.ENTITLEMENT_ID], product_id: 'plus_monthly' };
+
+  const expire = { ...ent, type: 'EXPIRATION', expiration_at_ms: Date.now() - 1000 };
+  const off = RC.plusStateFromEvent(expire);
+  assert.equal(off.fields.plusActive, false); // o evento sozinho desligaria
+  const kept = await RC.withAccountLookup(off, expire, rc);
+  assert.equal(kept.fields.plusActive, true);
+  assert.equal(kept.fields.plusExpiresAt, null);
+  assert.equal(kept.fields.plusWillRenew, false);
+  assert.equal(kept.fields.plusProductId, 'plus_pioneer_lifetime');
+
+  // Cancelar o mensal não troca o produto gravado (o selo de Pioneiro fica).
+  const cancel = { ...ent, type: 'CANCELLATION', expiration_at_ms: Date.now() + 86400000 };
+  const c = await RC.withAccountLookup(RC.plusStateFromEvent(cancel), cancel, rc);
+  assert.equal(c.fields.plusProductId, 'plus_pioneer_lifetime');
+  assert.equal(c.fields.plusExpiresAt, null);
+  assert.deepEqual(asked, ['u1', 'u1']);
+});
+
+test('consulta da conta só mantém ou liga: inativo ou fora do ar fica o evento', async () => {
+  const ev = {
+    type: 'EXPIRATION',
+    app_user_id: 'u1',
+    entitlement_ids: [RC.ENTITLEMENT_ID],
+    product_id: 'plus_monthly',
+    expiration_at_ms: Date.now() - 1000,
+  };
+  const base = RC.plusStateFromEvent(ev);
+  const inactive = await RC.withAccountLookup(base, ev, { plusInfo: async () => ({ active: false }) });
+  assert.equal(inactive, base);
+  const down = await RC.withAccountLookup(base, ev, {
+    plusInfo: async () => {
+      throw new Error('fora do ar');
+    },
+  });
+  assert.equal(down, base);
+  assert.equal(await RC.withAccountLookup(base, ev, null), base);
+});
+
+test('consulta da conta pula vitalício, apoio e transferência', async () => {
+  let asked = 0;
+  const rc = {
+    async plusInfo() {
+      asked += 1;
+      return { active: false };
+    },
+  };
+  const buy = {
+    type: 'NON_RENEWING_PURCHASE',
+    app_user_id: 'u1',
+    product_id: 'plus_pioneer_lifetime',
+    entitlement_ids: [RC.ENTITLEMENT_ID],
+  };
+  const s1 = RC.plusStateFromEvent(buy);
+  assert.equal(await RC.withAccountLookup(s1, buy, rc), s1);
+  const tip = { type: 'NON_RENEWING_PURCHASE', app_user_id: 'u1', product_id: 'apoio_10' };
+  const s2 = RC.plusStateFromEvent(tip);
+  assert.equal(await RC.withAccountLookup(s2, tip, rc), s2);
+  const tr = { type: 'TRANSFER', app_user_id: 'd', transferred_to: ['d'], transferred_from: ['o'] };
+  const s3 = RC.plusStateFromEvent(tr);
+  assert.equal(await RC.withAccountLookup(s3, tr, rc), s3);
+  assert.equal(asked, 0);
+});

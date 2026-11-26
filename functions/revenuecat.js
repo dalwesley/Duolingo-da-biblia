@@ -420,6 +420,48 @@ async function withTransferLookup(state, event, rc) {
 }
 
 /**
+ * Um evento fala de um produto, não da conta. Quem tem o mensal e compra
+ * o Pioneiro recebe depois o CANCELLATION/EXPIRATION do mensal, e o
+ * evento sozinho desligaria o Plus (ou trocaria o produto gravado para o
+ * mensal, tirando o selo de Pioneiro). Antes de gravar um estado com data
+ * de fim ou desligado, pergunta ao RevenueCat o entitlement da conta
+ * inteira. Se ele diz ativo, vale o que ele diz. A consulta só pode manter
+ * ou ligar o Plus, nunca desligar: se ele diz inativo (ou não responde),
+ * fica o estado do evento, como antes.
+ * Compra do vitalício (ativo, sem data de fim) não precisa perguntar.
+ */
+async function withAccountLookup(state, event, rc) {
+  if (
+    !rc ||
+    !state ||
+    !state.fields ||
+    String((event && event.type) || '') === 'TRANSFER' ||
+    !Object.prototype.hasOwnProperty.call(state.fields, 'plusActive')
+  ) {
+    return state;
+  }
+  const f = state.fields;
+  if (f.plusActive === true && f.plusExpiresAt == null) return state;
+  try {
+    const info = await rc.plusInfo(state.uid);
+    if (!info || !info.active) return state;
+    return {
+      ...state,
+      fields: {
+        plusActive: true,
+        plusWillRenew: info.willRenew === true,
+        plusInTrial: info.inTrial === true,
+        plusProductId: info.productId || f.plusProductId || null,
+        plusExpiresAt: info.expiresAt == null ? null : info.expiresAt,
+        plusSource: 'revenuecat',
+      },
+    };
+  } catch (_) {
+    return state;
+  }
+}
+
+/**
  * Aplica um evento já conferido. Devolve null se o evento não muda nada;
  * senão o resumo para o log.
  */
@@ -427,6 +469,7 @@ async function applyEvent(db, event, { rc = null, allowSandbox = false } = {}) {
   let state = plusStateFromEvent(event, { allowSandbox });
   const slot = pioneerSlotFromEvent(event);
   state = await withTransferLookup(state, event, rc);
+  state = await withAccountLookup(state, event, rc);
   if (!state && !slot) return null;
   let skipped = null;
   if (state && state.fields) {
@@ -452,6 +495,7 @@ async function applyEvent(db, event, { rc = null, allowSandbox = false } = {}) {
 module.exports = {
   applyEvent,
   withTransferLookup,
+  withAccountLookup,
   TOMBSTONES,
   plusStateFromEvent,
   pioneerSlotFromEvent,
