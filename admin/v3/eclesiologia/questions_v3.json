@@ -1692,9 +1692,9 @@
     "difficulty": "semente",
     "type": "complete",
     "skill": "observe",
-    "question": "Em Mateus 28:18, o que Jesus diz que lhe foi dada no céu e na terra?",
-    "prompt": "Em Mateus 28:18, o que Jesus diz que lhe foi dada no céu e na terra?",
-    "cue": "Em Mateus 28:18, o que Jesus diz que lhe foi dada no céu e na terra?",
+    "question": "Em Mateus 28:18, o que Jesus diz ter recebido no céu e na terra?",
+    "prompt": "Em Mateus 28:18, o que Jesus diz ter recebido no céu e na terra?",
+    "cue": "Em Mateus 28:18, o que Jesus diz ter recebido no céu e na terra?",
     "verseRef": "Mateus 28:18",
     "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra.",
     "template": "E, aproximando-se de Jesus, Ele lhes disse: Toda a ___ me foi dada no céu e na terra.",
@@ -2199,9 +2199,9 @@
     "difficulty": "profundezas",
     "type": "complete",
     "skill": "interpret",
-    "question": "Em Mateus 28:20, os discípulos ensinam a observar tudo o que Jesus fez o quê?",
-    "prompt": "Em Mateus 28:20, os discípulos ensinam a observar tudo o que Jesus fez o quê?",
-    "cue": "Em Mateus 28:20, os discípulos ensinam a observar tudo o que Jesus fez o quê?",
+    "question": "Em Mateus 28:20, complete a fala de Jesus: \"tudo o que vos ___\".",
+    "prompt": "Em Mateus 28:20, complete a fala de Jesus: \"tudo o que vos ___\".",
+    "cue": "Em Mateus 28:20, complete a fala de Jesus: \"tudo o que vos ___\".",
     "verseRef": "Mateus 28:20",
     "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
     "template": "Ensinando-os a observar tudo o que vos ___; e eis que estou convosco todos os dias até a consumação do século. Amém.",
@@ -3128,9 +3128,9 @@
     "difficulty": "profundezas",
     "type": "complete",
     "skill": "interpret",
-    "question": "Em Mateus 28:18, o que Jesus diz que lhe foi dada no céu e na terra?",
-    "prompt": "Em Mateus 28:18, o que Jesus diz que lhe foi dada no céu e na terra?",
-    "cue": "Em Mateus 28:18, o que Jesus diz que lhe foi dada no céu e na terra?",
+    "question": "Em Mateus 28:18, o que Jesus diz ter recebido no céu e na terra?",
+    "prompt": "Em Mateus 28:18, o que Jesus diz ter recebido no céu e na terra?",
+    "cue": "Em Mateus 28:18, o que Jesus diz ter recebido no céu e na terra?",
     "verseRef": "Mateus 28:18",
     "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra.",
     "template": "E, aproximando-se de Jesus, Ele lhes disse: Toda a ___ me foi dada no céu e na terra.",
@@ -3234,7 +3234,7 @@
       },
       {
         "id": "c",
-        "text": "consumação do século"
+        "text": "vos ordenei"
       }
     ],
     "correctOptionId": "a",
@@ -3243,7 +3243,7 @@
     "feedbackCorrect": "A presença prometida não é ocasional: é dia após dia, até o fim.",
     "feedbackWrong": {
       "b": "Isso afirma a presença, não a duração dela no tempo.",
-      "c": "Isso marca o limite final, não a frequência da presença."
+      "c": "Isso é o que os discípulos ensinam, não o tempo da promessa."
     },
     "hint": "Procure a frequência da presença.",
     "learningObjective": "Revisar a duração da presença prometida por Jesus.",

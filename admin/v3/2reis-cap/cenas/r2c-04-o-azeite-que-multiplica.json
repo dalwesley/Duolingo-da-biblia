@@ -193,15 +193,15 @@
       "difficulty": "semente",
       "type": "find_in_text",
       "skill": "observe",
-      "question": "Em 2 Reis 4:3, toque o que Eliseu manda pedir aos vizinhos.",
-      "prompt": "Em 2 Reis 4:3, toque o que Eliseu manda pedir aos vizinhos.",
-      "cue": "Em 2 Reis 4:3, toque o que Eliseu manda pedir aos vizinhos.",
+      "question": "Em 2 Reis 4:3, toque como devem ser as vasilhas pedidas.",
+      "prompt": "Em 2 Reis 4:3, toque como devem ser as vasilhas pedidas.",
+      "cue": "Em 2 Reis 4:3, toque como devem ser as vasilhas pedidas.",
       "verseRef": "2 Reis 4:3",
       "passageText": "Então, ele disse: Vá, peça emprestadas vasilhas a todos os seus vizinhos; vasilhas vazias, não em pouca quantidade.",
       "options": [
         {
           "id": "a",
-          "text": "disse"
+          "text": "vazias"
         },
         {
           "id": "b",
@@ -214,8 +214,8 @@
       ],
       "correctOptionId": "a",
       "correctAnswer": "a",
-      "evidenceSpan": "disse",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "vazias",
+      "feedbackCorrect": "Isso: \"vazias\" é o que o versículo diz.",
       "feedbackWrong": {
         "b": "Essa opção não é o trecho pedido.",
         "c": "Essa opção não é o trecho pedido."
@@ -458,7 +458,7 @@
         },
         {
           "id": "b",
-          "text": "ocorreu"
+          "text": "Porém"
         },
         {
           "id": "c",
@@ -467,8 +467,8 @@
       ],
       "correctOptionId": "b",
       "correctAnswer": "b",
-      "evidenceSpan": "ocorreu",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "Porém",
+      "feedbackCorrect": "Isso: \"Porém\" é o que o versículo diz.",
       "feedbackWrong": {
         "a": "Essa opção não é o trecho pedido.",
         "c": "Essa opção não é o trecho pedido."
@@ -717,13 +717,13 @@
         },
         {
           "id": "c",
-          "text": "saber"
+          "text": "dívida"
         }
       ],
       "correctOptionId": "c",
       "correctAnswer": "c",
-      "evidenceSpan": "saber",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "dívida",
+      "feedbackCorrect": "Isso: \"dívida\" é o que o versículo diz.",
       "feedbackWrong": {
         "a": "Essa opção não é o trecho pedido.",
         "b": "Essa opção não é o trecho pedido."

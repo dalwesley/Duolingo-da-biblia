@@ -201,11 +201,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Todavia"
+          "text": "altos"
         },
         {
           "id": "b",
-          "text": "altos"
+          "text": "Todavia"
         },
         {
           "id": "c",
@@ -214,10 +214,10 @@
       ],
       "correctOptionId": "a",
       "correctAnswer": "a",
-      "evidenceSpan": "Todavia",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "altos",
+      "feedbackCorrect": "Isso: \"altos\" é o que o versículo diz.",
       "feedbackWrong": {
-        "b": "Essa opção não é o trecho pedido.",
+        "b": "\"Todavia\" está no versículo, mas não responde à pergunta.",
         "c": "Essa opção não é o trecho pedido."
       },
       "hint": "Procure no versículo o trecho pedido.",
@@ -455,7 +455,7 @@
       "options": [
         {
           "id": "a",
-          "text": "altos"
+          "text": "pois"
         },
         {
           "id": "b",
@@ -468,8 +468,8 @@
       ],
       "correctOptionId": "a",
       "correctAnswer": "a",
-      "evidenceSpan": "altos",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "Isso: \"pois\" é o que o versículo diz.",
       "feedbackWrong": {
         "b": "Essa opção não é o trecho pedido.",
         "c": "Essa opção não é o trecho pedido."

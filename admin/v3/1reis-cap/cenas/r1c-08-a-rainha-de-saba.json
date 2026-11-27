@@ -205,7 +205,7 @@
       "options": [
         {
           "id": "a",
-          "text": "ouvindo"
+          "text": "rainha"
         },
         {
           "id": "b",
@@ -213,16 +213,16 @@
         },
         {
           "id": "c",
-          "text": "rainha"
+          "text": "ouvindo"
         }
       ],
       "correctOptionId": "a",
       "correctAnswer": "a",
-      "evidenceSpan": "ouvindo",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "rainha",
+      "feedbackCorrect": "Isso: \"rainha\" é o que o versículo diz.",
       "feedbackWrong": {
         "b": "Essa opção não é o trecho pedido.",
-        "c": "Essa opção não é o trecho pedido."
+        "c": "\"ouvindo\" está no versículo, mas não responde à pergunta."
       },
       "hint": "Procure no versículo o trecho pedido.",
       "learningObjective": "Identificar a visitante.",
@@ -466,13 +466,13 @@
         },
         {
           "id": "c",
-          "text": "seja"
+          "text": "para que"
         }
       ],
       "correctOptionId": "c",
       "correctAnswer": "c",
-      "evidenceSpan": "seja",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "para que",
+      "feedbackCorrect": "Isso: \"para que\" é o que o versículo diz.",
       "feedbackWrong": {
         "a": "Essa opção não é o trecho pedido.",
         "b": "Essa opção não é o trecho pedido."
@@ -721,13 +721,13 @@
         },
         {
           "id": "c",
-          "text": "acreditava"
+          "text": "superas"
         }
       ],
       "correctOptionId": "c",
       "correctAnswer": "c",
-      "evidenceSpan": "acreditava",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "superas",
+      "feedbackCorrect": "Isso: \"superas\" é o que o versículo diz.",
       "feedbackWrong": {
         "a": "Essa opção não é o trecho pedido.",
         "b": "Essa opção não é o trecho pedido."

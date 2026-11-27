@@ -198,7 +198,7 @@
       "a": "O texto não admite perda grande nem pequena: tudo se cumpriu.",
       "b": "Não há parte esquecida; o balanço é de cumprimento total."
     },
-    "hint": "Veja a primeira palavra do balanço final.",
+    "hint": "Veja o balanço final sobre as promessas.",
     "learningObjective": "Lembrar que nenhuma promessa de Deus falhou.",
     "evidence": [
       "Josué 21:45"
@@ -570,7 +570,7 @@
     "correctOptionId": "c",
     "correctAnswer": "c",
     "evidenceSpan": "tudo se cumpriu",
-    "feedbackCorrect": "A frase fecha o livro da conquista: nenhuma palavra boa ficou pendente.",
+    "feedbackCorrect": "A frase fecha o balanço da conquista: nenhuma palavra boa ficou pendente.",
     "feedbackWrong": {
       "a": "A casa de Israel é quem recebe; a fidelidade está no que se cumpriu.",
       "b": "As promessas são o que Deus falou; o sustento está no cumprimento delas."
@@ -664,7 +664,7 @@
     "feedbackWrong": {
       "default": "Siga a ordem: Deuteronômio, Josué e depois Hebreus."
     },
-    "hint": "Siga a ordem dos livros na Bíblia.",
+    "hint": "Pense em quem fala primeiro e em quem retoma depois.",
     "learningObjective": "Ver o descanso como fio que atravessa a Bíblia.",
     "evidence": [
       "Josué 21:44",
@@ -1084,7 +1084,7 @@
       "a": "Esse termo indica a origem dos deuses antigos dos pais.",
       "b": "Hoje marca a urgência da decisão; a virada da fala vem antes."
     },
-    "hint": "Procure a palavra inicial que vira a fala de Josué.",
+    "hint": "Procure a palavra que vira a fala de Josué.",
     "learningObjective": "Reconhecer o marcador de contraste no discurso de Siquém.",
     "evidence": [
       "Josué 24:15"
@@ -1203,7 +1203,7 @@
       },
       {
         "id": "c",
-        "text": "sinal"
+        "text": "muro"
       }
     ],
     "correctOptionId": "b",
@@ -1212,7 +1212,7 @@
     "feedbackCorrect": "A pedra fica de pé como quem ouviu tudo e pode cobrar depois.",
     "feedbackWrong": {
       "a": "Não há sacrifício sobre ela; a função anunciada é outra.",
-      "c": "Sinal é vago perto do papel jurídico que Josué anuncia para ela."
+      "c": "Muro não aparece; Josué anuncia outro papel para a pedra."
     },
     "hint": "Veja o papel que Josué anuncia para a pedra.",
     "learningObjective": "Compreender a pedra como memória viva da aliança.",
@@ -1427,7 +1427,7 @@
     "feedbackWrong": {
       "default": "Siga a ordem: Deuteronômio, Josué e depois o Evangelho."
     },
-    "hint": "Siga a ordem dos livros na Bíblia.",
+    "hint": "Pense em quem fala primeiro e em quem retoma depois.",
     "learningObjective": "Ver a escolha por Deus como fio que atravessa a Bíblia.",
     "evidence": [
       "Josué 24:15",
@@ -2171,11 +2171,11 @@
       },
       {
         "id": "b",
-        "text": "Os muros caem pela fé do povo"
+        "text": "A maldição se cumpre gerações depois"
       },
       {
         "id": "c",
-        "text": "A maldição se cumpre gerações depois"
+        "text": "Os muros caem pela fé do povo"
       }
     ],
     "correctOptionId": "a",
@@ -2186,11 +2186,11 @@
     ],
     "correctAnswer": "a,b,c",
     "evidenceSpan": "Eis que entreguei nas suas mãos Jericó",
-    "feedbackCorrect": "Da promessa à fé em Hebreus, até o cumprimento tardio da maldição.",
+    "feedbackCorrect": "Da promessa ao cumprimento da maldição em Reis, e daí à leitura de fé em Hebreus.",
     "feedbackWrong": {
-      "default": "Siga a ordem: Josué, Hebreus e depois o livro de Reis."
+      "default": "Siga a ordem da Bíblia: Josué, depois Reis e por fim Hebreus."
     },
-    "hint": "Siga a ordem dos livros na Bíblia.",
+    "hint": "Pense no que acontece na história antes da carta aos Hebreus.",
     "learningObjective": "Ver Jericó como começo de um fio que atravessa a Bíblia.",
     "evidence": [
       "Josué 6:2",
@@ -2402,7 +2402,7 @@
       "c": "A ordem é justamente sair do chão e agir sobre a causa.",
       "d": "A próxima batalha não é o tema; é o pecado escondido no povo."
     },
-    "hint": "Veja a primeira palavra de Deus a Josué.",
+    "hint": "Compare a ordem de Deus com a postura de Josué no chão.",
     "learningObjective": "Observar a ordem de Deus a Josué na derrota.",
     "evidence": [
       "Josué 7:10"
@@ -2712,9 +2712,9 @@
     "difficulty": "caminhada",
     "type": "complete",
     "skill": "understand",
-    "question": "Em Josué 7:11, tomaram o proibido e depois o que fizeram antes de mentir",
-    "prompt": "Em Josué 7:11, tomaram o proibido e depois o que fizeram antes de mentir",
-    "cue": "Em Josué 7:11, tomaram o proibido e depois o que fizeram antes de mentir",
+    "question": "Em Josué 7:11, que ação vem entre tomar o proibido e mentir?",
+    "prompt": "Em Josué 7:11, que ação vem entre tomar o proibido e mentir?",
+    "cue": "Em Josué 7:11, que ação vem entre tomar o proibido e mentir?",
     "verseRef": "Josué 7:11",
     "passageText": "Israel pecou e transgrediu a minha aliança, que eu lhes ordenara; tomaram das coisas condenadas, roubaram, mentiram e esconderam debaixo da sua bagagem.",
     "template": "Israel pecou e transgrediu a minha aliança, que eu lhes ordenara; tomaram das coisas condenadas, ___, mentiram e esconderam debaixo da sua bagagem.",
@@ -2864,7 +2864,7 @@
       "a": "A bagagem é o esconderijo do erro, não o sujeito do pecado.",
       "b": "A aliança é o que foi quebrado; quem pecou vem no começo."
     },
-    "hint": "Procure o sujeito coletivo no começo do versículo.",
+    "hint": "Procure de quem Deus diz que é o pecado.",
     "learningObjective": "Sustentar com o texto o alcance coletivo do pecado.",
     "evidence": [
       "Josué 7:11"
@@ -2953,7 +2953,7 @@
     "feedbackWrong": {
       "default": "Siga a ordem: aviso em Josué 6, queda em Josué 7, esperança em Oseias."
     },
-    "hint": "Siga a ordem dos livros na Bíblia.",
+    "hint": "Pense em quem fala primeiro e em quem retoma depois.",
     "learningObjective": "Ver o pecado de Ai dentro de um fio de queda e esperança.",
     "evidence": [
       "Josué 7:11",
@@ -3884,7 +3884,7 @@
     "feedbackWrong": {
       "default": "Siga a ordem: promessa em Josué, muros e Raabe em Hebreus 11."
     },
-    "hint": "Siga a ordem dos textos na Bíblia.",
+    "hint": "Pense em quem fala primeiro e em quem retoma depois.",
     "learningObjective": "Ver Jericó como história de fé que obedece.",
     "evidence": [
       "Josué 6:2",
@@ -4041,7 +4041,7 @@
       },
       {
         "id": "b",
-        "text": "O proibido é tomado e escondido em Ai"
+        "text": "O proibido de Jericó é tomado e escondido"
       },
       {
         "id": "c",
@@ -4060,7 +4060,7 @@
     "feedbackWrong": {
       "default": "Siga a ordem: aviso em Josué 6, queda em Josué 7, Oseias depois."
     },
-    "hint": "Siga a ordem dos livros na Bíblia.",
+    "hint": "Pense em quem fala primeiro e em quem retoma depois.",
     "learningObjective": "Ver Jericó e Ai como um arco de aviso, queda e esperança.",
     "evidence": [
       "Josué 7:11",
@@ -4733,7 +4733,7 @@
     "feedbackWrong": {
       "default": "Siga a ordem da Bíblia: Josué, Salmos e depois Hebreus."
     },
-    "hint": "Siga a ordem dos livros na Bíblia.",
+    "hint": "Pense em quem fala primeiro e em quem retoma depois.",
     "learningObjective": "Ver a presença de Deus como fio que atravessa a Bíblia.",
     "evidence": [
       "Josué 1:9",
@@ -5111,7 +5111,7 @@
     "evidenceSpan": "Pois ouvimos que o Senhor secou as águas do Mar Vermelho",
     "feedbackCorrect": "O medo nasce das notícias: Deus secou o mar e Israel venceu Seom e Ogue.",
     "feedbackWrong": {
-      "false": "Raabe começa com o motivo: eles ouviram o que Deus fez no mar e no Jordão."
+      "false": "Raabe começa com o motivo: eles ouviram o que Deus fez no mar e aos dois reis."
     },
     "hint": "Veja a palavra que introduz o motivo do medo.",
     "learningObjective": "Compreender a causa do pavor em Jericó.",
@@ -5153,7 +5153,7 @@
       "a": "Esse termo marca o tempo da saída do Egito, não o motivo.",
       "b": "Esse termo acrescenta outro fato; o motivo começa antes dele."
     },
-    "hint": "Procure a palavra inicial que apresenta o motivo.",
+    "hint": "Procure a palavra que introduz a explicação de Raabe.",
     "learningObjective": "Reconhecer o marcador de causa na fala de Raabe.",
     "evidence": [
       "Josué 2:10"
@@ -5496,7 +5496,7 @@
     "feedbackWrong": {
       "default": "Siga a ordem da Bíblia: Josué, Hebreus e Mateus."
     },
-    "hint": "Siga a ordem dos livros na Bíblia.",
+    "hint": "Pense em quem fala primeiro e em quem retoma depois.",
     "learningObjective": "Ver a fé de Raabe como fio que atravessa a Bíblia.",
     "evidence": [
       "Josué 2:11",
@@ -5916,7 +5916,7 @@
       "a": "Esse termo indica a direção das águas, não o momento do sinal.",
       "b": "Esse termo aponta as águas; o momento vem na palavra inicial."
     },
-    "hint": "Procure a palavra inicial que marca o tempo do sinal.",
+    "hint": "Procure a palavra que marca o tempo do sinal.",
     "learningObjective": "Reconhecer o marcador de sequência em Josué 3:13.",
     "evidence": [
       "Josué 3:13"
@@ -6260,7 +6260,7 @@
     "feedbackWrong": {
       "default": "Siga a história: êxodo, entrada na terra e depois o Salmo."
     },
-    "hint": "Siga a ordem da história de Israel.",
+    "hint": "Pense em quem fala primeiro e em quem retoma depois.",
     "learningObjective": "Ver as travessias como fio da fidelidade de Deus.",
     "evidence": [
       "Josué 3:17",

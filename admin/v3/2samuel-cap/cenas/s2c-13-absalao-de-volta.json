@@ -201,11 +201,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Joabe"
+          "text": "Gesur"
         },
         {
           "id": "b",
-          "text": "Gesur"
+          "text": "Joabe"
         },
         {
           "id": "c",
@@ -214,10 +214,10 @@
       ],
       "correctOptionId": "a",
       "correctAnswer": "a",
-      "evidenceSpan": "Joabe",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "Gesur",
+      "feedbackCorrect": "Isso: \"Gesur\" é o que o versículo diz.",
       "feedbackWrong": {
-        "b": "Essa opção não é o trecho pedido.",
+        "b": "\"Joabe\" está no versículo, mas não responde à pergunta.",
         "c": "Essa opção não é o trecho pedido."
       },
       "hint": "Procure no versículo o trecho pedido.",
@@ -454,7 +454,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Absalão"
+          "text": "porém"
         },
         {
           "id": "b",
@@ -467,8 +467,8 @@
       ],
       "correctOptionId": "a",
       "correctAnswer": "a",
-      "evidenceSpan": "Absalão",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "porém",
+      "feedbackCorrect": "Isso: \"porém\" é o que o versículo diz.",
       "feedbackWrong": {
         "b": "Essa opção não é o trecho pedido.",
         "c": "Essa opção não é o trecho pedido."
@@ -713,7 +713,7 @@
         },
         {
           "id": "b",
-          "text": "disse"
+          "text": "fogo"
         },
         {
           "id": "c",
@@ -722,8 +722,8 @@
       ],
       "correctOptionId": "b",
       "correctAnswer": "b",
-      "evidenceSpan": "disse",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "fogo",
+      "feedbackCorrect": "Isso: \"fogo\" é o que o versículo diz.",
       "feedbackWrong": {
         "a": "Essa opção não é o trecho pedido.",
         "c": "Essa opção não é o trecho pedido."

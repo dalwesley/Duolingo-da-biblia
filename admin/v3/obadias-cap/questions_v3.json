@@ -49,7 +49,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Jerusalém"
+        "text": "portas"
       },
       {
         "id": "b",
@@ -57,7 +57,7 @@
       },
       {
         "id": "c",
-        "text": "portas"
+        "text": "Jerusalém"
       }
     ],
     "correctOptionId": "b",
@@ -65,8 +65,8 @@
     "evidenceSpan": "os estranhos levaram os bens",
     "feedbackCorrect": "Segundo 1:11, os estranhos levaram os bens.",
     "feedbackWrong": {
-      "a": "Jerusalém é sobre quem lançaram sortes, não o que levaram.",
-      "c": "As portas são por onde os estrangeiros entraram, não o que levaram."
+      "a": "As portas são por onde os estrangeiros entraram, não o que levaram.",
+      "c": "Jerusalém é sobre quem lançaram sortes, não o que levaram."
     },
     "hint": "Procure o que foi levado.",
     "learningObjective": "Identificar o que os estranhos levaram.",
@@ -89,7 +89,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Oferecerão sacrifícios"
+        "text": "Construirão cidades"
       },
       {
         "id": "b",
@@ -97,11 +97,11 @@
       },
       {
         "id": "c",
-        "text": "Fugirão para as montanhas"
+        "text": "Oferecerão sacrifícios"
       },
       {
         "id": "d",
-        "text": "Construirão cidades"
+        "text": "Fugirão para as montanhas"
       }
     ],
     "correctOptionId": "b",
@@ -109,9 +109,9 @@
     "evidenceSpan": "todas as nações beberão continuamente",
     "feedbackCorrect": "O versículo diz que todas as nações beberão continuamente.",
     "feedbackWrong": {
-      "a": "O versículo não fala de sacrifícios.",
-      "c": "O versículo não fala de fuga para as montanhas.",
-      "d": "O versículo não fala de construir cidades."
+      "a": "O versículo não fala de construir cidades.",
+      "c": "O versículo não fala de sacrifícios.",
+      "d": "O versículo não fala de fuga para as montanhas."
     },
     "hint": "Leia o verbo que se repete no versículo.",
     "learningObjective": "Observar o que as nações farão.",
@@ -183,20 +183,20 @@
       },
       {
         "id": "b",
-        "text": "filhos"
+        "text": "sábios"
       },
       {
         "id": "c",
-        "text": "sábios"
+        "text": "filhos"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "b",
+    "correctAnswer": "b",
     "evidenceSpan": "farei perecer os sábios de Edom",
     "feedbackCorrect": "O Senhor fará perecer os sábios de Edom.",
     "feedbackWrong": {
       "a": "\"Reis\" não aparece em 1:8; o texto fala de outro grupo de Edom.",
-      "b": "\"Filhos\" não aparece em 1:8; o texto fala de outro grupo de Edom."
+      "c": "\"Filhos\" não aparece em 1:8; o texto fala de outro grupo de Edom."
     },
     "hint": "Pense em quem tinha fama de inteligência.",
     "learningObjective": "Lembrar quem o Senhor fará perecer em Edom.",
@@ -227,23 +227,23 @@
     "options": [
       {
         "id": "a",
-        "text": "Deus julga as nações"
+        "text": "Um dia de festa para Edom"
       },
       {
         "id": "b",
-        "text": "Um dia de festa para Edom"
+        "text": "Deus julga as nações"
       },
       {
         "id": "c",
         "text": "Um dia só para o templo"
       }
     ],
-    "correctOptionId": "a",
-    "correctAnswer": "a",
+    "correctOptionId": "b",
+    "correctAnswer": "b",
     "evidenceSpan": "o Dia do Senhor está prestes a vir sobre todas as nações",
     "feedbackCorrect": "O Dia do Senhor é o dia do juízo, e vem sobre todas as nações.",
     "feedbackWrong": {
-      "b": "Para Edom, o Dia do Senhor é juízo, não festa.",
+      "a": "Para Edom, o Dia do Senhor é juízo, não festa.",
       "c": "O texto diz que o Dia vem sobre todas as nações, não só sobre o templo."
     },
     "hint": "Veja sobre quem o dia vem.",
@@ -302,24 +302,24 @@
     "options": [
       {
         "id": "a",
-        "text": "continuamente"
-      },
-      {
-        "id": "b",
         "text": "monte"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Porque"
+      },
+      {
+        "id": "c",
+        "text": "continuamente"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "b",
+    "correctAnswer": "b",
     "evidenceSpan": "Porque, assim como vocês beberam",
     "feedbackCorrect": "\"Porque\" abre a razão: o que foi bebido no monte santo volta às nações.",
     "feedbackWrong": {
-      "a": "\"Continuamente\" diz como as nações beberão, não a razão.",
-      "b": "\"Monte\" é o lugar onde beberam, não a palavra que dá a razão."
+      "a": "\"Monte\" é o lugar onde beberam, não a palavra que dá a razão.",
+      "c": "\"Continuamente\" diz como as nações beberão, não a razão."
     },
     "hint": "É a primeira palavra do versículo.",
     "learningObjective": "Reconhecer o marcador que introduz a razão do juízo.",
@@ -342,29 +342,29 @@
     "options": [
       {
         "id": "a",
-        "text": "O juízo vale só para Jacó, não para Edom"
+        "text": "O juízo devolve a Edom o mesmo que ele fez"
       },
       {
         "id": "b",
-        "text": "O juízo é adiado até Edom se arrepender"
-      },
-      {
-        "id": "c",
         "text": "O juízo não tem relação com os atos de Edom"
       },
       {
+        "id": "c",
+        "text": "O juízo é adiado até Edom se arrepender"
+      },
+      {
         "id": "d",
-        "text": "O juízo devolve a Edom o mesmo que ele fez"
+        "text": "O juízo vale só para Jacó, não para Edom"
       }
     ],
-    "correctOptionId": "d",
-    "correctAnswer": "d",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "como tu fizeste, assim também será feito a ti",
     "feedbackCorrect": "O juízo é proporcional: o que Edom fez volta sobre ele.",
     "feedbackWrong": {
-      "a": "O juízo é anunciado contra Edom e as nações, não contra Jacó.",
-      "b": "O versículo não fala de adiamento nem de arrependimento.",
-      "c": "O texto liga o juízo aos atos: \"como tu fizeste\"."
+      "b": "O texto liga o juízo aos atos: \"como tu fizeste\".",
+      "c": "O versículo não fala de adiamento nem de arrependimento.",
+      "d": "O juízo é anunciado contra Edom e as nações, não contra Jacó."
     },
     "hint": "Compare o que Edom fez com o que será feito.",
     "learningObjective": "Relacionar a ação de Edom com o juízo anunciado.",
@@ -432,11 +432,11 @@
     "options": [
       {
         "id": "a",
-        "text": "porém"
+        "text": "então"
       },
       {
         "id": "b",
-        "text": "então"
+        "text": "porém"
       },
       {
         "id": "c",
@@ -448,8 +448,8 @@
     "evidenceSpan": "como tu fizeste, assim também será feito a ti",
     "feedbackCorrect": "A palavra liga as duas partes da comparação: ato e resposta.",
     "feedbackWrong": {
-      "a": "\"Porém\" marcaria contraste; o texto faz uma comparação.",
-      "b": "\"Então\" marcaria só o tempo; o texto compara duas coisas."
+      "a": "\"Então\" marcaria só o tempo; o texto compara duas coisas.",
+      "b": "\"Porém\" marcaria contraste; o texto faz uma comparação."
     },
     "hint": "Ela vem entre as duas partes da comparação.",
     "learningObjective": "Lembrar a palavra que liga o ato de Edom à resposta.",
@@ -484,20 +484,20 @@
       },
       {
         "id": "b",
-        "text": "Colhe-se o que se semeia"
+        "text": "Deus esquece o que fazemos"
       },
       {
         "id": "c",
-        "text": "Deus esquece o que fazemos"
+        "text": "Colhe-se o que se semeia"
       }
     ],
-    "correctOptionId": "b",
-    "correctAnswer": "b",
+    "correctOptionId": "c",
+    "correctAnswer": "c",
     "evidenceSpan": "como tu fizeste, assim também será feito a ti",
     "feedbackCorrect": "Nos dois textos, o resultado acompanha o que se fez.",
     "feedbackWrong": {
       "a": "Nos dois textos, o resultado vem do que foi feito, e não da sorte.",
-      "c": "Nos dois textos, Deus não esquece o que foi feito."
+      "b": "Nos dois textos, Deus não esquece o que foi feito."
     },
     "hint": "Compare o que volta sobre quem age.",
     "learningObjective": "Relacionar o juízo de Obadias com a colheita de Gálatas.",
@@ -556,24 +556,24 @@
     "options": [
       {
         "id": "a",
-        "text": "tua cabeça"
+        "text": "todas as nações"
       },
       {
         "id": "b",
-        "text": "Dia do Senhor"
+        "text": "tua cabeça"
       },
       {
         "id": "c",
-        "text": "todas as nações"
+        "text": "Dia do Senhor"
       }
     ],
-    "correctOptionId": "a",
-    "correctAnswer": "a",
+    "correctOptionId": "b",
+    "correctAnswer": "b",
     "evidenceSpan": "a tua maldade retornará sobre a tua cabeça",
     "feedbackCorrect": "A maldade \"retornará sobre a tua cabeça\": volta ao próprio autor.",
     "feedbackWrong": {
-      "b": "\"Dia do Senhor\" é o momento do juízo, não onde o mal recai.",
-      "c": "\"Todas as nações\" mostra o alcance do Dia, não o mal voltando."
+      "a": "\"Todas as nações\" mostra o alcance do Dia, não o mal voltando.",
+      "c": "\"Dia do Senhor\" é o momento do juízo, não onde o mal recai."
     },
     "hint": "Procure para onde a maldade volta.",
     "learningObjective": "Sustentar com o texto que o mal recai sobre quem o faz.",
@@ -596,29 +596,29 @@
     "options": [
       {
         "id": "a",
-        "text": "A sabedoria humana livra do juízo do Senhor"
-      },
-      {
-        "id": "b",
         "text": "Cada povo colhe o que fez, sob o Dia do Senhor"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "O juízo é só contra Edom, e as outras nações escapam"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "O castigo de Edom não tem relação com o que ele fez"
+      },
+      {
+        "id": "d",
+        "text": "A sabedoria humana livra do juízo do Senhor"
       }
     ],
-    "correctOptionId": "b",
-    "correctAnswer": "b",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "como tu fizeste, assim também será feito a ti",
     "feedbackCorrect": "O texto liga o juízo ao que cada povo fez, e ele vem sobre todas as nações.",
     "feedbackWrong": {
-      "a": "Em 1:8 o Senhor faz perecer até a sabedoria de Edom.",
-      "c": "O Dia do Senhor vem sobre todas as nações, não só sobre Edom.",
-      "d": "O texto diz: como tu fizeste, assim será feito a ti."
+      "b": "O Dia do Senhor vem sobre todas as nações, não só sobre Edom.",
+      "c": "O texto diz: como tu fizeste, assim será feito a ti.",
+      "d": "Em 1:8 o Senhor faz perecer até a sabedoria de Edom."
     },
     "hint": "Compare cada opção com o começo e o fim do trecho.",
     "learningObjective": "Escolher a interpretação que o texto sustenta sobre o juízo.",
@@ -688,24 +688,24 @@
     "options": [
       {
         "id": "a",
-        "text": "descansará"
-      },
-      {
-        "id": "b",
         "text": "passará"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "retornará"
+      },
+      {
+        "id": "c",
+        "text": "descansará"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "b",
+    "correctAnswer": "b",
     "evidenceSpan": "a tua maldade retornará sobre a tua cabeça",
     "feedbackCorrect": "O verbo diz que a maldade volta ao ponto de partida: o próprio culpado.",
     "feedbackWrong": {
-      "a": "\"Descansará\" sugere paz; o texto fala de juízo.",
-      "b": "\"Passará\" sugere que o mal vai embora; o texto diz que volta."
+      "a": "\"Passará\" sugere que o mal vai embora; o texto diz que volta.",
+      "c": "\"Descansará\" sugere paz; o texto fala de juízo."
     },
     "hint": "É o verbo da ideia de voltar ao ponto de partida.",
     "learningObjective": "Lembrar o termo que carrega o sentido do juízo.",
@@ -736,24 +736,24 @@
     "options": [
       {
         "id": "a",
-        "text": "Bênção para os fiéis de Edom"
-      },
-      {
-        "id": "b",
         "text": "Banquete de festa para Israel"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Cálice do juízo para as nações"
+      },
+      {
+        "id": "c",
+        "text": "Bênção para os fiéis de Edom"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "b",
+    "correctAnswer": "b",
     "evidenceSpan": "todas as nações beberão continuamente",
     "feedbackCorrect": "Nos dois textos, as nações bebem o cálice do juízo do Senhor.",
     "feedbackWrong": {
-      "a": "Nenhum dos textos fala de bênção para Edom: falam de juízo.",
-      "b": "Beber, nos dois textos, é sofrer o juízo, e não festejar."
+      "a": "Beber, nos dois textos, é sofrer o juízo, e não festejar.",
+      "c": "Nenhum dos textos fala de bênção para Edom: falam de juízo."
     },
     "hint": "Veja o que as nações recebem para beber.",
     "learningObjective": "Ligar o beber das nações ao cálice do juízo.",
@@ -812,23 +812,23 @@
     "options": [
       {
         "id": "a",
-        "text": "Jacó"
+        "text": "Esaú"
       },
       {
         "id": "b",
-        "text": "Esaú"
+        "text": "Jacó"
       },
       {
         "id": "c",
         "text": "José"
       }
     ],
-    "correctOptionId": "b",
-    "correctAnswer": "b",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "a casa de Esaú será restolho",
     "feedbackCorrect": "A casa de Esaú é a que será restolho.",
     "feedbackWrong": {
-      "a": "A casa de Jacó será fogo, não restolho.",
+      "b": "A casa de Jacó será fogo, não restolho.",
       "c": "A casa de José será chama, não restolho."
     },
     "hint": "Veja quem recebe o juízo no versículo.",
@@ -852,15 +852,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Em segredo"
+        "text": "Só uma vez"
       },
       {
         "id": "b",
-        "text": "Com alegria"
+        "text": "Em segredo"
       },
       {
         "id": "c",
-        "text": "Só uma vez"
+        "text": "Com alegria"
       },
       {
         "id": "d",
@@ -872,9 +872,9 @@
     "evidenceSpan": "todas as nações beberão continuamente",
     "feedbackCorrect": "O versículo diz que todas as nações beberão continuamente.",
     "feedbackWrong": {
-      "a": "O versículo não fala de segredo.",
-      "b": "O versículo não fala de alegria, e sim de juízo.",
-      "c": "O versículo não diz que será uma vez só."
+      "a": "O versículo não diz que será uma vez só.",
+      "b": "O versículo não fala de segredo.",
+      "c": "O versículo não fala de alegria, e sim de juízo."
     },
     "hint": "Procure o advérbio ligado ao verbo beber.",
     "learningObjective": "Observar como as nações beberão.",
@@ -1030,7 +1030,7 @@
     "options": [
       {
         "id": "a",
-        "text": "maldade"
+        "text": "tua cabeça"
       },
       {
         "id": "b",
@@ -1038,7 +1038,7 @@
       },
       {
         "id": "c",
-        "text": "tua cabeça"
+        "text": "maldade"
       }
     ],
     "correctOptionId": "b",
@@ -1046,8 +1046,8 @@
     "evidenceSpan": "o Dia do Senhor está prestes a vir sobre todas as nações",
     "feedbackCorrect": "O Dia do Senhor está prestes a vir sobre todas as nações.",
     "feedbackWrong": {
-      "a": "\"Maldade\" é o que volta sobre Edom, não sobre quem o Dia vem.",
-      "c": "\"Tua cabeça\" é onde a maldade recai, não sobre quem o Dia vem."
+      "a": "\"Tua cabeça\" é onde a maldade recai, não sobre quem o Dia vem.",
+      "c": "\"Maldade\" é o que volta sobre Edom, não sobre quem o Dia vem."
     },
     "hint": "Procure quem será alcançado.",
     "learningObjective": "Identificar sobre quem vem o Dia do Senhor.",
@@ -1149,24 +1149,24 @@
     "options": [
       {
         "id": "a",
-        "text": "Mas"
+        "text": "sagrado"
       },
       {
         "id": "b",
-        "text": "heranças"
+        "text": "Mas"
       },
       {
         "id": "c",
-        "text": "sagrado"
+        "text": "heranças"
       }
     ],
-    "correctOptionId": "a",
-    "correctAnswer": "a",
+    "correctOptionId": "b",
+    "correctAnswer": "b",
     "evidenceSpan": "Mas, no monte Sião, haverá livramento",
     "feedbackCorrect": "\"Mas\" vira a página: depois do juízo, Sião recebe livramento.",
     "feedbackWrong": {
-      "b": "\"Heranças\" diz o que Jacó possuirá, não marca contraste.",
-      "c": "\"Sagrado\" descreve o local, não marca contraste."
+      "a": "\"Sagrado\" descreve o local, não marca contraste.",
+      "c": "\"Heranças\" diz o que Jacó possuirá, não marca contraste."
     },
     "hint": "Procure a palavra que abre o versículo.",
     "learningObjective": "Reconhecer o marcador de contraste em 1:17.",
@@ -1189,29 +1189,29 @@
     "options": [
       {
         "id": "a",
-        "text": "Jacó e Esaú se unem contra o fogo"
-      },
-      {
-        "id": "b",
         "text": "O fogo de Jacó consome a casa de Esaú"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Esaú consome Jacó com o próprio fogo"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "O fogo de Jacó não alcança Esaú"
+      },
+      {
+        "id": "d",
+        "text": "Jacó e Esaú se unem contra o fogo"
       }
     ],
-    "correctOptionId": "b",
-    "correctAnswer": "b",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "elas incendiarão esta e a consumirão",
     "feedbackCorrect": "A casa de Jacó é fogo, e a de Esaú, restolho: o fogo a consome.",
     "feedbackWrong": {
-      "a": "O texto não mostra união entre Jacó e Esaú.",
-      "c": "É o contrário: Jacó é o fogo, e Esaú, o restolho.",
-      "d": "O texto diz que ninguém mais restará da casa de Esaú."
+      "b": "É o contrário: Jacó é o fogo, e Esaú, o restolho.",
+      "c": "O texto diz que ninguém mais restará da casa de Esaú.",
+      "d": "O texto não mostra união entre Jacó e Esaú."
     },
     "hint": "Veja o que \"elas incendiarão\" faz com Esaú.",
     "learningObjective": "Relacionar o fogo de Jacó com o fim de Esaú.",
@@ -1327,23 +1327,23 @@
     "options": [
       {
         "id": "a",
-        "text": "O mal sempre é esquecido"
+        "text": "A maldade volta ao autor"
       },
       {
         "id": "b",
-        "text": "A maldade volta ao autor"
+        "text": "O mal sempre é esquecido"
       },
       {
         "id": "c",
         "text": "O castigo é sorteado"
       }
     ],
-    "correctOptionId": "b",
-    "correctAnswer": "b",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "a tua maldade retornará sobre a tua cabeça",
     "feedbackCorrect": "Nos dois textos, o mal recai sobre quem o praticou.",
     "feedbackWrong": {
-      "a": "Nos dois textos, o mal tem resposta, e não é esquecido.",
+      "b": "Nos dois textos, o mal tem resposta, e não é esquecido.",
       "c": "Nos dois textos, o mal volta ao autor, e não é sorteado."
     },
     "hint": "Compare para onde o mal retorna.",
@@ -1368,11 +1368,11 @@
     "options": [
       {
         "id": "a",
-        "text": "continuamente"
+        "text": "monte"
       },
       {
         "id": "b",
-        "text": "monte"
+        "text": "continuamente"
       },
       {
         "id": "c",
@@ -1384,8 +1384,8 @@
     "evidenceSpan": "Porque, assim como vocês beberam",
     "feedbackCorrect": "\"Porque\" abre a razão: o que foi bebido no monte santo volta às nações.",
     "feedbackWrong": {
-      "a": "\"Continuamente\" diz como as nações beberão, não a razão.",
-      "b": "\"Monte\" é o lugar onde beberam, não a palavra que dá a razão."
+      "a": "\"Monte\" é o lugar onde beberam, não a palavra que dá a razão.",
+      "b": "\"Continuamente\" diz como as nações beberão, não a razão."
     },
     "hint": "É a primeira palavra do versículo.",
     "learningObjective": "Reconhecer o marcador que introduz a razão do juízo.",
@@ -1491,20 +1491,20 @@
       },
       {
         "id": "b",
-        "text": "monte Sião"
+        "text": "do Senhor"
       },
       {
         "id": "c",
-        "text": "do Senhor"
+        "text": "monte Sião"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "b",
+    "correctAnswer": "b",
     "evidenceSpan": "o reino será do Senhor",
     "feedbackCorrect": "O reino é \"do Senhor\", e não dos salvadores que sobem a Sião.",
     "feedbackWrong": {
       "a": "\"Salvadores\" diz quem sobe a Sião, não de quem é o reino.",
-      "b": "\"Monte Sião\" é o lugar, não o dono do reino."
+      "c": "\"Monte Sião\" é o lugar, não o dono do reino."
     },
     "hint": "Procure o final do versículo.",
     "learningObjective": "Sustentar com o texto de quem é o reino.",
@@ -1527,11 +1527,11 @@
     "options": [
       {
         "id": "a",
-        "text": "O juízo é só um acaso da história"
+        "text": "As nações colhem o mal que fizeram no Dia do Senhor"
       },
       {
         "id": "b",
-        "text": "As nações colhem o mal que fizeram no Dia do Senhor"
+        "text": "O juízo é só um acaso da história"
       },
       {
         "id": "c",
@@ -1542,12 +1542,12 @@
         "text": "As nações são julgadas por serem estrangeiras, e não pelo que fizeram"
       }
     ],
-    "correctOptionId": "b",
-    "correctAnswer": "b",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "como tu fizeste, assim também será feito a ti",
     "feedbackCorrect": "O juízo vem sobre todas as nações e acompanha o que cada uma fez.",
     "feedbackWrong": {
-      "a": "O texto liga o juízo ao que se fez: não é acaso.",
+      "b": "O texto liga o juízo ao que se fez: não é acaso.",
       "c": "O Dia do Senhor vem sobre todas as nações, não só sobre Edom.",
       "d": "O texto diz: como tu fizeste, assim será feito a ti."
     },
@@ -1712,20 +1712,20 @@
       },
       {
         "id": "b",
-        "text": "livramento"
+        "text": "local sagrado"
       },
       {
         "id": "c",
-        "text": "local sagrado"
+        "text": "livramento"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "b",
+    "correctAnswer": "b",
     "evidenceSpan": "será um local sagrado",
     "feedbackCorrect": "O texto chama Sião de \"local sagrado\": lugar separado para Deus.",
     "feedbackWrong": {
       "a": "\"Suas heranças\" é o que Jacó possuirá, não o caráter do lugar.",
-      "b": "\"Livramento\" é o que Sião recebe, não o que a separa para Deus."
+      "c": "\"Livramento\" é o que Sião recebe, não o que a separa para Deus."
     },
     "hint": "Procure a descrição do lugar.",
     "learningObjective": "Sustentar com o texto que Sião é lugar separado.",

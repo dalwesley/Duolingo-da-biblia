@@ -199,24 +199,24 @@
       "options": [
         {
           "id": "a",
-          "text": "fortaleza"
-        },
-        {
-          "id": "b",
           "text": "capturou"
         },
         {
+          "id": "b",
+          "text": "fortaleza"
+        },
+        {
           "id": "c",
-          "text": "Sião"
+          "text": "Entretanto"
         }
       ],
       "correctOptionId": "b",
       "correctAnswer": "b",
-      "evidenceSpan": "capturou",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "fortaleza",
+      "feedbackCorrect": "Isso: \"fortaleza\" é o que o versículo diz.",
       "feedbackWrong": {
-        "a": "Essa opção não é o trecho pedido.",
-        "c": "Essa opção não é o trecho pedido."
+        "a": "\"capturou\" está no versículo, mas não responde à pergunta.",
+        "c": "\"Entretanto\" está no versículo, mas não responde à pergunta."
       },
       "hint": "Procure no versículo o trecho pedido.",
       "learningObjective": "Identificar a fortaleza.",
@@ -452,7 +452,7 @@
       "options": [
         {
           "id": "a",
-          "text": "fortalecendo"
+          "text": "pois"
         },
         {
           "id": "b",
@@ -465,8 +465,8 @@
       ],
       "correctOptionId": "a",
       "correctAnswer": "a",
-      "evidenceSpan": "fortalecendo",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "Isso: \"pois\" é o que o versículo diz.",
       "feedbackWrong": {
         "b": "Essa opção não é o trecho pedido.",
         "c": "Essa opção não é o trecho pedido."
@@ -707,7 +707,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Senhor"
+          "text": "poder"
         },
         {
           "id": "b",
@@ -715,15 +715,15 @@
         },
         {
           "id": "c",
-          "text": "poder"
+          "text": "Senhor"
         }
       ],
       "correctOptionId": "c",
       "correctAnswer": "c",
-      "evidenceSpan": "poder",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "Isso: \"Senhor\" é o que o versículo diz.",
       "feedbackWrong": {
-        "a": "Essa opção não é o trecho pedido.",
+        "a": "\"poder\" está no versículo, mas não responde à pergunta.",
         "b": "Essa opção não é o trecho pedido."
       },
       "hint": "Procure no versículo o trecho pedido.",

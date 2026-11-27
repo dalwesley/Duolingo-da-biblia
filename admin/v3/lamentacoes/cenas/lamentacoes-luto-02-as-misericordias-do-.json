@@ -128,7 +128,7 @@
         "why": "O texto diz que o próprio Senhor é a sua porção, e por isso ele espera nele."
       }
     ],
-    "centralInsight": "O que isso revela sobre a aliança de Deus?",
+    "centralInsight": "As misericórdias do Senhor se renovam a cada manhã",
     "anchorQuestion": "Segundo Lamentações 3:24, o que o Senhor é para o poeta?",
     "relatedVerses": [
       {
@@ -780,23 +780,23 @@
       "difficulty": "profundezas",
       "type": "order",
       "skill": "interpret",
-      "question": "Qual sequência revela o caminho da espera que começa em Lamentações 3:23?",
-      "prompt": "Qual sequência revela o caminho da espera que começa em Lamentações 3:23?",
-      "cue": "Qual sequência revela o caminho da espera que começa em Lamentações 3:23?",
+      "question": "Qual sequência segue, na Bíblia, a espera pela manhã de Deus?",
+      "prompt": "Qual sequência segue, na Bíblia, a espera pela manhã de Deus?",
+      "cue": "Qual sequência segue, na Bíblia, a espera pela manhã de Deus?",
       "verseRef": "Lamentações 3:23",
       "passageText": "Renovam-se a cada manhã; grande é a tua fidelidade.",
       "options": [
         {
           "id": "a",
-          "text": "Deus renova suas misericórdias de manhã"
-        },
-        {
-          "id": "b",
           "text": "O salmista pede benignidade ao amanhecer"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Quem semeia chorando colhe com alegria"
+        },
+        {
+          "id": "c",
+          "text": "Deus renova suas misericórdias de manhã"
         }
       ],
       "correctOptionId": "a",
@@ -807,11 +807,11 @@
       ],
       "correctAnswer": "a,b,c",
       "evidenceSpan": "Renovam-se a cada manhã",
-      "feedbackCorrect": "A manhã renovada sustenta a espera de quem semeia chorando e colherá.",
+      "feedbackCorrect": "O pedido da manhã e a colheita dos Salmos ecoam nas misericórdias renovadas.",
       "feedbackWrong": {
-        "default": "Siga a Bíblia: Lamentações, Salmos 90 e, depois, Salmos 126."
+        "default": "Siga a Bíblia: Salmos 90, Salmos 126 e Lamentações."
       },
-      "hint": "Siga a ordem: luto, pedido e colheita.",
+      "hint": "Pense na ordem dos livros na Bíblia.",
       "learningObjective": "Ver a espera de Lamentações como fio que chega à colheita.",
       "evidence": [
         "Lamentações 3:23",

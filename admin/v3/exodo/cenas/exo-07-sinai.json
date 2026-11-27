@@ -188,9 +188,9 @@
       "difficulty": "semente",
       "type": "find_in_text",
       "skill": "observe",
-      "question": "Em Êxodo 19:6, toque como Deus chama o povo que ele formará para si.",
-      "prompt": "Em Êxodo 19:6, toque como Deus chama o povo que ele formará para si.",
-      "cue": "Em Êxodo 19:6, toque como Deus chama o povo que ele formará para si.",
+      "question": "Em Êxodo 19:6, toque o título que mostra o povo servindo diante de Deus.",
+      "prompt": "Em Êxodo 19:6, toque o título que mostra o povo servindo diante de Deus.",
+      "cue": "Em Êxodo 19:6, toque o título que mostra o povo servindo diante de Deus.",
       "verseRef": "Êxodo 19:6",
       "passageText": "E vocês me serão um reino de sacerdotes e uma nação santa. Essas são as palavras que você falará aos filhos de Israel.",
       "options": [
@@ -212,10 +212,10 @@
       "evidenceSpan": "vocês me serão um reino de sacerdotes e uma nação santa",
       "feedbackCorrect": "Todo o povo é chamado a servir diante de Deus como sacerdotes.",
       "feedbackWrong": {
-        "b": "Isso também descreve o povo, mas vem depois da primeira expressão.",
+        "b": "Nação santa fala de separação; o título de serviço diante de Deus é outro.",
         "c": "Isso nomeia a quem Moisés falará, não o título dado por Deus aqui."
       },
-      "hint": "Leia a primeira expressão que Deus usa sobre o povo.",
+      "hint": "Pense em quem serve diante de Deus pelos outros.",
       "learningObjective": "Identificar a vocação sacerdotal de Israel.",
       "evidence": [
         "Êxodo 19:6"
@@ -468,7 +468,7 @@
         "a": "Isso indica o destino do povo, não a imagem com asas.",
         "b": "Isso nomeia quem sofreu a ação de Deus, não a imagem usada."
       },
-      "hint": "Procure uma imagem com asas na fala de Deus.",
+      "hint": "Procure a imagem tirada da natureza na fala de Deus.",
       "learningObjective": "Reconhecer a imagem do cuidado de Deus no Sinai.",
       "evidence": [
         "Êxodo 19:4"
@@ -882,7 +882,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Povo tesouro do Senhor Deus"
+          "text": "Povo especial do Senhor Deus"
         },
         {
           "id": "b",
@@ -896,10 +896,10 @@
       "correctOptionId": "a",
       "correctAnswer": "a",
       "evidenceSpan": "serão a minha propriedade peculiar entre todos os povos",
-      "feedbackCorrect": "Moisés relê o Sinai chamando Israel de povo santo e tesouro de Deus.",
+      "feedbackCorrect": "Moisés relê o Sinai chamando Israel de povo santo e especial de Deus.",
       "feedbackWrong": {
-        "b": "Deuteronômio nega que o tamanho seja o motivo da escolha divina.",
-        "c": "O tesouro é dom da escolha de Deus, não conquista pela força."
+        "b": "Deuteronômio funda a escolha em Deus, não no tamanho do povo.",
+        "c": "Ser povo especial é dom da escolha de Deus, não conquista pela força."
       },
       "hint": "Veja como Moisés chama o povo escolhido depois.",
       "learningObjective": "Ligar o Sinai à releitura de Moisés em Deuteronômio.",

@@ -201,7 +201,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Dizendo"
+          "text": "Hino ao Arco"
         },
         {
           "id": "b",
@@ -214,8 +214,8 @@
       ],
       "correctOptionId": "a",
       "correctAnswer": "a",
-      "evidenceSpan": "Dizendo",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "Hino ao Arco",
+      "feedbackCorrect": "Isso: \"Hino ao Arco\" é o que o versículo diz.",
       "feedbackWrong": {
         "b": "Essa opção não é o trecho pedido.",
         "c": "Essa opção não é o trecho pedido."
@@ -462,13 +462,13 @@
         },
         {
           "id": "c",
-          "text": "noticieis"
+          "text": "para que"
         }
       ],
       "correctOptionId": "c",
       "correctAnswer": "c",
-      "evidenceSpan": "noticieis",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "para que",
+      "feedbackCorrect": "Isso: \"para que\" é o que o versículo diz.",
       "feedbackWrong": {
         "a": "Essa opção não é o trecho pedido.",
         "b": "Essa opção não é o trecho pedido."
@@ -701,9 +701,9 @@
       "difficulty": "profundezas",
       "type": "find_in_text",
       "skill": "interpret",
-      "question": "Em 2 Samuel 1:26, toque o que sustenta o amor excepcional.",
-      "prompt": "Em 2 Samuel 1:26, toque o que sustenta o amor excepcional.",
-      "cue": "Em 2 Samuel 1:26, toque o que sustenta o amor excepcional.",
+      "question": "Em 2 Samuel 1:26, toque a palavra que qualifica o amor de Jônatas.",
+      "prompt": "Em 2 Samuel 1:26, toque a palavra que qualifica o amor de Jônatas.",
+      "cue": "Em 2 Samuel 1:26, toque a palavra que qualifica o amor de Jônatas.",
       "verseRef": "2 Samuel 1:26",
       "passageText": "Angustiado estou por ti, meu irmão Jônatas; quão querido tu eras para mim! Seu amor era excepcional, superando o amor das mulheres.",
       "options": [
@@ -717,13 +717,13 @@
         },
         {
           "id": "c",
-          "text": "Angustiado"
+          "text": "excepcional"
         }
       ],
       "correctOptionId": "c",
       "correctAnswer": "c",
-      "evidenceSpan": "Angustiado",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "excepcional",
+      "feedbackCorrect": "Isso: \"excepcional\" é o que o versículo diz.",
       "feedbackWrong": {
         "a": "Essa opção não é o trecho pedido.",
         "b": "Essa opção não é o trecho pedido."

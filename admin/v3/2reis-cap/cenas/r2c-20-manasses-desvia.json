@@ -201,11 +201,11 @@
       "options": [
         {
           "id": "a",
-          "text": "casa"
+          "text": "construiu"
         },
         {
           "id": "b",
-          "text": "construiu"
+          "text": "casa"
         },
         {
           "id": "c",
@@ -214,10 +214,10 @@
       ],
       "correctOptionId": "b",
       "correctAnswer": "b",
-      "evidenceSpan": "construiu",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "casa",
+      "feedbackCorrect": "Isso: \"casa\" é o que o versículo diz.",
       "feedbackWrong": {
-        "a": "Essa opção não é o trecho pedido.",
+        "a": "\"construiu\" está no versículo, mas não responde à pergunta.",
         "c": "Essa opção não é o trecho pedido."
       },
       "hint": "Procure no versículo o trecho pedido.",
@@ -711,11 +711,11 @@
       "options": [
         {
           "id": "a",
-          "text": "colocou"
+          "text": "imagem"
         },
         {
           "id": "b",
-          "text": "imagem"
+          "text": "colocou"
         },
         {
           "id": "c",
@@ -724,10 +724,10 @@
       ],
       "correctOptionId": "a",
       "correctAnswer": "a",
-      "evidenceSpan": "colocou",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "imagem",
+      "feedbackCorrect": "Isso: \"imagem\" é o que o versículo diz.",
       "feedbackWrong": {
-        "b": "Essa opção não é o trecho pedido.",
+        "b": "\"colocou\" está no versículo, mas não responde à pergunta.",
         "c": "Essa opção não é o trecho pedido."
       },
       "hint": "Procure no versículo o trecho pedido.",

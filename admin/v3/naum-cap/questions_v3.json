@@ -89,7 +89,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Para ouvir o mar"
+        "text": "Para se irar"
       },
       {
         "id": "b",
@@ -97,21 +97,21 @@
       },
       {
         "id": "c",
-        "text": "Para esquecer o culpado"
+        "text": "Para ouvir o mar"
       },
       {
         "id": "d",
-        "text": "Para se irar"
+        "text": "Para esquecer o culpado"
       }
     ],
-    "correctOptionId": "d",
-    "correctAnswer": "d",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "O Senhor é lento para se irar",
     "feedbackCorrect": "Ele é lento para se irar, mas grande em poder.",
     "feedbackWrong": {
-      "a": "Ele repreende o mar; não é lentidão para ouvi-lo.",
       "b": "O texto não fala de salvar Nínive.",
-      "c": "Ele jamais considera inocente o culpado."
+      "c": "Ele repreende o mar; não é lentidão para ouvi-lo.",
+      "d": "Ele jamais considera inocente o culpado."
     },
     "hint": "Veja o começo do versículo.",
     "learningObjective": "Observar a lentidão do Senhor para irar-se.",
@@ -179,24 +179,24 @@
     "options": [
       {
         "id": "a",
-        "text": "culpado"
+        "text": "amigo"
       },
       {
         "id": "b",
-        "text": "servo"
+        "text": "culpado"
       },
       {
         "id": "c",
-        "text": "amigo"
+        "text": "servo"
       }
     ],
-    "correctOptionId": "a",
-    "correctAnswer": "a",
+    "correctOptionId": "b",
+    "correctAnswer": "b",
     "evidenceSpan": "jamais considera inocente o culpado",
     "feedbackCorrect": "Ele não considera inocente o culpado.",
     "feedbackWrong": {
-      "b": "\"Servo\" não aparece nessa frase.",
-      "c": "\"Amigo\" não aparece nessa frase."
+      "a": "\"Amigo\" não aparece nessa frase.",
+      "c": "\"Servo\" não aparece nessa frase."
     },
     "hint": "É o substantivo no fim dessa frase.",
     "learningObjective": "Lembrar quem não é inocentado.",
@@ -227,24 +227,24 @@
     "options": [
       {
         "id": "a",
-        "text": "Fim de toda angústia humana"
-      },
-      {
-        "id": "b",
         "text": "Abrigo para quem se refugia"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Inocência automática de Nínive"
+      },
+      {
+        "id": "c",
+        "text": "Fim de toda angústia humana"
       }
     ],
-    "correctOptionId": "b",
-    "correctAnswer": "b",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "conhece os que nele se refugiam",
     "feedbackCorrect": "No juízo sobre Nínive, há abrigo para quem se refugia nele.",
     "feedbackWrong": {
-      "a": "Há dia da angústia; o Senhor é fortaleza nele.",
-      "c": "O culpado não é considerado inocente."
+      "b": "O culpado não é considerado inocente.",
+      "c": "Há dia da angústia; o Senhor é fortaleza nele."
     },
     "hint": "Veja quem o Senhor conhece.",
     "learningObjective": "Ligar juízo e refúgio.",
@@ -342,29 +342,29 @@
     "options": [
       {
         "id": "a",
-        "text": "O furor e a bondade se anulam"
+        "text": "Furor contra o culpado; fortaleza para quem se refugia"
       },
       {
         "id": "b",
-        "text": "Só furor, sem nenhum abrigo"
-      },
-      {
-        "id": "c",
         "text": "Só bondade, sem nenhum juízo"
       },
       {
+        "id": "c",
+        "text": "Só furor, sem nenhum abrigo"
+      },
+      {
         "id": "d",
-        "text": "Furor contra o culpado; fortaleza para quem se refugia"
+        "text": "O furor e a bondade se anulam"
       }
     ],
-    "correctOptionId": "d",
-    "correctAnswer": "d",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
     "feedbackCorrect": "O furor é irresistível contra o adversário; a bondade abriga quem se refugia.",
     "feedbackWrong": {
-      "a": "O texto apresenta os dois lados, não anulação.",
-      "b": "1:7 afirma bondade e fortaleza.",
-      "c": "Há furor e vingança no trecho."
+      "b": "Há furor e vingança no trecho.",
+      "c": "1:7 afirma bondade e fortaleza.",
+      "d": "O texto apresenta os dois lados, não anulação."
     },
     "hint": "Ligue 1:6 a 1:7.",
     "learningObjective": "Relacionar furor e fortaleza.",
@@ -432,7 +432,7 @@
     "options": [
       {
         "id": "a",
-        "text": "curto"
+        "text": "fraco"
       },
       {
         "id": "b",
@@ -440,7 +440,7 @@
       },
       {
         "id": "c",
-        "text": "fraco"
+        "text": "curto"
       }
     ],
     "correctOptionId": "b",
@@ -448,8 +448,8 @@
     "evidenceSpan": "mas grande em poder",
     "feedbackCorrect": "Ele é grande em poder.",
     "feedbackWrong": {
-      "a": "\"Curto\" não descreve o poder.",
-      "c": "\"Fraco\" é o oposto do texto."
+      "a": "\"Fraco\" é o oposto do texto.",
+      "c": "\"Curto\" não descreve o poder."
     },
     "hint": "É o adjetivo ligado a poder.",
     "learningObjective": "Lembrar o adjetivo do poder.",
@@ -556,24 +556,24 @@
     "options": [
       {
         "id": "a",
-        "text": "é bom"
-      },
-      {
-        "id": "b",
         "text": "nele se refugiam"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "dia da angústia"
+      },
+      {
+        "id": "c",
+        "text": "é bom"
       }
     ],
-    "correctOptionId": "b",
-    "correctAnswer": "b",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "conhece os que nele se refugiam",
     "feedbackCorrect": "Ele conhece os que nele se refugiam.",
     "feedbackWrong": {
-      "a": "\"É bom\" abre o versículo; o fim fala de quem se refugia.",
-      "c": "O dia da angústia é o tempo, não o grupo."
+      "b": "O dia da angústia é o tempo, não o grupo.",
+      "c": "\"É bom\" abre o versículo; o fim fala de quem se refugia."
     },
     "hint": "Procure o fim do versículo.",
     "learningObjective": "Sustentar com o texto quem é conhecido.",
@@ -600,15 +600,15 @@
       },
       {
         "id": "b",
-        "text": "Só se ira e não conhece ninguém"
+        "text": "Só é bom e nunca se ira"
       },
       {
         "id": "c",
-        "text": "Trata Nínive e os fiéis do mesmo modo"
+        "text": "Só se ira e não conhece ninguém"
       },
       {
         "id": "d",
-        "text": "Só é bom e nunca se ira"
+        "text": "Trata Nínive e os fiéis do mesmo modo"
       }
     ],
     "correctOptionId": "a",
@@ -616,9 +616,9 @@
     "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
     "feedbackCorrect": "Ele julga o culpado e abriga quem nele se refugia.",
     "feedbackWrong": {
-      "b": "Ele conhece os que nele se refugiam.",
-      "c": "Há sentença sobre Nínive e abrigo aos que se refugiam.",
-      "d": "Há furor e vingança no texto."
+      "b": "Há furor e vingança no texto.",
+      "c": "Ele conhece os que nele se refugiam.",
+      "d": "Há sentença sobre Nínive e abrigo aos que se refugiam."
     },
     "hint": "Ligue 1:3 e 1:7.",
     "learningObjective": "Escolher a leitura de juízo com refúgio.",
@@ -692,20 +692,20 @@
       },
       {
         "id": "b",
-        "text": "esquecem"
+        "text": "refugiam"
       },
       {
         "id": "c",
-        "text": "refugiam"
+        "text": "esquecem"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "b",
+    "correctAnswer": "b",
     "evidenceSpan": "conhece os que nele se refugiam",
     "feedbackCorrect": "Eles se refugiam nele.",
     "feedbackWrong": {
       "a": "\"Fogem\" não é o verbo do fim de 1:7.",
-      "b": "\"Esquecem\" é o oposto da confiança."
+      "c": "\"Esquecem\" é o oposto da confiança."
     },
     "hint": "É o verbo no fim do versículo.",
     "learningObjective": "Lembrar o verbo de quem busca abrigo.",
@@ -736,7 +736,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Senhor inocenta Nínive"
+        "text": "Senhor abriga seu povo"
       },
       {
         "id": "b",
@@ -744,16 +744,16 @@
       },
       {
         "id": "c",
-        "text": "Senhor abriga seu povo"
+        "text": "Senhor inocenta Nínive"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "é fortaleza no dia da angústia",
     "feedbackCorrect": "Nos dois textos, o Senhor é abrigo do seu povo no dia terrível.",
     "feedbackWrong": {
-      "a": "Nínive é julgada; o abrigo é para quem se refugia.",
-      "b": "Os textos afirmam abrigo, não abandono."
+      "b": "Os textos afirmam abrigo, não abandono.",
+      "c": "Nínive é julgada; o abrigo é para quem se refugia."
     },
     "hint": "Compare fortaleza e refúgio.",
     "learningObjective": "Ligar Naum ao refúgio em Joel.",
@@ -812,24 +812,24 @@
     "options": [
       {
         "id": "a",
-        "text": "comportas"
-      },
-      {
-        "id": "b",
         "text": "palácio"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "rio"
+      },
+      {
+        "id": "c",
+        "text": "comportas"
       }
     ],
-    "correctOptionId": "b",
-    "correctAnswer": "b",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "o palácio será arrasado",
     "feedbackCorrect": "O que cai é o palácio, símbolo do poder da cidade.",
     "feedbackWrong": {
-      "a": "As comportas se abrem; o alvo do arrasar é outro.",
-      "c": "O rio abre as comportas; o que é arrasado vem depois."
+      "b": "O rio abre as comportas; o que é arrasado vem depois.",
+      "c": "As comportas se abrem; o alvo do arrasar é outro."
     },
     "hint": "Procure o substantivo no fim do versículo.",
     "learningObjective": "Identificar o que o juízo arrasa.",
@@ -852,29 +852,29 @@
     "options": [
       {
         "id": "a",
-        "text": "Só as videiras de Jacó"
-      },
-      {
-        "id": "b",
-        "text": "Somente as muralhas do rio"
-      },
-      {
-        "id": "c",
         "text": "A prata e o ouro"
       },
       {
-        "id": "d",
+        "id": "b",
+        "text": "Só as videiras de Jacó"
+      },
+      {
+        "id": "c",
         "text": "Apenas os carros das praças"
+      },
+      {
+        "id": "d",
+        "text": "Somente as muralhas do rio"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "Saqueiem a prata, saqueiem o ouro",
     "feedbackCorrect": "O texto manda saquear prata e ouro: os tesouros não se acabam.",
     "feedbackWrong": {
-      "a": "As videiras aparecem em 2:2 como o que os saqueadores destruíram.",
-      "b": "O rio abre comportas; o saque é dos tesouros.",
-      "d": "Os carros descrevem o ataque; o saque é de prata e ouro."
+      "b": "As videiras aparecem em 2:2 como o que os saqueadores destruíram.",
+      "c": "Os carros descrevem o ataque; o saque é de prata e ouro.",
+      "d": "O rio abre comportas; o saque é dos tesouros."
     },
     "hint": "Leia os dois objetos do verbo saquear.",
     "learningObjective": "Observar o que é saqueado em Nínive.",
@@ -990,7 +990,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Fim de todo juízo divino"
+        "text": "Restauração da glória de Jacó"
       },
       {
         "id": "b",
@@ -998,16 +998,16 @@
       },
       {
         "id": "c",
-        "text": "Restauração da glória de Jacó"
+        "text": "Fim de todo juízo divino"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "o Senhor restaurará a glória de Jacó",
     "feedbackCorrect": "O ataque a Nínive serve à restauração de Jacó e Israel.",
     "feedbackWrong": {
-      "a": "O texto anuncia juízo sobre a cidade, não o fim do juízo.",
-      "b": "Nínive é o alvo do destruidor, não a vitoriosa."
+      "b": "Nínive é o alvo do destruidor, não a vitoriosa.",
+      "c": "O texto anuncia juízo sobre a cidade, não o fim do juízo."
     },
     "hint": "Veja o que o Senhor fará por Jacó.",
     "learningObjective": "Ligar a queda de Nínive à restauração de Jacó.",
@@ -1065,23 +1065,23 @@
     "options": [
       {
         "id": "a",
-        "text": "valentes"
+        "text": "mas"
       },
       {
         "id": "b",
-        "text": "mas"
+        "text": "valentes"
       },
       {
         "id": "c",
         "text": "muro"
       }
     ],
-    "correctOptionId": "b",
-    "correctAnswer": "b",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "mas eles tropeçarão em seu caminho",
     "feedbackCorrect": "\"Mas\" vira a cena: lembrar os valentes não evita o tropeço.",
     "feedbackWrong": {
-      "a": "\"Valentes\" é o sujeito; o contraste vem na palavra curta.",
+      "b": "\"Valentes\" é o sujeito; o contraste vem na palavra curta.",
       "c": "\"Muro\" é o destino; o contraste já veio antes."
     },
     "hint": "Procure a palavra curta depois da vírgula.",
@@ -1109,15 +1109,15 @@
       },
       {
         "id": "b",
-        "text": "Continua cheia e ninguém consegue sair"
-      },
-      {
-        "id": "c",
         "text": "Sempre foi vazia e agora se enche de forças"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Nunca teve águas e por isso não tem defesa"
+      },
+      {
+        "id": "d",
+        "text": "Continua cheia e ninguém consegue sair"
       }
     ],
     "correctOptionId": "a",
@@ -1125,9 +1125,9 @@
     "evidenceSpan": "tem sido como um tanque de águas; mas, agora, fogem",
     "feedbackCorrect": "O contraste é claro: abundância antiga, fuga presente.",
     "feedbackWrong": {
-      "b": "Agora fogem; ninguém se volta ao chamado.",
-      "c": "O texto diz o contrário: era cheia e agora fogem.",
-      "d": "O texto compara a cidade a um tanque de águas."
+      "b": "O texto diz o contrário: era cheia e agora fogem.",
+      "c": "O texto compara a cidade a um tanque de águas.",
+      "d": "Agora fogem; ninguém se volta ao chamado."
     },
     "hint": "Compare \"tem sido\" com \"agora\".",
     "learningObjective": "Relacionar o passado abundante com a fuga atual.",
@@ -1199,20 +1199,20 @@
       },
       {
         "id": "b",
-        "text": "descansarão"
+        "text": "tropeçarão"
       },
       {
         "id": "c",
-        "text": "tropeçarão"
+        "text": "descansarão"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "b",
+    "correctAnswer": "b",
     "evidenceSpan": "mas eles tropeçarão em seu caminho",
     "feedbackCorrect": "Eles tropeçarão: a força lembrada não impede a queda.",
     "feedbackWrong": {
       "a": "O texto não fala de vitória dos valentes aqui.",
-      "b": "Não há descanso; há tropeço e inimigo preparado."
+      "c": "Não há descanso; há tropeço e inimigo preparado."
     },
     "hint": "É o verbo depois do \"mas\".",
     "learningObjective": "Lembrar a ação que marca o fracasso dos valentes.",
@@ -1247,11 +1247,11 @@
       },
       {
         "id": "b",
-        "text": "Nínive sem qualquer juízo"
+        "text": "Nínive eternamente segura"
       },
       {
         "id": "c",
-        "text": "Nínive eternamente segura"
+        "text": "Nínive sem qualquer juízo"
       }
     ],
     "correctOptionId": "a",
@@ -1259,8 +1259,8 @@
     "evidenceSpan": "Vazia desolada e exaurida ficará",
     "feedbackCorrect": "Os dois textos apontam Nínive desolada pelo juízo do Senhor.",
     "feedbackWrong": {
-      "b": "Sofonias e Naum anunciam juízo sobre a cidade.",
-      "c": "Ambos anunciam ruína, não segurança eterna."
+      "b": "Ambos anunciam ruína, não segurança eterna.",
+      "c": "Sofonias e Naum anunciam juízo sobre a cidade."
     },
     "hint": "Compare o destino de Nínive nos dois textos.",
     "learningObjective": "Relacionar Naum e Sofonias sobre Nínive.",
@@ -1359,29 +1359,29 @@
     "options": [
       {
         "id": "a",
-        "text": "O Senhor restaura Nínive em vez de Jacó"
+        "text": "A cidade temida é esvaziada; o juízo do Senhor não falha"
       },
       {
         "id": "b",
-        "text": "O saque é só imagem; a cidade continua cheia"
-      },
-      {
-        "id": "c",
         "text": "Os valentes garantem que Nínive nunca cai"
       },
       {
+        "id": "c",
+        "text": "O Senhor restaura Nínive em vez de Jacó"
+      },
+      {
         "id": "d",
-        "text": "A cidade temida é esvaziada; o juízo do Senhor não falha"
+        "text": "O saque é só imagem; a cidade continua cheia"
       }
     ],
-    "correctOptionId": "d",
-    "correctAnswer": "d",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "Vazia desolada e exaurida ficará",
     "feedbackCorrect": "Do alerta à ruína, o texto mostra Nínive esvaziada de fato.",
     "feedbackWrong": {
-      "a": "2:2 fala da restauração de Jacó, não de Nínive.",
-      "b": "2:9–10 descreve saque real e cidade vazia.",
-      "c": "Os valentes tropeçam e acham o inimigo preparado."
+      "b": "Os valentes tropeçam e acham o inimigo preparado.",
+      "c": "2:2 fala da restauração de Jacó, não de Nínive.",
+      "d": "2:9–10 descreve saque real e cidade vazia."
     },
     "hint": "Ligue o começo do ataque ao fim vazio.",
     "learningObjective": "Escolher a leitura que o texto sustenta sobre o juízo.",
@@ -1499,7 +1499,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Ausência de qualquer juízo"
+        "text": "Queda da cidade opressora"
       },
       {
         "id": "b",
@@ -1507,16 +1507,16 @@
       },
       {
         "id": "c",
-        "text": "Queda da cidade opressora"
+        "text": "Ausência de qualquer juízo"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "Vazia desolada e exaurida ficará",
     "feedbackCorrect": "Nos dois textos, a cidade que oprimia cai sob o juízo de Deus.",
     "feedbackWrong": {
-      "a": "O juízo é o tema comum dos dois trechos.",
-      "b": "Ambos anunciam queda, não vitória eterna."
+      "b": "Ambos anunciam queda, não vitória eterna.",
+      "c": "O juízo é o tema comum dos dois trechos."
     },
     "hint": "Compare o destino da cidade em cada texto.",
     "learningObjective": "Ligar a queda de Nínive à queda da cidade no Apocalipse.",
@@ -1575,24 +1575,24 @@
     "options": [
       {
         "id": "a",
-        "text": "nações"
+        "text": "humilhação"
       },
       {
         "id": "b",
-        "text": "vestes"
+        "text": "nações"
       },
       {
         "id": "c",
-        "text": "humilhação"
+        "text": "vestes"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "aos reinos a sua humilhação",
     "feedbackCorrect": "Aos reinos ele mostra a humilhação dela.",
     "feedbackWrong": {
-      "a": "As nações recebem a nudez; aos reinos é a humilhação.",
-      "b": "As vestes são levantadas; o que se mostra aos reinos é a humilhação."
+      "b": "As nações recebem a nudez; aos reinos é a humilhação.",
+      "c": "As vestes são levantadas; o que se mostra aos reinos é a humilhação."
     },
     "hint": "Leia o fim do versículo, depois de \"reinos\".",
     "learningObjective": "Identificar o que é mostrado aos reinos.",
@@ -1615,11 +1615,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Que Nínive ainda reina em paz"
+        "text": "Que Nínive está destruída"
       },
       {
         "id": "b",
-        "text": "Que suas muralhas nunca caem"
+        "text": "Que Nínive ainda reina em paz"
       },
       {
         "id": "c",
@@ -1627,17 +1627,17 @@
       },
       {
         "id": "d",
-        "text": "Que Nínive está destruída"
+        "text": "Que suas muralhas nunca caem"
       }
     ],
-    "correctOptionId": "d",
-    "correctAnswer": "d",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "Nínive está destruída! Quem terá compaixão dela?",
     "feedbackCorrect": "Quem a vir fugirá e dirá: Nínive está destruída.",
     "feedbackWrong": {
-      "a": "O texto anuncia destruição, não reinado em paz.",
-      "b": "O trecho fala de destruição, não de muralhas intactas.",
-      "c": "A pergunta é: quem terá compaixão dela?"
+      "b": "O texto anuncia destruição, não reinado em paz.",
+      "c": "A pergunta é: quem terá compaixão dela?",
+      "d": "O trecho fala de destruição, não de muralhas intactas."
     },
     "hint": "Veja a frase que os observadores pronunciam.",
     "learningObjective": "Observar a reação diante de Nínive destruída.",
@@ -1705,24 +1705,24 @@
     "options": [
       {
         "id": "a",
-        "text": "trono"
-      },
-      {
-        "id": "b",
         "text": "vitória"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "exílio"
+      },
+      {
+        "id": "c",
+        "text": "trono"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "b",
+    "correctAnswer": "b",
     "evidenceSpan": "No entanto, foi levada ao exílio",
     "feedbackCorrect": "Apesar da força, foi levada ao exílio.",
     "feedbackWrong": {
-      "a": "Não há trono no fim; há exílio e grilhões.",
-      "b": "O texto não fala de vitória; fala de exílio."
+      "a": "O texto não fala de vitória; fala de exílio.",
+      "c": "Não há trono no fim; há exílio e grilhões."
     },
     "hint": "É o destino depois de \"foi levada ao\".",
     "learningObjective": "Lembrar o destino de No-Amon.",
@@ -1753,24 +1753,24 @@
     "options": [
       {
         "id": "a",
-        "text": "Louvor das nações a Nínive"
-      },
-      {
-        "id": "b",
         "text": "Exposição pública da opressora"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Proteção secreta de Nínive"
+      },
+      {
+        "id": "c",
+        "text": "Louvor das nações a Nínive"
       }
     ],
-    "correctOptionId": "b",
-    "correctAnswer": "b",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "mostrarei às nações a sua nudez e aos reinos a sua humilhação",
     "feedbackCorrect": "O juízo não é privado: nudez e humilhação diante das nações.",
     "feedbackWrong": {
-      "a": "As nações veem a humilhação, não louvam a cidade.",
-      "c": "O texto mostra exposição, não proteção secreta."
+      "b": "O texto mostra exposição, não proteção secreta.",
+      "c": "As nações veem a humilhação, não louvam a cidade."
     },
     "hint": "Veja o que será mostrado às nações.",
     "learningObjective": "Ligar o confronto à exposição pública.",
@@ -1832,11 +1832,11 @@
       },
       {
         "id": "b",
-        "text": "grilhões"
+        "text": "filhos"
       },
       {
         "id": "c",
-        "text": "filhos"
+        "text": "grilhões"
       }
     ],
     "correctOptionId": "a",
@@ -1844,8 +1844,8 @@
     "evidenceSpan": "No entanto, foi levada ao exílio",
     "feedbackCorrect": "\"No entanto\" vira a página: força não impediu o exílio.",
     "feedbackWrong": {
-      "b": "\"Grilhões\" é o resultado; o marcador vem antes.",
-      "c": "\"Filhos\" descreve a violência; o contraste está no início."
+      "b": "\"Filhos\" descreve a violência; o contraste está no início.",
+      "c": "\"Grilhões\" é o resultado; o marcador vem antes."
     },
     "hint": "Procure a expressão no começo do versículo.",
     "learningObjective": "Reconhecer o marcador de contraste em 3:10.",
@@ -1868,29 +1868,29 @@
     "options": [
       {
         "id": "a",
-        "text": "Nínive é isenta porque é melhor que No-Amon"
-      },
-      {
-        "id": "b",
-        "text": "As duas cidades são salvas pelas águas"
-      },
-      {
-        "id": "c",
         "text": "Como No-Amon caiu, Nínive também buscará refúgio"
       },
       {
-        "id": "d",
+        "id": "b",
+        "text": "Nínive é isenta porque é melhor que No-Amon"
+      },
+      {
+        "id": "c",
         "text": "No-Amon caiu, mas Nínive nunca cairá"
+      },
+      {
+        "id": "d",
+        "text": "As duas cidades são salvas pelas águas"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "Você também ficará embriagada e se esconderá",
     "feedbackCorrect": "O \"também\" aplica a Nínive o destino que já alcançou No-Amon.",
     "feedbackWrong": {
-      "a": "A pergunta de 3:8 desafia a ideia de ser melhor.",
-      "b": "As águas não salvaram No-Amon do exílio.",
-      "d": "3:11 aplica o mesmo destino a Nínive."
+      "b": "A pergunta de 3:8 desafia a ideia de ser melhor.",
+      "c": "3:11 aplica o mesmo destino a Nínive.",
+      "d": "As águas não salvaram No-Amon do exílio."
     },
     "hint": "Veja a palavra \"também\" em 3:11.",
     "learningObjective": "Relacionar a queda de No-Amon ao destino de Nínive.",
@@ -2010,11 +2010,11 @@
       },
       {
         "id": "b",
-        "text": "Louvor à soberba humana"
+        "text": "Promessa de paz à cidade"
       },
       {
         "id": "c",
-        "text": "Promessa de paz à cidade"
+        "text": "Louvor à soberba humana"
       }
     ],
     "correctOptionId": "a",
@@ -2022,8 +2022,8 @@
     "evidenceSpan": "Eis que estou contra você, diz o SENHOR dos Exércitos",
     "feedbackCorrect": "Nos dois textos, o Senhor se declara contra a cidade orgulhosa.",
     "feedbackWrong": {
-      "b": "O alvo é a soberba, não o louvor a ela.",
-      "c": "Ambos anunciam confronto, não paz."
+      "b": "Ambos anunciam confronto, não paz.",
+      "c": "O alvo é a soberba, não o louvor a ela."
     },
     "hint": "Compare a fórmula de abertura dos dois versículos.",
     "learningObjective": "Relacionar a declaração contra Nínive a Jeremias.",
@@ -2082,23 +2082,23 @@
     "options": [
       {
         "id": "a",
-        "text": "fortalezas"
+        "text": "figos precoces"
       },
       {
         "id": "b",
-        "text": "figos precoces"
+        "text": "fortalezas"
       },
       {
         "id": "c",
         "text": "boca do"
       }
     ],
-    "correctOptionId": "b",
-    "correctAnswer": "b",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "serão como figueiras com figos precoces",
     "feedbackCorrect": "As fortalezas caem como figos precoces ao serem sacudidos.",
     "feedbackWrong": {
-      "a": "\"Fortalezas\" é o que se compara; a imagem da fragilidade vem depois.",
+      "b": "\"Fortalezas\" é o que se compara; a imagem da fragilidade vem depois.",
       "c": "\"Boca\" é o destino dos figos; a fragilidade está na imagem."
     },
     "hint": "Procure a comparação depois de \"como\".",
@@ -2122,11 +2122,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Fica protegida para sempre por suas águas"
+        "text": "Encontra vergonha pública diante do Senhor"
       },
       {
         "id": "b",
-        "text": "É isenta se for maior que No-Amon"
+        "text": "Fica protegida para sempre por suas águas"
       },
       {
         "id": "c",
@@ -2134,17 +2134,17 @@
       },
       {
         "id": "d",
-        "text": "Encontra vergonha pública diante do Senhor"
+        "text": "É isenta se for maior que No-Amon"
       }
     ],
-    "correctOptionId": "d",
-    "correctAnswer": "d",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "mostrarei às nações a sua nudez e aos reinos a sua humilhação",
     "feedbackCorrect": "O Senhor expõe a opressora: nudez e humilhação diante das nações.",
     "feedbackWrong": {
-      "a": "Nem No-Amon foi salva pelas águas.",
-      "b": "O texto aplica a Nínive o mesmo destino de No-Amon.",
-      "c": "As nações veem a destruição, não louvam."
+      "b": "Nem No-Amon foi salva pelas águas.",
+      "c": "As nações veem a destruição, não louvam.",
+      "d": "O texto aplica a Nínive o mesmo destino de No-Amon."
     },
     "hint": "Ligue a declaração \"contra você\" ao que é mostrado.",
     "learningObjective": "Escolher a leitura que o texto sustenta sobre a opressão.",
@@ -2262,7 +2262,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A opressora é exaltada para sempre"
+        "text": "Quem despoja será despojado"
       },
       {
         "id": "b",
@@ -2270,16 +2270,16 @@
       },
       {
         "id": "c",
-        "text": "Quem despoja será despojado"
+        "text": "A opressora é exaltada para sempre"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "Eis que estou contra você, diz o SENHOR dos Exércitos",
     "feedbackCorrect": "A cidade que oprimiu encontra o Senhor contra si: o despojo volta.",
     "feedbackWrong": {
-      "a": "O destino é humilhação, não exaltação eterna.",
-      "b": "Os dois textos mostram juízo, não silêncio."
+      "b": "Os dois textos mostram juízo, não silêncio.",
+      "c": "O destino é humilhação, não exaltação eterna."
     },
     "hint": "Compare o destino de quem pratica violência.",
     "learningObjective": "Ligar a exposição de Nínive ao princípio de Habacuque.",
@@ -2338,23 +2338,23 @@
     "options": [
       {
         "id": "a",
-        "text": "joelhos"
+        "text": "Vazia"
       },
       {
         "id": "b",
-        "text": "Vazia"
+        "text": "joelhos"
       },
       {
         "id": "c",
         "text": "rostos"
       }
     ],
-    "correctOptionId": "b",
-    "correctAnswer": "b",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "Vazia desolada e exaurida ficará",
     "feedbackCorrect": "A palavra de abertura é Vazia.",
     "feedbackWrong": {
-      "a": "Os joelhos tremem depois; não abrem o versículo.",
+      "b": "Os joelhos tremem depois; não abrem o versículo.",
       "c": "Os rostos pálidos fecham a descrição."
     },
     "hint": "É a primeira palavra do versículo.",
@@ -2378,7 +2378,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Nínive ficou cheia de ouro"
+        "text": "Nínive está destruída"
       },
       {
         "id": "b",
@@ -2386,21 +2386,21 @@
       },
       {
         "id": "c",
-        "text": "Nínive está destruída"
+        "text": "Nínive achou muitos consoladores"
       },
       {
         "id": "d",
-        "text": "Nínive achou muitos consoladores"
+        "text": "Nínive ficou cheia de ouro"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "Nínive está destruída",
     "feedbackCorrect": "Dirão: Nínive está destruída.",
     "feedbackWrong": {
-      "a": "O saque esvazia a cidade.",
       "b": "O texto anuncia destruição, não reinado eterno.",
-      "d": "O versículo pergunta de onde buscar consoladores."
+      "c": "O versículo pergunta de onde buscar consoladores.",
+      "d": "O saque esvazia a cidade."
     },
     "hint": "Veja a frase que os que fogem dizem.",
     "learningObjective": "Observar o anúncio da destruição.",
@@ -2516,24 +2516,24 @@
     "options": [
       {
         "id": "a",
-        "text": "Inocência de Nínive"
+        "text": "Abrigo no juízo"
       },
       {
         "id": "b",
-        "text": "Fim de todo refúgio"
+        "text": "Inocência de Nínive"
       },
       {
         "id": "c",
-        "text": "Abrigo no juízo"
+        "text": "Fim de todo refúgio"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "conhece os que nele se refugiam",
     "feedbackCorrect": "No juízo de Nínive, há abrigo para quem se refugia no Senhor.",
     "feedbackWrong": {
-      "a": "Nínive é julgada, não inocentada.",
-      "b": "Há fortaleza para quem se refugia."
+      "b": "Nínive é julgada, não inocentada.",
+      "c": "Há fortaleza para quem se refugia."
     },
     "hint": "Veja quem o Senhor conhece.",
     "learningObjective": "Ligar juízo e refúgio.",
@@ -2560,11 +2560,11 @@
       },
       {
         "id": "b",
-        "text": "nações"
+        "text": "Exércitos"
       },
       {
         "id": "c",
-        "text": "Exércitos"
+        "text": "nações"
       }
     ],
     "correctOptionId": "a",
@@ -2572,8 +2572,8 @@
     "evidenceSpan": "Eis que estou contra você",
     "feedbackCorrect": "Ele está contra ela.",
     "feedbackWrong": {
-      "b": "As nações verão a nudez; não são a declaração.",
-      "c": "\"Exércitos\" faz parte do título do Senhor."
+      "b": "\"Exércitos\" faz parte do título do Senhor.",
+      "c": "As nações verão a nudez; não são a declaração."
     },
     "hint": "Procure a postura do Senhor no início.",
     "learningObjective": "Identificar a declaração contra Nínive.",
@@ -2675,7 +2675,7 @@
     "options": [
       {
         "id": "a",
-        "text": "culpado"
+        "text": "mas"
       },
       {
         "id": "b",
@@ -2683,16 +2683,16 @@
       },
       {
         "id": "c",
-        "text": "mas"
+        "text": "culpado"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "lento para se irar, mas grande em poder",
     "feedbackCorrect": "\"Mas\" marca o contraste com o grande poder.",
     "feedbackWrong": {
-      "a": "\"Culpado\" aparece depois na frase.",
-      "b": "\"Lento\" é o primeiro polo."
+      "b": "\"Lento\" é o primeiro polo.",
+      "c": "\"Culpado\" aparece depois na frase."
     },
     "hint": "É a palavra entre irar e poder.",
     "learningObjective": "Reconhecer o marcador de contraste.",
@@ -2715,29 +2715,29 @@
     "options": [
       {
         "id": "a",
-        "text": "Só há juízo, sem nenhum abrigo"
-      },
-      {
-        "id": "b",
-        "text": "Só há abrigo, sem nenhum juízo"
-      },
-      {
-        "id": "c",
         "text": "Abrigo aos fiéis e esvaziamento de Nínive"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Nínive e os fiéis recebem o mesmo fim"
+      },
+      {
+        "id": "c",
+        "text": "Só há abrigo, sem nenhum juízo"
+      },
+      {
+        "id": "d",
+        "text": "Só há juízo, sem nenhum abrigo"
       }
     ],
-    "correctOptionId": "c",
-    "correctAnswer": "c",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "é fortaleza no dia da angústia",
     "feedbackCorrect": "O Senhor abriga os seus e esvazia a cidade opressora.",
     "feedbackWrong": {
-      "a": "1:7 afirma fortaleza para quem se refugia.",
-      "b": "Nínive é julgada e esvaziada.",
-      "d": "Há contraste entre refúgio e cidade vazia."
+      "b": "Há contraste entre refúgio e cidade vazia.",
+      "c": "Nínive é julgada e esvaziada.",
+      "d": "1:7 afirma fortaleza para quem se refugia."
     },
     "hint": "Ligue fortaleza e cidade vazia.",
     "learningObjective": "Relacionar refúgio e juízo.",
@@ -2805,7 +2805,7 @@
     "options": [
       {
         "id": "a",
-        "text": "curto"
+        "text": "fraco"
       },
       {
         "id": "b",
@@ -2813,7 +2813,7 @@
       },
       {
         "id": "c",
-        "text": "fraco"
+        "text": "curto"
       }
     ],
     "correctOptionId": "b",
@@ -2821,8 +2821,8 @@
     "evidenceSpan": "mas grande em poder",
     "feedbackCorrect": "Ele é grande em poder.",
     "feedbackWrong": {
-      "a": "\"Curto\" não descreve o poder.",
-      "c": "\"Fraco\" é o oposto."
+      "a": "\"Fraco\" é o oposto.",
+      "c": "\"Curto\" não descreve o poder."
     },
     "hint": "É o adjetivo ligado a poder.",
     "learningObjective": "Lembrar o adjetivo do poder.",
@@ -2894,24 +2894,24 @@
     "options": [
       {
         "id": "a",
-        "text": "Parem"
-      },
-      {
-        "id": "b",
         "text": "ninguém se volta"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "tanque de águas"
+      },
+      {
+        "id": "c",
+        "text": "Parem"
       }
     ],
-    "correctOptionId": "b",
-    "correctAnswer": "b",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
     "evidenceSpan": "mas ninguém se volta",
     "feedbackCorrect": "Ninguém se volta apesar do clamor.",
     "feedbackWrong": {
-      "a": "\"Parem\" é o clamor inútil.",
-      "c": "O tanque descreve o passado."
+      "b": "O tanque descreve o passado.",
+      "c": "\"Parem\" é o clamor inútil."
     },
     "hint": "Procure o fim do versículo.",
     "learningObjective": "Reconhecer a fuga irreversível.",
@@ -3057,15 +3057,15 @@
       },
       {
         "id": "b",
-        "text": "Não há abrigo em nenhum dia"
+        "text": "Nínive escapa por sua força"
       },
       {
         "id": "c",
-        "text": "O juízo é só metáfora sem queda"
+        "text": "Não há abrigo em nenhum dia"
       },
       {
         "id": "d",
-        "text": "Nínive escapa por sua força"
+        "text": "O juízo é só metáfora sem queda"
       }
     ],
     "correctOptionId": "a",
@@ -3073,9 +3073,9 @@
     "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
     "feedbackCorrect": "O Senhor abriga os seus e julga a violência de Nínive até esvaziá-la.",
     "feedbackWrong": {
-      "b": "1:7 afirma fortaleza na angústia.",
-      "c": "2:10 e 3:7 descrevem queda real.",
-      "d": "Fortalezas caem como figos precoces."
+      "b": "Fortalezas caem como figos precoces.",
+      "c": "1:7 afirma fortaleza na angústia.",
+      "d": "2:10 e 3:7 descrevem queda real."
     },
     "hint": "Ligue 1:7, 2:10 e 3:7.",
     "learningObjective": "Escolher a interpretação da etapa.",
@@ -3090,9 +3090,9 @@
     "difficulty": "profundezas",
     "type": "order",
     "skill": "interpret",
-    "question": "Qual sequência mostra o Senhor como refúgio e juíza na Escritura?",
-    "prompt": "Qual sequência mostra o Senhor como refúgio e juíza na Escritura?",
-    "cue": "Qual sequência mostra o Senhor como refúgio e juíza na Escritura?",
+    "question": "Qual sequência mostra o Senhor como refúgio e juiz na Escritura?",
+    "prompt": "Qual sequência mostra o Senhor como refúgio e juiz na Escritura?",
+    "cue": "Qual sequência mostra o Senhor como refúgio e juiz na Escritura?",
     "verseRef": "Naum 1:7",
     "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
     "options": [
@@ -3145,7 +3145,7 @@
     "options": [
       {
         "id": "a",
-        "text": "esquecem"
+        "text": "fogem"
       },
       {
         "id": "b",
@@ -3153,7 +3153,7 @@
       },
       {
         "id": "c",
-        "text": "fogem"
+        "text": "esquecem"
       }
     ],
     "correctOptionId": "b",
@@ -3161,8 +3161,8 @@
     "evidenceSpan": "os que nele se refugiam",
     "feedbackCorrect": "Eles se refugiam nele.",
     "feedbackWrong": {
-      "a": "\"Esquecem\" é o oposto.",
-      "c": "\"Fogem\" não é o verbo do fim de 1:7."
+      "a": "\"Fogem\" não é o verbo do fim de 1:7.",
+      "c": "\"Esquecem\" é o oposto."
     },
     "hint": "É o verbo no fim do versículo.",
     "learningObjective": "Lembrar o verbo do abrigo.",
@@ -3197,11 +3197,11 @@
       },
       {
         "id": "b",
-        "text": "Juízo só contra Judá"
+        "text": "Assíria reina para sempre"
       },
       {
         "id": "c",
-        "text": "Assíria reina para sempre"
+        "text": "Juízo só contra Judá"
       }
     ],
     "correctOptionId": "a",
@@ -3209,8 +3209,8 @@
     "evidenceSpan": "Vazia desolada e exaurida ficará",
     "feedbackCorrect": "Nos dois textos, o Senhor desola a Assíria.",
     "feedbackWrong": {
-      "b": "O alvo é a Assíria/Nínive.",
-      "c": "Os textos anunciam desolação."
+      "b": "Os textos anunciam desolação.",
+      "c": "O alvo é a Assíria/Nínive."
     },
     "hint": "Compare o fim da Assíria.",
     "learningObjective": "Ligar Naum a Sofonias.",
@@ -3238,11 +3238,11 @@
       },
       {
         "id": "b",
-        "text": "boca"
+        "text": "fortalezas"
       },
       {
         "id": "c",
-        "text": "fortalezas"
+        "text": "boca"
       }
     ],
     "correctOptionId": "a",
@@ -3250,8 +3250,8 @@
     "evidenceSpan": "como figueiras com figos precoces",
     "feedbackCorrect": "As fortalezas são como figueiras com figos precoces.",
     "feedbackWrong": {
-      "b": "A boca é de quem as come.",
-      "c": "Fortalezas são o sujeito, não a imagem."
+      "b": "Fortalezas são o sujeito, não a imagem.",
+      "c": "A boca é de quem as come."
     },
     "hint": "Procure a comparação.",
     "learningObjective": "Sustentar a fragilidade das fortalezas.",

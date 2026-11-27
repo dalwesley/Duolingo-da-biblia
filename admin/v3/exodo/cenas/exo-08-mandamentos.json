@@ -121,7 +121,7 @@
       },
       {
         "text": "Deus só proíbe outros deuses por insegurança diante de rivais reais.",
-        "why": "As imagens são obra humana do céu, da terra e das águas, não deuses rivais."
+        "why": "As imagens são feitas por mãos humanas à semelhança de coisas do céu, da terra e das águas; não são deuses rivais."
       },
       {
         "text": "O Deus zeloso é mais severo que amoroso com o seu povo liberto.",
@@ -188,9 +188,9 @@
       "difficulty": "semente",
       "type": "find_in_text",
       "skill": "observe",
-      "question": "Em Êxodo 20:2, toque pelo que Deus se apresenta ao povo liberto do Egito.",
-      "prompt": "Em Êxodo 20:2, toque pelo que Deus se apresenta ao povo liberto do Egito.",
-      "cue": "Em Êxodo 20:2, toque pelo que Deus se apresenta ao povo liberto do Egito.",
+      "question": "Em Êxodo 20:2, toque o nome com que Deus se apresenta ao povo liberto.",
+      "prompt": "Em Êxodo 20:2, toque o nome com que Deus se apresenta ao povo liberto.",
+      "cue": "Em Êxodo 20:2, toque o nome com que Deus se apresenta ao povo liberto.",
       "verseRef": "Êxodo 20:2",
       "passageText": "Eu sou o Senhor, teu Deus, que te tirei da terra do Egito, da casa da servidão.",
       "options": [
@@ -215,7 +215,7 @@
         "b": "Isso é o lugar de onde Deus tirou o povo liberto.",
         "c": "Isso é a condição da qual Deus tirou Israel no Egito."
       },
-      "hint": "Procure o nome no início da fala.",
+      "hint": "Procure como Deus se nomeia antes de falar da saída.",
       "learningObjective": "Identificar Deus como libertador no Sinai.",
       "evidence": [
         "Êxodo 20:2"
@@ -526,9 +526,9 @@
       "difficulty": "caminhada",
       "type": "order",
       "skill": "understand",
-      "question": "Como avança a fala de Deus em Êxodo 20:1–3?",
-      "prompt": "Como avança a fala de Deus em Êxodo 20:1–3?",
-      "cue": "Como avança a fala de Deus em Êxodo 20:1–3?",
+      "question": "Como avança a fala de Deus em Êxodo 20:2–3?",
+      "prompt": "Como avança a fala de Deus em Êxodo 20:2–3?",
+      "cue": "Como avança a fala de Deus em Êxodo 20:2–3?",
       "verseRef": "Êxodo 20:2–3",
       "passageText": "Eu sou o Senhor, teu Deus, que te tirei da terra do Egito, da casa da servidão. Não terás outros deuses diante de minha presença.",
       "options": [
@@ -792,11 +792,11 @@
         },
         {
           "id": "b",
-          "text": "Paulo manda fugir da idolatria na igreja"
+          "text": "Jesus resume tudo em amar a Deus"
         },
         {
           "id": "c",
-          "text": "Jesus resume tudo em amar a Deus"
+          "text": "Paulo manda fugir da idolatria na igreja"
         }
       ],
       "correctOptionId": "a",
@@ -807,11 +807,11 @@
       ],
       "correctAnswer": "a,b,c",
       "evidenceSpan": "Não terás outros deuses diante de minha presença",
-      "feedbackCorrect": "Do Sinai a Paulo e ao resumo de Jesus, Deus pede o coração inteiro.",
+      "feedbackCorrect": "Do Sinai ao resumo de Jesus, e dele ao aviso de Paulo, Deus pede o coração inteiro.",
       "feedbackWrong": {
-        "default": "Siga do Sinai à igreja em Paulo, e dela ao resumo de Jesus."
+        "default": "Siga do Sinai ao resumo de Jesus, e dele ao aviso de Paulo à igreja."
       },
-      "hint": "O resumo de Jesus é o ponto de chegada.",
+      "hint": "O aviso de Paulo à igreja é o ponto de chegada.",
       "learningObjective": "Ver o primeiro mandamento como fio até Jesus.",
       "evidence": [
         "Êxodo 20:3",

@@ -127,7 +127,7 @@
         "why": "Salomão diz que se levantou conforme o Senhor prometera (6:10)."
       }
     ],
-    "centralInsight": "O que isso revela sobre a aliança de Deus?",
+    "centralInsight": "O templo é casa de oração de um Deus maior que ela",
     "anchorQuestion": "O que a dedicação mostra sobre Deus, maior que a casa, que ouve o povo?",
     "relatedVerses": [
       {
@@ -337,7 +337,7 @@
       "evidenceSpan": "Os querubins estendiam suas asas sobre o lugar da arca",
       "feedbackCorrect": "As asas dos querubins cobrem a arca e seus varais por cima.",
       "feedbackWrong": {
-        "b": "Varais são cobertos pelas asas, não estendidos sobre arca.",
+        "b": "Os varais são cobertos pelas asas, não estendidos sobre a arca.",
         "c": "Quem estende são os querubins, e o texto cita suas asas."
       },
       "hint": "Veja o que cobre a arca por cima.",
@@ -520,9 +520,9 @@
       "difficulty": "caminhada",
       "type": "find_in_text",
       "skill": "understand",
-      "question": "Em 2 Crônicas 6:8, toque a palavra que marca a virada entre elogio e limite ao desejo de Davi",
-      "prompt": "Em 2 Crônicas 6:8, toque a palavra que marca a virada entre elogio e limite ao desejo de Davi",
-      "cue": "Em 2 Crônicas 6:8, toque a palavra que marca a virada entre elogio e limite ao desejo de Davi",
+      "question": "Em 2 Crônicas 6:8, toque a palavra que abre a resposta do Senhor ao desejo de Davi.",
+      "prompt": "Em 2 Crônicas 6:8, toque a palavra que abre a resposta do Senhor ao desejo de Davi.",
+      "cue": "Em 2 Crônicas 6:8, toque a palavra que abre a resposta do Senhor ao desejo de Davi.",
       "verseRef": "2 Crônicas 6:8",
       "passageText": "Porém o Senhor disse a Davi, meu pai: Já que você desejou edificar uma casa para o meu nome, fez bem em ter esse propósito no coração.",
       "options": [
@@ -542,12 +542,12 @@
       "correctOptionId": "a",
       "correctAnswer": "a",
       "evidenceSpan": "Porém o Senhor disse a Davi, meu pai",
-      "feedbackCorrect": "Essa palavra vira do elogio ao desejo para o limite seguinte.",
+      "feedbackCorrect": "Essa palavra abre a fala do Senhor; o limite ao desejo de Davi só vem em 6:9.",
       "feedbackWrong": {
-        "b": "Nome é para quem seria a casa, não a virada.",
-        "c": "Coração é onde estava o propósito, não a virada."
+        "b": "Nome é para quem seria a casa, não a palavra que abre a fala.",
+        "c": "Coração é onde estava o propósito, não a palavra que abre a fala."
       },
-      "hint": "Procure a primeira palavra do versículo.",
+      "hint": "Procure a palavra que introduz a fala do Senhor.",
       "learningObjective": "Reconhecer o marcador de virada na fala do Senhor.",
       "evidence": [
         "2 Crônicas 6:8"
@@ -576,7 +576,7 @@
         },
         {
           "id": "c",
-          "text": "Davi volta viver e edifica casa"
+          "text": "Davi volta a viver e edifica a casa"
         },
         {
           "id": "d",
@@ -617,7 +617,7 @@
         },
         {
           "id": "b",
-          "text": "Deus escolhe Jerusalém para nome"
+          "text": "Deus escolhe Jerusalém para o seu nome"
         },
         {
           "id": "c",
@@ -787,7 +787,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Salomão fica diante do altar Senhor"
+          "text": "Salomão fica diante do altar do Senhor"
         },
         {
           "id": "b",
@@ -910,7 +910,7 @@
         },
         {
           "id": "b",
-          "text": "O lugar sagrado substitui Deus céu"
+          "text": "O lugar sagrado substitui o Deus do céu"
         },
         {
           "id": "c",
@@ -918,7 +918,7 @@
         },
         {
           "id": "d",
-          "text": "Deus atenta para oração servo"
+          "text": "Deus atenta para a oração do servo"
         }
       ],
       "correctOptionId": "d",
@@ -926,9 +926,9 @@
       "evidenceSpan": "Atenta, pois, para a oração do teu servo e para a sua súplica, ó SENHOR, meu Deus",
       "feedbackCorrect": "Salomão pede que Deus atente e ouça o clamor feito ali.",
       "feedbackWrong": {
-        "a": "A aliança pede andar diante de Deus com todo coração.",
+        "a": "A aliança pede andar diante de Deus de todo o coração.",
         "b": "Deus ouve do céu; o lugar aponta para ele, não o troca.",
-        "c": "O pedido inclui servo e povo de Israel orando ali."
+        "c": "O pedido inclui o servo e o povo de Israel orando ali."
       },
       "hint": "Veja o pedido que Salomão faz a Deus.",
       "learningObjective": "Escolher a interpretação que a oração sustenta.",
@@ -959,7 +959,7 @@
         },
         {
           "id": "c",
-          "text": "Glória enche casa por completo"
+          "text": "A glória enche a casa por completo"
         }
       ],
       "correctOptionId": "a",
@@ -1044,7 +1044,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Confessar e ser perdoado fiel"
+          "text": "Perdão fiel a quem confessa"
         },
         {
           "id": "b",
@@ -1060,7 +1060,7 @@
       "evidenceSpan": "ouça e perdoe",
       "feedbackCorrect": "Salomão pede perdão a quem ora; João promete perdão a quem confessa.",
       "feedbackWrong": {
-        "b": "Nos dois, perdão está ligado a reconhecer diante Deus.",
+        "b": "Nos dois, o perdão está ligado a reconhecer o pecado diante de Deus.",
         "c": "Confessar é o contrário de esconder o pecado."
       },
       "hint": "Compare confissão e perdão nos dois textos.",
@@ -1102,7 +1102,7 @@
       "feedbackCorrect": "O pedido termina em perdão, ouça dos céus e perdoe.",
       "feedbackWrong": {
         "b": "Povo é quem ora; a ação pedida a Deus vem depois.",
-        "c": "Súplicas são o que o povo faz, não ação final Deus."
+        "c": "Súplicas são o que o povo faz, não a ação final de Deus."
       },
       "hint": "Leia o fim do versículo.",
       "learningObjective": "Sustentar com o texto o perdão pedido a Deus.",
@@ -1125,15 +1125,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Deus cumpre palavra que falou"
+          "text": "Deus cumpre a palavra que falou"
         },
         {
           "id": "b",
-          "text": "Salomão assenta no trono Israel"
+          "text": "Salomão se assenta no trono de Israel"
         },
         {
           "id": "c",
-          "text": "Salomão edifica casa ao nome"
+          "text": "Salomão edifica a casa ao nome do Senhor"
         }
       ],
       "correctOptionId": "a",

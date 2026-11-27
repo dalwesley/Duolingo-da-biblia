@@ -16,7 +16,10 @@
  *     { "title": "O Rei chega · cap. 1–4",
  *       "scenes": [ { "ref": "Mateus 2:1–12", "title": "…", "intro": "…",
  *                     "insight": "…", "objective": "…" } ],
- *       "boss": { "title": "Travessia: …", "intro": "…", "insight": "…" } }
+ *       "boss": { "title": "Travessia: …", "intro": "…", "insight": "…",
+ *                 "hook": "Mateus 4:4" } }        // até 2 versos, JFAAL
+ * Cena aceita "hook" (até 2 versos) para o versículo de entrada; sem ele,
+ * vale o 1º e o 2º verso do trecho, com hookRef exato desses versos.
  *   ]
  * }
  * Capítulo de uma cena por bloco (genealogia, lista) entra com "chapters":
@@ -26,7 +29,38 @@ import { execFileSync } from 'child_process';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { ADMIN_DIR, argValue } from './_v3_paths.mjs';
-import { chapterLength, parseRef, splitRanges, versesOf } from './_jfaal.mjs';
+import { BOOK_NAMES, chapterLength, parseRef, passageText } from './_jfaal.mjs';
+
+/**
+ * Versículo de entrada: hookRef e hookVerse têm de ser a MESMA referência
+ * (até 2 versos, um capítulo, faixa contínua) e o texto, a JFAAL dela.
+ * Sem isso, o app mostra um texto que não bate com a referência (foi assim
+ * que os desafios temáticos ficaram com Oseias e Mateus 1 em hookVerse).
+ */
+function hookFrom(ref, where, errors) {
+  const r = parseRef(ref);
+  if (!r || r.start === null) {
+    errors.push(`${where}: hook "${ref}" inválido (um capítulo, faixa contínua; sem ";" ou ",")`);
+    return null;
+  }
+  if (r.end - r.start + 1 > 2) {
+    errors.push(`${where}: hook "${ref}" tem mais de 2 versos`);
+    return null;
+  }
+  const text = passageText(ref);
+  if (!text) {
+    errors.push(`${where}: hook "${ref}" não existe na JFAAL`);
+    return null;
+  }
+  return { hookRef: ref, hookVerse: text };
+}
+
+/** Primeiros 2 versos da cena, com a referência exata desses versos. */
+function defaultHook(r) {
+  const end = Math.min(r.start + 1, r.end);
+  const head = `${BOOK_NAMES[r.book]} ${r.chapter}:${r.start}`;
+  return end === r.start ? head : `${head}–${end}`;
+}
 
 const planPath = argValue('--plan');
 const CHECK = process.argv.includes('--check');
@@ -103,7 +137,8 @@ for (const [mi, mod] of plan.modules.entries()) {
       if (!String(sc[k] || '').trim()) errors.push(`${where}: sem ${k}`);
     }
     if (String(sc.insight || '').length > 140) errors.push(`${where}: insight > 140 caracteres`);
-    const verses = splitRanges(sc.ref).flatMap((rg) => versesOf(rg)).slice(0, 2).map((v) => v.text).join(' ');
+    // "hook" opcional na cena (até 2 versos); senão, os 2 primeiros versos do trecho.
+    const hook = hookFrom(sc.hook || defaultHook(r), where, errors) || {};
     missions.push({
       slug: `${plan.prefix}-${nn(sceneNo)}-${slugify(sc.title)}`,
       title: sc.title,
@@ -112,15 +147,17 @@ for (const [mi, mod] of plan.modules.entries()) {
       type: 'lesson',
       xpReward: 60,
       questions: [],
-      hookRef: sc.ref,
-      hookVerse: verses,
+      ...hook,
       hookNote: sc.insight,
       centralInsight: sc.insight,
       objective: sc.objective,
     });
   }
   const b = mod.boss || {};
-  if (!b.title || !b.intro || !b.insight) errors.push(`etapa ${mi + 1}: Travessia sem title/intro/insight`);
+  if (!b.title || !b.intro || !b.insight || !b.hook) errors.push(`etapa ${mi + 1}: Travessia sem title/intro/insight/hook`);
+  // Antes: hookRef = título e hookVerse = intro (a tela de entrada mostrava o
+  // título como se fosse referência). Agora a Travessia pede um "hook" bíblico.
+  const bossHook = (b.hook && hookFrom(b.hook, `etapa ${mi + 1} (Travessia)`, errors)) || {};
   missions.push({
     slug: `${plan.prefix}-boss-${mi + 1}`,
     title: b.title,
@@ -129,8 +166,7 @@ for (const [mi, mod] of plan.modules.entries()) {
     type: 'boss',
     xpReward: 110,
     questions: [],
-    hookRef: b.title,
-    hookVerse: b.intro,
+    ...bossHook,
     hookNote: b.intro,
     centralInsight: b.insight,
     objective: `Revisão da etapa ${mi + 1}`,

@@ -423,9 +423,9 @@
     "difficulty": "caminhada",
     "type": "complete",
     "skill": "understand",
-    "question": "Em Lucas 2:13, o que a multidão da milícia celestial fez junto ao anjo?",
-    "prompt": "Em Lucas 2:13, o que a multidão da milícia celestial fez junto ao anjo?",
-    "cue": "Em Lucas 2:13, o que a multidão da milícia celestial fez junto ao anjo?",
+    "question": "Em Lucas 2:13, que verbo mostra a chegada da multidão da milícia celestial?",
+    "prompt": "Em Lucas 2:13, que verbo mostra a chegada da multidão da milícia celestial?",
+    "cue": "Em Lucas 2:13, que verbo mostra a chegada da multidão da milícia celestial?",
     "verseRef": "Lucas 2:13",
     "passageText": "E, naquele momento, apareceu com o anjo uma multidão da milícia celestial, louvando a Deus e dizendo:",
     "template": "E, naquele momento, ___ com o anjo uma multidão da milícia celestial, louvando a Deus e dizendo:",
@@ -575,7 +575,7 @@
       "b": "A paz é anunciada para a terra, não atribuída nas alturas.",
       "c": "A terra recebe a paz, não é o que se atribui a Deus."
     },
-    "hint": "Veja a primeira palavra do louvor.",
+    "hint": "Veja o que o louvor dá a Deus nas alturas.",
     "learningObjective": "Sustentar com o texto o louvor a Deus.",
     "evidence": [
       "Lucas 2:14"
@@ -948,7 +948,7 @@
       },
       {
         "id": "c",
-        "text": "moeda"
+        "text": "ovelha"
       }
     ],
     "correctOptionId": "b",
@@ -957,7 +957,7 @@
     "feedbackCorrect": "Era uma das dez dracmas dela, procurada por toda a casa.",
     "feedbackWrong": {
       "a": "Ela não perdeu uma chave, mas parte do que tinha guardado.",
-      "c": "O nome usado por Jesus na história é outro, mais específico."
+      "c": "A ovelha é da primeira história; aqui quem procura é a mulher."
     },
     "hint": "Pense na segunda história da cena.",
     "learningObjective": "Lembrar o objeto perdido da segunda história.",
@@ -1722,7 +1722,7 @@
       "a": "Receber aparece no ensino da criança, não nesta ordem.",
       "b": "Seguir o grupo era a exigência dos discípulos, não a palavra final."
     },
-    "hint": "Veja a primeira palavra da resposta de Jesus.",
+    "hint": "Veja a ordem curta de Jesus a João.",
     "learningObjective": "Lembrar a correção de Jesus à proibição.",
     "evidence": [
       "Lucas 9:50"
@@ -1845,7 +1845,7 @@
       "b": "Isso explica o motivo, não abre o contraste.",
       "c": "Isso indica de quem era o aspecto, não o contraste."
     },
-    "hint": "É a primeira palavra do versículo.",
+    "hint": "Procure a palavra que vira a cena.",
     "learningObjective": "Reconhecer o marcador de contraste no texto.",
     "evidence": [
       "Lucas 9:53"
@@ -2608,7 +2608,7 @@
       "a": "Isso é o que Jesus abre, não a ligação com a fala anterior.",
       "b": "Isso é o que eles compreendem, não o marcador do passo."
     },
-    "hint": "É a primeira palavra do versículo.",
+    "hint": "Procure a palavra que marca o passo seguinte.",
     "learningObjective": "Reconhecer o marcador de sequência no texto.",
     "evidence": [
       "Lucas 24:45"
@@ -3091,9 +3091,9 @@
     "difficulty": "semente",
     "type": "find_in_text",
     "skill": "observe",
-    "question": "Em Lucas 2:11, toque quem nasceu na cidade de Davi.",
-    "prompt": "Em Lucas 2:11, toque quem nasceu na cidade de Davi.",
-    "cue": "Em Lucas 2:11, toque quem nasceu na cidade de Davi.",
+    "question": "Em Lucas 2:11, toque o primeiro título de quem nasceu na cidade de Davi.",
+    "prompt": "Em Lucas 2:11, toque o primeiro título de quem nasceu na cidade de Davi.",
+    "cue": "Em Lucas 2:11, toque o primeiro título de quem nasceu na cidade de Davi.",
     "verseRef": "Lucas 2:11",
     "passageText": "Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor.",
     "options": [

@@ -780,23 +780,23 @@
       "difficulty": "profundezas",
       "type": "order",
       "skill": "interpret",
-      "question": "Qual sequência revela o caminho da restauração que começa em Lamentações 5:21?",
-      "prompt": "Qual sequência revela o caminho da restauração que começa em Lamentações 5:21?",
-      "cue": "Qual sequência revela o caminho da restauração que começa em Lamentações 5:21?",
+      "question": "Qual sequência segue, na Bíblia, o pedido de restauração?",
+      "prompt": "Qual sequência segue, na Bíblia, o pedido de restauração?",
+      "cue": "Qual sequência segue, na Bíblia, o pedido de restauração?",
       "verseRef": "Lamentações 5:21",
       "passageText": "Restaura-nos, Senhor, e seremos restaurados; renova nossos dias como eram antigamente.",
       "options": [
         {
           "id": "a",
-          "text": "O povo pede que Deus o restaure"
-        },
-        {
-          "id": "b",
           "text": "O salmista pede o fim da ira"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Efraim pede para ser convertido"
+        },
+        {
+          "id": "c",
+          "text": "O povo pede que Deus o restaure"
         }
       ],
       "correctOptionId": "a",
@@ -807,11 +807,11 @@
       ],
       "correctAnswer": "a,b,c",
       "evidenceSpan": "Restaura-nos, Senhor",
-      "feedbackCorrect": "O pedido de Lamentações ecoa nos Salmos e no pedido de Efraim em Jeremias.",
+      "feedbackCorrect": "O pedido dos Salmos e o de Efraim voltam no fim de Lamentações.",
       "feedbackWrong": {
-        "default": "Siga a Bíblia: Lamentações, Salmos e Jeremias."
+        "default": "Siga a Bíblia: Salmos, Jeremias e Lamentações."
       },
-      "hint": "Siga a ordem dos livros citados.",
+      "hint": "Pense na ordem dos livros na Bíblia.",
       "learningObjective": "Ver o pedido de restauração como fio que atravessa a Bíblia.",
       "evidence": [
         "Lamentações 5:21",

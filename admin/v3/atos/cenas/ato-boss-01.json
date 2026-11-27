@@ -666,20 +666,20 @@
       "difficulty": "caminhada",
       "type": "complete",
       "skill": "understand",
-      "question": "Em Atos 2:41, quantas pessoas se somaram naquele dia, em número resumido?",
-      "prompt": "Em Atos 2:41, quantas pessoas se somaram naquele dia, em número resumido?",
-      "cue": "Em Atos 2:41, quantas pessoas se somaram naquele dia, em número resumido?",
+      "question": "Em Atos 2:41, quase quantos mil se somaram à igreja naquele dia?",
+      "prompt": "Em Atos 2:41, quase quantos mil se somaram à igreja naquele dia?",
+      "cue": "Em Atos 2:41, quase quantos mil se somaram à igreja naquele dia?",
       "verseRef": "Atos 2:41",
       "passageText": "Assim, foram batizados os que acolheram a sua Palavra com alegria; e naquele dia, somaram-se à igreja quase três mil pessoas.",
       "template": "Assim, foram batizados os que acolheram a sua Palavra com alegria; e naquele dia, somaram-se à igreja quase ___ mil pessoas.",
       "options": [
         {
           "id": "a",
-          "text": "Palavra"
+          "text": "dois"
         },
         {
           "id": "b",
-          "text": "igreja"
+          "text": "cinco"
         },
         {
           "id": "c",
@@ -691,8 +691,8 @@
       "evidenceSpan": "quase três mil pessoas",
       "feedbackCorrect": "Quase três mil se somaram à igreja naquele dia.",
       "feedbackWrong": {
-        "a": "Palavra foi acolhida por quem foi batizado.",
-        "b": "Igreja é o grupo ao qual se somaram pessoas."
+        "a": "O texto fala em quase três mil, não dois mil.",
+        "b": "Quase cinco mil aparece depois, em Atos 4:4."
       },
       "hint": "Olhe o fim do versículo.",
       "learningObjective": "Revisar o fruto do sermão.",

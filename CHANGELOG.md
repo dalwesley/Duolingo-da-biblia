@@ -9,6 +9,16 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+### Fixed
+- Webhook RevenueCat: quem tem o mensal e compra o Pioneiro não perde mais o Plus no servidor quando o mensal vence ou é cancelado, nem o selo de Pioneiro. Antes de gravar um estado desligado ou com data de fim, consulta o entitlement da conta no RevenueCat (só mantém ou liga). Publicado em 26/11
+- Admin › Funil: compras do `plus_pioneer_lifetime` contam como Pioneiro (antes só o anual antigo). Publicado em 26/11
+- Conteúdo Gênesis 1–11 (publicado no Firestore em 26/11, sem versão do app): feedback de "as estrelas" na gen-02 não contradiz mais Gn 1:17–18 / Sl 136:9; "colheu" (quase sinônimo de "tomou") vira "guardou"; 29 dicas que entregavam a resposta passam a só indicar onde olhar; 13 versículos de abertura em JFAAL, incluindo a gen-06, onde "Disse a mulher" fazia a mulher falar primeiro; 10 frases-resumo dos estudos iguais às da trilha. EN/ES (`questions_en/es.json`) e `assets/data/trails.json` atualizados, entram na próxima versão
+
+- Revisão editorial de 138 trilhas (publicada no Firestore em 27/11, sem versão do app): 741 perguntas e 246 estudos corrigidos (121 gabaritos de toque errados em 2 Samuel, 2 Reis, 1 Reis e 1 Crônicas; dicas que entregavam a resposta; opções erradas que também respondiam; ordens que não seguiam o texto ou a ordem dos livros) e 1.674 campos de entrada das cenas (versículo de abertura em JFAAL; Travessias com referência bíblica no lugar do título). Gravado pergunta a pergunta, preservando a ordem embaralhada das opções no Firestore. Gerador (`v3_plan_trail.mjs`) passa a exigir abertura JFAAL de até 2 versos; `check_hooks.mjs` confere
+
+### Changed
+- Docs de monetização conferidas contra o código (26/11): `MONETIZATION.md`, `ROADMAP.md`, `README.md`, `docs/PRODUTO.md`, `docs/TECNICA.md`, `docs/MEDALHAS_CALIBRATION.md`, `docs/PITCH_NOS_VS_ELES.md`, `trilha_app/README.md`
+
 ## [1.0.50] — 2026-11-25 (build 51, iOS 1051)
 
 Primeira versão nas lojas desde a 1.0.49. Junta o corte de 24/11 (build 50, não publicado) com planos novos e uma rodada de correções e desempenho.

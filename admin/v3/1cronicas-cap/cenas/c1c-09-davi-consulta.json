@@ -196,7 +196,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Deus"
+          "text": "Davi"
         },
         {
           "id": "b",
@@ -204,15 +204,15 @@
         },
         {
           "id": "c",
-          "text": "Davi"
+          "text": "Deus"
         }
       ],
       "correctOptionId": "c",
       "correctAnswer": "c",
-      "evidenceSpan": "Davi",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "Isso: \"Deus\" é o que o versículo diz.",
       "feedbackWrong": {
-        "a": "Essa opção não é o trecho pedido.",
+        "a": "\"Davi\" está no versículo, mas não responde à pergunta.",
         "b": "Essa opção não é o trecho pedido."
       },
       "hint": "Procure no versículo o trecho pedido.",
@@ -453,7 +453,7 @@
         },
         {
           "id": "b",
-          "text": "voltou"
+          "text": "mas"
         },
         {
           "id": "c",
@@ -462,8 +462,8 @@
       ],
       "correctOptionId": "b",
       "correctAnswer": "b",
-      "evidenceSpan": "voltou",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "mas",
+      "feedbackCorrect": "Isso: \"mas\" é o que o versículo diz.",
       "feedbackWrong": {
         "a": "Essa opção não é o trecho pedido.",
         "c": "Essa opção não é o trecho pedido."
@@ -703,11 +703,11 @@
       "options": [
         {
           "id": "a",
-          "text": "ordenara"
+          "text": "Deus"
         },
         {
           "id": "b",
-          "text": "Deus"
+          "text": "ordenara"
         },
         {
           "id": "c",
@@ -716,10 +716,10 @@
       ],
       "correctOptionId": "b",
       "correctAnswer": "b",
-      "evidenceSpan": "Deus",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "ordenara",
+      "feedbackCorrect": "Isso: \"ordenara\" é o que o versículo diz.",
       "feedbackWrong": {
-        "a": "Essa opção não é o trecho pedido.",
+        "a": "\"Deus\" está no versículo, mas não responde à pergunta.",
         "c": "Essa opção não é o trecho pedido."
       },
       "hint": "Procure no versículo o trecho pedido.",

@@ -41,9 +41,9 @@
     "difficulty": "semente",
     "type": "find_in_text",
     "skill": "observe",
-    "question": "Em Levítico 8:2, toque o que Moisés tomaria junto com Arão e seus filhos.",
-    "prompt": "Em Levítico 8:2, toque o que Moisés tomaria junto com Arão e seus filhos.",
-    "cue": "Em Levítico 8:2, toque o que Moisés tomaria junto com Arão e seus filhos.",
+    "question": "Em Levítico 8:2, toque o primeiro item que Moisés tomaria depois de Arão e seus filhos.",
+    "prompt": "Em Levítico 8:2, toque o primeiro item que Moisés tomaria depois de Arão e seus filhos.",
+    "cue": "Em Levítico 8:2, toque o primeiro item que Moisés tomaria depois de Arão e seus filhos.",
     "verseRef": "Levítico 8:2",
     "passageText": "Toma Arão e seus filhos com ele, e as vestes, o azeite da unção, assim como o novilho para a expiação do pecado, os dois carneiros e o cesto dos pães sem fermento.",
     "options": [
@@ -65,10 +65,10 @@
     "evidenceSpan": "Toma Arão e seus filhos com ele, e as vestes",
     "feedbackCorrect": "Além das pessoas, Moisés devia tomar também esses itens do serviço.",
     "feedbackWrong": {
-      "b": "O cesto é citado depois, não junto da primeira palavra com ele.",
+      "b": "O cesto também é tomado, mas é o último item da lista.",
       "c": "Os filhos já são citados junto de Arão, não é o item pedido."
     },
-    "hint": "Procure o que vem depois de com ele.",
+    "hint": "Leia a lista de itens na ordem do versículo.",
     "learningObjective": "Identificar itens da consagração.",
     "evidence": [
       "Levítico 8:2"
@@ -321,7 +321,7 @@
       "b": "Isso indica o tabernáculo, não o passo seguinte.",
       "c": "Isso é a ação de Moisés, não a ligação da sequência."
     },
-    "hint": "Procure a primeira palavra do versículo.",
+    "hint": "Procure a palavra que marca a sequência da consagração.",
     "learningObjective": "Reconhecer o marcador de sequência na consagração.",
     "evidence": [
       "Levítico 8:10"
@@ -448,10 +448,10 @@
     "evidenceSpan": "na ponta da orelha direita de Arão",
     "feedbackCorrect": "O sangue tocava ouvir, agir e andar de Arão consagrado.",
     "feedbackWrong": {
-      "a": "O texto cita outra parte do corpo ligada a ouvir.",
+      "a": "O ombro não é citado entre as partes tocadas pelo sangue.",
       "b": "A mitra ia sobre a cabeça, não é onde o sangue foi posto aqui."
     },
-    "hint": "Procure a primeira parte do corpo citada.",
+    "hint": "Releia a lista de lugares onde o sangue foi posto.",
     "learningObjective": "Compreender o alcance do sangue da consagração.",
     "evidence": [
       "Levítico 8:23"
@@ -575,7 +575,7 @@
       "b": "Isso é o material posto na mitra, não o nome dado ao conjunto.",
       "c": "Isso indica o lugar na mitra, não o nome sagrado."
     },
-    "hint": "Procure o nome depois de lâmina de ouro.",
+    "hint": "Procure o nome que liga a lâmina à santidade.",
     "learningObjective": "Sustentar a marca de santidade sobre Arão.",
     "evidence": [
       "Levítico 8:9"
@@ -664,7 +664,7 @@
     "feedbackWrong": {
       "default": "Comece por Arão; Jesus aparece no fim em Hebreus."
     },
-    "hint": "Siga Arão, sacerdotes e depois Jesus.",
+    "hint": "Pense em quem precisa de oferta e em quem não precisa.",
     "learningObjective": "Ver de Arão ao sumo sacerdote perfeito em Hebreus.",
     "evidence": [
       "Levítico 8:12",
@@ -826,7 +826,7 @@
     "correctOptionId": "b",
     "correctAnswer": "b",
     "evidenceSpan": "E os filhos de Arão, Nadabe e Abiú, tomaram",
-    "feedbackCorrect": "Os dois filhos mais citados de Arão tomaram os incensários.",
+    "feedbackCorrect": "Nadabe e Abiú, filhos de Arão, tomaram os incensários.",
     "feedbackWrong": {
       "a": "Isso é o que colocaram nos incensários, não quem os tomou.",
       "c": "Isso indica cada filho, mas não nomeia os dois."
@@ -961,7 +961,7 @@
       "a": "Farinha não é o que eles põem sobre o fogo aqui.",
       "c": "Azeite aparece no pão da consagração, não sobre este fogo."
     },
-    "hint": "Veja o que vem depois de puseram.",
+    "hint": "Pense no que se queimava nos incensários.",
     "learningObjective": "Lembrar o que acompanhou o fogo estranho.",
     "evidence": [
       "Levítico 10:1"
@@ -1084,7 +1084,7 @@
       "a": "Isso é a ação de Moisés, não a ligação da sequência.",
       "b": "Isso é o que foi aspergido, não o marcador inicial."
     },
-    "hint": "Procure a primeira palavra do versículo.",
+    "hint": "Procure a palavra que marca a sequência com os filhos.",
     "learningObjective": "Reconhecer sequência na consagração dos filhos.",
     "evidence": [
       "Levítico 8:24"
@@ -1594,7 +1594,7 @@
       "a": "A carne é de quem a vida é descrita, não onde ela está.",
       "c": "O altar é o destino dado por Deus, não onde a vida está."
     },
-    "hint": "Procure o que vem logo depois de está.",
+    "hint": "Procure onde o texto diz que a vida está.",
     "learningObjective": "Identificar onde o texto coloca a vida da carne.",
     "evidence": [
       "Levítico 17:11"
@@ -1803,7 +1803,7 @@
     "correctOptionId": "false",
     "correctAnswer": "false",
     "evidenceSpan": "eu o dei sobre o altar para expiar por vocês",
-    "feedbackCorrect": "A vida no sangue leva ao contrário e ele é dado no altar, não comido.",
+    "feedbackCorrect": "Justamente porque a vida está no sangue, ele é dado no altar, não comido.",
     "feedbackWrong": {
       "true": "Releia o destino que Deus dá ao sangue neste versículo."
     },
@@ -1847,7 +1847,7 @@
       "a": "Isso é a ordem dada, não a palavra que a liga ao motivo.",
       "c": "Essa expressão introduz a fala, não a ligação com o motivo."
     },
-    "hint": "Procure o começo do versículo.",
+    "hint": "Procure a expressão que retoma o motivo dito antes.",
     "learningObjective": "Reconhecer o marcador que liga motivo e ordem.",
     "evidence": [
       "Levítico 17:12"
@@ -2171,11 +2171,11 @@
       },
       {
         "id": "b",
-        "text": "Hebreus liga sangue e perdão dos pecados"
+        "text": "Jesus fala do seu sangue para perdão"
       },
       {
         "id": "c",
-        "text": "Jesus fala do seu sangue para perdão"
+        "text": "Hebreus liga sangue e perdão dos pecados"
       }
     ],
     "correctOptionId": "a",
@@ -2186,11 +2186,11 @@
     ],
     "correctAnswer": "a,b,c",
     "evidenceSpan": "a vida de toda carne está em seu sangue",
-    "feedbackCorrect": "O sangue no altar aponta para o perdão pleno anunciado depois.",
+    "feedbackCorrect": "Do altar de Levítico às palavras de Jesus na ceia, e delas à explicação de Hebreus.",
     "feedbackWrong": {
-      "default": "Comece em Levítico; Hebreus e o Evangelho vêm depois."
+      "default": "Comece em Levítico; Jesus fala na ceia antes de Hebreus explicar."
     },
-    "hint": "Siga Levítico, depois Hebreus e o Evangelho.",
+    "hint": "Pense em quem falou primeiro: Jesus ou o autor de Hebreus.",
     "learningObjective": "Ver o sangue do altar como começo de um fio bíblico.",
     "evidence": [
       "Levítico 17:11",
@@ -2442,7 +2442,7 @@
     ],
     "correctAnswer": "a,b,c",
     "evidenceSpan": "Tomará os dois bodes",
-    "feedbackCorrect": "Os bodes são tomados, colocados diante do Senhor e levados à porta.",
+    "feedbackCorrect": "Arão toma os dois bodes e os coloca diante do Senhor, à porta da tenda.",
     "feedbackWrong": {
       "default": "Comece pelos dois bodes tomados por Arão."
     },
@@ -2610,7 +2610,7 @@
       "a": "Isso é a ação de Arão, não a ligação com as sortes.",
       "b": "Isso nomeia para quem é a sorte, não a sequência."
     },
-    "hint": "Procure a primeira palavra do versículo.",
+    "hint": "Procure a palavra que liga as sortes ao passo seguinte.",
     "learningObjective": "Reconhecer o marcador de sequência depois das sortes.",
     "evidence": [
       "Levítico 16:9"
@@ -2953,7 +2953,7 @@
     "feedbackWrong": {
       "default": "Comece por Arão e sua casa; Hebreus vem depois."
     },
-    "hint": "Siga Levítico e depois a carta aos Hebreus.",
+    "hint": "Pense no rito anual e em quem o cumpre de uma vez.",
     "learningObjective": "Ver a expiação de Levítico à luz do que Hebreus anuncia.",
     "evidence": [
       "Levítico 16:11",
@@ -3221,9 +3221,9 @@
     "difficulty": "semente",
     "type": "complete",
     "skill": "observe",
-    "question": "Em Levítico 4:28, como devia ser a cabra trazida pelo pecado, sem o quê?",
-    "prompt": "Em Levítico 4:28, como devia ser a cabra trazida pelo pecado, sem o quê?",
-    "cue": "Em Levítico 4:28, como devia ser a cabra trazida pelo pecado, sem o quê?",
+    "question": "Em Levítico 4:28, a cabra trazida pelo pecado devia ser sem o quê?",
+    "prompt": "Em Levítico 4:28, a cabra trazida pelo pecado devia ser sem o quê?",
+    "cue": "Em Levítico 4:28, a cabra trazida pelo pecado devia ser sem o quê?",
     "verseRef": "Levítico 4:28",
     "passageText": "Se o pecado, do qual tomou conhecimento, lhe for notificado, então trará como oferta uma cabra sem defeito, pelo pecado que cometeu.",
     "template": "Se o pecado, do qual tomou conhecimento, lhe for notificado, então trará como oferta uma cabra sem ___, pelo pecado que cometeu.",
@@ -3456,7 +3456,7 @@
       "a": "Isso nomeia o dono da sorte, não a sequência.",
       "c": "Isso é a ação, não a ligação com as sortes."
     },
-    "hint": "Procure a primeira palavra do versículo.",
+    "hint": "Procure a palavra que liga as sortes ao passo seguinte.",
     "learningObjective": "Reconhecer o marcador de sequência.",
     "evidence": [
       "Levítico 16:9"
@@ -3541,11 +3541,11 @@
     ],
     "correctAnswer": "a,b,c",
     "evidenceSpan": "o oferecerá como oferta pelo pecado",
-    "feedbackCorrect": "Um bode é oferecido e o outro é apresentado vivo ao deserto.",
+    "feedbackCorrect": "Um bode é oferecido; o outro é apresentado vivo e enviado ao deserto.",
     "feedbackWrong": {
       "default": "O bode oferecido vem no versículo 9, antes do vivo."
     },
-    "hint": "O versículo 9 vem antes do 10.",
+    "hint": "Veja o destino de cada bode, na ordem do texto.",
     "learningObjective": "Compreender os dois destinos dos bodes.",
     "evidence": [
       "Levítico 16:9–10"
@@ -3586,7 +3586,7 @@
       "b": "Isso Arão tomava com brasas, não o que a nuvem cobria.",
       "c": "O véu é o limite atravessado, não o que era coberto."
     },
-    "hint": "Procure o que vem depois de cubra.",
+    "hint": "Procure o que estava sobre o Testemunho.",
     "learningObjective": "Compreender o cuidado na entrada de Arão.",
     "evidence": [
       "Levítico 16:13"
@@ -4264,7 +4264,7 @@
       "a": "Os sábados deviam ser guardados, não evitados.",
       "b": "Pai e mãe deviam ser respeitados, não recusados."
     },
-    "hint": "Veja o que vem depois de voltem.",
+    "hint": "Leia a ordem que vem com a proibição.",
     "learningObjective": "Lembrar a recusa que acompanha a santidade.",
     "evidence": [
       "Levítico 19:4"
@@ -4517,7 +4517,7 @@
       "a": "Ídolos deviam ser recusados, não guardados.",
       "b": "Neste versículo, o guardado junto aos pais recebe outro nome."
     },
-    "hint": "Veja o que vem depois de guardará.",
+    "hint": "Pense no tempo separado para Deus.",
     "learningObjective": "Compreender santidade em casa e no tempo.",
     "evidence": [
       "Levítico 19:3"
@@ -4562,7 +4562,7 @@
     "evidenceSpan": "Serão santos porque eu, o SENHOR, seu Deus, sou santo",
     "feedbackCorrect": "Pedro cita quase as mesmas palavras para o povo de Deus.",
     "feedbackWrong": {
-      "a": "Pedro cita a ordem contra trocar Deus por ídolos.",
+      "a": "Pedro cita o chamado à santidade, não uma licença para ídolos.",
       "b": "Pedro repete o chamado ao povo de Deus, não só a sacerdotes."
     },
     "hint": "Compare a frase citada nos dois trechos.",
@@ -4731,7 +4731,7 @@
     "feedbackWrong": {
       "default": "Comece por Levítico; Pedro e Hebreus vêm depois."
     },
-    "hint": "Siga Levítico, cartas e Hebreus.",
+    "hint": "Pense em chamado, repetição e alvo final.",
     "learningObjective": "Ver o chamado à santidade atravessando a Bíblia.",
     "evidence": [
       "Levítico 19:2",
@@ -5190,7 +5190,7 @@
     "correctOptionId": "d",
     "correctAnswer": "d",
     "evidenceSpan": "Para que os filhos de Israel tragam seus sacrifícios",
-    "feedbackCorrect": "O campo aberto devia ceder ao lugar e ao Senhor da oferta.",
+    "feedbackCorrect": "Os sacrifícios saíam do campo aberto e iam ao Senhor, no lugar que ele indicou.",
     "feedbackWrong": {
       "a": "A oferta era ao Senhor, não renda do sacerdote.",
       "b": "Sangue e gordura iam justamente sobre o altar.",
@@ -5405,7 +5405,7 @@
       "a": "Isso indica diante de quem as nações saem, não a ordem.",
       "b": "Isso completa a ordem, mas o toque pedido é a ordem inicial."
     },
-    "hint": "Procure o começo do versículo.",
+    "hint": "Procure a ordem, não o motivo.",
     "learningObjective": "Sustentar a separação das práticas das nações.",
     "evidence": [
       "Levítico 18:24"
@@ -5494,7 +5494,7 @@
     "feedbackWrong": {
       "default": "Comece por Levítico; Paulo e Pedro vêm depois."
     },
-    "hint": "Siga Levítico, Romanos e depois Pedro.",
+    "hint": "Pense na ordem dos livros na Bíblia.",
     "learningObjective": "Ver obediência e santidade como fio bíblico.",
     "evidence": [
       "Levítico 18:5",
@@ -5763,9 +5763,9 @@
     "difficulty": "semente",
     "type": "complete",
     "skill": "observe",
-    "question": "Em Levítico 19:4, de que metal eram os deuses que o povo não devia fazer?",
-    "prompt": "Em Levítico 19:4, de que metal eram os deuses que o povo não devia fazer?",
-    "cue": "Em Levítico 19:4, de que metal eram os deuses que o povo não devia fazer?",
+    "question": "Em Levítico 19:4, como era o metal dos deuses que o povo não devia fazer?",
+    "prompt": "Em Levítico 19:4, como era o metal dos deuses que o povo não devia fazer?",
+    "cue": "Em Levítico 19:4, como era o metal dos deuses que o povo não devia fazer?",
     "verseRef": "Levítico 19:4",
     "passageText": "Não se voltem para os ídolos, nem se façam deuses de metal fundido; eu sou o SENHOR, o seu Deus.",
     "template": "Não se voltem para os ídolos, nem se façam deuses de metal ___; eu sou o SENHOR, o seu Deus.",
@@ -5879,7 +5879,7 @@
       "a": "O altar é o destino dado, não onde a vida está.",
       "b": "Carne é de quem a vida é descrita, não onde ela está."
     },
-    "hint": "Procure o que vem depois de está.",
+    "hint": "Procure onde o texto diz que a vida está.",
     "learningObjective": "Revisar onde o texto coloca a vida.",
     "evidence": [
       "Levítico 17:11"
@@ -6100,9 +6100,9 @@
     "difficulty": "caminhada",
     "type": "complete",
     "skill": "understand",
-    "question": "Em Levítico 18:3, segundo o que Israel não devia fazer, seguindo Egito e Canaã?",
-    "prompt": "Em Levítico 18:3, segundo o que Israel não devia fazer, seguindo Egito e Canaã?",
-    "cue": "Em Levítico 18:3, segundo o que Israel não devia fazer, seguindo Egito e Canaã?",
+    "question": "Em Levítico 18:3, Israel não devia fazer segundo o quê do Egito e de Canaã?",
+    "prompt": "Em Levítico 18:3, Israel não devia fazer segundo o quê do Egito e de Canaã?",
+    "cue": "Em Levítico 18:3, Israel não devia fazer segundo o quê do Egito e de Canaã?",
     "verseRef": "Levítico 18:3",
     "passageText": "Não fareis segundo as práticas da terra do Egito, onde habitastes, nem segundo as práticas da terra de Canaã, para onde vos levo, nem seguireis os seus estatutos.",
     "template": "Não fareis segundo as ___ da terra do Egito, onde habitastes, nem segundo as práticas da terra de Canaã, para onde vos levo, nem seguireis os seus estatutos.",
@@ -6128,7 +6128,7 @@
       "a": "Gerações aparecem em estatuto perpétuo, não aqui.",
       "b": "Terras são os lugares citados, não o que seguir."
     },
-    "hint": "Veja o que vem depois de segundo.",
+    "hint": "Pense no modo de viver daquelas terras.",
     "learningObjective": "Compreender a vida distinta pedida ao povo.",
     "evidence": [
       "Levítico 18:3"
@@ -6173,7 +6173,7 @@
     "evidenceSpan": "Serão santos porque eu, o SENHOR, seu Deus, sou santo",
     "feedbackCorrect": "Pedro cita o chamado de Levítico para os crentes.",
     "feedbackWrong": {
-      "a": "Pedro cita o Deus santo contra ídolos.",
+      "a": "Pedro cita o chamado à santidade, não uma licença para ídolos.",
       "b": "Pedro repete o chamado ao povo de Deus."
     },
     "hint": "Compare a frase nos dois trechos.",
@@ -6406,11 +6406,11 @@
       },
       {
         "id": "b",
-        "text": "Pedro repete sede santos aos crentes"
+        "text": "Paulo fala de escolhidos para ser santos"
       },
       {
         "id": "c",
-        "text": "Paulo fala de escolhidos para ser santos"
+        "text": "Pedro repete sede santos aos crentes"
       }
     ],
     "correctOptionId": "a",
@@ -6421,11 +6421,11 @@
     ],
     "correctAnswer": "a,b,c",
     "evidenceSpan": "Serão santos porque eu, o SENHOR, seu Deus, sou santo",
-    "feedbackCorrect": "Levítico chama, Pedro repete e Paulo fala de escolhidos santos.",
+    "feedbackCorrect": "Levítico chama, Paulo fala de escolhidos para ser santos e Pedro repete o chamado.",
     "feedbackWrong": {
-      "default": "Comece por Levítico e siga pelas cartas."
+      "default": "Comece por Levítico; depois Efésios e, por fim, 1 Pedro."
     },
-    "hint": "Siga Levítico, Pedro e depois Efésios.",
+    "hint": "Siga a ordem dos livros na Bíblia.",
     "learningObjective": "Ver o fio da santidade nas cartas.",
     "evidence": [
       "Levítico 19:2",
@@ -6497,7 +6497,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Viver pelos preceitos de Deus"
+        "text": "Mesma frase sobre viver pela lei"
       },
       {
         "id": "b",
@@ -6511,7 +6511,7 @@
     "correctOptionId": "a",
     "correctAnswer": "a",
     "evidenceSpan": "o homem viverá por meio deles",
-    "feedbackCorrect": "Paulo cita Moisés e a frase sobre viver pelos preceitos.",
+    "feedbackCorrect": "Paulo cita Lv 18:5 para descrever a justiça que vem da lei e, logo depois, a contrasta com a justiça da fé.",
     "feedbackWrong": {
       "b": "Paulo cita Levítico, não aprova copiar as nações.",
       "c": "O texto citado liga cumprir e viver."

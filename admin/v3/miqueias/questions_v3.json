@@ -68,7 +68,7 @@
       "a": "Isso descreve como andar com Deus, não o que praticar.",
       "c": "Isso é o que ele deve amar, não o verbo praticar."
     },
-    "hint": "Procure o primeiro item da lista do versículo.",
+    "hint": "Pense no que se faz no tribunal e no mercado.",
     "learningObjective": "Identificar a justiça como prática exigida por Deus.",
     "evidence": [
       "Miqueias 6:8"
@@ -830,7 +830,7 @@
       "a": "Judá é a região maior; o lugar nomeado vem antes.",
       "b": "Israel é o povo sobre quem ele reinará."
     },
-    "hint": "Procure o nome próprio no começo do versículo.",
+    "hint": "Pense na cidade de Davi.",
     "learningObjective": "Identificar Belém como lugar da promessa.",
     "evidence": [
       "Miqueias 5:2"
@@ -1395,9 +1395,9 @@
     "difficulty": "profundezas",
     "type": "order",
     "skill": "interpret",
-    "question": "Qual sequência revela o caminho da promessa de Belém?",
-    "prompt": "Qual sequência revela o caminho da promessa de Belém?",
-    "cue": "Qual sequência revela o caminho da promessa de Belém?",
+    "question": "Qual sequência segue os fatos, da promessa ao nascimento?",
+    "prompt": "Qual sequência segue os fatos, da promessa ao nascimento?",
+    "cue": "Qual sequência segue os fatos, da promessa ao nascimento?",
     "verseRef": "Miqueias 5:2",
     "passageText": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade.",
     "options": [
@@ -1407,11 +1407,11 @@
       },
       {
         "id": "b",
-        "text": "Os escribas indicam Belém a Herodes"
+        "text": "O menino nasce e é posto numa manjedoura"
       },
       {
         "id": "c",
-        "text": "O menino nasce e é posto numa manjedoura"
+        "text": "Os escribas indicam Belém a Herodes"
       }
     ],
     "correctOptionId": "a",
@@ -1422,11 +1422,11 @@
     ],
     "correctAnswer": "a,b,c",
     "evidenceSpan": "de você me sairá aquele que deve reinar em Israel",
-    "feedbackCorrect": "O fio vai da promessa antiga à citação e ao nascimento.",
+    "feedbackCorrect": "O fio vai da promessa antiga ao nascimento e à citação a Herodes.",
     "feedbackWrong": {
-      "default": "Comece pela promessa em Miqueias."
+      "default": "Siga a história: profecia, nascimento e, depois, a visita dos magos."
     },
-    "hint": "Siga a ordem: profeta, citação, nascimento.",
+    "hint": "Os magos chegam depois que o menino nasce.",
     "learningObjective": "Ver Belém num fio que chega ao Evangelho.",
     "evidence": [
       "Miqueias 5:2",
@@ -1469,7 +1469,7 @@
       "a": "Começos é genérico; o versículo usa um termo próprio.",
       "c": "Raízes é ideia parecida, mas não é a palavra do texto."
     },
-    "hint": "Procure o substantivo antes de desde.",
+    "hint": "Pense no ponto de partida de uma família.",
     "learningObjective": "Lembrar o termo da origem do reinante.",
     "evidence": [
       "Miqueias 5:2"
@@ -1695,9 +1695,9 @@
     "difficulty": "semente",
     "type": "complete",
     "skill": "observe",
-    "question": "Em Miqueias 4:4, debaixo de que planta cada um se sentará sem medo?",
-    "prompt": "Em Miqueias 4:4, debaixo de que planta cada um se sentará sem medo?",
-    "cue": "Em Miqueias 4:4, debaixo de que planta cada um se sentará sem medo?",
+    "question": "Em Miqueias 4:4, qual é a primeira planta sob a qual cada um se sentará?",
+    "prompt": "Em Miqueias 4:4, qual é a primeira planta sob a qual cada um se sentará?",
+    "cue": "Em Miqueias 4:4, qual é a primeira planta sob a qual cada um se sentará?",
     "verseRef": "Miqueias 4:4",
     "passageText": "Mas cada um se sentará debaixo da sua videira e debaixo da sua figueira, e não haverá quem os espante porque a boca do Senhor dos Exércitos o declarou.",
     "template": "Mas cada um se sentará debaixo da sua ___ e debaixo da sua figueira, e não haverá quem os espante porque a boca do Senhor dos Exércitos o declarou.",
@@ -1723,7 +1723,7 @@
       "b": "A segunda planta aparece logo depois na mesma frase.",
       "c": "Oliveira não é a primeira planta deste versículo."
     },
-    "hint": "Olhe a primeira planta citada no versículo.",
+    "hint": "Leia o começo da promessa de descanso.",
     "learningObjective": "Revisar a imagem de descanso.",
     "evidence": [
       "Miqueias 4:4"
@@ -3985,9 +3985,9 @@
     "difficulty": "profundezas",
     "type": "complete",
     "skill": "interpret",
-    "question": "Em Miqueias 5:4, na grandeza de que nome o reinante cuidará do povo?",
-    "prompt": "Em Miqueias 5:4, na grandeza de que nome o reinante cuidará do povo?",
-    "cue": "Em Miqueias 5:4, na grandeza de que nome o reinante cuidará do povo?",
+    "question": "Em Miqueias 5:4, além da força do Senhor, em que o reinante cuidará do povo?",
+    "prompt": "Em Miqueias 5:4, além da força do Senhor, em que o reinante cuidará do povo?",
+    "cue": "Em Miqueias 5:4, além da força do Senhor, em que o reinante cuidará do povo?",
     "verseRef": "Miqueias 5:4",
     "passageText": "Ele se manterá firme e cuidará do povo na força do Senhor, na majestade do nome do Senhor, seu Deus; e eles habitarão seguros, porque agora ele será engrandecido até os confins da terra.",
     "template": "Ele se manterá firme e cuidará do povo na força do Senhor, na ___ do nome do Senhor, seu Deus; e eles habitarão seguros, porque agora ele será engrandecido até os confins da terra.",
@@ -4013,7 +4013,7 @@
       "b": "Presença é verdade vizinha, mas não é a palavra retirada.",
       "c": "Bondade não é o substantivo usado nesta parte."
     },
-    "hint": "Procure o substantivo depois da preposição na.",
+    "hint": "Pense na grandeza de um rei.",
     "learningObjective": "Lembrar o termo ligado ao nome do Senhor.",
     "evidence": [
       "Miqueias 5:4"
@@ -4267,7 +4267,7 @@
       "a": "Distância é o contrário da aproximação misericordiosa.",
       "b": "Orgulho não combina com o gesto de Deus aqui."
     },
-    "hint": "Olhe a primeira palavra do versículo.",
+    "hint": "Pense no sentimento de quem perdoa.",
     "learningObjective": "Lembrar a compaixão de Deus.",
     "evidence": [
       "Miqueias 7:19"

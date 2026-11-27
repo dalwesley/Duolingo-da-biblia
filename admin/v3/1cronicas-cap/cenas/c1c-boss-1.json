@@ -213,11 +213,11 @@
       "options": [
         {
           "id": "a",
-          "text": "filhos"
+          "text": "Acar"
         },
         {
           "id": "b",
-          "text": "Acar"
+          "text": "filhos"
         },
         {
           "id": "c",
@@ -226,10 +226,10 @@
       ],
       "correctOptionId": "a",
       "correctAnswer": "a",
-      "evidenceSpan": "filhos",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "Acar",
+      "feedbackCorrect": "Isso: \"Acar\" é o que o versículo diz.",
       "feedbackWrong": {
-        "b": "Essa opção não é o trecho pedido.",
+        "b": "\"filhos\" está no versículo, mas não responde à pergunta.",
         "c": "Essa opção não é o trecho pedido."
       },
       "hint": "Procure no versículo o trecho pedido.",
@@ -435,7 +435,7 @@
         },
         {
           "id": "b",
-          "text": "Arão"
+          "text": "Israel"
         },
         {
           "id": "c",
@@ -444,8 +444,8 @@
       ],
       "correctOptionId": "b",
       "correctAnswer": "b",
-      "evidenceSpan": "Arão",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "Israel",
+      "feedbackCorrect": "Isso: \"Israel\" é o que o versículo diz.",
       "feedbackWrong": {
         "a": "Essa opção não é o trecho pedido.",
         "c": "Essa opção não é o trecho pedido."
@@ -558,13 +558,13 @@
         },
         {
           "id": "c",
-          "text": "Foram"
+          "text": "porque"
         }
       ],
       "correctOptionId": "c",
       "correctAnswer": "c",
-      "evidenceSpan": "Foram",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "porque",
+      "feedbackCorrect": "Isso: \"porque\" é o que o versículo diz.",
       "feedbackWrong": {
         "a": "Essa opção não é o trecho pedido.",
         "b": "Essa opção não é o trecho pedido."
@@ -769,7 +769,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Israel"
+          "text": "por causa"
         },
         {
           "id": "b",
@@ -782,8 +782,8 @@
       ],
       "correctOptionId": "a",
       "correctAnswer": "a",
-      "evidenceSpan": "Israel",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "por causa",
+      "feedbackCorrect": "Isso: \"por causa\" é o que o versículo diz.",
       "feedbackWrong": {
         "b": "Essa opção não é o trecho pedido.",
         "c": "Essa opção não é o trecho pedido."
@@ -880,9 +880,9 @@
       "difficulty": "profundezas",
       "type": "find_in_text",
       "skill": "interpret",
-      "question": "Em 1 Crônicas 6:49, toque o trecho que sustenta a finalidade do culto.",
-      "prompt": "Em 1 Crônicas 6:49, toque o trecho que sustenta a finalidade do culto.",
-      "cue": "Em 1 Crônicas 6:49, toque o trecho que sustenta a finalidade do culto.",
+      "question": "Em 1 Crônicas 6:49, toque o lugar de todo o serviço de Arão.",
+      "prompt": "Em 1 Crônicas 6:49, toque o lugar de todo o serviço de Arão.",
+      "cue": "Em 1 Crônicas 6:49, toque o lugar de todo o serviço de Arão.",
       "verseRef": "1 Crônicas 6:49",
       "passageText": "E Arão e seus filhos faziam ofertas sobre o altar do holocausto e sobre o altar do incenso, em todo o serviço do Lugar Santíssimo, e para a expiação de Israel, conforme tudo o que Moisés, servo de Deus, havia ordenado.",
       "options": [
@@ -892,7 +892,7 @@
         },
         {
           "id": "b",
-          "text": "faziam"
+          "text": "Lugar Santíssimo"
         },
         {
           "id": "c",
@@ -901,8 +901,8 @@
       ],
       "correctOptionId": "b",
       "correctAnswer": "b",
-      "evidenceSpan": "faziam",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "Lugar Santíssimo",
+      "feedbackCorrect": "Isso: \"Lugar Santíssimo\" é o que o versículo diz.",
       "feedbackWrong": {
         "a": "Essa opção não é o trecho pedido.",
         "c": "Essa opção não é o trecho pedido."
@@ -1109,7 +1109,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Judá"
+          "text": "mau"
         },
         {
           "id": "b",
@@ -1122,8 +1122,8 @@
       ],
       "correctOptionId": "a",
       "correctAnswer": "a",
-      "evidenceSpan": "Judá",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "mau",
+      "feedbackCorrect": "Isso: \"mau\" é o que o versículo diz.",
       "feedbackWrong": {
         "b": "Essa opção não é o trecho pedido.",
         "c": "Essa opção não é o trecho pedido."

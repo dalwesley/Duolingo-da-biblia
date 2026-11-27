@@ -196,11 +196,11 @@
       "options": [
         {
           "id": "a",
-          "text": "filhos"
+          "text": "Acar"
         },
         {
           "id": "b",
-          "text": "Acar"
+          "text": "filhos"
         },
         {
           "id": "c",
@@ -209,10 +209,10 @@
       ],
       "correctOptionId": "a",
       "correctAnswer": "a",
-      "evidenceSpan": "filhos",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "Acar",
+      "feedbackCorrect": "Isso: \"Acar\" é o que o versículo diz.",
       "feedbackWrong": {
-        "b": "Essa opção não é o trecho pedido.",
+        "b": "\"filhos\" está no versículo, mas não responde à pergunta.",
         "c": "Essa opção não é o trecho pedido."
       },
       "hint": "Procure no versículo o trecho pedido.",

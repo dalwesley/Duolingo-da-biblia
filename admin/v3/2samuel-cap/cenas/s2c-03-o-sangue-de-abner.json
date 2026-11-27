@@ -193,9 +193,9 @@
       "difficulty": "semente",
       "type": "find_in_text",
       "skill": "observe",
-      "question": "Em 2 Samuel 3:27, toque onde Joabe fere Abner.",
-      "prompt": "Em 2 Samuel 3:27, toque onde Joabe fere Abner.",
-      "cue": "Em 2 Samuel 3:27, toque onde Joabe fere Abner.",
+      "question": "Em 2 Samuel 3:27, toque em que parte do corpo Joabe fere Abner.",
+      "prompt": "Em 2 Samuel 3:27, toque em que parte do corpo Joabe fere Abner.",
+      "cue": "Em 2 Samuel 3:27, toque em que parte do corpo Joabe fere Abner.",
       "verseRef": "2 Samuel 3:27",
       "passageText": "E, ao retornar Abner a Hebrom, Joabe o levou à parte, no interior da porta, para falar-lhe em segredo; e ali o feriu no abdômen, e ele morreu, por conta da vingança do sangue de Asael, seu irmão.",
       "options": [
@@ -205,7 +205,7 @@
         },
         {
           "id": "b",
-          "text": "retornar"
+          "text": "abdômen"
         },
         {
           "id": "c",
@@ -214,8 +214,8 @@
       ],
       "correctOptionId": "b",
       "correctAnswer": "b",
-      "evidenceSpan": "retornar",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "abdômen",
+      "feedbackCorrect": "Isso: \"abdômen\" é o que o versículo diz.",
       "feedbackWrong": {
         "a": "Essa opção não é o trecho pedido.",
         "c": "Essa opção não é o trecho pedido."
@@ -458,7 +458,7 @@
         },
         {
           "id": "b",
-          "text": "Joabe"
+          "text": "pois"
         },
         {
           "id": "c",
@@ -467,8 +467,8 @@
       ],
       "correctOptionId": "b",
       "correctAnswer": "b",
-      "evidenceSpan": "Joabe",
-      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "Isso: \"pois\" é o que o versículo diz.",
       "feedbackWrong": {
         "a": "Essa opção não é o trecho pedido.",
         "c": "Essa opção não é o trecho pedido."

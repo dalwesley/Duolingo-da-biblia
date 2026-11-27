@@ -41,9 +41,9 @@
     "difficulty": "semente",
     "type": "find_in_text",
     "skill": "observe",
-    "question": "Em Lamentações 3:23, toque o que se renova a cada manhã.",
-    "prompt": "Em Lamentações 3:23, toque o que se renova a cada manhã.",
-    "cue": "Em Lamentações 3:23, toque o que se renova a cada manhã.",
+    "question": "Em Lamentações 3:23, toque o verbo que diz o que acontece a cada manhã.",
+    "prompt": "Em Lamentações 3:23, toque o verbo que diz o que acontece a cada manhã.",
+    "cue": "Em Lamentações 3:23, toque o verbo que diz o que acontece a cada manhã.",
     "verseRef": "Lamentações 3:23",
     "passageText": "Renovam-se a cada manhã; grande é a tua fidelidade.",
     "options": [
@@ -65,10 +65,10 @@
     "evidenceSpan": "Renovam-se a cada manhã",
     "feedbackCorrect": "As misericórdias se renovam a cada manhã: Deus recomeça com o seu povo.",
     "feedbackWrong": {
-      "b": "A manhã é quando acontece; o que se renova vem antes.",
-      "c": "A fidelidade é declarada grande; o que se renova são as misericórdias."
+      "b": "A manhã é quando acontece; o verbo vem antes.",
+      "c": "A fidelidade é declarada grande; não é o verbo do recomeço."
     },
-    "hint": "Veja o verbo no começo do versículo.",
+    "hint": "Procure a ação ligada à manhã.",
     "learningObjective": "Identificar o que se renova a cada manhã.",
     "evidence": [
       "Lamentações 3:23"
@@ -641,11 +641,11 @@
     "options": [
       {
         "id": "a",
-        "text": "A fidelidade de Deus se renova de manhã"
+        "text": "O choro da noite dá lugar à alegria"
       },
       {
         "id": "b",
-        "text": "O choro da noite dá lugar à alegria"
+        "text": "A fidelidade de Deus se renova de manhã"
       },
       {
         "id": "c",
@@ -660,11 +660,11 @@
     ],
     "correctAnswer": "a,b,c",
     "evidenceSpan": "Renovam-se a cada manhã",
-    "feedbackCorrect": "A manhã renovada aponta para o dia em que Deus enxugará toda lágrima.",
+    "feedbackCorrect": "A alegria da manhã nos Salmos, a fidelidade renovada e, por fim, nenhuma lágrima.",
     "feedbackWrong": {
-      "default": "Siga a história: Lamentações, Salmos e, por fim, Apocalipse."
+      "default": "Siga a Bíblia: Salmos, Lamentações e, por fim, Apocalipse."
     },
-    "hint": "Siga a ordem: luto, louvor e eternidade.",
+    "hint": "Pense na ordem dos livros na Bíblia.",
     "learningObjective": "Ver a manhã de Lamentações como começo de um fio bíblico.",
     "evidence": [
       "Lamentações 3:23",
@@ -1396,23 +1396,23 @@
     "difficulty": "profundezas",
     "type": "order",
     "skill": "interpret",
-    "question": "Qual sequência revela o caminho da espera que começa em Lamentações 3:23?",
-    "prompt": "Qual sequência revela o caminho da espera que começa em Lamentações 3:23?",
-    "cue": "Qual sequência revela o caminho da espera que começa em Lamentações 3:23?",
+    "question": "Qual sequência segue, na Bíblia, a espera pela manhã de Deus?",
+    "prompt": "Qual sequência segue, na Bíblia, a espera pela manhã de Deus?",
+    "cue": "Qual sequência segue, na Bíblia, a espera pela manhã de Deus?",
     "verseRef": "Lamentações 3:23",
     "passageText": "Renovam-se a cada manhã; grande é a tua fidelidade.",
     "options": [
       {
         "id": "a",
-        "text": "Deus renova suas misericórdias de manhã"
-      },
-      {
-        "id": "b",
         "text": "O salmista pede benignidade ao amanhecer"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Quem semeia chorando colhe com alegria"
+      },
+      {
+        "id": "c",
+        "text": "Deus renova suas misericórdias de manhã"
       }
     ],
     "correctOptionId": "a",
@@ -1423,11 +1423,11 @@
     ],
     "correctAnswer": "a,b,c",
     "evidenceSpan": "Renovam-se a cada manhã",
-    "feedbackCorrect": "A manhã renovada sustenta a espera de quem semeia chorando e colherá.",
+    "feedbackCorrect": "O pedido da manhã e a colheita dos Salmos ecoam nas misericórdias renovadas.",
     "feedbackWrong": {
-      "default": "Siga a Bíblia: Lamentações, Salmos 90 e, depois, Salmos 126."
+      "default": "Siga a Bíblia: Salmos 90, Salmos 126 e Lamentações."
     },
-    "hint": "Siga a ordem: luto, pedido e colheita.",
+    "hint": "Pense na ordem dos livros na Bíblia.",
     "learningObjective": "Ver a espera de Lamentações como fio que chega à colheita.",
     "evidence": [
       "Lamentações 3:23",
@@ -2358,7 +2358,7 @@
     "feedbackWrong": {
       "default": "Siga a história: queda, exílio e Jesus sobre Jerusalém."
     },
-    "hint": "Siga a ordem: Sião, rios e Jesus.",
+    "hint": "Pense no que veio antes e depois na história.",
     "learningObjective": "Ver o choro de Sião como fio que atravessa a Bíblia.",
     "evidence": [
       "Lamentações 1:4",
@@ -2503,19 +2503,19 @@
     "difficulty": "profundezas",
     "type": "order",
     "skill": "interpret",
-    "question": "Qual sequência revela o caminho da restauração que começa em Lamentações 5:21?",
-    "prompt": "Qual sequência revela o caminho da restauração que começa em Lamentações 5:21?",
-    "cue": "Qual sequência revela o caminho da restauração que começa em Lamentações 5:21?",
+    "question": "Qual sequência segue, na Bíblia, o pedido de restauração?",
+    "prompt": "Qual sequência segue, na Bíblia, o pedido de restauração?",
+    "cue": "Qual sequência segue, na Bíblia, o pedido de restauração?",
     "verseRef": "Lamentações 5:21",
     "passageText": "Restaura-nos, Senhor, e seremos restaurados; renova nossos dias como eram antigamente.",
     "options": [
       {
         "id": "a",
-        "text": "Jerusalém pede para ser restaurada"
+        "text": "Efraim pede para ser convertido"
       },
       {
         "id": "b",
-        "text": "Efraim pede para ser convertido"
+        "text": "Jerusalém pede para ser restaurada"
       },
       {
         "id": "c",
@@ -2530,11 +2530,11 @@
     ],
     "correctAnswer": "a,b,c",
     "evidenceSpan": "Restaura-nos, Senhor",
-    "feedbackCorrect": "O pedido de Jerusalém aponta para o Deus que converte e renova tudo.",
+    "feedbackCorrect": "O pedido de Efraim volta em Jerusalém e chega ao Deus que faz tudo novo.",
     "feedbackWrong": {
-      "default": "Siga a história: Lamentações, Jeremias e nova criação."
+      "default": "Siga a Bíblia: Jeremias, Lamentações e nova criação."
     },
-    "hint": "Siga a ordem: pedido, conversão e renovação.",
+    "hint": "Pense na ordem dos livros na Bíblia.",
     "learningObjective": "Ver o pedido de restauração como fio até a nova criação.",
     "evidence": [
       "Lamentações 5:21",
@@ -3207,7 +3207,7 @@
     "feedbackWrong": {
       "default": "Siga a história: Lamentações, Salmos do exílio e Evangelhos."
     },
-    "hint": "Siga a ordem: queda, exílio e Jesus.",
+    "hint": "Pense no que veio antes e depois na história.",
     "learningObjective": "Ver o choro de Jerusalém como fio que atravessa a Bíblia.",
     "evidence": [
       "Lamentações 1:2",
@@ -3970,7 +3970,7 @@
     "feedbackWrong": {
       "default": "Siga a história: aviso, queda e confissão em Daniel."
     },
-    "hint": "Siga a ordem: antes, queda e depois.",
+    "hint": "Pense no que veio antes e depois na história.",
     "learningObjective": "Ver o juízo anunciado como fio que chega a Daniel.",
     "evidence": [
       "Lamentações 2:14",
@@ -4702,23 +4702,23 @@
     "difficulty": "profundezas",
     "type": "order",
     "skill": "interpret",
-    "question": "Qual sequência revela o caminho da restauração que começa em Lamentações 5:21?",
-    "prompt": "Qual sequência revela o caminho da restauração que começa em Lamentações 5:21?",
-    "cue": "Qual sequência revela o caminho da restauração que começa em Lamentações 5:21?",
+    "question": "Qual sequência segue, na Bíblia, o pedido de restauração?",
+    "prompt": "Qual sequência segue, na Bíblia, o pedido de restauração?",
+    "cue": "Qual sequência segue, na Bíblia, o pedido de restauração?",
     "verseRef": "Lamentações 5:21",
     "passageText": "Restaura-nos, Senhor, e seremos restaurados; renova nossos dias como eram antigamente.",
     "options": [
       {
         "id": "a",
-        "text": "O povo pede que Deus o restaure"
-      },
-      {
-        "id": "b",
         "text": "O salmista pede o fim da ira"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Efraim pede para ser convertido"
+      },
+      {
+        "id": "c",
+        "text": "O povo pede que Deus o restaure"
       }
     ],
     "correctOptionId": "a",
@@ -4729,11 +4729,11 @@
     ],
     "correctAnswer": "a,b,c",
     "evidenceSpan": "Restaura-nos, Senhor",
-    "feedbackCorrect": "O pedido de Lamentações ecoa nos Salmos e no pedido de Efraim em Jeremias.",
+    "feedbackCorrect": "O pedido dos Salmos e o de Efraim voltam no fim de Lamentações.",
     "feedbackWrong": {
-      "default": "Siga a Bíblia: Lamentações, Salmos e Jeremias."
+      "default": "Siga a Bíblia: Salmos, Jeremias e Lamentações."
     },
-    "hint": "Siga a ordem dos livros citados.",
+    "hint": "Pense na ordem dos livros na Bíblia.",
     "learningObjective": "Ver o pedido de restauração como fio que atravessa a Bíblia.",
     "evidence": [
       "Lamentações 5:21",

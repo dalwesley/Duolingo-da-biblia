@@ -449,9 +449,9 @@
       "difficulty": "caminhada",
       "type": "find_in_text",
       "skill": "understand",
-      "question": "Em Gálatas 1:7, toque a palavra que diz que o evangelho anunciado não é outro.",
-      "prompt": "Em Gálatas 1:7, toque a palavra que diz que o evangelho anunciado não é outro.",
-      "cue": "Em Gálatas 1:7, toque a palavra que diz que o evangelho anunciado não é outro.",
+      "question": "Em Gálatas 1:7, toque a palavra que passa de \"não é outro\" para os que perturbam os gálatas.",
+      "prompt": "Em Gálatas 1:7, toque a palavra que passa de \"não é outro\" para os que perturbam os gálatas.",
+      "cue": "Em Gálatas 1:7, toque a palavra que passa de \"não é outro\" para os que perturbam os gálatas.",
       "verseRef": "Gálatas 1:7",
       "passageText": "Que não é outro, mas há alguns que vos perturbam e querem perverter o evangelho de Cristo.",
       "options": [
@@ -471,12 +471,12 @@
       "correctOptionId": "c",
       "correctAnswer": "c",
       "evidenceSpan": "Que não é outro, mas há alguns",
-      "feedbackCorrect": "A palavrinha vira o argumento: não é outro, só há perturbação.",
+      "feedbackCorrect": "Não existe outro evangelho; o que existe são pessoas que perturbam.",
       "feedbackWrong": {
-        "a": "Alguns são as pessoas que perturbam, não a correção.",
+        "a": "Esses são os que perturbam; a virada vem logo antes deles.",
         "b": "Outro é o que o evangelho falso parece ser, não a correção."
       },
-      "hint": "Procure a conjunção que corrige a frase anterior.",
+      "hint": "Procure a palavra que muda o rumo da frase.",
       "learningObjective": "Reconhecer a correção que Paulo faz em 1:7.",
       "evidence": [
         "Gálatas 1:7"
@@ -861,7 +861,7 @@
         "b": "Paulo não aprova; ele rejeita a mensagem diferente.",
         "c": "Não há bênção para quem torce o evangelho de Cristo."
       },
-      "hint": "Veja a palavra final do versículo.",
+      "hint": "Veja o que Paulo declara sobre quem prega outra mensagem.",
       "learningObjective": "Lembrar o termo que mostra a rejeição da mensagem diferente.",
       "evidence": [
         "Gálatas 1:8"
