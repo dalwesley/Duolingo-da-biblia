@@ -19,7 +19,7 @@ Não somos YouVersion (ler), nem Hallow (orar), nem Ascend/Bible Way (jogo com p
 | **Hábito / social** | Sequência (gelo + teach 1×), quests, Companhia → Caravana → Grupos, **Desafio** sob Companhia, retrato, widget iOS/Android · simplificação UX Fases 0–4 ([`docs/PLANO_SIMPLIFICACAO.md`](docs/PLANO_SIMPLIFICACAO.md)) |
 | **Medalhas** | **v3.2** no app — faísca + cofres; sazonal Advento + proximidade no mapa ([`docs/MEDALHAS_CALIBRATION.md`](docs/MEDALHAS_CALIBRATION.md)) |
 | **Strong / TTS** | Strong na missão e na Bíblia; TTS na aba Bíblia **e** na entrada da missão (passagem + insight) |
-| **IAP** | Peregrino+ no código (revisão, constância, reforço, selo, apoio) — **chaves vazias**, tudo aberto. Não é o Pro de 28 ago. Plano: [`MONETIZATION.md`](MONETIZATION.md) |
+| **IAP** | (26 nov) Peregrino+ com chave Android desde a 1.0.39; iOS sem chave, tudo aberto. Mensal R$ 9,90, anual R$ 89,90, Pioneiro vitalício R$ 149,90 (200 vagas), Casal/Família, bolsa pastoral (1.0.50). Falta configurar loja e RevenueCat. Plano: [`MONETIZATION.md`](MONETIZATION.md) |
 | **`lifeChallenge`** | 1 campo `dailyChallenge` no study `sm-08-pacificadores` — o app **não lê** |
 | **Caminhada** | Só Advento/Quaresma. Sem temporada genérica de 40 dias no outono. |
 | **Trilhas por dor** | `ansiedade` e `recomeco` (5 missões cada, banco emprestado) em Vida Cristã → cânon |
@@ -75,7 +75,7 @@ Histórico de releases: [`CHANGELOG.md`](CHANGELOG.md).
 - [x] Remote Config no boot (liga / baú / bônus de convite)
 - [x] TTS na aba Bíblia **e** áudio da missão (passagem + insight)
 - [x] Medalhas v3.2 — cofres, sazonal Advento, proximidade no Hoje/mapa
-- [x] Peregrino+ no app (paywall, revisão, constância, reforço, selo, apoio) — inativo sem chaves RevenueCat
+- [x] Peregrino+ no app (paywall, revisão, constância, reforço, selo, apoio) — chave Android desde a 1.0.39; iOS sem chave
 
 ### Piloto Sermão do Monte — estrutura
 
@@ -182,13 +182,18 @@ Tese: apps ensinam conhecimento; STWAY fecha com **obediência concreta** (Serm�
 
 ## Em seguida — monetizar + célula (após D7 ok)
 
-Ver `MONETIZATION.md`. Não preencher as chaves antes do hábito provar valor. Não travar gelo, lâmpada ou Strong.
+Ver `MONETIZATION.md`. Não travar gelo, lâmpada ou Strong. (26 nov: a chave Android já está no app desde a 1.0.39; o D7 com testadores ainda não tem dado.)
 
 - [x] **Caminhada no app** — Advento 2026. Dias 1–3 grátis; do dia 4 em diante, Peregrino+ (aberto enquanto não há loja). A cena segue na aba Trilhas.
-- [x] **Peregrino+** — Caminhada (dia 4+), revisão da semana, constância, reforço, selo e apoio avulso. Chaves vazias: nada trava e ninguém compra.
-- [ ] Ligar a loja **depois** do D7: chaves RevenueCat, anual + mensal, apoio. Sem vitalício. Checklist em `app-review-notes-iap.md` (material das lojas, fora do repositório)
-- [ ] Família (até 5) só depois do anual ligado — e antes de qualquer outro avulso
-- [ ] Plano Igreja piloto (1–3 líderes): Grupos + progresso + códigos presente Pro · billing Stripe/Pix na web
+- [x] **Peregrino+** — Caminhada (dia 4+), revisão da semana, constância, reforço, selo e apoio avulso.
+- [x] Chave Android do RevenueCat (1.0.39). [ ] Chave iOS (espera a conta da Apple)
+- [x] Pioneiro vitalício (R$ 149,90, 200 vagas), Casal / Família 3 / Família 4 e bolsa pastoral no código (1.0.50, 25 nov)
+- [x] Webhook: mensal + Pioneiro não desliga mais o Plus (26 nov)
+- [ ] Configurar produtos na loja e ofertas no RevenueCat (padrão, `familia`, `apoio`); proteger o vitalício da 1.0.49 (targeting por versão ou `minBuild` 51). Checklist em `MONETIZATION.md` › Fase 0 e `app-review-notes-iap.md` (fora do repositório)
+- [ ] Sandbox ponta a ponta, incluindo mensal + Pioneiro na mesma conta
+- [ ] Pioneiro: alerta perto de 200 vagas; site lendo `stats/pioneer`
+- [ ] Site: checkout web (vazio) e meta description que diz "Assine pelo site"; campos de pastor/igreja no formulário
+- [ ] Plano Igreja piloto (1–3 líderes): contrato + Pix ([`docs/ACORDO_IGREJA_PILOTO.md`](docs/ACORDO_IGREJA_PILOTO.md)) · billing Stripe/Pix na web depois
 - [ ] Radar (após Igreja): **playlist da sala** (missões do catálogo na ordem da semana) → depois trilha privada MCQ, fora de `content_trails`; **não** UGC aberto
 - [ ] Radar: mais *salas* de ~12 (não uma sala de 50). Encontro da célula sem cronômetro — **não** Kahoot/PvP
 - [ ] Opcional: 1 minuto de oração pós-celebração (não aba Hallow)

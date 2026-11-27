@@ -82,7 +82,7 @@ Rara: 7 dias seguidos no Advento.
 
 AT/NT e “livro completo” **não** são medalhas.
 
-**Pioneiro** no perfil = selo do plano Plus de lançamento (`plus_founder_annual`), não esta medalha.
+**Pioneiro** no perfil = selo do plano vitalício de lançamento (`plus_pioneer_lifetime`; o anual antigo `plus_founder_annual` também conta), não esta medalha.
 
 ## Princípios
 1. Prefixo consecutivo — nunca pintar ouro sem a faísca.

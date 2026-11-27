@@ -1,10 +1,15 @@
 # Monetização STWAY
 
 Não cobramos para começar. Não cobramos para ler a Palavra.
-Não preencher as chaves RevenueCat antes do D7 ok.
 
 Refeito em 20 out 2026, depois de cinco rodadas de auditoria do código e da
 análise de mercado (Glorify, Hallow, Duolingo, Bibliando, YouVersion).
+Preços e planos revistos em 25 nov 2026. Estado conferido contra o código
+em 26 nov 2026 (ver [Estado no app](#estado-no-app-26-nov-2026)).
+
+> A regra antiga "não preencher as chaves RevenueCat antes do D7" foi
+> superada: a chave Android está no app desde a 1.0.39. A do iOS segue
+> vazia até a conta da Apple mudar. O D7 com testadores ainda não tem dado.
 
 ---
 
@@ -154,8 +159,8 @@ YouVersion tudo grátis. Salário mínimo 2026: R$ 1.621.
 | Plano | Mensal | Anual | Acessos | Onde vende |
 |---|---|---|---|---|
 | Grátis | — | — | 1 conta | — |
-| Peregrino+ | **R$ 9,90** | **R$ 89,90** (trial 14 dias) | 1 conta | loja e web |
-| Pioneiro (vitalício, 200 vagas) | — | **R$ 149,90 uma vez** | 1 conta | loja e web |
+| Peregrino+ | **R$ 9,90** | **R$ 89,90** (trial 14 dias) | 1 conta | loja (web: ainda não ligado) |
+| Pioneiro (vitalício, 200 vagas) | — | **R$ 149,90 uma vez** | 1 conta | só no app (loja) |
 | Casal | — | **R$ 139,90** | 2 contas | loja |
 | Família 3 | — | **R$ 179,90** | 3 contas | loja |
 | Família 4 | — | **R$ 209,90** | 4 contas | loja |
@@ -187,6 +192,26 @@ YouVersion tudo grátis. Salário mínimo 2026: R$ 1.621.
   `NON_RENEWING_PURCHASE` do vitalício (Plus sem data de fim), conta a
   vaga na compra e desliga no reembolso (CANCELLATION sem data de fim).
   `plus_founder_annual` segue reconhecido para o selo dos testadores.
+- Venda controlada no app: `pioneerOnSale` exige o pacote na oferta, vaga
+  (`stats/pioneer` + `pioneer_reserved` no Remote Config) e prazo
+  (`pioneer_until`, opcional). O servidor **não barra** a compra 201: a
+  compra acontece na loja, e o webhook só conta. Ao chegar perto de 200,
+  tirar o vitalício da oferta no RevenueCat. Quem comprar nesse intervalo
+  fica com o Pioneiro.
+- **Builds antigos:** a 1.0.49 só conhece `plus_founder_annual` como
+  Pioneiro e mostra qualquer pacote vitalício da oferta `current` como
+  "Vitalício" comum, sem contador. Antes de pôr o vitalício na oferta:
+  targeting por versão do app no RevenueCat (1.0.49 fica na oferta antiga)
+  ou `minBuild` 51 no card de versão.
+- Mensal + Pioneiro na mesma conta (26 nov 2026): o fim ou o cancelamento
+  do mensal não desliga mais o Plus no servidor. Antes de gravar um estado
+  desligado ou com data de fim, o webhook consulta o entitlement da conta
+  no RevenueCat (`withAccountLookup`, precisa de `REVENUECAT_SECRET_KEY`).
+  A consulta só mantém ou liga, nunca desliga. O paywall ainda não avisa
+  quem tem o mensal que ele continua cobrando depois do vitalício.
+- O site mostra o Pioneiro com `PIONEER_ON_SALE` fixo em
+  `site/planos/planos.js`: desligar à mão quando esgotar (ou ler
+  `stats/pioneer`, que tem leitura pública).
 
 ### Casal e Família (só anual)
 
@@ -229,7 +254,11 @@ Como funciona (functions/family.js, 25 nov 2026):
   renovável), liberado pelo painel admin (Usuários › Suporte › Dar bolsa
   pastoral; grava `pastorGrants/{uid}`). Contra abuso: nome da igreja,
   cidade e um link (Instagram, site ou CNPJ); 1 concessão por igreja;
-  renova por ano.
+  renova por ano. O painel exige os três campos e barra a 2ª concessão
+  da mesma igreja (`churchKey` em `functions/moderation.js`).
+- O formulário de contato do site ainda é genérico (nome, e-mail,
+  assunto, mensagem): o pedido chega em texto livre e o admin copia
+  igreja, cidade e link à mão. Campos próprios: a fazer.
 - **Igreja Pequena, Igreja e Rede: preço sob consulta** no lançamento.
   Venda conversada pela web (Pix, boleto) para aprender o que a igreja
   quer antes de fixar tabela. Regra de partida: líderes recebem Plus
@@ -254,34 +283,45 @@ não existir na loja.
 
 A infraestrutura está pronta e testada (paywall, gates em profundidade,
 cache com dono e graça de 7 dias, funil completo, elegibilidade de trial,
-webhook, rules). Falta o que não é código:
+webhook, rules, Família, bolsa pastoral). Falta o que não é código.
 
-Decisões fechadas (20 out 2026): preços da tabela acima; Fundador entra
-no lançamento como produto separado; `plus_launch_free_until` fica
-**vazio durante a review da Apple** e só é preenchido depois da
-aprovação; A Promessa não atrasa a loja — entra no lançamento só se a
-montagem editorial couber, senão é o primeiro lançamento seguinte.
+Decisões fechadas: preços da tabela acima (25 nov 2026); Pioneiro é
+vitalício, produto separado; `plus_launch_free_until` fica **vazio
+durante a review da Apple** e só é preenchido depois da aprovação;
+A Promessa não atrasa a loja.
 
-1. Cravar os preços desta tabela nas lojas, em BRL direto
-2. Produtos: `plus_annual` (R$ 89,90, trial 14 dias), `plus_monthly`
-   (R$ 9,90), Pioneiro vitalício não consumível (R$ 149,90, 200 vagas,
-   sem trial), `apoio_5/15/30/50`. Casal e Família 3/4 entram quando o
-   compartilhamento existir
-3. RevenueCat: entitlement `peregrino_plus`, oferta padrão, oferta `apoio`;
-   preencher `_apiKeyAndroid`/`_apiKeyIos`
-4. Sandbox: comprar, trial, restaurar, gerenciar, cancelar, um apoio —
+Checklist (estado em 26 nov 2026):
+
+1. [ ] Cravar os preços desta tabela nas lojas, em BRL direto
+2. [ ] Produtos na loja: `plus_annual` (R$ 89,90, trial 14 dias),
+   `plus_monthly` (R$ 9,90), `plus_pioneer_lifetime` (não consumível,
+   R$ 149,90, sem trial), `plus_casal_annual` / `plus_familia3_annual` /
+   `plus_familia4_annual` (mesmo grupo de assinatura), `apoio_5/15/30/50`
+3. [ ] RevenueCat: entitlement `peregrino_plus`, oferta padrão, ofertas
+   `familia` e `apoio`; vitalício protegido dos builds antigos (ver
+   Pioneiro)
+4. [x] Chave Android no app (desde a 1.0.39). [ ] Chave iOS: espera a
+   mudança da conta da Apple
+5. [x] Functions com `REVENUECAT_WEBHOOK_AUTH` e `REVENUECAT_SECRET_KEY`
+   (sk_) e rules no ar. Webhook com a correção do mensal + Pioneiro
+   publicado em 26 nov 2026
+6. [ ] Sandbox: comprar, trial, restaurar, gerenciar, cancelar, um apoio,
+   Família (convite e saída), mensal + Pioneiro na mesma conta —
    **e conferir com uma conta que já usou o trial** se nenhuma tela
-   promete teste grátis (a elegibilidade é consultada via RevenueCat;
-   status desconhecido também não promete — no Android é sempre
-   desconhecido, e quem mostra o teste é a própria loja na compra)
-5. **Ordem de deploy: functions + segredo do webhook → firestore.rules →
-   build com chaves.** Rules antes do webhook = assinante sem selo, sem
-   erro visível. Checklist completo em
-   `app-review-notes-iap.md` (material das lojas, guardado fora do repositório)
-6. D7 com testadores antes de escalar divulgação do paywall
+   promete teste grátis (no Android a elegibilidade vem como
+   desconhecida e o app mostra o trial; quem decide é a loja na compra)
+7. [ ] D7 com testadores antes de escalar divulgação do paywall (sem
+   dado ainda)
 
-Enquanto a loja não está configurada, o build abre tudo (fail-open
-intencional): ninguém fica preso sem ter o que comprar.
+Ordem de deploy (já seguida): functions + segredo do webhook →
+firestore.rules → build com chaves. Checklist das lojas em
+`app-review-notes-iap.md` (material das lojas, guardado fora do
+repositório).
+
+Acesso sem loja: no iOS (sem chave) o build abre tudo, fail-open
+intencional, e `plus_launch_free_until` mostra o aviso. No Android (com
+chave) o gate fecha sem Plus mesmo se a oferta falhar; o cache do último
+entitlement segura o assinante até vencer + 7 dias.
 
 ### Fase 1 — Lançamento enxuto
 
@@ -319,7 +359,8 @@ O Plus de hoje, organizado pelos pilares 1 e 2:
   no payload e na restauração. O mapa de domínio nasce meses depois,
   com dado acumulado — não prometer antes
 - Planos personalizados por objetivo (conhecer o AT, Evangelhos, doutrina…)
-- **STWAY Família** no fim da fase (webhook já estará no ar)
+- ~~**STWAY Família**~~ — **construído em 25 nov 2026** (Casal, Família 3
+  e 4; ver acima). Sai na 1.0.50
 
 ### Fase 3 — Expansão
 
@@ -327,8 +368,13 @@ O Plus de hoje, organizado pelos pilares 1 e 2:
   (ritmo de editor, não data de feature)
 - Jornadas cooperativas e desafios em grupo (ligar `groups_enabled`,
   `companion_enabled`, `challenge_enabled` com moderação pronta)
-- **STWAY Igreja**: painel de líderes e grupos, web com Stripe + Pix
-- Bolsa pastoral no admin
+- **STWAY Igreja**: painel de líderes e grupos, web com Stripe + Pix.
+  Hoje: piloto por contrato e Pix (`docs/ACORDO_IGREJA_PILOTO.md`), sem
+  checkout na web
+- ~~Bolsa pastoral no admin~~ — **construída em 25 nov 2026**
+- Checkout pela web (Web Purchase Links do RevenueCat): o site já tem o
+  lugar (`CHECKOUT` em `site/planos/planos.js`), vazio. A meta description
+  de `site/planos/` ainda diz "Assine pelo site": corrigir até ligar
 
 ---
 
@@ -366,12 +412,15 @@ Hipótese a validar com D7 real, não medida ainda:
 
 ---
 
-## Estado no app (20 out 2026)
+## Estado no app (26 nov 2026)
 
-Chaves `_apiKeyAndroid`/`_apiKeyIos` **vazias**: o SDK não inicia, ninguém
-compra, e tudo fica aberto. Com a loja configurada, vale o entitlement ou
-o cache (até vencer + 7 dias de graça); oferta vazia/falha de rede **não**
-abre mais.
+Versão na loja: 1.0.49. A 1.0.50 (build 51) leva Pioneiro vitalício,
+Casal/Família e bolsa pastoral; ainda não está nas lojas.
+
+Chaves: `_apiKeyAndroid` preenchida (desde a 1.0.39), `_apiKeyIos`
+vazia. No Android vale o entitlement ou o cache (até vencer + 7 dias de
+graça); oferta vazia ou falha de rede **não** abre. No iOS o SDK não
+inicia e tudo fica aberto.
 
 | Peça | Estado |
 |---|---|
@@ -379,38 +428,37 @@ abre mais.
 | Gates | Em profundidade: telas, `_start` e `LessonScreen(requiresPlus)` |
 | Cache de entitlement | Com dono (uid), graça de 7 dias, aposentado quando a loja responde |
 | Amostra de plano guiado | 3 dias por plano, registrada (`guidedSampleDays`); recomeçar retoma, não renova |
-| Trial | 14 dias no Pioneiro e no anual; só prometido com elegibilidade confirmada (`trialDaysFor`) |
-| Funil | View/dismiss/plano/compra/restore + folha de oferta + abertura de recurso |
+| Trial | 14 dias só no anual; só prometido com elegibilidade confirmada (`trialDaysFor`; no Android, desconhecida conta como elegível) |
+| Pioneiro | Vitalício `plus_pioneer_lifetime`, contador e prazo no card (`_PioneerCounter`), some quando esgota (`packagesForSale`) |
+| Casal / Família | `FamilyService` + `functions/family.js`, oferta `familia`, convite por código e link |
+| Bolsa pastoral | Admin › Usuários › Suporte, `pastorGrants/{uid}`, 1 por igreja |
+| Funil | View/dismiss/plano/compra/restore + folha de oferta + abertura de recurso. Admin › Funil conta Pioneiro pelos dois ids (vitalício e anual antigo) |
 | Winback | Semana 2 e ~1 ano, com histórico semeado do cache e amarrado à conta |
-| Webhook RevenueCat → Firestore | Pronto e testado (incl. TRANSFER nos dois sentidos); desligado sem o segredo |
+| Webhook RevenueCat → Firestore | No ar, com o segredo. Trata TRANSFER nos dois sentidos, vitalício, Família e, desde 26 nov, consulta a conta antes de desligar (mensal + Pioneiro) |
 | Selo de apoiador | Só o webhook grava; rules barram o cliente |
-| Família / Igreja / Stripe | Não existem; dependem do webhook no ar |
+| Checkout web / Igreja com Stripe | Não existem. Site leva para a Play Store |
 
-Pioneiro no código: produto identificado num lugar só
-(`plus_founder_annual`), primeiro e pré-selecionado no paywall com selo
-próprio. Enquanto `pioneerOnSale`, é o único anual (`packagesForSale`)
-e é o anual das folhas de oferta e do aviso de promoção
-(`annualOnSale`); `annualPackage` continua sendo o regular. O
-laboratório espelha a loja real (Pioneiro e anual com 14 dias, sem
-vitalício, apoio de 50) e simula “Pioneiro esgotado”. O contador
-“N de 200 pioneiros” só aparece a partir de 20 vagas ocupadas.
+Pioneiro no código: `PlusAccess.pioneerProductId = 'plus_pioneer_lifetime'`
+(`plus_founder_annual` reconhecido como Pioneiro antigo). Enquanto
+`pioneerOnSale`, o paywall mostra anual, Pioneiro e mensal; selecionado,
+o card do Pioneiro mostra vagas e prazo. O laboratório (`plus_lab_screen`)
+simula a loja com mensal, anual, vitalício, Casal/Família e apoio, e
+simula "Pioneiro esgotado".
 Revisões não empilham: 1 fluxo/dia com hierarquia (temporada > semana >
 dia), registro compartilhado `reviewSlotDays` e ofertas suprimidas.
 
 Selo de Peregrino (só assinante) e selo de Apoiador (só apoio avulso)
 são selos distintos, no perfil e na Caravana (`plusActive` do webhook).
-Quem assina o plano Pioneiro vê o selo **Pioneiro** no lugar do de
-Peregrino (um selo só; `plusActive` + `plusProductId` do webhook, e
-`hasPioneerBadge` no próprio perfil). Como o de Peregrino, vale enquanto
-a assinatura está ativa. Para “Pioneiro” ter um sentido só, a medalha
-dos testadores se chama **Desbravador**: vem da marca
+Quem tem o Pioneiro vê o selo **Pioneiro** no lugar do de Peregrino (um
+selo só; `plusActive` + `plusProductId` do webhook, e `hasPioneerBadge`
+no próprio perfil). No vitalício o selo não vence. A 1.0.49 só reconhece
+`plus_founder_annual`: nela, quem comprou o vitalício aparece com o selo
+de Peregrino. Para "Pioneiro" ter um sentido só, a medalha dos
+testadores se chama **Desbravador**: vem da marca
 `users/{uid}.desbravador`, gravada só por
 `admin/scripts/mark_desbravadores.mjs` (rules barram o cliente), não
 mais da data da primeira abertura. Rodar com `--all-current --apply`
 antes do lançamento; se os dados forem zerados, rodar de novo com
 `--file exports/desbravadores.json` depois do reset.
 
-Testes: 56 da área + suíte completa 428 passando (16 falhas
-pré-existentes fora da monetização, nos mesmos 8 arquivos) + 20 nas
-functions. Reanálise completa em 20 out 2026: gates, funil, selos e
-servidor conferidos um a um contra esta lista.
+Testes: functions 101 passando (29 no webhook) em 26 nov 2026.

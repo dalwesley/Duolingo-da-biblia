@@ -63,7 +63,7 @@ flutter build ios --release
 ## Estrutura
 
 - `lib/screens/` — splash, home, trilhas, Bíblia, juntos, config, mapa, lição, celebração  
-- `lib/services/` — progresso, Firebase, catálogo, FCM, Remote Config, assinatura Peregrino+ (inativa sem chaves)  
+- `lib/services/` — progresso, Firebase, catálogo, FCM, Remote Config, assinatura Peregrino+ (RevenueCat; sem chave na plataforma, abre tudo)  
 - `assets/data/` — Bíblia + Strong empacotados; currículo vem do Firestore
 
 O painel web Firebase fica em `../admin/`, separado do app.

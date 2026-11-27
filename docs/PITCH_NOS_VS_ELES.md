@@ -105,7 +105,7 @@ SESSÃO (2–4 min)
 | Retenção medida (D7) | Protocolo pronto; planilha vazia — falta 10–20 testers |
 | Escola editorial vitrine | Infra ok (gerador + TB); falta autor humano em Gn/Sermão |
 | Marca / polish / aquisição | Shell cinemático ok; gigantes ganham por confiança |
-| IAP | Peregrino+ **inativo** (chaves vazias). Caminhada e áudio grátis; revisão trava só com loja. Não ligar chaves antes do D7 |
+| IAP | (26 nov 2026) Peregrino+ com chave Android, iOS aberto. R$ 9,90/mês, R$ 89,90/ano, Pioneiro vitalício R$ 149,90, Casal/Família. Caminhada e áudio grátis. Ver `MONETIZATION.md` |
 | Igreja em escala | YouVersion *Plans with Friends* (até 300) + Hallow Family. Nós: sala ~12 + par |
 | Janela PT-BR | Três vozes dizem “missão”. Fosso = pedagogia, não idioma nem slogan |
 | Prática IRL | `lifeChallenge` ainda fora do player — Bíblia Fácil já vende “missão prática do dia” |

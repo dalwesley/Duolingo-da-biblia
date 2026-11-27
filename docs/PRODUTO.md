@@ -28,7 +28,7 @@
 | **Simplificação 28 set** | Fases 0–4 em [`PLANO_SIMPLIFICACAO.md`](PLANO_SIMPLIFICACAO.md). Fase 5 (convite unificado) adiável. |
 | **Prática IRL** | `dailyChallenge` existe em **1** study (`sm-08`); o modelo `MissionStudy` **não parseia** — sem check-in |
 | **Prova com usuário** | Protocolo D7 pronto ([`D7_TESTER_PROTOCOLO.md`](D7_TESTER_PROTOCOLO.md)); planilha vazia — falta 10–20 testers |
-| **Monetização** | Peregrino+ **sem chaves** — IAP inativo, benefícios abertos. Três pilares (aprendizagem avançada · experiências especiais · comunidade); preços decididos R$ 19,90/mês, R$ 119,90/ano e Fundador R$ 89,90/ano. Plano: [`MONETIZATION.md`](../MONETIZATION.md) (ligar só depois do D7) |
+| **Monetização** | (26 nov) Peregrino+ com chave Android, iOS aberto. Três pilares (aprendizagem avançada · experiências especiais · comunidade); preços de 25 nov: R$ 9,90/mês, R$ 89,90/ano, Pioneiro vitalício R$ 149,90 (200 vagas), Casal/Família. Plano: [`MONETIZATION.md`](../MONETIZATION.md) |
 
 ---
 
@@ -191,11 +191,11 @@ Ordem das abas em Juntos: **Companhia → Caravana → Grupos**. Desafio não é
 
 ## Monetização
 
-Hoje: **IAP inativo**. O Peregrino+ está no app (paywall, Caminhadas de temporada a partir do dia 4, revisões do dia e da semana, planos guiados, constância, reforço do ponto fraco, selo, apoio avulso), mas as chaves RevenueCat estão vazias — ninguém compra e esses benefícios ficam abertos enquanto a loja não existir.
+Hoje (26 nov 2026): o Peregrino+ está no app (paywall, Caminhadas de temporada a partir do dia 4, revisão da semana, planos guiados, constância, reforço do ponto fraco, selo, apoio avulso). A chave Android do RevenueCat está no app desde a 1.0.39; no iOS a chave está vazia e tudo fica aberto. Produtos na loja e ofertas no RevenueCat ainda por configurar.
 
 Posicionamento: **não vender uma Bíblia melhor; vender uma forma melhor de estudar, compreender e reter.** Três pilares — aprendizagem avançada, experiências especiais, comunidade — como uma jornada só, não uma lista de benefícios. A experiência-modelo é a Caminhada Premium *A Promessa — de Abraão a Cristo* ([especificação](CAMINHADA_PREMIUM_PROMESSA.md)): cenas gratuitas costuradas numa narrativa Plus, com diagnóstico ao fim.
 
-Preços decididos: **R$ 19,90/mês · R$ 119,90/ano** (trial de 14 dias no anual), Fundador R$ 89,90/ano travado (produto separado `plus_founder_annual`, primeiros 200 ou 60 dias), Família e Igreja em fases posteriores. A Bíblia, o cânon nos 3 modos e o áudio da cena são grátis e não travam quando a loja ligar. Não gatear Profundezas do cânon. Não preencher as chaves antes do D7. Direção: [`MONETIZATION.md`](../MONETIZATION.md). Regra de conteúdo: **livro é território (grátis), tema é rota (Plus com amostra)** — visão de longo prazo em [`FUTURO_TEMAS.md`](FUTURO_TEMAS.md).
+Preços decididos em 25 nov 2026: **R$ 9,90/mês · R$ 89,90/ano** (trial de 14 dias no anual), **Pioneiro vitalício R$ 149,90** uma vez (`plus_pioneer_lifetime`, primeiras 200 vagas), Casal R$ 139,90, Família 3 R$ 179,90 e Família 4 R$ 209,90 por ano, Pastor/Missionário grátis (bolsa), Igreja por contato. A Bíblia, o cânon nos 3 modos e o áudio da cena são grátis e não travam quando a loja ligar. Não gatear Profundezas do cânon. Direção: [`MONETIZATION.md`](../MONETIZATION.md). Regra de conteúdo: **livro é território (grátis), tema é rota (Plus com amostra)** — visão de longo prazo em [`FUTURO_TEMAS.md`](FUTURO_TEMAS.md).
 
 ---
 
@@ -300,6 +300,6 @@ Por ameaça: Bibliando → Bible Way → Bíblia Fácil → Verbo → Show do Bi
 | Caravana | Liga (Geral / Semana) |
 | Companhia | Par 1:1 |
 | Grupo | Estudo em célula/EBD (código `Room*`) |
-| Peregrino+ | Assinatura opcional — profundidade, jornadas e síntese sobre o cânon grátis. IAP inativo (chaves vazias) |
+| Peregrino+ | Assinatura opcional — profundidade, jornadas e síntese sobre o cânon grátis. Chave Android ativa, iOS aberto |
 | Relato | Report de exercício → admin |
 | Competência | Observar → … → Aplicar ([§9](LEARNING_ENGINE.md)) |

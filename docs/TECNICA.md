@@ -90,7 +90,7 @@ lib/
 | `BibleService` / `BibleStudyService` | Bíblia + Strong offline |
 | `TtsService` | Leitura em voz alta — **aba Bíblia** |
 | `RemoteConfigService` | Liga / baú da sala / bônus de convite |
-| `SubscriptionService` | Peregrino+ via RevenueCat — **no-op sem chaves**; benefícios abertos até a loja existir |
+| `SubscriptionService` | Peregrino+ via RevenueCat. Chave Android preenchida; sem chave (iOS hoje) é no-op e abre tudo. Pioneiro (`stats/pioneer`), Família (`FamilyService`), apoio |
 | `AppUpdateService` | Soft/force update via `content_meta/app_release` |
 | `AnalyticsService` | Funil de eventos |
 | `QuestionReportService` | Relatos de pergunta |
@@ -242,7 +242,7 @@ Contrato de sessão: [`SESSAO_TREINO.md`](SESSAO_TREINO.md) v1.2.
 | Medalhas v3.2 | feito — faísca, cofres, sazonal, proximidade |
 | `lifeChallenge` / `dailyChallenge` | **não** no player (`MissionStudy` ignora o campo) |
 | `content_exercises` / `skillEstimates` | **não** — fases futuras |
-| Monetização / IAP | Peregrino+ **inativo** (chaves vazias). Revisão, constância, reforço e selo no código; Caminhada e áudio grátis. Sem perk de companheiros |
+| Monetização / IAP | Peregrino+ com chave Android (iOS sem chave, aberto). Webhook `revenueCatWebhook` grava `users/{uid}.plus*`; Família em `functions/family.js`; bolsa pastoral em `functions/moderation.js`. Caminhada e áudio grátis. Sem perk de companheiros |
 | Jornada canônica (unlock) | código existe; bypass só com `--dart-define=OPEN_ALL_TRAILS=true` |
 
 ### Hierarquia de dados (alvo)
